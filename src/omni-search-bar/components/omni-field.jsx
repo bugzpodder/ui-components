@@ -98,7 +98,10 @@ export class OmniField extends React.Component<Props, State> {
 											id={`${OMNI_KEY}-clear`}
 											title="Clear"
 											color="inherit"
-											onClick={onClear}
+											onClick={async () => {
+												await onClear();
+												onSearch();
+											}}
 											className={classNames(styles.iconButton, textClass)}
 											aria-label="Clear entered search values"
 											disableRipple

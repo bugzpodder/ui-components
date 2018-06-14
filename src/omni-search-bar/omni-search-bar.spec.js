@@ -1,6 +1,11 @@
 // @flow
 import React from "react";
-import { LIKE_TEXT_SEARCH_TYPE, MULTI_FIELD_TEXT_SEARCH_TYPE } from "@grail/lib";
+import {
+	LIKE_TEXT_SEARCH_TYPE,
+	MULTI_FIELD_TEXT_SEARCH_TYPE,
+	DATE_SEARCH_TYPE,
+	DATETIME_SEARCH_TYPE,
+} from "@grail/lib";
 import { render, Simulate } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
@@ -22,6 +27,16 @@ const searchDefs: SearchDefs = [
 		aliases: new Set(["lot"]),
 		description: "Lot Num/External Ref",
 		searchFields: ["lotNumber", "externalReference"],
+	},
+	{
+		name: "Received Date",
+		type: DATETIME_SEARCH_TYPE,
+		searchFields: ["receivedDate"],
+	},
+	{
+		name: "Expiration Date",
+		type: DATE_SEARCH_TYPE,
+		searchFields: ["expirationDate"],
 	},
 ];
 

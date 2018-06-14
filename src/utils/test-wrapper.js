@@ -4,6 +4,7 @@ import React, { type Node } from "react";
 import { createGenerateClassName } from "@material-ui/core/styles";
 // $FlowFixMe: Cannot resolve module react-jss/lib/JssProvider
 import JssProvider from "react-jss/lib/JssProvider";
+import "@grail/lib/src/client-utils/mocks";
 
 type Props = {
 	children: Node<*>,

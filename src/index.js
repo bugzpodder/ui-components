@@ -9,6 +9,7 @@ export { ExternalLinkButton } from "./external-link-button";
 export { ExternalLink } from "./external-link";
 export { Navbar } from "./navbar";
 export { ReadOnlyTextField, ValidatedReadOnlyTextField } from "./readonly-text-field";
+export { OmniSearchBar } from "./omni-search-bar";
 export { TwoColumnGrid, TwoColumnRow } from "./two-column-grid";
 export { CollapsableListItem } from "./list";
 export { PagedTable, SimpleTable } from "./table";

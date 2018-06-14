@@ -8,9 +8,10 @@ import {
 	getSearchValuesFromOmniText,
 	getSearchOptions,
 	getQuery,
-	updateQuery,
 	isValueValid,
-} from "@grail/lib";
+	localStorage,
+	updateQuery,
+} from "@grail/lib/";
 import { OmniField } from "./components/omni-field";
 import { OmniDropdown } from "./components/omni-dropdown";
 import styles from "./omni.module.scss";
@@ -44,15 +45,71 @@ export class OmniSearchBar extends React.Component<Props, State> {
 	};
 	componentDidMount = async () => {
 		const { location } = this.props;
-		// FIXME(jrosenfield): Move to componentDidUpdate
-		const query = getQuery({ location });
-		const omniText = query[OMNI_KEY];
+		let omniText = getQuery({ location })[OMNI_KEY];
+		omniText = this.mergeOmniWithLocalStorage(omniText);
 		if (!isValueValid(omniText)) {
 			return null;
 		}
 		await this.updateOmniText(omniText);
 		this.onSearch();
 	};
+	componentDidUpdate = async (prevProps: Props) => {
+		const { location, searchDefs } = this.props;
+		let omniText = getQuery({ location })[OMNI_KEY];
+		const prevOmniText = getQuery({ location: prevProps.location })[OMNI_KEY];
+
+		if (searchDefs !== prevProps.searchDefs) {
+			omniText = this.mergeOmniWithLocalStorage(omniText);
+		}
+
+		if (!isValueValid(omniText)) {
+			return null;
+		}
+		if (prevOmniText !== omniText) {
+			await this.updateOmniText(omniText);
+		}
+	};
+
+	getValuesFromLocalStorage = (searchDefs: SearchDefs) => {
+		const storageValues: Map<number, string> = new Map();
+		searchDefs.forEach((searchDef, index) => {
+			const localStorageKey = searchDef.localStorageKey;
+			if (localStorageKey !== undefined) {
+				const storageValue = localStorage.get(localStorageKey);
+				if (storageValue !== undefined) {
+					storageValues.set(index, String(storageValue));
+				}
+			}
+		});
+		return storageValues;
+	};
+
+	setValuesToLocalStorage = (searchDefs: SearchDefs, searchValues: SearchValues) => {
+		searchDefs.forEach((searchDef, index) => {
+			const localStorageKey = searchDef.localStorageKey;
+			if (localStorageKey !== undefined) {
+				if (searchValues.has(index)) {
+					const searchValue = searchValues.get(index);
+					localStorage.set(localStorageKey, searchValue);
+				} else {
+					localStorage.remove(localStorageKey);
+				}
+			}
+		});
+	};
+
+	mergeOmniWithLocalStorage = (omniText: string): string => {
+		const searchDefs = this.props.searchDefs;
+		const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
+		const storageValues = this.getValuesFromLocalStorage(searchDefs);
+		storageValues.forEach((value, key) => {
+			if (!searchValues.has(key)) {
+				searchValues.set(key, value);
+			}
+		});
+		return getOmniTextFromSearchValues(searchDefs, searchValues);
+	};
+
 	toggleDropdown = () => {
 		this.setState(prevState => {
 			return { isOpen: !prevState.isOpen };
@@ -65,6 +122,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 				const { searchDefs } = this.props;
 				try {
 					const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
+					this.setValuesToLocalStorage(searchDefs, searchValues);
 					updateQuery(
 						this.props,
 						{ [OMNI_KEY]: omniText },
@@ -103,16 +161,6 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		}
 		// $FlowFixMe: omniText is a string
 		this.updateOmniText(omniText);
-	};
-	componentDidUpdate = async (prevProps: Props) => {
-		const omniText = getQuery({ location: this.props.location })[OMNI_KEY];
-		const prevOmniText = getQuery({ location: prevProps.location })[OMNI_KEY];
-		if (!isValueValid(omniText)) {
-			return null;
-		}
-		if (prevOmniText !== omniText) {
-			await this.updateOmniText(omniText);
-		}
 	};
 
 	anchorEl = null;

@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import styles from "../omni.module.scss";
 
 export const SearchField = (props: SearchFieldProps) => {
-	const { searchKey, placeholder, searchType, searchValue, onChange, ...otherProps } = props;
+	const { searchKey, searchType, searchValue, onChange, ...otherProps } = props;
 	const onChangeComponent = (event: InputEvent) => {
 		const {
 			currentTarget: { id, value: text },
@@ -23,8 +23,7 @@ export const SearchField = (props: SearchFieldProps) => {
 				id={searchKey}
 				{...otherProps}
 				className={styles.textField}
-				value={String(searchValue)}
-				placeholder={placeholder}
+				value={searchValue ? String(searchValue) : ""}
 				onChange={onChangeComponent}
 			/>
 		);

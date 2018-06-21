@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render validated readonly text field 1`] = `
+<div>
+  <span
+    class="readonlyTextField success "
+    data-testid="readonly-text-field"
+  >
+    <span
+      aria-hidden="true"
+      class="material-icons MuiIcon-root icon"
+      data-testid="icon"
+    >
+      done
+    </span>
+    readOnly text
+  </span>
+</div>
+`;
+
+exports[`render validated readonly text field with \`isNA\` 1`] = `
+<div>
+  <span
+    class="readonlyTextField  test-classname"
+    data-testid="readonly-text-field"
+  >
+    
+    readOnly text
+  </span>
+</div>
+`;
+
+exports[`render validated readonly text field with false \`isValid\` 1`] = `
+<div>
+  <span
+    class="readonlyTextField fail "
+    data-testid="readonly-text-field"
+  >
+    <span
+      aria-hidden="true"
+      class="material-icons MuiIcon-root icon"
+      data-testid="icon"
+    >
+      clear
+    </span>
+    readOnly text
+  </span>
+</div>
+`;

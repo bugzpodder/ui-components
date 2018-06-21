@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:6060",
+  "viewportHeight": 1000,
+  "numTestsKeptInMemory": 2,
+  "defaultCommandTimeout": 16000,
+  "videoCompression": false
+}

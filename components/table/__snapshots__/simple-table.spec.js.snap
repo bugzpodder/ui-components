@@ -1,0 +1,455 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render full simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root TableHeader"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header tableCheckbox"
+            scope="col"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active indeterminate"
+              data-testid="paged-table-checkbox-header"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+            scope="col"
+          >
+            Column One
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            scope="col"
+          >
+            Column Two
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-testid="First Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell tableCheckbox"
+            data-cell-id="First Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
+              data-testid="paged-table-checkbox-cell"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  id="First Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="First Datum-1"
+          >
+            <span>
+              First Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="First Datum-2"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`render loading simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root TableHeader"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+            scope="col"
+          >
+            Column One
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            scope="col"
+          >
+            Column Two
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-testid="0"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="0-0"
+          >
+            <span>
+              First Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="0-1"
+          />
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="spinnerOverlay active"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root TableHeader"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+            scope="col"
+          >
+            Column One
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            scope="col"
+          >
+            Column Two
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-testid="0"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="0-0"
+          >
+            <span>
+              First Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="0-1"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`render simple table with all items selected 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root TableHeader"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header tableCheckbox"
+            scope="col"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked indeterminate"
+              data-testid="paged-table-checkbox-header"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+            scope="col"
+          >
+            Column One
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            scope="col"
+          >
+            Column Two
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+          data-testid="First Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell tableCheckbox"
+            data-cell-id="First Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
+              data-testid="paged-table-checkbox-cell"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  id="First Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="First Datum-1"
+          >
+            <span>
+              First Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="First Datum-2"
+          />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`render simple table with no results 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root TableHeader"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+            scope="col"
+          >
+            Column One
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            scope="col"
+          >
+            Column Two
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body no-results noResults"
+            colspan="2"
+          >
+            0 Results
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`render simple table with no results and is loading 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <table
+      class="MuiTable-root"
+    >
+      <thead
+        class="MuiTableHead-root TableHeader"
+      >
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
+        >
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+            scope="col"
+          >
+            Column One
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            scope="col"
+          >
+            Column Two
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      >
+        <tr
+          class="MuiTableRow-root"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body no-results noResults"
+            colspan="2"
+          />
+        </tr>
+      </tbody>
+    </table>
+    <div
+      class="spinnerOverlay active"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;

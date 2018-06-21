@@ -1,0 +1,17 @@
+body .card {
+	overflow: visible;
+
+	&.withMargin {
+		margin: 20px;
+	}
+
+	.headerActions {
+		overflow: hidden;
+		margin-top: 0;
+		margin-right: 0;
+
+		> * + * {
+			margin-left: 8px;
+		}
+	}
+}

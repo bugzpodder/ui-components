@@ -1,0 +1,45 @@
+$dialog-title-height: 68px;
+$dialog-footer-height: 52px;
+$dialog-height: "100vh - 60px";
+$TABLET_WIDTH: 1200px;
+$screen-sm: $TABLET_WIDTH - 1px;
+$screen-md: $TABLET_WIDTH;
+
+.commonDialog {
+	position: relative;
+}
+
+.commonDialogPaper {
+	min-width: 300px;
+	max-height: calc(#{$dialog-height});
+	width: 600px;
+	margin: 30px auto;
+	&.sm {
+		width: 300px;
+	}
+	&.md {
+		width: 600px;
+	}
+	&.lg {
+		width: 900px;
+	}
+	&:focus {
+		outline: none;
+	}
+	.commonDialogContent {
+		max-height: calc(#{$dialog-height} - #{$dialog-title-height} - #{$dialog-footer-height});
+		overflow-y: auto;
+	}
+}
+
+@media (min-width: $screen-sm) {
+	.commonDialogPaper {
+		width: 600px;
+	}
+}
+
+@media (min-width: $screen-md) {
+	.commonDialogPaper {
+		width: 900px;
+	}
+}

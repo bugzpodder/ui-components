@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render ExternalLink 1`] = `
+<div>
+  <a
+    class="test"
+    href="https://www.grail.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    GRAIL
+  </a>
+</div>
+`;

@@ -1,0 +1,15 @@
+@import "~@grail/lib/constants/colors.scss";
+.panel {
+	.panelHeader {
+		padding: 10px;
+		background-color: $grail-purple-light-color;
+	}
+	.panelBody {
+		padding-top: 10px;
+	}
+}
+div, .panel {
+	+ .panel {
+		margin-top: 30px;
+	}
+}

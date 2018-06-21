@@ -1,0 +1,14 @@
+{
+  "printWidth": 120,
+  "jsxBracketSameLine": false,
+  "trailingComma": "all",
+  "useTabs": true,
+  "overrides": [
+    {
+      "files": [".*.json", "*.json"],
+      "options": {
+        "useTabs": false
+      }
+    }
+  ]
+}

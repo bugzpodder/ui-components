@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render text field wrapper 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root"
+    data-testid="text-field"
+  >
+    <div
+      class="MuiInput-root MuiInput-formControl MuiInput-underline"
+    >
+      <input
+        aria-invalid="false"
+        aria-required="false"
+        class="MuiInput-input"
+        id="operator"
+        placeholder="Test Placeholder"
+        type="text"
+        value="test value"
+      />
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`render text field wrapper with readonly as true 1`] = `
+<div>
+  <span
+    class="readonlyTextField "
+    data-testid="readonly-text-field"
+  >
+    test value
+  </span>
+</div>
+`;
+
+exports[`render text field wrapper with readonly as true showing - for empty value 1`] = `
+<div>
+  <span
+    class="readonlyTextField "
+    data-testid="readonly-text-field"
+  >
+    -
+  </span>
+</div>
+`;
+
+exports[`render text field wrapper with readonly as true with a ReadOnlyComponent 1`] = `
+<div>
+  <div
+    data-testid="custom-readonly-text"
+    id="test-readonly-component-id"
+  >
+    used custom readonly component
+  </div>
+</div>
+`;
+
+exports[`render text field wrapper with readonly as true with showing empty value 1`] = `
+<div>
+  <span
+    class="readonlyTextField "
+    data-testid="readonly-text-field"
+  >
+    
+  </span>
+</div>
+`;

@@ -1,0 +1,81 @@
+@import "~@grail/lib/constants/colors.scss";
+
+.clickAwayLayer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	background-color: rgba($grail-gray-dark-color, 0.1);
+}
+
+.omniBar {
+	flex-grow: 1;
+	max-width: 650px;
+	position: relative;
+	z-index: 15;
+	.omniDropdown {
+		position: absolute;
+		.paper {
+			padding: 12px;
+			display: flex;
+			.footer {
+				width: 100%;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+			}
+		}
+	}
+	.omniField {
+		.field {
+			width: 100%;
+			background-color: $grail-purple-med-color;
+			div {
+				color: white;
+			}
+		}
+		.placeholder {
+			input::placeholder {
+				color: inherit;
+				opacity: 1;
+			}
+		}
+		.fieldHighlight {
+			width: 100%;
+			background-color: $grail-purple-light-color;
+			color: $grail-gray-dark-color;
+		}
+		.scanIcon {
+			font-weight: bold;
+			color: $grail-color;
+			display: none;
+		}
+		.searchIcon {
+			width: 36px;
+			height: 36px;
+		}
+		.iconButton {
+			width: 36px;
+			height: 36px;
+		}
+	}
+}
+
+.dateGrid {
+	width: 100%;
+	display: flex;
+	.input {
+		width: 140px;
+		display: flex;
+	}
+	.typography {
+		margin: auto 10px;
+		text-align: center;
+		font-size: 16;
+	}
+}
+.textField {
+	font-size: 14;
+}

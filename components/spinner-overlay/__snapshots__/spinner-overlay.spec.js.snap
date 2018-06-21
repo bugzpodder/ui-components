@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render active spinner overlay 1`] = `
+<div>
+  <div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-flat"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Active Spinner Test
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      class="spinnerOverlay active"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render inactive spinner overlay 1`] = `
+<div>
+  <div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-flat"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      >
+        Inactive Spinner Test
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+    <div
+      class="spinnerOverlay"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render dialog 1`] = `
+<body
+  style="overflow: hidden; padding-right: 0px;"
+>
+  <div
+    aria-hidden="true"
+  />
+  <div
+    class="MuiModal-root MuiDialog-root commonDialog"
+    role="dialog"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; -webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      class="MuiPaper-root MuiPaper-elevation24 MuiPaper-rounded commonDialogPaper"
+      role="document"
+      style="opacity: 1; -webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+      tabindex="-1"
+    >
+      <div
+        class="MuiDialogTitle-root"
+        id="form-dialog-title"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-title"
+        >
+          test
+        </h2>
+      </div>
+      <div
+        class="MuiDialogContent-root commonDialogContent"
+      >
+        Test Content
+      </div>
+      <div
+        class="MuiDialogActions-root"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-flat MuiDialogActions-action"
+          id="close"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Close
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary MuiDialogActions-action"
+          data-id="action-button"
+          data-is-enabled="true"
+          id="action-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            action one
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary MuiDialogActions-action"
+          data-is-enabled="true"
+          id="action two"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            action two
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;

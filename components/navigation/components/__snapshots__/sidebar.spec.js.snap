@@ -1,0 +1,600 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Sidebar 1`] = `
+<body
+  style="overflow: hidden; padding-right: 0px;"
+>
+  <div
+    aria-hidden="true"
+  />
+  <div
+    class="MuiModal-root MuiDrawer-modal"
+    id="sidebar-drawer"
+  >
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root"
+      style="opacity: 1; -webkit-transition: opacity 0ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    />
+    <div
+      class="MuiPaper-root MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft"
+      direction="right"
+      role="document"
+      tabindex="-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiIconButton-root"
+        id="close-sidebar"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <g>
+              <path
+                d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+              />
+            </g>
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+      <hr
+        class="MuiDivider-root"
+      />
+      <div
+        class="drawer"
+        role="button"
+        tabindex="0"
+      >
+        <ul
+          class="MuiList-root MuiList-padding list"
+        >
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Sample Management
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="MuiCollapse-container"
+            style="min-height: 0px; height: 0px;"
+          >
+            <div
+              class="MuiCollapse-wrapper"
+            >
+              <div
+                class="MuiCollapse-wrapperInner"
+              >
+                <ul
+                  class="MuiList-root MuiList-padding"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    href="https://edc-client-staging.eng.aws.grail.com"
+                    rel="noopener noreferrer"
+                    role="button"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Sample Accessioning
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/samples"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Samples
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/batches"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Batches
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/sample-issues"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Sample Issues
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/sequencing-runs"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Sequencing Runs
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/new-sequencing-run"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        New Sequencing Run
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/print-labels"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Print Labels
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/study-samples"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Study Samples
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/create-study-samples"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Create Study Samples
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/bulk-create-study-samples"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Bulk Create Study Samples
+                      </span>
+                    </div>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Automation
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="MuiCollapse-container MuiCollapse-entered"
+            style="min-height: 0px;"
+          >
+            <div
+              class="MuiCollapse-wrapper"
+            >
+              <div
+                class="MuiCollapse-wrapperInner"
+              >
+                <ul
+                  class="MuiList-root MuiList-padding"
+                >
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/automation/program-runs"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Program Runs
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/automation/resources"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Resources
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/automation/programs"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Programs
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/automation/program-regex-tester"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Program Regex Tester
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button active nested"
+                    exact="false"
+                    href="/automation/tasks"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Tasks
+                      </span>
+                    </div>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Pipeline
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Test Management
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Metrics
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </g>
+            </svg>
+          </div>
+          <a
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            exact="false"
+            href="/lims/sample-storage/racks"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Storage
+              </span>
+            </div>
+          </a>
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Reagents
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                R&D
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Admin
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </g>
+            </svg>
+          </div>
+        </ul>
+      </div>
+      <div
+        class="drawerFooter"
+      >
+        <hr
+          class="MuiDivider-root"
+        />
+        <span>
+          Footer
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;

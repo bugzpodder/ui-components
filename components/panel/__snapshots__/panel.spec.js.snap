@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render validated readonly text field 1`] = `
+<div>
+  <div
+    class="panel "
+  >
+    <div
+      class="panelHeader"
+      data-testid="panel-title"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-subheading"
+      >
+        panel title
+      </h3>
+    </div>
+    <div
+      class="panelBody"
+      data-testid="panel-body"
+    >
+      panel body
+    </div>
+  </div>
+</div>
+`;

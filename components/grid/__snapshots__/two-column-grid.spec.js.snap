@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render two column grid 1`] = `
+<div>
+  <div
+    class="MuiGrid-container"
+  >
+    <div
+      class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
+    >
+      <div
+        class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+        data-testid="two-column-row-label"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 rowLabel"
+        >
+          Test Label 1
+        </p>
+      </div>
+      <div
+        class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+        data-testid="two-column-row-value"
+      >
+        Test Value 1
+      </div>
+    </div>
+    <div
+      class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
+    >
+      <div
+        class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+        data-testid="two-column-row-label"
+      >
+        1
+      </div>
+      <div
+        class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+        data-testid="two-column-row-value"
+      >
+        Test Value 1
+      </div>
+    </div>
+  </div>
+</div>
+`;

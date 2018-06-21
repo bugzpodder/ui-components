@@ -1,0 +1,25 @@
+@import "~@grail/lib/constants/colors.scss";
+
+.readonlyTextField {
+	display: inline-block;
+	padding: 7px 0;
+	line-height: 19px;
+	font-size: 16px;
+	height: 32px;
+	.icon {
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+	&.success, &.fail {
+		width: 100%;
+		padding-left: 5px;
+	}
+	&.success {
+		background-color: lighten($grail-green-color, 50%);
+		color: $grail-green-color;
+	}
+	&.fail {
+		background-color: lighten($grail-red-color, 40%);
+		color: $grail-red-color;
+	}
+}

@@ -1,0 +1,128 @@
+{
+  "name": "@grail/components",
+  "version": "0.1.0",
+  "scripts": {
+    "build:styleguide": "yarn styleguide:build",
+    "build": "mkdir -p dist/ && NODE_ENV=production babel ./components --out-dir ./dist/components --delete-dir-on-start --copy-files",
+    "cover": "open coverage/lcov-report/index.html",
+    "flow": "flow",
+    "lint": "eslint --ext .js --ext .jsx components/ cypress/",
+    "lint-fix": "yarn lint --fix",
+    "format": "prettier --write \"components/**/*.{js,jsx}\" \"cypress/**/*.js\" \"*.js\" && yarn lint-fix",
+    "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
+    "precommit": "lint-staged",
+    "start": "yarn styleguide",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "test": "jest --watch",
+    "test:staged": "jest --coverage && echo --findRelatedTests does not work properly with coverage",
+    "test-all": "jest --coverage",
+    "test-e2e": "cypress open",
+    "test-e2e:ci": "cypress run --config numTestsKeptInMemory=0"
+  },
+  "dependencies": {
+    "@grail/lib": ">=0.0.0",
+    "@material-ui/core": "^1.2.1",
+    "@material-ui/icons": "^1.1.0",
+    "autosuggest-highlight": "^3.1.1",
+    "classnames": "^2.2.6",
+    "dom-helpers": "^3.3.1",
+    "jest-mock-console": "^0.3.5",
+    "material-ui-pickers": "^1.0.0-rc.9",
+    "path-to-regexp": "^2.2.1",
+    "react": "^16.4.0",
+    "react-autosuggest": "^9.3.4",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-flow": "^7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "8.2.1",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^8.0.0-beta.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "cypress": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.9.1",
+    "flow-bin": "^0.74.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.1.0",
+    "jest-dom": "^1.3.1",
+    "lint-staged": "^7.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.13.5",
+    "react-styleguidist": "^7.0.17",
+    "react-testing-library": "^3.1.4",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.0"
+  },
+  "lint-staged": {
+    "concurrent": false,
+    "linters": {
+      "components/**/*.{js,jsx}": [
+        "prettier --write",
+        "eslint --rule flowtype/require-valid-file-annotation:2 --fix",
+        "git add"
+      ],
+      "cypress/**/*.{js,jsx}": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+      ],
+      "*.{json,md}": [
+        "prettier --write",
+        "git add"
+      ],
+      "*.config.js": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+      ]
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "components/**/*.{js,jsx}",
+      "!components/**/index.js",
+      "!components/typeahead/*.{js,jsx}"
+    ],
+    "coverageThreshold": {
+      "components/**/*.{js,jsx}": {
+        "lines": 25
+      }
+    },
+    "moduleNameMapper": {
+      "^@grail/(.*)$": "<rootDir>/../$1",
+      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/cypress/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@grail/.*)/)"
+    ],
+    "transform": {
+      ".jsx?$": "babel-jest"
+    },
+    "setupTestFrameworkScriptFile": "jest-mock-console/dist/setupTestFramework.js"
+  },
+  "workspaces": {
+    "nohoist": [
+      "react-styleguidist"
+    ]
+  },
+  "private": true
+}

@@ -1,0 +1,32 @@
+.container {
+	flex-grow: 1;
+	position: relative;
+
+	.suggestionsContainerOpen {
+		position: absolute;
+		z-index: 1;
+		margin-top: 0;
+		max-height: 200px;
+		left: 0;
+		right: 0;
+		overflow: scroll;
+
+		.suggestion {
+			display: block;
+		}
+
+		.suggestionsList {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.highlighted {
+			font-weight: 300;
+		}
+
+		.notHighlighted {
+			font-weight: 500;
+		}
+	}
+}

@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render date input 1`] = `
+<div>
+   
+  <div
+    class="datePicker"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils-DateTextField--input-1"
+      >
+        <input
+          aria-invalid="false"
+          aria-required="false"
+          class="MuiInput-input"
+          placeholder="Test Date Input"
+          type="text"
+          value="2017-03-07"
+        />
+        <div
+          class="MuiInputAdornment-root MuiInputAdornment-positionEnd adornmentWidth"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <span
+                aria-hidden="true"
+                class="material-icons MuiIcon-root"
+              >
+                 
+                event
+                 
+              </span>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   
+</div>
+`;
+
+exports[`render date input when readOnly is true 1`] = `
+<div>
+   
+  <span
+    class="readonlyTextField "
+    data-testid="readonly-text-field"
+  >
+    2017-03-07
+  </span>
+   
+</div>
+`;
+
+exports[`render date input when readOnly is true showing - as empty value 1`] = `
+<div>
+   
+  <span
+    class="readonlyTextField "
+    data-testid="readonly-text-field"
+  >
+    -
+  </span>
+   
+</div>
+`;
+
+exports[`render date input when readOnly is true showing empty value 1`] = `
+<div>
+   
+  <span
+    class="readonlyTextField "
+    data-testid="readonly-text-field"
+  >
+    
+  </span>
+   
+</div>
+`;

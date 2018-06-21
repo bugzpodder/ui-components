@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "scripts": {
     "build:styleguide": "yarn styleguide:build",
-    "build": "mkdir -p dist/ && NODE_ENV=production babel ./components --out-dir ./dist/components --delete-dir-on-start --copy-files",
+    "build": "NODE_ENV=production babel ./src --out-dir ./dist --delete-dir-on-start --copy-files",
     "cover": "open coverage/lcov-report/index.html",
     "flow": "flow",
-    "lint": "eslint --ext .js --ext .jsx components/ cypress/",
+    "lint": "eslint --ext .js --ext .jsx src/ cypress/",
     "lint-fix": "yarn lint --fix",
-    "format": "prettier --write \"components/**/*.{js,jsx}\" \"cypress/**/*.js\" \"*.js\" && yarn lint-fix",
+    "format": "prettier --write \"src/**/*.{js,jsx}\" \"cypress/**/*.js\" \"*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
     "precommit": "lint-staged",
     "start": "yarn styleguide",
@@ -70,7 +70,7 @@
   "lint-staged": {
     "concurrent": false,
     "linters": {
-      "components/**/*.{js,jsx}": [
+      "src/**/*.{js,jsx}": [
         "prettier --write",
         "eslint --rule flowtype/require-valid-file-annotation:2 --fix",
         "git add"
@@ -93,12 +93,11 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "components/**/*.{js,jsx}",
-      "!components/**/index.js",
-      "!components/typeahead/*.{js,jsx}"
+      "src/**/*.{js,jsx}",
+      "!src/**/index.js"
     ],
     "coverageThreshold": {
-      "components/**/*.{js,jsx}": {
+      "src/**/*.{js,jsx}": {
         "lines": 25
       }
     },
@@ -124,5 +123,6 @@
       "react-styleguidist"
     ]
   },
+  "main": "src/index.js",
   "private": true
 }

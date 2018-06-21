@@ -4,8 +4,8 @@
 
 The `@grail/components` module holds common React components that are used between GRAIL applications
 
-Components can be generally imported from `@grail/components/components`, or they can be imported from specific
-folders for leaner builds (ie. `@grail/components/components/date`).
+Components can be generally imported from `@grail/components`, or they can be imported from specific
+folders for leaner builds (ie. `@grail/components/date`).
 
 ## Contributing
 

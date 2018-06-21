@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render error common switch 1`] = `
+<div>
+  <div>
+    <div
+      class="commonSwitch"
+    >
+      <label
+        class="MuiFormControlLabel-root controlLabel"
+      >
+        <span
+          class="MuiSwitch-root"
+        >
+          <span
+            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary error MuiSwitchBase-checked MuiSwitch-checked"
+            data-testid="common-switch"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <span
+                class="MuiSwitch-icon MuiSwitch-iconChecked error"
+              />
+              <input
+                class="MuiSwitchBase-input"
+                type="checkbox"
+                value=""
+              />
+            </span>
+          </span>
+          <span
+            class="MuiSwitch-bar"
+          />
+        </span>
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label error"
+        />
+      </label>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render primary common switch 1`] = `
+<div>
+  <div>
+    <div
+      class="commonSwitch"
+    >
+      <label
+        class="MuiFormControlLabel-root controlLabel"
+      >
+        <span
+          class="MuiSwitch-root"
+        >
+          <span
+            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+            data-testid="common-switch"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <span
+                class="MuiSwitch-icon"
+              />
+              <input
+                class="MuiSwitchBase-input"
+                type="checkbox"
+                value="test"
+              />
+            </span>
+          </span>
+          <span
+            class="MuiSwitch-bar"
+          />
+        </span>
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+        >
+          Primary
+        </span>
+      </label>
+      <p
+        class="MuiFormHelperText-root switchHelperText"
+      >
+        test switch
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render secondary common switch 1`] = `
+<div>
+  <div>
+    <div
+      class="commonSwitch"
+    >
+      <label
+        class="MuiFormControlLabel-root controlLabel"
+      >
+        <span
+          class="MuiSwitch-root"
+        >
+          <span
+            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary"
+            data-testid="common-switch"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <span
+                class="MuiSwitch-icon"
+              />
+              <input
+                class="MuiSwitchBase-input"
+                type="checkbox"
+                value=""
+              />
+            </span>
+          </span>
+          <span
+            class="MuiSwitch-bar"
+          />
+        </span>
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+        />
+      </label>
+      
+    </div>
+  </div>
+</div>
+`;

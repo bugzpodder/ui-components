@@ -4,6 +4,8 @@ import Input from "@material-ui/core/Input";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import { ReadOnlyTextField } from "@grail/components";
+import FormControl from "@material-ui/core/FormControl";
+import FormHelperText from "@material-ui/core/FormHelperText";
 
 type SelectorItem = { key: string, text: string };
 type SelectorData = Array<SelectorItem>;
@@ -26,6 +28,10 @@ type SelectorProps = {
 	data: SelectorData,
 	/** Name of the selector. */
 	name: string,
+	/** When `true`, displays selector in error state */
+	showError?: boolean,
+	/** Helper text displayed under the selector */
+	helperText?: string,
 } & OptionalSelectorProps &
 	ElementConfig<typeof Select>;
 
@@ -33,6 +39,8 @@ type SelectorProps = {
 export const Selector = (props: SelectorProps) => {
 	const {
 		onSelect,
+		showError = false,
+		helperText = "",
 		name,
 		data,
 		value,
@@ -60,25 +68,28 @@ export const Selector = (props: SelectorProps) => {
 			return <ReadOnlyTextField>{displayText || defaultDisplayText}</ReadOnlyTextField>;
 		}
 		return (
-			<Select
-				value={value}
-				onChange={event => onSelect && onSelect(event.target.value)}
-				displayEmpty
-				input={<Input
-					data-testid="selector-value"
-					name={name}
-					id={id} />}
-				{...selectProps}
-			>
-				{!displayText && (
-					<MenuItem
-						value=""
-						disabled={true}>
-						{defaultDisplayText}
-					</MenuItem>
-				)}
-				{menuItems}
-			</Select>
+			<FormControl error={showError}>
+				<Select
+					value={value}
+					onChange={event => onSelect && onSelect(event.target.value)}
+					displayEmpty
+					input={<Input
+						data-testid="selector-value"
+						name={name}
+						id={id} />}
+					{...selectProps}
+				>
+					{!displayText && (
+						<MenuItem
+							value=""
+							disabled={true}>
+							{defaultDisplayText}
+						</MenuItem>
+					)}
+					{menuItems}
+				</Select>
+				<FormHelperText>{helperText}</FormHelperText>
+			</FormControl>
 		);
 	}
 

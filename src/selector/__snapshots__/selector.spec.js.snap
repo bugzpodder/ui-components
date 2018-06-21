@@ -3,38 +3,49 @@
 exports[`render selector 1`] = `
 <div>
   <div
-    class="MuiInput-root MuiInput-underline"
-    data-testid="selector-value"
+    class="MuiFormControl-root"
   >
     <div
-      class="MuiSelect-root"
+      class="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+      data-testid="selector-value"
     >
       <div
-        aria-haspopup="true"
-        aria-pressed="false"
-        class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
-        role="button"
-        tabindex="0"
+        class="MuiSelect-root"
       >
-        test text 1
-      </div>
-      <input
-        id="selector"
-        name="test-selector"
-        type="hidden"
-        value="testKey1"
-      />
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiSelect-icon"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M7 10l5 5 5-5z"
+        <div
+          aria-haspopup="true"
+          aria-pressed="false"
+          class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+          role="button"
+          tabindex="0"
+        >
+          test text 1
+        </div>
+        <input
+          aria-invalid="true"
+          aria-required="false"
+          id="selector"
+          name="test-selector"
+          type="hidden"
+          value="testKey1"
         />
-      </svg>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
     </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-error"
+    >
+      test helper text
+    </p>
   </div>
 </div>
 `;
@@ -64,38 +75,47 @@ exports[`render selector with readonly 1`] = `
 exports[`render selector without selected value 1`] = `
 <div>
   <div
-    class="MuiInput-root MuiInput-underline"
-    data-testid="selector-value"
+    class="MuiFormControl-root"
   >
     <div
-      class="MuiSelect-root"
+      class="MuiInput-root MuiInput-formControl MuiInput-underline"
+      data-testid="selector-value"
     >
       <div
-        aria-haspopup="true"
-        aria-pressed="false"
-        class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
-        role="button"
-        tabindex="0"
+        class="MuiSelect-root"
       >
-        Select
-      </div>
-      <input
-        id="selector"
-        name="test-selector"
-        type="hidden"
-        value=""
-      />
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiSelect-icon"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M7 10l5 5 5-5z"
+        <div
+          aria-haspopup="true"
+          aria-pressed="false"
+          class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+          role="button"
+          tabindex="0"
+        >
+          Select
+        </div>
+        <input
+          aria-invalid="false"
+          aria-required="false"
+          id="selector"
+          name="test-selector"
+          type="hidden"
+          value=""
         />
-      </svg>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
     </div>
+    <p
+      class="MuiFormHelperText-root"
+    />
   </div>
 </div>
 `;

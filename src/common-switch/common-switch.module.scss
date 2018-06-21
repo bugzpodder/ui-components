@@ -1,0 +1,19 @@
+@import "~@grail/lib/constants/colors.scss";
+
+.commonSwitch {
+	display: inline-block;
+  	position: relative;
+
+  .controlLabel {
+    margin: 0;
+  }
+
+  .switchHelperText {
+    margin-top: -7px;
+    position: absolute;
+  }
+
+  .error {
+    color: $grail-red-color;
+  }
+}

@@ -16,7 +16,10 @@ test("render selector", async () => {
 			<Selector
 				name="test-selector"
 				data={selectorData}
-				value="testKey1" />
+				showError={true}
+				helperText="test helper text"
+				value="testKey1"
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("selector-value")).toHaveTextContent("test text 1");

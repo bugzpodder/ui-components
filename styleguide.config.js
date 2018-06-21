@@ -9,7 +9,13 @@ module.exports = {
 	showCode: true,
 	showUsage: true,
 	skipComponentsWithoutExample: true,
-
+	ignore: [
+		"components/utils",
+		"**/__tests__/**",
+		"**/*.test.{js,jsx,ts,tsx}",
+		"**/*.spec.{js,jsx,ts,tsx}",
+		"**/*.d.ts",
+	],
 	updateExample: function(props, exampleFilePath) {
 		if (typeof props.settings.file === "string") {
 			const {

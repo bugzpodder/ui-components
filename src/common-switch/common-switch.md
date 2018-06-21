@@ -1,0 +1,62 @@
+### Example
+
+```js
+const ExampleBlock = require("@grail/components").ExampleBlock;
+class TestCommonSwitch extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			checkedA: false,
+			checkedB: false,
+			showError: false,
+			value: "",
+		};
+		this.handleChange = this.handleChange.bind(this);
+		this.handleError = this.handleError.bind(this);
+	}
+
+	handleError(checked) {
+		this.setState({ showError: checked });
+	}
+
+	handleChange(checked, val) {
+		const value = checked ? val : "";
+		if (val === "first") {
+			this.setState({ checkedA: checked, checkedB: false, value });
+			return;
+		}
+		this.setState({ checkedA: false, checkedB: checked, value });
+	}
+
+	render() {
+		const { checkedA, checkedB, showError } = this.state;
+		return (
+			<div>
+				<CommonSwitch label="Primary" color="primary" onChange={() => {}} />
+
+				<CommonSwitch label="Secondary" value="secondary" onChange={() => {}} />
+
+				<CommonSwitch
+					label="Error"
+					value="error"
+					showError={showError}
+					helperText="some helper text"
+					onChange={this.handleError}
+				/>
+
+				<CommonSwitch label="Disabled" isEnabled={false} onChange={this.handleError} />
+				<br />
+				<br />
+
+				<CommonSwitch color="primary" value="first" isSelected={checkedA} onChange={this.handleChange} />
+
+				<CommonSwitch value="second" isSelected={checkedB} onChange={this.handleChange} />
+
+				<ExampleBlock strongHeader="Switch value" content={this.state.value} />
+			</div>
+		);
+	}
+}
+
+<TestCommonSwitch />;
+```

@@ -32,7 +32,7 @@ type Props = {
 export const CommonDialog = (props: Props) => {
 	const { actions, children, hideModal, isVisible, title } = props;
 	const actionToButton = (action: CommonDialogActions) => {
-		const { id, isEnabled = true, name, callback, color, variant, ...props } = action;
+		const { id, isEnabled = true, name, callback, color, variant, ...buttonProps } = action;
 		return (
 			<Button
 				data-id={id}
@@ -43,7 +43,7 @@ export const CommonDialog = (props: Props) => {
 				onClick={callback}
 				color={color || "primary"}
 				variant={variant || "raised"}
-				{...props}
+				{...buttonProps}
 			>
 				{name}
 			</Button>

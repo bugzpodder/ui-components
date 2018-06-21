@@ -1,6 +1,8 @@
 ### Example
 
 ```js
+const ExampleBlock = require("@grail/components").ExampleBlock;
+
 class TestPagedTable extends React.Component {
 	constructor(props) {
 		super(props);
@@ -105,19 +107,11 @@ class TestPagedTable extends React.Component {
 					selectedRows={tableOptions.selectedRowIds}
 					onSort={this.handleSort}
 				/>
-				<div style={{ margin: "1rem 0" }}>
-					<h3 style={{ fontFamily: "monospace" }} />
-					<pre
-						style={{
-							background: "#f6f8fa",
-							fontSize: "1rem",
-							padding: ".5rem",
-						}}
-					>
-						<strong>Selected Rows</strong> (using idKey) ={" "}
-						{JSON.stringify(this.state.tableOptions.selectedRowIds, null, 2)}
-					</pre>
-				</div>
+				<ExampleBlock
+					strongHeader="Selected Rows"
+					helperText=" (using idKey) "
+					content={this.state.tableOptions.selectedRowIds}
+				/>
 			</div>
 		);
 	}

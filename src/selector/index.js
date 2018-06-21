@@ -1,2 +1,2 @@
-//@flow
+// @flow
 export { Selector } from "./selector";

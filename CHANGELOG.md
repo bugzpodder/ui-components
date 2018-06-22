@@ -1,8 +1,8 @@
 # @grail/components Changelog
 
-## 0.1.1
+## 0.2.0
 
-1.  Remove unnecessary polyfill.
+1.  Use @babel/plugin-transform-runtime.
 2.  Renamed package to @grail/components.
 
 ## 0.1.0

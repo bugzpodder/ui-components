@@ -5,10 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
 	components: "src/**/*.jsx",
 	pagePerSection: true,
-	require: [
-		path.join(__dirname, "styleguide/setup.js"),
-		path.join(__dirname, "..", "lims/client/public/material/material.css"),
-	],
+	require: [path.join(__dirname, "..", "lims/client/public/material/material.css")],
 	showCode: true,
 	showUsage: true,
 	skipComponentsWithoutExample: true,

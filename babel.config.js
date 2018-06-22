@@ -1,4 +1,4 @@
 module.exports = {
-	presets: ["@babel/preset-env", "@babel/preset-flow", "@babel/preset-react"],
-	plugins: ["transform-class-properties"],
+	presets: ["@babel/env", "@babel/flow", "@babel/react"],
+	plugins: ["@babel/proposal-class-properties", ["@babel/transform-runtime", { polyfill: false, useBuiltIns: true }]],
 };

@@ -1,25 +1,25 @@
 ## Example
 
+#### Default
+
 ```js
-#### Default ####
 <Alert color="success" message="This is successful!" />
-<br/>
+<br />
 <Alert color="info" message="This is some info!" />
-<br/>
+<br />
 <Alert color="warning" message="This is a warning!" />
-<br/>
+<br />
 <Alert message="This is an error!" />
-<br/>
+```
 
+#### Flat
 
-
-#### Flat ####
+```js
 <Alert variant="flat" color="success" message="This is successful!" />
-<br/>
+<br />
 <Alert variant="flat" color="info" message="This is some info!" />
-<br/>
+<br />
 <Alert variant="flat" color="warning" message="This is a warning!" />
-<br/>
+<br />
 <Alert variant="flat" message="This is an error!" />
-<br/>
 ```

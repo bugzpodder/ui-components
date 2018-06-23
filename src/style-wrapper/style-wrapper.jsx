@@ -2,7 +2,7 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
 import React, { type Node } from "react";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { grailGrayLightest, grailPurpleDark, grailPurpleMed, grailRed, grailTan, white } from "@grail/lib/constants";
+import { grailGrayLighter, grailPurpleDark, grailPurpleMed, grailRed, grailTan, white } from "@grail/lib/constants";
 
 type Props = {
 	children: Node,
@@ -18,11 +18,11 @@ const customTheme = createMuiTheme({
 		},
 		secondary: {
 			main: grailTan,
-			contrastText: grailGrayLightest,
+			contrastText: grailGrayLighter,
 		},
 		error: {
 			main: grailRed,
-			contrastText: grailGrayLightest,
+			contrastText: grailGrayLighter,
 		},
 	},
 	overrides: {

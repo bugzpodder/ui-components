@@ -40,7 +40,7 @@ export const TimelineGraph = (props: Props) => {
 	const rectYMargin = 20;
 	const rectXOffset = 20;
 	const rectWidth = isWideCard ? 240 : 160;
-	const rowHeight = isTallCard ? 100 : 60;
+	const rowHeight = isTallCard ? 120 : 80;
 	const timelinePathFinialSize = 6;
 	return (
 		<div className={`${styles.timelineGraph} card-width-${cardWidth} card-height-${cardHeight}`}>
@@ -123,38 +123,40 @@ export const TimelineGraph = (props: Props) => {
 									className={styles.timelineBlock}
 									filter="url(#drop-shadow)"
 								/>
-								{columns.map((column, index) => {
-									return (
-										<g
-											key={index}
-											data-column-index={index}
-											transform={`translate(${(index * rectWidth) / 3 + 10}, 0)`}
-										>
-											{column.map((field, index) => {
-												const yOffset = rectHeight / (1 + column.length);
-												const yMargin = 8 * (index - (column.length - 1) / 2);
-												return (
-													<text
-														key={index}
-														data-field-index={index}
-														className={styles.text}
-														y={yOffset * (index + 1) + yMargin}
-													>
-														{field}
-													</text>
-												);
-											})}
-										</g>
-									);
-								})}
-								{dateFormat && (
-									<text
-										className={styles.date}
-										x={rectWidth}
-										y={rectHeight / 2}>
-										{`${moment(date).format(dateFormat)}`}
-									</text>
-								)}
+								<g className={styles.timelineBlockContent}>
+									{columns.map((column, index) => {
+										return (
+											<g
+												key={index}
+												data-column-index={index}
+												transform={`translate(${(index * rectWidth) / 3 + 10}, 0)`}
+											>
+												{column.map((field, index) => {
+													const yOffset = rectHeight / (1 + column.length);
+													const yMargin = 16 * (index - (column.length - 1) / 2);
+													return (
+														<text
+															key={index}
+															data-field-index={index}
+															className={styles.text}
+															y={yOffset * (index + 1) + yMargin}
+														>
+															{field}
+														</text>
+													);
+												})}
+											</g>
+										);
+									})}
+									{dateFormat && (
+										<text
+											className={styles.date}
+											x={rectWidth}
+											y={rectHeight / 2}>
+											{`${moment(date).format(dateFormat)}`}
+										</text>
+									)}
+								</g>
 							</g>
 						</g>
 					);

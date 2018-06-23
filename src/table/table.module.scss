@@ -9,7 +9,7 @@
 
 .tableContainer {
 	position: relative;
-	overflow-x: scroll;
+	overflow-x: auto;
 
 	.tableCard {
 		margin: 20px;
@@ -44,7 +44,7 @@
 		}
 
 		.tableContent {
-			overflow-x: scroll;
+			overflow-x: auto;
 		}
 	}
 

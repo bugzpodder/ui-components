@@ -7,7 +7,7 @@ exports[`render and select timeline graph with multiple rows 1`] = `
   >
     <svg
       class="timelineSvg"
-      height="240"
+      height="300"
     >
       <defs>
         <filter
@@ -49,10 +49,10 @@ exports[`render and select timeline graph with multiple rows 1`] = `
           class="timelinePath"
           d="
 									M0,-10
-									l0,40
+									l0,50
 									l20,0
 									m-20,0
-									l0,40
+									l0,50
 								"
         />
         <circle
@@ -68,30 +68,34 @@ exports[`render and select timeline graph with multiple rows 1`] = `
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="40"
+            height="60"
             width="240"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="20"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Row 2, Column 0, Field 0
+              <text
+                class="text"
+                data-field-index="0"
+                y="30"
+              >
+                Row 2, Column 0, Field 0
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
             </text>
           </g>
-          <text
-            class="date"
-            x="240"
-            y="20"
-          >
-            2018-04-20
-          </text>
         </g>
       </g>
       <g
@@ -102,63 +106,67 @@ exports[`render and select timeline graph with multiple rows 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,50
-									l0,40
+									M0,70
+									l0,50
 									l20,0
 									m-20,0
-									l0,40
+									l0,50
 								"
         />
         <g
           class="isSelectable card-container"
-          transform="translate(20, 70)"
+          transform="translate(20, 90)"
         >
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="40"
+            height="60"
             width="240"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="20"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Row 1, Column 0, Field 0
+              <text
+                class="text"
+                data-field-index="0"
+                y="30"
+              >
+                Row 1, Column 0, Field 0
+              </text>
+            </g>
+            <g
+              data-column-index="1"
+              transform="translate(90, 0)"
+            >
+              <text
+                class="text"
+                data-field-index="0"
+                y="12"
+              >
+                Row 1, Column 1, Field 0
+              </text>
+              <text
+                class="text"
+                data-field-index="1"
+                y="48"
+              >
+                Row 1, Column 1, Field 1
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
             </text>
           </g>
-          <g
-            data-column-index="1"
-            transform="translate(90, 0)"
-          >
-            <text
-              class="text"
-              data-field-index="0"
-              y="9.333333333333334"
-            >
-              Row 1, Column 1, Field 0
-            </text>
-            <text
-              class="text"
-              data-field-index="1"
-              y="30.666666666666668"
-            >
-              Row 1, Column 1, Field 1
-            </text>
-          </g>
-          <text
-            class="date"
-            x="240"
-            y="20"
-          >
-            2018-04-20
-          </text>
         </g>
       </g>
       <g
@@ -169,11 +177,11 @@ exports[`render and select timeline graph with multiple rows 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,110
-									l0,40
+									M0,150
+									l0,50
 									l20,0
 									m-20,0
-									l0,40
+									l0,50
 								"
         />
         <rect
@@ -181,39 +189,43 @@ exports[`render and select timeline graph with multiple rows 1`] = `
           height="12"
           width="12"
           x="-6"
-          y="184"
+          y="244"
         />
         <g
           class="isSelectable card-container"
-          transform="translate(20, 130)"
+          transform="translate(20, 170)"
         >
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="40"
+            height="60"
             width="240"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="20"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Row 0, Column 0, Field 0
+              <text
+                class="text"
+                data-field-index="0"
+                y="30"
+              >
+                Row 0, Column 0, Field 0
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
             </text>
           </g>
-          <text
-            class="date"
-            x="240"
-            y="20"
-          >
-            2018-04-20
-          </text>
         </g>
       </g>
     </svg>
@@ -228,7 +240,7 @@ exports[`render timeline graph with date 1`] = `
   >
     <svg
       class="timelineSvg"
-      height="120"
+      height="140"
     >
       <defs>
         <filter
@@ -270,10 +282,10 @@ exports[`render timeline graph with date 1`] = `
           class="timelinePath"
           d="
 									M0,-10
-									l0,40
+									l0,50
 									l20,0
 									m-20,0
-									l0,40
+									l0,50
 								"
         />
         <circle
@@ -287,7 +299,7 @@ exports[`render timeline graph with date 1`] = `
           height="12"
           width="12"
           x="-6"
-          y="64"
+          y="84"
         />
         <g
           class=""
@@ -296,30 +308,34 @@ exports[`render timeline graph with date 1`] = `
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="40"
+            height="60"
             width="240"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="20"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Test column
+              <text
+                class="text"
+                data-field-index="0"
+                y="30"
+              >
+                Test column
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
             </text>
           </g>
-          <text
-            class="date"
-            x="240"
-            y="20"
-          >
-            2018-04-20
-          </text>
         </g>
       </g>
     </svg>
@@ -334,7 +350,7 @@ exports[`render timeline graph with multiple columns 1`] = `
   >
     <svg
       class="timelineSvg"
-      height="120"
+      height="140"
     >
       <defs>
         <filter
@@ -376,10 +392,10 @@ exports[`render timeline graph with multiple columns 1`] = `
           class="timelinePath"
           d="
 									M0,-10
-									l0,40
+									l0,50
 									l20,0
 									m-20,0
-									l0,40
+									l0,50
 								"
         />
         <circle
@@ -393,7 +409,7 @@ exports[`render timeline graph with multiple columns 1`] = `
           height="12"
           width="12"
           x="-6"
-          y="64"
+          y="84"
         />
         <g
           class=""
@@ -402,49 +418,53 @@ exports[`render timeline graph with multiple columns 1`] = `
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="40"
+            height="60"
             width="240"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="20"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Column 0, Field 0
+              <text
+                class="text"
+                data-field-index="0"
+                y="30"
+              >
+                Column 0, Field 0
+              </text>
+            </g>
+            <g
+              data-column-index="1"
+              transform="translate(90, 0)"
+            >
+              <text
+                class="text"
+                data-field-index="0"
+                y="12"
+              >
+                Column 1, Field 0
+              </text>
+              <text
+                class="text"
+                data-field-index="1"
+                y="48"
+              >
+                Column 1, Field 1
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
             </text>
           </g>
-          <g
-            data-column-index="1"
-            transform="translate(90, 0)"
-          >
-            <text
-              class="text"
-              data-field-index="0"
-              y="9.333333333333334"
-            >
-              Column 1, Field 0
-            </text>
-            <text
-              class="text"
-              data-field-index="1"
-              y="30.666666666666668"
-            >
-              Column 1, Field 1
-            </text>
-          </g>
-          <text
-            class="date"
-            x="240"
-            y="20"
-          >
-            2018-04-20
-          </text>
         </g>
       </g>
     </svg>
@@ -459,7 +479,7 @@ exports[`render timeline graph with narrow cards 1`] = `
   >
     <svg
       class="timelineSvg"
-      height="120"
+      height="140"
     >
       <defs>
         <filter
@@ -501,10 +521,10 @@ exports[`render timeline graph with narrow cards 1`] = `
           class="timelinePath"
           d="
 									M0,-10
-									l0,40
+									l0,50
 									l20,0
 									m-20,0
-									l0,40
+									l0,50
 								"
         />
         <circle
@@ -518,7 +538,7 @@ exports[`render timeline graph with narrow cards 1`] = `
           height="12"
           width="12"
           x="-6"
-          y="64"
+          y="84"
         />
         <g
           class=""
@@ -527,30 +547,34 @@ exports[`render timeline graph with narrow cards 1`] = `
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="40"
+            height="60"
             width="160"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="20"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Test column
+              <text
+                class="text"
+                data-field-index="0"
+                y="30"
+              >
+                Test column
+              </text>
+            </g>
+            <text
+              class="date"
+              x="160"
+              y="30"
+            >
+              2018-04-20
             </text>
           </g>
-          <text
-            class="date"
-            x="160"
-            y="20"
-          >
-            2018-04-20
-          </text>
         </g>
       </g>
     </svg>
@@ -565,7 +589,7 @@ exports[`render timeline graph with tall cards 1`] = `
   >
     <svg
       class="timelineSvg"
-      height="160"
+      height="180"
     >
       <defs>
         <filter
@@ -607,10 +631,10 @@ exports[`render timeline graph with tall cards 1`] = `
           class="timelinePath"
           d="
 									M0,-10
-									l0,60
+									l0,70
 									l20,0
 									m-20,0
-									l0,60
+									l0,70
 								"
         />
         <circle
@@ -624,7 +648,7 @@ exports[`render timeline graph with tall cards 1`] = `
           height="12"
           width="12"
           x="-6"
-          y="104"
+          y="124"
         />
         <g
           class=""
@@ -633,30 +657,34 @@ exports[`render timeline graph with tall cards 1`] = `
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="80"
+            height="100"
             width="240"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="40"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Test column
+              <text
+                class="text"
+                data-field-index="0"
+                y="50"
+              >
+                Test column
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="50"
+            >
+              2018-04-20
             </text>
           </g>
-          <text
-            class="date"
-            x="240"
-            y="40"
-          >
-            2018-04-20
-          </text>
         </g>
       </g>
     </svg>
@@ -671,7 +699,7 @@ exports[`render timeline graph without date 1`] = `
   >
     <svg
       class="timelineSvg"
-      height="120"
+      height="140"
     >
       <defs>
         <filter
@@ -713,10 +741,10 @@ exports[`render timeline graph without date 1`] = `
           class="timelinePath"
           d="
 									M0,-10
-									l0,40
+									l0,50
 									l20,0
 									m-20,0
-									l0,40
+									l0,50
 								"
         />
         <circle
@@ -730,7 +758,7 @@ exports[`render timeline graph without date 1`] = `
           height="12"
           width="12"
           x="-6"
-          y="64"
+          y="84"
         />
         <g
           class=""
@@ -739,22 +767,26 @@ exports[`render timeline graph without date 1`] = `
           <rect
             class="timelineBlock"
             filter="url(#drop-shadow)"
-            height="40"
+            height="60"
             width="240"
             x="0"
             y="0"
           />
           <g
-            data-column-index="0"
-            transform="translate(10, 0)"
+            class="timelineBlockContent"
           >
-            <text
-              class="text"
-              data-field-index="0"
-              y="20"
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
             >
-              Test column
-            </text>
+              <text
+                class="text"
+                data-field-index="0"
+                y="30"
+              >
+                Test column
+              </text>
+            </g>
           </g>
         </g>
       </g>

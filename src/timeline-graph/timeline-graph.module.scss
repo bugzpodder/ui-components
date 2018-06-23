@@ -23,15 +23,21 @@ $timeline-path-color: $grail-gray-dark-color;
 		}
 		.isSelectable {
 			cursor: pointer;
+			.timelineBlock:hover {
+				fill: lighten($grail-purple-light-color, 10%);
+			}
 		}
-		text {
-			alignment-baseline: middle;
-		}
-		.date {
-			fill: $grail-gray-medium-color;
-			font-size: 0.75rem;
-			text-anchor: end;
-			transform: translateX(-10px);
+		.timelineBlockContent {
+			pointer-events: none;
+			text {
+				alignment-baseline: middle;
+			}
+			.date {
+				fill: $grail-gray-medium-color;
+				font-size: 0.75rem;
+				text-anchor: end;
+				transform: translateX(-10px);
+			}
 		}
 		.timelinePathFinial {
 			fill: $timeline-path-color;

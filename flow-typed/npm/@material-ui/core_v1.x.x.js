@@ -890,8 +890,7 @@ declare module "@material-ui/core/IconButton/IconButton" {
     | "default"
     | "inherit"
     | "primary"
-    | "contrast"
-    | "accent";
+		| "secondary";
 
   declare module.exports: React$ComponentType<{
     buttonRef?: Function,

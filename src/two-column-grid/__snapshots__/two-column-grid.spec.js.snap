@@ -32,7 +32,11 @@ exports[`render two column grid 1`] = `
         class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
         data-testid="two-column-row-label"
       >
-        1
+        <div
+          class="rowLabel"
+        >
+          1
+        </div>
       </div>
       <div
         class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"

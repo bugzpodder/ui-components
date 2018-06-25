@@ -1,5 +1,5 @@
 // @flow
-import React, { Fragment } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import styles from "./two-column-row.module.scss";
@@ -31,7 +31,7 @@ export const TwoColumnRow = (props: Props) => {
 				{typeof label === "string" ? (
 					<Typography className={styles.rowLabel}>{label}</Typography>
 				) : (
-					<Fragment>{label}</Fragment>
+					<div className={styles.rowLabel}>{label}</div>
 				)}
 			</Grid>
 			<Grid

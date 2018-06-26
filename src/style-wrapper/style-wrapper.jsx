@@ -2,7 +2,7 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
 import React, { type Node } from "react";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { grailGrayLighter, grailPurpleDark, grailPurpleMed, grailRed, grailTan, white } from "@grail/lib/constants";
+import { grailGrayLighter, grailPurpleDark, grailPurpleMed, grailRed, grailTan, white } from "@grail/lib";
 
 type Props = {
 	children: Node,

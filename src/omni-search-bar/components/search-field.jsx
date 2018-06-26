@@ -1,8 +1,7 @@
 // @flow
 import React from "react";
 import moment from "moment";
-import { DATETIME_SEARCH_TYPE } from "@grail/lib/utils";
-import { DATE_FORMAT } from "@grail/lib/constants";
+import { DATE_FORMAT, DATETIME_SEARCH_TYPE } from "@grail/lib";
 import { DateInput } from "@grail/components";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";

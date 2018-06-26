@@ -3,7 +3,7 @@ import React from "react";
 import { renderIntoDocument, cleanup } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import { MemoryRouter } from "react-router-dom";
-import { LIMS, EDC, PIPELINE } from "@grail/lib/constants";
+import { LIMS, EDC, PIPELINE } from "@grail/lib";
 import Typography from "@material-ui/core/Typography";
 import { createGenerateClassName } from "@material-ui/core/styles";
 import JssProvider from "react-jss/lib/JssProvider";

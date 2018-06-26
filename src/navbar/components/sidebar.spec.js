@@ -4,7 +4,7 @@ import { renderIntoDocument, cleanup, Simulate } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import { Link, MemoryRouter } from "react-router-dom";
 import { bindElementToQueries } from "dom-testing-library";
-import { LIMS, EDC, PIPELINE } from "@grail/lib/constants";
+import { LIMS, EDC, PIPELINE } from "@grail/lib";
 import { createGenerateClassName } from "@material-ui/core/styles";
 import JssProvider from "react-jss/lib/JssProvider";
 import { Sidebar } from "./sidebar";

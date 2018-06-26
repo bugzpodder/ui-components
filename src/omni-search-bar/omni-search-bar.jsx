@@ -10,7 +10,7 @@ import {
 	getQuery,
 	updateQuery,
 	isValueValid,
-} from "@grail/lib/utils";
+} from "@grail/lib";
 import { OmniField } from "./components/omni-field";
 import { OmniDropdown } from "./components/omni-dropdown";
 import styles from "./omni.module.scss";

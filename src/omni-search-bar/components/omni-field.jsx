@@ -6,7 +6,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import TextField from "@material-ui/core/TextField";
-import { OMNI_KEY } from "@grail/lib/utils";
+import { OMNI_KEY } from "@grail/lib";
 import classNames from "classnames";
 import styles from "../omni.module.scss";
 

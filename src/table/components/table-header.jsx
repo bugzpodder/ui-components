@@ -4,7 +4,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
-import { mapBy } from "@grail/lib/utils/array-utils";
+import { mapBy } from "@grail/lib";
 import classNames from "classnames";
 import styles from "../table.module.scss";
 

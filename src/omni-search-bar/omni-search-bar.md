@@ -7,7 +7,7 @@ const {
 	DATETIME_SEARCH_TYPE,
 	FULL_TEXT_SEARCH_TYPE,
 	MULTI_FIELD_TEXT_SEARCH_TYPE,
-} = require("@grail/lib/utils");
+} = require("@grail/lib");
 const { OmniSearchBar } = require("./index");
 
 const searchOptions = new Map()

@@ -10,7 +10,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
 import ArrowBack from "@material-ui/icons/ArrowBack";
 import { CollapsableListItem, ExternalLink } from "@grail/components";
-import { sidebarItems } from "@grail/lib/constants";
+import { sidebarItems } from "@grail/lib";
 import styles from "./sidebar.module.scss";
 
 type Props = {

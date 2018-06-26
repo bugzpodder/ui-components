@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { LIKE_TEXT_SEARCH_TYPE, MULTI_FIELD_TEXT_SEARCH_TYPE } from "@grail/lib/utils";
+import { LIKE_TEXT_SEARCH_TYPE, MULTI_FIELD_TEXT_SEARCH_TYPE } from "@grail/lib";
 import { render, Simulate } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";

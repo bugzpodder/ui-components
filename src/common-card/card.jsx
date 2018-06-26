@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
-import { MAIN_CARD_ELEVATION } from "@grail/lib/constants";
+import { MAIN_CARD_ELEVATION } from "@grail/lib";
 import styles from "./common-card.module.scss";
 
 type Props = {

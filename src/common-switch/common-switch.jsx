@@ -36,8 +36,11 @@ export class CommonSwitch extends React.Component<Props, State> {
 	};
 
 	handleChange = (e: InputEvent, checked: boolean) => {
-		this.setState({ isChecked: checked });
-		this.props.onChange(checked, e.currentTarget.value);
+		const { onChange, isSelected } = this.props;
+		onChange(checked, e.currentTarget.value);
+		if (isSelected === undefined || isSelected === null) {
+			this.setState({ isChecked: checked });
+		}
 	};
 
 	render = () => {
@@ -53,7 +56,7 @@ export class CommonSwitch extends React.Component<Props, State> {
 		const { isChecked } = this.state;
 		const errorClass = {};
 		errorClass[styles.error] = showError;
-		const switchSelection = isSelected ? isSelected : isChecked;
+		const switchSelection = isSelected !== undefined || isSelected !== null ? isSelected : isChecked;
 		return (
 			<div className={styles.commonSwitch}>
 				<FormControlLabel

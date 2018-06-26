@@ -1,16 +1,22 @@
 ### Example
 
 ```js
+const Fragment = require("react").Fragment;
 const Button = require("@material-ui/core/Button").default;
-const styles = { mainCard: "mainCard", contentCard: "contentCard" };
 <CommonCard
 	title="New Instrument"
 	subheader="This is a subheader"
-	className={styles.mainCard}
-	contentClass={styles.contentCard}
-	headerActions={[<Button>First</Button>, <Button>Second</Button>]}
+	className="main-container"
+	contentClass="content-container"
+	headerActions={
+		<Fragment>
+			<Button>First</Button>
+			<Button color="primary" variant="raised">
+				Second
+			</Button>
+		</Fragment>
+	}
 	footerActions={<Button>OK</Button>}
-	cardActions={[<Button>Third</Button>]}
 >
 	Your Card's content goes here, ideally in a Grid for easier styling
 </CommonCard>;

@@ -22,7 +22,8 @@ class DialogDemo extends React.Component {
 							name: "Button 1",
 							callback: () => this.setState({ isVisible: false }),
 							isEnabled: true,
-							variant: "flat",
+							variant: "raised",
+							color: "primary",
 						},
 					]}
 				>

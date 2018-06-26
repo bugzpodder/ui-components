@@ -2,6 +2,8 @@
 
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
+const styles = require("@grail/components/src/utils/example-styles.module.scss");
+
 class TestCommonSwitch extends React.Component {
 	constructor(props) {
 		super(props);
@@ -31,7 +33,7 @@ class TestCommonSwitch extends React.Component {
 	render() {
 		const { checkedA, checkedB, showError } = this.state;
 		return (
-			<div>
+			<div className={styles.container}>
 				<CommonSwitch label="Primary" color="primary" onChange={() => {}} />
 
 				<CommonSwitch label="Secondary" value="secondary" onChange={() => {}} />
@@ -44,8 +46,7 @@ class TestCommonSwitch extends React.Component {
 					onChange={this.handleError}
 				/>
 
-				<CommonSwitch label="Disabled" isEnabled={false} onChange={this.handleError} />
-				<br />
+				<CommonSwitch className={styles.spacing} label="Disabled" isEnabled={false} onChange={this.handleError} />
 				<br />
 
 				<CommonSwitch color="primary" value="first" isSelected={checkedA} onChange={this.handleChange} />

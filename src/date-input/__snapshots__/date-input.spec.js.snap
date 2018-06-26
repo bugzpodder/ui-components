@@ -31,6 +31,7 @@ exports[`render date input 1`] = `
             <span
               class="MuiIconButton-label"
             >
+               
               <span
                 aria-hidden="true"
                 class="material-icons MuiIcon-root"
@@ -39,6 +40,7 @@ exports[`render date input 1`] = `
                 event
                  
               </span>
+               
             </span>
             <span
               class="MuiTouchRipple-root"

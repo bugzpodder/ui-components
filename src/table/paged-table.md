@@ -1,7 +1,9 @@
 ### Example
 
 ```js
+const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
+const Button = require("@material-ui/core/Button").default;
 
 class TestPagedTable extends React.Component {
 	constructor(props) {
@@ -88,8 +90,16 @@ class TestPagedTable extends React.Component {
 			},
 		];
 		const pagedData = data.slice(tableOptions.offset, tableOptions.offset + tableOptions.count);
+		const headerActions = (
+			<Fragment>
+				<Button>Second Action</Button>
+				<Button variant="raised" color="primary">
+					First Action
+				</Button>
+			</Fragment>
+		);
 		return (
-			<div>
+			<Fragment>
 				<PagedTable
 					// required
 					data={pagedData}
@@ -101,6 +111,7 @@ class TestPagedTable extends React.Component {
 						root: "table-root",
 						rows: (datum, index) => `${datum.word}-${index}-example`,
 					}}
+					headerActions={headerActions}
 					tableOptions={tableOptions}
 					onPageChange={this.handlePageChange}
 					onSelect={this.handleSelection}
@@ -112,7 +123,7 @@ class TestPagedTable extends React.Component {
 					helperText=" (using idKey) "
 					content={this.state.tableOptions.selectedRowIds}
 				/>
-			</div>
+			</Fragment>
 		);
 	}
 }

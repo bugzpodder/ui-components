@@ -6,3 +6,20 @@
 	  margin-left: 10px;
   }
 }
+
+.spinnerContainer {
+	position: relative;
+
+	.buttonContainer {
+		display: inline-block;
+	  	position: relative;
+	}
+
+	.spacing {
+	  margin-top: 10px;
+	  margin-right: 10px;
+	  margin-bottom: 20px;
+	  margin-left: 10px;
+	}
+}
+

@@ -37,7 +37,12 @@ class ExampleAppComponents extends React.Component {
 					onChange={this.handleFirst}
 					label="Release Date"
 				/>
-				<DateInput value={this.state.dateTwo} onChange={this.handleSecond} placeholder="Release Date" />
+				<DateInput
+					value={this.state.dateTwo}
+					onChange={this.handleSecond}
+					placeholder="Release Date"
+					className={styles.spacing}
+				/>
 			</div>
 		);
 	}

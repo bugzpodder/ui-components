@@ -10,9 +10,15 @@ type Props = {
 	className?: string,
 };
 
-/** SpinnerOverlay provides a spinner component that leaves the user unable to interact with the components
- * it is covering. This is especially useful for saving states when attempingt to prevent users from
- * submitting information more than once */
+/**
+ * A spinner component that leaves the user unable to interact with the components it is covering.
+ *
+ * This is especially useful for saving states when attempting to prevent users from submitting
+ * information more than once.
+ *
+ * IMPORTANT: `SpinnerOverlay` is styled as `position: absolute` and requires container with a non `static` position.
+ * For example: `position: relative;`
+ * */
 export const SpinnerOverlay = (props: Props) => {
 	const { isActive = true, className = "" } = props;
 	const spinnerClasses = {};

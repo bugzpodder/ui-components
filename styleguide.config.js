@@ -5,6 +5,52 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
 	components: "src/**/*.jsx",
 	pagePerSection: true,
+	sections: [
+		{
+			name: "Getting Started",
+			content: "src/readme.md",
+		},
+		{
+			name: "Wrappers",
+			components: () => ["./src/style-wrapper/style-wrapper.jsx", "./src/date-input/picker-util-provider-hoc.jsx"],
+		},
+		{
+			name: "Text & Inputs",
+			components: () => [
+				"./src/date-input/date-input.jsx",
+				"./src/date-input/date-time-input.jsx",
+				"./src/readonly-text-field/readonly-text-field.jsx",
+				"./src/readonly-text-field/validated-readonly-text-field.jsx",
+				"./src/text-input/text-input.jsx",
+				"./src/two-column-grid/two-column-grid.jsx",
+			],
+		},
+		{
+			name: "Selectors & Buttons",
+			components: () => [
+				"./src/common-switch/common-switch.jsx",
+				"./src/external-link/external-link.jsx",
+				"./src/external-link-button/external-link-button.jsx",
+				"./src/selector/selector.jsx",
+			],
+		},
+		{
+			name: "Simple Components",
+			components: () => ["./src/alert/alert.jsx", "./src/common-card/card.jsx", "./src/common-panel/panel.jsx"],
+		},
+		{
+			name: "Interactive Components",
+			components: () => [
+				"./src/common-dialog/dialog.jsx",
+				"./src/common-card/card.jsx",
+				"./src/navbar/navbar.jsx",
+				"./src/spinner-overlay/spinner-overlay.jsx",
+				"./src/table/paged-table.jsx",
+				"./src/table/simple-table.jsx",
+				"./src/timeline-graph/timeline-graph.jsx",
+			],
+		},
+	],
 	require: [path.join(__dirname, "..", "lims/client/public/material/material.css")],
 	showCode: true,
 	showUsage: true,

@@ -1,15 +1,19 @@
 //@flow
 import React, { type ElementConfig } from "react";
 import Input from "@material-ui/core/Input";
+import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import { ReadOnlyTextField } from "@grail/components";
 import FormControl from "@material-ui/core/FormControl";
 import FormHelperText from "@material-ui/core/FormHelperText";
+import styles from "./selector.module.scss";
 
 type SelectorItem = { key: string, text: string };
 type SelectorData = Array<SelectorItem>;
 type OptionalSelectorProps = {
+	/** Gives the element a persistent label */
+	label?: string,
 	/** Id of the element */
 	id?: string,
 	/** Default text to display if it should be read-only and no value. */
@@ -42,8 +46,9 @@ export const Selector = (props: SelectorProps) => {
 		showError = false,
 		helperText = "",
 		name,
+		label = "",
 		data,
-		value,
+		value = "",
 		id = "selector",
 		defaultDisplayText = "Select",
 		readOnly,
@@ -68,28 +73,34 @@ export const Selector = (props: SelectorProps) => {
 			return <ReadOnlyTextField>{displayText || defaultDisplayText}</ReadOnlyTextField>;
 		}
 		return (
-			<FormControl error={showError}>
-				<Select
-					value={value}
-					onChange={event => onSelect && onSelect(event.target.value)}
-					displayEmpty
-					input={<Input
-						data-testid="selector-value"
-						name={name}
-						id={id} />}
-					{...selectProps}
-				>
-					{!displayText && (
-						<MenuItem
-							value=""
-							disabled={true}>
-							{defaultDisplayText}
-						</MenuItem>
-					)}
-					{menuItems}
-				</Select>
-				<FormHelperText>{helperText}</FormHelperText>
-			</FormControl>
+			<div className={styles.selectorContainer}>
+				<FormControl
+					className={styles.selectorForm}
+					error={showError}>
+					<InputLabel>{label}</InputLabel>
+					<Select
+						displayEmpty
+						value={value}
+						onChange={event => onSelect && onSelect(event.target.value)}
+						input={<Input
+							data-testid="selector-value"
+							name={name}
+							id={id} />}
+						{...selectProps}
+					>
+						{!displayText &&
+							!label && (
+								<MenuItem
+									value=""
+									disabled={true}>
+									{defaultDisplayText}
+								</MenuItem>
+						)}
+						{menuItems}
+					</Select>
+					<FormHelperText>{helperText}</FormHelperText>
+				</FormControl>
+			</div>
 		);
 	}
 

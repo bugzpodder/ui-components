@@ -3,7 +3,7 @@ import React from "react";
 import { render } from "react-testing-library";
 import "jest-dom/extend-expect";
 import mockConsole from "jest-mock-console";
-import { TestWrapper } from "@grail/components";
+import { TestWrapper } from "@grail/components/src/utils";
 import { columns, data, invalidColumns, tableOptions } from "./utilities/test-table-properties";
 import { SimpleTable } from "./index";
 

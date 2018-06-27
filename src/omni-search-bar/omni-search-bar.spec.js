@@ -10,7 +10,7 @@ import { render, Simulate } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
 import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
-import { TestWrapper } from "@grail/components";
+import { TestWrapper } from "@grail/components/src/utils";
 import { OmniSearchBar } from "./index";
 
 const searchDefs: SearchDefs = [

@@ -2,7 +2,7 @@
 import React from "react";
 import { render, Simulate } from "react-testing-library";
 import "jest-dom/extend-expect";
-import { TestWrapper } from "@grail/components";
+import { TestWrapper } from "@grail/components/src/utils";
 import moment from "moment-timezone";
 import { TimelineGraph } from "./index";
 

@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { render } from "react-testing-library";
-import { TestWrapper } from "@grail/components";
+import { TestWrapper } from "@grail/components/src/utils";
 import { ExternalLinkButton } from "./external-link-button";
 
 test("render ExternalLink", () => {

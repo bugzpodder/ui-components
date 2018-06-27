@@ -1,7 +1,8 @@
 // @flow
 import React from "react";
 import { render } from "react-testing-library";
-import { CommonSwitch, TestWrapper } from "@grail/components";
+import { CommonSwitch } from "@grail/components";
+import { TestWrapper } from "@grail/components/src/utils";
 
 const mockChange = jest.fn();
 

@@ -2,7 +2,7 @@
 import React from "react";
 import { renderIntoDocument, cleanup, Simulate } from "react-testing-library";
 import { bindElementToQueries } from "dom-testing-library";
-import { TestWrapper } from "@grail/components";
+import { TestWrapper } from "@grail/components/src/utils";
 import { CommonDialog } from "./index";
 
 const bodyUtils = bindElementToQueries(document.body);

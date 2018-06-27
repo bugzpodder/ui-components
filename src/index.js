@@ -17,6 +17,5 @@ export { Selector } from "./selector";
 export { SpinnerOverlay } from "./spinner-overlay";
 export { StyleWrapper } from "./style-wrapper";
 export { ExampleBlock } from "./utils/example-block";
-export { TestWrapper } from "./utils/test-wrapper";
 export { TextInput } from "./text-input";
 export { TimelineGraph } from "./timeline-graph";

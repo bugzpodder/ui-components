@@ -2,7 +2,7 @@
 import React from "react";
 import { render, Simulate } from "react-testing-library";
 import "jest-dom/extend-expect";
-import { TestWrapper } from "@grail/components";
+import { TestWrapper } from "@grail/components/src/utils";
 import { CommonTypeahead } from "./index";
 
 test("render typeahead", () => {

@@ -5,6 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
+import { GrailLogo } from "../grail-logo";
 import { Sidebar } from "./components/sidebar";
 import styles from "./navbar.module.scss";
 
@@ -84,9 +85,7 @@ export class Navbar extends React.Component<Props, State> {
 						<div className={styles.center}>{center}</div>
 						<div className={styles.right}>
 							<div className={styles.brand}>
-								<img
-									alt="GRAIL brand"
-									src="/images/grail-logo-white.png" />
+								<GrailLogo />
 							</div>
 							{right}
 						</div>

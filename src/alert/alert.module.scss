@@ -1,6 +1,5 @@
 @import "~@grail/lib/src/constants/colors.scss";
 
-
 @mixin flatten-colors($background-color, $background-percentage, $text-color, $text-percentage) {
 	background-color: lighten($background-color, $background-percentage);
 	color: darken($text-color, $text-percentage);

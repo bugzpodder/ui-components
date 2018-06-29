@@ -6,7 +6,7 @@ exports[`render full paged table 1`] = `
     class="tableContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card  tableCard PagedTable"
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
     >
       <div
         class="MuiCardHeader-root"
@@ -16,7 +16,7 @@ exports[`render full paged table 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title Test Table-card-title"
+            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
           >
             Test Table
           </span>
@@ -262,7 +262,7 @@ exports[`render loading paged table 1`] = `
     class="tableContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card  tableCard PagedTable"
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
     >
       <div
         class="MuiCardContent-root tableContent"
@@ -333,7 +333,7 @@ exports[`render paged table with no results 1`] = `
     class="tableContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card  tableCard PagedTable"
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
     >
       <div
         class="MuiCardContent-root tableContent"
@@ -389,7 +389,7 @@ exports[`render paged table with no results and is loading 1`] = `
     class="tableContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card  tableCard PagedTable"
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
     >
       <div
         class="MuiCardContent-root tableContent"
@@ -451,7 +451,7 @@ exports[`render paged table with no selected items 1`] = `
     class="tableContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card  tableCard PagedTable"
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
     >
       <div
         class="MuiCardContent-root tableContent"
@@ -579,7 +579,7 @@ exports[`render simple paged table 1`] = `
     class="tableContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card  tableCard PagedTable"
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
     >
       <div
         class="MuiCardContent-root tableContent"

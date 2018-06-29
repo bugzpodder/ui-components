@@ -60,9 +60,11 @@ export const PagedTable = (props: Props) => {
 				title={title}
 				headerActions={headerActions}
 				footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
-				footerClass={onPageChange ? styles.tableFooter : ""}
-				className={classNames(styles.tableCard, "PagedTable")}
-				contentClass={styles.tableContent}
+				classes={{
+					root: classNames(styles.tableCard, "PagedTable"),
+					body: styles.tableContent,
+					footer: onPageChange ? styles.tableFooter : "",
+				}}
 			>
 				<TableComponent {...props} />
 			</CommonCard>

@@ -11,6 +11,8 @@ type Props = {
 	onChange: (boolean, any) => any,
 	/** Determines the color of the switch. Options include "primary" and "secondary" */
 	color?: "primary" | "secondary",
+	/** The id given to the switch */
+	id?: string,
 	/** When `true`, displays the switch in an error state */
 	showError?: boolean,
 	/** Provides a helper text under the switch */
@@ -45,6 +47,7 @@ export class CommonSwitch extends React.Component<Props, State> {
 
 	render = () => {
 		const {
+			id = "",
 			color = "secondary",
 			showError = false,
 			helperText = "",
@@ -66,6 +69,7 @@ export class CommonSwitch extends React.Component<Props, State> {
 					}}
 					control={
 						<Switch
+							id={id}
 							data-testid="common-switch"
 							checked={switchSelection}
 							classes={{

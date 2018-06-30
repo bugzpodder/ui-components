@@ -24,6 +24,7 @@ exports[`render error common switch 1`] = `
               />
               <input
                 class="MuiSwitchBase-input"
+                id=""
                 type="checkbox"
                 value=""
               />
@@ -67,6 +68,7 @@ exports[`render primary common switch 1`] = `
               />
               <input
                 class="MuiSwitchBase-input"
+                id=""
                 type="checkbox"
                 value="test"
               />
@@ -116,6 +118,7 @@ exports[`render secondary common switch 1`] = `
               />
               <input
                 class="MuiSwitchBase-input"
+                id=""
                 type="checkbox"
                 value=""
               />

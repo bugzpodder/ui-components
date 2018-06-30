@@ -15,13 +15,13 @@ type Props = {
 	data: Array<Object>,
 	isLoading: boolean,
 	selectedRows: Array<number | string>,
-	idKey?: string | number,
 	classes?: PagedTableClasses,
-	sortingProps?: SortingProps,
-	tableOptions?: PagedTableOptions,
+	idKey?: string | number,
 	onPageChange?: (options: GetContentOptions) => any,
 	onSelect?: (Array<any>) => any,
 	onSort?: SortOption => any,
+	sortingProps?: SortingProps,
+	tableOptions?: PagedTableOptions,
 };
 
 export const TableComponent = (props: Props) => {

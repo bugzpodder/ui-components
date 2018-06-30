@@ -9,7 +9,7 @@ export const actionToButton = (action: CommonDialogAction) => {
 	return (
 		<Button
 			key={name}
-			id={id || name}
+			id={id || name.toLowerCase().replace(" ", "-")}
 			data-testid={id}
 			data-id={id}
 			data-is-enabled={isEnabled}

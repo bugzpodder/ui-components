@@ -5,6 +5,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import React, { type ElementConfig, type Node } from "react";
+import classNames from "classnames";
 import { actionToButton } from "./util";
 import styles from "./dialog.module.scss";
 
@@ -29,11 +30,13 @@ type Props = {
 	children: Node,
 	/** Gives a Title to the Dialog */
 	title: Node<*>,
+	/** Provides classNames to dialog subcomponents. Options include `root`, `title, `content`, and `actions`.*/
+	classes?: CommonDialogClasses,
 };
 
 /** `CommonDialog` provides a component to be used as a UI modal. */
 export const CommonDialog = (props: Props) => {
-	const { actions, children, hideModal, isVisible, title } = props;
+	const { actions, children, classes = {}, hideModal, isVisible, title } = props;
 	const leftActionButtons = actions
 		.filter(({ isLeftButton = false }) => isLeftButton)
 		.map(action => actionToButton(action));
@@ -43,13 +46,22 @@ export const CommonDialog = (props: Props) => {
 	return (
 		<Dialog
 			open={isVisible}
-			className={styles.commonDialog}
+			className={classNames(styles.commonDialog, classes.root)}
 			PaperProps={{ className: styles.commonDialogPaper }}
 			onClose={hideModal}
 		>
-			<DialogTitle id="form-dialog-title">{title}</DialogTitle>
-			<DialogContent className={styles.commonDialogContent}>{children}</DialogContent>
-			<DialogActions>
+			<DialogTitle
+				id="form-dialog-title"
+				className={classes.title || ""}>
+				{title}
+			</DialogTitle>
+			<DialogContent className={classNames(styles.commonDialogContent, classes.content)}>{children}</DialogContent>
+			<DialogActions
+				classes={{
+					root: classes.actions,
+					action: classes.action,
+				}}
+			>
 				<div className={styles.commonDialogFooter}>
 					<div className={styles.left}>{leftActionButtons}</div>
 					<div className={styles.right}>

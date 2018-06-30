@@ -17,7 +17,7 @@ declare type PagedTableCell = {
 };
 
 declare type PagedTableColumn = {
-	Header: Node<*>,
+	Header?: Node<*>,
 	accessor?: string | Function,
 	sortable?: boolean,
 	Cell?: PagedTableCell => Node<*>,

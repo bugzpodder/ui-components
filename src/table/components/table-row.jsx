@@ -42,7 +42,7 @@ export const PagedTableRow = (props: Props) => {
 						accessor,
 						rowId,
 						rowIndex,
-						label: Header,
+						label: Header || "",
 					});
 				} else if (accessor) {
 					inner = value;

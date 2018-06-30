@@ -1,7 +1,7 @@
 // @flow
 export { Alert } from "./alert";
 export { CommonCard } from "./common-card";
-export { CommonDialog } from "./common-dialog";
+export { CommonDialog, CommonMultiPageDialog } from "./common-dialog";
 export { CommonPanel } from "./common-panel";
 export { CommonSwitch } from "./common-switch";
 export { DateInput, DateTimeInput, wrapPickerUtilProvider } from "./date-input";

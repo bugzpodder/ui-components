@@ -1,4 +1,4 @@
-#### CommonDialogActions
+#### CommonDialogAction
 
 ```js
 const Button = require("@material-ui/core/Button").default;
@@ -21,9 +21,17 @@ class DialogDemo extends React.Component {
 						{
 							name: "Button 1",
 							callback: () => this.setState({ isVisible: false }),
+							icon: "done",
 							isEnabled: true,
 							variant: "raised",
 							color: "primary",
+						},
+						{
+							name: "Button 2",
+							callback: () => this.setState({ isVisible: false }),
+							isEnabled: true,
+							color: "secondary",
+							positionLeft: true,
 						},
 					]}
 				>

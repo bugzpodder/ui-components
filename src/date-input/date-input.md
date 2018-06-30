@@ -21,8 +21,8 @@ class ExampleAppComponents extends React.Component {
 		this.setState({ dateOne });
 	}
 
-	handleSecond(dateTWo) {
-		this.setState({ dateTWo });
+	handleSecond(dateTwo) {
+		this.setState({ dateTwo });
 	}
 
 	render() {

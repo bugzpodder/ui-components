@@ -5,19 +5,22 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import React, { type ElementConfig, type Node } from "react";
+import { actionToButton } from "./util";
 import styles from "./dialog.module.scss";
 
-type CommonDialogActions = {
-	id?: string,
+export type CommonDialogAction = {
 	name: string,
-	isEnabled?: boolean,
 	callback: Function,
+	icon?: string,
+	id?: string,
+	isEnabled?: boolean,
 	variant?: string,
+	isLeftButton?: boolean,
 } & ElementConfig<typeof Button>;
 
 type Props = {
 	/** Custom action Buttons */
-	actions: Array<CommonDialogActions>,
+	actions: Array<CommonDialogAction>,
 	/** The callback used to hide the modal */
 	hideModal: () => any,
 	/** Is the modal visible */
@@ -31,25 +34,12 @@ type Props = {
 /** `CommonDialog` provides a component to be used as a UI modal. */
 export const CommonDialog = (props: Props) => {
 	const { actions, children, hideModal, isVisible, title } = props;
-	const actionToButton = (action: CommonDialogActions) => {
-		const { id, isEnabled = true, name, callback, color, variant, ...buttonProps } = action;
-		return (
-			<Button
-				data-id={id}
-				data-is-enabled={isEnabled}
-				disabled={!isEnabled}
-				id={id || name}
-				key={name}
-				onClick={callback}
-				color={color || "primary"}
-				variant={variant || "raised"}
-				{...buttonProps}
-			>
-				{name}
-			</Button>
-		);
-	};
-	const actionButtons = actions.map(actionToButton);
+	const leftActionButtons = actions
+		.filter(({ isLeftButton = false }) => isLeftButton)
+		.map(action => actionToButton(action));
+	const rightActionButtons = actions
+		.filter(({ isLeftButton = false }) => !isLeftButton)
+		.map(action => actionToButton(action));
 	return (
 		<Dialog
 			open={isVisible}
@@ -60,12 +50,17 @@ export const CommonDialog = (props: Props) => {
 			<DialogTitle id="form-dialog-title">{title}</DialogTitle>
 			<DialogContent className={styles.commonDialogContent}>{children}</DialogContent>
 			<DialogActions>
-				<Button
-					id="close"
-					onClick={hideModal}>
-					Close
-				</Button>
-				{actionButtons}
+				<div className={styles.commonDialogFooter}>
+					<div className={styles.left}>{leftActionButtons}</div>
+					<div className={styles.right}>
+						<Button
+							id="close"
+							onClick={hideModal}>
+							Close
+						</Button>
+						{rightActionButtons}
+					</div>
+				</div>
 			</DialogActions>
 		</Dialog>
 	);

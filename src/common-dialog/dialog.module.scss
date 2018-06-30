@@ -30,6 +30,21 @@ $screen-md: $TABLET_WIDTH;
 		max-height: calc(#{$dialog-height} - #{$dialog-title-height} - #{$dialog-footer-height});
 		overflow-y: auto;
 	}
+	.commonDialogFooter {
+		display: flex;
+		width: 100%;
+		.left, .right {
+			flex: 1 1 auto;
+			button {
+				+ button {
+					margin-left: 8px;
+				}
+			}
+		}
+		.right {
+			text-align: right;
+		}
+	}
 }
 
 @media (min-width: $screen-sm) {

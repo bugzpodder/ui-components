@@ -42,6 +42,7 @@ module.exports = {
 			name: "Interactive Components",
 			components: () => [
 				"./src/common-dialog/dialog.jsx",
+				"./src/common-dialog/multi-page-dialog.jsx",
 				"./src/common-card/card.jsx",
 				"./src/navbar/navbar.jsx",
 				"./src/spinner-overlay/spinner-overlay.jsx",

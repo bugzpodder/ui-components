@@ -100,14 +100,21 @@ export class OmniSearchBar extends React.Component<Props, State> {
 
 	mergeOmniWithLocalStorage = (omniText: string): string => {
 		const searchDefs = this.props.searchDefs;
-		const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
-		const storageValues = this.getValuesFromLocalStorage(searchDefs);
-		storageValues.forEach((value, key) => {
-			if (!searchValues.has(key)) {
-				searchValues.set(key, value);
+		try {
+			const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
+			const storageValues = this.getValuesFromLocalStorage(searchDefs);
+			storageValues.forEach((value, key) => {
+				if (!searchValues.has(key)) {
+					searchValues.set(key, value);
+				}
+			});
+			return getOmniTextFromSearchValues(searchDefs, searchValues);
+		} catch (error) {
+			if (error.name === OMNI_ERROR) {
+				return omniText;
 			}
-		});
-		return getOmniTextFromSearchValues(searchDefs, searchValues);
+			throw error;
+		}
 	};
 
 	toggleDropdown = () => {
@@ -152,7 +159,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 	handleClear = () => {
 		this.updateOmniText("");
 	};
-	onChange = (id: string, value: SearchValue) => {
+	onChange = (id: string, value: string) => {
 		let omniText = value;
 		if (id !== OMNI_KEY) {
 			const index = parseInt(id.split("-").pop());

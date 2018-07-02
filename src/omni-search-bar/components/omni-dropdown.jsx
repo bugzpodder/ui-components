@@ -11,7 +11,7 @@ import { SearchField } from "./search-field";
 type Props = {
 	searchDefs: SearchDefs,
 	searchValues: SearchValues,
-	onChange: (string, SearchValue) => void,
+	onChange: (string, string) => void,
 	onClear: () => void,
 	onSearch: () => void,
 	width: number | string,

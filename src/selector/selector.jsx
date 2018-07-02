@@ -54,9 +54,10 @@ export const Selector = (props: SelectorProps) => {
 		readOnly,
 		...selectProps
 	} = props;
-	const menuItems = data.map(({ key, text }, index) => {
+	const menuItems = data.map(({ key = "", text }, index) => {
 		return (
 			<MenuItem
+				disableRipple
 				id={`${id}-item-${key.toString().replace(/\s/g, "-")}`}
 				key={index}
 				value={key}>
@@ -91,6 +92,7 @@ export const Selector = (props: SelectorProps) => {
 						{!displayText &&
 							!label && (
 								<MenuItem
+									disableRipple
 									value=""
 									disabled={true}>
 									{defaultDisplayText}

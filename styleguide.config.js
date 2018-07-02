@@ -8,7 +8,7 @@ module.exports = {
 	sections: [
 		{
 			name: "Getting Started",
-			content: "src/readme.md",
+			content: "src/README.md",
 		},
 		{
 			name: "Wrappers",

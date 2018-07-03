@@ -52,6 +52,7 @@ exports[`render selector 1`] = `
       </div>
       <p
         class="MuiFormHelperText-root MuiFormHelperText-error"
+        id="selector-selector-helpertext"
       >
         test helper text
       </p>
@@ -134,6 +135,7 @@ exports[`render selector without selected value 1`] = `
       </div>
       <p
         class="MuiFormHelperText-root"
+        id="selector-selector-helpertext"
       />
     </div>
   </div>

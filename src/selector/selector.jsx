@@ -9,8 +9,6 @@ import FormControl from "@material-ui/core/FormControl";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import styles from "./selector.module.scss";
 
-type SelectorItem = { key: string, text: string };
-type SelectorData = Array<SelectorItem>;
 type OptionalSelectorProps = {
 	/** Gives the element a persistent label */
 	label?: string,
@@ -22,6 +20,10 @@ type OptionalSelectorProps = {
 	readOnly?: boolean,
 	/** Function to be called when user chooses a dropdown option */
 	onSelect?: Function,
+	/** When `true`, displays selector in error state */
+	showError?: boolean,
+	/** Helper text displayed under the selector */
+	helperText?: string,
 };
 type SelectorProps = {
 	/**
@@ -32,10 +34,6 @@ type SelectorProps = {
 	data: SelectorData,
 	/** Name of the selector. */
 	name: string,
-	/** When `true`, displays selector in error state */
-	showError?: boolean,
-	/** Helper text displayed under the selector */
-	helperText?: string,
 } & OptionalSelectorProps &
 	ElementConfig<typeof Select>;
 
@@ -47,9 +45,9 @@ export const Selector = (props: SelectorProps) => {
 		helperText = "",
 		name,
 		label = "",
-		data,
 		value = "",
 		id = "selector",
+		data,
 		defaultDisplayText = "Select",
 		readOnly,
 		...selectProps
@@ -59,8 +57,10 @@ export const Selector = (props: SelectorProps) => {
 			<MenuItem
 				disableRipple
 				id={`${id}-item-${key.toString().replace(/\s/g, "-")}`}
+				className={`${id}-selector-item`}
 				key={index}
-				value={key}>
+				value={key}
+			>
 				{text}
 			</MenuItem>
 		);
@@ -81,6 +81,7 @@ export const Selector = (props: SelectorProps) => {
 					<InputLabel>{label}</InputLabel>
 					<Select
 						displayEmpty
+						id={id}
 						value={value}
 						onChange={event => onSelect && onSelect(event.target.value)}
 						input={<Input
@@ -100,11 +101,11 @@ export const Selector = (props: SelectorProps) => {
 						)}
 						{menuItems}
 					</Select>
-					<FormHelperText>{helperText}</FormHelperText>
+					<FormHelperText id={`${id}-selector-helpertext`}>{helperText}</FormHelperText>
 				</FormControl>
 			</div>
 		);
 	}
 
-	return <ReadOnlyTextField>Nothing to select</ReadOnlyTextField>;
+	return <ReadOnlyTextField>{helperText || "Nothing to select"}</ReadOnlyTextField>;
 };

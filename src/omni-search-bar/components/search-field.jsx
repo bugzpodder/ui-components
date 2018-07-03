@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import moment from "moment";
-import { DATE_FORMAT, DATETIME_SEARCH_TYPE } from "@grail/lib";
+import { DATE_FORMAT, DATE_SEARCH_TYPES } from "@grail/lib";
 import { DateInput } from "@grail/components";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
@@ -17,7 +17,7 @@ export const SearchField = (props: SearchFieldProps) => {
 		} = event;
 		onChange(id, text);
 	};
-	if (searchType !== DATETIME_SEARCH_TYPE) {
+	if (!DATE_SEARCH_TYPES.includes(searchType)) {
 		return (
 			<TextField
 				id={searchKey}

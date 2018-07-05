@@ -52,6 +52,7 @@ export class Sidebar extends React.Component<Props, State> {
 					component={InternalLinkComponent}
 					to={item.path}
 					exact={exact.toString()}
+					target={path.startsWith("/pipeline-ui") ? "_self" : undefined}
 					button
 					className={classNames({ [styles.active]: active, [styles.nested]: nested })}
 					dense={nested}

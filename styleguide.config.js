@@ -36,19 +36,23 @@ module.exports = {
 		},
 		{
 			name: "Simple Components",
-			components: () => ["./src/alert/alert.jsx", "./src/common-card/card.jsx", "./src/common-panel/panel.jsx"],
+			components: () => [
+				"./src/alert/alert.jsx",
+				"./src/common-card/card.jsx",
+				"./src/common-panel/panel.jsx",
+				"./src/spinner-overlay/spinner-overlay.jsx",
+				"./src/timeline-graph/timeline-graph.jsx",
+			],
 		},
 		{
 			name: "Interactive Components",
 			components: () => [
 				"./src/common-dialog/dialog.jsx",
 				"./src/common-dialog/multi-page-dialog.jsx",
-				"./src/common-card/card.jsx",
+				"./src/dev/common-typeahead/common-typeahead.jsx",
 				"./src/navbar/navbar.jsx",
-				"./src/spinner-overlay/spinner-overlay.jsx",
 				"./src/table/paged-table.jsx",
 				"./src/table/simple-table.jsx",
-				"./src/timeline-graph/timeline-graph.jsx",
 			],
 		},
 	],
@@ -93,7 +97,18 @@ module.exports = {
 				{
 					test: /\.scss$/,
 					exclude: /node_modules/,
-					loader: "style-loader!css-loader?modules!sass-loader",
+					use: [
+						"style-loader",
+						{
+							loader: "css-loader",
+							options: {
+								importLoader: 1,
+								modules: false,
+								localIdentName: "[local]___[hash:base64:5]",
+							},
+						},
+						"sass-loader",
+					],
 				},
 				{
 					test: /\.woff2$/,

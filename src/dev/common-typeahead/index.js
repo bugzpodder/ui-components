@@ -1,2 +1,2 @@
 // @flow
-export { CommonTypeahead } from "./typeahead";
+export { CommonTypeahead } from "./common-typeahead";

@@ -1,0 +1,100 @@
+@import "~@grail/lib/src/constants/colors.scss";
+
+.common-typeahead__root {
+
+	.common-typeahead__input-root {
+		margin: 0;
+		line-height: 1em;
+	}
+
+	.common-typeahead__container {
+		width: 100%;
+		min-width: 167px;
+
+		> div {
+			padding: 0;
+		}
+
+		.common-typeahead__control--is-disabled > .common-typeahead__value-container > .common-typeahead__placeholder {
+			color: lighten($grail-gray-medium-color, 18%);
+		}
+
+		.common-typeahead__control, .common-typeahead__control--is-focused {
+			display: flex;
+			align-items: center;
+			border: 0;
+			height: auto;
+			background: transparent;
+			box-shadow: 0 0 0 0;
+			min-height: 34px;
+			&:hover {
+				box-shadow: none;
+			}
+
+			.common-typeahead__value-container {
+				width: 100%;
+				padding: 4px 0;
+
+				.common-typeahead__placeholder, .common-typeahead__single-value {
+					padding: 0;
+					padding-left: 1px;
+					margin: 0;
+					opacity: 0.77;
+				}
+
+				.common-typeahead__multi-value__label {
+					padding: 0;
+					font-size: 0.8125rem;
+				}
+
+				.common-typeahead__multi-value__remove {
+					background-color: transparent;
+					color: initial;
+					padding: 0 0 0 5px;
+					cursor: pointer;
+					opacity: 0.25;
+					width: 29px;
+					height: 29px;
+					&:hover {
+						opacity: 0.4;
+					}
+				}
+				.common-typeahead__chip-root {
+					margin: 2px;
+
+					.common-typeahead__chip-label {
+						padding: 0 4px 0 10px;
+					}
+				}
+			}
+		}
+
+		.common-typeahead__clear-icon {
+			cursor: pointer;
+		}
+
+		.common-typeahead__dropdown-arrow {
+			cursor: pointer;
+		}
+
+		.common-typeahead__menu {
+			border-radius: 0;
+			box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+			// z-index > 2 is necessary to properly overlay the Styleguidist <code> block.
+			z-index: 5;
+
+			.common-typeahead__menu-list {
+				padding: 0;
+
+				.common-typeahead__menu-item {
+					font-weight: 400;
+				}
+
+				.common-typeahead__menu-item-selected {
+					font-weight: 500;
+				}
+			}
+		}
+	}
+}
+

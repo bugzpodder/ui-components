@@ -85,7 +85,7 @@ exports[`render dialog 1`] = `
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
               data-is-enabled="true"
-              id="action two"
+              id="action-two"
               tabindex="0"
               type="button"
             >

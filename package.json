@@ -31,8 +31,8 @@
     "material-ui-pickers": "^1.0.0-rc.9",
     "path-to-regexp": "^2.2.1",
     "react": "^16.4.0",
-    "react-autosuggest": "^9.3.4",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-select": "^2.0.0-beta.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.51",

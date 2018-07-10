@@ -17,7 +17,7 @@ type Props = {
 } & ElementConfig<typeof DateTimePicker>;
 
 export const DateTimeInput = (props: Props) => {
-	const { readOnly, showEmptyValue = false } = props;
+	const { readOnly, showEmptyValue = false, value } = props;
 	if (readOnly) {
 		return (
 			<ReadOnlyTextField showEmptyValue={showEmptyValue}>
@@ -29,10 +29,10 @@ export const DateTimeInput = (props: Props) => {
 		<DateTimePicker
 			ampm={false}
 			format={DATE_TIME_FORMAT}
-			invalidLabel=""
 			keyboard={true}
 			clearable={true}
 			{...props}
+			value={value || null}
 		/>
 	);
 };

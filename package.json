@@ -28,10 +28,10 @@
     "classnames": "^2.2.6",
     "dom-helpers": "^3.3.1",
     "jest-mock-console": "^0.3.5",
-    "material-ui-pickers": "^1.0.0-rc.9",
+    "material-ui-pickers": "^1.0.0-rc.11",
     "path-to-regexp": "^2.2.1",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-select": "^2.0.0-beta.7"
   },
   "devDependencies": {

@@ -19,7 +19,7 @@ type Props = {
 
 /** Provides component for common Date picker. */
 export const DateInput = (props: Props) => {
-	const { readOnly, showEmptyValue = false } = props;
+	const { readOnly, showEmptyValue = false, value } = props;
 	if (readOnly) {
 		return (
 			<ReadOnlyTextField showEmptyValue={showEmptyValue}>
@@ -31,11 +31,11 @@ export const DateInput = (props: Props) => {
 		<div className={styles.datePicker}>
 			<DatePicker
 				format={DATE_FORMAT}
-				invalidLabel=""
 				keyboard={true}
 				clearable={true}
 				InputAdornmentProps={{ className: styles.adornmentWidth }}
 				{...props}
+				value={value || null}
 			/>
 		</div>
 	);

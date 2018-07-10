@@ -1,7 +1,6 @@
-@import "~@grail/lib/src/constants/colors.scss";
+@import "../../styles/colors.scss";
 
 .common-typeahead__root {
-
 	.common-typeahead__input-root {
 		margin: 0;
 		line-height: 1em;
@@ -19,7 +18,8 @@
 			color: lighten($grail-gray-medium-color, 18%);
 		}
 
-		.common-typeahead__control, .common-typeahead__control--is-focused {
+		.common-typeahead__control,
+		.common-typeahead__control--is-focused {
 			display: flex;
 			align-items: center;
 			border: 0;
@@ -35,7 +35,8 @@
 				width: 100%;
 				padding: 4px 0;
 
-				.common-typeahead__placeholder, .common-typeahead__single-value {
+				.common-typeahead__placeholder,
+				.common-typeahead__single-value {
 					padding: 0;
 					padding-left: 1px;
 					margin: 0;
@@ -97,4 +98,3 @@
 		}
 	}
 }
-

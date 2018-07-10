@@ -1,0 +1,68 @@
+$grail-color: #3b1c52;
+$grail-light-color: #612b5b;
+$grail-contrast-color: #b89466;
+
+// colors here should reflect those in common/colors.js
+$grail-purple-dark-color: $grail-color;
+$grail-purple-med-color: #523e66;
+$grail-purple-light-color: #b9b1c2;
+$grail-purple-color: $grail-light-color;
+$grail-green-color: #287969;
+$grail-tan-color: $grail-contrast-color;
+$grail-red-color: #ed1c24;
+$grail-blue-color: #1f6683;
+$grail-gold-color: #eca400;
+
+$grail-gray-darkest-color: #404040;
+$grail-gray-dark-color: #595959;
+$grail-gray-medium-color: #949494;
+$grail-gray-light-color: #d9d9d9;
+$grail-gray-lighter-color: #f0f0f0;
+$grail-gray-lightest-color: #f9f9f9;
+
+$grail-colors: (
+	grail-color: $grail-color,
+	grail-light-color: $grail-light-color,
+	grail-contrast-color: $grail-contrast-color,
+	grail-purple-dark-color: $grail-purple-dark-color,
+	grail-purple-med-color: $grail-purple-med-color,
+	grail-purple-light-color: $grail-purple-light-color,
+	grail-purple-color: $grail-purple-color,
+	grail-green-color: $grail-green-color,
+	grail-tan-color: $grail-tan-color,
+	grail-red-color: $grail-red-color,
+	grail-blue-color: $grail-blue-color,
+	grail-gold-color: $grail-gold-color,
+	grail-gray-lighter-color: $grail-gray-lighter-color,
+	grail-gray-lightest-color: $grail-gray-lightest-color,
+	grail-gray-light-color: $grail-gray-light-color,
+	grail-gray-medium-color: $grail-gray-medium-color,
+	grail-gray-dark-color: $grail-gray-dark-color,
+	grail-gray-darkest-color: $grail-gray-darkest-color,
+);
+
+@each $name, $color in $grail-colors {
+	.#{$name} {
+		color: $color;
+	}
+}
+
+@mixin dot($size, $color) {
+	&:after {
+		content: "";
+		display: inline-block;
+		width: $size;
+		height: $size;
+		margin-left: $size/2;
+		border-radius: $size;
+		background-color: $color;
+	}
+}
+
+@mixin red-dot($size) {
+	@include dot($size, $grail-red-color);
+}
+
+@mixin yellow-dot($size) {
+	@include dot($size, $grail-gold-color);
+}

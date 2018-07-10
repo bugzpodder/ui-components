@@ -1,4 +1,4 @@
-@import "~@grail/lib/src/constants/colors.scss";
+@import "../styles/colors.scss";
 
 @mixin flatten-colors($background-color, $background-percentage, $text-color, $text-percentage) {
 	background-color: lighten($background-color, $background-percentage);
@@ -6,14 +6,13 @@
 }
 
 .alertContainer {
-
 	.flat {
 		box-shadow: none;
 	}
 
 	.error {
 		background-color: $grail-red-color;
-		color: #FFF;
+		color: #fff;
 		&.flat {
 			@include flatten-colors($grail-red-color, 42%, $grail-red-color, 20%);
 		}
@@ -21,7 +20,7 @@
 
 	.info {
 		background-color: $grail-blue-color;
-		color: #FFF;
+		color: #fff;
 		&.flat {
 			@include flatten-colors($grail-blue-color, 58%, $grail-blue-color, 10%);
 		}
@@ -29,7 +28,7 @@
 
 	.success {
 		background-color: $grail-green-color;
-		color: #FFF;
+		color: #fff;
 		&.flat {
 			@include flatten-colors($grail-green-color, 62%, $grail-green-color, 15%);
 		}
@@ -37,11 +36,10 @@
 
 	.warning {
 		background-color: $grail-gold-color;
-		color: #FFF;
+		color: #fff;
 		&.flat {
 			@include flatten-colors($grail-gold-color, 48%, $grail-contrast-color, 15%);
 		}
-
 	}
 
 	.center {

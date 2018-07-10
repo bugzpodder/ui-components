@@ -1,4 +1,4 @@
-@import "~@grail/lib/src/constants/colors.scss";
+@import "../styles/colors.scss";
 
 .readonlyTextField {
 	display: inline-block;
@@ -10,7 +10,8 @@
 		margin-right: 5px;
 		vertical-align: middle;
 	}
-	&.success, &.fail {
+	&.success,
+	&.fail {
 		width: 100%;
 		padding-left: 5px;
 	}

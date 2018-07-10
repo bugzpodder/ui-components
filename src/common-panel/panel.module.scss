@@ -1,4 +1,4 @@
-@import "~@grail/lib/src/constants/colors.scss";
+@import "../styles/colors.scss";
 .panel {
 	.panelHeader {
 		padding: 10px;
@@ -8,7 +8,8 @@
 		padding-top: 10px;
 	}
 }
-div, .panel {
+div,
+.panel {
 	+ .panel {
 		margin-top: 30px;
 	}

@@ -1,7 +1,8 @@
-@import "~@grail/lib/src/constants/colors.scss";
+@import "../styles/colors.scss";
 
 .grailLogo {
-	&.white path, path {
+	&.white path,
+	path {
 		fill: white;
 	}
 	&.purple path {

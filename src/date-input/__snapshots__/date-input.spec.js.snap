@@ -14,7 +14,6 @@ exports[`render date input 1`] = `
       >
         <input
           aria-invalid="false"
-          aria-required="false"
           class="MuiInput-input"
           placeholder="Test Date Input"
           type="text"

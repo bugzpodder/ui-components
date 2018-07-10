@@ -46,7 +46,6 @@ exports[`OmniSearchBar renders properly 1`] = `
           </div>
           <input
             aria-invalid="false"
-            aria-required="false"
             class="MuiInput-input"
             id="omni"
             placeholder="Search here or use dropdown"

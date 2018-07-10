@@ -50,7 +50,6 @@ exports[`render date time input 1`] = `
     >
       <input
         aria-invalid="false"
-        aria-required="false"
         class="MuiInput-input"
         placeholder="Test DateTime Input"
         type="text"

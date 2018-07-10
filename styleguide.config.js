@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require("fs");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 	components: "src/**/*.jsx",
@@ -91,24 +90,17 @@ module.exports = {
 				},
 				{
 					test: /\.css$/,
-					exclude: /node_modules/,
-					use: [MiniCssExtractPlugin.loader, "css-loader"],
+					loader: "style-loader!css-loader",
 				},
 				{
+					test: /\.module\.scss$/,
+					loader: "style-loader!css-loader?modules!sass-loader",
+				},
+
+				{
 					test: /\.scss$/,
-					exclude: /node_modules/,
-					use: [
-						"style-loader",
-						{
-							loader: "css-loader",
-							options: {
-								importLoader: 1,
-								modules: false,
-								localIdentName: "[local]___[hash:base64:5]",
-							},
-						},
-						"sass-loader",
-					],
+					exclude: /\.module\.scss$/,
+					loader: "style-loader!css-loader!sass-loader",
 				},
 				{
 					test: /\.woff2$/,
@@ -120,10 +112,5 @@ module.exports = {
 				},
 			],
 		},
-		plugins: [
-			new MiniCssExtractPlugin({
-				filename: "styles.css",
-			}),
-		],
 	},
 };

@@ -2,7 +2,7 @@
 import React from "react";
 import { render } from "react-testing-library";
 import { CommonSwitch } from "@grail/components";
-import { TestWrapper } from "@grail/components/src/utils";
+import { TestWrapper } from "../utils";
 
 const mockChange = jest.fn();
 

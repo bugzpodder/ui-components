@@ -2,7 +2,7 @@
 
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
-const styles = require("@grail/components/src/utils/example-styles.module.scss");
+const styles = require("../utils/example-styles.module.scss");
 
 class TestCommonSwitch extends React.Component {
 	constructor(props) {

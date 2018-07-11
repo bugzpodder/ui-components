@@ -5,7 +5,7 @@
 ```js
 const Fragment = require("react").Fragment;
 const Button = require("@material-ui/core/Button").default;
-const styles = require("@grail/components/src/utils/example-styles.module.scss");
+const styles = require("../utils/example-styles.module.scss");
 
 class SpinnerOverlayExample extends React.Component {
 	render() {
@@ -36,7 +36,7 @@ class SpinnerOverlayExample extends React.Component {
 ```js
 const Fragment = require("react").Fragment;
 const Button = require("@material-ui/core/Button").default;
-const styles = require("@grail/components/src/utils/example-styles.module.scss");
+const styles = require("../utils/example-styles.module.scss");
 
 class SpinnerOverlayExample extends React.Component {
 	render() {

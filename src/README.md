@@ -19,7 +19,7 @@ React components built using [Material-UI](https://material-ui.com/getting-start
 
 #### **Using Dev Components**
 
-- `import { DEV_COMPONENT } from "@grail/components/src/dev";`
+- `import { DEV_COMPONENT } from "../dev";`
   NOTE: Dev components are unstable and may introduce breaking changes at any given time.
 
 Discuss questions, feature requests, or bug reports on the `#ui-eng` slack channel, or email the `ui-eng` mailing list.

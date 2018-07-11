@@ -5,7 +5,7 @@ All the props of `TextField` are included for `TextInput`.
 ### Example
 
 ```js
-const styles = require("@grail/components/src/utils/example-styles.module.scss");
+const styles = require("../utils/example-styles.module.scss");
 class TextInputExample extends React.Component {
 	constructor(props) {
 		super(props);

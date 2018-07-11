@@ -1,7 +1,7 @@
 ## Examples
 
 ```js
-const styles = require("@grail/components/src/utils/example-styles.module.scss");
+const styles = require("../utils/example-styles.module.scss");
 <div className={styles.container}>
 	<h2> Default </h2>
 	<Alert className={styles.spacing} color="success" message="This is successful!" />

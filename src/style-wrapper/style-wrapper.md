@@ -4,7 +4,7 @@
 const StyleWrapper = require("@grail/components").StyleWrapper;
 const Button = require("@material-ui/core/Button").default;
 const Alert = require("@grail/components").Alert;
-const styles = require("@grail/components/src/utils/example-styles.module.scss");
+const styles = require("../utils/example-styles.module.scss");
 
 class ExampleApp extends React.Component {
 	render() {

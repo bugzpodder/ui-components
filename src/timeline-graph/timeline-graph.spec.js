@@ -2,8 +2,8 @@
 import React from "react";
 import { render, Simulate } from "react-testing-library";
 import "jest-dom/extend-expect";
-import { TestWrapper } from "@grail/components/src/utils";
 import moment from "moment-timezone";
+import { TestWrapper } from "../utils";
 import { TimelineGraph } from "./index";
 
 moment.tz.setDefault("America/Los_Angeles");

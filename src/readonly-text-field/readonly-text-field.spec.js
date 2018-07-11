@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { render } from "react-testing-library";
-import { TestWrapper } from "@grail/components/src/utils";
+import { TestWrapper } from "../utils";
 import { ReadOnlyTextField } from "./index";
 import "jest-dom/extend-expect";
 

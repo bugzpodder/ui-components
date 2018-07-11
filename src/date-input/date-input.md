@@ -4,7 +4,7 @@
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
-const styles = require("@grail/components/src/utils/example-styles.module.scss");
+const styles = require("../utils/example-styles.module.scss");
 
 class ExampleAppComponents extends React.Component {
 	constructor(props) {

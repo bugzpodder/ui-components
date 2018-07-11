@@ -3,7 +3,7 @@ import React from "react";
 import { render, Simulate } from "react-testing-library";
 import Button from "@material-ui/core/Button";
 import "jest-dom/extend-expect";
-import { TestWrapper } from "@grail/components/src/utils";
+import { TestWrapper } from "../utils";
 import { SpinnerOverlay } from "./index";
 
 test("render active spinner overlay", () => {

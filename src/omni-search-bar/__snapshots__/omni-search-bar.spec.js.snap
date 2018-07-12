@@ -58,6 +58,7 @@ exports[`OmniSearchBar renders properly 1`] = `
             <button
               aria-label="Expand search options"
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit iconButton text"
+              data-testid="menu-test"
               id="omni-menu"
               label="menu"
               tabindex="0"

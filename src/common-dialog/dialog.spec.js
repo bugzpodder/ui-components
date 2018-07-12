@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { renderIntoDocument, cleanup, Simulate } from "react-testing-library";
+import { renderIntoDocument, cleanup, fireEvent } from "react-testing-library";
 import { bindElementToQueries } from "dom-testing-library";
 import { TestWrapper } from "../utils";
 import { CommonDialog, CommonMultiPageDialog } from "./index";
@@ -24,7 +24,7 @@ test("render dialog", () => {
 			</CommonDialog>
 		</TestWrapper>,
 	);
-	Simulate.click(bodyUtils.getByText("Close"));
+	fireEvent.click(bodyUtils.getByText("Close"));
 	expect(mockCallback).toBeCalled();
 	expect(document.body).toMatchSnapshot();
 	cleanup();
@@ -61,7 +61,7 @@ test("render multi page dialog", () => {
 			</CommonMultiPageDialog>
 		</TestWrapper>,
 	);
-	Simulate.click(bodyUtils.getByText("Back"));
+	fireEvent.click(bodyUtils.getByText("Back"));
 	expect(mockCallback).toBeCalled();
 	expect(document.body).toMatchSnapshot();
 	cleanup();

@@ -42,7 +42,7 @@ const searchDefs: SearchDefs = [
 
 describe("OmniSearchBar", () => {
 	const onSearch = jest.fn();
-	const { getByPlaceholderText, container } = render(
+	const { getByPlaceholderText, container, getByTestId } = render(
 		<TestWrapper>
 			<MuiPickersUtilsProvider utils={MomentUtils}>
 				<OmniSearchBar
@@ -62,13 +62,11 @@ describe("OmniSearchBar", () => {
 		expect(container.querySelector("#omni-dropdown")).toBeNull();
 	});
 	it("opens and closes dropdown & clickaway when toggled", () => {
-		const dropdownButton = container.querySelector("#omni-menu");
 		let clickaway = container.querySelector("#omni-clickaway");
 		let dropdown = container.querySelector("#omni-dropdown");
 		expect(clickaway).not.toBeInTheDOM();
 		expect(dropdown).not.toBeInTheDOM();
-		Simulate.click(dropdownButton);
-		container.querySelector("#omni-dropdown");
+		Simulate.click(getByTestId("menu-test"));
 		clickaway = container.querySelector("#omni-clickaway");
 		dropdown = container.querySelector("#omni-dropdown");
 		expect(clickaway).toBeInTheDOM();
@@ -79,8 +77,7 @@ describe("OmniSearchBar", () => {
 		dropdown = container.querySelector("#omni-dropdown");
 		expect(clickaway).not.toBeInTheDOM();
 		expect(dropdown).not.toBeInTheDOM();
-		Simulate.click(dropdownButton);
-		Simulate.click(dropdownButton);
+		Simulate.click(getByTestId("menu-test"));
 		expect(dropdown).not.toBeInTheDOM();
 	});
 });

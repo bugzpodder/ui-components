@@ -120,6 +120,7 @@ export class OmniField extends React.Component<Props, State> {
 								)}
 								<IconButton
 									id={`${OMNI_KEY}-menu`}
+									data-testid="menu-test"
 									label="menu"
 									color="inherit"
 									title="Search options"

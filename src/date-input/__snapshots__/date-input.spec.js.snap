@@ -52,7 +52,7 @@ exports[`render date input 1`] = `
 </div>
 `;
 
-exports[`render date input when readOnly is true 1`] = `
+exports[`renderIntoDocument date input when readOnly is true 1`] = `
 <div>
    
   <span
@@ -65,7 +65,7 @@ exports[`render date input when readOnly is true 1`] = `
 </div>
 `;
 
-exports[`render date input when readOnly is true showing - as empty value 1`] = `
+exports[`renderIntoDocument date input when readOnly is true showing - as empty value 1`] = `
 <div>
    
   <span
@@ -78,7 +78,7 @@ exports[`render date input when readOnly is true showing - as empty value 1`] = 
 </div>
 `;
 
-exports[`render date input when readOnly is true showing empty value 1`] = `
+exports[`renderIntoDocument date input when readOnly is true showing empty value 1`] = `
 <div>
    
   <span

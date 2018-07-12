@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { renderIntoDocument } from "react-testing-library";
 import "jest-dom/extend-expect";
 import mockConsole from "jest-mock-console";
 import { TestWrapper } from "../utils";
@@ -12,7 +12,7 @@ import { SimpleTable } from "./index";
  **/
 
 test("render simple table", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<SimpleTable
 				columns={columns}
@@ -23,7 +23,7 @@ test("render simple table", () => {
 });
 
 test("render simple table with no results", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<SimpleTable
 				columns={columns}
@@ -34,7 +34,7 @@ test("render simple table with no results", () => {
 });
 
 test("render loading simple table", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<SimpleTable
 				columns={columns}
@@ -46,7 +46,7 @@ test("render loading simple table", () => {
 });
 
 test("render simple table with no results and is loading", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<SimpleTable
 				columns={columns}
@@ -59,7 +59,7 @@ test("render simple table with no results and is loading", () => {
 
 test("render simple table with all items selected", () => {
 	const mockSelect = jest.fn();
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<SimpleTable
 				idKey="columnOne"
@@ -76,7 +76,7 @@ test("render simple table with all items selected", () => {
 
 test("render full simple table", () => {
 	const mockSelect = jest.fn();
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<SimpleTable
 				idKey="columnOne"
@@ -97,13 +97,13 @@ test("render full simple table", () => {
 
 test("throw invalid simple table error", async () => {
 	mockConsole();
-	expect(() => render(<SimpleTable columns={columns} />)).toThrowError();
+	expect(() => renderIntoDocument(<SimpleTable columns={columns} />)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
 test("throw invalid columns error", () => {
 	mockConsole();
-	expect(() => render(<SimpleTable
+	expect(() => renderIntoDocument(<SimpleTable
 		columns={invalidColumns}
 		data={data} />)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
@@ -111,7 +111,7 @@ test("throw invalid columns error", () => {
 
 test("throw invalid sortOptions error", () => {
 	mockConsole();
-	expect(() => render(<SimpleTable
+	expect(() => renderIntoDocument(<SimpleTable
 		columns={columns}
 		data={data}
 		onSort={() => {}} />)).toThrowError();
@@ -120,7 +120,7 @@ test("throw invalid sortOptions error", () => {
 
 test("throw invalid selectedRows error", () => {
 	mockConsole();
-	expect(() => render(<SimpleTable
+	expect(() => renderIntoDocument(<SimpleTable
 		columns={columns}
 		data={data}
 		onSelect={() => {}} />)).toThrowError();

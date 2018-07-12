@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { renderIntoDocument } from "react-testing-library";
 import "jest-dom/extend-expect";
 import { TestWrapper } from "../utils";
 import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
@@ -11,7 +11,7 @@ const DateTimeInputContainer = wrapPickerUtilProvider(DateTimeInput);
 test("render date time input", () => {
 	const testDate = "2016-03-07 16:20:00";
 	const mockCallback = jest.fn();
-	const { container, getByPlaceholderText } = render(
+	const { container, getByPlaceholderText } = renderIntoDocument(
 		<TestWrapper>
 			<DateTimeInputContainer
 				placeholder="Test DateTime Input"
@@ -26,7 +26,7 @@ test("render date time input", () => {
 test("render date input when readOnly is true", async () => {
 	const testDate = "2017-03-07 16:20:00";
 	const mockCallback = jest.fn();
-	const { container, getByTestId } = render(
+	const { container, getByTestId } = renderIntoDocument(
 		<TestWrapper>
 			<DateTimeInputContainer
 				placeholder="Test Date Input"
@@ -42,7 +42,7 @@ test("render date input when readOnly is true", async () => {
 test("render date input when readOnly is true showing - for empty value", async () => {
 	const testDate = "";
 	const mockCallback = jest.fn();
-	const { container, getByTestId } = render(
+	const { container, getByTestId } = renderIntoDocument(
 		<TestWrapper>
 			<DateTimeInputContainer
 				placeholder="Test Date Input"
@@ -58,7 +58,7 @@ test("render date input when readOnly is true showing - for empty value", async 
 test("render date input when readOnly is true showing empty value", async () => {
 	const testDate = "";
 	const mockCallback = jest.fn();
-	const { container, getByTestId } = render(
+	const { container, getByTestId } = renderIntoDocument(
 		<TestWrapper>
 			<DateTimeInputContainer
 				placeholder="Test Date Input"

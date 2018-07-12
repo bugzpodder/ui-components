@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { renderIntoDocument } from "react-testing-library";
 import "jest-dom/extend-expect";
 import mockConsole from "jest-mock-console";
 import { TestWrapper } from "../utils";
@@ -19,7 +19,7 @@ import { PagedTable } from "./index";
  **/
 
 test("render simple paged table", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<PagedTable
 				columns={columns}
@@ -30,7 +30,7 @@ test("render simple paged table", () => {
 });
 
 test("render paged table with no results", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<PagedTable
 				columns={columns}
@@ -41,7 +41,7 @@ test("render paged table with no results", () => {
 });
 
 test("render loading paged table", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<PagedTable
 				columns={columns}
@@ -53,7 +53,7 @@ test("render loading paged table", () => {
 });
 
 test("render paged table with no results and is loading", () => {
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<PagedTable
 				columns={columns}
@@ -66,7 +66,7 @@ test("render paged table with no results and is loading", () => {
 
 test("render paged table with no selected items", () => {
 	const mockSelect = jest.fn();
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<PagedTable
 				columns={columns}
@@ -81,7 +81,7 @@ test("render paged table with no selected items", () => {
 test("render full paged table", () => {
 	const mockPagination = jest.fn();
 	const mockSelect = jest.fn();
-	const { container } = render(
+	const { container } = renderIntoDocument(
 		<TestWrapper>
 			<PagedTable
 				title="Test Table"
@@ -105,13 +105,13 @@ test("render full paged table", () => {
 
 test("throw invalid paged table error", async () => {
 	mockConsole();
-	expect(() => render(<PagedTable columns={columns} />)).toThrowError();
+	expect(() => renderIntoDocument(<PagedTable columns={columns} />)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
 test("throw invalid columns error", () => {
 	mockConsole();
-	expect(() => render(<PagedTable
+	expect(() => renderIntoDocument(<PagedTable
 		columns={invalidColumns}
 		data={data} />)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
@@ -120,28 +120,32 @@ test("throw invalid columns error", () => {
 test("throw invalid pagination prop error", () => {
 	const mockPagination = jest.fn();
 	mockConsole();
-	expect(() => render(<PagedTable
-		columns={columns}
-		data={data}
-		onPageChange={mockPagination} />)).toThrowError();
+	expect(() =>
+		renderIntoDocument(<PagedTable
+			columns={columns}
+			data={data}
+			onPageChange={mockPagination} />),
+	).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
 test("throw invalid pagination options error", () => {
 	mockConsole();
 	expect(() =>
-		render(<PagedTable
-			columns={columns}
-			data={data}
-			onPageChange={() => {}}
-			tableOptions={invalidTableOptions} />),
+		renderIntoDocument(
+			<PagedTable
+				columns={columns}
+				data={data}
+				onPageChange={() => {}}
+				tableOptions={invalidTableOptions} />,
+		),
 	).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
 test("throw invalid sortOptions error", () => {
 	mockConsole();
-	expect(() => render(<PagedTable
+	expect(() => renderIntoDocument(<PagedTable
 		columns={columns}
 		data={data}
 		onSort={() => {}} />)).toThrowError();

@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { renderIntoDocument, cleanup, Simulate } from "react-testing-library";
+import { renderIntoDocument, cleanup, fireEvent } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import { Link, MemoryRouter } from "react-router-dom";
 import { bindElementToQueries } from "dom-testing-library";
@@ -41,15 +41,15 @@ test("render Sidebar", () => {
 	const tasks = bodyUtils.queryByText("Tasks");
 	// expect(bodyUtils.queryByText("Batches")).not.toBeInTheDOM();
 	expect(tasks).toBeInTheDOM();
-	Simulate.click(sampleManagementDropdown);
+	fireEvent.click(sampleManagementDropdown);
 	const batches = bodyUtils.queryByText("Batches");
 	expect(batches).toBeInTheDOM();
-	Simulate.click(sampleManagementDropdown);
+	fireEvent.click(sampleManagementDropdown);
 	// expect(bodyUtils.queryByText("Batches")).not.toBeInTheDOM();
 	expect(toggle.mock.calls.length).toBe(0);
 	const storage = bodyUtils.queryByText("Storage");
 	expect(storage).toBeInTheDOM();
-	Simulate.click(storage);
+	fireEvent.click(storage);
 	expect(toggle.mock.calls.length).toBe(1);
 	expect(document.body).toMatchSnapshot();
 	cleanup();

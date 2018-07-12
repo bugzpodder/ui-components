@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { renderIntoDocument } from "react-testing-library";
 import "jest-dom/extend-expect";
 import { TestWrapper } from "../utils";
 import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
@@ -11,7 +11,7 @@ const DateInputContainer = wrapPickerUtilProvider(DateInput);
 test("render date input", async () => {
 	const testDate = "2017-03-07 16:20:00";
 	const mockCallback = jest.fn();
-	const { container, getByPlaceholderText } = render(
+	const { container, getByPlaceholderText } = renderIntoDocument(
 		<TestWrapper>
 			<DateInputContainer
 				placeholder="Test Date Input"
@@ -23,10 +23,10 @@ test("render date input", async () => {
 	expect(container).toMatchSnapshot();
 });
 
-test("render date input when readOnly is true", async () => {
+test("renderIntoDocument date input when readOnly is true", async () => {
 	const testDate = "2017-03-07 16:20:00";
 	const mockCallback = jest.fn();
-	const { container, getByTestId } = render(
+	const { container, getByTestId } = renderIntoDocument(
 		<TestWrapper>
 			<DateInputContainer
 				placeholder="Test Date Input"
@@ -39,10 +39,10 @@ test("render date input when readOnly is true", async () => {
 	expect(container).toMatchSnapshot();
 });
 
-test("render date input when readOnly is true showing - as empty value", async () => {
+test("renderIntoDocument date input when readOnly is true showing - as empty value", async () => {
 	const testDate = "";
 	const mockCallback = jest.fn();
-	const { container, getByTestId } = render(
+	const { container, getByTestId } = renderIntoDocument(
 		<TestWrapper>
 			<DateInputContainer
 				placeholder="Test Date Input"
@@ -55,10 +55,10 @@ test("render date input when readOnly is true showing - as empty value", async (
 	expect(container).toMatchSnapshot();
 });
 
-test("render date input when readOnly is true showing empty value", async () => {
+test("renderIntoDocument date input when readOnly is true showing empty value", async () => {
 	const testDate = "";
 	const mockCallback = jest.fn();
-	const { container, getByTestId } = render(
+	const { container, getByTestId } = renderIntoDocument(
 		<TestWrapper>
 			<DateInputContainer
 				placeholder="Test Date Input"

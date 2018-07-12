@@ -6,7 +6,7 @@ import {
 	DATE_SEARCH_TYPE,
 	DATETIME_SEARCH_TYPE,
 } from "@grail/lib";
-import { render, Simulate } from "react-testing-library";
+import { render, fireEvent } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
 import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
@@ -66,18 +66,18 @@ describe("OmniSearchBar", () => {
 		let dropdown = container.querySelector("#omni-dropdown");
 		expect(clickaway).not.toBeInTheDOM();
 		expect(dropdown).not.toBeInTheDOM();
-		Simulate.click(getByTestId("menu-test"));
+		fireEvent.click(getByTestId("menu-test"));
 		clickaway = container.querySelector("#omni-clickaway");
 		dropdown = container.querySelector("#omni-dropdown");
 		expect(clickaway).toBeInTheDOM();
 		expect(dropdown).toBeInTheDOM();
 		expect(getByPlaceholderText("e.g. G0000")).toBeInTheDOM();
-		Simulate.click(clickaway);
+		fireEvent.click(clickaway);
 		clickaway = container.querySelector("#omni-clickaway");
 		dropdown = container.querySelector("#omni-dropdown");
 		expect(clickaway).not.toBeInTheDOM();
 		expect(dropdown).not.toBeInTheDOM();
-		Simulate.click(getByTestId("menu-test"));
+		fireEvent.click(getByTestId("menu-test"));
 		expect(dropdown).not.toBeInTheDOM();
 	});
 });

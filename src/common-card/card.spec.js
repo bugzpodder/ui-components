@@ -1,10 +1,12 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { render, cleanup } from "react-testing-library";
 import "jest-dom/extend-expect";
 import Button from "@material-ui/core/Button";
 import { TestWrapper } from "../utils";
 import { CommonCard } from "./index";
+
+afterEach(cleanup);
 
 test("render common card", () => {
 	const { container, getByTestId } = render(

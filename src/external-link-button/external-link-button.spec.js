@@ -1,8 +1,10 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { render, cleanup } from "react-testing-library";
 import { TestWrapper } from "../utils";
 import { ExternalLinkButton } from "./external-link-button";
+
+afterEach(cleanup);
 
 test("render ExternalLink", () => {
 	const { container } = render(

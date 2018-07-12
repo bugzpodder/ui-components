@@ -1,15 +1,17 @@
 // @flow
 import React from "react";
-import { renderIntoDocument, cleanup, fireEvent } from "react-testing-library";
+import { render, cleanup, fireEvent } from "react-testing-library";
 import { bindElementToQueries } from "dom-testing-library";
 import { TestWrapper } from "../utils";
 import { CommonDialog, CommonMultiPageDialog } from "./index";
+
+afterEach(cleanup);
 
 const bodyUtils = bindElementToQueries(document.body);
 
 test("render dialog", () => {
 	const mockCallback = jest.fn();
-	renderIntoDocument(
+	render(
 		<TestWrapper>
 			<CommonDialog
 				actions={[
@@ -27,12 +29,11 @@ test("render dialog", () => {
 	fireEvent.click(bodyUtils.getByText("Close"));
 	expect(mockCallback).toBeCalled();
 	expect(document.body).toMatchSnapshot();
-	cleanup();
 });
 
 test("render multi page dialog", () => {
 	const mockCallback = jest.fn();
-	renderIntoDocument(
+	render(
 		<TestWrapper>
 			<CommonMultiPageDialog
 				actions={[
@@ -64,5 +65,4 @@ test("render multi page dialog", () => {
 	fireEvent.click(bodyUtils.getByText("Back"));
 	expect(mockCallback).toBeCalled();
 	expect(document.body).toMatchSnapshot();
-	cleanup();
 });

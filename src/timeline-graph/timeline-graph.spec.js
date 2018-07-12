@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { render, Simulate } from "react-testing-library";
+import { render, fireEvent } from "react-testing-library";
 import "jest-dom/extend-expect";
 import moment from "moment-timezone";
 import { TestWrapper } from "../utils";
@@ -71,7 +71,7 @@ test("render and select timeline graph with multiple rows", () => {
 		const selectableRow = container.querySelector(`[data-row-index='${rowIndex}'] .card-container`);
 		if (selectableRow) {
 			onSelectRow.mockReset();
-			Simulate.click(selectableRow);
+			fireEvent.click(selectableRow);
 			expect(onSelectRow).toBeCalledWith(rowIndex);
 		} else {
 			expect(false).toBeTruthy();

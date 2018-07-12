@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { renderIntoDocument, cleanup } from "react-testing-library";
+import { render, cleanup } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import { MemoryRouter } from "react-router-dom";
 import { LIMS, EDC, PIPELINE } from "@grail/lib";
@@ -8,6 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import { createGenerateClassName } from "@material-ui/core/styles";
 import JssProvider from "react-jss/lib/JssProvider";
 import { Navbar } from "./navbar";
+
+afterEach(cleanup);
 
 const generateClassName = createGenerateClassName({
 	dangerouslyUseGlobalCSS: true,
@@ -20,7 +22,7 @@ const text = text => {
 };
 
 test("render Sidebar", () => {
-	renderIntoDocument(
+	render(
 		<JssProvider generateClassName={generateClassName}>
 			<MemoryRouter>
 				<Navbar
@@ -46,7 +48,6 @@ test("render Sidebar", () => {
 	// expect(bodyUtils.queryByText("center")).toBeInTheDOM();
 	// expect(bodyUtils.queryByText("right")).toBeInTheDOM();
 	// const hamburger = bodyUtils.querySelector("#main-nav-button");
-	// Simulate.click(hamburger);
+	// fireEvent.click(hamburger);
 	// expect(bodyUtils.queryByText("sidebarFooter")).toBeInTheDOM();
-	cleanup();
 });

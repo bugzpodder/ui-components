@@ -1,9 +1,11 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { render, cleanup } from "react-testing-library";
 import { TestWrapper } from "../utils";
 import { Selector } from "./index";
 import "jest-dom/extend-expect";
+
+afterEach(cleanup);
 
 test("render selector", async () => {
 	const selectorData = [

@@ -1,9 +1,11 @@
 // @flow
 import React from "react";
-import { render } from "react-testing-library";
+import { render, cleanup } from "react-testing-library";
 import "jest-dom/extend-expect";
 import { TestWrapper } from "../utils";
 import { Alert } from "./index";
+
+afterEach(cleanup);
 
 test("render success alert pane", () => {
 	const { container, getByTestId } = render(

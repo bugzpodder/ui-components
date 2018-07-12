@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { renderIntoDocument, cleanup, fireEvent } from "react-testing-library";
+import { render, cleanup, fireEvent } from "react-testing-library";
 import "dom-testing-library/extend-expect";
 import { Link, MemoryRouter } from "react-router-dom";
 import { bindElementToQueries } from "dom-testing-library";
@@ -8,6 +8,8 @@ import { LIMS, EDC, PIPELINE } from "@grail/lib";
 import { createGenerateClassName } from "@material-ui/core/styles";
 import JssProvider from "react-jss/lib/JssProvider";
 import { Sidebar } from "./sidebar";
+
+afterEach(cleanup);
 
 const generateClassName = createGenerateClassName({
 	dangerouslyUseGlobalCSS: true,
@@ -17,7 +19,7 @@ const bodyUtils = bindElementToQueries(document.body);
 
 test("render Sidebar", () => {
 	const toggle = jest.fn();
-	renderIntoDocument(
+	render(
 		<JssProvider generateClassName={generateClassName}>
 			<MemoryRouter>
 				<Sidebar
@@ -52,5 +54,4 @@ test("render Sidebar", () => {
 	fireEvent.click(storage);
 	expect(toggle.mock.calls.length).toBe(1);
 	expect(document.body).toMatchSnapshot();
-	cleanup();
 });

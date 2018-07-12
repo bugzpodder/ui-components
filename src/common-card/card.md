@@ -6,8 +6,10 @@ const Button = require("@material-ui/core/Button").default;
 <CommonCard
 	title="New Instrument"
 	subheader="This is a subheader"
-	className="main-container"
-	contentClass="content-container"
+	classes={{
+		root: "main-container",
+		body: "content-container",
+	}}
 	headerActions={
 		<Fragment>
 			<Button>First</Button>

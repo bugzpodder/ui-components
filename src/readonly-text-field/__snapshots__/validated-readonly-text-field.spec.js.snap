@@ -3,7 +3,7 @@
 exports[`render validated readonly text field 1`] = `
 <div>
   <span
-    class="readonlyTextField success "
+    class="success  readonlyTextField"
     data-testid="readonly-text-field"
   >
     <span
@@ -21,7 +21,7 @@ exports[`render validated readonly text field 1`] = `
 exports[`render validated readonly text field with \`isNA\` 1`] = `
 <div>
   <span
-    class="readonlyTextField  test-classname"
+    class=" test-classname readonlyTextField"
     data-testid="readonly-text-field"
   >
     
@@ -33,7 +33,7 @@ exports[`render validated readonly text field with \`isNA\` 1`] = `
 exports[`render validated readonly text field with false \`isValid\` 1`] = `
 <div>
   <span
-    class="readonlyTextField fail "
+    class="fail  readonlyTextField"
     data-testid="readonly-text-field"
   >
     <span

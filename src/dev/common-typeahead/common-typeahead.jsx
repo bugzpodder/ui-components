@@ -18,13 +18,10 @@ type Props = {
 	/** The function used to retrieve the values set by the typeahead */
 	onChange: (Object | Array<Suggestion>) => any,
 	/**
-	 * default (`simple`): synchronous - user is forced to choose an option from the suggestions (requires `suggestions` prop).
-	 *
-	 * `creatable`: allows user to create new entries that are not in the suggestions list (requires `suggestions` prop).
-	 *
-	 * `async`: allows for asynchronous retrieval of suggestions based on the user's input (requires `loadOptions` prop).
+	 * Tells the typeahead which suggestion to use as its default value. This should match a `value` property
+	 * associated with the array of suggestions
 	 */
-	selectType?: "simple" | "async" | "creatable",
+	defaultValue?: string,
 	/** Renders the input at its full width */
 	fullWidth?: boolean,
 	/** Text displayed directly under the input */
@@ -41,6 +38,14 @@ type Props = {
 	loadOptions?: (string, Function) => Array<Suggestion>,
 	/** The text displayed in the input before the user begins typing */
 	placeholder?: string,
+	/**
+	 * default (`simple`): synchronous - user is forced to choose an option from the suggestions (requires `suggestions` prop).
+	 *
+	 * `creatable`: allows user to create new entries that are not in the suggestions list (requires `suggestions` prop).
+	 *
+	 * `async`: allows for asynchronous retrieval of suggestions based on the user's input (requires `loadOptions` prop).
+	 */
+	selectType?: "simple" | "async" | "creatable",
 	/** Displays the input in an error state */
 	showError?: boolean,
 	/**
@@ -61,6 +66,7 @@ export const CommonTypeahead = (props: Props) => {
 		isDisabled = false,
 		isMulti = false,
 		showError = false,
+		defaultValue = "",
 	} = props;
 	return (
 		<div className="common-typeahead__root">
@@ -73,7 +79,6 @@ export const CommonTypeahead = (props: Props) => {
 						...props,
 						classNamePrefix: "common-typeahead",
 						isClearable: true,
-						openMenuOnClick: false,
 						onChange: value => {
 							if (!isMulti && !value) {
 								onChange({});
@@ -91,6 +96,7 @@ export const CommonTypeahead = (props: Props) => {
 							MultiValueRemove,
 						},
 						options: suggestions,
+						defaultValue: suggestions && suggestions.filter(suggestion => suggestion.value === defaultValue),
 						placeholder,
 					}}
 					classes={{

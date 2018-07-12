@@ -61,7 +61,7 @@ exports[`render common card with footer actions 1`] = `
       data-testid="card-actions"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiCardActions-action"
+        class="MuiButtonBase-root MuiButton-root MuiButton-flat MuiCardActions-action"
         tabindex="0"
         type="button"
       >
@@ -100,7 +100,7 @@ exports[`render common card with header actions 1`] = `
         class="MuiCardHeader-action headerActions"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          class="MuiButtonBase-root MuiButton-root MuiButton-flat"
           tabindex="0"
           type="button"
         >

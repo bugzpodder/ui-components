@@ -8,7 +8,7 @@ exports[`render dialog 1`] = `
     aria-hidden="true"
   />
   <div
-    class="MuiModal-root MuiDialog-root MuiDialog-scrollPaper commonDialog"
+    class="MuiModal-root MuiDialog-root commonDialog"
     role="dialog"
   >
     <div
@@ -50,7 +50,7 @@ exports[`render dialog 1`] = `
             class="right"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+              class="MuiButtonBase-root MuiButton-root MuiButton-flat"
               id="close"
               tabindex="0"
               type="button"
@@ -65,7 +65,7 @@ exports[`render dialog 1`] = `
               />
             </button>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+              class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
               data-id="action-button"
               data-is-enabled="true"
               data-testid="action-button"
@@ -83,7 +83,7 @@ exports[`render dialog 1`] = `
               />
             </button>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+              class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
               data-is-enabled="true"
               id="action-two"
               tabindex="0"
@@ -114,7 +114,7 @@ exports[`render multi page dialog 1`] = `
     aria-hidden="true"
   />
   <div
-    class="MuiModal-root MuiDialog-root MuiDialog-scrollPaper commonDialog"
+    class="MuiModal-root MuiDialog-root commonDialog"
     role="dialog"
   >
     <div
@@ -157,7 +157,7 @@ exports[`render multi page dialog 1`] = `
             class="left"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat back"
+              class="MuiButtonBase-root MuiButton-root MuiButton-flat back"
               id="back"
               tabindex="0"
               type="button"
@@ -188,7 +188,7 @@ exports[`render multi page dialog 1`] = `
             class="right"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+              class="MuiButtonBase-root MuiButton-root MuiButton-flat"
               id="close"
               tabindex="0"
               type="button"
@@ -203,7 +203,7 @@ exports[`render multi page dialog 1`] = `
               />
             </button>
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+              class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
               data-id="action-button"
               data-is-enabled="true"
               data-testid="action-button"

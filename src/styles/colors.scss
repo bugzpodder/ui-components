@@ -41,6 +41,8 @@ $grail-colors: (
 	grail-gray-darkest-color: $grail-gray-darkest-color,
 );
 
+$material-ui-disabled: lighten($grail-gray-medium-color, 18%);
+
 @each $name, $color in $grail-colors {
 	.#{$name} {
 		color: $color;

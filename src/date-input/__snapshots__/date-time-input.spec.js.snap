@@ -4,7 +4,7 @@ exports[`render date input when readOnly is true 1`] = `
 <div>
    
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     2017-03-07 16:20:00
@@ -17,7 +17,7 @@ exports[`render date input when readOnly is true showing - for empty value 1`] =
 <div>
    
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     -
@@ -30,7 +30,7 @@ exports[`render date input when readOnly is true showing empty value 1`] = `
 <div>
    
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     
@@ -50,6 +50,7 @@ exports[`render date time input 1`] = `
     >
       <input
         aria-invalid="false"
+        aria-required="false"
         class="MuiInput-input"
         placeholder="Test DateTime Input"
         type="text"

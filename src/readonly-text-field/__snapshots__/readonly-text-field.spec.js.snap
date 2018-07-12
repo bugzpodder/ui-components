@@ -3,7 +3,7 @@
 exports[`render readonly text field 1`] = `
 <div>
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     readOnly text
@@ -14,7 +14,7 @@ exports[`render readonly text field 1`] = `
 exports[`render readonly text field with an icon 1`] = `
 <div>
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     <span
@@ -32,7 +32,7 @@ exports[`render readonly text field with an icon 1`] = `
 exports[`render readonly text field with empty children 1`] = `
 <div>
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     
@@ -43,7 +43,7 @@ exports[`render readonly text field with empty children 1`] = `
 exports[`render readonly text field with empty children shown as - 1`] = `
 <div>
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     -

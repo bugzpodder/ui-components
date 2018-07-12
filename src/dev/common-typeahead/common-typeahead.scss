@@ -15,7 +15,7 @@
 		}
 
 		.common-typeahead__control--is-disabled > .common-typeahead__value-container > .common-typeahead__placeholder {
-			color: lighten($grail-gray-medium-color, 18%);
+			color: $material-ui-disabled;
 		}
 
 		.common-typeahead__control,

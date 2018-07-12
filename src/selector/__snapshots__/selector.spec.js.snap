@@ -31,6 +31,8 @@ exports[`render selector 1`] = `
             test text 1
           </div>
           <input
+            aria-invalid="true"
+            aria-required="false"
             id="selector"
             name="test-selector"
             type="hidden"
@@ -62,7 +64,7 @@ exports[`render selector 1`] = `
 exports[`render selector with empty selector data 1`] = `
 <div>
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     Nothing to select
@@ -73,7 +75,7 @@ exports[`render selector with empty selector data 1`] = `
 exports[`render selector with readonly 1`] = `
 <div>
   <span
-    class="readonlyTextField "
+    class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     test text 1
@@ -112,6 +114,8 @@ exports[`render selector without selected value 1`] = `
             Select
           </div>
           <input
+            aria-invalid="false"
+            aria-required="false"
             id="selector"
             name="test-selector"
             type="hidden"

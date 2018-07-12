@@ -253,23 +253,6 @@ exports[`render Sidebar 1`] = `
                       </span>
                     </div>
                   </a>
-                  <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
-                    exact="false"
-                    href="/lims/bulk-create-study-samples"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <div
-                      class="MuiListItemText-root MuiListItemText-dense"
-                    >
-                      <span
-                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
-                      >
-                        Bulk Create Study Samples
-                      </span>
-                    </div>
-                  </a>
                 </ul>
               </div>
             </div>

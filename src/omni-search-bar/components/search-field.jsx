@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import moment from "moment";
-import { DATE_FORMAT, DATE_SEARCH_TYPES } from "@grail/lib";
+import { DATE_FORMAT, DATE_SEARCH_TYPES, isValueValid } from "@grail/lib";
 import { DateInput } from "@grail/components";
 import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
@@ -9,34 +9,44 @@ import Typography from "@material-ui/core/Typography";
 
 import styles from "../omni.module.scss";
 
-export const SearchField = (props: SearchFieldProps) => {
-	const { searchKey, searchType, searchValue, onChange, ...otherProps } = props;
-	const onChangeComponent = (event: InputEvent) => {
+type Props = {
+	placeholder: string,
+	onSearch: () => any,
+	searchType: Symbol,
+} & SearchFieldProps;
+
+export const SearchField = (props: Props) => {
+	const { searchKey, searchType, searchValue, onChange, onSearch = () => {}, ...otherProps } = props;
+	const onChangeComponent = (event: SyntheticInputEvent<HTMLInputElement>) => {
 		const {
-			currentTarget: { id, value: text },
+			target: { id, value: text },
 		} = event;
 		onChange(id, text);
+	};
+	const onEnter = event => {
+		if (event.keyCode === 13) {
+			onSearch();
+		}
 	};
 	if (!DATE_SEARCH_TYPES.includes(searchType)) {
 		return (
 			<TextField
 				id={searchKey}
-				{...otherProps}
 				className={styles.textField}
 				value={searchValue ? String(searchValue) : ""}
 				onChange={onChangeComponent}
+				onKeyDown={onEnter}
+				fullWidth
+				{...otherProps}
 			/>
 		);
 	}
 
-	const [startDate = "", endDate = ""] = Array.isArray(searchValue) ? searchValue : [];
-	// startDate & endDate can technically be booleans or numbers.
-	if (typeof startDate !== "string" || typeof endDate !== "string") {
-		return null;
-	}
+	// $FlowFixMe: split is only called on searchValue if it is valid.
+	const [startDate = "", endDate = ""] = isValueValid(searchValue) ? searchValue.split(",") : [];
 	const onDateSearch = (id: string, startDate: string, endDate: string) => {
 		const dateRange = [startDate, endDate];
-		onChange(id, dateRange);
+		onChange(id, dateRange.join(","));
 	};
 	const onChangeStartDate = (id, date) => {
 		date = date ? moment(date).format(DATE_FORMAT) : "";
@@ -53,7 +63,8 @@ export const SearchField = (props: SearchFieldProps) => {
 				className={styles.input}
 				value={startDate}
 				onChange={onChangeStartDate.bind(this, searchKey)}
-				placeholder={"From date"}
+				onKeyDown={onEnter}
+				placeholder="From date"
 				{...otherProps}
 			/>
 			<Typography className={styles.typography}>to</Typography>
@@ -62,7 +73,8 @@ export const SearchField = (props: SearchFieldProps) => {
 				className={styles.dateInput}
 				value={endDate}
 				onChange={onChangeEndDate.bind(this, searchKey)}
-				placeholder={"To date"}
+				onKeyDown={onEnter}
+				placeholder="To date"
 				{...otherProps}
 			/>
 		</Grid>

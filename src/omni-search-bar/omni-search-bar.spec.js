@@ -54,7 +54,7 @@ describe("OmniSearchBar", () => {
 		</TestWrapper>,
 	);
 	it("renders properly", () => {
-		expect(getByPlaceholderText("Search here or use dropdown")).toBeInTheDOM();
+		expect(getByPlaceholderText("Search part number here or use dropdown")).toBeInTheDOM();
 		expect(container).toMatchSnapshot();
 	});
 	it("doesn't render dropdown or clickaway", () => {

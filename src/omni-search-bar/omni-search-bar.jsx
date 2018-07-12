@@ -197,6 +197,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 						error={this.state.error}
 						isOpen={isOpen}
 						toggleDropdown={this.toggleDropdown}
+						defaultField={searchDefs[0].name.toLowerCase()}
 					/>
 					{isOpen && (
 						<div

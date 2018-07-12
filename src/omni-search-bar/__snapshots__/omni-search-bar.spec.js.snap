@@ -48,7 +48,7 @@ exports[`OmniSearchBar renders properly 1`] = `
             aria-invalid="false"
             class="MuiInput-input"
             id="omni"
-            placeholder="Search here or use dropdown"
+            placeholder="Search part number here or use dropdown"
             type="text"
             value=""
           />

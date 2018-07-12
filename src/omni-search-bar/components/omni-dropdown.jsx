@@ -40,6 +40,7 @@ export class OmniDropdown extends React.Component<Props> {
 										searchType={type}
 										searchValue={searchValue}
 										onChange={onChange}
+										onSearch={onSearch}
 									/>
 								),
 							};

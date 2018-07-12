@@ -18,6 +18,7 @@ type Props = {
 	error: string,
 	toggleDropdown: () => any,
 	isOpen?: boolean,
+	defaultField?: string,
 };
 
 type State = {
@@ -29,6 +30,12 @@ export class OmniField extends React.Component<Props, State> {
 		isSelected: false,
 	};
 
+	componentDidUpdate = (prevProps: Props) => {
+		if (prevProps.isOpen !== this.props.isOpen) {
+			this.setState({ isSelected: this.props.isOpen });
+		}
+	};
+
 	activateOmniField = () => {
 		this.setState({ isSelected: true });
 	};
@@ -37,15 +44,17 @@ export class OmniField extends React.Component<Props, State> {
 		this.setState({ isSelected: false });
 	};
 
-	toggleDropdown = async () => {
-		await this.props.toggleDropdown();
-		this.setState((prevState, props) => {
-			return { isSelected: props.isOpen };
-		});
-	};
-
 	render = () => {
-		const { omniText, onChange, onSearch, onClear, error, isOpen = false } = this.props;
+		const {
+			omniText,
+			onChange,
+			onSearch,
+			onClear,
+			error,
+			isOpen = false,
+			toggleDropdown,
+			defaultField = "",
+		} = this.props;
 		const omniChange = (event: InputEvent) => {
 			const {
 				currentTarget: { id, value: text },
@@ -72,7 +81,7 @@ export class OmniField extends React.Component<Props, State> {
 					helperText={error}
 					FormHelperTextProps={{ error: true }}
 					id={OMNI_KEY}
-					placeholder="Search here or use dropdown"
+					placeholder={`Search ${defaultField === "" ? "" : defaultField.concat(" ")}here or use dropdown`}
 					InputProps={{
 						disableUnderline: true,
 						startAdornment: (
@@ -117,7 +126,7 @@ export class OmniField extends React.Component<Props, State> {
 									className={classNames(styles.iconButton, textClass)}
 									disableRipple
 									aria-label="Expand search options"
-									onClick={this.toggleDropdown}
+									onClick={toggleDropdown}
 								>
 									<ArrowDropDownIcon />
 								</IconButton>

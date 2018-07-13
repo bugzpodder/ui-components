@@ -18,10 +18,10 @@ type Props = {
 	/** The function used to retrieve the values set by the typeahead */
 	onChange: (Object | Array<Suggestion>) => any,
 	/**
-	 * Tells the typeahead which suggestion to use as its default value. This should match a `value` property
-	 * associated with the array of suggestions
+	 * Tells the typeahead which suggestion(s) to use as its default value.
+	 * String(s) should match `value` of an object in a suggestion, or in the array of suggestions
 	 */
-	defaultValue?: string,
+	defaultValue?: string | Array<string>,
 	/** Renders the input at its full width */
 	fullWidth?: boolean,
 	/** Text displayed directly under the input */
@@ -59,7 +59,7 @@ type Props = {
 export const CommonTypeahead = (props: Props) => {
 	const {
 		onChange,
-		suggestions,
+		suggestions = [],
 		fullWidth = false,
 		helperText = "",
 		placeholder = "",
@@ -68,6 +68,9 @@ export const CommonTypeahead = (props: Props) => {
 		showError = false,
 		defaultValue = "",
 	} = props;
+	const defaultValueSelections = isMulti
+		? suggestions.filter(suggestion => defaultValue.includes(suggestion.value))
+		: suggestions.find(suggestion => suggestion.value === defaultValue);
 	return (
 		<div className="common-typeahead__root">
 			<FormControl fullWidth={fullWidth}>
@@ -96,7 +99,7 @@ export const CommonTypeahead = (props: Props) => {
 							MultiValueRemove,
 						},
 						options: suggestions,
-						defaultValue: suggestions && suggestions.filter(suggestion => suggestion.value === defaultValue),
+						defaultValue: defaultValueSelections,
 						placeholder,
 					}}
 					classes={{

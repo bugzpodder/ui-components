@@ -64,7 +64,7 @@ export const SearchField = (props: Props) => {
 				value={startDate}
 				onChange={onChangeStartDate.bind(this, searchKey)}
 				onKeyDown={onEnter}
-				placeholder="From date"
+				InputProps={{ placeholder: "From date" }}
 				{...otherProps}
 			/>
 			<Typography className={styles.typography}>to</Typography>
@@ -74,7 +74,7 @@ export const SearchField = (props: Props) => {
 				value={endDate}
 				onChange={onChangeEndDate.bind(this, searchKey)}
 				onKeyDown={onEnter}
-				placeholder="To date"
+				InputProps={{ placeholder: "To date" }}
 				{...otherProps}
 			/>
 		</Grid>

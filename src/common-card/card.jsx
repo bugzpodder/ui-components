@@ -27,14 +27,6 @@ type Props = {
 	 * options include `header`, `headerActions` (applied to headerActions container), `title`, `subheader`, `body` (for card's contents),
 	 * `footer`, and `footerActions` (applied to footerActions container) */
 	classes?: CommonCardClasses,
-	/** DEPRECATED: Gives a `className` to the `Card` */
-	className?: string,
-	/** DEPRECATED: Gives a `className` to the container of `CommonCard`s contents */
-	contentClass?: string,
-	/** DEPRECATED: Provides a className to `footerActions` */
-	footerClass?: string,
-	/** DEPRECATED: Provides a className to `headerActions` */
-	headerClass?: string,
 };
 
 /**
@@ -51,18 +43,12 @@ export const CommonCard = (props: Props) => {
 		avatar = null,
 		title = "",
 		hasMargin = false,
-
-		// TODO(nsawas): deprecate old classnames
-		className = "",
-		contentClass = "",
-		footerClass = "",
-		headerClass = "",
 		...cardProps
 	} = props;
 	return (
 		<Card
 			{...cardProps}
-			className={classNames(className, classes.root, styles.card, { [styles.withMargin]: hasMargin })}
+			className={classNames(classes.root, styles.card, { [styles.withMargin]: hasMargin })}
 			elevation={MAIN_CARD_ELEVATION}
 		>
 			{(title || headerActions) && (
@@ -71,7 +57,7 @@ export const CommonCard = (props: Props) => {
 					title={title}
 					subheader={subheader}
 					classes={{
-						root: classNames(classes.header, headerClass),
+						root: classes.header,
 						action: classNames(styles.headerActions, classes.headerActions),
 						title: classNames("card-title", classes.title),
 						subheader: classes.subheader,
@@ -83,7 +69,7 @@ export const CommonCard = (props: Props) => {
 			<CardContent
 				data-testid="card-content"
 				classes={{
-					root: classNames(classes.body, contentClass),
+					root: classes.body,
 				}}
 			>
 				{children}
@@ -92,7 +78,7 @@ export const CommonCard = (props: Props) => {
 				<CardActions
 					data-testid="card-actions"
 					classes={{
-						root: classNames(classes.footer, footerClass),
+						root: classes.footer,
 						action: classes.footerActions,
 					}}
 				>

@@ -20,7 +20,7 @@ type Props = {
 	/** Provides for action components to be rendered in the top right corner */
 	headerActions?: Node,
 	/** Provides a subheader under the `title` */
-	subheader?: string,
+	subheader?: Node,
 	/** Provides built-in margins for the card */
 	hasMargin?: boolean,
 	/** Provides classnames to the card and its subcomponents

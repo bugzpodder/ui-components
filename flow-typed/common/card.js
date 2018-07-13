@@ -8,4 +8,4 @@ declare type CommonCardClasses = {
 	root?: string,
 	subheader?: string,
 	title?: string,
-}
+};

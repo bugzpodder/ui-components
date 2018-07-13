@@ -44,39 +44,48 @@ export class Navbar extends React.Component<Props, State> {
 	state = {
 		isSidebarOpen: false,
 	};
+
 	toggleSidebar = () => {
-		this.setState({ isSidebarOpen: !this.state.isSidebarOpen });
+		this.setState(({ isSidebarOpen }) => ({ isSidebarOpen: !isSidebarOpen }));
 	};
 
 	render = () => {
-		const { isProduction = false, title, breadcrumbs, left, center, right, sidebarFooter, ...otherProps } = this.props;
+		const {
+			isProduction = false, title, breadcrumbs, left, center, right, sidebarFooter, ...otherProps
+		} = this.props;
 		return (
 			<Fragment>
 				<AppBar
 					position="sticky"
-					className={styles.appBar}>
+					className={styles.appBar}
+				>
 					{!isProduction && (
 						<Typography
 							className={styles.nonProductionWarning}
-							variant="title">
+							variant="title"
+						>
 							THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
 						</Typography>
 					)}
 					<Toolbar
 						className={styles.toolbar}
-						disableGutters>
+						disableGutters
+					>
 						<div className={styles.left}>
 							<IconButton
 								id="main-nav-button"
+								data-testid="main-nav-button"
 								onClick={this.toggleSidebar}
 								color="inherit"
-								aria-label="Menu">
+								aria-label="Menu"
+							>
 								<MenuIcon />
 							</IconButton>
 							{title && (
 								<Typography
 									color="inherit"
-									variant="title">
+									variant="title"
+								>
 									{title}
 								</Typography>
 							)}
@@ -96,7 +105,8 @@ export class Navbar extends React.Component<Props, State> {
 					isOpen={this.state.isSidebarOpen}
 					toggle={this.toggleSidebar}
 					footer={sidebarFooter}
-					{...otherProps} />
+					{...otherProps}
+				/>
 			</Fragment>
 		);
 	};

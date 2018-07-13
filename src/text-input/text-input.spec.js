@@ -17,7 +17,8 @@ test("render text field wrapper", async () => {
 				placeholder={testPlaceholder}
 				id="operator"
 				onChange={() => {}}
-				value={testValue} />
+				value={testValue}
+			/>
 		</TestWrapper>,
 	);
 	expect(getByPlaceholderText(testPlaceholder)).toHaveAttribute("value", testValue);
@@ -30,9 +31,10 @@ test("render text field wrapper with readonly as true", async () => {
 		<TestWrapper>
 			<TextInput
 				id="operator"
-				readOnly={true}
+				readOnly
 				onChange={() => {}}
-				value={testValue} />
+				value={testValue}
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent(testValue);
@@ -47,7 +49,8 @@ test("render text field wrapper with readonly as true showing - for empty value"
 				id="operator"
 				onChange={() => {}}
 				value={testValue}
-				readOnly />
+				readOnly
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent("-");
@@ -63,7 +66,8 @@ test("render text field wrapper with readonly as true with showing empty value",
 				onChange={() => {}}
 				value={testValue}
 				readOnly
-				showEmptyValue />
+				showEmptyValue
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent("");

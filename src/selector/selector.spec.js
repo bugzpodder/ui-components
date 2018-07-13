@@ -18,7 +18,7 @@ test("render selector", async () => {
 			<Selector
 				name="test-selector"
 				data={selectorData}
-				showError={true}
+				showError
 				helperText="test helper text"
 				value="testKey1"
 			/>
@@ -39,7 +39,8 @@ test("render selector without selected value", async () => {
 			<Selector
 				name="test-selector"
 				data={selectorData}
-				value="" />
+				value=""
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("selector-value")).toHaveTextContent("Select");
@@ -58,7 +59,8 @@ test("render selector with readonly", async () => {
 				name="test-selector"
 				readOnly
 				data={selectorData}
-				value="testKey1" />
+				value="testKey1"
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent("test text 1");
@@ -72,7 +74,8 @@ test("render selector with empty selector data", async () => {
 			<Selector
 				name="test-selector"
 				data={selectorData}
-				value="" />
+				value=""
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent("Nothing to select");

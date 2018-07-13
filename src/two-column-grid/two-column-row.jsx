@@ -22,12 +22,14 @@ export const TwoColumnRow = (props: Props) => {
 			justify="space-between"
 			alignItems="center"
 			spacing={40}
-			className={styles.gridItem}>
+			className={styles.gridItem}
+		>
 			<Grid
 				item
 				data-testid="two-column-row-label"
 				className={styles.labelColumn}
-				xs={labelWidth}>
+				xs={labelWidth}
+			>
 				{typeof label === "string" ? (
 					<Typography className={styles.rowLabel}>{label}</Typography>
 				) : (
@@ -38,7 +40,8 @@ export const TwoColumnRow = (props: Props) => {
 				item
 				data-testid="two-column-row-value"
 				className={styles.valueColumn}
-				xs={inputWidth}>
+				xs={inputWidth}
+			>
 				{value}
 			</Grid>
 		</Grid>

@@ -19,7 +19,7 @@ test("render dialog", () => {
 					{ name: "action two", callback: jest.fn() },
 				]}
 				title="test"
-				isVisible={true}
+				isVisible
 				hideModal={mockCallback}
 			>
 				Test Content
@@ -37,21 +37,33 @@ test("render multi page dialog", () => {
 		<TestWrapper>
 			<CommonMultiPageDialog
 				actions={[
-					{ id: "action-button", name: "action one", callback: jest.fn(), pages: [0] },
-					{ id: "action-button", name: "action two", callback: jest.fn(), pages: [1] },
+					{
+						id: "action-button",
+						name: "action one",
+						callback: jest.fn(),
+						pages: [0],
+					},
+					{
+						id: "action-button",
+						name: "action two",
+						callback: jest.fn(),
+						pages: [1],
+					},
 				]}
 				title="test"
-				isVisible={true}
+				isVisible
 				hideModal={jest.fn()}
 				pages={[
 					<div
 						key="0"
-						data-testid="page">
+						data-testid="page"
+					>
 						Page 1
 					</div>,
 					<div
 						key="1"
-						data-testid="page">
+						data-testid="page"
+					>
 						Page 2
 					</div>,
 				]}

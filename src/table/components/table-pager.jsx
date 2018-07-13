@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React from "react";
 import TablePagination from "@material-ui/core/TablePagination";
 import styles from "../table.module.scss";
@@ -8,7 +8,9 @@ type Props = {
 };
 
 export const TablePager = (props: Props) => {
-	const { onPageChange, onSelect, rowCount, tableOptions } = props.paginationProps;
+	const {
+		onPageChange, onSelect, rowCount, tableOptions,
+	} = props.paginationProps;
 	if (!tableOptions) {
 		throw new Error("tableOptions prop with count and offset must be included for pagination");
 	}

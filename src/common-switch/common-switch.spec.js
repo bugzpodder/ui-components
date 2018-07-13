@@ -17,7 +17,8 @@ test("render primary common switch", () => {
 					color="primary"
 					helperText="test switch"
 					value="test"
-					onChange={mockChange} />
+					onChange={mockChange}
+				/>
 			</div>
 		</TestWrapper>,
 	);
@@ -31,8 +32,9 @@ test("render secondary common switch", () => {
 		<TestWrapper>
 			<div>
 				<CommonSwitch
-					isEnabled={true}
-					onChange={mockChange} />
+					isEnabled
+					onChange={mockChange}
+				/>
 			</div>
 		</TestWrapper>,
 	);
@@ -44,9 +46,10 @@ test("render error common switch", () => {
 		<TestWrapper>
 			<div>
 				<CommonSwitch
-					showError={true}
-					isSelected={true}
-					onChange={mockChange} />
+					showError
+					isSelected
+					onChange={mockChange}
+				/>
 			</div>
 		</TestWrapper>,
 	);

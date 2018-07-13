@@ -109,7 +109,8 @@ export const CommonTypeahead = (props: Props) => {
 				{helperText && (
 					<FormHelperText
 						error={showError}
-						className="common-typeahead__helpertext">
+						className="common-typeahead__helpertext"
+					>
 						{helperText}
 					</FormHelperText>
 				)}

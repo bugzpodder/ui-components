@@ -13,7 +13,8 @@ test("render success alert pane", () => {
 			<div>
 				<Alert
 					color="success"
-					message="Test success" />
+					message="Test success"
+				/>
 			</div>
 		</TestWrapper>,
 	);
@@ -27,7 +28,8 @@ test("render info alert pane", () => {
 			<div>
 				<Alert
 					color="info"
-					message="Test info" />
+					message="Test info"
+				/>
 			</div>
 		</TestWrapper>,
 	);
@@ -42,7 +44,8 @@ test("render warning alert pane", () => {
 				<Alert
 					color="warning"
 					variant="flat"
-					message="Test warning" />
+					message="Test warning"
+				/>
 			</div>
 		</TestWrapper>,
 	);
@@ -56,7 +59,8 @@ test("render error alert pane", () => {
 			<div>
 				<Alert
 					variant="flat"
-					message="Test error" />
+					message="Test error"
+				/>
 			</div>
 		</TestWrapper>,
 	);

@@ -4,21 +4,24 @@ import { render, cleanup } from "react-testing-library";
 import "jest-dom/extend-expect";
 import mockConsole from "jest-mock-console";
 import { TestWrapper } from "../utils";
-import { columns, data, invalidColumns, tableOptions } from "./utilities/test-table-properties";
+import {
+	columns, data, invalidColumns, tableOptions,
+} from "./utilities/test-table-properties";
 import { SimpleTable } from "./index";
 
 afterEach(cleanup);
 
 /**
  Passing Cases
- **/
+ */
 
 test("render simple table", () => {
 	const { container } = render(
 		<TestWrapper>
 			<SimpleTable
 				columns={columns}
-				data={data} />
+				data={data}
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -29,7 +32,8 @@ test("render simple table with no results", () => {
 		<TestWrapper>
 			<SimpleTable
 				columns={columns}
-				data={[]} />
+				data={[]}
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -41,7 +45,8 @@ test("render loading simple table", () => {
 			<SimpleTable
 				columns={columns}
 				data={data}
-				isLoading={true} />
+				isLoading
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -53,7 +58,8 @@ test("render simple table with no results and is loading", () => {
 			<SimpleTable
 				columns={columns}
 				data={[]}
-				isLoading={true} />
+				isLoading
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -95,7 +101,7 @@ test("render full simple table", () => {
 
 /**
  Fail Cases
- **/
+ */
 
 test("throw invalid simple table error", async () => {
 	mockConsole();
@@ -107,7 +113,8 @@ test("throw invalid columns error", () => {
 	mockConsole();
 	expect(() => render(<SimpleTable
 		columns={invalidColumns}
-		data={data} />)).toThrowError();
+		data={data}
+	/>)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
@@ -116,7 +123,8 @@ test("throw invalid sortOptions error", () => {
 	expect(() => render(<SimpleTable
 		columns={columns}
 		data={data}
-		onSort={() => {}} />)).toThrowError();
+		onSort={() => {}}
+	/>)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
@@ -125,6 +133,7 @@ test("throw invalid selectedRows error", () => {
 	expect(() => render(<SimpleTable
 		columns={columns}
 		data={data}
-		onSelect={() => {}} />)).toThrowError();
+		onSelect={() => {}}
+	/>)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });

@@ -8,7 +8,7 @@ import { GrailLogo } from "./index";
 afterEach(cleanup);
 
 [undefined, "white", "purple", "gold"].forEach(color => {
-	test(`render ${color ? color : "default (white)"} GrailLogo`, () => {
+	test(`render ${color || "default (white)"} GrailLogo`, () => {
 		const { container } = render(
 			<TestWrapper>
 				<GrailLogo color={color} />

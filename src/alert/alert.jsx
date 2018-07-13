@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React, { type Node } from "react";
 import classNames from "classnames";
 import SnackbarContent from "@material-ui/core/SnackbarContent";
@@ -32,23 +32,26 @@ const colorIcon = {
  * `Alert is a styled alert pane for UI components`
  */
 export const Alert = (props: Props) => {
-	const { textAlign = "", className = "", color = "error", message, variant = "" } = props;
+	const {
+		textAlign = "", className = "", color = "error", message, variant = "",
+	} = props;
 	const Icon = colorIcon[color];
 	return (
 		<div
 			data-testid="alert"
-			className={styles.alertContainer}>
+			className={styles.alertContainer}
+		>
 			<SnackbarContent
 				className={classNames(styles[color], styles[variant], `alert-${color}`, className)}
 				classes={{
 					message: styles[textAlign],
 				}}
-				message={
+				message={(
 					<span>
 						<Icon className={styles.alertIcon} />
 						{message}
 					</span>
-				}
+)}
 			/>
 		</div>
 	);

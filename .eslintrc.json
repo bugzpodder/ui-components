@@ -6,7 +6,7 @@
     "jest": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:flowtype/recommended", "plugin:react/recommended"],
+  "extends": ["eslint-config-airbnb", "plugin:flowtype/recommended"],
   "parser": "babel-eslint",
   "parserOptions": {
     "allowImportExportEverywhere": false,
@@ -41,8 +41,6 @@
       }
     ],
     "guard-for-in": "error",
-    "import/order": "error",
-    "import/newline-after-import": ["error", { "count": 1 }],
     "indent": [
       "error",
       "tab",
@@ -65,9 +63,13 @@
         ]
       }
     ],
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/order": "error",
+    "import/prefer-default-export": 0,
     "linebreak-style": ["error", "unix"],
-    "max-len": ["error", 140, 2],
-    "no-console": ["error", { "allow": ["warn", "error", "debug"] }],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "max-len": ["error", 150, 2],
+    "no-console": ["error", { "allow": ["warn", "error", "debug", "info"] }],
     "no-alert": "error",
     "no-caller": "error",
     "no-case-declarations": "error",
@@ -99,7 +101,7 @@
             "message": "Please import lodash functions directly, eg: import isEmpty from \"lodash/isEmpty\"."
           },
           {
-            "name": "material-ui",
+            "name": "@material-ui/core",
             "message": "Please import material-ui components directly, eg: import Card from \"@material-ui/core/Card\"."
           }
         ],
@@ -111,6 +113,7 @@
     "no-self-assign": "error",
     "no-self-compare": "error",
     "no-sequences": "error",
+    "no-shadow": 0,
     "no-tabs": 0,
     "no-template-curly-in-string": "error",
     "no-trailing-spaces": 2,
@@ -118,7 +121,9 @@
     "no-unreachable": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
+    "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
     "no-unused-labels": "error",
+    "no-unused-vars": [2, { "varsIgnorePattern": "^__" }],
     "no-useless-call": "error",
     "no-useless-escape": "error",
     "no-useless-return": "error",
@@ -139,10 +144,11 @@
     "react/display-name": 0,
     "react/jsx-closing-tag-location": 2,
     "react/jsx-equals-spacing": 2,
+    "react/jsx-filename-extension": [2, { "extensions": [".spec.js", ".jsx"] }],
+    "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
     "react/jsx-indent": ["error", "tab"],
     "react/jsx-indent-props": ["error", "tab"],
     "react/jsx-max-props-per-line": [1, { "maximum": 1, "when": "always" }],
-    "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
     "react/jsx-no-bind": [0],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
@@ -153,6 +159,42 @@
     "use-isnan": "error",
     "valid-typeof": "error",
     "wrap-iife": "error",
-    "yoda": "error"
+    "yoda": "error",
+
+    "consistent-return": 0,
+    "no-plusplus": 0,
+    "no-use-before-define": 0,
+    "react/no-unused-state": 0,
+    "react/no-unused-prop-types": 0,
+
+    "arrow-parens": 0,
+    "implicit-arrow-linebreak": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "no-underscore-dangle": 0,
+    "function-paren-newline": 0,
+    "no-return-await": 0,
+    "prefer-destructuring": 0,
+    "react/destructuring-assignment": 0,
+    "react/no-array-index-key": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/require-default-props": 0,
+    "react/sort-comp": 0,
+    "react/no-this-in-sfc": 0,
+    "no-restricted-syntax": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/interactive-supports-focus": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/label-has-for": 0,
+    "no-mixed-operators": 0,
+    "radix": 0,
+    "global-require": 0,
+    "import/named": 0,
+    "array-callback-return": 0,
+    "arrow-body-style": 0,
+    "no-restricted-globals": 0
   }
 }

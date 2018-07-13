@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 
@@ -14,6 +14,7 @@ export const columns = [
 		Header: "Column One",
 		accessor: "columnOne",
 		Cell: ({ value }: { value: string }) => {
+			// eslint-disable-next-line react/jsx-filename-extension
 			return <span>{value}</span>;
 		},
 	},

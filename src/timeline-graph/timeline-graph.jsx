@@ -46,25 +46,30 @@ export const TimelineGraph = (props: Props) => {
 		<div className={`${styles.timelineGraph} card-width-${cardWidth} card-height-${cardHeight}`}>
 			<svg
 				height={rowHeight * rows.length + svgYMargin + rectYMargin}
-				className={styles.timelineSvg}>
+				className={styles.timelineSvg}
+			>
 				<defs>
 					<filter
 						id="drop-shadow"
 						x="0"
 						y="0"
 						width="200%"
-						height="200%">
+						height="200%"
+					>
 						<feGaussianBlur
 							in="SourceAlpha"
-							stdDeviation="3" />
+							stdDeviation="3"
+						/>
 						<feOffset
 							dx="2"
 							dy="2"
-							result="offsetblur" />
+							result="offsetblur"
+						/>
 						<feComponentTransfer>
 							<feFuncA
 								type="linear"
-								slope="0.5" />
+								slope="0.5"
+							/>
 						</feComponentTransfer>
 						<feMerge>
 							<feMergeNode />
@@ -152,7 +157,8 @@ export const TimelineGraph = (props: Props) => {
 										<text
 											className={styles.date}
 											x={rectWidth}
-											y={rectHeight / 2}>
+											y={rectHeight / 2}
+										>
 											{`${moment(date).format(dateFormat)}`}
 										</text>
 									)}

@@ -17,7 +17,8 @@ test("render date input", async () => {
 			<DateInputContainer
 				placeholder="Test Date Input"
 				onChange={mockCallback}
-				value={testDate} />
+				value={testDate}
+			/>
 		</TestWrapper>,
 	);
 	expect(getByPlaceholderText("Test Date Input")).toHaveAttribute("value", "2017-03-07");
@@ -33,7 +34,8 @@ test("render date input when readOnly is true", async () => {
 				placeholder="Test Date Input"
 				onChange={mockCallback}
 				value={testDate}
-				readOnly={true} />
+				readOnly
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent("2017-03-07");
@@ -49,7 +51,8 @@ test("render date input when readOnly is true showing - as empty value", async (
 				placeholder="Test Date Input"
 				onChange={mockCallback}
 				value={testDate}
-				readOnly />
+				readOnly
+			/>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent("-");

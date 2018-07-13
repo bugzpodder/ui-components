@@ -47,7 +47,8 @@ describe("OmniSearchBar", () => {
 			<MuiPickersUtilsProvider utils={MomentUtils}>
 				<OmniSearchBar
 					searchDefs={searchDefs}
-					setSearchOptions={onSearch}>
+					setSearchOptions={onSearch}
+				>
 					This is a test
 				</OmniSearchBar>
 			</MuiPickersUtilsProvider>

@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React, { type ElementConfig } from "react";
 import { DatePicker } from "material-ui-pickers";
 import { DATE_FORMAT } from "@grail/lib";
@@ -31,8 +31,8 @@ export const DateInput = (props: Props) => {
 		<div className={styles.datePicker}>
 			<DatePicker
 				format={DATE_FORMAT}
-				keyboard={true}
-				clearable={true}
+				keyboard
+				clearable
 				InputAdornmentProps={{ className: styles.adornmentWidth }}
 				{...props}
 				value={value || null}

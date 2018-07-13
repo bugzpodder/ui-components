@@ -16,7 +16,8 @@ export const FavoriteIconButton = (props: Props) => {
 		<div className={styles.iconContainer}>
 			<IconButton
 				classes={{ root: styles.iconButton }}
-				onClick={() => onClick(!isSelected)}>
+				onClick={() => onClick(!isSelected)}
+			>
 				{isSelected ? <SelectedStarIcon color="secondary" /> : <UnselectedStarIcon />}
 			</IconButton>
 		</div>

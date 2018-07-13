@@ -9,8 +9,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import classNames from "classnames";
 import styles from "./dialog.module.scss";
-import { actionToButton } from "./util";
-import { type CommonDialogAction } from "./dialog";
+import { actionToButton, type CommonDialogAction } from "./util";
 
 type CommonMultiPageDialogAction = {
 	pages?: Array<number>,
@@ -25,19 +24,21 @@ type Props = {
 	isVisible: boolean,
 	/** Gives a Title to the Dialog */
 	title: Node<*>,
-	/** Dialog content **/
+	/** Dialog content */
 	pages: Array<Node>,
-	/** Page index **/
+	/** Page index */
 	pageIndex: number,
-	/** The callback used to set page **/
+	/** The callback used to set page */
 	setPage: Function,
-	/** shows the back button if it's true **/
+	/** shows the back button if it's true */
 	showBackButton?: boolean,
-	/** className **/
+	/** className */
 	className?: string,
 };
 export const CommonMultiPageDialog = (props: Props) => {
-	const { isVisible, hideModal, pageIndex, pages, setPage, title, className, showBackButton = true, actions } = props;
+	const {
+		isVisible, hideModal, pageIndex, pages, setPage, title, className, showBackButton = true, actions,
+	} = props;
 	const leftActionButtons = actions
 		.filter(({ isLeftButton = false, pages = [] }) => isLeftButton && (pages.length === 0 || pages.includes(pageIndex)))
 		.map(action => actionToButton(action));
@@ -58,12 +59,13 @@ export const CommonMultiPageDialog = (props: Props) => {
 			<DialogActions>
 				<div className={styles.commonDialogFooter}>
 					<div className={styles.left}>
-						{pageIndex > 0 &&
-							showBackButton && (
+						{pageIndex > 0
+							&& showBackButton && (
 								<Button
 									id="back"
 									className="back"
-									onClick={setPage.bind(null, pageIndex - 1)}>
+									onClick={setPage.bind(null, pageIndex - 1)}
+								>
 									<ArrowBackIcon className="margin-right-5" /> Back
 								</Button>
 						)}
@@ -72,7 +74,8 @@ export const CommonMultiPageDialog = (props: Props) => {
 					<div className={styles.right}>
 						<Button
 							id="close"
-							onClick={hideModal}>
+							onClick={hideModal}
+						>
 							Close
 						</Button>
 						{rightActionButtons}

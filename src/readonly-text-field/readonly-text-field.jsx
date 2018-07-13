@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import Icon from "@material-ui/core/Icon";
 import React, { type Node } from "react";
 import classNames from "classnames";
@@ -19,7 +19,9 @@ type Props = {
 
 /** Provides a styled component for displaying read-only input fields. */
 export const ReadOnlyTextField = (props: Props) => {
-	const { children, className = "", isDisabled, showEmptyValue, icon, ...other } = props;
+	const {
+		children, className = "", isDisabled, showEmptyValue, icon, ...other
+	} = props;
 	return (
 		<span
 			className={classNames(className, styles.readonlyTextField, { [styles.disabled]: isDisabled })}
@@ -29,7 +31,8 @@ export const ReadOnlyTextField = (props: Props) => {
 			{icon && (
 				<Icon
 					data-testid="icon"
-					className={styles.icon}>
+					className={styles.icon}
+				>
 					{icon}
 				</Icon>
 			)}

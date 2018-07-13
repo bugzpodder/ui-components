@@ -30,7 +30,7 @@ export const TableHeader = (props: Props) => {
 			return;
 		}
 		const { ctrlKey } = event;
-		if (typeof accessor === Function) {
+		if (typeof accessor === "function") {
 			return;
 		}
 		const fieldId = typeof accessor === "string" ? accessor : "";

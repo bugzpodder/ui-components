@@ -24,7 +24,8 @@ test("render common card with margin", () => {
 		<TestWrapper>
 			<CommonCard
 				title="Test Card"
-				hasMargin={true}>
+				hasMargin
+			>
 				This is a test
 			</CommonCard>
 		</TestWrapper>,
@@ -60,7 +61,8 @@ test("render common card with footer actions", () => {
 		<TestWrapper>
 			<CommonCard
 				title="Test Card"
-				footerActions={[<Button key="0">Test Footer Action Button</Button>]}>
+				footerActions={[<Button key="0">Test Footer Action Button</Button>]}
+			>
 				This is a test
 			</CommonCard>
 		</TestWrapper>,

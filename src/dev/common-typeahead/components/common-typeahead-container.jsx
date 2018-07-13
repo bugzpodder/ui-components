@@ -17,9 +17,12 @@ const CommonTypeaheadComponent = props => {
 			if (!props.loadOptions) {
 				throw new Error("Must provide `loadOptions` prop");
 			}
-			return <AsyncSelect
-				cacheOptions={true}
-				{...other} />;
+			return (
+				<AsyncSelect
+					cacheOptions
+					{...other}
+				/>
+			);
 		case "creatable":
 			if (!props.suggestions) {
 				throw new Error("Must provide `suggestions` prop");

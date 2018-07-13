@@ -31,9 +31,12 @@ export const TextInput = (props: Props) => {
 		}
 		return <ReadOnlyTextField showEmptyValue={showEmptyValue}>{props.value}</ReadOnlyTextField>;
 	}
-	return <TextField
-		data-testid="text-field"
-		error={error}
-		helperText={helperText}
-		{...textFieldProps} />;
+	return (
+		<TextField
+			data-testid="text-field"
+			error={error}
+			helperText={helperText}
+			{...textFieldProps}
+		/>
+	);
 };

@@ -101,8 +101,8 @@ export class OmniField extends React.Component<Props, State> {
 						),
 						endAdornment: (
 							<InputAdornment position="end">
-								{omniText !== undefined &&
-									omniText !== "" && (
+								{omniText !== undefined
+									&& omniText !== "" && (
 										<IconButton
 											id={`${OMNI_KEY}-clear`}
 											title="Clear"

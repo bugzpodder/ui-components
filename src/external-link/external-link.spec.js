@@ -11,7 +11,8 @@ test("render ExternalLink", () => {
 		<TestWrapper>
 			<ExternalLink
 				href="https://www.grail.com"
-				className="test">
+				className="test"
+			>
 				GRAIL
 			</ExternalLink>
 		</TestWrapper>,

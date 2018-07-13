@@ -16,12 +16,16 @@ export const TwoColumnGrid = (props: Props) => {
 	return (
 		<Grid
 			container
-			{...other}>
+			{...other}
+		>
 			{rows.map((row, index) => {
-				return <TwoColumnRow
-					key={index}
-					labelWidth={labelWidth}
-					row={row} />;
+				return (
+					<TwoColumnRow
+						key={index}
+						labelWidth={labelWidth}
+						row={row}
+					/>
+				);
 			})}
 		</Grid>
 	);

@@ -16,17 +16,21 @@ type Props = {
 
 /** Provides a styled section with a title and body. */
 export const CommonPanel = (props: Props) => {
-	const { title, children, variant = "subheading", className = "" } = props;
+	const {
+		title, children, variant = "subheading", className = "",
+	} = props;
 	return (
 		<div className={`${styles.panel} ${className}`}>
 			<div
 				className={styles.panelHeader}
-				data-testid="panel-title">
+				data-testid="panel-title"
+			>
 				<Typography variant={variant}>{title}</Typography>
 			</div>
 			<div
 				className={styles.panelBody}
-				data-testid="panel-body">
+				data-testid="panel-body"
+			>
 				{children}
 			</div>
 		</div>

@@ -67,7 +67,7 @@ export class CommonSwitch extends React.Component<Props, State> {
 						root: styles.controlLabel,
 						label: classNames(errorClass),
 					}}
-					control={
+					control={(
 						<Switch
 							id={id}
 							data-testid="common-switch"
@@ -79,11 +79,11 @@ export class CommonSwitch extends React.Component<Props, State> {
 							}}
 							color={color}
 							disabled={!isEnabled}
-							disableRipple={true}
+							disableRipple
 							onChange={this.handleChange}
 							value={value}
 						/>
-					}
+)}
 					label={label}
 				/>
 				{helperText && (

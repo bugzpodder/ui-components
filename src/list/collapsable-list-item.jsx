@@ -45,11 +45,13 @@ export class CollapsableListItem extends React.Component<Props, State> {
 	}
 
 	toggleList = () => {
-		this.setState({ isOpen: !this.state.isOpen });
+		this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
 	};
 
 	render = () => {
-		const { headerText, headerTextProps, headerItemProps, headerIcon, children } = this.props;
+		const {
+			headerText, headerTextProps, headerItemProps, headerIcon, children,
+		} = this.props;
 		const toggleList = this.props.toggleList || this.toggleList;
 		return (
 			<Fragment>
@@ -65,13 +67,15 @@ export class CollapsableListItem extends React.Component<Props, State> {
 					{headerIcon && <ListItemIcon>{headerIcon}</ListItemIcon>}
 					<ListItemText
 						primary={headerText}
-						{...headerTextProps} />
+						{...headerTextProps}
+					/>
 					{this.state.isOpen ? <ExpandLess /> : <ExpandMore />}
 				</ListItem>
 				<Collapse
 					in={this.state.isOpen}
 					timeout={0}
-					unmountOnExit>
+					unmountOnExit
+				>
 					<List>{children}</List>
 				</Collapse>
 			</Fragment>

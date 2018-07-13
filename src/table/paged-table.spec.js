@@ -18,14 +18,15 @@ afterEach(cleanup);
 
 /**
  Passing Cases
- **/
+ */
 
 test("render simple paged table", () => {
 	const { container } = render(
 		<TestWrapper>
 			<PagedTable
 				columns={columns}
-				data={data} />
+				data={data}
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -36,7 +37,8 @@ test("render paged table with no results", () => {
 		<TestWrapper>
 			<PagedTable
 				columns={columns}
-				data={[]} />
+				data={[]}
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -48,7 +50,8 @@ test("render loading paged table", () => {
 			<PagedTable
 				columns={columns}
 				data={data}
-				isLoading={true} />
+				isLoading
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -60,7 +63,8 @@ test("render paged table with no results and is loading", () => {
 			<PagedTable
 				columns={columns}
 				data={[]}
-				isLoading={true} />
+				isLoading
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -74,7 +78,8 @@ test("render paged table with no selected items", () => {
 				columns={columns}
 				data={data}
 				onSelect={mockSelect}
-				selectedRows={[]} />
+				selectedRows={[]}
+			/>
 		</TestWrapper>,
 	);
 	expect(container).toMatchSnapshot();
@@ -103,7 +108,7 @@ test("render full paged table", () => {
 
 /**
  Fail Cases
- **/
+ */
 
 test("throw invalid paged table error", async () => {
 	mockConsole();
@@ -115,7 +120,8 @@ test("throw invalid columns error", () => {
 	mockConsole();
 	expect(() => render(<PagedTable
 		columns={invalidColumns}
-		data={data} />)).toThrowError();
+		data={data}
+	/>)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
@@ -125,7 +131,8 @@ test("throw invalid pagination prop error", () => {
 	expect(() => render(<PagedTable
 		columns={columns}
 		data={data}
-		onPageChange={mockPagination} />)).toThrowError();
+		onPageChange={mockPagination}
+	/>)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
 
@@ -136,7 +143,8 @@ test("throw invalid pagination options error", () => {
 			columns={columns}
 			data={data}
 			onPageChange={() => {}}
-			tableOptions={invalidTableOptions} />),
+			tableOptions={invalidTableOptions}
+		/>),
 	).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });
@@ -146,6 +154,7 @@ test("throw invalid sortOptions error", () => {
 	expect(() => render(<PagedTable
 		columns={columns}
 		data={data}
-		onSort={() => {}} />)).toThrowError();
+		onSort={() => {}}
+	/>)).toThrowError();
 	expect(console.error).toHaveBeenCalled();
 });

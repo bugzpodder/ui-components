@@ -1,2 +1,2 @@
-//@flow
+// @flow
 export { Navbar } from "./navbar";

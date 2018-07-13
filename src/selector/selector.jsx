@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React, { type ElementConfig } from "react";
 import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -77,25 +77,30 @@ export const Selector = (props: SelectorProps) => {
 			<div className={styles.selectorContainer}>
 				<FormControl
 					className={styles.selectorForm}
-					error={showError}>
+					error={showError}
+				>
 					<InputLabel>{label}</InputLabel>
 					<Select
 						displayEmpty
 						id={id}
 						value={value}
 						onChange={event => onSelect && onSelect(event.target.value)}
-						input={<Input
-							data-testid="selector-value"
-							name={name}
-							id={id} />}
+						input={(
+							<Input
+								data-testid="selector-value"
+								name={name}
+								id={id}
+							/>
+)}
 						{...selectProps}
 					>
-						{!displayText &&
-							!label && (
+						{!displayText
+							&& !label && (
 								<MenuItem
 									disableRipple
 									value=""
-									disabled={true}>
+									disabled
+								>
 									{defaultDisplayText}
 								</MenuItem>
 						)}

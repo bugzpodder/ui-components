@@ -43,6 +43,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		error: "",
 		searchValues: new Map(),
 	};
+
 	componentDidMount = async () => {
 		const { location } = this.props;
 		let omniText = getQuery({ location })[OMNI_KEY];
@@ -53,6 +54,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		await this.updateOmniText(omniText);
 		this.onSearch();
 	};
+
 	componentDidUpdate = async (prevProps: Props) => {
 		const { location, searchDefs } = this.props;
 		let omniText = getQuery({ location })[OMNI_KEY];
@@ -122,6 +124,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 			return { isOpen: !prevState.isOpen };
 		});
 	};
+
 	// FIXME(jrosenfield): shouldn't push to history if query is unchanged
 	updateOmniText = (omniText: string, shouldUpdateBrowserHistory: boolean = false) => {
 		return new Promise(resolve => {
@@ -144,21 +147,24 @@ export class OmniSearchBar extends React.Component<Props, State> {
 					};
 				} catch (error) {
 					if (error.name === OMNI_ERROR) {
-						return { omniText: omniText, error: error.message };
+						return { omniText, error: error.message };
 					}
 					throw error;
 				}
 			}, resolve);
 		});
 	};
+
 	onSearch = () => {
 		this.setState({ isOpen: false });
 		// FIXME(jrosenfield): does ApiQueryHandler change location or just define setSearchOptions?
 		this.props.setSearchOptions({ searchOptions: getSearchOptions(this.props.searchDefs, this.state.searchValues) });
 	};
+
 	handleClear = () => {
 		this.updateOmniText("");
 	};
+
 	onChange = (id: string, value: string) => {
 		let omniText = value;
 		if (id !== OMNI_KEY) {
@@ -177,10 +183,13 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		const { isOpen } = this.state;
 		return (
 			<Fragment>
-				{isOpen && <div
+				{isOpen && (
+				<div
 					id={`${OMNI_KEY}-clickaway`}
 					className={styles.clickAwayLayer}
-					onClick={this.toggleDropdown} />}
+					onClick={this.toggleDropdown}
+				/>
+				)}
 				<div
 					className={styles.omniBar}
 					ref={node => {
@@ -202,7 +211,8 @@ export class OmniSearchBar extends React.Component<Props, State> {
 					{isOpen && (
 						<div
 							id={`${OMNI_KEY}-dropdown`}
-							className={styles.omniDropdown}>
+							className={styles.omniDropdown}
+						>
 							<OmniDropdown
 								searchDefs={searchDefs}
 								searchValues={this.state.searchValues}

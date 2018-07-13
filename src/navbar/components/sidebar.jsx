@@ -42,7 +42,9 @@ export class Sidebar extends React.Component<Props, State> {
 	};
 
 	getLink = (item: SidebarItem, key: number, nested: boolean = false) => {
-		const { exact = false, domain: itemDomain, path, name } = item;
+		const {
+			exact = false, domain: itemDomain, path, name,
+		} = item;
 		const { currentPath, domain, InternalLinkComponent } = this.props;
 		if (InternalLinkComponent !== undefined && itemDomain === domain) {
 			const active = pathToRegexp(path, [], { end: exact }).test(currentPath);
@@ -130,7 +132,7 @@ export class Sidebar extends React.Component<Props, State> {
 					toggleList={this.toggleCollapsableListItem.bind(this, index)}
 					headerText={item.name}
 				>
-					{/* $FlowFixMe item is ParentSidebarItem if item.children is defined.*/
+					{/* $FlowFixMe item is ParentSidebarItem if item.children is defined. */
 					item.children.map((childItem, childIndex) => {
 						return this.getLink(childItem, index * 1000 + childIndex, true);
 					})}
@@ -142,17 +144,21 @@ export class Sidebar extends React.Component<Props, State> {
 	};
 
 	render() {
-		const { sidebarContent = sidebarItems, footer, isOpen, toggle } = this.props;
+		const {
+			sidebarContent = sidebarItems, footer, isOpen, toggle,
+		} = this.props;
 		return (
 			<Drawer
 				id="sidebar-drawer"
 				anchor="left"
 				open={isOpen}
 				transitionDuration={0}
-				onClose={toggle}>
+				onClose={toggle}
+			>
 				<IconButton
 					id="close-sidebar"
-					onClick={toggle}>
+					onClick={toggle}
+				>
 					<ArrowBack />
 				</IconButton>
 				<Divider />
@@ -161,10 +167,10 @@ export class Sidebar extends React.Component<Props, State> {
 					role="button"
 					onClick={event => {
 						if (
-							event.ctrlKey ||
-							event.shiftKey ||
-							event.metaKey || // apple
-							(event.button && event.button === 1) // middle click, >IE9 + everyone else
+							event.ctrlKey
+							|| event.shiftKey
+							|| event.metaKey // apple
+							|| (event.button && event.button === 1) // middle click, >IE9 + everyone else
 						) {
 							return;
 						}

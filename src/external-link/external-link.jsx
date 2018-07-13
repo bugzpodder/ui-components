@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React, { type Node } from "react";
 
 type Props = {
@@ -18,7 +18,8 @@ export const ExternalLink = (props: Props) => {
 		<a
 			{...aTagProps}
 			target="_blank"
-			rel="noopener noreferrer">
+			rel="noopener noreferrer"
+		>
 			{children}
 		</a>
 	);

@@ -25,9 +25,16 @@ type Props = {
 };
 
 export const TableComponent = (props: Props) => {
-	const { classes = {}, columns, data, idKey, isLoading, onSelect, onSort, selectedRows, tableOptions } = props;
+	const {
+		classes = {}, columns, data, idKey, isLoading, onSelect, onSort, selectedRows, tableOptions,
+	} = props;
 	const sortingProps = { onSort, tableOptions };
-	const selectionProps = { data, idKey, onSelect, selectedRows };
+	const selectionProps = {
+		data,
+		idKey,
+		onSelect,
+		selectedRows,
+	};
 	const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
 	return (
 		<Table className={classes.root || ""}>
@@ -37,8 +44,8 @@ export const TableComponent = (props: Props) => {
 				sortingProps={sortingProps}
 			/>
 			<TableBody>
-				{data.length > 0 &&
-					data.map((instance, index) => {
+				{data.length > 0
+					&& data.map((instance, index) => {
 						const id = idKey ? instance[idKey] : `${index}`;
 						return (
 							<PagedTableRow
@@ -55,7 +62,8 @@ export const TableComponent = (props: Props) => {
 					<TableRow>
 						<TableCell
 							colSpan={tableColumns.length}
-							className={classNames("no-results", styles.noResults)}>
+							className={classNames("no-results", styles.noResults)}
+						>
 							{!isLoading && "0 Results"}
 						</TableCell>
 					</TableRow>

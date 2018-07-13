@@ -14,7 +14,9 @@ type Props = {
 };
 
 export const PagedTableRow = (props: Props) => {
-	const { columns, instance, rowIndex, rowId } = props;
+	const {
+		columns, instance, rowIndex, rowId,
+	} = props;
 	let { className } = props;
 	if (typeof className === "function") {
 		className = className(instance, rowIndex);
@@ -23,9 +25,11 @@ export const PagedTableRow = (props: Props) => {
 		<TableRow
 			className={className}
 			data-testid={rowId}
-			key={rowId}>
-			{/* $FlowFixMe: accessor can be string or Function */}
-			{columns.map(({ Cell, Header, accessor = "", className = "" }: PagedTableColumn, index) => {
+			key={rowId}
+		>
+			{columns.map(({ /* $FlowFixMe: accessor can be string or Function */
+				Cell, Header, accessor = "", className = "",
+			}: PagedTableColumn, index) => {
 				let inner = null;
 				const itemKey = `${rowId}-${index}`;
 				let value = "";
@@ -56,7 +60,8 @@ export const PagedTableRow = (props: Props) => {
 					<TableCell
 						key={itemKey}
 						data-cell-id={itemKey}
-						className={classNames(styles.tableCell, className)}>
+						className={classNames(styles.tableCell, className)}
+					>
 						{inner}
 					</TableCell>
 				);

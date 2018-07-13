@@ -34,7 +34,7 @@ test("render timeline graph with date", () => {
 						columns: [["Test column"]],
 					},
 				]}
-				dateFormat={"YYYY-MM-DD"}
+				dateFormat="YYYY-MM-DD"
 			/>
 		</TestWrapper>,
 	);
@@ -60,7 +60,7 @@ test("render and select timeline graph with multiple rows", () => {
 						columns: [["Row 2, Column 0, Field 0"]],
 					},
 				]}
-				dateFormat={"YYYY-MM-DD"}
+				dateFormat="YYYY-MM-DD"
 				onSelectRow={onSelectRow}
 				selectedRowIndex={2}
 			/>
@@ -89,7 +89,7 @@ test("render timeline graph with multiple columns", () => {
 						columns: [["Column 0, Field 0"], ["Column 1, Field 0", "Column 1, Field 1"]],
 					},
 				]}
-				dateFormat={"YYYY-MM-DD"}
+				dateFormat="YYYY-MM-DD"
 			/>
 		</TestWrapper>,
 	);
@@ -106,7 +106,7 @@ test("render timeline graph with narrow cards", () => {
 						columns: [["Test column"]],
 					},
 				]}
-				dateFormat={"YYYY-MM-DD"}
+				dateFormat="YYYY-MM-DD"
 				cardWidth="narrow"
 			/>
 		</TestWrapper>,
@@ -124,7 +124,7 @@ test("render timeline graph with tall cards", () => {
 						columns: [["Test column"]],
 					},
 				]}
-				dateFormat={"YYYY-MM-DD"}
+				dateFormat="YYYY-MM-DD"
 				cardHeight="tall"
 			/>
 		</TestWrapper>,

@@ -1,11 +1,22 @@
 // @flow
-import React from "react";
+import React, { type ElementConfig } from "react";
 import Button from "@material-ui/core/Button";
 import Icon from "@material-ui/core/Icon";
-import { type CommonDialogAction } from "./dialog";
+
+export type CommonDialogAction = {
+	name: string,
+	callback: Function,
+	icon?: string,
+	id?: string,
+	isEnabled?: boolean,
+	variant?: string,
+	isLeftButton?: boolean,
+} & ElementConfig<typeof Button>;
 
 export const actionToButton = (action: CommonDialogAction) => {
-	const { id, icon, color, isEnabled = true, name, callback, isLeftButton, ...buttonProps } = action;
+	const {
+		id, icon, color, isEnabled = true, name, callback, isLeftButton, ...buttonProps
+	} = action;
 	return (
 		<Button
 			key={name}

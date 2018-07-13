@@ -43,9 +43,12 @@ export const NoOptionsMessage = () => {
 
 export const ClearIndicator = (props: ClearIndicatorProps) => {
 	const { innerProps } = props;
-	return <ClearIcon
-		className="common-typeahead__clear-icon"
-		{...innerProps} />;
+	return (
+		<ClearIcon
+			className="common-typeahead__clear-icon"
+			{...innerProps}
+		/>
+	);
 };
 
 export const MultiValueContainer = (props: MultiValueContainerProps) => {
@@ -67,7 +70,9 @@ export const MultiValueRemove = (props: Props) => {
 };
 
 export const Option = (props: Props) => {
-	const { children, data, isFocused, isSelected, onFocus, selectOption } = props;
+	const {
+		children, data, isFocused, isSelected, onFocus, selectOption,
+	} = props;
 	const handleClick = event => {
 		selectOption(data, event);
 	};

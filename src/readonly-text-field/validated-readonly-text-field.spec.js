@@ -11,7 +11,7 @@ test("render validated readonly text field", async () => {
 	const testText = "readOnly text";
 	const { container, getByTestId } = render(
 		<TestWrapper>
-			<ValidatedReadOnlyTextField isValid={true}>{testText}</ValidatedReadOnlyTextField>
+			<ValidatedReadOnlyTextField isValid>{testText}</ValidatedReadOnlyTextField>
 		</TestWrapper>,
 	);
 	expect(getByTestId("readonly-text-field")).toHaveTextContent(testText);
@@ -37,8 +37,9 @@ test("render validated readonly text field with `isNA`", async () => {
 		<TestWrapper>
 			<ValidatedReadOnlyTextField
 				className="test-classname"
-				isValid={true}
-				isNA>
+				isValid
+				isNA
+			>
 				{testText}
 			</ValidatedReadOnlyTextField>
 		</TestWrapper>,

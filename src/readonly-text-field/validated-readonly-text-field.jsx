@@ -21,10 +21,12 @@ type Props = {
  * Provides a styled component for displaying read-only input fields with a validation icon.
  */
 export const ValidatedReadOnlyTextField = (props: Props) => {
-	const { id, children, className, isValid, isNA = false } = props;
+	const {
+		id, children, className, isValid, isNA = false,
+	} = props;
 	let textClassName = "";
 	let icon = "";
-	const cssClassName = className ? className : "";
+	const cssClassName = className || "";
 	if (!isNA) {
 		textClassName = `${isValid ? styles.success : styles.fail}`;
 		icon = isValid ? "done" : "clear";
@@ -33,7 +35,8 @@ export const ValidatedReadOnlyTextField = (props: Props) => {
 		<ReadOnlyTextField
 			id={id}
 			className={`${textClassName} ${cssClassName}`}
-			icon={icon}>
+			icon={icon}
+		>
 			{children}
 		</ReadOnlyTextField>
 	);

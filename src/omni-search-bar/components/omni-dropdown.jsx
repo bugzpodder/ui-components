@@ -20,15 +20,20 @@ type Props = {
 
 export class OmniDropdown extends React.Component<Props> {
 	render = () => {
-		const { searchDefs, searchValues, onChange, onSearch, onClear, width, children } = this.props;
+		const {
+			searchDefs, searchValues, onChange, onSearch, onClear, width, children,
+		} = this.props;
 		return (
-			<div style={{ width: width }}>
+			<div style={{ width }}>
 				<Paper
-					square={true}
-					className={styles.paper}>
+					square
+					className={styles.paper}
+				>
 					<Grid container>
 						{searchDefs.map((searchDef, index) => {
-							const { name, type, Component = SearchField, description = "" } = searchDef;
+							const {
+								name, type, Component = SearchField, description = "",
+							} = searchDef;
 							const searchValue = searchValues.get(index);
 							const row: GridRow = {
 								label: name,
@@ -44,25 +49,31 @@ export class OmniDropdown extends React.Component<Props> {
 									/>
 								),
 							};
-							return <TwoColumnRow
-								key={index}
-								row={row}
-								labelWidth={3} />;
+							return (
+								<TwoColumnRow
+									key={index}
+									row={row}
+									labelWidth={3}
+								/>
+							);
 						})}
 						{children}
 						<Grid
 							item
-							className={styles.footer}>
+							className={styles.footer}
+						>
 							<Button
 								disableRipple
-								onClick={onClear}>
+								onClick={onClear}
+							>
 								Clear
 							</Button>
 							<Button
 								disableRipple
 								onClick={onSearch}
 								color="primary"
-								variant="raised">
+								variant="raised"
+							>
 								Search
 							</Button>
 						</Grid>

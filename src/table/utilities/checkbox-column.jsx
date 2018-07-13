@@ -5,7 +5,9 @@ import classNames from "classnames";
 import styles from "../table.module.scss";
 
 export const getCheckboxColumn = (selectionProps: SelectionProps) => {
-	const { data, selectedRows, idKey, onSelect } = selectionProps;
+	const {
+		data, selectedRows, idKey, onSelect,
+	} = selectionProps;
 	if (selectedRows === undefined || selectedRows === null) {
 		throw new Error("selectedRows is missing from props");
 	}

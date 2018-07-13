@@ -23,7 +23,7 @@ test("render Sidebar", () => {
 		<JssProvider generateClassName={generateClassName}>
 			<MemoryRouter>
 				<Sidebar
-					isOpen={true}
+					isOpen
 					toggle={toggle}
 					domain={LIMS}
 					currentPath="/automation/tasks"

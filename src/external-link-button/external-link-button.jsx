@@ -1,4 +1,4 @@
-//@flow
+// @flow
 import React, { type Node, type ElementConfig } from "react";
 import Button from "@material-ui/core/Button";
 
@@ -18,7 +18,8 @@ export const ExternalLinkButton = (props: Props) => {
 		<Button
 			{...buttonProps}
 			target="_blank"
-			rel="noopener noreferrer">
+			rel="noopener noreferrer"
+		>
 			{children}
 		</Button>
 	);

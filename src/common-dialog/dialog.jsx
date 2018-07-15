@@ -20,7 +20,19 @@ type Props = {
 	children: Node,
 	/** Gives a Title to the Dialog */
 	title: Node<*>,
-	/** Provides classNames to dialog subcomponents. Options include `root`, `title, `content`, and `actions`. */
+	/**
+	 * Provides classNames to the dialog's sub-components. Options include:
+	 *
+	 *  - `root`: dialog's outermost div
+	 *
+	 *  - `title`
+	 *
+	 *  - `content`: dialog content wrapper
+	 *
+	 *  - `actions`: dialog actions wrapper
+	 *
+	 *  - `action`: wrapper around each individual dialog action
+	 */
 	classes?: CommonDialogClasses,
 };
 

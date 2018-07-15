@@ -15,9 +15,22 @@ class DialogDemo extends React.Component {
 				<Button onClick={() => this.setState({ isVisible: true })}>Open simple dialog</Button>
 				<CommonDialog
 					title="Example Dialog"
+					classes={{
+						root: "root-class",
+						title: "title-class",
+						content: "content-class",
+						actions: "actions-class",
+					}}
 					hideModal={() => this.setState({ isVisible: false })}
 					isVisible={isVisible}
 					actions={[
+						{
+							name: "Button 2",
+							callback: () => this.setState({ isVisible: false }),
+							isEnabled: true,
+							color: "secondary",
+							positionLeft: true,
+						},
 						{
 							name: "Button 1",
 							callback: () => this.setState({ isVisible: false }),
@@ -25,13 +38,6 @@ class DialogDemo extends React.Component {
 							isEnabled: true,
 							variant: "raised",
 							color: "primary",
-						},
-						{
-							name: "Button 2",
-							callback: () => this.setState({ isVisible: false }),
-							isEnabled: true,
-							color: "secondary",
-							positionLeft: true,
 						},
 					]}
 				>

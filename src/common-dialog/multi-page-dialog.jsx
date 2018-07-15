@@ -32,12 +32,32 @@ type Props = {
 	setPage: Function,
 	/** shows the back button if it's true */
 	showBackButton?: boolean,
-	/** className */
-	className?: string,
+	/**
+	 * Provides classNames to the dialog's sub-components. Options include:
+	 *
+	 *  - `root`: dialog's outermost div
+	 *
+	 *  - `title`
+	 *
+	 *  - `content`: dialog content wrapper
+	 *
+	 *  - `actions`: dialog actions wrapper
+	 *
+	 *  - `action`: wrapper around each individual dialog action
+	 */
+	classes?: CommonDialogClasses,
 };
 export const CommonMultiPageDialog = (props: Props) => {
 	const {
-		isVisible, hideModal, pageIndex, pages, setPage, title, className, showBackButton = true, actions,
+		isVisible,
+		hideModal,
+		pageIndex,
+		pages,
+		setPage,
+		title,
+		classes = {},
+		showBackButton = true,
+		actions,
 	} = props;
 	const leftActionButtons = actions
 		.filter(({ isLeftButton = false, pages = [] }) => isLeftButton && (pages.length === 0 || pages.includes(pageIndex)))
@@ -50,13 +70,25 @@ export const CommonMultiPageDialog = (props: Props) => {
 	return (
 		<Dialog
 			open={isVisible}
-			className={classNames(styles.commonDialog, className)}
+			className={classNames(styles.commonDialog, classes.root)}
 			PaperProps={{ className: styles.commonDialogPaper }}
 			onClose={hideModal}
 		>
-			<DialogTitle id="form-dialog-title">{title}</DialogTitle>
-			<DialogContent className={styles.commonDialogContent}>{pages[pageIndex]}</DialogContent>
-			<DialogActions>
+			<DialogTitle
+				id="form-dialog-title"
+				className={classes.title || ""}
+			>
+				{title}
+			</DialogTitle>
+			<DialogContent className={classNames(styles.commonDialogContent, classes.content)}>
+				{pages[pageIndex]}
+			</DialogContent>
+			<DialogActions
+				classes={{
+					root: classes.actions,
+					action: classes.action,
+				}}
+			>
 				<div className={styles.commonDialogFooter}>
 					<div className={styles.left}>
 						{pageIndex > 0 &&

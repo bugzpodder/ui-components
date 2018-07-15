@@ -9,18 +9,29 @@ import { TableComponent } from "./components/table-component";
 type Props = {
 	/** Provides the information you wish to display */
 	data: Array<Object>,
-	/** Defines the table structure. Must at least include a Cell or accessor key to identify
-	 which property in data to display */
+	/**
+	 * Defines the table structure.
+	 *
+	 * Must at least include a Cell or accessor key to identify which property in data to display
+	 */
 	columns: Array<PagedTableColumn>,
-	/** Provides classNames to table subcomponents. Options include `root` and `rows`.
-	 * `rows` can take a function to specify classes for each specific row */
+	/**
+	 * Provides classNames to table sub-components. Options include:
+	 *
+	 *  - `root`: table's outermost div
+	 *
+	 *  - `rows`: table row. Can take a function to help specify a className for any specific row
+	 */
 	classes?: PagedTableClasses,
 	/** The classname applied to the PagedTable card */
 	className?: string,
-	/** the key from `data` that should be used as the accessor to identify each unique row (returned by `onSelect`).
-	 Defaults to the row's `index`. */
+	/**
+	 * Defaults to the row's `index`.
+	 *
+	 * The key from `data` that should be used as the accessor to identify each unique row (returned by `onSelect`).
+	 */
 	idKey?: string | number,
-	/** Provides a spinner when isLoading is true */
+	/** Provides a spinner when `isLoading` is true */
 	isLoading?: boolean,
 	/** Enables checkbox selection. Must change the state of selectedRows */
 	onSelect?: (Array<any>) => any,
@@ -32,9 +43,17 @@ type Props = {
 	title?: string,
 	/** Buttons to display in card header */
 	headerActions?: Node<*>,
-	/** Enables card pagination. Must change the state of tableOptions {count: number, offset: number} */
+	/**
+	 * Enables card pagination.
+	 *
+	 * Must change the state of `tableOptions {count: number, offset: number}`
+	 */
 	onPageChange?: Object => any,
-	/** Enables sorting. Must change the state of tableOptions {sortOptions: Array<{id: string, desc: boolean}> */
+	/**
+	 * Enables sorting.
+	 *
+	 * Must change the state of `tableOptions {sortOptions: Array<{id: string, desc: boolean}>`
+	 */
 	onSort?: Object => any,
 };
 

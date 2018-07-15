@@ -26,6 +26,20 @@ test("render date time input", () => {
 	expect(container).toMatchSnapshot();
 });
 
+test("render null date time input", () => {
+	const mockCallback = jest.fn();
+	const { container, getByPlaceholderText } = render(
+		<TestWrapper>
+			<DateTimeInputContainer
+				placeholder="Test DateTime Input"
+				onChange={mockCallback}
+			/>
+		</TestWrapper>,
+	);
+	expect(getByPlaceholderText("Test DateTime Input")).toHaveAttribute("value", "");
+	expect(container).toMatchSnapshot();
+});
+
 test("render date input when readOnly is true", async () => {
 	const testDate = "2017-03-07 16:20:00";
 	const mockCallback = jest.fn();

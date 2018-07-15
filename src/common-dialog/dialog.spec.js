@@ -16,7 +16,7 @@ test("render dialog", () => {
 			<CommonDialog
 				actions={[
 					{ id: "action-button", name: "action one", callback: jest.fn() },
-					{ name: "action two", callback: jest.fn() },
+					{ name: "action two", isLeftButton: true, callback: jest.fn() },
 				]}
 				title="test"
 				isVisible
@@ -37,17 +37,15 @@ test("render multi page dialog", () => {
 		<TestWrapper>
 			<CommonMultiPageDialog
 				actions={[
+					{ id: "action-button", name: "action one", callback: jest.fn() },
 					{
-						id: "action-button",
-						name: "action one",
-						callback: jest.fn(),
-						pages: [0],
+						id: "action-button", name: "action two", isLeftButton: true, callback: jest.fn(), pages: [1],
 					},
 					{
-						id: "action-button",
-						name: "action two",
-						callback: jest.fn(),
-						pages: [1],
+						id: "action-button", name: "action three", icon: "arrow_forward", callback: jest.fn(), pages: [0],
+					},
+					{
+						id: "action-button", name: "action four", icon: "arrow_backward", callback: jest.fn(), pages: [1],
 					},
 				]}
 				title="test"

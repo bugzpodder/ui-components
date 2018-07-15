@@ -23,9 +23,23 @@ type Props = {
 	subheader?: Node,
 	/** Provides built-in margins for the card */
 	hasMargin?: boolean,
-	/** Provides classnames to the card and its subcomponents
-	 * options include `header`, `headerActions` (applied to headerActions container), `title`, `subheader`, `body` (for card's contents),
-	 * `footer`, and `footerActions` (applied to footerActions container) */
+	/**
+	 * Provides classNames to the card and its sub-components. Options include:
+	 *
+	 *  - `header`
+	 *
+	 *  - `headerActions` (applied to headerActions container)
+	 *
+	 *  - `title`
+	 *
+	 *  - `subheader`
+	 *
+	 *  - `body` (for card's contents)
+	 *
+	 *  - `footer`
+	 *
+	 *  - `footerActions` (applied to footerActions container)
+	 */
 	classes?: CommonCardClasses,
 };
 

@@ -130,5 +130,3 @@ class TestPagedTable extends React.Component {
 
 <TestPagedTable />;
 ```
-
-\*\*\* it would be nice to implement a "reset pagination" button

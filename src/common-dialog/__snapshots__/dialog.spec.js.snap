@@ -45,7 +45,25 @@ exports[`render dialog 1`] = `
         >
           <div
             class="left"
-          />
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+              data-is-enabled="true"
+              data-is-left-button="true"
+              id="action-two"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                action two
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
           <div
             class="right"
           >
@@ -77,22 +95,6 @@ exports[`render dialog 1`] = `
                 class="MuiButton-label"
               >
                 action one
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
-              data-is-enabled="true"
-              id="action-two"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                action two
               </span>
               <span
                 class="MuiTouchRipple-root"
@@ -183,6 +185,26 @@ exports[`render multi page dialog 1`] = `
                 class="MuiTouchRipple-root"
               />
             </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+              data-id="action-button"
+              data-is-enabled="true"
+              data-is-left-button="true"
+              data-testid="action-button"
+              id="action-button"
+              pages="1"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                action two
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
           </div>
           <div
             class="right"
@@ -208,6 +230,24 @@ exports[`render multi page dialog 1`] = `
               data-is-enabled="true"
               data-testid="action-button"
               id="action-button"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                action one
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+              data-id="action-button"
+              data-is-enabled="true"
+              data-testid="action-button"
+              id="action-button"
               pages="1"
               tabindex="0"
               type="button"
@@ -215,7 +255,13 @@ exports[`render multi page dialog 1`] = `
               <span
                 class="MuiButton-label"
               >
-                action two
+                <span
+                  aria-hidden="true"
+                  class="material-icons MuiIcon-root margin-right-5"
+                >
+                  arrow_backward
+                </span>
+                action four
               </span>
               <span
                 class="MuiTouchRipple-root"

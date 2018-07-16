@@ -48,7 +48,7 @@ export class CommonSwitch extends React.Component<Props, State> {
 	render = () => {
 		const {
 			id = "",
-			color = "secondary",
+			color = "primary",
 			showError = false,
 			helperText = "",
 			label,

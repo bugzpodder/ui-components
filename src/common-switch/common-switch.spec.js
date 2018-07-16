@@ -14,7 +14,6 @@ test("render primary common switch", () => {
 			<div>
 				<CommonSwitch
 					label="Primary"
-					color="primary"
 					helperText="test switch"
 					value="test"
 					onChange={mockChange}
@@ -33,6 +32,7 @@ test("render secondary common switch", () => {
 			<div>
 				<CommonSwitch
 					isEnabled
+					color="secondary"
 					onChange={mockChange}
 				/>
 			</div>
@@ -47,6 +47,7 @@ test("render error common switch", () => {
 			<div>
 				<CommonSwitch
 					showError
+					color="secondary"
 					isSelected
 					onChange={mockChange}
 				/>

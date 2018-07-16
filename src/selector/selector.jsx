@@ -94,8 +94,8 @@ export const Selector = (props: SelectorProps) => {
 )}
 						{...selectProps}
 					>
-						{!displayText
-							&& !label && (
+						{!displayText &&
+							!label && (
 								<MenuItem
 									disableRipple
 									value=""

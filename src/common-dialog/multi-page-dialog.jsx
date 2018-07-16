@@ -59,8 +59,8 @@ export const CommonMultiPageDialog = (props: Props) => {
 			<DialogActions>
 				<div className={styles.commonDialogFooter}>
 					<div className={styles.left}>
-						{pageIndex > 0
-							&& showBackButton && (
+						{pageIndex > 0 &&
+							showBackButton && (
 								<Button
 									id="back"
 									className="back"

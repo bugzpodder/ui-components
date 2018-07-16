@@ -169,6 +169,7 @@
 
     "arrow-parens": 0,
     "implicit-arrow-linebreak": 0,
+    "operator-linebreak": 0,
     "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": 0,
     "import/extensions": 0,

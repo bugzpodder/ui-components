@@ -167,10 +167,10 @@ export class Sidebar extends React.Component<Props, State> {
 					role="button"
 					onClick={event => {
 						if (
-							event.ctrlKey
-							|| event.shiftKey
-							|| event.metaKey // apple
-							|| (event.button && event.button === 1) // middle click, >IE9 + everyone else
+							event.ctrlKey ||
+							event.shiftKey ||
+							event.metaKey || // apple
+							(event.button && event.button === 1) // middle click, >IE9 + everyone else
 						) {
 							return;
 						}

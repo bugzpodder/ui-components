@@ -44,8 +44,8 @@ export const TableComponent = (props: Props) => {
 				sortingProps={sortingProps}
 			/>
 			<TableBody>
-				{data.length > 0
-					&& data.map((instance, index) => {
+				{data.length > 0 &&
+					data.map((instance, index) => {
 						const id = idKey ? instance[idKey] : `${index}`;
 						return (
 							<PagedTableRow

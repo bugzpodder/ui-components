@@ -1,9 +1,9 @@
 // @flow
 import React, { type ElementConfig } from "react";
+import moment from "moment";
 import { DateTimePicker } from "material-ui-pickers";
 import { DATE_TIME_FORMAT } from "@grail/lib";
-import { ReadOnlyTextField } from "@grail/components";
-import moment from "moment";
+import { ReadOnlyTextField } from "../readonly-text-field";
 
 type Props = {
 	/** When `true`, displays a read only input field (ReadOnlyTextField) */

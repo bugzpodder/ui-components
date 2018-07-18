@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { render, cleanup } from "react-testing-library";
-import { CommonSwitch } from "@grail/components";
+import { CommonSwitch } from "./common-switch";
 import { TestWrapper } from "../utils";
 
 afterEach(cleanup);

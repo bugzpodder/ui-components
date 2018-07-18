@@ -7,7 +7,7 @@ import {
 	DATETIME_SEARCH_TYPE,
 } from "@grail/lib";
 import { render, fireEvent } from "react-testing-library";
-import "dom-testing-library/extend-expect";
+import "jest-dom/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
 import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
 import { TestWrapper } from "../utils";

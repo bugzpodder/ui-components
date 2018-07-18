@@ -4,9 +4,9 @@ import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
-import { ReadOnlyTextField } from "@grail/components";
 import FormControl from "@material-ui/core/FormControl";
 import FormHelperText from "@material-ui/core/FormHelperText";
+import { ReadOnlyTextField } from "../readonly-text-field";
 import styles from "./selector.module.scss";
 
 type OptionalSelectorProps = {

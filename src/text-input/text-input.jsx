@@ -1,7 +1,7 @@
 // @flow
 import React, { type ElementConfig } from "react";
 import TextField from "@material-ui/core/TextField";
-import { ReadOnlyTextField } from "@grail/components";
+import { ReadOnlyTextField } from "../readonly-text-field";
 
 type Props = {
 	/** If true, displays a read-only input field (`ReadOnlyTextField`). */

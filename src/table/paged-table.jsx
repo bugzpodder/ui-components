@@ -1,7 +1,8 @@
 // @flow
 import React from "react";
-import { CommonCard, SpinnerOverlay } from "@grail/components";
 import classNames from "classnames";
+import { CommonCard } from "../common-card";
+import { SpinnerOverlay } from "../spinner-overlay";
 import styles from "./table.module.scss";
 import { TablePager } from "./components/table-pager";
 import { TableComponent } from "./components/table-component";

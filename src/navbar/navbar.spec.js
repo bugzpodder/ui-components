@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { render, cleanup, fireEvent } from "react-testing-library";
-import "dom-testing-library/extend-expect";
+import "jest-dom/extend-expect";
 import { MemoryRouter } from "react-router-dom";
 import { LIMS, EDC, PIPELINE } from "@grail/lib";
 import Typography from "@material-ui/core/Typography";

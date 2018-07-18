@@ -9,8 +9,9 @@ import ListItem from "@material-ui/core/ListItem";
 import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
 import ArrowBack from "@material-ui/icons/ArrowBack";
-import { CollapsableListItem, ExternalLink } from "@grail/components";
 import { sidebarItems } from "@grail/lib";
+import { CollapsableListItem } from "../../list";
+import { ExternalLink } from "../../external-link";
 import styles from "./sidebar.module.scss";
 
 type Props = {

@@ -1,9 +1,9 @@
 // @flow
 import React, { type ElementConfig } from "react";
+import moment from "moment";
 import { DatePicker } from "material-ui-pickers";
 import { DATE_FORMAT } from "@grail/lib";
-import { ReadOnlyTextField } from "@grail/components";
-import moment from "moment";
+import { ReadOnlyTextField } from "../readonly-text-field";
 import styles from "./date-input.module.scss";
 
 type Props = {

@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { render, cleanup, fireEvent } from "react-testing-library";
-import "dom-testing-library/extend-expect";
+import "jest-dom/extend-expect";
 import { Link, MemoryRouter } from "react-router-dom";
 import { bindElementToQueries } from "dom-testing-library";
 import { LIMS, EDC, PIPELINE } from "@grail/lib";

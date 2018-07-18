@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import { OMNI_KEY } from "@grail/lib";
-import { TwoColumnRow } from "@grail/components";
+import { TwoColumnRow } from "../../two-column-grid";
 import styles from "../omni.module.scss";
 import { SearchField } from "./search-field";
 

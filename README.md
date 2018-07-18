@@ -1,18 +1,41 @@
-# @grail/components
+React components built using [Material-UI](https://material-ui.com/getting-started/installation/) for GRAIL's internal applications.
 
-## Contents
+#### **Installation**
 
-The `@grail/components` module holds common React components that are used between GRAIL applications
+- `yarn add react`
+- `yarn add material-ui`
+- To use the `DateInput` and `DateTimeInput` components:
+  - `yarn add material-ui-pickers`.
+  - Wrap your application in the `wrapPickerUtilProvider` component.
 
-Components can be generally imported from `@grail/components`, or they can be imported from specific
-folders for leaner builds (ie. `@grail/components/date`).
+###### **GRAIL Theme**
 
-## Contributing
+- Wrap your application in the `StyleWrapper` component.
 
-**ALL COMMON COMPONENTS MUST INCLUDE UNIT TESTS**
+#### **Using Released Components**
 
-When introducing new components, all directories should include an `index.js`, which exports to the
-`index.js` of the `components` directory.
+- `import { COMPONENT } from "@grail/components";`
+- See `@grail/lib` for GRAIL utilities and constants. e.g. `import { UTILITY } from "@grail/lib";`
 
-`flow-typed` files should be included as needed and categorized between ones
-written for npm packages, and ones written for GRAIL's custom React components.
+#### **Using Dev Components**
+
+- `import { DEV_COMPONENT } from "../dev";`
+  NOTE: Dev components are unstable and may introduce breaking changes at any given time.
+
+Discuss questions, feature requests, or bug reports on the `#ui-eng` slack channel, or email the `ui-eng` mailing list.
+
+#### **Building New Components**
+
+Add/maintain new components to `$GRAIL/ui/components/src/dev` until they are thoroughly tested and approved
+for production.
+
+#### **Production Component Approval Criteria**
+
+- Unit tests.
+  - At least 25% line coverage.
+- `README.md`
+  - Working examples showing all use cases and functionality.
+- Component jsx file
+  - Comments above each prop explaining the prop.
+- Cypress tests for any interactive components.
+  - Note: These Cypress tests rely on working examples in the `README`s.

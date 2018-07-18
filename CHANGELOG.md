@@ -1,5 +1,3 @@
-# @grail/components Changelog
-
 ## 0.3.0
 
 1.  Add `classes` prop to `CommonCard` and `CommonDialog`

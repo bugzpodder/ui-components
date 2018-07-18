@@ -7,7 +7,11 @@ module.exports = {
 	sections: [
 		{
 			name: "Getting Started",
-			content: "src/README.md",
+			content: "README.md",
+		},
+		{
+			name: "Changelog",
+			content: "CHANGELOG.md",
 		},
 		{
 			name: "Wrappers",
@@ -66,7 +70,7 @@ module.exports = {
 		"**/*.spec.{js,jsx,ts,tsx}",
 		"**/*.d.ts",
 	],
-	updateExample: function(props, exampleFilePath) {
+	updateExample(props, exampleFilePath) {
 		if (typeof props.settings.file === "string") {
 			const {
 				settings: { file },

@@ -39,13 +39,25 @@ test("render multi page dialog", () => {
 				actions={[
 					{ id: "action-button", name: "action one", callback: jest.fn() },
 					{
-						id: "action-button", name: "action two", isLeftButton: true, callback: jest.fn(), pages: [1],
+						id: "action-button",
+						name: "action two",
+						isLeftButton: true,
+						callback: jest.fn(),
+						pages: [1],
 					},
 					{
-						id: "action-button", name: "action three", icon: "arrow_forward", callback: jest.fn(), pages: [0],
+						id: "action-button",
+						name: "action three",
+						icon: "arrow_forward",
+						callback: jest.fn(),
+						pages: [0],
 					},
 					{
-						id: "action-button", name: "action four", icon: "arrow_backward", callback: jest.fn(), pages: [1],
+						id: "action-button",
+						name: "action four",
+						icon: "arrow_backward",
+						callback: jest.fn(),
+						pages: [1],
 					},
 				]}
 				title="test"

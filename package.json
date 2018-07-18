@@ -6,7 +6,7 @@
     "build": "NODE_ENV=production babel ./src --out-dir ./dist --delete-dir-on-start --copy-files && babel-node scripts/build.js",
     "cover": "open coverage/lcov-report/index.html",
     "flow": "flow",
-    "lint": "eslint --ext .js --ext .jsx src/ cypress/",
+    "lint": "eslint --ext .js --ext .jsx src/ cypress/ scripts/",
     "lint-fix": "yarn lint --fix",
     "format": "prettier --write \"src/**/*.{js,jsx}\" \"cypress/**/*.js\" \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
@@ -89,6 +89,11 @@
         "git add"
       ],
       "*.config.js": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+      ],
+      "scripts/*.js": [
         "prettier --write",
         "eslint --fix",
         "git add"

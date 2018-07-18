@@ -32,7 +32,7 @@
     "curly": "error",
     "default-case": "error",
     "dot-notation": "error",
-    "eqeqeq": 2,
+    "eqeqeq": ["error", "always", { "null": "ignore" }],
     "flowtype/require-valid-file-annotation": [
       0,
       "always",
@@ -129,6 +129,7 @@
     "no-useless-return": "error",
     "no-with": "error",
     "no-var": "error",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "object-curly-spacing": ["error", "always"],
     "prefer-const": "error",
     "prefer-promise-reject-errors": "error",
@@ -162,10 +163,6 @@
     "yoda": "error",
 
     "consistent-return": 0,
-    "no-plusplus": 0,
-    "no-use-before-define": 0,
-    "react/no-unused-state": 0,
-    "react/no-unused-prop-types": 0,
 
     "arrow-parens": 0,
     "implicit-arrow-linebreak": 0,
@@ -184,6 +181,7 @@
     "react/require-default-props": 0,
     "react/sort-comp": 0,
     "react/no-this-in-sfc": 0,
+    "react/no-unused-prop-types": 0,
     "no-restricted-syntax": 0,
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
@@ -196,6 +194,7 @@
     "import/named": 0,
     "array-callback-return": 0,
     "arrow-body-style": 0,
-    "no-restricted-globals": 0
+    "no-restricted-globals": 0,
+    "no-use-before-define": 0
   }
 }

@@ -27,7 +27,7 @@ describe("Paged Table", () => {
 		let count = 0;
 		cy.checkFirstWord("Argle-bargle");
 		cy.get("span[data-testid='paged-table-checkbox-cell']")
-			.each(() => count++)
+			.each(() => (count += 1))
 			.then(() => cy.checkRowsPerPage(count));
 		cy.checkTablePager("Showing 1 to 5");
 		cy.get("button.next-page")
@@ -35,7 +35,7 @@ describe("Paged Table", () => {
 			.then(() => {
 				count = 0;
 				cy.get("span[data-testid='paged-table-checkbox-cell']")
-					.each(() => count++)
+					.each(() => (count += 1))
 					.then(() => expect(count).to.equal(2));
 			});
 		cy.checkTablePager("Showing 6 to 7");
@@ -51,7 +51,7 @@ describe("Paged Table", () => {
 				count = 0;
 				cy.checkRowsPerPage(50);
 				cy.get("span[data-testid='paged-table-checkbox-cell']")
-					.each(() => count++)
+					.each(() => (count += 1))
 					.then(() => expect(count).to.equal(7));
 			});
 		cy.checkTablePager("Showing 1 to 7");

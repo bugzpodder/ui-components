@@ -18,7 +18,7 @@ exports[`render full paged table 1`] = `
           <span
             class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
           >
-            Test Table
+            Test Table (1 Selected)
           </span>
           
         </div>

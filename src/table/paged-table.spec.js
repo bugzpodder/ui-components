@@ -88,7 +88,7 @@ test("render paged table with no selected items", () => {
 test("render full paged table", () => {
 	const mockPagination = jest.fn();
 	const mockSelect = jest.fn();
-	const { container } = render(
+	const { container, getByTestId } = render(
 		<TestWrapper>
 			<PagedTable
 				title="Test Table"
@@ -103,6 +103,7 @@ test("render full paged table", () => {
 			/>
 		</TestWrapper>,
 	);
+	expect(getByTestId("card-header")).toHaveTextContent("Test Table (1 Selected)");
 	expect(container).toMatchSnapshot();
 });
 

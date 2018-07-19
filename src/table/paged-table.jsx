@@ -70,7 +70,7 @@ export const PagedTable = (props: Props) => {
 		onSelect,
 		selectedRows,
 		tableOptions,
-		title,
+		title = "",
 	} = props;
 	if (!columns || !data) {
 		throw new Error("data prop or columns prop or both are not provided");
@@ -83,10 +83,12 @@ export const PagedTable = (props: Props) => {
 		selectedRows,
 		tableOptions,
 	};
+	const numberSelected = (selectedRows && selectedRows.length) || 0;
+	const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
 	return (
 		<div className={styles.tableContainer}>
 			<CommonCard
-				title={title}
+				title={cardTitle}
 				headerActions={headerActions}
 				footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
 				classes={{

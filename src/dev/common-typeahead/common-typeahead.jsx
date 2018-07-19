@@ -15,8 +15,11 @@ import {
 import "./common-typeahead.scss";
 
 type Props = {
-	/** The function used to retrieve the values set by the typeahead */
-	onChange: (Object | Array<Suggestion>) => any,
+	/**
+	 * The function used to retrieve the values set by the typeahead.
+	 * When `isMulti` is true, returns an array of objects.
+	 */
+	onChange: Suggestion => any | ((Array<Suggestion>) => any),
 	/**
 	 * Tells the typeahead which suggestion(s) to use as its default value.
 	 * String(s) should match `value` of an object in a suggestion, or in the array of suggestions
@@ -69,7 +72,8 @@ export const CommonTypeahead = (props: Props) => {
 		defaultValue = "",
 	} = props;
 	const defaultValueSelections = isMulti
-		? suggestions.filter(suggestion => defaultValue.includes(suggestion.value))
+		? // $FlowFixMe: flow thinks `.includes()` can only take string arguments
+		suggestions.filter(suggestion => defaultValue.includes(suggestion.value))
 		: suggestions.find(suggestion => suggestion.value === defaultValue);
 	return (
 		<div className="common-typeahead__root">
@@ -84,7 +88,7 @@ export const CommonTypeahead = (props: Props) => {
 						isClearable: true,
 						onChange: value => {
 							if (!isMulti && !value) {
-								onChange({});
+								onChange({ label: "", value: "" });
 								return;
 							}
 							onChange(value);

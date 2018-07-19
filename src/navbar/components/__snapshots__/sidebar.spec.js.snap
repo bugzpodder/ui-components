@@ -495,7 +495,7 @@ exports[`render Sidebar 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
               >
-                Reagents
+                Facilities
               </span>
             </div>
             <svg

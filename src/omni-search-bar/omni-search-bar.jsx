@@ -65,6 +65,9 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		if (prevOmniText !== omniText) {
 			await this.updateOmniText(omniText);
 		}
+		if (searchDefs !== prevProps.searchDefs) {
+			this.onSearch();
+		}
 	};
 
 	getValuesFromLocalStorage = (searchDefs: SearchDefs) => {

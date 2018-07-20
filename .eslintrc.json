@@ -18,7 +18,6 @@
   },
   "plugins": ["cypress", "flowtype", "import", "react"],
   "rules": {
-    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
     "comma-dangle": [
       "error",
       {
@@ -29,18 +28,8 @@
         "functions": "ignore"
       }
     ],
-    "curly": "error",
-    "default-case": "error",
-    "dot-notation": "error",
-    "eqeqeq": ["error", "always", { "null": "ignore" }],
-    "flowtype/require-valid-file-annotation": [
-      0,
-      "always",
-      {
-        "annotationStyle": "line"
-      }
-    ],
-    "guard-for-in": "error",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/prefer-default-export": 0,
     "indent": [
       "error",
       "tab",
@@ -63,35 +52,32 @@
         ]
       }
     ],
-    "import/newline-after-import": ["error", { "count": 1 }],
-    "import/order": "error",
-    "import/prefer-default-export": 0,
-    "linebreak-style": ["error", "unix"],
     "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-    "max-len": ["error", 150, 2],
-    "no-console": ["error", { "allow": ["warn", "error", "debug", "info"] }],
+    "max-len": [
+      "error",
+      150,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
     "no-alert": "error",
-    "no-caller": "error",
-    "no-case-declarations": "error",
-    "no-debugger": "error",
-    "no-dupe-args": "error",
-    "no-dupe-keys": "error",
-    "no-duplicate-case": "error",
+    "no-console": ["error", { "allow": ["warn", "error", "debug", "info"] }],
     "no-duplicate-imports": "error",
-    "no-else-return": "error",
-    "no-empty": "error",
-    "no-empty-pattern": "error",
-    "no-extra-boolean-cast": "error",
-    "no-fallthrough": "error",
-    "no-func-assign": "error",
-    "no-invalid-regexp": "error",
-    "no-irregular-whitespace": "error",
-    "no-multi-spaces": "error",
     "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0, "maxEOF": 1 }],
-    "no-octal": "error",
-    "no-octal-escape": "error",
     "no-param-reassign": 0,
-    "no-redeclare": "error",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-restricted-imports": [
       "error",
       {
@@ -109,59 +95,32 @@
       }
     ],
     "no-return-assign": 0,
-    "no-script-url": "error",
-    "no-self-assign": "error",
-    "no-self-compare": "error",
-    "no-sequences": "error",
     "no-shadow": 0,
     "no-tabs": 0,
-    "no-template-curly-in-string": "error",
     "no-trailing-spaces": 2,
     "no-underscore-dangle": 0,
-    "no-unexpected-multiline": "error",
-    "no-unreachable": "error",
-    "no-unsafe-finally": "error",
-    "no-unsafe-negation": "error",
     "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
-    "no-unused-labels": "error",
     "no-unused-vars": [2, { "varsIgnorePattern": "^__" }],
     "no-useless-call": "error",
-    "no-useless-escape": "error",
-    "no-useless-return": "error",
-    "no-with": "error",
-    "no-var": "error",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-    "object-curly-spacing": ["error", "always"],
-    "prefer-const": "error",
-    "prefer-promise-reject-errors": "error",
-    "prefer-template": "error",
-    "quotes": [
-      "error",
-      "double",
-      {
-        "avoidEscape": true
-      }
-    ],
-    "jsx-quotes": ["error", "prefer-double"],
-    "react/display-name": 0,
-    "react/jsx-closing-tag-location": 2,
-    "react/jsx-equals-spacing": 2,
-    "react/jsx-filename-extension": [2, { "extensions": [".spec.js", ".jsx"] }],
-    "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
+    "space-before-blocks": 2,
+    "strict": 0,
+
+    "react/display-name": "off",
     "react/jsx-indent": ["error", "tab"],
     "react/jsx-indent-props": ["error", "tab"],
     "react/jsx-max-props-per-line": [1, { "maximum": 1, "when": "always" }],
     "react/jsx-no-bind": [0],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
     "react/prop-types": 0,
-    "semi": ["error", "always"],
-    "space-before-blocks": 2,
-    "strict": 0,
-    "use-isnan": "error",
-    "valid-typeof": "error",
-    "wrap-iife": "error",
-    "yoda": "error",
+    "react/jsx-filename-extension": [2, { "extensions": [".spec.js", ".jsx"] }],
+    "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
+
+    "flowtype/require-valid-file-annotation": [
+      0,
+      "always",
+      {
+        "annotationStyle": "line"
+      }
+    ],
 
     "function-paren-newline": 0,
     "no-return-await": 0,

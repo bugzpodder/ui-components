@@ -45,7 +45,7 @@ export class Navbar extends React.Component<Props, State> {
 	render = () => {
 		return (
 			<BaseNavbar
-				sidebarVariant="temporary"
+				drawerVariant="temporary"
 				isSidebarOpen={this.state.isSidebarOpen}
 				toggleSidebar={this.toggleSidebar}
 				{...this.props}

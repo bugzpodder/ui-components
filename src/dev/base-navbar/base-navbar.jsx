@@ -36,7 +36,7 @@ type Props = {
 	/** Defines the pathname. */
 	currentPath: string,
 	/** Determines what kind of sidebar to use. */
-	sidebarVariant?: "permanent" | "persistent" | "temporary",
+  drawerVariant?: "permanent" | "persistent" | "temporary",
 	/**
 	 * Provides classNames to the navbar's sub-components. Options include:
 	 *
@@ -65,7 +65,6 @@ export class BaseNavbar extends React.Component<Props> {
 			sidebarFooter,
 			isSidebarOpen,
 			toggleSidebar,
-			sidebarVariant,
 			...otherProps
 		} = this.props;
 		const { classes = {} } = this.props;
@@ -121,7 +120,6 @@ export class BaseNavbar extends React.Component<Props> {
 					isOpen={isSidebarOpen}
 					toggle={toggleSidebar}
 					footer={sidebarFooter}
-					drawerVariant={sidebarVariant}
 					{...otherProps}
 				/>
 			</Fragment>

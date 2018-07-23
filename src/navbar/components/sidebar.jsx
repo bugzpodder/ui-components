@@ -23,6 +23,8 @@ type Props = {
 	InternalLinkComponent?: React$ElementType,
 	footer?: React$Node,
 	currentPath: string,
+	drawerVariant?: "permanent" | "persistent" | "temporary",
+	classes?: BaseNavbarClasses,
 };
 
 type State = {
@@ -146,7 +148,7 @@ export class Sidebar extends React.Component<Props, State> {
 
 	render() {
 		const {
-			sidebarContent = sidebarItems, footer, isOpen, toggle,
+			sidebarContent = sidebarItems, footer, isOpen, toggle, drawerVariant, classes = {},
 		} = this.props;
 		return (
 			<Drawer
@@ -155,14 +157,20 @@ export class Sidebar extends React.Component<Props, State> {
 				open={isOpen}
 				transitionDuration={0}
 				onClose={toggle}
+				className={classes.sideBar}
+				variant={drawerVariant}
 			>
-				<IconButton
-					id="close-sidebar"
-					onClick={toggle}
-				>
-					<ArrowBack />
-				</IconButton>
-				<Divider />
+				{drawerVariant !== "persistent" && (
+					<div>
+						<IconButton
+							id="close-sidebar"
+							onClick={toggle}
+						>
+							<ArrowBack />
+						</IconButton>
+						<Divider />
+					</div>
+				)}
 				<div
 					tabIndex={0}
 					role="button"
@@ -175,9 +183,11 @@ export class Sidebar extends React.Component<Props, State> {
 						) {
 							return;
 						}
-						toggle();
+						if (drawerVariant !== "persistent") {
+							toggle();
+						}
 					}}
-					className={styles.drawer}
+					className={classNames(styles.drawer, classes.drawer)}
 				>
 					<List className={styles.list}>{sidebarContent.map(this.renderItem)}</List>
 				</div>

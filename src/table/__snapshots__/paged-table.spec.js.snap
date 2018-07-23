@@ -155,7 +155,7 @@ exports[`render full paged table 1`] = `
           class="table-pager tablePager"
         >
           <div
-            class="MuiToolbar-root MuiToolbar-gutters MuiTablePagination-toolbar"
+            class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters MuiTablePagination-toolbar"
           >
             <div
               class="MuiTablePagination-spacer"

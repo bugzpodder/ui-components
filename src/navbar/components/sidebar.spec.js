@@ -28,6 +28,7 @@ test("render Sidebar", () => {
 					domain={LIMS}
 					currentPath="/automation/tasks"
 					InternalLinkComponent={Link}
+					drawerVariant="temporary"
 					externalDomains={new Map()
 						.set(EDC, "https://edc-client-staging.eng.aws.grail.com")
 						.set(PIPELINE, "https://proxy.ti-apps.aws.grail.com/pipeline-analyse-ui")}

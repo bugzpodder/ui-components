@@ -62,10 +62,15 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		if (searchDefs !== prevProps.searchDefs) {
 			omniText = this.mergeOmniWithLocalStorage(omniText);
 		}
+		let shouldSearch = false;
 		if (prevOmniText !== omniText) {
 			await this.updateOmniText(omniText);
+			shouldSearch = true;
 		}
 		if (searchDefs !== prevProps.searchDefs) {
+			shouldSearch = true;
+		}
+		if (shouldSearch) {
 			this.onSearch();
 		}
 	};
@@ -123,21 +128,13 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		});
 	};
 
-	// FIXME(jrosenfield): shouldn't push to history if query is unchanged
-	updateOmniText = (omniText: string, shouldUpdateBrowserHistory: boolean = false) => {
+	updateOmniText = (omniText: string) => {
 		return new Promise(resolve => {
 			this.setState(() => {
 				const { searchDefs } = this.props;
 				try {
 					const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
 					this.setValuesToLocalStorage(searchDefs, searchValues);
-					updateQuery(
-						this.props,
-						{ [OMNI_KEY]: omniText },
-						{
-							shouldUpdateBrowserHistory,
-						},
-					);
 					return {
 						omniText,
 						searchValues,
@@ -153,10 +150,19 @@ export class OmniSearchBar extends React.Component<Props, State> {
 		});
 	};
 
-	onSearch = () => {
+	onSearch = (shouldUpdateBrowserHistory: boolean = false) => {
 		this.setState({ isOpen: false });
-		// FIXME(jrosenfield): does ApiQueryHandler change location or just define setSearchOptions?
 		this.props.setSearchOptions({ searchOptions: getSearchOptions(this.props.searchDefs, this.state.searchValues) });
+		if (shouldUpdateBrowserHistory) {
+			const { omniText } = this.state;
+			updateQuery(
+				this.props,
+				{ [OMNI_KEY]: omniText },
+				{
+					shouldUpdateBrowserHistory,
+				},
+			);
+		}
 	};
 
 	handleClear = () => {
@@ -198,7 +204,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 						omniText={this.state.omniText}
 						onChange={this.onChange.bind(this)}
 						onSearch={() => {
-							this.onSearch();
+							this.onSearch(true);
 						}}
 						onClear={this.handleClear}
 						error={this.state.error}
@@ -215,7 +221,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 								searchDefs={searchDefs}
 								searchValues={this.state.searchValues}
 								onSearch={() => {
-									this.onSearch();
+									this.onSearch(true);
 								}}
 								onChange={this.onChange.bind(this)}
 								onClear={this.handleClear}

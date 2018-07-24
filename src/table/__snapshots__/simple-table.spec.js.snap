@@ -171,6 +171,7 @@ exports[`render loading simple table 1`] = `
     </table>
     <div
       class="spinnerOverlay active"
+      data-is-active="true"
       data-testid="spinner-overlay"
     >
       <div
@@ -444,6 +445,7 @@ exports[`render simple table with no results and is loading 1`] = `
     </table>
     <div
       class="spinnerOverlay active"
+      data-is-active="true"
       data-testid="spinner-overlay"
     >
       <div

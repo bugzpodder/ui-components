@@ -28,6 +28,7 @@ export const SpinnerOverlay = (props: Props) => {
 	return (
 		<div
 			data-testid="spinner-overlay"
+			data-is-active={isActive}
 			className={classNames(spinnerClasses)}
 			onClick={event => isActive && event.stopPropagation()}
 			onMouseDown={event => isActive && event.preventDefault()}

@@ -317,6 +317,7 @@ exports[`render loading paged table 1`] = `
     </div>
     <div
       class="spinnerOverlay active"
+      data-is-active="true"
       data-testid="spinner-overlay"
     >
       <div
@@ -435,6 +436,7 @@ exports[`render paged table with no results and is loading 1`] = `
     </div>
     <div
       class="spinnerOverlay active"
+      data-is-active="true"
       data-testid="spinner-overlay"
     >
       <div

@@ -19,6 +19,7 @@ exports[`render active spinner overlay 1`] = `
     </button>
     <div
       class="spinnerOverlay active"
+      data-is-active="true"
       data-testid="spinner-overlay"
     >
       <div
@@ -48,6 +49,7 @@ exports[`render inactive spinner overlay 1`] = `
     </button>
     <div
       class="spinnerOverlay"
+      data-is-active="false"
       data-testid="spinner-overlay"
     >
       <div

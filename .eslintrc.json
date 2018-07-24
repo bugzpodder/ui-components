@@ -16,7 +16,7 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["cypress", "flowtype", "import", "react"],
+  "plugins": ["cypress", "flowtype", "import", "react", "filenames"],
   "rules": {
     "comma-dangle": [
       "error",
@@ -28,6 +28,7 @@
         "functions": "ignore"
       }
     ],
+    "filenames/match-regex": [2, "^[0-9a-z-]{2,}(.spec)?$", true],
     "import/newline-after-import": ["error", { "count": 1 }],
     "import/prefer-default-export": 0,
     "indent": [

@@ -20,6 +20,10 @@ type MultiValueContainerProps = {
 	children: Node,
 };
 
+type MultiValueRemoveProps = {
+	innerProps: Object,
+};
+
 type ClearIndicatorProps = {
 	innerProps: Object,
 };
@@ -65,8 +69,9 @@ export const MultiValueContainer = (props: MultiValueContainerProps) => {
 	);
 };
 
-export const MultiValueRemove = (props: Props) => {
-	return <CancelIcon {...props} />;
+export const MultiValueRemove = (props: MultiValueRemoveProps) => {
+	const { innerProps } = props;
+	return <CancelIcon {...innerProps} />;
 };
 
 export const Option = (props: Props) => {

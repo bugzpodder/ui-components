@@ -1,3 +1,7 @@
+## 0.3.1
+
+1.  Fix CommonTypeahead MultiValueRemove bug
+
 ## 0.3.0
 
 1.  Add `classes` prop to `CommonCard` and `CommonDialog`

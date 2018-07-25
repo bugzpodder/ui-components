@@ -42,7 +42,8 @@ type Props = {
 	/** The text displayed in the input before the user begins typing */
 	placeholder?: string,
 	/**
-	 * default (`simple`): synchronous - user is forced to choose an option from the suggestions (requires `suggestions` prop).
+	 * default (`simple`): synchronous - user is forced to choose an option from the suggestions
+	 * (requires `suggestions` prop).
 	 *
 	 * `creatable`: allows user to create new entries that are not in the suggestions list (requires `suggestions` prop).
 	 *

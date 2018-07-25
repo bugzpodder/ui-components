@@ -95,7 +95,7 @@ export class Sidebar extends React.Component<Props, State> {
 			return state.openItems.has(index);
 		}
 		// $FlowFixMe: getIsOpen is called on ParentSidebarItem and returns false otherwise
-		const children = sidebarContent[index].children;
+		const { children } = sidebarContent[index];
 		if (children === undefined) {
 			return false;
 		}

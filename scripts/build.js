@@ -1,5 +1,6 @@
 import cp from "child_process";
 import path from "path";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import fse from "fs-extra";
 
 async function copyFile(file) {

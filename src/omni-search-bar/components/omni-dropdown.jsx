@@ -18,68 +18,66 @@ type Props = {
 	children?: Node,
 };
 
-export class OmniDropdown extends React.Component<Props> {
-	render = () => {
-		const {
-			searchDefs, searchValues, onChange, onSearch, onClear, width, children,
-		} = this.props;
-		return (
-			<div style={{ width }}>
-				<Paper
-					square
-					className={styles.paper}
-				>
-					<Grid container>
-						{searchDefs.map((searchDef, index) => {
-							const {
-								name, type, Component = SearchField, description = "",
-							} = searchDef;
-							const searchValue = searchValues.get(index);
-							const row: GridRow = {
-								label: name,
-								value: (
-									<Component
-										autoFocus={index === 0}
-										searchKey={`${OMNI_KEY}-${index}`}
-										placeholder={description}
-										searchType={type}
-										searchValue={searchValue}
-										onChange={onChange}
-										onSearch={onSearch}
-									/>
-								),
-							};
-							return (
-								<TwoColumnRow
-									key={index}
-									row={row}
-									labelWidth={3}
+export const OmniDropdown = (props: Props) => {
+	const {
+		searchDefs, searchValues, onChange, onSearch, onClear, width, children,
+	} = props;
+	return (
+		<div style={{ width }}>
+			<Paper
+				square
+				className={styles.paper}
+			>
+				<Grid container>
+					{searchDefs.map((searchDef, index) => {
+						const {
+							name, type, Component = SearchField, description = "",
+						} = searchDef;
+						const searchValue = searchValues.get(index);
+						const row: GridRow = {
+							label: name,
+							value: (
+								<Component
+									autoFocus={index === 0}
+									searchKey={`${OMNI_KEY}-${index}`}
+									placeholder={description}
+									searchType={type}
+									searchValue={searchValue}
+									onChange={onChange}
+									onSearch={onSearch}
 								/>
-							);
-						})}
-						{children}
-						<Grid
-							item
-							className={styles.footer}
+							),
+						};
+						return (
+							<TwoColumnRow
+								key={index}
+								row={row}
+								labelWidth={3}
+							/>
+						);
+					})}
+					{children}
+					<Grid
+						item
+						className={styles.footer}
+					>
+						<Button
+							disableRipple
+							onClick={onClear}
 						>
-							<Button
-								disableRipple
-								onClick={onClear}
-							>
 								Clear
-							</Button>
-							<Button
-								disableRipple
-								onClick={onSearch}
-								color="primary"
-								variant="raised"
-							>
+						</Button>
+						<Button
+							disableRipple
+							onClick={onSearch}
+							color="primary"
+							variant="raised"
+						>
 								Search
-							</Button>
-						</Grid>
+						</Button>
 					</Grid>
-				</Paper>
-			</div>
-		);
-	};
-}
+				</Grid>
+			</Paper>
+		</div>
+	);
+};

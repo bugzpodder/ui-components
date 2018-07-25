@@ -78,7 +78,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 	getValuesFromLocalStorage = (searchDefs: SearchDefs) => {
 		const storageValues: Map<number, string> = new Map();
 		searchDefs.forEach((searchDef, index) => {
-			const localStorageKey = searchDef.localStorageKey;
+			const { localStorageKey } = searchDef;
 			if (localStorageKey !== undefined) {
 				const storageValue = localStorage.get(localStorageKey);
 				if (storageValue !== undefined) {
@@ -91,7 +91,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 
 	setValuesToLocalStorage = (searchDefs: SearchDefs, searchValues: SearchValues) => {
 		searchDefs.forEach((searchDef, index) => {
-			const localStorageKey = searchDef.localStorageKey;
+			const { localStorageKey } = searchDef;
 			if (localStorageKey !== undefined) {
 				if (searchValues.has(index)) {
 					const searchValue = searchValues.get(index);
@@ -104,7 +104,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 	};
 
 	mergeOmniWithLocalStorage = (omniText: string): string => {
-		const searchDefs = this.props.searchDefs;
+		const { searchDefs } = this.props;
 		try {
 			const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
 			const storageValues = this.getValuesFromLocalStorage(searchDefs);
@@ -172,7 +172,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 	onChange = (id: string, value: string) => {
 		let omniText = value;
 		if (id !== OMNI_KEY) {
-			const index = parseInt(id.split("-").pop());
+			const index = Number.parseInt(id.split("-").pop(), 10);
 			const searchValues: SearchValues = new Map(this.state.searchValues).set(index, value);
 			omniText = getOmniTextFromSearchValues(this.props.searchDefs, searchValues);
 		}

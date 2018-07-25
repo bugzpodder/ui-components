@@ -53,76 +53,74 @@ type Props = {
 	toggleSidebar: Function,
 };
 
-export class BaseNavbar extends React.Component<Props> {
-	render = () => {
-		const {
-			isProduction = false,
-			title,
-			breadcrumbs,
-			left,
-			center,
-			right,
-			sidebarFooter,
-			isSidebarOpen,
-			toggleSidebar,
-			...otherProps
-		} = this.props;
-		const { classes = {} } = this.props;
-		return (
-			<Fragment>
-				<AppBar
-					position="sticky"
-					className={classNames(classes.appBar, styles.appBar)}
+export const BaseNavbar = (props: Props) => {
+	const {
+		isProduction = false,
+		title,
+		breadcrumbs,
+		left,
+		center,
+		right,
+		sidebarFooter,
+		isSidebarOpen,
+		toggleSidebar,
+		...otherProps
+	} = props;
+	const { classes = {} } = props;
+	return (
+		<Fragment>
+			<AppBar
+				position="sticky"
+				className={classNames(classes.appBar, styles.appBar)}
+			>
+				{!isProduction && (
+				<Typography
+					className={styles.nonProductionWarning}
+					variant="title"
 				>
-					{!isProduction && (
+							THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
+				</Typography>
+				)}
+				<Toolbar
+					className={styles.toolbar}
+					disableGutters
+				>
+					<div className={styles.left}>
+						<IconButton
+							id="main-nav-button"
+							data-testid="main-nav-button"
+							onClick={toggleSidebar}
+							color="inherit"
+							aria-label="Menu"
+						>
+							<MenuIcon />
+						</IconButton>
+						{title && (
 						<Typography
-							className={styles.nonProductionWarning}
+							color="inherit"
 							variant="title"
 						>
-							THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
+							{title}
 						</Typography>
-					)}
-					<Toolbar
-						className={styles.toolbar}
-						disableGutters
-					>
-						<div className={styles.left}>
-							<IconButton
-								id="main-nav-button"
-								data-testid="main-nav-button"
-								onClick={toggleSidebar}
-								color="inherit"
-								aria-label="Menu"
-							>
-								<MenuIcon />
-							</IconButton>
-							{title && (
-								<Typography
-									color="inherit"
-									variant="title"
-								>
-									{title}
-								</Typography>
-							)}
-							{left}
+						)}
+						{left}
+					</div>
+					<div className={styles.center}>{center}</div>
+					<div className={styles.right}>
+						<div className={styles.brand}>
+							<GrailLogo />
 						</div>
-						<div className={styles.center}>{center}</div>
-						<div className={styles.right}>
-							<div className={styles.brand}>
-								<GrailLogo />
-							</div>
-							{right}
-						</div>
-					</Toolbar>
-					{breadcrumbs}
-				</AppBar>
-				<Sidebar
-					isOpen={isSidebarOpen}
-					toggle={toggleSidebar}
-					footer={sidebarFooter}
-					{...otherProps}
-				/>
-			</Fragment>
-		);
-	};
-}
+						{right}
+					</div>
+				</Toolbar>
+				{breadcrumbs}
+			</AppBar>
+			<Sidebar
+				isOpen={isSidebarOpen}
+				toggle={toggleSidebar}
+				footer={sidebarFooter}
+				{...otherProps}
+			/>
+		</Fragment>
+	);
+};

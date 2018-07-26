@@ -114,7 +114,9 @@
       "src/**/*.{js,jsx}",
       "!src/**/index.js",
       "!src/dev/**/*.{js,jsx}",
-      "!src/utils/*.{js,jsx}"
+      "!src/utils/*.{js,jsx}",
+      "!src/notification-center/*.{js,jsx}",
+      "!src/notification-center/**/*.{js,jsx}"
     ],
     "coverageThreshold": {
       "src/**/*.{js,jsx}": {

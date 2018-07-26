@@ -53,6 +53,7 @@ module.exports = {
 				"./src/common-dialog/dialog.jsx",
 				"./src/common-dialog/multi-page-dialog.jsx",
 				"./src/dev/common-typeahead/common-typeahead.jsx",
+				"./src/notification-center/notification-center.jsx",
 				"./src/navbar/navbar.jsx",
 				"./src/table/paged-table.jsx",
 				"./src/table/simple-table.jsx",

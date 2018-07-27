@@ -26,9 +26,13 @@ $screen-md: $TABLET_WIDTH;
 	&:focus {
 		outline: none;
 	}
+	// TODO(jrosenfield): these don't need a prefix since they're already nested under commonDialogPaper
 	.commonDialogContent {
 		max-height: calc(#{$dialog-height} - #{$dialog-title-height} - #{$dialog-footer-height});
 		overflow-y: auto;
+	}
+	.commonDialogNoOverflow {
+		overflow-y: unset;
 	}
 	.commonDialogFooter {
 		display: flex;

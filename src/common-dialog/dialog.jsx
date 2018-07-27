@@ -34,12 +34,13 @@ type Props = {
 	 *  - `action`: wrapper around each individual dialog action
 	 */
 	classes?: CommonDialogClasses,
+	enableOverflow?: boolean,
 };
 
 /** `CommonDialog` provides a component to be used as a UI modal. */
 export const CommonDialog = (props: Props) => {
 	const {
-		actions, children, classes = {}, hideModal, isVisible, title,
+		actions, children, classes = {}, hideModal, isVisible, title, enableOverflow = true,
 	} = props;
 	const leftActionButtons = actions
 		.filter(({ isLeftButton = false }) => isLeftButton)
@@ -60,7 +61,13 @@ export const CommonDialog = (props: Props) => {
 			>
 				{title}
 			</DialogTitle>
-			<DialogContent className={classNames(styles.commonDialogContent, classes.content)}>{children}</DialogContent>
+			<DialogContent
+				className={classNames(styles.commonDialogContent, classes.content, {
+					[styles.commonDialogNoOverflow]: !enableOverflow,
+				})}
+			>
+				{children}
+			</DialogContent>
 			<DialogActions
 				classes={{
 					root: classes.actions,

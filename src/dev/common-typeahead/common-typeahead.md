@@ -89,8 +89,10 @@ class TypeaheadExample extends React.Component {
 		super(props);
 		this.state = {
 			value: "",
+			countries,
 		};
 		this.handleChange = this.handleChange.bind(this);
+		this.filterCountries = this.filterCountries.bind(this);
 	}
 
 	handleChange(suggestion) {
@@ -98,7 +100,14 @@ class TypeaheadExample extends React.Component {
 	}
 
 	filterCountries(inputValue) {
-		return countries.filter(country => country.label.toLowerCase().includes(inputValue.toLowerCase()));
+		return new Promise(resolve => {
+			const newCountries = countries.filter(country => country.label.toLowerCase().includes(inputValue.toLowerCase()));
+			setTimeout(() =>{
+				this.setState(() => {
+					return { countries: newCountries }
+				}, resolve.bind(this, newCountries));
+			}, 500);
+		});
 	}
 
 	render() {
@@ -107,10 +116,11 @@ class TypeaheadExample extends React.Component {
 				<CommonTypeahead
 					placeholder="Choose A Country"
 					selectType="async"
-					loadOptions={(inputValue, callback) => callback(this.filterCountries(inputValue))}
+					suggestions={this.state.countries}
+					updateSuggestions={this.filterCountries}
 					onChange={this.handleChange}
 				/>
-				<ExampleBlock strongHeader="value " content={this.state.value} />
+				<ExampleBlock strongHeader="value " content={this.state} />
 			</Fragment>
 		);
 	}

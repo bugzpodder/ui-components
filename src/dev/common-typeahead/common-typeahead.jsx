@@ -33,12 +33,6 @@ type Props = {
 	isDisabled?: boolean,
 	/** Allows for the selection of multiple values */
 	isMulti?: boolean,
-	/**
-	 * The function used to retrieve suggestions asynchronously based on the user's input.
-	 *
-	 * Each object must at least include a `label` and `value` key
-	 */
-	loadOptions?: (string, Function) => Array<Suggestion>,
 	/** The text displayed in the input before the user begins typing */
 	placeholder?: string,
 	/**
@@ -53,11 +47,19 @@ type Props = {
 	/** Displays the input in an error state */
 	showError?: boolean,
 	/**
-	 * The data objects used as suggestions for synchronous typeaheads.
+	 * Suggestion objects for typeahead.
 	 *
 	 * Each object must at least include a `label` and `value` key.
+	 * Required for `simple`, `creatable`
+	 * Optional initial suggestions for `async`
 	 */
 	suggestions?: Array<Suggestion>,
+	/**
+	 * The function used to retrieve suggestions asynchronously based on the user's input.
+	 *
+	 * Each object must at least include a `label` and `value` key
+	 */
+	updateSuggestions?: (string) => Promise<*>,
 };
 
 export const CommonTypeahead = (props: Props) => {
@@ -103,7 +105,6 @@ export const CommonTypeahead = (props: Props) => {
 							MultiValueContainer,
 							MultiValueRemove,
 						},
-						options: suggestions,
 						defaultValue: defaultValueSelections,
 						placeholder,
 					}}

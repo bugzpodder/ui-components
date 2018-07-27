@@ -7,32 +7,50 @@ import AsyncSelect from "react-select/lib/Async";
 type Props = {
 	selectType: string,
 	value: string,
-	loadOptions: string => Array<Suggestion>,
+	suggestions?: Array<Suggestion>,
+	/**
+	 * The function used to retrieve suggestions asynchronously based on the user's input.
+	 *
+	 * Each object must at least include a `label` and `value` key
+	 */
+	updateSuggestions?: (string) => Promise<*>,
 };
 
 const CommonTypeaheadComponent = props => {
-	const { selectType, ...other } = props;
+	const { selectType, suggestions = [], ...other } = props;
 	switch (selectType) {
-		case "async":
-			if (!props.loadOptions) {
-				throw new Error("Must provide `loadOptions` prop");
+		case "async": {
+			if (!props.updateSuggestions) {
+				throw new Error("Must provide `updateSuggestions` prop");
 			}
 			return (
 				<AsyncSelect
-					cacheOptions
+					loadOptions={props.updateSuggestions}
+					defaultOptions={suggestions}
 					{...other}
 				/>
 			);
+		}
 		case "creatable":
-			if (!props.suggestions) {
+			if (!suggestions) {
 				throw new Error("Must provide `suggestions` prop");
 			}
-			return <CreatableSelect {...other} />;
+			return (
+				<CreatableSelect
+					options={suggestions}
+					{...other}
+				/>
+			);
 		default:
-			if (!props.suggestions) {
+			if (!suggestions) {
 				throw new Error("Must provide `suggestions` prop");
 			}
-			return <Select {...other} />;
+			return (
+				<Select
+					options={suggestions}
+					{...other}
+				/>
+			);
 	}
 };
 

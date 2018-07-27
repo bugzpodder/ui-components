@@ -497,7 +497,7 @@ exports[`render Sidebar 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
               >
-                Facilities
+                Reagents
               </span>
             </div>
             <svg
@@ -513,6 +513,23 @@ exports[`render Sidebar 1`] = `
               </g>
             </svg>
           </div>
+          <a
+            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
+            exact="false"
+            href="/facilities/instruments"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="MuiListItemText-root"
+            >
+              <span
+                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+              >
+                Instruments
+              </span>
+            </div>
+          </a>
           <div
             class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
             role="button"

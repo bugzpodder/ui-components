@@ -36,7 +36,7 @@ type Props = {
 	/** Defines the pathname. */
 	currentPath: string,
 	/** Determines what kind of sidebar to use. */
-  drawerVariant?: "permanent" | "persistent" | "temporary",
+	drawerVariant?: "permanent" | "persistent" | "temporary",
 	/**
 	 * Provides classNames to the navbar's sub-components. Options include:
 	 *
@@ -74,12 +74,12 @@ export const BaseNavbar = (props: Props) => {
 				className={classNames(classes.appBar, styles.appBar)}
 			>
 				{!isProduction && (
-				<Typography
-					className={styles.nonProductionWarning}
-					variant="title"
-				>
-							THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
-				</Typography>
+					<Typography
+						className={styles.nonProductionWarning}
+						variant="title"
+					>
+						THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
+					</Typography>
 				)}
 				<Toolbar
 					className={styles.toolbar}
@@ -96,12 +96,12 @@ export const BaseNavbar = (props: Props) => {
 							<MenuIcon />
 						</IconButton>
 						{title && (
-						<Typography
-							color="inherit"
-							variant="title"
-						>
-							{title}
-						</Typography>
+							<Typography
+								color="inherit"
+								variant="title"
+							>
+								{title}
+							</Typography>
 						)}
 						{left}
 					</div>

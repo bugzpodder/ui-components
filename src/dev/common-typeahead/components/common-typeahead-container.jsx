@@ -13,7 +13,7 @@ type Props = {
 	 *
 	 * Each object must at least include a `label` and `value` key
 	 */
-	updateSuggestions?: (string) => Promise<*>,
+	updateSuggestions?: string => Promise<*>,
 };
 
 const CommonTypeaheadComponent = props => {

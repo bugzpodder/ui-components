@@ -65,7 +65,7 @@ export const OmniDropdown = (props: Props) => {
 							disableRipple
 							onClick={onClear}
 						>
-								Clear
+							Clear
 						</Button>
 						<Button
 							disableRipple
@@ -73,7 +73,7 @@ export const OmniDropdown = (props: Props) => {
 							color="primary"
 							variant="raised"
 						>
-								Search
+							Search
 						</Button>
 					</Grid>
 				</Grid>

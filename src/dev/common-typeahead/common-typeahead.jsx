@@ -59,7 +59,7 @@ type Props = {
 	 *
 	 * Each object must at least include a `label` and `value` key
 	 */
-	updateSuggestions?: (string) => Promise<*>,
+	updateSuggestions?: string => Promise<*>,
 };
 
 export const CommonTypeahead = (props: Props) => {
@@ -74,10 +74,12 @@ export const CommonTypeahead = (props: Props) => {
 		showError = false,
 		defaultValue = "",
 	} = props;
+	/* eslint-disable no-mixed-spaces-and-tabs */
 	const defaultValueSelections = isMulti
 		? // $FlowFixMe: flow thinks `.includes()` can only take string arguments
-		suggestions.filter(suggestion => defaultValue.includes(suggestion.value))
+		  suggestions.filter(suggestion => defaultValue.includes(suggestion.value))
 		: suggestions.find(suggestion => suggestion.value === defaultValue);
+	/* eslint-enable */
 	return (
 		<div className="common-typeahead__root">
 			<FormControl fullWidth={fullWidth}>
@@ -90,9 +92,11 @@ export const CommonTypeahead = (props: Props) => {
 						classNamePrefix: "common-typeahead",
 						isClearable: true,
 						onChange: value => {
-							if (!isMulti && !value) {
-								onChange({ label: "", value: "" });
-								return;
+							if (!isMulti) {
+								if (!value || (Array.isArray(value) && value.length === 0)) {
+									onChange({ label: "", value: "" });
+									return;
+								}
 							}
 							onChange(value);
 						},

@@ -57,7 +57,8 @@ export class Sidebar extends React.Component<Props, State> {
 					component={InternalLinkComponent}
 					to={item.path}
 					exact={exact.toString()}
-					target={path.startsWith("/pipeline-ui") ? "_self" : undefined}
+					// When navigating to or from pipeline-ui we want a full reload instead of react-router handling
+					target={path.startsWith("/pipeline-ui") || currentPath.startsWith("/pipeline-ui") ? "_self" : undefined}
 					button
 					className={classNames({ [styles.active]: active, [styles.nested]: nested })}
 					dense={nested}

@@ -6,31 +6,13 @@
     "jest": true,
     "node": true
   },
-  "extends": ["eslint-config-airbnb", "plugin:flowtype/recommended"],
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "allowImportExportEverywhere": false,
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true
-    },
-    "sourceType": "module"
-  },
+  "extends": [
+    "@grail/eslint-config-grail/src/front-end",
+    "@grail/eslint-config-grail/src/flow",
+    "@grail/eslint-config-grail/src/cypress"
+  ],
   "plugins": ["cypress", "flowtype", "import", "react", "filenames"],
   "rules": {
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "always-multiline",
-        "objects": "always-multiline",
-        "imports": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "ignore"
-      }
-    ],
-    "filenames/match-regex": [2, "^[0-9a-z-]{2,}(.spec|.config)?$", true],
-    "import/newline-after-import": ["error", { "count": 1 }],
-    "import/prefer-default-export": 0,
     "indent": [
       "error",
       "tab",
@@ -53,33 +35,6 @@
         ]
       }
     ],
-    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-    "max-len": [
-      "error",
-      120,
-      2,
-      {
-        "ignoreUrls": true,
-        "ignoreComments": false,
-        "ignoreRegExpLiterals": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true
-      }
-    ],
-    "quotes": [
-      "error",
-      "double",
-      {
-        "avoidEscape": true
-      }
-    ],
-    "no-alert": "error",
-    "no-console": ["error", { "allow": ["warn", "error", "debug", "info"] }],
-    "no-duplicate-imports": "error",
-    "no-mixed-operators": 0,
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0, "maxEOF": 1 }],
-    "no-param-reassign": 0,
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "no-restricted-imports": [
       "error",
       {
@@ -96,36 +51,10 @@
         "patterns": ["@grail/lib/src/*", "@grail/components/src/*"]
       }
     ],
-    "no-return-assign": 0,
-    "no-shadow": 0,
     "no-tabs": 0,
-    "no-trailing-spaces": 2,
-    "no-underscore-dangle": 0,
-    "no-unused-expressions": [
-      "error",
-      { "allowShortCircuit": true, "allowTernary": true, "allowTaggedTemplates": false }
-    ],
-    "no-unused-vars": [2, { "varsIgnorePattern": "^__" }],
-    "no-useless-call": "error",
-    "space-before-blocks": 2,
-    "strict": 0,
 
-    "react/display-name": "off",
     "react/jsx-indent": ["error", "tab"],
     "react/jsx-indent-props": ["error", "tab"],
-    "react/jsx-max-props-per-line": [1, { "maximum": 1, "when": "always" }],
-    "react/jsx-no-bind": [0],
-    "react/prop-types": 0,
-    "react/jsx-filename-extension": [2, { "extensions": [".spec.js", ".jsx"] }],
-    "react/jsx-first-prop-new-line": [1, "multiline-multiprop"],
-
-    "flowtype/require-valid-file-annotation": [
-      0,
-      "always",
-      {
-        "annotationStyle": "line"
-      }
-    ],
 
     "function-paren-newline": 0,
     "no-return-await": 0,

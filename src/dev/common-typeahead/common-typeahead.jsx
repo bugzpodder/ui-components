@@ -3,6 +3,7 @@ import React from "react";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import FormControl from "@material-ui/core/FormControl";
 import Input from "@material-ui/core/Input";
+import classNames from "classnames";
 import {
 	CommonTypeaheadContainer,
 	DropdownIndicator,
@@ -29,6 +30,8 @@ type Props = {
 	fullWidth?: boolean,
 	/** Text displayed directly under the input */
 	helperText?: string,
+	/** provides an id to the component */
+	id?: string,
 	/** Disables the typeahead from being used */
 	isDisabled?: boolean,
 	/** Allows for the selection of multiple values */
@@ -64,6 +67,7 @@ type Props = {
 
 export const CommonTypeahead = (props: Props) => {
 	const {
+		id = "",
 		onChange,
 		suggestions = [],
 		fullWidth = false,
@@ -119,7 +123,9 @@ export const CommonTypeahead = (props: Props) => {
 				{helperText && (
 					<FormHelperText
 						error={showError}
-						className="common-typeahead__helpertext"
+						classes={{
+							root: classNames({ [`${id}-helpertext`]: id }, "common-typeahead__helpertext"),
+						}}
 					>
 						{helperText}
 					</FormHelperText>

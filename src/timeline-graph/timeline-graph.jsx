@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import moment from "moment";
+import classNames from "classnames";
 import styles from "./timeline-graph.module.scss";
 
 type Props = {
@@ -128,7 +129,7 @@ export const TimelineGraph = (props: Props) => {
 									className={styles.timelineBlock}
 									filter="url(#drop-shadow)"
 								/>
-								<g className={styles.timelineBlockContent}>
+								<g className={classNames(`timeline-item-${rowIndex}`, styles.timelineBlockContent)}>
 									{columns.map((column, index) => {
 										return (
 											<g
@@ -143,7 +144,7 @@ export const TimelineGraph = (props: Props) => {
 														<text
 															key={index}
 															data-field-index={index}
-															className={styles.text}
+															className={classNames(`timeline-text-${index}`, styles.text)}
 															y={yOffset * (index + 1) + yMargin}
 														>
 															{field}

@@ -6,12 +6,20 @@ module.exports = {
 	pagePerSection: true,
 	sections: [
 		{
-			name: "Getting Started",
+			name: "Getting Started on Components",
 			content: "README.md",
 		},
 		{
-			name: "Changelog",
+			name: "Getting Started on Lib",
+			content: "../lib/README.md",
+		},
+		{
+			name: "Changelog for Components",
 			content: "CHANGELOG.md",
+		},
+		{
+			name: "Changelog for Lib",
+			content: "../lib/CHANGELOG.md",
 		},
 		{
 			name: "Wrappers",

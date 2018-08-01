@@ -35,9 +35,14 @@ async function run() {
 	const packageData = await createPackageFile();
 	await cp.exec("npm pack", { cwd: distDir });
 	console.info(
-		`To deploy styleguide to aws, run: yarn styleguide:build && grail-aws tickets/eng/dev/aws s3 sync styleguide s3://grail-ui-styleguide/${
+		`\n\nTo upload to s3, run:\n\ngrail-aws tickets/eng/dev/aws s3 cp dist/grail-components-${
 			packageData.version
-		}/`,
+		}.tgz s3://grail-ui/${packageData.version}/`,
+	);
+	console.info(
+		`\n\nTo deploy styleguide to aws, run:\n\nyarn styleguide:build && grail-aws tickets/eng/dev/aws s3 sync styleguide s3://grail-ui-styleguide/${
+			packageData.version
+		}/\n\n`,
 	);
 }
 

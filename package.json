@@ -1,6 +1,6 @@
 {
   "name": "@grail/components",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "scripts": {
     "build:styleguide": "yarn styleguide:build",
     "build": "NODE_ENV=production babel ./src --out-dir ./dist --delete-dir-on-start --copy-files && babel-node scripts/build.js",
@@ -21,11 +21,12 @@
     "test-e2e:ci": "cypress run --config numTestsKeptInMemory=0"
   },
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.53",
     "@grail/lib": ">=0.0.0",
     "autosuggest-highlight": "^3.1.1",
     "classnames": "^2.2.6",
     "dom-helpers": "^3.3.1",
-    "material-ui-pickers": "^1.0.0-rc.11",
+    "material-ui-pickers": "1.0.0-rc.11",
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.21",
     "path-to-regexp": "^2.2.1",

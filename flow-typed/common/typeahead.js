@@ -4,3 +4,8 @@ declare type Suggestion = {
   value: string | number,
   [string]: any,
 }
+
+declare type TypeaheadProps = {
+  initialMessage?: string,
+  selectType?: string,
+} & SelectProps;

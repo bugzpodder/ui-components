@@ -32,6 +32,11 @@ type DropdownProps = {
   selectProps: SelectProps,
 };
 
+type NoOptionsMessageProps = {
+  selectProps: TypeaheadProps,
+  selectType: string,
+};
+
 export const DropdownIndicator = (props: DropdownProps) => {
   const {
     selectProps: { menuIsOpen },
@@ -41,8 +46,12 @@ export const DropdownIndicator = (props: DropdownProps) => {
   );
 };
 
-export const NoOptionsMessage = () => {
-  return <MenuItem selected={false}>No results found</MenuItem>;
+export const NoOptionsMessage = (props: NoOptionsMessageProps) => {
+  const {
+    selectProps: { selectType, inputValue, initialMessage },
+  } = props;
+  const message = initialMessage && selectType === "async" && !inputValue ? initialMessage : "No results found";
+  return <MenuItem selected={false}>{message}</MenuItem>;
 };
 
 export const ClearIndicator = (props: ClearIndicatorProps) => {

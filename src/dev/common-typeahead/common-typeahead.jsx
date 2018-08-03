@@ -32,6 +32,8 @@ type Props = {
   helperText?: string,
   /** provides an id to the component */
   id?: string,
+  /** the initial message to display when `selectType` is `async` and no initial suggestions are provided */
+  initialMessage?: string,
   /** Disables the typeahead from being used */
   isDisabled?: boolean,
   /** Allows for the selection of multiple values */
@@ -75,8 +77,10 @@ export const CommonTypeahead = (props: Props) => {
     placeholder = "",
     isDisabled = false,
     isMulti = false,
+    initialMessage = "Begin typing...",
     showError = false,
     value = "",
+    ...otherProps
   } = props;
   const valueSelections = isMulti
     ? // $FlowFixMe: flow thinks `.includes()` can only take string arguments
@@ -90,7 +94,7 @@ export const CommonTypeahead = (props: Props) => {
           disabled={isDisabled}
           error={!isDisabled && showError}
           inputProps={{
-            ...props,
+            ...otherProps,
             classNamePrefix: "common-typeahead",
             isClearable: true,
             onChange: value => {
@@ -113,6 +117,7 @@ export const CommonTypeahead = (props: Props) => {
             },
             value: valueSelections,
             placeholder,
+            initialMessage,
           }}
           classes={{
             root: "common-typeahead__input-root",

@@ -23,10 +23,12 @@ const CommonTypeaheadComponent = props => {
       if (!props.updateSuggestions) {
         throw new Error("Must provide `updateSuggestions` prop");
       }
+
       return (
         <AsyncSelect
           loadOptions={props.updateSuggestions}
           defaultOptions={suggestions}
+          selectType={selectType}
           {...other}
         />
       );
@@ -38,6 +40,7 @@ const CommonTypeaheadComponent = props => {
       return (
         <CreatableSelect
           options={suggestions}
+          selectType={selectType}
           {...other}
         />
       );
@@ -48,6 +51,7 @@ const CommonTypeaheadComponent = props => {
       return (
         <Select
           options={suggestions}
+          selectType={selectType}
           {...other}
         />
       );

@@ -25,11 +25,11 @@ class DialogDemo extends React.Component {
           isVisible={isVisible}
           actions={[
             {
-              name: "Button 2",
+              name: "Go Back",
               callback: () => this.setState({ isVisible: false }),
               isEnabled: true,
               color: "secondary",
-              positionLeft: true,
+              isLeftButton: true,
             },
             {
               name: "Button 1",

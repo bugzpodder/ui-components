@@ -8,14 +8,14 @@ import JssProvider from "react-jss/lib/JssProvider";
 /* eslint-enable import/no-extraneous-dependencies */
 
 type Props = {
-	children: Node<*>,
+  children: Node<*>,
 };
 
 const generateClassName = createGenerateClassName({
-	dangerouslyUseGlobalCSS: true,
+  dangerouslyUseGlobalCSS: true,
 });
 
 export const TestWrapper = (props: Props) => {
-	const { children } = props;
-	return <JssProvider generateClassName={generateClassName}>{children}</JssProvider>;
+  const { children } = props;
+  return <JssProvider generateClassName={generateClassName}>{children}</JssProvider>;
 };

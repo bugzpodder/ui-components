@@ -8,12 +8,12 @@ import { GrailLogo } from "./index";
 afterEach(cleanup);
 
 [undefined, "white", "purple", "gold"].forEach(color => {
-	test(`render ${color || "default (white)"} GrailLogo`, () => {
-		const { container } = render(
-			<TestWrapper>
-				<GrailLogo color={color} />
-			</TestWrapper>,
-		);
-		expect(container).toMatchSnapshot();
-	});
+  test(`render ${color || "default (white)"} GrailLogo`, () => {
+    const { container } = render(
+      <TestWrapper>
+        <GrailLogo color={color} />
+      </TestWrapper>,
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

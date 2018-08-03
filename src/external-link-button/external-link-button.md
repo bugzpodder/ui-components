@@ -8,6 +8,6 @@
 const { ExternalLinkButton } = require("./external-link-button");
 
 <ExternalLinkButton variant="raised" color="primary" href="https://www.grail.com">
-	GRAIL Link in new tab
+  GRAIL Link in new tab
 </ExternalLinkButton>;
 ```

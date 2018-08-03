@@ -1,7 +1,7 @@
 import moment from "moment";
 
 declare type Notification = {
-	message: string,
-	time: moment,
-	type: string,
+  message: string,
+  time: moment,
+  type: string,
 };

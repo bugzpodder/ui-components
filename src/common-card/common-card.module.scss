@@ -1,16 +1,16 @@
 body .card {
-	overflow: visible;
+  overflow: visible;
 
-	&.withMargin {
-		margin: 20px;
-	}
+  &.withMargin {
+    margin: 20px;
+  }
 
-	.headerActions {
-		margin-top: 0;
-		margin-right: 0;
+  .headerActions {
+    margin-top: 0;
+    margin-right: 0;
 
-		> * + * {
-			margin-left: 12px;
-		}
-	}
+    > * + * {
+      margin-left: 12px;
+    }
+  }
 }

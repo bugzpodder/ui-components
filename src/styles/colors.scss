@@ -21,50 +21,50 @@ $grail-gray-lighter-color: #f0f0f0;
 $grail-gray-lightest-color: #f9f9f9;
 
 $grail-colors: (
-	grail-color: $grail-color,
-	grail-light-color: $grail-light-color,
-	grail-contrast-color: $grail-contrast-color,
-	grail-purple-dark-color: $grail-purple-dark-color,
-	grail-purple-med-color: $grail-purple-med-color,
-	grail-purple-light-color: $grail-purple-light-color,
-	grail-purple-color: $grail-purple-color,
-	grail-green-color: $grail-green-color,
-	grail-tan-color: $grail-tan-color,
-	grail-red-color: $grail-red-color,
-	grail-blue-color: $grail-blue-color,
-	grail-gold-color: $grail-gold-color,
-	grail-gray-lighter-color: $grail-gray-lighter-color,
-	grail-gray-lightest-color: $grail-gray-lightest-color,
-	grail-gray-light-color: $grail-gray-light-color,
-	grail-gray-medium-color: $grail-gray-medium-color,
-	grail-gray-dark-color: $grail-gray-dark-color,
-	grail-gray-darkest-color: $grail-gray-darkest-color,
+  grail-color: $grail-color,
+  grail-light-color: $grail-light-color,
+  grail-contrast-color: $grail-contrast-color,
+  grail-purple-dark-color: $grail-purple-dark-color,
+  grail-purple-med-color: $grail-purple-med-color,
+  grail-purple-light-color: $grail-purple-light-color,
+  grail-purple-color: $grail-purple-color,
+  grail-green-color: $grail-green-color,
+  grail-tan-color: $grail-tan-color,
+  grail-red-color: $grail-red-color,
+  grail-blue-color: $grail-blue-color,
+  grail-gold-color: $grail-gold-color,
+  grail-gray-lighter-color: $grail-gray-lighter-color,
+  grail-gray-lightest-color: $grail-gray-lightest-color,
+  grail-gray-light-color: $grail-gray-light-color,
+  grail-gray-medium-color: $grail-gray-medium-color,
+  grail-gray-dark-color: $grail-gray-dark-color,
+  grail-gray-darkest-color: $grail-gray-darkest-color,
 );
 
 $material-ui-disabled: lighten($grail-gray-medium-color, 18%);
 
 @each $name, $color in $grail-colors {
-	.#{$name} {
-		color: $color;
-	}
+  .#{$name} {
+    color: $color;
+  }
 }
 
 @mixin dot($size, $color) {
-	&:after {
-		content: "";
-		display: inline-block;
-		width: $size;
-		height: $size;
-		margin-left: $size/2;
-		border-radius: $size;
-		background-color: $color;
-	}
+  &:after {
+    content: "";
+    display: inline-block;
+    width: $size;
+    height: $size;
+    margin-left: $size/2;
+    border-radius: $size;
+    background-color: $color;
+  }
 }
 
 @mixin red-dot($size) {
-	@include dot($size, $grail-red-color);
+  @include dot($size, $grail-red-color);
 }
 
 @mixin yellow-dot($size) {
-	@include dot($size, $grail-gold-color);
+  @include dot($size, $grail-gold-color);
 }

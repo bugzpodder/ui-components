@@ -2,7 +2,7 @@
 
 ```js
 <CommonPanel title="Panel Title" variant="display1">
-	This is the body of the panel.
+  This is the body of the panel.
 </CommonPanel>
 ```
 

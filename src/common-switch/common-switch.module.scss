@@ -1,19 +1,19 @@
 @import "../styles/colors.scss";
 
 .commonSwitch {
-	display: inline-block;
-	position: relative;
+  display: inline-block;
+  position: relative;
 
-	.controlLabel {
-		margin: 0;
-	}
+  .controlLabel {
+    margin: 0;
+  }
 
-	.switchHelperText {
-		margin-top: -7px;
-		position: absolute;
-	}
+  .switchHelperText {
+    margin-top: -7px;
+    position: absolute;
+  }
 
-	.error {
-		color: $grail-red-color;
-	}
+  .error {
+    color: $grail-red-color;
+  }
 }

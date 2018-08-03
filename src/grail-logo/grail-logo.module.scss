@@ -1,14 +1,14 @@
 @import "../styles/colors.scss";
 
 .grailLogo {
-	&.white path,
-	path {
-		fill: white;
-	}
-	&.purple path {
-		fill: $grail-purple-color;
-	}
-	&.gold path {
-		fill: $grail-gold-color;
-	}
+  &.white path,
+  path {
+    fill: white;
+  }
+  &.purple path {
+    fill: $grail-purple-color;
+  }
+  &.gold path {
+    fill: $grail-gold-color;
+  }
 }

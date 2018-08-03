@@ -4,10 +4,10 @@ import classNames from "classnames";
 import styles from "./spinner-overlay.module.scss";
 
 type Props = {
-	/** determines the active state of the overlay */
-	isActive?: boolean,
-	/** gives a className to the component */
-	className?: string,
+  /** determines the active state of the overlay */
+  isActive?: boolean,
+  /** gives a className to the component */
+  className?: string,
 };
 
 /**
@@ -20,20 +20,20 @@ type Props = {
  * For example: `position: relative;`
  */
 export const SpinnerOverlay = (props: Props) => {
-	const { isActive = true, className = "" } = props;
-	const spinnerClasses = {};
-	spinnerClasses[styles.spinnerOverlay] = true;
-	spinnerClasses[styles.active] = isActive;
-	spinnerClasses[className] = className;
-	return (
-		<div
-			data-testid="spinner-overlay"
-			data-is-active={isActive}
-			className={classNames(spinnerClasses)}
-			onClick={event => isActive && event.stopPropagation()}
-			onMouseDown={event => isActive && event.preventDefault()}
-		>
-			<div className={styles.loading} />
-		</div>
-	);
+  const { isActive = true, className = "" } = props;
+  const spinnerClasses = {};
+  spinnerClasses[styles.spinnerOverlay] = true;
+  spinnerClasses[styles.active] = isActive;
+  spinnerClasses[className] = className;
+  return (
+    <div
+      data-testid="spinner-overlay"
+      data-is-active={isActive}
+      className={classNames(spinnerClasses)}
+      onClick={event => isActive && event.stopPropagation()}
+      onMouseDown={event => isActive && event.preventDefault()}
+    >
+      <div className={styles.loading} />
+    </div>
+  );
 };

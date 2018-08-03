@@ -48,12 +48,12 @@ exports[`render and select timeline graph with multiple rows 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,-10
-									l0,50
-									l20,0
-									m-20,0
-									l0,50
-								"
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
         />
         <circle
           class="timelinePathFinial"
@@ -106,12 +106,12 @@ exports[`render and select timeline graph with multiple rows 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,70
-									l0,50
-									l20,0
-									m-20,0
-									l0,50
-								"
+                  M0,70
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
         />
         <g
           class="isSelectable card-container"
@@ -177,12 +177,12 @@ exports[`render and select timeline graph with multiple rows 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,150
-									l0,50
-									l20,0
-									m-20,0
-									l0,50
-								"
+                  M0,150
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
         />
         <rect
           class="timelinePathFinial"
@@ -281,12 +281,12 @@ exports[`render timeline graph with date 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,-10
-									l0,50
-									l20,0
-									m-20,0
-									l0,50
-								"
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
         />
         <circle
           class="timelinePathFinial"
@@ -391,12 +391,12 @@ exports[`render timeline graph with multiple columns 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,-10
-									l0,50
-									l20,0
-									m-20,0
-									l0,50
-								"
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
         />
         <circle
           class="timelinePathFinial"
@@ -520,12 +520,12 @@ exports[`render timeline graph with narrow cards 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,-10
-									l0,50
-									l20,0
-									m-20,0
-									l0,50
-								"
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
         />
         <circle
           class="timelinePathFinial"
@@ -630,12 +630,12 @@ exports[`render timeline graph with tall cards 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,-10
-									l0,70
-									l20,0
-									m-20,0
-									l0,70
-								"
+                  M0,-10
+                  l0,70
+                  l20,0
+                  m-20,0
+                  l0,70
+                "
         />
         <circle
           class="timelinePathFinial"
@@ -740,12 +740,12 @@ exports[`render timeline graph without date 1`] = `
         <path
           class="timelinePath"
           d="
-									M0,-10
-									l0,50
-									l20,0
-									m-20,0
-									l0,50
-								"
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
         />
         <circle
           class="timelinePathFinial"

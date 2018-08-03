@@ -7,15 +7,15 @@ import { ExternalLink } from "./external-link";
 afterEach(cleanup);
 
 test("render ExternalLink", () => {
-	const { container } = render(
-		<TestWrapper>
-			<ExternalLink
-				href="https://www.grail.com"
-				className="test"
-			>
-				GRAIL
-			</ExternalLink>
-		</TestWrapper>,
-	);
-	expect(container).toMatchSnapshot();
+  const { container } = render(
+    <TestWrapper>
+      <ExternalLink
+        href="https://www.grail.com"
+        className="test"
+      >
+        GRAIL
+      </ExternalLink>
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
 });

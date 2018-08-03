@@ -1,4 +1,4 @@
 declare type TimelineRow = {
-	columns: Array<Array<string>>,
-	date: string,
+  columns: Array<Array<string>>,
+  date: string,
 };

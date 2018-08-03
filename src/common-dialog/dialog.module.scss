@@ -6,59 +6,59 @@ $screen-sm: $TABLET_WIDTH - 1px;
 $screen-md: $TABLET_WIDTH;
 
 .commonDialog {
-	position: relative;
+  position: relative;
 }
 
 .commonDialogPaper {
-	min-width: 300px;
-	max-height: calc(#{$dialog-height});
-	width: 600px;
-	margin: 30px auto;
-	&.sm {
-		width: 300px;
-	}
-	&.md {
-		width: 600px;
-	}
-	&.lg {
-		width: 900px;
-	}
-	&:focus {
-		outline: none;
-	}
-	// TODO(jrosenfield): these don't need a prefix since they're already nested under commonDialogPaper
-	.commonDialogContent {
-		max-height: calc(#{$dialog-height} - #{$dialog-title-height} - #{$dialog-footer-height});
-		overflow-y: auto;
-	}
-	.commonDialogNoOverflow {
-		overflow-y: unset;
-	}
-	.commonDialogFooter {
-		display: flex;
-		width: 100%;
-		.left, .right {
-			flex: 1 1 auto;
-			button {
-				+ button {
-					margin-left: 8px;
-				}
-			}
-		}
-		.right {
-			text-align: right;
-		}
-	}
+  min-width: 300px;
+  max-height: calc(#{$dialog-height});
+  width: 600px;
+  margin: 30px auto;
+  &.sm {
+    width: 300px;
+  }
+  &.md {
+    width: 600px;
+  }
+  &.lg {
+    width: 900px;
+  }
+  &:focus {
+    outline: none;
+  }
+  // TODO(jrosenfield): these don't need a prefix since they're already nested under commonDialogPaper
+  .commonDialogContent {
+    max-height: calc(#{$dialog-height} - #{$dialog-title-height} - #{$dialog-footer-height});
+    overflow-y: auto;
+  }
+  .commonDialogNoOverflow {
+    overflow-y: unset;
+  }
+  .commonDialogFooter {
+    display: flex;
+    width: 100%;
+    .left, .right {
+      flex: 1 1 auto;
+      button {
+        + button {
+          margin-left: 8px;
+        }
+      }
+    }
+    .right {
+      text-align: right;
+    }
+  }
 }
 
 @media (min-width: $screen-sm) {
-	.commonDialogPaper {
-		width: 600px;
-	}
+  .commonDialogPaper {
+    width: 600px;
+  }
 }
 
 @media (min-width: $screen-md) {
-	.commonDialogPaper {
-		width: 900px;
-	}
+  .commonDialogPaper {
+    width: 900px;
+  }
 }

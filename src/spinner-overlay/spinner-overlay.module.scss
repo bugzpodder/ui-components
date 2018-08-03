@@ -1,55 +1,55 @@
 .spinnerOverlay {
-	position: absolute;
+  position: absolute;
 
-	&.top-level {
-		position: fixed;
-	}
+  &.top-level {
+    position: fixed;
+  }
 
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: rgba(255, 255, 255, 0.5);
-	margin: auto;
-	opacity: 0;
-	transition: opacity 0.75s;
-	pointer-events: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  opacity: 0;
+  transition: opacity 0.75s;
+  pointer-events: none;
 
-	&.active {
-		opacity: 1;
-		pointer-events: all;
-	}
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 
-	/* Absolute Center Spinner */
-	.loading {
-		overflow: visible;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-	}
+  /* Absolute Center Spinner */
+  .loading {
+    overflow: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
 
-	.loading:after {
-		content: "";
-		display: block;
-		font-size: 10px;
-		width: 1em;
-		height: 1em;
-		margin-top: -0.5em;
-		animation: spinner 1.5s infinite linear;
-		border-radius: 0.5em;
-		opacity: 0.9;
-		box-shadow: lighten(rgb(97, 43, 92), 10) 1.5em 0 0 0, lighten(rgb(97, 43, 92), 5) 1.1em 1.1em 0 0,
-			darken(rgb(97, 43, 92), 0) 0 1.5em 0 0, darken(rgb(97, 43, 92), 5) -1.1em 1.1em 0 0,
-			darken(rgb(97, 43, 92), 10) -1.5em 0 0 0, darken(rgb(97, 43, 92), 5) -1.1em -1.1em 0 0,
-			darken(rgb(97, 43, 92), 0) 0 -1.5em 0 0, lighten(rgb(97, 43, 92), 5) 1.1em -1.1em 0 0;
-	}
+  .loading:after {
+    content: "";
+    display: block;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    margin-top: -0.5em;
+    animation: spinner 1.5s infinite linear;
+    border-radius: 0.5em;
+    opacity: 0.9;
+    box-shadow: lighten(rgb(97, 43, 92), 10) 1.5em 0 0 0, lighten(rgb(97, 43, 92), 5) 1.1em 1.1em 0 0,
+      darken(rgb(97, 43, 92), 0) 0 1.5em 0 0, darken(rgb(97, 43, 92), 5) -1.1em 1.1em 0 0,
+      darken(rgb(97, 43, 92), 10) -1.5em 0 0 0, darken(rgb(97, 43, 92), 5) -1.1em -1.1em 0 0,
+      darken(rgb(97, 43, 92), 0) 0 -1.5em 0 0, lighten(rgb(97, 43, 92), 5) 1.1em -1.1em 0 0;
+  }
 }
 @keyframes spinner {
-	0% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
 
-	100% {
-		transform: rotate(360deg);
-	}
+  100% {
+    transform: rotate(360deg);
+  }
 }

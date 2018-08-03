@@ -9,18 +9,18 @@ import { StyleWrapper } from "./index";
 afterEach(cleanup);
 
 test("render style wrapper", () => {
-	const { container } = render(
-		<TestWrapper>
-			<StyleWrapper>
-				<Button color="primary">Primary</Button>
-				<Button
-					variant="raised"
-					color="secondary"
-				>
-					Secondary
-				</Button>
-			</StyleWrapper>
-		</TestWrapper>,
-	);
-	expect(container).toMatchSnapshot();
+  const { container } = render(
+    <TestWrapper>
+      <StyleWrapper>
+        <Button color="primary">Primary</Button>
+        <Button
+          variant="raised"
+          color="secondary"
+        >
+          Secondary
+        </Button>
+      </StyleWrapper>
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
 });

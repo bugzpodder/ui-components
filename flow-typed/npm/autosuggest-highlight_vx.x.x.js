@@ -18,11 +18,11 @@ declare module 'autosuggest-highlight' {
 }
 
 declare module 'autosuggest-highlight/match' {
-	declare module.exports: any;
+  declare module.exports: any;
 }
 
 declare module 'autosuggest-highlight/parse' {
-	declare module.exports: any;
+  declare module.exports: any;
 }
 
 /**

@@ -50,6 +50,7 @@ module.exports = {
       components: () => [
         "./src/alert/alert.jsx",
         "./src/common-card/card.jsx",
+        "./src/tabbed-card/tabbed-card.jsx",
         "./src/common-panel/panel.jsx",
         "./src/spinner-overlay/spinner-overlay.jsx",
         "./src/timeline-graph/timeline-graph.jsx",

@@ -1,0 +1,21 @@
+@import "../styles/navbar-constants.scss";
+
+.pageHeader {
+	margin-top: -$grail-navbar-margin-bottom;
+	margin-bottom: 20px;
+
+	.cardHeader {
+		.headerActions {
+			margin-top: 0;
+			margin-right: 0;
+
+			> * + * {
+				margin-left: 12px;
+			}
+		}
+
+		.headerTab {
+			width: 250px;
+		}
+	}
+}

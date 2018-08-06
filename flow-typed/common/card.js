@@ -1,4 +1,6 @@
 // @flow
+declare type Color = "default" | "inherit" | "primary" | "secondary";
+
 declare type CommonCardClasses = {
   body?: string,
   footer?: string,
@@ -9,3 +11,28 @@ declare type CommonCardClasses = {
   subheader?: string,
   title?: string,
 };
+
+declare type TabbedCardClasses = {
+  header?: string,
+  headerActions?: string,
+  tabs?: string,
+  root?: string,
+  subheader?: string,
+  title?: string,
+}
+
+declare type HeaderTab = {
+  label: string,
+  value: string,
+  content: Node<*>,
+  id: string,
+  [string]: any,
+}
+
+declare type HeaderAction = {
+  content: Node<*>,
+  onClick: Function,
+  id: string,
+  color?: Color,
+  [string]: any,
+}

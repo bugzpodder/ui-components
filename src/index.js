@@ -19,4 +19,5 @@ export { SpinnerOverlay } from "./spinner-overlay";
 export { StyleWrapper } from "./style-wrapper";
 export { ExampleBlock } from "./utils/example-block";
 export { TextInput } from "./text-input";
+export { TabbedCard } from "./tabbed-card";
 export { TimelineGraph } from "./timeline-graph";

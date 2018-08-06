@@ -89,7 +89,7 @@ class TypeaheadExample extends React.Component {
     super(props);
     this.state = {
       value: "",
-      countries,
+      countries: countries.slice(0, 5),
     };
     this.handleChange = this.handleChange.bind(this);
     this.filterCountries = this.filterCountries.bind(this);
@@ -101,7 +101,9 @@ class TypeaheadExample extends React.Component {
 
   filterCountries(inputValue) {
     return new Promise(resolve => {
-      const newCountries = countries.filter(country => country.label.toLowerCase().includes(inputValue.toLowerCase()));
+      const newCountries = countries
+        .filter(country => country.label.toLowerCase().includes(inputValue.toLowerCase()))
+        .slice(0, 5);
       setTimeout(() => {
         this.setState(() => {
           return { countries: newCountries };
@@ -142,7 +144,7 @@ class TypeaheadExample extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values: [],
+      values: ["Bermuda"],
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -161,8 +163,49 @@ class TypeaheadExample extends React.Component {
           placeholder="Choose Some Countries"
           suggestions={countries}
           onChange={this.handleChange}
+          value={this.state.values}
         />
         <ExampleBlock strongHeader="values " content={this.state.values} />
+      </Fragment>
+    );
+  }
+}
+
+<TypeaheadExample />;
+```
+
+### Controlled Value
+
+```js
+const Fragment = require("react").Fragment;
+const ExampleBlock = require("@grail/components").ExampleBlock;
+
+// countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
+const countries = require("../../utils/constants").COUNTRIES;
+
+class TypeaheadExample extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: "Bermuda",
+    };
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(suggestion) {
+    this.setState({ value: suggestion.value });
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <CommonTypeahead
+          placeholder="Choose A Country"
+          suggestions={countries}
+          value={this.state.value}
+          onChange={this.onChange}
+        />
+        <ExampleBlock strongHeader="value " content={this.state} />
       </Fragment>
     );
   }

@@ -25,7 +25,7 @@ type Props = {
    * Tells the typeahead which suggestion(s) to use as its default value.
    * String(s) should match `value` of an object in a suggestion, or in the array of suggestions
    */
-  defaultValue?: string | Array<string>,
+  value?: string | Array<string>,
   /** Renders the input at its full width */
   fullWidth?: boolean,
   /** Text displayed directly under the input */
@@ -76,14 +76,12 @@ export const CommonTypeahead = (props: Props) => {
     isDisabled = false,
     isMulti = false,
     showError = false,
-    defaultValue = "",
+    value = "",
   } = props;
-  /* eslint-disable no-mixed-spaces-and-tabs */
-  const defaultValueSelections = isMulti
+  const valueSelections = isMulti
     ? // $FlowFixMe: flow thinks `.includes()` can only take string arguments
-    suggestions.filter(suggestion => defaultValue.includes(suggestion.value))
-    : suggestions.find(suggestion => suggestion.value === defaultValue);
-  /* eslint-enable */
+    suggestions.filter(suggestion => value.includes(suggestion.value))
+    : suggestions.find(suggestion => suggestion.value === value);
   return (
     <div className="common-typeahead__root">
       <FormControl fullWidth={fullWidth}>
@@ -113,7 +111,7 @@ export const CommonTypeahead = (props: Props) => {
               MultiValueContainer,
               MultiValueRemove,
             },
-            defaultValue: defaultValueSelections,
+            value: valueSelections,
             placeholder,
           }}
           classes={{

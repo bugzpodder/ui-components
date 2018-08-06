@@ -1,14 +1,14 @@
 // @flow
-import React, { Fragment } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import React, { Fragment } from "react";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import MenuIcon from "@material-ui/icons/Menu";
 import classNames from "classnames";
+import styles from "./base-navbar.module.scss";
 import { GrailLogo } from "../../grail-logo";
 import { Sidebar } from "../../navbar/components/sidebar";
-import styles from "./base-navbar.module.scss";
 
 type Props = {
   /** Determines whether to put warning banner above the navigation bar. */

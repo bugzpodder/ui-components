@@ -1,12 +1,12 @@
 // @flow
-import React, { type Node } from "react";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
-import { MAIN_CARD_ELEVATION } from "@grail/lib";
+import React, { type Node } from "react";
 import classNames from "classnames";
 import styles from "./common-card.module.scss";
+import { MAIN_CARD_ELEVATION } from "@grail/lib";
 
 type Props = {
   /** The content provide to the card's body */

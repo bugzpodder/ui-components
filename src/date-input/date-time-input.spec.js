@@ -1,10 +1,10 @@
 // @flow
-import React from "react";
-import { render, cleanup } from "react-testing-library";
 import "jest-dom/extend-expect";
-import { TestWrapper } from "../utils";
-import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
+import React from "react";
 import { DateTimeInput } from "./index";
+import { TestWrapper } from "../utils";
+import { cleanup, render } from "react-testing-library";
+import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 
 afterEach(cleanup);
 

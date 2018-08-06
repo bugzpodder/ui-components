@@ -1,20 +1,20 @@
 // @flow
 import React, { Fragment } from "react";
+import styles from "./omni.module.scss";
 import width from "dom-helpers/query/width";
 import {
-  OMNI_KEY,
   OMNI_ERROR,
+  OMNI_KEY,
   getOmniTextFromSearchValues,
-  getSearchValuesFromOmniText,
-  getSearchOptions,
   getQuery,
+  getSearchOptions,
+  getSearchValuesFromOmniText,
   isValueValid,
   localStorage,
   updateQuery,
 } from "@grail/lib/";
-import { OmniField } from "./components/omni-field";
 import { OmniDropdown } from "./components/omni-dropdown";
-import styles from "./omni.module.scss";
+import { OmniField } from "./components/omni-field";
 
 type Props = {
   /** Defines the search parameters. */

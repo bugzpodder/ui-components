@@ -1,8 +1,8 @@
 // @flow
+import AsyncSelect from "react-select/lib/Async";
+import CreatableSelect from "react-select/lib/Creatable";
 import React from "react";
 import Select from "react-select";
-import CreatableSelect from "react-select/lib/Creatable";
-import AsyncSelect from "react-select/lib/Async";
 
 type Props = {
   selectType: string,

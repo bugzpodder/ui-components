@@ -1,18 +1,18 @@
 // @flow
-import React from "react";
-import pathToRegexp from "path-to-regexp";
-import classNames from "classnames";
+import ArrowBack from "@material-ui/icons/ArrowBack";
+import Divider from "@material-ui/core/Divider";
+import Drawer from "@material-ui/core/Drawer";
 import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
-import ListItemText from "@material-ui/core/ListItemText";
 import ListItem from "@material-ui/core/ListItem";
-import Drawer from "@material-ui/core/Drawer";
-import Divider from "@material-ui/core/Divider";
-import ArrowBack from "@material-ui/icons/ArrowBack";
-import { sidebarItems } from "@grail/lib";
+import ListItemText from "@material-ui/core/ListItemText";
+import React from "react";
+import classNames from "classnames";
+import pathToRegexp from "path-to-regexp";
+import styles from "./sidebar.module.scss";
 import { CollapsableListItem } from "../../list";
 import { ExternalLink } from "../../external-link";
-import styles from "./sidebar.module.scss";
+import { sidebarItems } from "@grail/lib";
 
 type Props = {
   isOpen: boolean,

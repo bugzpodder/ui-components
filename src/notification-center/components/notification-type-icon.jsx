@@ -1,7 +1,7 @@
 // @flow
-import React from "react";
-import Info from "@material-ui/icons/Info";
 import Error from "@material-ui/icons/Error";
+import Info from "@material-ui/icons/Info";
+import React from "react";
 import Warning from "@material-ui/icons/Warning";
 
 import { NotificationTypes } from "@grail/lib";

@@ -1,9 +1,9 @@
 // @flow
-import React from "react";
-import { render, cleanup } from "react-testing-library";
-import { TestWrapper } from "../utils";
-import { ReadOnlyTextField } from "./index";
 import "jest-dom/extend-expect";
+import React from "react";
+import { ReadOnlyTextField } from "./index";
+import { TestWrapper } from "../utils";
+import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 

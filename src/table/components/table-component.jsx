@@ -1,14 +1,14 @@
 // @flow
 import React from "react";
 import Table from "@material-ui/core/Table";
+import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
-import TableBody from "@material-ui/core/TableBody";
 import classNames from "classnames";
 import styles from "../table.module.scss";
-import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { PagedTableRow } from "./table-row";
 import { TableHeader } from "./table-header";
+import { getCheckboxColumn } from "../utilities/checkbox-column";
 
 type Props = {
   columns: Array<PagedTableColumn>,

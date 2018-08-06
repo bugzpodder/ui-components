@@ -6,8 +6,8 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import React, { type Node } from "react";
 import classNames from "classnames";
-import { actionToButton, type CommonDialogAction } from "./util";
 import styles from "./dialog.module.scss";
+import { type CommonDialogAction, actionToButton } from "./util";
 
 type Props = {
   /** Custom action Buttons */

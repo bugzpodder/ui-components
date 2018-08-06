@@ -1,19 +1,19 @@
 // @flow
-import React from "react";
-import FormHelperText from "@material-ui/core/FormHelperText";
+import "./common-typeahead.scss";
 import FormControl from "@material-ui/core/FormControl";
+import FormHelperText from "@material-ui/core/FormHelperText";
 import Input from "@material-ui/core/Input";
+import React from "react";
 import classNames from "classnames";
 import {
+  ClearIndicator,
   CommonTypeaheadContainer,
   DropdownIndicator,
-  ClearIndicator,
   MultiValueContainer,
   MultiValueRemove,
   NoOptionsMessage,
   Option,
 } from "./components";
-import "./common-typeahead.scss";
 
 type Props = {
   /**

@@ -1,10 +1,10 @@
 // @flow
-import React from "react";
-import { render, fireEvent } from "react-testing-library";
-import Button from "@material-ui/core/Button";
 import "jest-dom/extend-expect";
-import { TestWrapper } from "../utils";
+import Button from "@material-ui/core/Button";
+import React from "react";
 import { SpinnerOverlay } from "./index";
+import { TestWrapper } from "../utils";
+import { fireEvent, render } from "react-testing-library";
 
 test("render active spinner overlay", () => {
   const mockCallback = jest.fn();

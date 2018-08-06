@@ -1,11 +1,11 @@
 // @flow
-import React, { type Node } from "react";
-import MenuItem from "@material-ui/core/MenuItem";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
-import ClearIcon from "@material-ui/icons/Clear";
-import Chip from "@material-ui/core/Chip";
 import CancelIcon from "@material-ui/icons/Cancel";
+import Chip from "@material-ui/core/Chip";
+import ClearIcon from "@material-ui/icons/Clear";
+import MenuItem from "@material-ui/core/MenuItem";
+import React, { type Node } from "react";
 
 type Props = {
   children: Node,

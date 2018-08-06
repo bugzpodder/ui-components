@@ -1,11 +1,11 @@
 // @flow
 import React from "react";
 import classNames from "classnames";
+import styles from "./table.module.scss";
 import { CommonCard } from "../common-card";
 import { SpinnerOverlay } from "../spinner-overlay";
-import styles from "./table.module.scss";
-import { TablePager } from "./components/table-pager";
 import { TableComponent } from "./components/table-component";
+import { TablePager } from "./components/table-pager";
 
 type Props = {
   /** Provides the information you wish to display */

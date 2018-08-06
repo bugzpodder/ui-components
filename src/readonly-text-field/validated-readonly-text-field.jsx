@@ -1,8 +1,8 @@
 // @flow
 import React, { type Node } from "react";
 
-import { ReadOnlyTextField } from "./readonly-text-field";
 import styles from "./readonly-text-field.module.scss";
+import { ReadOnlyTextField } from "./readonly-text-field";
 
 type Props = {
   /** Value of the input field. */

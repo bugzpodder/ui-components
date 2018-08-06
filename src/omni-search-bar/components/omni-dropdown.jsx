@@ -1,12 +1,12 @@
 // @flow
-import React, { type Node } from "react";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import { OMNI_KEY } from "@grail/lib";
-import { TwoColumnRow } from "../../two-column-grid";
+import React, { type Node } from "react";
 import styles from "../omni.module.scss";
+import { OMNI_KEY } from "@grail/lib";
 import { SearchField } from "./search-field";
+import { TwoColumnRow } from "../../two-column-grid";
 
 type Props = {
   searchDefs: SearchDefs,

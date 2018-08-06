@@ -1,8 +1,8 @@
 // @flow
-import React from "react";
-import Switch from "@material-ui/core/Switch";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormHelperText from "@material-ui/core/FormHelperText";
+import React from "react";
+import Switch from "@material-ui/core/Switch";
 import classNames from "classnames";
 import styles from "./common-switch.module.scss";
 

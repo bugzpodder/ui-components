@@ -1,6 +1,6 @@
 // @flow
-import React from "react";
 import IconButton from "@material-ui/core/IconButton";
+import React from "react";
 import SelectedStarIcon from "@material-ui/icons/Star";
 import UnselectedStarIcon from "@material-ui/icons/StarBorder";
 import styles from "./favorite-icon-button.module.scss";

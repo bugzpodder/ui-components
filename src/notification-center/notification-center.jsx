@@ -1,9 +1,9 @@
 // @flow
-import React, { Fragment } from "react";
-import List from "@material-ui/core/List";
 import IconButton from "@material-ui/core/IconButton";
-import Popover from "@material-ui/core/Popover";
+import List from "@material-ui/core/List";
 import Notifications from "@material-ui/icons/Notifications";
+import Popover from "@material-ui/core/Popover";
+import React, { Fragment } from "react";
 import { NotificationCard } from "./components/notification-card";
 
 type State = {

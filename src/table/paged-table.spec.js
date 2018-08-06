@@ -1,9 +1,10 @@
 // @flow
-import React from "react";
-import { render, cleanup } from "react-testing-library";
 import "jest-dom/extend-expect";
+import React from "react";
 import mockConsole from "jest-mock-console";
+import { PagedTable } from "./index";
 import { TestWrapper } from "../utils";
+import { cleanup, render } from "react-testing-library";
 import {
   columns,
   data,
@@ -12,7 +13,6 @@ import {
   invalidTableOptions,
   tableOptions,
 } from "./utilities/test-table-properties";
-import { PagedTable } from "./index";
 
 afterEach(cleanup);
 

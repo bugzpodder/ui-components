@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
-import moment from "moment";
 import classNames from "classnames";
+import moment from "moment";
 import styles from "./timeline-graph.module.scss";
 
 type Props = {

@@ -1,6 +1,6 @@
 // @flow
-import React from "react";
 import Grid from "@material-ui/core/Grid";
+import React from "react";
 import { TwoColumnRow } from "./two-column-row";
 
 type Props = {

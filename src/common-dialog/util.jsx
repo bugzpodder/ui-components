@@ -1,7 +1,7 @@
 // @flow
-import React, { type ElementConfig } from "react";
 import Button from "@material-ui/core/Button";
 import Icon from "@material-ui/core/Icon";
+import React, { type ElementConfig } from "react";
 
 export type CommonDialogAction = {
   name: string,

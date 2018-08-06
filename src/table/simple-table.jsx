@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
-import { SpinnerOverlay } from "../spinner-overlay";
 import styles from "./table.module.scss";
+import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
 
 type Props = {

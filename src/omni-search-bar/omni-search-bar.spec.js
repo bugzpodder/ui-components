@@ -1,17 +1,17 @@
 // @flow
-import React from "react";
-import {
-  LIKE_TEXT_SEARCH_TYPE,
-  MULTI_FIELD_TEXT_SEARCH_TYPE,
-  DATE_SEARCH_TYPE,
-  DATETIME_SEARCH_TYPE,
-} from "@grail/lib";
-import { render, fireEvent } from "react-testing-library";
 import "jest-dom/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
 import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
-import { TestWrapper } from "../utils";
+import React from "react";
+import {
+  DATETIME_SEARCH_TYPE,
+  DATE_SEARCH_TYPE,
+  LIKE_TEXT_SEARCH_TYPE,
+  MULTI_FIELD_TEXT_SEARCH_TYPE,
+} from "@grail/lib";
 import { OmniSearchBar } from "./index";
+import { TestWrapper } from "../utils";
+import { fireEvent, render } from "react-testing-library";
 
 const searchDefs: SearchDefs = [
   {

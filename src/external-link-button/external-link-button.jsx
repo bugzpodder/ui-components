@@ -1,6 +1,6 @@
 // @flow
-import React, { type Node, type ElementConfig } from "react";
 import Button from "@material-ui/core/Button";
+import React, { type ElementConfig, type Node } from "react";
 
 type Props = {
   /** The children to display in the body of the button */

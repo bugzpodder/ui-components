@@ -1,6 +1,6 @@
 // @flow
-import React from "react";
 import Grid from "@material-ui/core/Grid";
+import React from "react";
 import Typography from "@material-ui/core/Typography";
 import styles from "./two-column-row.module.scss";
 

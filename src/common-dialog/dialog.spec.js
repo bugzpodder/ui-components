@@ -1,9 +1,9 @@
 // @flow
 import React from "react";
-import { render, cleanup, fireEvent } from "react-testing-library";
-import { bindElementToQueries } from "dom-testing-library";
-import { TestWrapper } from "../utils";
 import { CommonDialog, CommonMultiPageDialog } from "./index";
+import { TestWrapper } from "../utils";
+import { bindElementToQueries } from "dom-testing-library";
+import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
 

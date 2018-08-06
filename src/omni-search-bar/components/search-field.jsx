@@ -1,10 +1,10 @@
 // @flow
-import React from "react";
-import moment from "moment";
-import { DATE_FORMAT, DATE_SEARCH_TYPES, isValueValid } from "@grail/lib";
 import Grid from "@material-ui/core/Grid";
+import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
+import moment from "moment";
+import { DATE_FORMAT, DATE_SEARCH_TYPES, isValueValid } from "@grail/lib";
 import { DateInput } from "../../date-input";
 
 import styles from "../omni.module.scss";

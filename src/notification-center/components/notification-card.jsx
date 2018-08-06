@@ -1,9 +1,9 @@
 // @flow
-import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import { DATE_TIME_FORMAT } from "@grail/lib";
+import React from "react";
 import moment from "moment";
+import { DATE_TIME_FORMAT } from "@grail/lib";
 import { NotificationTypeIcon } from "./notification-type-icon";
 
 type Props = {

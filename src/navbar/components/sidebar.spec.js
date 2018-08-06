@@ -1,13 +1,13 @@
 // @flow
-import React from "react";
-import { render, cleanup, fireEvent } from "react-testing-library";
 import "jest-dom/extend-expect";
-import { Link, MemoryRouter } from "react-router-dom";
-import { bindElementToQueries } from "dom-testing-library";
-import { LIMS, EDC, PIPELINE } from "@grail/lib";
-import { createGenerateClassName } from "@material-ui/core/styles";
 import JssProvider from "react-jss/lib/JssProvider";
+import React from "react";
+import { EDC, LIMS, PIPELINE } from "@grail/lib";
+import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
+import { bindElementToQueries } from "dom-testing-library";
+import { cleanup, fireEvent, render } from "react-testing-library";
+import { createGenerateClassName } from "@material-ui/core/styles";
 
 afterEach(cleanup);
 

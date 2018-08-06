@@ -1,6 +1,6 @@
 // @flow
-import React from "react";
 import Checkbox from "@material-ui/core/Checkbox/Checkbox";
+import React from "react";
 import classNames from "classnames";
 import styles from "../table.module.scss";
 

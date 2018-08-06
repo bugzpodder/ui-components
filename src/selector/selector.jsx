@@ -1,13 +1,13 @@
 // @flow
-import React, { type ElementConfig } from "react";
+import FormControl from "@material-ui/core/FormControl";
+import FormHelperText from "@material-ui/core/FormHelperText";
 import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
+import React, { type ElementConfig } from "react";
 import Select from "@material-ui/core/Select";
-import FormControl from "@material-ui/core/FormControl";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import { ReadOnlyTextField } from "../readonly-text-field";
 import styles from "./selector.module.scss";
+import { ReadOnlyTextField } from "../readonly-text-field";
 
 type OptionalSelectorProps = {
   /** Gives the element a persistent label */

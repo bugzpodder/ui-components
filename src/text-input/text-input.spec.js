@@ -1,10 +1,10 @@
 // @flow
 import React from "react";
-import { render, cleanup } from "react-testing-library";
 import { TestWrapper } from "../utils";
+import { cleanup, render } from "react-testing-library";
 
-import { TextInput } from "./index";
 import "jest-dom/extend-expect";
+import { TextInput } from "./index";
 
 afterEach(cleanup);
 

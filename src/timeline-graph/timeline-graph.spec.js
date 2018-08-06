@@ -1,10 +1,10 @@
 // @flow
-import React from "react";
-import { render, fireEvent } from "react-testing-library";
 import "jest-dom/extend-expect";
+import React from "react";
 import moment from "moment-timezone";
 import { TestWrapper } from "../utils";
 import { TimelineGraph } from "./index";
+import { fireEvent, render } from "react-testing-library";
 
 moment.tz.setDefault("America/Los_Angeles");
 

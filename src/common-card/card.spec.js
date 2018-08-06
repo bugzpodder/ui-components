@@ -1,10 +1,10 @@
 // @flow
-import React from "react";
-import { render, cleanup } from "react-testing-library";
 import "jest-dom/extend-expect";
 import Button from "@material-ui/core/Button";
-import { TestWrapper } from "../utils";
+import React from "react";
 import { CommonCard } from "./index";
+import { TestWrapper } from "../utils";
+import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 

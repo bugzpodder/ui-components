@@ -1,9 +1,9 @@
 // @flow
-import React from "react";
-import { render, cleanup } from "react-testing-library";
 import "jest-dom/extend-expect";
+import React from "react";
 import { TestWrapper } from "../utils";
 import { TwoColumnGrid } from "./index";
+import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 

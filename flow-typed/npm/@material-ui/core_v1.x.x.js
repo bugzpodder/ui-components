@@ -1617,7 +1617,6 @@ declare module "@material-ui/core/Step/Step" {
     disabled?: boolean,
     index?: number,
     last?: boolean,
-    optional?: boolean,
     orientation?: Orientation
   }>;
 }
@@ -1637,7 +1636,7 @@ declare module "@material-ui/core/StepButton/StepButton" {
     disabled?: boolean,
     icon?: Icon,
     last?: boolean,
-    optional?: boolean,
+    optional?: React$Node,
     orientation?: Orientation
   }>;
 }
@@ -1697,7 +1696,7 @@ declare module "@material-ui/core/StepLabel/StepLabel" {
     disabled?: boolean,
     icon?: Icon,
     last?: boolean,
-    optional?: boolean,
+    optional?: React$Node,
     orientation?: Orientation
   }>;
 }

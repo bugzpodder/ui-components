@@ -23,6 +23,7 @@ declare type PagedTableColumn = {
   Cell?: PagedTableCell => Node<*>,
   headerClassName?: string,
   className?: string | Function,
+  isSingleIcon?: boolean,
 };
 
 declare type PagedTableClasses = {

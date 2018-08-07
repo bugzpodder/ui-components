@@ -58,7 +58,9 @@ export const TableHeader = (props: Props) => {
     <TableHead className="TableHeader">
       <TableRow>
         {columns.map((column, index) => {
-          const { Header, accessor = "", headerClassName = "" } = column;
+          const {
+            Header, accessor = "", headerClassName = "", isSingleIcon = false,
+          } = column;
           const fieldId = typeof accessor === "string" ? accessor : "";
           const sortField = sortFieldsById.get(fieldId) || {};
           const isCheckboxHeader = accessor === "COLUMN_SELECT";
@@ -84,7 +86,7 @@ export const TableHeader = (props: Props) => {
               <TableCell
                 key={key}
                 className={classNames(`${fieldId}-header`, headerClassName, {
-                  [styles.tableCheckbox]: isCheckboxHeader,
+                  [styles.singleIcon]: isCheckboxHeader || isSingleIcon,
                   [styles.tableHeader]: !isCheckboxHeader,
                 })}
                 sortDirection={isSorted ? sortOrder : false}

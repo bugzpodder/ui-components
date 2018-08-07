@@ -15,7 +15,7 @@ exports[`render full simple table 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header tableCheckbox"
+            class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
             scope="col"
           >
             <span
@@ -68,7 +68,7 @@ exports[`render full simple table 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell tableCheckbox"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
             data-cell-id="First Datum-0"
           >
             <span
@@ -251,7 +251,7 @@ exports[`render simple table with all items selected 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header tableCheckbox"
+            class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
             scope="col"
           >
             <span
@@ -304,7 +304,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell tableCheckbox"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
             data-cell-id="First Datum-0"
           >
             <span

@@ -28,7 +28,7 @@ export const PagedTableRow = (props: Props) => {
       key={rowId}
     >
       {columns.map(({ /* $FlowFixMe: accessor can be string or Function */
-        Cell, Header, accessor = "", className = "",
+        Cell, Header, accessor = "", className = "", isSingleIcon,
       }: PagedTableColumn, index) => {
         let inner = null;
         const itemKey = `${rowId}-${index}`;
@@ -56,11 +56,14 @@ export const PagedTableRow = (props: Props) => {
         if (typeof className === "function") {
           className = className(value);
         }
+        const isCheckboxColumn = accessor === "COLUMN_SELECT";
         return (
           <TableCell
             key={itemKey}
             data-cell-id={itemKey}
-            className={classNames(styles.tableCell, className)}
+            className={classNames(styles.tableCell, className, {
+              [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
+            })}
           >
             {inner}
           </TableCell>

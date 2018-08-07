@@ -46,7 +46,7 @@ exports[`render full paged table 1`] = `
               class="MuiTableRow-root MuiTableRow-head"
             >
               <th
-                class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header tableCheckbox"
+                class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
                 scope="col"
               >
                 <span
@@ -99,7 +99,7 @@ exports[`render full paged table 1`] = `
               data-testid="First Datum"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body tableCell tableCheckbox"
+                class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
                 data-cell-id="First Datum-0"
               >
                 <span
@@ -469,7 +469,7 @@ exports[`render paged table with no selected items 1`] = `
               class="MuiTableRow-root MuiTableRow-head"
             >
               <th
-                class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header tableCheckbox"
+                class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
                 scope="col"
               >
                 <span
@@ -522,7 +522,7 @@ exports[`render paged table with no selected items 1`] = `
               data-testid="0"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body tableCell tableCheckbox"
+                class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
                 data-cell-id="0-0"
               >
                 <span

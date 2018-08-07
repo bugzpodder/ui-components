@@ -39,7 +39,7 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
   };
   return {
     accessor: "COLUMN_SELECT",
-    className: styles.tableCheckbox,
+    className: styles.singleIcon,
     Header: (
       <Checkbox
         className={classNames({ active: allAreChecked, indeterminate: someAreChecked })}

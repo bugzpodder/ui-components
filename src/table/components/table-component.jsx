@@ -22,11 +22,12 @@ type Props = {
   onSort?: SortOption => any,
   sortingProps?: SortingProps,
   tableOptions?: PagedTableOptions,
+  enableSelectAll: boolean,
 };
 
 export const TableComponent = (props: Props) => {
   const {
-    classes = {}, columns, data, idKey, isLoading, onSelect, onSort, selectedRows, tableOptions,
+    classes = {}, columns, data, idKey, isLoading, onSelect, onSort, selectedRows, tableOptions, enableSelectAll,
   } = props;
   const sortingProps = { onSort, tableOptions };
   const selectionProps = {
@@ -42,6 +43,7 @@ export const TableComponent = (props: Props) => {
         columns={tableColumns}
         // $FlowFixMe undefined props are incompatible with flow definitions.
         sortingProps={sortingProps}
+        enableSelectAll={enableSelectAll}
       />
       <TableBody>
         {data.length > 0 &&

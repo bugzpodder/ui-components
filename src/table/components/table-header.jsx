@@ -12,10 +12,11 @@ type Props = {
   columns: Array<PagedTableColumn>,
   sortingProps: SortingProps,
   onSort?: (sortOption: SortOption) => any,
+  enableSelectAll: boolean,
 };
 
 export const TableHeader = (props: Props) => {
-  const { columns, sortingProps = {} } = props;
+  const { columns, sortingProps = {}, enableSelectAll = true } = props;
   const { onSort, tableOptions = {} } = sortingProps;
   if (onSort && !tableOptions.sortOptions) {
     throw new Error("tableOptions prop is required and must include a sortOptions parameter");
@@ -79,16 +80,18 @@ export const TableHeader = (props: Props) => {
             );
           }
           return (
-            <TableCell
-              key={key}
-              className={classNames(`${fieldId}-header`, headerClassName, {
-                [styles.tableCheckbox]: isCheckboxHeader,
-                [styles.tableHeader]: !isCheckboxHeader,
-              })}
-              sortDirection={isSorted ? sortOrder : false}
-            >
-              {inner}
-            </TableCell>
+            ((enableSelectAll || !isCheckboxHeader) && (
+              <TableCell
+                key={key}
+                className={classNames(`${fieldId}-header`, headerClassName, {
+                  [styles.tableCheckbox]: isCheckboxHeader,
+                  [styles.tableHeader]: !isCheckboxHeader,
+                })}
+                sortDirection={isSorted ? sortOrder : false}
+              >
+                {inner}
+              </TableCell>
+            )) || <TableCell />
           );
         })}
       </TableRow>

@@ -47,6 +47,8 @@ type Props = {
    * Must change the state of `tableOptions {sortOptions: Array<{id: string, desc: boolean}>`
    */
   onSort?: Object => any,
+  /** Enables the "select all" checkbox if specified (default: true). */
+  enableSelectAll?: boolean,
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */

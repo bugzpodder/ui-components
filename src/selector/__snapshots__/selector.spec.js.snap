@@ -16,7 +16,7 @@ exports[`render selector 1`] = `
       </label>
       <div
         class="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
-        data-testid="selector-value"
+        data-testid="selector"
       >
         <div
           class="MuiSelect-root"
@@ -97,7 +97,7 @@ exports[`render selector without selected value 1`] = `
       </label>
       <div
         class="MuiInput-root MuiInput-formControl MuiInput-underline"
-        data-testid="selector-value"
+        data-testid="selector"
       >
         <div
           class="MuiSelect-root"

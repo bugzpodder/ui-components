@@ -83,6 +83,7 @@ export const Selector = (props: SelectorProps) => {
           <Select
             displayEmpty
             id={id}
+            data-testid={id}
             value={value}
             onChange={event => onSelect && onSelect(event.target.value)}
             input={(

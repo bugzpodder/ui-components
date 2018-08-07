@@ -24,7 +24,7 @@ test("render selector", async () => {
       />
     </TestWrapper>,
   );
-  expect(getByTestId("selector-value")).toHaveTextContent("test text 1");
+  expect(getByTestId("selector")).toHaveTextContent("test text 1");
   expect(container).toMatchSnapshot();
 });
 
@@ -43,7 +43,7 @@ test("render selector without selected value", async () => {
       />
     </TestWrapper>,
   );
-  expect(getByTestId("selector-value")).toHaveTextContent("Select");
+  expect(getByTestId("selector")).toHaveTextContent("Select");
   expect(container).toMatchSnapshot();
 });
 

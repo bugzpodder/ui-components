@@ -95,6 +95,7 @@ export const CommonTypeahead = (props: Props) => {
           error={!isDisabled && showError}
           inputProps={{
             ...otherProps,
+            id,
             classNamePrefix: "common-typeahead",
             isClearable: true,
             onChange: value => {
@@ -106,6 +107,8 @@ export const CommonTypeahead = (props: Props) => {
               }
               onChange(value);
             },
+            suggestions,
+            isMulti,
             components: {
               Option,
               DropdownIndicator,

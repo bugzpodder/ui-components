@@ -1,5 +1,6 @@
 // @flow
 export { Alert } from "./alert";
+export { AvatarIcon } from "./avatar-icon";
 export { CommonCard } from "./common-card";
 export { CommonDialog, CommonMultiPageDialog } from "./common-dialog";
 export { CommonPanel } from "./common-panel";

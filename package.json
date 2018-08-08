@@ -1,6 +1,6 @@
 {
   "name": "@grail/components",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "scripts": {
     "build:styleguide": "yarn styleguide:build",
     "build": "NODE_ENV=production babel ./src --out-dir ./dist --delete-dir-on-start --copy-files && babel-node scripts/build.js",

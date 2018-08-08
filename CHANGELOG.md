@@ -1,9 +1,16 @@
-## 0.5.0 - 2017-07-31
+## 0.6.0 - 2018-08-08
+
+1.  Added `AvatarIcon`.
+2.  Added `TabbedCard`.
+3.  Refactor `CommonTypeahead` to be entirely controlled.
+4.  `TwoColumnGrid` rows objects now take other key-values.
+
+## 0.5.0 - 2018-07-31
 
 1.  Fix pipeline navigation links.
 2.  Standardized onChange behavior for CommonTypeahead.
 
-## 0.4.0 - 2017-07-27
+## 0.4.0 - 2018-07-27
 
 1.  Upgraded CommonTypeahead to use react-select 2.0.
 2.  Revamped asyc CommonTypeahead API.
@@ -11,7 +18,7 @@
 4.  Added notification center.
 5.  Add number of selected items to table header.
 
-## 0.3.0 - 2017-07-17
+## 0.3.0 - 2018-07-17
 
 1.  Add `classes` prop to `CommonCard` and `CommonDialog`.
 2.  Add error handling to `Selector`.
@@ -21,11 +28,11 @@
 6.  Fix `DateInput` and `DateTimeInput` bugs.
 7.  Fix `Navbar` logo.
 
-## 0.2.0 - 2016-06-22
+## 0.2.0 - 2018-06-22
 
 1.  Use @babel/plugin-transform-runtime.
 2.  Renamed package to @grail/components.
 
-## 0.1.0 - 2016-06-20
+## 0.1.0 - 2018-06-20
 
 1.Initial release!

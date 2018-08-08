@@ -50,7 +50,6 @@ module.exports = {
       components: () => [
         "./src/alert/alert.jsx",
         "./src/common-card/card.jsx",
-        "./src/tabbed-card/tabbed-card.jsx",
         "./src/common-panel/panel.jsx",
         "./src/spinner-overlay/spinner-overlay.jsx",
         "./src/timeline-graph/timeline-graph.jsx",
@@ -61,6 +60,8 @@ module.exports = {
       components: () => [
         "./src/common-dialog/dialog.jsx",
         "./src/common-dialog/multi-page-dialog.jsx",
+        "./src/tabbed-card/tabbed-card.jsx",
+        "./src/avatar-icon/avatar-icon.jsx",
         "./src/dev/common-typeahead/common-typeahead.jsx",
         "./src/notification-center/notification-center.jsx",
         "./src/navbar/navbar.jsx",

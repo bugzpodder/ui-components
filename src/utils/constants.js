@@ -29,3 +29,6 @@ export const COUNTRIES: Array<Object> = [
   value: suggestion.label,
   label: suggestion.label,
 }));
+
+export const SERGEY =
+  "https://media.licdn.com/dms/image/C5603AQGlBIPst1V4Ew/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=2V2knyEhbTrhRWzgydsXLZqiX8gnoD1poj8jGeFpA0w";

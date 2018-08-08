@@ -8,7 +8,7 @@ import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-const validHeaderTabs = [
+const validTabConfigs = [
   {
     label: "Tab One",
     value: "one",
@@ -41,7 +41,7 @@ test("render tabbed card", () => {
       <TabbedCard
         title="Test Card"
         value="one"
-        headerTabs={validHeaderTabs}
+        tabConfigs={validTabConfigs}
         headerActions={headerActions}
         onChange={() => {}}
       />

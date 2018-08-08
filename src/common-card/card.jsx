@@ -93,7 +93,7 @@ export const CommonCard = (props: Props) => {
           data-testid="card-actions"
           classes={{
             root: classes.footer,
-            action: classes.footerActions,
+            action: classNames(styles.footerActions, classes.footerActions),
           }}
         >
           {footerActions}

@@ -21,6 +21,12 @@ type Props = {
    * When `isMulti` is true, returns an array of objects.
    */
   onChange: Suggestion => any | ((Array<Suggestion>) => any),
+  /** Defines classnames for typeahead subcomponents. Options include:
+   *
+   *  - root: className for the root div element
+   *
+   */
+  classes?: Object,
   /**
    * Tells the typeahead which suggestion(s) to use as its default value.
    * String(s) should match `value` of an object in a suggestion, or in the array of suggestions
@@ -69,6 +75,7 @@ type Props = {
 
 export const CommonTypeahead = (props: Props) => {
   const {
+    classes = {},
     id = "",
     onChange,
     suggestions = [],
@@ -88,7 +95,7 @@ export const CommonTypeahead = (props: Props) => {
     : suggestions.find(suggestion => suggestion.value === value);
   console.error("This component is deprecated and will soon be removed. Please use `CommonSelect`");
   return (
-    <div className="common-typeahead__root">
+    <div className={classNames("common-typeahead__root", classes.root)}>
       <FormControl fullWidth={fullWidth}>
         <Input
           inputComponent={CommonTypeaheadContainer}

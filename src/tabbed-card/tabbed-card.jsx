@@ -10,7 +10,7 @@ import styles from "./tabbed-card.module.scss";
 
 type Props = {
   /** The array of objects used to define the tabs displayed in the header */
-  headerTabs: Array<HeaderTab>,
+  tabConfigs: Array<TabConfig>,
   /** Takes the handler used to switch between tabs, based on the tab's value */
   onChange: string => any,
   /** The value of the tab header. Used to define which tab is open */
@@ -48,7 +48,7 @@ export const TabbedCard = (props: Props) => {
   const {
     classes = {},
     headerActions = [],
-    headerTabs = [],
+    tabConfigs = [],
     onChange,
     value,
     subheader = "",
@@ -73,7 +73,7 @@ export const TabbedCard = (props: Props) => {
       </Button>
     );
   });
-  const selectedTab = headerTabs.find(tab => tab.value === value) || {};
+  const selectedTab = tabConfigs.find(tab => tab.value === value) || {};
   return (
     <div className={classes.root}>
       <Card
@@ -101,7 +101,7 @@ export const TabbedCard = (props: Props) => {
           }}
           {...tabProps}
         >
-          {headerTabs.map(tab => {
+          {tabConfigs.map(tab => {
             const {
               id, className, value, label, content: __content, ...tabProps
             } = tab;

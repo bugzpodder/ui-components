@@ -21,7 +21,7 @@ declare type TabbedCardClasses = {
   title?: string,
 }
 
-declare type HeaderTab = {
+declare type TabConfig = {
   label: string,
   value: string,
   content: Node<*>,

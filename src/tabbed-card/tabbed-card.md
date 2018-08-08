@@ -6,7 +6,7 @@
 
 ```js
 const Alert = require("@grail/components").Alert;
-const headerTabs = [
+const tabConfigs = [
   {
     label: "Tab One",
     value: "one",
@@ -40,6 +40,6 @@ const headerActions = [
     tabs: "tabs-container",
   }}
   headerActions={headerActions}
-  headerTabs={headerTabs}
+  tabConfigs={tabConfigs}
 />;
 ```

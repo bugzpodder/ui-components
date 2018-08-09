@@ -46,7 +46,7 @@ export class NotificationCenter extends React.Component<Props, State> {
   };
 
   render = () => {
-    const { notifications } = this.props;
+    const { notifications, ...iconProps } = this.props;
     const { anchorElement, isVisible } = this.state;
     return (
       <Fragment>
@@ -54,6 +54,7 @@ export class NotificationCenter extends React.Component<Props, State> {
           disableRipple
           color="inherit"
           onClick={this.handleClick}
+          {...iconProps}
         >
           <Notifications />
         </IconButton>

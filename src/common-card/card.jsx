@@ -61,8 +61,8 @@ export const CommonCard = (props: Props) => {
   } = props;
   return (
     <Card
-      {...cardProps}
       className={classNames(classes.root, styles.card, { [styles.withMargin]: hasMargin })}
+      {...cardProps}
       elevation={MAIN_CARD_ELEVATION}
     >
       {(title || headerActions) && (

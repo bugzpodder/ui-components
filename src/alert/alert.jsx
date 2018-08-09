@@ -33,7 +33,7 @@ const colorIcon = {
  */
 export const Alert = (props: Props) => {
   const {
-    textAlign = "", className = "", color = "error", message, variant = "",
+    textAlign = "", className = "", color = "error", message, variant = "", ...alertProps
   } = props;
   const Icon = colorIcon[color];
   return (
@@ -52,6 +52,7 @@ export const Alert = (props: Props) => {
             {message}
           </span>
 )}
+        {...alertProps}
       />
     </div>
   );

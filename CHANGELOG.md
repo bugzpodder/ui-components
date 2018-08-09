@@ -1,3 +1,7 @@
+## 0.6.1 - 2018-08-09
+
+1.  Pass `...otherProps` to common components
+
 ## 0.6.0 - 2018-08-08
 
 1.  Added `AvatarIcon`.

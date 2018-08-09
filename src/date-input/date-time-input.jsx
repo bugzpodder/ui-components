@@ -28,11 +28,11 @@ export const DateTimeInput = (props: Props) => {
   return (
     <DateTimePicker
       ampm={false}
-      format={DATE_TIME_FORMAT}
       keyboard
       clearable
       {...props}
       value={value || null}
+      format={DATE_TIME_FORMAT}
     />
   );
 };

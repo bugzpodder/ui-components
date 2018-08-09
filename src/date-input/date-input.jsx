@@ -30,12 +30,12 @@ export const DateInput = (props: Props) => {
   return (
     <div className={styles.datePicker}>
       <DatePicker
-        format={DATE_FORMAT}
         keyboard
         clearable
         InputAdornmentProps={{ className: styles.adornmentWidth }}
         {...props}
         value={value || null}
+        format={DATE_FORMAT}
       />
     </div>
   );

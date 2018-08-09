@@ -33,6 +33,7 @@ export const TimelineGraph = (props: Props) => {
     cardWidth = "wide",
     cardHeight = "short",
     shouldSort = true,
+    ...otherProps
   } = props;
   shouldSort && rows.sort(({ date: leftDate }, { date: rightDate }) => leftDate.localeCompare(rightDate)).reverse();
   const isWideCard = cardWidth === "wide";
@@ -44,7 +45,10 @@ export const TimelineGraph = (props: Props) => {
   const rowHeight = isTallCard ? 120 : 80;
   const timelinePathFinialSize = 6;
   return (
-    <div className={`${styles.timelineGraph} card-width-${cardWidth} card-height-${cardHeight}`}>
+    <div
+      className={`${styles.timelineGraph} card-width-${cardWidth} card-height-${cardHeight}`}
+      {...otherProps}
+    >
       <svg
         height={rowHeight * rows.length + svgYMargin + rectYMargin}
         className={styles.timelineSvg}

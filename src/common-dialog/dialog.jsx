@@ -40,7 +40,7 @@ type Props = {
 /** `CommonDialog` provides a component to be used as a UI modal. */
 export const CommonDialog = (props: Props) => {
   const {
-    actions, children, classes = {}, hideModal, isVisible, title, enableOverflow = true,
+    actions, children, classes = {}, hideModal, isVisible, title, enableOverflow = true, ...dialogProps
   } = props;
   const leftActionButtons = actions
     .filter(({ isLeftButton = false }) => isLeftButton)
@@ -54,6 +54,7 @@ export const CommonDialog = (props: Props) => {
       className={classNames(styles.commonDialog, classes.root)}
       PaperProps={{ className: styles.commonDialogPaper }}
       onClose={hideModal}
+      {...dialogProps}
     >
       <DialogTitle
         id="form-dialog-title"

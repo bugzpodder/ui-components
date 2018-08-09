@@ -1,6 +1,7 @@
 // @flow
 import React, { type Node } from "react";
 import Typography from "@material-ui/core/Typography";
+import classNames from "classnames";
 import styles from "./panel.module.scss";
 
 type Props = {
@@ -17,10 +18,13 @@ type Props = {
 /** Provides a styled section with a title and body. */
 export const CommonPanel = (props: Props) => {
   const {
-    title, children, variant = "subheading", className = "",
+    title, children, variant = "subheading", className = "", ...panelProps
   } = props;
   return (
-    <div className={`${styles.panel} ${className}`}>
+    <div
+      className={classNames({ [styles.panel]: true }, className)}
+      {...panelProps}
+    >
       <div
         className={styles.panelHeader}
         data-testid="panel-title"

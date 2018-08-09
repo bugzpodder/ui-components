@@ -58,6 +58,7 @@ export const CommonMultiPageDialog = (props: Props) => {
     classes = {},
     showBackButton = true,
     actions,
+    ...dialogProps
   } = props;
   const leftActionButtons = actions
     .filter(({ isLeftButton = false, pages = [] }) => isLeftButton && (pages.length === 0 || pages.includes(pageIndex)))
@@ -73,6 +74,7 @@ export const CommonMultiPageDialog = (props: Props) => {
       className={classNames(styles.commonDialog, classes.root)}
       PaperProps={{ className: styles.commonDialogPaper }}
       onClose={hideModal}
+      {...dialogProps}
     >
       <DialogTitle
         id="form-dialog-title"

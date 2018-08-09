@@ -3,7 +3,7 @@
 exports[`render validated readonly text field 1`] = `
 <div>
   <div
-    class="panel "
+    class="panel"
   >
     <div
       class="panelHeader"

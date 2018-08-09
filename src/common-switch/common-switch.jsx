@@ -55,6 +55,7 @@ export class CommonSwitch extends React.Component<Props, State> {
       isEnabled = true,
       isSelected,
       value = "",
+      ...controlProps
     } = this.props;
     const { isChecked } = this.state;
     const errorClass = {};
@@ -85,6 +86,7 @@ export class CommonSwitch extends React.Component<Props, State> {
             />
 )}
           label={label}
+          {...controlProps}
         />
         {helperText && (
           <FormHelperText

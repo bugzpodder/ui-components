@@ -1,6 +1,6 @@
 // @flow
 import React, { type Node } from "react";
-
+import classNames from "classnames";
 import styles from "./readonly-text-field.module.scss";
 import { ReadOnlyTextField } from "./readonly-text-field";
 
@@ -22,7 +22,7 @@ type Props = {
  */
 export const ValidatedReadOnlyTextField = (props: Props) => {
   const {
-    id, children, className, isValid, isNA = false,
+    id, children, className, isValid, isNA = false, ...otherProps
   } = props;
   let textClassName = "";
   let icon = "";
@@ -34,8 +34,9 @@ export const ValidatedReadOnlyTextField = (props: Props) => {
   return (
     <ReadOnlyTextField
       id={id}
-      className={`${textClassName} ${cssClassName}`}
+      className={classNames(textClassName, cssClassName)}
       icon={icon}
+      {...otherProps}
     >
       {children}
     </ReadOnlyTextField>

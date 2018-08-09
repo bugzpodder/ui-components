@@ -37,6 +37,8 @@ type Props = {
    *  - `title`
    */
   classes?: TabbedCardClasses,
+  /** props applied to the `Tabs` container */
+  tabProps?: Object,
 };
 
 /**
@@ -44,7 +46,15 @@ type Props = {
  */
 export const TabbedCard = (props: Props) => {
   const {
-    classes = {}, headerActions = [], headerTabs = [], onChange, value, subheader = "", title = "",
+    classes = {},
+    headerActions = [],
+    headerTabs = [],
+    onChange,
+    value,
+    subheader = "",
+    title = "",
+    tabProps = {},
+    ...cardProps
   } = props;
   const mappedHeaderActions = headerActions.map((action, index) => {
     const {
@@ -66,7 +76,10 @@ export const TabbedCard = (props: Props) => {
   const selectedTab = headerTabs.find(tab => tab.value === value) || {};
   return (
     <div className={classes.root}>
-      <Card className={classNames(styles.pageHeader)}>
+      <Card
+        className={classNames(styles.pageHeader)}
+        {...cardProps}
+      >
         <CardHeader
           title={title}
           classes={{
@@ -86,6 +99,7 @@ export const TabbedCard = (props: Props) => {
           classes={{
             root: classes.tabs,
           }}
+          {...tabProps}
         >
           {headerTabs.map(tab => {
             const {

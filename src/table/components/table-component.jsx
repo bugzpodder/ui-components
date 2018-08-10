@@ -27,7 +27,16 @@ type Props = {
 
 export const TableComponent = (props: Props) => {
   const {
-    classes = {}, columns, data, idKey, isLoading, onSelect, onSort, selectedRows, tableOptions, enableSelectAll,
+    classes = {},
+    columns,
+    data,
+    idKey,
+    isLoading,
+    onSelect,
+    onSort,
+    selectedRows,
+    tableOptions,
+    enableSelectAll,
   } = props;
   const sortingProps = { onSort, tableOptions };
   const selectionProps = {
@@ -38,7 +47,7 @@ export const TableComponent = (props: Props) => {
   };
   const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
   return (
-    <Table className={classes.root || ""}>
+    <Table className={classes.table}>
       <TableHeader
         columns={tableColumns}
         // $FlowFixMe undefined props are incompatible with flow definitions.

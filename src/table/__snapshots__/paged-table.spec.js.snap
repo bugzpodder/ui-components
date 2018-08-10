@@ -3,251 +3,247 @@
 exports[`render full paged table 1`] = `
 <div>
   <div
-    class="tableContainer"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
+      class="MuiCardHeader-root"
+      data-testid="card-header"
     >
       <div
-        class="MuiCardHeader-root"
-        data-testid="card-header"
+        class="MuiCardHeader-content"
       >
-        <div
-          class="MuiCardHeader-content"
+        <span
+          class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
         >
-          <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
-          >
-            Test Table (1 Selected)
-          </span>
-          
-        </div>
-        <div
-          class="MuiCardHeader-action headerActions"
-        >
-          <p
-            class="MuiTypography-root MuiTypography-body1"
-          >
-            Test Header Action
-          </p>
-        </div>
+          Test Table (1 Selected)
+        </span>
+        
       </div>
       <div
-        class="MuiCardContent-root tableContent"
-        data-testid="card-content"
+        class="MuiCardHeader-action headerActions"
       >
-        <table
-          class="MuiTable-root"
+        <p
+          class="MuiTypography-root MuiTypography-body1"
         >
-          <thead
-            class="MuiTableHead-root TableHeader"
-          >
-            <tr
-              class="MuiTableRow-root MuiTableRow-head"
-            >
-              <th
-                class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
-                scope="col"
-              >
-                <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active indeterminate"
-                  data-testid="paged-table-checkbox-header"
-                >
-                  <span
-                    class="MuiIconButton-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                      />
-                    </svg>
-                    <input
-                      class="MuiSwitchBase-input"
-                      type="checkbox"
-                      value=""
-                    />
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </span>
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
-                scope="col"
-              >
-                Column One
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
-                scope="col"
-              >
-                Column Two
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="MuiTableBody-root"
-          >
-            <tr
-              class="MuiTableRow-root"
-              data-testid="First Datum"
-            >
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
-                data-cell-id="First Datum-0"
-              >
-                <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
-                  data-testid="paged-table-checkbox-cell"
-                >
-                  <span
-                    class="MuiIconButton-label"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                      />
-                    </svg>
-                    <input
-                      class="MuiSwitchBase-input"
-                      id="First Datum"
-                      type="checkbox"
-                      value=""
-                    />
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="First Datum-1"
-              >
-                <span>
-                  First Datum
-                </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="First Datum-2"
-              />
-            </tr>
-          </tbody>
-        </table>
+          Test Header Action
+        </p>
       </div>
+    </div>
+    <div
+      class="MuiCardContent-root tableContent"
+      data-testid="card-content"
+    >
+      <table
+        class="MuiTable-root"
+      >
+        <thead
+          class="MuiTableHead-root TableHeader"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
+              scope="col"
+            >
+              <span
+                class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active indeterminate"
+                data-testid="paged-table-checkbox-header"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    class="MuiSwitchBase-input"
+                    type="checkbox"
+                    value=""
+                  />
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+              scope="col"
+            >
+              Column Two
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root"
+            data-testid="First Datum"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              data-cell-id="First Datum-0"
+            >
+              <span
+                class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
+                data-testid="paged-table-checkbox-cell"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  <input
+                    class="MuiSwitchBase-input"
+                    id="First Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="First Datum-1"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="First Datum-2"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="MuiCardActions-root tableFooter"
+      data-testid="card-actions"
+    >
       <div
-        class="MuiCardActions-root tableFooter"
-        data-testid="card-actions"
+        class="table-pager tablePager"
       >
         <div
-          class="table-pager tablePager"
+          class="MuiToolbar-root MuiToolbar-gutters MuiTablePagination-toolbar"
         >
           <div
-            class="MuiToolbar-root MuiToolbar-gutters MuiTablePagination-toolbar"
+            class="MuiTablePagination-spacer"
+          />
+          <span
+            class="MuiTypography-root MuiTypography-caption MuiTablePagination-caption"
+          >
+            Rows per page:
+          </span>
+          <div
+            class="MuiInput-root select-row-count selectRowCount"
           >
             <div
-              class="MuiTablePagination-spacer"
-            />
-            <span
-              class="MuiTypography-root MuiTypography-caption MuiTablePagination-caption"
-            >
-              Rows per page:
-            </span>
-            <div
-              class="MuiInput-root select-row-count selectRowCount"
+              class="MuiSelect-root MuiTablePagination-selectRoot"
             >
               <div
-                class="MuiSelect-root MuiTablePagination-selectRoot"
+                aria-haspopup="true"
+                aria-pressed="false"
+                class="MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInput-input"
+                role="button"
+                tabindex="0"
               >
-                <div
-                  aria-haspopup="true"
-                  aria-pressed="false"
-                  class="MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInput-input"
-                  role="button"
-                  tabindex="0"
-                >
-                  5
-                </div>
-                <input
-                  id="rows-per-page"
-                  type="hidden"
-                  value="5"
+                5
+              </div>
+              <input
+                id="rows-per-page"
+                type="hidden"
+                value="5"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
                 />
+              </svg>
+            </div>
+          </div>
+          <span
+            class="MuiTypography-root MuiTypography-caption MuiTablePagination-caption"
+          >
+            Showing 1 to 1
+          </span>
+          <div
+            class="MuiTablePagination-actions"
+          >
+            <button
+              class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled previous-page"
+              disabled=""
+              tabindex="-1"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon"
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M7 10l5 5 5-5z"
+                    d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
                   />
                 </svg>
-              </div>
-            </div>
-            <span
-              class="MuiTypography-root MuiTypography-caption MuiTablePagination-caption"
+              </span>
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled next-page"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              Showing 1 to 1
-            </span>
-            <div
-              class="MuiTablePagination-actions"
-            >
-              <button
-                class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled previous-page"
-                disabled=""
-                tabindex="-1"
-                type="button"
+              <span
+                class="MuiIconButton-label"
               >
-                <span
-                  class="MuiIconButton-label"
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                    />
-                  </svg>
-                </span>
-              </button>
-              <button
-                class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root MuiIconButton-disabled next-page"
-                disabled=""
-                tabindex="-1"
-                type="button"
-              >
-                <span
-                  class="MuiIconButton-label"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
+                  <path
+                    d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                  />
+                </svg>
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -259,71 +255,67 @@ exports[`render full paged table 1`] = `
 exports[`render loading paged table 1`] = `
 <div>
   <div
-    class="tableContainer"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
+      class="MuiCardContent-root tableContent"
+      data-testid="card-content"
     >
-      <div
-        class="MuiCardContent-root tableContent"
-        data-testid="card-content"
+      <table
+        class="MuiTable-root"
       >
-        <table
-          class="MuiTable-root"
+        <thead
+          class="MuiTableHead-root TableHeader"
         >
-          <thead
-            class="MuiTableHead-root TableHeader"
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
           >
-            <tr
-              class="MuiTableRow-root MuiTableRow-head"
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              scope="col"
             >
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
-                scope="col"
-              >
-                Column One
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
-                scope="col"
-              >
-                Column Two
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="MuiTableBody-root"
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+              scope="col"
+            >
+              Column Two
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root"
+            data-testid="0"
           >
-            <tr
-              class="MuiTableRow-root"
-              data-testid="0"
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="0-0"
             >
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="0-0"
-              >
-                <span>
-                  First Datum
-                </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="0-1"
-              />
-            </tr>
-          </tbody>
-        </table>
-      </div>
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="0-1"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
+  <div
+    class="spinnerOverlay active"
+    data-is-active="true"
+    data-testid="spinner-overlay"
+  >
     <div
-      class="spinnerOverlay active"
-      data-is-active="true"
-      data-testid="spinner-overlay"
-    >
-      <div
-        class="loading"
-      />
-    </div>
+      class="loading"
+    />
   </div>
 </div>
 `;
@@ -331,54 +323,50 @@ exports[`render loading paged table 1`] = `
 exports[`render paged table with no results 1`] = `
 <div>
   <div
-    class="tableContainer"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
+      class="MuiCardContent-root tableContent"
+      data-testid="card-content"
     >
-      <div
-        class="MuiCardContent-root tableContent"
-        data-testid="card-content"
+      <table
+        class="MuiTable-root"
       >
-        <table
-          class="MuiTable-root"
+        <thead
+          class="MuiTableHead-root TableHeader"
         >
-          <thead
-            class="MuiTableHead-root TableHeader"
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
           >
-            <tr
-              class="MuiTableRow-root MuiTableRow-head"
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              scope="col"
             >
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
-                scope="col"
-              >
-                Column One
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
-                scope="col"
-              >
-                Column Two
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="MuiTableBody-root"
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+              scope="col"
+            >
+              Column Two
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root"
           >
-            <tr
-              class="MuiTableRow-root"
+            <td
+              class="MuiTableCell-root MuiTableCell-body no-results noResults"
+              colspan="2"
             >
-              <td
-                class="MuiTableCell-root MuiTableCell-body no-results noResults"
-                colspan="2"
-              >
-                0 Results
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+              0 Results
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
@@ -387,62 +375,58 @@ exports[`render paged table with no results 1`] = `
 exports[`render paged table with no results and is loading 1`] = `
 <div>
   <div
-    class="tableContainer"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
+      class="MuiCardContent-root tableContent"
+      data-testid="card-content"
     >
-      <div
-        class="MuiCardContent-root tableContent"
-        data-testid="card-content"
+      <table
+        class="MuiTable-root"
       >
-        <table
-          class="MuiTable-root"
+        <thead
+          class="MuiTableHead-root TableHeader"
         >
-          <thead
-            class="MuiTableHead-root TableHeader"
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
           >
-            <tr
-              class="MuiTableRow-root MuiTableRow-head"
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              scope="col"
             >
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
-                scope="col"
-              >
-                Column One
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
-                scope="col"
-              >
-                Column Two
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="MuiTableBody-root"
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+              scope="col"
+            >
+              Column Two
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root"
           >
-            <tr
-              class="MuiTableRow-root"
-            >
-              <td
-                class="MuiTableCell-root MuiTableCell-body no-results noResults"
-                colspan="2"
-              />
-            </tr>
-          </tbody>
-        </table>
-      </div>
+            <td
+              class="MuiTableCell-root MuiTableCell-body no-results noResults"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
+  <div
+    class="spinnerOverlay active"
+    data-is-active="true"
+    data-testid="spinner-overlay"
+  >
     <div
-      class="spinnerOverlay active"
-      data-is-active="true"
-      data-testid="spinner-overlay"
-    >
-      <div
-        class="loading"
-      />
-    </div>
+      class="loading"
+    />
   </div>
 </div>
 `;
@@ -450,126 +434,122 @@ exports[`render paged table with no results and is loading 1`] = `
 exports[`render paged table with no selected items 1`] = `
 <div>
   <div
-    class="tableContainer"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
+      class="MuiCardContent-root tableContent"
+      data-testid="card-content"
     >
-      <div
-        class="MuiCardContent-root tableContent"
-        data-testid="card-content"
+      <table
+        class="MuiTable-root"
       >
-        <table
-          class="MuiTable-root"
+        <thead
+          class="MuiTableHead-root TableHeader"
         >
-          <thead
-            class="MuiTableHead-root TableHeader"
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
           >
-            <tr
-              class="MuiTableRow-root MuiTableRow-head"
+            <th
+              class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
+              scope="col"
             >
-              <th
-                class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
-                scope="col"
+              <span
+                class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                data-testid="paged-table-checkbox-header"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
-                  data-testid="paged-table-checkbox-header"
+                  class="MuiIconButton-label"
                 >
-                  <span
-                    class="MuiIconButton-label"
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                      />
-                    </svg>
-                    <input
-                      class="MuiSwitchBase-input"
-                      type="checkbox"
-                      value=""
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
+                  </svg>
+                  <input
+                    class="MuiSwitchBase-input"
+                    type="checkbox"
+                    value=""
                   />
                 </span>
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
-                scope="col"
-              >
-                Column One
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
-                scope="col"
-              >
-                Column Two
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="MuiTableBody-root"
-          >
-            <tr
-              class="MuiTableRow-root"
-              data-testid="0"
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </span>
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              scope="col"
             >
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
-                data-cell-id="0-0"
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+              scope="col"
+            >
+              Column Two
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root"
+            data-testid="0"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              data-cell-id="0-0"
+            >
+              <span
+                class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                data-testid="paged-table-checkbox-cell"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
-                  data-testid="paged-table-checkbox-cell"
+                  class="MuiIconButton-label"
                 >
-                  <span
-                    class="MuiIconButton-label"
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                      />
-                    </svg>
-                    <input
-                      class="MuiSwitchBase-input"
-                      id="0"
-                      type="checkbox"
-                      value=""
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
+                  </svg>
+                  <input
+                    class="MuiSwitchBase-input"
+                    id="0"
+                    type="checkbox"
+                    value=""
                   />
                 </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="0-1"
-              >
-                <span>
-                  First Datum
-                </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="0-2"
-              />
-            </tr>
-          </tbody>
-        </table>
-      </div>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="0-1"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="0-2"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
@@ -578,61 +558,57 @@ exports[`render paged table with no selected items 1`] = `
 exports[`render simple paged table 1`] = `
 <div>
   <div
-    class="tableContainer"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableCard PagedTable card"
+      class="MuiCardContent-root tableContent"
+      data-testid="card-content"
     >
-      <div
-        class="MuiCardContent-root tableContent"
-        data-testid="card-content"
+      <table
+        class="MuiTable-root"
       >
-        <table
-          class="MuiTable-root"
+        <thead
+          class="MuiTableHead-root TableHeader"
         >
-          <thead
-            class="MuiTableHead-root TableHeader"
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
           >
-            <tr
-              class="MuiTableRow-root MuiTableRow-head"
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              scope="col"
             >
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
-                scope="col"
-              >
-                Column One
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
-                scope="col"
-              >
-                Column Two
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="MuiTableBody-root"
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+              scope="col"
+            >
+              Column Two
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root"
+            data-testid="0"
           >
-            <tr
-              class="MuiTableRow-root"
-              data-testid="0"
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="0-0"
             >
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="0-0"
-              >
-                <span>
-                  First Datum
-                </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body tableCell"
-                data-cell-id="0-1"
-              />
-            </tr>
-          </tbody>
-        </table>
-      </div>
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body tableCell"
+              data-cell-id="0-1"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

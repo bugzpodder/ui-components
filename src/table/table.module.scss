@@ -10,13 +10,10 @@
 .tableContainer {
   position: relative;
   overflow-x: auto;
+  margin: 20px;
 
-  .tableCard {
-    margin: 20px;
-
-    .refreshTooltip {
-      margin-left: auto;
-    }
+  .tableContent {
+    overflow-x: auto;
 
     .noResults {
       padding: 50px;
@@ -40,19 +37,15 @@
       max-width: 200px;
       word-wrap: break-word;
     }
-
-    .tableContent {
-      overflow-x: auto;
-    }
-  }
-
-  .tablePager {
-    width: 100%;
   }
 
   .tableFooter {
     padding-top: 0;
     max-height: 60px;
+
+    .tablePager {
+      width: 100%;
+    }
   }
 
   .selectRowCount {

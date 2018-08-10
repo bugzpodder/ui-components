@@ -1,5 +1,5 @@
 // @flow
-import React from "react";
+import React, { Fragment } from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { CommonCard } from "../common-card";
@@ -19,13 +19,17 @@ type Props = {
   /**
    * Provides classNames to table sub-components. Options include:
    *
-   *  - `root`: table's outermost div
+   *  - `root`: card root div element
+   *
+   *  - `body`: table div container
+   *
+   *  - `pagination`: pagination div container
+   *
+   *  - `table`: `table` element
    *
    *  - `rows`: table row. Can take a function to help specify a className for any specific row
    */
   classes?: PagedTableClasses,
-  /** The classname applied to the PagedTable card */
-  className?: string,
   /**
    * Defaults to the row's `index`.
    *
@@ -63,7 +67,7 @@ type Props = {
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
 export const PagedTable = (props: Props) => {
   const {
-    className,
+    classes = {},
     columns,
     data,
     headerActions = null,
@@ -88,20 +92,20 @@ export const PagedTable = (props: Props) => {
   const numberSelected = (selectedRows && selectedRows.length) || 0;
   const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
   return (
-    <div className={styles.tableContainer}>
+    <Fragment>
       <CommonCard
         title={cardTitle}
         headerActions={headerActions}
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
         classes={{
-          root: classNames(styles.tableCard, "PagedTable", className),
-          body: styles.tableContent,
-          footer: onPageChange ? styles.tableFooter : "",
+          root: classNames(styles.tableContainer, "PagedTable", classes.root),
+          body: classNames(styles.tableContent, classes.body),
+          footer: classNames({ [styles.tableFooter]: onPageChange }, classes.pagination),
         }}
       >
         <TableComponent {...props} />
       </CommonCard>
       {isLoading && <SpinnerOverlay />}
-    </div>
+    </Fragment>
   );
 };

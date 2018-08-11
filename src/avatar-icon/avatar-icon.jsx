@@ -58,11 +58,17 @@ export class AvatarIcon extends React.Component<Props> {
             onClose={() => onClick && onClick(false)}
           >
             {menuItems.map((item, index) => {
-              const { isVisible = true, content, ...menuItemProps } = item;
+              const {
+                isVisible = true, content, onClick: onClickMenuItem, ...menuItemProps
+              } = item;
               return (
                 isVisible && (
                   <MenuItem
                     key={`avatar-menu-item-${index}`}
+                    onClick={() => {
+                      onClick && onClick(false);
+                      onClickMenuItem();
+                    }}
                     {...menuItemProps}
                   >
                     {content}

@@ -17,7 +17,6 @@ type Props = {
   selectedRows: Array<number | string>,
   classes?: PagedTableClasses,
   idKey?: string | number,
-  onPageChange?: (options: GetContentOptions) => any,
   onSelect?: (Array<any>) => any,
   onSort?: SortOption => any,
   sortingProps?: SortingProps,
@@ -37,6 +36,7 @@ export const TableComponent = (props: Props) => {
     selectedRows,
     tableOptions,
     enableSelectAll,
+    ...tableProps
   } = props;
   const sortingProps = { onSort, tableOptions };
   const selectionProps = {
@@ -47,7 +47,10 @@ export const TableComponent = (props: Props) => {
   };
   const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
   return (
-    <Table className={classes.table}>
+    <Table
+      className={classes.table}
+      {...tableProps}
+    >
       <TableHeader
         columns={tableColumns}
         // $FlowFixMe undefined props are incompatible with flow definitions.

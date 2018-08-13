@@ -67,17 +67,11 @@ type Props = {
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
 export const PagedTable = (props: Props) => {
   const {
-    classes = {},
-    columns,
-    data,
-    headerActions = null,
-    isLoading = false,
-    onPageChange,
-    onSelect,
-    selectedRows,
-    tableOptions,
-    title = "",
+    onPageChange, headerActions = null, title = "", ...tableProps
   } = props;
+  const {
+    classes = {}, columns, data, isLoading = false, onSelect, selectedRows, tableOptions,
+  } = tableProps;
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");
   }
@@ -103,7 +97,7 @@ export const PagedTable = (props: Props) => {
           footer: classNames({ [styles.tableFooter]: onPageChange }, classes.pagination),
         }}
       >
-        <TableComponent {...props} />
+        <TableComponent {...tableProps} />
       </CommonCard>
       {isLoading && <SpinnerOverlay />}
     </Fragment>

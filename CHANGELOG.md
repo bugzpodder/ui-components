@@ -1,13 +1,18 @@
-## 0.6.1 - 2018-08-09
-
-1.  Pass `...otherProps` to common components
-
-## 0.6.0 - 2018-08-08
+## 0.6.0 - 2018-08-15
 
 1.  Added `AvatarIcon`.
 2.  Added `TabbedCard`.
 3.  Refactor `CommonTypeahead` to be entirely controlled.
 4.  `TwoColumnGrid` rows objects now take other key-values.
+5.  Pass `...otherProps` to common components
+
+`CommonTypeahead` will soon be deprecated for `CommonSelect`. `CommonSelect` supports all of the same features
+as `CommonTypeahead`, with the following added in v.0.7.0:
+
+1.  Support multi-select for async select type
+2.  Support multi-select for creatable select type
+3.  Support custom content for suggestion items (`formatOption`)
+4.  Support loading initial values into async select type
 
 ## 0.5.0 - 2018-07-31
 

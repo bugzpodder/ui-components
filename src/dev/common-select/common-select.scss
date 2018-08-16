@@ -1,0 +1,104 @@
+@import "../../styles/colors.scss";
+
+.common-select__root {
+  .common-select__input-root {
+    margin: 0;
+    line-height: 1em;
+  }
+
+  .common-select__container {
+    width: 100%;
+    min-width: 167px;
+
+    > div {
+      padding: 0;
+    }
+
+    .common-select__control--is-disabled > .common-select__value-container > .common-select__placeholder {
+      color: $material-ui-disabled;
+    }
+
+    .common-select__control,
+    .common-select__control--is-focused {
+      display: flex;
+      align-items: center;
+      border: 0;
+      height: auto;
+      background: transparent;
+      box-shadow: 0 0 0 0;
+      min-height: 34px;
+      &:hover {
+        box-shadow: none;
+      }
+
+      .common-select__value-container {
+        width: 100%;
+        padding: 4px 0;
+
+        .common-select__placeholder,
+        .common-select__single-value {
+          padding: 0;
+          padding-left: 1px;
+          margin: 0;
+          opacity: 0.77;
+        }
+
+        .common-select__multi-value__label {
+          padding: 0;
+          font-size: 0.8125rem;
+        }
+
+        .common-select__multi-value__remove {
+          background-color: transparent;
+          color: initial;
+          padding: 0 0 0 5px;
+          cursor: pointer;
+          opacity: 0.25;
+          width: 29px;
+          height: 29px;
+          &:hover {
+            opacity: 0.4;
+          }
+        }
+        .common-select__chip-root {
+          margin: 2px;
+
+          .common-select__chip-label {
+            padding: 0 4px 0 10px;
+          }
+        }
+      }
+    }
+
+    .common-select__clear-icon {
+      cursor: pointer;
+    }
+
+    .common-select__dropdown-arrow {
+      cursor: pointer;
+    }
+
+    .common-select__menu {
+      border-radius: 0;
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+      // z-index > 2 is necessary to properly overlay the Styleguidist <code> block.
+      z-index: 5;
+
+      .common-select__menu-list {
+        padding: 0;
+
+        .common-select__menu-item {
+          font-weight: 400;
+        }
+
+        .common-select__menu-item-selected {
+          font-weight: 500;
+        }
+
+        .common-select__menu-item-custom-content {
+          height: auto;
+        }
+      }
+    }
+  }
+}

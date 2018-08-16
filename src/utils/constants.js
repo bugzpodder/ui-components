@@ -26,8 +26,8 @@ export const COUNTRIES: Array<Object> = [
   { label: "Bermuda" },
   { label: "Bhutan" },
 ].map(suggestion => ({
-  value: suggestion.label,
   label: suggestion.label,
+  value: suggestion.label.toUpperCase().replace(" ", "_"),
 }));
 
 export const SERGEY =

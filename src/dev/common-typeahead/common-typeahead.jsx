@@ -86,6 +86,7 @@ export const CommonTypeahead = (props: Props) => {
     ? // $FlowFixMe: flow thinks `.includes()` can only take string arguments
     suggestions.filter(suggestion => value.includes(suggestion.value))
     : suggestions.find(suggestion => suggestion.value === value);
+  console.error("This component is deprecated and will soon be removed. Please use `CommonSelect`");
   return (
     <div className="common-typeahead__root">
       <FormControl fullWidth={fullWidth}>

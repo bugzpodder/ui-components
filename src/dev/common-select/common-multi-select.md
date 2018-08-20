@@ -19,8 +19,8 @@ class SelectExample extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(value) {
-    this.setState({ value });
+  handleChange(values) {
+    this.setState({ values });
   }
 
   render() {
@@ -60,8 +60,8 @@ class SelectExample extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(value) {
-    this.setState({ value });
+  handleChange(values) {
+    this.setState({ values });
   }
 
   render() {
@@ -108,8 +108,8 @@ class SelectExample extends React.Component {
     setTimeout(() => this.setState({ values: countries.slice(4, 7) }), 1200);
   }
 
-  handleChange(value) {
-    this.setState({ value });
+  handleChange(values) {
+    this.setState({ values });
   }
 
   filterCountries(inputValue) {
@@ -162,8 +162,8 @@ class SelectExample extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(value) {
-    this.setState({ value });
+  handleChange(values) {
+    this.setState({ values });
   }
 
   render() {

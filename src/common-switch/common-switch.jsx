@@ -25,6 +25,14 @@ type Props = {
   isSelected?: boolean,
   /** The value of the switch input if one is provided */
   value?: string,
+  /**
+   * Provides classNames to the switch's sub-components. Options include:
+   *
+   *  - `root`: switch's outermost div
+   *
+   *  - `label`: switch label
+   */
+  classes?: CommonSwitchClasses,
 };
 
 type State = {
@@ -48,6 +56,7 @@ export class CommonSwitch extends React.Component<Props, State> {
   render = () => {
     const {
       id = "",
+      classes = {},
       color = "primary",
       showError = false,
       helperText = "",
@@ -62,11 +71,11 @@ export class CommonSwitch extends React.Component<Props, State> {
     errorClass[styles.error] = showError;
     const switchSelection = isSelected !== undefined || isSelected !== null ? isSelected : isChecked;
     return (
-      <div className={styles.commonSwitch}>
+      <div className={classNames(styles.commonSwitch, classes.root)}>
         <FormControlLabel
           classes={{
             root: styles.controlLabel,
-            label: classNames(errorClass),
+            label: classNames(classes.label, errorClass),
           }}
           control={(
             <Switch

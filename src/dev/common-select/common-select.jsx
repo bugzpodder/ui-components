@@ -12,7 +12,7 @@ type CommonSelectProps = {
    * Tells the select which option to use as its value.
    * String should match the `value` property of an object in a option.
    */
-  value: CommonSelectOption,
+  value?: CommonSelectOption,
   /**
    *
    * When `selectType="async"`, provides a list of initial options to display when no

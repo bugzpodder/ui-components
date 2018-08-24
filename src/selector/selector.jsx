@@ -107,7 +107,12 @@ export const Selector = (props: SelectorProps) => {
             )}
             {menuItems}
           </Select>
-          <FormHelperText id={`${id}-selector-helpertext`}>{helperText}</FormHelperText>
+          <FormHelperText
+            error={showError}
+            id={`${id}-selector-helpertext`}
+          >
+            {helperText}
+          </FormHelperText>
         </FormControl>
       </div>
     );

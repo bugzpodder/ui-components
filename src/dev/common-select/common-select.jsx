@@ -108,7 +108,7 @@ export class CommonSelect extends React.Component<CommonSelectProps> {
           onChange(value);
         }}
         options={isAsyncSelect ? initialOptions : options}
-        value={!isEmpty(value) ? value : null}
+        value={!isEmpty(value) && value.value ? value : null}
         {...otherProps}
         isMulti={false}
       />

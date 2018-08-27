@@ -16,7 +16,7 @@ type Props = {
   onSearch: () => any,
   onClear: () => void,
   error: string,
-  toggleDropdown: () => any,
+  setDropdownIsOpen: boolean => any,
   isOpen?: boolean,
   defaultField?: string,
 };
@@ -38,6 +38,7 @@ export class OmniField extends React.Component<Props, State> {
 
   activateOmniField = () => {
     this.setState({ isSelected: true });
+    this.props.setDropdownIsOpen(true);
   };
 
   deactivateOmniField = () => {
@@ -52,7 +53,7 @@ export class OmniField extends React.Component<Props, State> {
       onClear,
       error,
       isOpen = false,
-      toggleDropdown,
+      setDropdownIsOpen,
       defaultField = "",
     } = this.props;
     const omniChange = (event: InputEvent) => {
@@ -127,7 +128,7 @@ export class OmniField extends React.Component<Props, State> {
                   className={classNames(styles.iconButton, textClass)}
                   disableRipple
                   aria-label="Expand search options"
-                  onClick={toggleDropdown}
+                  onClick={setDropdownIsOpen.bind(this, !this.props.isOpen)}
                 >
                   <ArrowDropDownIcon />
                 </IconButton>

@@ -38,7 +38,6 @@ export const OmniDropdown = (props: Props) => {
               label: name,
               value: (
                 <Component
-                  autoFocus={index === 0}
                   searchKey={`${OMNI_KEY}-${index}`}
                   placeholder={description}
                   searchType={type}

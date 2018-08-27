@@ -21,6 +21,8 @@ type Props = {
   searchDefs: SearchDefs,
   /** Handles a request to search. */
   setSearchOptions: ({ searchOptions: SearchOptionsV2 }) => any,
+  /** getInitialValues gets values to default to for omni-search. */
+  getInitialValues?: (searchDefs: SearchDefs) => SearchValues,
   /** Takes a `node` to include in the omni dropdown after the search fields */
   children?: React$Node,
 } & NavProps;
@@ -56,18 +58,21 @@ export class OmniSearchBar extends React.Component<Props, State> {
   };
 
   componentDidUpdate = async (prevProps: Props) => {
-    const { location, searchDefs } = this.props;
+    const { location, searchDefs, getInitialValues } = this.props;
     let omniText = getQuery({ location })[OMNI_KEY] || "";
     const prevOmniText = getQuery({ location: prevProps.location })[OMNI_KEY] || "";
     if (searchDefs !== prevProps.searchDefs) {
       omniText = this.mergeOmniWithLocalStorage(omniText);
+      if (getInitialValues) {
+        omniText = this.mergeOmniWithInitialValues(omniText);
+      }
     }
     let shouldSearch = false;
-    if (prevOmniText !== omniText) {
+    if (
+      searchDefs !== prevProps.searchDefs ||
+      (prevOmniText !== omniText && prevProps.location.pathname === location.pathname)
+    ) {
       await this.updateOmniText(omniText);
-      shouldSearch = true;
-    }
-    if (searchDefs !== prevProps.searchDefs) {
       shouldSearch = true;
     }
     if (shouldSearch) {
@@ -122,10 +127,36 @@ export class OmniSearchBar extends React.Component<Props, State> {
     }
   };
 
+  mergeOmniWithInitialValues = (omniText: string): string => {
+    const { searchDefs, getInitialValues } = this.props;
+    if (!getInitialValues) {
+      return omniText;
+    }
+    try {
+      const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
+      const initialValues = getInitialValues(searchDefs);
+      initialValues.forEach((value, key) => {
+        if (!searchValues.has(key)) {
+          searchValues.set(key, value);
+        }
+      });
+      return getOmniTextFromSearchValues(searchDefs, searchValues);
+    } catch (error) {
+      if (error.name === OMNI_ERROR) {
+        return omniText;
+      }
+      throw error;
+    }
+  };
+
   toggleDropdown = () => {
     this.setState(prevState => {
       return { isOpen: !prevState.isOpen };
     });
+  };
+
+  setDropdownIsOpen = (isOpen: boolean) => {
+    this.setState({ isOpen });
   };
 
   updateOmniText = (omniText: string) => {
@@ -153,16 +184,14 @@ export class OmniSearchBar extends React.Component<Props, State> {
   onSearch = (shouldUpdateBrowserHistory: boolean = false) => {
     this.setState({ isOpen: false });
     this.props.setSearchOptions({ searchOptions: getSearchOptions(this.props.searchDefs, this.state.searchValues) });
-    if (shouldUpdateBrowserHistory) {
-      const { omniText } = this.state;
-      updateQuery(
-        this.props,
-        { [OMNI_KEY]: omniText },
-        {
-          shouldUpdateBrowserHistory,
-        },
-      );
-    }
+    const { omniText } = this.state;
+    updateQuery(
+      this.props,
+      { [OMNI_KEY]: omniText },
+      {
+        shouldUpdateBrowserHistory,
+      },
+    );
   };
 
   handleClear = () => {
@@ -209,7 +238,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
             onClear={this.handleClear}
             error={this.state.error}
             isOpen={isOpen}
-            toggleDropdown={this.toggleDropdown}
+            setDropdownIsOpen={this.setDropdownIsOpen}
             defaultField={searchDefs[0].name.toLowerCase()}
           />
           {isOpen && (

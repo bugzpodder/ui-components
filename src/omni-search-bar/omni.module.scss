@@ -31,10 +31,8 @@
   .omniField {
     .field {
       width: 100%;
-      background-color: $grail-purple-med-color;
-      div {
-        color: white;
-      }
+      background-color: darken($grail-purple-light-color, 5%);
+      color: $grail-gray-dark-color;
     }
     .placeholder {
       input::placeholder {
@@ -44,17 +42,13 @@
     }
     .fieldHighlight {
       width: 100%;
-      background-color: $grail-purple-light-color;
+      background-color: lighten($grail-purple-light-color, 10%);
       color: $grail-gray-dark-color;
     }
     .scanIcon {
       font-weight: bold;
       color: $grail-color;
       display: none;
-    }
-    .searchIcon {
-      width: 36px;
-      height: 36px;
     }
     .iconButton {
       width: 36px;

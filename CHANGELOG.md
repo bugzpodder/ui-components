@@ -12,6 +12,7 @@
 8. Add `CommonPage` which provides a skeleton for a page with a title, subtitle, and optional side menu (with links to
    anchors on the page).
 9. Add `CommonTabbedPage` which extends `CommonPage` to allow for tabs.
+10. Add classes object to `Alert` component to allow more custom styling.
 
 ## 0.7.0 - 2018-10-24
 

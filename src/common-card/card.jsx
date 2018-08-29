@@ -25,6 +25,7 @@ export type CommonCardProps = {
   hasMargin?: boolean,
   /**
    * Provides classNames to the card and its sub-components. Options include:
+   *  - `root`
    *
    *  - `header`
    *

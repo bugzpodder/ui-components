@@ -17,8 +17,8 @@ import { sidebarItems } from "@grail/lib";
 type Props = {
   isOpen: boolean,
   toggle: Function,
-  domain: Symbol,
-  externalDomains: Map<Symbol, string>,
+  domain: string,
+  externalDomains: Map<string, string>,
   sidebarContent: (SidebarItem | ParentSidebarItem)[],
   InternalLinkComponent?: React$ElementType,
   footer?: React$Node,
@@ -53,6 +53,7 @@ export class Sidebar extends React.Component<Props, State> {
       const active = pathToRegexp(path, [], { end: exact }).test(currentPath);
       return (
         <ListItem
+          id={`${domain}${item.path.replace(/\//g, "-")}`}
           key={key}
           component={InternalLinkComponent}
           to={item.path}

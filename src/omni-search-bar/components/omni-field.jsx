@@ -62,7 +62,7 @@ export class OmniField extends React.Component<Props, State> {
       } = event;
       onChange(id, text);
     };
-    const isActive = isOpen || this.state.isSelected;
+    const isActive = isOpen || this.state.isSelected || omniText !== "";
     const textClass = isActive ? styles.textHighlight : styles.text;
     return (
       <div className={styles.omniField}>

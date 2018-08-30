@@ -16,9 +16,9 @@ type Props = {
   /** Defines the content aligned right in the navbar to the right of menu button. */
   right?: React$Node,
   /** Defines domain in which links should be routed. */
-  domain: Symbol,
+  domain: string,
   /** Defines links to use for external domains. */
-  externalDomains: Map<Symbol, string>,
+  externalDomains: Map<string, string>,
   /** Overrieds lib/constants with items to populate the sidebar. */
   sidebarContent?: (SidebarItem | ParentSidebarItem)[],
   /** Defines the footer of the sidebar. */

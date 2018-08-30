@@ -103,7 +103,7 @@ exports[`render Sidebar 1`] = `
                 >
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
-                    href="https://edc-client-staging.eng.aws.grail.com"
+                    href="https://edc-client-staging.eng.aws.grail.com/v/VERMILLION/trfs"
                     rel="noopener noreferrer"
                     role="button"
                     tabindex="0"
@@ -115,7 +115,7 @@ exports[`render Sidebar 1`] = `
                       <span
                         class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
                       >
-                        Sample Accessioning
+                        Commercial Accessioning
                       </span>
                     </div>
                   </a>
@@ -123,6 +123,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/samples"
+                    id="lims-lims-samples"
                     role="button"
                     tabindex="0"
                   >
@@ -140,6 +141,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/batches"
+                    id="lims-lims-batches"
                     role="button"
                     tabindex="0"
                   >
@@ -157,6 +159,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/sample-issues"
+                    id="lims-lims-sample-issues"
                     role="button"
                     tabindex="0"
                   >
@@ -174,6 +177,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/sequencing-runs"
+                    id="lims-lims-sequencing-runs"
                     role="button"
                     tabindex="0"
                   >
@@ -191,6 +195,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/new-sequencing-run"
+                    id="lims-lims-new-sequencing-run"
                     role="button"
                     tabindex="0"
                   >
@@ -208,6 +213,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/print-labels"
+                    id="lims-lims-print-labels"
                     role="button"
                     tabindex="0"
                   >
@@ -225,6 +231,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/study-samples"
+                    id="lims-lims-study-samples"
                     role="button"
                     tabindex="0"
                   >
@@ -242,6 +249,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/create-study-samples"
+                    id="lims-lims-create-study-samples"
                     role="button"
                     tabindex="0"
                   >
@@ -303,6 +311,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/program-runs"
+                    id="lims-automation-program-runs"
                     role="button"
                     tabindex="0"
                   >
@@ -320,6 +329,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/resources"
+                    id="lims-automation-resources"
                     role="button"
                     tabindex="0"
                   >
@@ -337,6 +347,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/programs"
+                    id="lims-automation-programs"
                     role="button"
                     tabindex="0"
                   >
@@ -354,6 +365,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/program-regex-tester"
+                    id="lims-automation-program-regex-tester"
                     role="button"
                     tabindex="0"
                   >
@@ -371,6 +383,7 @@ exports[`render Sidebar 1`] = `
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button active nested"
                     exact="false"
                     href="/automation/tasks"
+                    id="lims-automation-tasks"
                     role="button"
                     tabindex="0"
                   >
@@ -473,6 +486,7 @@ exports[`render Sidebar 1`] = `
             class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
             exact="false"
             href="/lims/sample-storage/racks"
+            id="lims-lims-sample-storage-racks"
             role="button"
             tabindex="0"
           >
@@ -517,6 +531,7 @@ exports[`render Sidebar 1`] = `
             class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
             exact="false"
             href="/facilities/instruments"
+            id="lims-facilities-instruments"
             role="button"
             tabindex="0"
           >
@@ -542,33 +557,6 @@ exports[`render Sidebar 1`] = `
                 class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
               >
                 R&D
-              </span>
-            </div>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <g>
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </g>
-            </svg>
-          </div>
-          <div
-            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-            role="button"
-            tabindex="0"
-          >
-            <div
-              class="MuiListItemText-root"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-              >
-                Admin
               </span>
             </div>
             <svg

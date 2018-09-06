@@ -89,14 +89,12 @@
 
         .common-select__menu-item {
           font-weight: 400;
-        }
-
-        .common-select__menu-item-selected {
-          font-weight: 500;
-        }
-
-        .common-select__menu-item-custom-content {
-          height: auto;
+          &.is-selected {
+            font-weight: 500;
+          }
+          &.is-custom-content {
+            height: auto;
+          }
         }
       }
     }

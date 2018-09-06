@@ -100,9 +100,12 @@ export const Option = (props: Props) => {
   const optionContent = formatOption ? formatOption(data) : children;
   return (
     <MenuItem
+      id={data.value}
+      data-testid={data.value}
       component="div"
-      className={classNames(classes.options, `common-select__menu-item${isSelected ? "-selected" : ""}`, {
-        "common-select__menu-item-custom-content": formatOption,
+      className={classNames(classes.options, "common-select__menu-item", {
+        "is-selected": isSelected,
+        "custom-content": formatOption,
       })}
       onFocus={onFocus}
       selected={isFocused}

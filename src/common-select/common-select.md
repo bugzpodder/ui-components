@@ -7,7 +7,7 @@ const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const countries = require("../utils/constants").COUNTRIES;
 
 class SelectExample extends React.Component {
   constructor(props) {
@@ -47,7 +47,7 @@ const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const countries = require("../utils/constants").COUNTRIES;
 
 class SelectExample extends React.Component {
   constructor(props) {
@@ -90,7 +90,7 @@ const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const countries = require("../utils/constants").COUNTRIES;
 
 class SelectExample extends React.Component {
   constructor(props) {
@@ -148,8 +148,8 @@ const ExampleBlock = require("@grail/components").ExampleBlock;
 const Chip = require("@material-ui/core/Chip").default;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../../utils/constants").COUNTRIES;
-const styles = require("../../utils/example-styles.module.scss");
+const countries = require("../utils/constants").COUNTRIES;
+const styles = require("../utils/example-styles.module.scss");
 
 class SelectExample extends React.Component {
   constructor(props) {

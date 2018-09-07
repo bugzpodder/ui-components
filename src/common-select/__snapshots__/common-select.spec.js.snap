@@ -1,0 +1,1623 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render CommonMultiSelect with preloaded values and clear one value 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-focused MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-10nd86i MuiInput-input"
+            id=""
+          >
+            <span
+              aria-live="assertive"
+              class="css-bl6clz"
+            >
+              <p
+                id="aria-selection-event"
+              >
+                 
+                option Algeria, deselected.
+              </p>
+              <p
+                id="aria-context"
+              >
+                 
+                  23 results available. Select is focused ,type to refine list, press Down to open the menu,  press left to focus selected values
+              </p>
+            </span>
+            <div
+              class="css-2o5izw common-select__control common-select__control--is-focused"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container common-select__value-container--is-multi common-select__value-container--has-value"
+              >
+                <div
+                  class="MuiChip-root common-select__chip-root"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <span
+                    class="MuiChip-label common-select__chip-label"
+                  >
+                    <div
+                      class="css-10odw4q common-select__multi-value__label"
+                    >
+                      Algeria
+                    </div>
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      data-testid="remove-ALGERIA"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <g>
+                        <path
+                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="MuiChip-root common-select__chip-root"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <span
+                    class="MuiChip-label common-select__chip-label"
+                  >
+                    <div
+                      class="css-10odw4q common-select__multi-value__label"
+                    >
+                      Afghanistan
+                    </div>
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      data-testid="remove-AFGHANISTAN"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <g>
+                        <path
+                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="react-select-9-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root common-select__clear-icon"
+                  data-testid="clear-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g>
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render and test CommonSelect 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-10nd86i MuiInput-input"
+            id="test"
+          >
+            <div
+              class="css-1aya2g8 common-select__control"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container"
+              >
+                <div
+                  class="css-1492t68 common-select__placeholder"
+                />
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="react-select-2-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 0; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="css-15k3avv common-select__menu"
+              >
+                <div
+                  class="css-11unzgr common-select__menu-list"
+                >
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="AFGHANISTAN"
+                    id="AFGHANISTAN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Afghanistan
+                      </div>
+                      <div>
+                        AFGHANISTAN
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ALAND_ISLANDS"
+                    id="ALAND_ISLANDS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Aland Islands
+                      </div>
+                      <div>
+                        ALAND_ISLANDS
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ALBANIA"
+                    id="ALBANIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Albania
+                      </div>
+                      <div>
+                        ALBANIA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ALGERIA"
+                    id="ALGERIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Algeria
+                      </div>
+                      <div>
+                        ALGERIA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="AMERICAN_SAMOA"
+                    id="AMERICAN_SAMOA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        American Samoa
+                      </div>
+                      <div>
+                        AMERICAN_SAMOA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ANDORRA"
+                    id="ANDORRA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Andorra
+                      </div>
+                      <div>
+                        ANDORRA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ANGOLA"
+                    id="ANGOLA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Angola
+                      </div>
+                      <div>
+                        ANGOLA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ANGUILLA"
+                    id="ANGUILLA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Anguilla
+                      </div>
+                      <div>
+                        ANGUILLA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ANTARCTICA"
+                    id="ANTARCTICA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Antarctica
+                      </div>
+                      <div>
+                        ANTARCTICA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ARGENTINA"
+                    id="ARGENTINA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Argentina
+                      </div>
+                      <div>
+                        ARGENTINA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ARMENIA"
+                    id="ARMENIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Armenia
+                      </div>
+                      <div>
+                        ARMENIA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="ARUBA"
+                    id="ARUBA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Aruba
+                      </div>
+                      <div>
+                        ARUBA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="AUSTRALIA"
+                    id="AUSTRALIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Australia
+                      </div>
+                      <div>
+                        AUSTRALIA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="AUSTRIA"
+                    id="AUSTRIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Austria
+                      </div>
+                      <div>
+                        AUSTRIA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="AZERBAIJAN"
+                    id="AZERBAIJAN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Azerbaijan
+                      </div>
+                      <div>
+                        AZERBAIJAN
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BAHAMAS"
+                    id="BAHAMAS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Bahamas
+                      </div>
+                      <div>
+                        BAHAMAS
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BAHRAIN"
+                    id="BAHRAIN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Bahrain
+                      </div>
+                      <div>
+                        BAHRAIN
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BANGLADESH"
+                    id="BANGLADESH"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Bangladesh
+                      </div>
+                      <div>
+                        BANGLADESH
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BARBADOS"
+                    id="BARBADOS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Barbados
+                      </div>
+                      <div>
+                        BARBADOS
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BELARUS"
+                    id="BELARUS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Belarus
+                      </div>
+                      <div>
+                        BELARUS
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BELGIUM"
+                    id="BELGIUM"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Belgium
+                      </div>
+                      <div>
+                        BELGIUM
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BELIZE"
+                    id="BELIZE"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Belize
+                      </div>
+                      <div>
+                        BELIZE
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BENIN"
+                    id="BENIN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Benin
+                      </div>
+                      <div>
+                        BENIN
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BERMUDA"
+                    id="BERMUDA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Bermuda
+                      </div>
+                      <div>
+                        BERMUDA
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item custom-content"
+                    data-testid="BHUTAN"
+                    id="BHUTAN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div>
+                        Bhutan
+                      </div>
+                      <div>
+                        BHUTAN
+                      </div>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="MuiFormHelperText-root test-helpertext common-select__helpertext"
+        data-testid="test-select-helper-text"
+      >
+        some helper text
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render async CommonSelect initial message does not display with input value 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-10nd86i MuiInput-input"
+            id=""
+          >
+            <div
+              class="css-1aya2g8 common-select__control"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container"
+              >
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="react-select-8-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value="test"
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    >
+                      test
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="css-15k3avv common-select__menu"
+              >
+                <div
+                  class="css-11unzgr common-select__menu-list"
+                >
+                  <li
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+                    data-testid="no-options-message"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    No results found
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render async CommonSelect with custom initial message 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-10nd86i MuiInput-input"
+            id=""
+          >
+            <div
+              class="css-1aya2g8 common-select__control"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container"
+              >
+                <div
+                  class="css-1492t68 common-select__placeholder"
+                />
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="react-select-7-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="css-15k3avv common-select__menu"
+              >
+                <div
+                  class="css-11unzgr common-select__menu-list"
+                >
+                  <li
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+                    data-testid="no-options-message"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    test custom message
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render async CommonSelect with default initial message 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-10nd86i MuiInput-input"
+            id=""
+          >
+            <div
+              class="css-1aya2g8 common-select__control"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container"
+              >
+                <div
+                  class="css-1492t68 common-select__placeholder"
+                />
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="react-select-6-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="css-15k3avv common-select__menu"
+              >
+                <div
+                  class="css-11unzgr common-select__menu-list"
+                >
+                  <li
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root"
+                    data-testid="no-options-message"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Begin Typing...
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render creatable CommonSelect 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-10nd86i MuiInput-input"
+            id=""
+          >
+            <div
+              class="css-1aya2g8 common-select__control"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container"
+              >
+                <div
+                  class="css-1492t68 common-select__placeholder"
+                />
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="react-select-5-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`test disabled CommonSelect 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-disabled MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-1sontr1 MuiInput-input MuiInput-disabled common-select--is-disabled"
+            id=""
+          >
+            <div
+              class="css-162g8z5 common-select__control common-select__control--is-disabled"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container"
+              >
+                <div
+                  class="css-1492t68 common-select__placeholder"
+                />
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      disabled=""
+                      id="react-select-4-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 10l5 5 5-5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p
+        class="MuiFormHelperText-root common-select__helpertext"
+        data-testid="select-helper-text"
+      >
+        select is disabled
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`test preload and clear single value 1`] = `
+<div>
+  <div
+    class="common-select__root"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <div
+        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="css-10nd86i MuiInput-input"
+            id=""
+          >
+            <div
+              class="css-1aya2g8 common-select__control"
+            >
+              <div
+                class="css-1rtrksz common-select__value-container common-select__value-container--has-value"
+              >
+                <div
+                  class="css-va7pk8 common-select__single-value"
+                >
+                  Algeria
+                </div>
+                <div
+                  class="css-rsyb7x"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="react-select-3-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1wy0on6 common-select__indicators"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root common-select__clear-icon"
+                  data-testid="clear-icon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <g>
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                  </g>
+                </svg>
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <g>
+                      <path
+                        d="M7 14l5-5 5 5z"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="css-15k3avv common-select__menu"
+              >
+                <div
+                  class="css-11unzgr common-select__menu-list"
+                >
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="AFGHANISTAN"
+                    id="AFGHANISTAN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Afghanistan
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ALAND_ISLANDS"
+                    id="ALAND_ISLANDS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Aland Islands
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ALBANIA"
+                    id="ALBANIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Albania
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item is-selected"
+                    data-testid="ALGERIA"
+                    id="ALGERIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Algeria
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="AMERICAN_SAMOA"
+                    id="AMERICAN_SAMOA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    American Samoa
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ANDORRA"
+                    id="ANDORRA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Andorra
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ANGOLA"
+                    id="ANGOLA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Angola
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ANGUILLA"
+                    id="ANGUILLA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Anguilla
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ANTARCTICA"
+                    id="ANTARCTICA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Antarctica
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ARGENTINA"
+                    id="ARGENTINA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Argentina
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ARMENIA"
+                    id="ARMENIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Armenia
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="ARUBA"
+                    id="ARUBA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Aruba
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="AUSTRALIA"
+                    id="AUSTRALIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Australia
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="AUSTRIA"
+                    id="AUSTRIA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Austria
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="AZERBAIJAN"
+                    id="AZERBAIJAN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Azerbaijan
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BAHAMAS"
+                    id="BAHAMAS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Bahamas
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BAHRAIN"
+                    id="BAHRAIN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Bahrain
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BANGLADESH"
+                    id="BANGLADESH"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Bangladesh
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BARBADOS"
+                    id="BARBADOS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Barbados
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BELARUS"
+                    id="BELARUS"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Belarus
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BELGIUM"
+                    id="BELGIUM"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Belgium
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BELIZE"
+                    id="BELIZE"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Belize
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BENIN"
+                    id="BENIN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Benin
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BERMUDA"
+                    id="BERMUDA"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Bermuda
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                  <div
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root common-select__menu-item"
+                    data-testid="BHUTAN"
+                    id="BHUTAN"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    Bhutan
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;

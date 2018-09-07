@@ -24,6 +24,7 @@ type MultiValueContainerProps = {
 };
 
 type MultiValueRemoveProps = {
+  data: CommonSelectOption,
   innerProps: Object,
 };
 
@@ -58,13 +59,21 @@ export const NoOptionsMessage = (props: NoOptionsMessageProps) => {
   if (!inputValue && selectType !== "simple") {
     initialMessage ? (message = initialMessage) : (message = "Begin Typing...");
   }
-  return <MenuItem selected={false}>{message}</MenuItem>;
+  return (
+    <MenuItem
+      data-testid="no-options-message"
+      selected={false}
+    >
+      {message}
+    </MenuItem>
+  );
 };
 
 export const ClearIndicator = (props: ClearIndicatorProps) => {
   const { innerProps } = props;
   return (
     <ClearIcon
+      data-testid="clear-icon"
       className="common-select__clear-icon"
       {...innerProps}
     />
@@ -86,13 +95,18 @@ export const MultiValueContainer = (props: MultiValueContainerProps) => {
 };
 
 export const MultiValueRemove = (props: MultiValueRemoveProps) => {
-  const { innerProps } = props;
-  return <CancelIcon {...innerProps} />;
+  const { data, innerProps } = props;
+  return (
+    <CancelIcon
+      data-testid={`remove-${data.value}`}
+      {...innerProps}
+    />
+  );
 };
 
 export const Option = (props: Props) => {
   const {
-    classes = {}, children, data, isFocused, isSelected, onFocus, selectOption, formatOption,
+    classes, children, data, isFocused, isSelected, onFocus, selectOption, formatOption,
   } = props;
   const handleClick = event => {
     selectOption(data, event);

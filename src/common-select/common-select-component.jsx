@@ -22,6 +22,7 @@ type Props = {
   id?: string,
   initialMessage?: string,
   isDisabled?: boolean,
+  menuIsOpen?: boolean,
   onChange: Function,
   placeholder?: string,
   selectType?: "simple" | "async" | "creatable",
@@ -34,6 +35,7 @@ export const CommonSelectComponent = (props: Props) => {
     onChange,
     formatOption,
 
+    menuIsOpen,
     classes = {},
     isFullWidth = false,
     helperText = "",
@@ -57,7 +59,7 @@ export const CommonSelectComponent = (props: Props) => {
             initialMessage,
             isDisabled,
             placeholder,
-            menuIsOpen: isDisabled ? false : undefined,
+            menuIsOpen: isDisabled ? false : menuIsOpen,
             classNamePrefix: "common-select",
             isClearable: true,
             onChange: value => onChange(value),
@@ -84,6 +86,7 @@ export const CommonSelectComponent = (props: Props) => {
         {helperText && (
           <FormHelperText
             error={showError}
+            data-testid={`${id ? `${id}-` : ""}select-helper-text`}
             classes={{
               root: classNames({ [`${id}-helpertext`]: id }, "common-select__helpertext"),
             }}

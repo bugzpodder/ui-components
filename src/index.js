@@ -4,6 +4,7 @@ export { AvatarIcon } from "./avatar-icon";
 export { CommonCard } from "./common-card";
 export { CommonDialog, CommonMultiPageDialog } from "./common-dialog";
 export { CommonPanel } from "./common-panel";
+export { CommonMultiSelect, CommonSelect } from "./common-select";
 export { CommonSwitch } from "./common-switch";
 export { DateInput, DateTimeInput, wrapPickerUtilProvider } from "./date-input";
 export { ExternalLinkButton } from "./external-link-button";

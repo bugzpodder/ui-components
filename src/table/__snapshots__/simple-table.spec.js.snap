@@ -19,8 +19,7 @@ exports[`render full simple table 1`] = `
             scope="col"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active indeterminate"
-              data-testid="paged-table-checkbox-header"
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked indeterminate"
             >
               <span
                 class="MuiIconButton-label"
@@ -32,11 +31,12 @@ exports[`render full simple table 1`] = `
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
                   />
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-header"
                   type="checkbox"
                   value=""
                 />
@@ -53,11 +53,15 @@ exports[`render full simple table 1`] = `
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
             scope="col"
           >
             Column Two
           </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            scope="col"
+          />
         </tr>
       </thead>
       <tbody
@@ -73,7 +77,6 @@ exports[`render full simple table 1`] = `
           >
             <span
               class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
-              data-testid="paged-table-checkbox-cell"
             >
               <span
                 class="MuiIconButton-label"
@@ -90,6 +93,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
                   type="checkbox"
                   value=""
@@ -111,7 +115,317 @@ exports[`render full simple table 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="First Datum-2"
-          />
+          >
+            Second Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            data-cell-id="First Datum-3"
+          >
+            <span>
+              Third Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Fourth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Fourth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-fourth-datum"
+                  id="Fourth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Fourth Datum-1"
+          >
+            <span>
+              Fourth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Fourth Datum-2"
+          >
+            Fifth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            data-cell-id="Fourth Datum-3"
+          >
+            <span>
+              Sixth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Seventh Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Seventh Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-seventh-datum"
+                  id="Seventh Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventh Datum-1"
+          >
+            <span>
+              Seventh Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventh Datum-2"
+          >
+            Eighth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            data-cell-id="Seventh Datum-3"
+          >
+            <span>
+              Ninth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Tenth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Tenth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-tenth-datum"
+                  id="Tenth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Tenth Datum-1"
+          >
+            <span>
+              Tenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Tenth Datum-2"
+          >
+            Eleventh Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            data-cell-id="Tenth Datum-3"
+          >
+            <span>
+              Twelfth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Thirteenth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Thirteenth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-thirteenth-datum"
+                  id="Thirteenth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Thirteenth Datum-1"
+          >
+            <span>
+              Thirteenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Thirteenth Datum-2"
+          >
+            Fifteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            data-cell-id="Thirteenth Datum-3"
+          >
+            <span>
+              Sixteenth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Seventeenth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Seventeenth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-seventeenth-datum"
+                  id="Seventeenth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventeenth Datum-1"
+          >
+            <span>
+              Seventeenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventeenth Datum-2"
+          >
+            Eighteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            data-cell-id="Seventeenth Datum-3"
+          >
+            <span>
+              Ninteenth Datum
+            </span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -140,11 +454,15 @@ exports[`render loading simple table 1`] = `
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
             scope="col"
           >
             Column Two
           </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            scope="col"
+          />
         </tr>
       </thead>
       <tbody
@@ -165,7 +483,152 @@ exports[`render loading simple table 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-1"
-          />
+          >
+            Second Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            data-cell-id="0-2"
+          >
+            <span>
+              Third Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="1"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="1-0"
+          >
+            <span>
+              Fourth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="1-1"
+          >
+            Fifth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            data-cell-id="1-2"
+          >
+            <span>
+              Sixth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="2"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="2-0"
+          >
+            <span>
+              Seventh Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="2-1"
+          >
+            Eighth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            data-cell-id="2-2"
+          >
+            <span>
+              Ninth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="3"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="3-0"
+          >
+            <span>
+              Tenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="3-1"
+          >
+            Eleventh Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            data-cell-id="3-2"
+          >
+            <span>
+              Twelfth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="4"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="4-0"
+          >
+            <span>
+              Thirteenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="4-1"
+          >
+            Fifteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            data-cell-id="4-2"
+          >
+            <span>
+              Sixteenth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="5"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="5-0"
+          >
+            <span>
+              Seventeenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="5-1"
+          >
+            Eighteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            data-cell-id="5-2"
+          >
+            <span>
+              Ninteenth Datum
+            </span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -203,11 +666,15 @@ exports[`render simple table 1`] = `
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
             scope="col"
           >
             Column Two
           </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            scope="col"
+          />
         </tr>
       </thead>
       <tbody
@@ -228,7 +695,152 @@ exports[`render simple table 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-1"
-          />
+          >
+            Second Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            data-cell-id="0-2"
+          >
+            <span>
+              Third Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="1"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="1-0"
+          >
+            <span>
+              Fourth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="1-1"
+          >
+            Fifth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            data-cell-id="1-2"
+          >
+            <span>
+              Sixth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="2"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="2-0"
+          >
+            <span>
+              Seventh Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="2-1"
+          >
+            Eighth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            data-cell-id="2-2"
+          >
+            <span>
+              Ninth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="3"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="3-0"
+          >
+            <span>
+              Tenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="3-1"
+          >
+            Eleventh Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            data-cell-id="3-2"
+          >
+            <span>
+              Twelfth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="4"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="4-0"
+          >
+            <span>
+              Thirteenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="4-1"
+          >
+            Fifteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            data-cell-id="4-2"
+          >
+            <span>
+              Sixteenth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="5"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="5-0"
+          >
+            <span>
+              Seventeenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="5-1"
+          >
+            Eighteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            data-cell-id="5-2"
+          >
+            <span>
+              Ninteenth Datum
+            </span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -256,7 +868,6 @@ exports[`render simple table with all items selected 1`] = `
           >
             <span
               class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked indeterminate"
-              data-testid="paged-table-checkbox-header"
             >
               <span
                 class="MuiIconButton-label"
@@ -273,6 +884,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-header"
                   type="checkbox"
                   value=""
                 />
@@ -289,11 +901,15 @@ exports[`render simple table with all items selected 1`] = `
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
             scope="col"
           >
             Column Two
           </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            scope="col"
+          />
         </tr>
       </thead>
       <tbody
@@ -309,7 +925,6 @@ exports[`render simple table with all items selected 1`] = `
           >
             <span
               class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
-              data-testid="paged-table-checkbox-cell"
             >
               <span
                 class="MuiIconButton-label"
@@ -326,6 +941,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
                   type="checkbox"
                   value=""
@@ -347,7 +963,317 @@ exports[`render simple table with all items selected 1`] = `
           <td
             class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="First Datum-2"
-          />
+          >
+            Second Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            data-cell-id="First Datum-3"
+          >
+            <span>
+              Third Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Fourth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Fourth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked active"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-fourth-datum"
+                  id="Fourth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Fourth Datum-1"
+          >
+            <span>
+              Fourth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Fourth Datum-2"
+          >
+            Fifth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            data-cell-id="Fourth Datum-3"
+          >
+            <span>
+              Sixth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Seventh Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Seventh Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-seventh-datum"
+                  id="Seventh Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventh Datum-1"
+          >
+            <span>
+              Seventh Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventh Datum-2"
+          >
+            Eighth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            data-cell-id="Seventh Datum-3"
+          >
+            <span>
+              Ninth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Tenth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Tenth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-tenth-datum"
+                  id="Tenth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Tenth Datum-1"
+          >
+            <span>
+              Tenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Tenth Datum-2"
+          >
+            Eleventh Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            data-cell-id="Tenth Datum-3"
+          >
+            <span>
+              Twelfth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Thirteenth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Thirteenth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-thirteenth-datum"
+                  id="Thirteenth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Thirteenth Datum-1"
+          >
+            <span>
+              Thirteenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Thirteenth Datum-2"
+          >
+            Fifteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            data-cell-id="Thirteenth Datum-3"
+          >
+            <span>
+              Sixteenth Datum
+            </span>
+          </td>
+        </tr>
+        <tr
+          class="MuiTableRow-root"
+          data-testid="Seventeenth Datum"
+        >
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            data-cell-id="Seventeenth Datum-0"
+          >
+            <span
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                  />
+                </svg>
+                <input
+                  class="MuiSwitchBase-input"
+                  data-testid="table-checkbox-cell-seventeenth-datum"
+                  id="Seventeenth Datum"
+                  type="checkbox"
+                  value=""
+                />
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventeenth Datum-1"
+          >
+            <span>
+              Seventeenth Datum
+            </span>
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell"
+            data-cell-id="Seventeenth Datum-2"
+          >
+            Eighteenth Datum
+          </td>
+          <td
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            data-cell-id="Seventeenth Datum-3"
+          >
+            <span>
+              Ninteenth Datum
+            </span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -376,11 +1302,15 @@ exports[`render simple table with no results 1`] = `
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
             scope="col"
           >
             Column Two
           </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            scope="col"
+          />
         </tr>
       </thead>
       <tbody
@@ -391,7 +1321,7 @@ exports[`render simple table with no results 1`] = `
         >
           <td
             class="MuiTableCell-root MuiTableCell-body no-results noResults"
-            colspan="2"
+            colspan="3"
           >
             0 Results
           </td>
@@ -423,11 +1353,15 @@ exports[`render simple table with no results and is loading 1`] = `
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head columnThree-header tableHeader"
+            class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
             scope="col"
           >
             Column Two
           </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            scope="col"
+          />
         </tr>
       </thead>
       <tbody
@@ -438,7 +1372,7 @@ exports[`render simple table with no results and is loading 1`] = `
         >
           <td
             class="MuiTableCell-root MuiTableCell-body no-results noResults"
-            colspan="2"
+            colspan="3"
           />
         </tr>
       </tbody>

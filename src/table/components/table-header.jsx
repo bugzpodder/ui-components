@@ -73,6 +73,7 @@ export const TableHeader = (props: Props) => {
             inner = (
               <TableSortLabel
                 className={`sort-${fieldId}`}
+                data-testid={`sort-${fieldId}`}
                 active={isSorted}
                 direction={sortOrder}
                 onClick={event => handleClickSort(event, accessor)}
@@ -85,7 +86,8 @@ export const TableHeader = (props: Props) => {
             ((enableSelectAll || !isCheckboxHeader) && (
               <TableCell
                 key={key}
-                className={classNames(`${fieldId}-header`, headerClassName, {
+                className={classNames(headerClassName, {
+                  [`${fieldId}-header`]: fieldId,
                   [styles.singleIcon]: isCheckboxHeader || isSingleIcon,
                   [styles.tableHeader]: !isCheckboxHeader,
                 })}

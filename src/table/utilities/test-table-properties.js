@@ -6,6 +6,32 @@ export const data = [
   {
     columnOne: "First Datum",
     columnTwo: "Second Datum",
+    columnThree: "Third Datum",
+  },
+  {
+    columnOne: "Fourth Datum",
+    columnTwo: "Fifth Datum",
+    columnThree: "Sixth Datum",
+  },
+  {
+    columnOne: "Seventh Datum",
+    columnTwo: "Eighth Datum",
+    columnThree: "Ninth Datum",
+  },
+  {
+    columnOne: "Tenth Datum",
+    columnTwo: "Eleventh Datum",
+    columnThree: "Twelfth Datum",
+  },
+  {
+    columnOne: "Thirteenth Datum",
+    columnTwo: "Fifteenth Datum",
+    columnThree: "Sixteenth Datum",
+  },
+  {
+    columnOne: "Seventeenth Datum",
+    columnTwo: "Eighteenth Datum",
+    columnThree: "Ninteenth Datum",
   },
 ];
 
@@ -13,6 +39,7 @@ export const columns = [
   {
     Header: "Column One",
     accessor: "columnOne",
+    isSortable: true,
     Cell: ({ value }: { value: string }) => {
       // eslint-disable-next-line react/jsx-filename-extension
       return <span>{value}</span>;
@@ -20,8 +47,16 @@ export const columns = [
   },
   {
     Header: "Column Two",
-    accessor: "columnThree",
+    accessor: "columnTwo",
     isSortable: false,
+  },
+  {
+    accessor: (instance: Object) => instance.columnThree,
+    className: (value: string) => `test-${value.toLowerCase().replace(" ", "-")}-className`,
+    Cell: ({ value }: { value: string }) => {
+      // eslint-disable-next-line react/jsx-filename-extension
+      return <span>{value}</span>;
+    },
   },
 ];
 
@@ -31,13 +66,23 @@ export const invalidColumns = [
   },
 ];
 
+export const someSelectedRows = ["First Datum", "Fourth Datum"];
+export const allSelectedRows = [
+  "First Datum",
+  "Fourth Datum",
+  "Seventh Datum",
+  "Tenth Datum",
+  "Thirteenth Datum",
+  "Seventeenth Datum",
+];
+
 export const tableOptions: LegacyApiQueryOptions = {
   offset: 0,
   count: 5,
   searchOptions: new Map(),
   sortOptions: [{ id: "columnOne", desc: false }],
   isLoading: false,
-  selectedRowIds: ["First Datum"],
+  selectedRowIds: someSelectedRows,
 };
 
 export const invalidTableOptions = {

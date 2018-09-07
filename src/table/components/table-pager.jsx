@@ -41,7 +41,6 @@ export const TablePager = (props: Props) => {
     onSelect && onSelect([]);
     onPageChange && onPageChange({ offset, count: count || 10 });
   };
-
   return (
     <TablePagination
       component="div"
@@ -53,8 +52,8 @@ export const TablePager = (props: Props) => {
       onChangePage={onChangePage}
       onChangeRowsPerPage={onChangeRowsPerPage}
       rowsPerPageOptions={[5, 10, 25, 50]}
-      backIconButtonProps={{ className: "previous-page" }}
-      nextIconButtonProps={{ className: "next-page" }}
+      backIconButtonProps={{ className: "previous-page", "data-testid": "previous-page" }}
+      nextIconButtonProps={{ className: "next-page", "data-testid": "next-page" }}
       SelectProps={{ id: "rows-per-page", className: `select-row-count ${styles.selectRowCount}` }}
     />
   );

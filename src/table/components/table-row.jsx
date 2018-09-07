@@ -35,7 +35,8 @@ export const PagedTableRow = (props: Props) => {
         let value = "";
         if (typeof accessor === "string") {
           value = instance[accessor];
-        } else if (typeof accessor === "function") {
+        }
+        if (typeof accessor === "function") {
           value = accessor(instance);
         }
         if (Cell) {

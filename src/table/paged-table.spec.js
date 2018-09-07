@@ -4,8 +4,8 @@ import React from "react";
 import mockConsole from "jest-mock-console";
 import { PagedTable } from "./index";
 import { TestWrapper } from "../utils";
-import { cleanup, render } from "react-testing-library";
 import {
+  allSelectedRows,
   columns,
   data,
   headerActions,
@@ -13,14 +13,17 @@ import {
   invalidTableOptions,
   tableOptions,
 } from "./utilities/test-table-properties";
+import { bindElementToQueries } from "dom-testing-library";
+import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
+const bodyUtils = bindElementToQueries(document.body);
 
 /**
  Passing Cases
  */
 
-test("render simple paged table", () => {
+test("render basic paged table", () => {
   const { container } = render(
     <TestWrapper>
       <PagedTable
@@ -70,11 +73,12 @@ test("render paged table with no results and is loading", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render paged table with no selected items", () => {
-  const mockSelect = jest.fn();
+test("render paged table with no initially selected items, then select items", () => {
+  const mockSelect = jest.fn(result => result);
   const { container } = render(
     <TestWrapper>
       <PagedTable
+        idKey="columnOne"
         columns={columns}
         data={data}
         onSelect={mockSelect}
@@ -82,19 +86,45 @@ test("render paged table with no selected items", () => {
       />
     </TestWrapper>,
   );
+  fireEvent.click(bodyUtils.getByTestId("table-checkbox-cell-first-datum"));
+  expect(mockSelect.mock.results[0].value).toEqual(["First Datum"]);
+  fireEvent.click(bodyUtils.getByTestId("table-checkbox-header"));
+  expect(mockSelect.mock.results[2].value).toEqual(allSelectedRows);
   expect(container).toMatchSnapshot();
 });
 
-test("render full paged table", () => {
-  const mockPagination = jest.fn();
-  const mockSelect = jest.fn();
+test("render paged table with all items selected, then unselect items", () => {
+  const mockSelect = jest.fn(result => result);
+  const { container } = render(
+    <TestWrapper>
+      <PagedTable
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        onSelect={mockSelect}
+        classes={{ rows: () => "test-row-classname" }}
+        selectedRows={allSelectedRows}
+      />
+    </TestWrapper>,
+  );
+  fireEvent.click(bodyUtils.getByTestId("table-checkbox-cell-first-datum"));
+  expect(mockSelect.mock.results[0].value).toEqual(allSelectedRows.slice(1, allSelectedRows.length));
+  fireEvent.click(bodyUtils.getByTestId("table-checkbox-header"));
+  expect(mockSelect.mock.results[2].value).toEqual([]);
+  expect(container).toMatchSnapshot();
+});
+
+test("render paged table and test pagination", () => {
+  const pagedData = data.slice(tableOptions.offset, tableOptions.offset + (tableOptions.count + 1));
+  const mockPagination = jest.fn(result => result);
+  const mockSelect = jest.fn(result => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
         title="Test Table"
         idKey="columnOne"
         columns={columns}
-        data={data}
+        data={pagedData}
         headerActions={headerActions}
         tableOptions={tableOptions}
         onPageChange={mockPagination}
@@ -103,7 +133,27 @@ test("render full paged table", () => {
       />
     </TestWrapper>,
   );
-  expect(getByTestId("card-header")).toHaveTextContent("Test Table (1 Selected)");
+  expect(getByTestId("card-header")).toHaveTextContent("Test Table (2 Selected)");
+  fireEvent.click(bodyUtils.getByTestId("next-page"));
+  expect(mockPagination.mock.results[0].value).toEqual({ offset: 5, count: 5 });
+  expect(container).toMatchSnapshot();
+});
+
+test("render paged table and test sorting", () => {
+  const mockSort = jest.fn(result => result);
+  const { container } = render(
+    <TestWrapper>
+      <PagedTable
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        onSort={mockSort}
+      />
+    </TestWrapper>,
+  );
+  fireEvent.click(bodyUtils.getByTestId("sort-columnOne"));
+  expect(mockSort.mock.results[0].value).toEqual({ sortOptions: [{ id: "columnOne", desc: true }] });
   expect(container).toMatchSnapshot();
 });
 

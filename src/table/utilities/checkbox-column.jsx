@@ -26,9 +26,6 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
   };
 
   const selectItem = (rowId: number | string) => {
-    if (rowId === undefined) {
-      return;
-    }
     const newSelection = [];
     if (selectedRows.includes(rowId)) {
       newSelection.push(...selectedRows.filter(item => item !== rowId));
@@ -37,13 +34,14 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
     }
     onSelect && onSelect(newSelection);
   };
+
   return {
     accessor: "COLUMN_SELECT",
     className: styles.singleIcon,
     Header: (
       <Checkbox
         className={classNames({ active: allAreChecked, indeterminate: someAreChecked })}
-        data-testid="paged-table-checkbox-header"
+        inputProps={{ "data-testid": "table-checkbox-header" }}
         color="primary"
         checked={someAreChecked || allAreChecked}
         indeterminate={someAreChecked && !allAreChecked}
@@ -51,11 +49,12 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
       />
     ),
     Cell: ({ rowId }: PagedTableCell) => {
+      const testId = typeof rowId === "string" ? rowId.toLowerCase().replace(" ", "-") : rowId;
       return (
         <Checkbox
           id={String(rowId)}
           className={classNames({ active: selectedRows.includes(rowId) })}
-          data-testid="paged-table-checkbox-cell"
+          inputProps={{ "data-testid": `table-checkbox-cell-${testId}` }}
           color="primary"
           checked={selectedRows.includes(rowId)}
           onChange={() => selectItem(rowId)}

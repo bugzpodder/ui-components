@@ -47,9 +47,12 @@ export class OmniSearchBar extends React.Component<Props, State> {
   };
 
   componentDidMount = async () => {
-    const { location } = this.props;
+    const { location, getInitialValues } = this.props;
     let omniText = getQuery({ location })[OMNI_KEY];
     omniText = this.mergeOmniWithLocalStorage(omniText);
+    if (getInitialValues) {
+      omniText = this.mergeOmniWithInitialValues(omniText);
+    }
     if (!isValueValid(omniText)) {
       return null;
     }

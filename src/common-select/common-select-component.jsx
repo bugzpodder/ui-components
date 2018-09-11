@@ -56,6 +56,7 @@ export const CommonSelectComponent = (props: Props) => {
           inputProps={{
             ...otherProps,
             id,
+            inputId: id && `${id}-select-input`,
             initialMessage,
             isDisabled,
             placeholder,

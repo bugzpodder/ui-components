@@ -1,7 +1,8 @@
 @import "../../styles/colors.scss";
+@import "../../styles/navbar-constants.scss";
 
 .appBar {
-  margin-bottom: 30px;
+  margin-bottom: $grail-navbar-margin-bottom;
   .nonProductionWarning {
     background-color: $grail-red-color;
     text-align: center;

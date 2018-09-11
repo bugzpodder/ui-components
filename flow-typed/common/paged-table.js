@@ -32,6 +32,7 @@ declare type PagedTableClasses = {
   rows?: string | Function,
   pagination?: string,
   table?: string,
+  tableContainer?: string,
 };
 
 declare type SelectionProps = {

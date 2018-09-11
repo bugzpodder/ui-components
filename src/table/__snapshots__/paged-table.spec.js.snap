@@ -3,10 +3,11 @@
 exports[`render basic paged table 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table
@@ -211,10 +212,11 @@ exports[`render basic paged table 1`] = `
 exports[`render loading paged table 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table
@@ -428,7 +430,8 @@ exports[`render loading paged table 1`] = `
 exports[`render paged table and test pagination 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
       class="MuiCardHeader-root"
@@ -455,7 +458,7 @@ exports[`render paged table and test pagination 1`] = `
       </div>
     </div>
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table
@@ -884,7 +887,7 @@ exports[`render paged table and test pagination 1`] = `
       </table>
     </div>
     <div
-      class="MuiCardActions-root tableFooter"
+      class="MuiCardActions-root pagedTableCardFooter tableFooter"
       data-testid="card-actions"
     >
       <div
@@ -998,10 +1001,11 @@ exports[`render paged table and test pagination 1`] = `
 exports[`render paged table and test sorting 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table
@@ -1259,7 +1263,8 @@ exports[`render paged table and test sorting 1`] = `
 exports[`render paged table with all items selected, then unselect items 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
       class="MuiCardHeader-root"
@@ -1277,7 +1282,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
       </div>
     </div>
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table
@@ -1712,10 +1717,11 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
 exports[`render paged table with no initially selected items, then select items 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table
@@ -2150,10 +2156,11 @@ exports[`render paged table with no initially selected items, then select items 
 exports[`render paged table with no results 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table
@@ -2206,10 +2213,11 @@ exports[`render paged table with no results 1`] = `
 exports[`render paged table with no results and is loading 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root tableContainer PagedTable card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
+    data-testid="paged-table"
   >
     <div
-      class="MuiCardContent-root tableContent"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-content"
     >
       <table

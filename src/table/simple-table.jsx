@@ -1,5 +1,6 @@
 // @flow
 import React from "react";
+import classNames from "classnames";
 import styles from "./table.module.scss";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
@@ -53,12 +54,14 @@ type Props = {
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
 export const SimpleTable = (props: Props) => {
-  const { columns, data, isLoading = false } = props;
+  const {
+    columns, classes = {}, data, isLoading = false,
+  } = props;
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");
   }
   return (
-    <div className={styles.tableContainer}>
+    <div className={classNames(styles.tableContainer, classes.tableContainer)}>
       <TableComponent {...props} />
       {isLoading && <SpinnerOverlay />}
     </div>

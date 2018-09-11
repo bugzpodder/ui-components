@@ -91,10 +91,11 @@ export const PagedTable = (props: Props) => {
         title={cardTitle}
         headerActions={headerActions}
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
+        data-testid="paged-table"
         classes={{
-          root: classNames(styles.tableContainer, "PagedTable", classes.root),
-          body: classNames(styles.tableContent, classes.body),
-          footer: classNames({ [styles.tableFooter]: onPageChange }, classes.pagination),
+          root: classNames(styles.pagedTableCardRoot, classes.root),
+          body: classNames(styles.pagedTableCardBody, styles.tableContainer, classes.tableContainer, classes.body),
+          footer: classNames(styles.pagedTableCardFooter, { [styles.tableFooter]: onPageChange }, classes.pagination),
         }}
       >
         <TableComponent {...tableProps} />

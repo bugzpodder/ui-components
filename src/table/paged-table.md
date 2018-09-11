@@ -11,7 +11,7 @@ class TestPagedTable extends React.Component {
     this.state = {
       tableOptions: {
         offset: 0,
-        count: 5,
+        count: 25,
         sortOptions: [{ id: "name", desc: false }],
         selectedRowIds: [],
       },
@@ -23,6 +23,16 @@ class TestPagedTable extends React.Component {
         { word: "Mouse Potato", origin: "General English" },
         { word: "Ogdoad", origin: "General English" },
         { word: "Sesquipedalian", origin: "General English" },
+        { word: "Bubbler", origin: "North American" },
+        { word: "Git", origin: "Britain" },
+        { word: "Bubbler", origin: "North American" },
+        { word: "Git", origin: "Britain" },
+        { word: "Bubbler", origin: "North American" },
+        { word: "Git", origin: "Britain" },
+        { word: "Bubbler", origin: "North American" },
+        { word: "Git", origin: "Britain" },
+        { word: "Bubbler", origin: "North American" },
+        { word: "Git", origin: "Britain" },
       ],
     };
 

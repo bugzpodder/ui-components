@@ -48,7 +48,7 @@ exports[`OmniSearchBar renders properly 1`] = `
             aria-invalid="false"
             class="MuiInput-input"
             id="omni"
-            placeholder="Search part number here or use dropdown"
+            placeholder="Search here or use dropdown"
             type="text"
             value=""
           />
@@ -58,7 +58,7 @@ exports[`OmniSearchBar renders properly 1`] = `
             <button
               aria-label="Expand search options"
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit iconButton text"
-              data-testid="menu-test"
+              data-testid="search-options-expander"
               id="omni-menu"
               label="menu"
               tabindex="0"

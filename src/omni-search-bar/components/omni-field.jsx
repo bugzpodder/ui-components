@@ -7,6 +7,7 @@ import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import TextField from "@material-ui/core/TextField";
 import classNames from "classnames";
+import keycode from "keycode";
 import styles from "../omni.module.scss";
 import { OMNI_KEY } from "@grail/lib";
 
@@ -43,18 +44,12 @@ export class OmniField extends React.Component<Props, State> {
 
   deactivateOmniField = () => {
     this.setState({ isSelected: false });
+    this.props.setDropdownIsOpen(false);
   };
 
   render = () => {
     const {
-      omniText,
-      onChange,
-      onSearch,
-      onClear,
-      error,
-      isOpen = false,
-      setDropdownIsOpen,
-      defaultField = "",
+      omniText, onChange, onSearch, onClear, error, isOpen = false, setDropdownIsOpen,
     } = this.props;
     const omniChange = (event: InputEvent) => {
       const {
@@ -71,8 +66,18 @@ export class OmniField extends React.Component<Props, State> {
           className={classNames(styles.placeholder, textClass, isActive ? styles.fieldHighlight : styles.field)}
           onChange={omniChange}
           onKeyDown={event => {
-            if (event.keyCode === 13) {
-              onSearch();
+            switch (event.keyCode) {
+              case keycode("Enter"):
+                return onSearch();
+              case keycode("Down"):
+                this.activateOmniField();
+                event.preventDefault();
+                break;
+              case keycode("Up"):
+                this.deactivateOmniField();
+                event.preventDefault();
+                break;
+              default:
             }
           }}
           onFocus={this.activateOmniField}
@@ -82,7 +87,7 @@ export class OmniField extends React.Component<Props, State> {
           helperText={error}
           FormHelperTextProps={{ error: true }}
           id={OMNI_KEY}
-          placeholder={`Search ${defaultField === "" ? "" : defaultField.concat(" ")}here or use dropdown`}
+          placeholder="Search here or use dropdown"
           InputProps={{
             disableUnderline: true,
             startAdornment: (
@@ -121,7 +126,7 @@ export class OmniField extends React.Component<Props, State> {
                 )}
                 <IconButton
                   id={`${OMNI_KEY}-menu`}
-                  data-testid="menu-test"
+                  data-testid="search-options-expander"
                   label="menu"
                   color="inherit"
                   title="Search options"

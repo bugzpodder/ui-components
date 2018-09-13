@@ -3,6 +3,7 @@ import "jest-dom/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
 import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
 import React from "react";
+import keycode from "keycode";
 import {
   DATETIME_SEARCH_TYPE,
   DATE_SEARCH_TYPE,
@@ -19,12 +20,13 @@ const searchDefs: SearchDefs = [
     name: "Part Number",
     type: LIKE_TEXT_SEARCH_TYPE,
     description: "e.g. G0000",
+    searchFields: ["part"],
   },
   {
     id: "lotNumber",
     name: "Lot Number",
     type: MULTI_FIELD_TEXT_SEARCH_TYPE,
-    aliases: new Set(["lot"]),
+    aliases: ["lot"],
     description: "Lot Num/External Ref",
     searchFields: ["lotNumber", "externalReference"],
   },
@@ -54,8 +56,9 @@ describe("OmniSearchBar", () => {
       </MuiPickersUtilsProvider>
     </TestWrapper>,
   );
+  const omniField = getByPlaceholderText("Search here or use dropdown");
   it("renders properly", () => {
-    expect(getByPlaceholderText("Search part number here or use dropdown")).toBeInTheDOM();
+    expect(getByPlaceholderText("Search here or use dropdown")).toBeInTheDOM();
     expect(container).toMatchSnapshot();
   });
   it("doesn't render dropdown or clickaway", () => {
@@ -67,7 +70,7 @@ describe("OmniSearchBar", () => {
     let dropdown = container.querySelector("#omni-dropdown");
     expect(clickaway).not.toBeInTheDOM();
     expect(dropdown).not.toBeInTheDOM();
-    fireEvent.click(getByTestId("menu-test"));
+    fireEvent.click(getByTestId("search-options-expander"));
     clickaway = container.querySelector("#omni-clickaway");
     dropdown = container.querySelector("#omni-dropdown");
     expect(clickaway).toBeInTheDOM();
@@ -78,7 +81,45 @@ describe("OmniSearchBar", () => {
     dropdown = container.querySelector("#omni-dropdown");
     expect(clickaway).not.toBeInTheDOM();
     expect(dropdown).not.toBeInTheDOM();
-    fireEvent.click(getByTestId("menu-test"));
+  });
+  it("opens and closes dropdown when clicking expander", () => {
+    let dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+    fireEvent.click(getByTestId("search-options-expander"));
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).toBeInTheDOM();
+    fireEvent.click(getByTestId("search-options-expander"));
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+  });
+  it("opens and closes dropdown when typing up/down arrows", () => {
+    let dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+    fireEvent.keyDown(omniField, { keyCode: keycode("Down") });
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).toBeInTheDOM();
+    fireEvent.keyDown(omniField, { keyCode: keycode("Up") });
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+  });
+  it("opens and closes dropdown when focusing/blurring", () => {
+    let dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+    fireEvent.focus(omniField);
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).toBeInTheDOM();
+    fireEvent.blur(omniField);
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+  });
+  it("opens and closes dropdown when focusing/entering", () => {
+    let dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+    fireEvent.focus(omniField);
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).toBeInTheDOM();
+    fireEvent.keyDown(omniField, { keyCode: keycode("Enter") });
+    dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDOM();
   });
 });

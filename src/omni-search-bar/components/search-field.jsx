@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
+import keycode from "keycode";
 import moment from "moment";
 import { DATE_FORMAT, DATE_SEARCH_TYPES, isValueValid } from "@grail/lib";
 import { DateInput } from "../../date-input";
@@ -26,7 +27,7 @@ export const SearchField = (props: Props) => {
     onChange(id, text);
   };
   const onEnter = event => {
-    if (event.keyCode === 13) {
+    if (event.keyCode === keycode("Enter")) {
       onSearch();
     }
   };

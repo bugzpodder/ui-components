@@ -2,9 +2,11 @@
 
 exports[`render tabbed card 1`] = `
 <div>
-  <div>
+  <div
+    class="tabbedCardContainer"
+  >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root pageHeader"
+      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
     >
       <div
         class="MuiCardHeader-root cardHeader"
@@ -117,32 +119,34 @@ exports[`render tabbed card 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="alertContainer"
-      data-testid="alert"
-    >
+    <div>
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
-        role="alertdialog"
+        class="alertContainer"
+        data-testid="alert"
       >
         <div
-          class="MuiSnackbarContent-message"
+          class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+          role="alertdialog"
         >
-          <span>
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root alertIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <g>
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                />
-              </g>
-            </svg>
-            Tab One!
-          </span>
+          <div
+            class="MuiSnackbarContent-message"
+          >
+            <span>
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root alertIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </g>
+              </svg>
+              Tab One!
+            </span>
+          </div>
         </div>
       </div>
     </div>

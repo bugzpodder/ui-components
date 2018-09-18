@@ -24,6 +24,8 @@ type Props = {
   /**
    * Provides classNames to the card and its sub-components. Options include:
    *
+   *  - `content`
+   *
    *  - `header`
    *
    *  - `headerActions` (applied to headerActions container)
@@ -75,15 +77,17 @@ export const TabbedCard = (props: Props) => {
   });
   const selectedTab = tabConfigs.find(tab => tab.value === value) || {};
   return (
-    <div className={classes.root}>
+    <div className={classNames(classes.root, styles.tabbedCardContainer)}>
       <Card
-        className={classNames(styles.pageHeader)}
+        classes={{
+          root: classNames(classes.header, styles.stickyHeader, styles.pageHeader),
+        }}
         {...cardProps}
       >
         <CardHeader
           title={title}
           classes={{
-            root: classNames(styles.cardHeader, classes.header),
+            root: styles.cardHeader,
             action: classNames(styles.headerActions, classes.headerActions),
             title: classNames("header-title", classes.title),
             subheader: classes.subheader,
@@ -121,7 +125,7 @@ export const TabbedCard = (props: Props) => {
           })}
         </Tabs>
       </Card>
-      {selectedTab.content}
+      <div className={classes.content}>{selectedTab.content}</div>
     </div>
   );
 };

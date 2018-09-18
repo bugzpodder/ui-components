@@ -34,7 +34,6 @@ const headerActions = [
 <TabbedCard
   title="Example Tabbed Card"
   subheader="This is a subheader"
-  initialPage="one"
   classes={{
     root: "main-container",
     tabs: "tabs-container",

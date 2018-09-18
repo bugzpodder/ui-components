@@ -13,6 +13,7 @@ declare type CommonCardClasses = {
 };
 
 declare type TabbedCardClasses = {
+  content?: string,
   header?: string,
   headerActions?: string,
   tabs?: string,

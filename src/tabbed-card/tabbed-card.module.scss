@@ -1,21 +1,29 @@
 @import "../styles/navbar-constants.scss";
 
-.pageHeader {
-	margin-top: -$grail-navbar-margin-bottom;
-	margin-bottom: 20px;
+.tabbedCardContainer {
+  .stickyHeader {
+    position: sticky;
+    z-index: 20;
+    top: 118px;
+  }
 
-	.cardHeader {
-		.headerActions {
-			margin-top: 0;
-			margin-right: 0;
+  .pageHeader {
+    margin-top: -$grail-navbar-margin-bottom;
+    margin-bottom: 20px;
 
-			> * + * {
-				margin-left: 12px;
-			}
-		}
+    .cardHeader {
+      .headerActions {
+        margin-top: 0;
+        margin-right: 0;
 
-		.headerTab {
-			width: 250px;
-		}
-	}
+        > * + * {
+          margin-left: 12px;
+        }
+      }
+
+      .headerTab {
+        width: 250px;
+      }
+    }
+  }
 }

@@ -102,13 +102,13 @@ describe("OmniSearchBar", () => {
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDOM();
   });
-  it("opens and closes dropdown when focusing/blurring", () => {
+  it("opens dropdown when focusing", () => {
     let dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDOM();
     fireEvent.focus(omniField);
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).toBeInTheDOM();
-    fireEvent.blur(omniField);
+    fireEvent.click(getByTestId("search-options-expander"));
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDOM();
   });
@@ -121,5 +121,15 @@ describe("OmniSearchBar", () => {
     fireEvent.keyDown(omniField, { keyCode: keycode("Enter") });
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDOM();
+  });
+  it("opens dropdown when focusing, leaving open when clicking in dropdown", () => {
+    let dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).not.toBeInTheDOM();
+    fireEvent.focus(omniField);
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).toBeInTheDOM();
+    fireEvent.click(dropdown);
+    dropdown = container.querySelector("#omni-dropdown");
+    expect(dropdown).toBeInTheDOM();
   });
 });

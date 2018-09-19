@@ -39,12 +39,16 @@ export class OmniField extends React.Component<Props, State> {
 
   activateOmniField = () => {
     this.setState({ isSelected: true });
-    this.props.setDropdownIsOpen(true);
+    // Purposefully open the dropdown on activation. (Note: Do not close dropdown on deactivate)
+    this.setDropdownVisibility(true);
   };
 
   deactivateOmniField = () => {
     this.setState({ isSelected: false });
-    this.props.setDropdownIsOpen(false);
+  };
+
+  setDropdownVisibility = (isVisible: boolean) => {
+    this.props.setDropdownIsOpen(isVisible);
   };
 
   render = () => {
@@ -70,11 +74,11 @@ export class OmniField extends React.Component<Props, State> {
               case keycode("Enter"):
                 return onSearch();
               case keycode("Down"):
-                this.activateOmniField();
+                this.setDropdownVisibility(true);
                 event.preventDefault();
                 break;
               case keycode("Up"):
-                this.deactivateOmniField();
+                this.setDropdownVisibility(false);
                 event.preventDefault();
                 break;
               default:

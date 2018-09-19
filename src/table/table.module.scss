@@ -24,7 +24,7 @@
       }
     }
 
-    &.selectRowCount {
+    .selectRowCount {
       font-size: 0.75rem;
     }
   }
@@ -54,7 +54,7 @@
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 2;
+    z-index: 1;
   }
 
   .noResults {
@@ -78,4 +78,7 @@
     max-width: 200px;
     word-wrap: break-word;
   }
+}
+.spinnerOverlay {
+  z-index: 2;
 }

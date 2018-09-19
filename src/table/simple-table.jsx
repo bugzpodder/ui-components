@@ -63,7 +63,7 @@ export const SimpleTable = (props: Props) => {
   return (
     <div className={classNames(styles.tableContainer, classes.tableContainer)}>
       <TableComponent {...props} />
-      {isLoading && <SpinnerOverlay />}
+      {isLoading && <SpinnerOverlay className={styles.spinnerOverlay} />}
     </div>
   );
 };

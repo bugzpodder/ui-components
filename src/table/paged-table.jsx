@@ -100,7 +100,7 @@ export const PagedTable = (props: Props) => {
       >
         <TableComponent {...tableProps} />
       </CommonCard>
-      {isLoading && <SpinnerOverlay />}
+      {isLoading && <SpinnerOverlay className={styles.spinnerOverlay} />}
     </Fragment>
   );
 };

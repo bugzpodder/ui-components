@@ -63,7 +63,7 @@ export const CommonDialog = (props: Props) => {
         {title}
       </DialogTitle>
       <DialogContent
-        className={classNames(styles.commonDialogContent, classes.content, {
+        className={classNames(classes.content, {
           [styles.commonDialogNoOverflow]: !enableOverflow,
         })}
       >

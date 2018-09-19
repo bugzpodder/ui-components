@@ -33,7 +33,7 @@ exports[`render dialog 1`] = `
         </h2>
       </div>
       <div
-        class="MuiDialogContent-root commonDialogContent"
+        class="MuiDialogContent-root"
       >
         Test Content
       </div>

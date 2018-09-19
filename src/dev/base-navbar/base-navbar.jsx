@@ -6,8 +6,10 @@ import React, { Fragment } from "react";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
+import moment from "moment";
 import styles from "./base-navbar.module.scss";
-import { GrailLogo } from "../../grail-logo";
+import { BreastCancerRibbon, GrailLogo } from "../../logos";
+import { LIMS } from "@grail/lib";
 import { Sidebar } from "../../navbar/components/sidebar";
 
 type Props = {
@@ -56,6 +58,7 @@ type Props = {
 export const BaseNavbar = (props: Props) => {
   const {
     isProduction = false,
+    domain,
     title,
     breadcrumbs,
     left,
@@ -67,6 +70,8 @@ export const BaseNavbar = (props: Props) => {
     ...otherProps
   } = props;
   const { classes = {} } = props;
+  const isLims = domain === LIMS;
+  const isOctober = moment().month() === 10;
   return (
     <Fragment>
       <AppBar
@@ -107,6 +112,7 @@ export const BaseNavbar = (props: Props) => {
           </div>
           <div className={styles.center}>{center}</div>
           <div className={styles.right}>
+            {isLims && isOctober && <BreastCancerRibbon />}
             <div className={styles.brand}>
               <GrailLogo />
             </div>
@@ -119,6 +125,7 @@ export const BaseNavbar = (props: Props) => {
         isOpen={isSidebarOpen}
         toggle={toggleSidebar}
         footer={sidebarFooter}
+        domain={domain}
         {...otherProps}
       />
     </Fragment>

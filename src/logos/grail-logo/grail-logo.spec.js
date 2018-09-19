@@ -2,7 +2,7 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import { GrailLogo } from "./index";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../../utils/index";
 import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);

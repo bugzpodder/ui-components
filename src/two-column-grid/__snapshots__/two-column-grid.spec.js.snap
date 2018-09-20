@@ -2,47 +2,167 @@
 
 exports[`render two column grid 1`] = `
 <div>
-  <div
-    class="MuiGrid-container"
-  >
+  <div>
     <div
-      class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
+      class="MuiGrid-container"
     >
       <div
-        class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
-        data-testid="two-column-row-label"
-      >
-        <p
-          class="MuiTypography-root MuiTypography-body1 rowLabel"
-        >
-          Test Label 1
-        </p>
-      </div>
-      <div
-        class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
-        data-testid="two-column-row-value"
-      >
-        Test Value 1
-      </div>
-    </div>
-    <div
-      class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
-    >
-      <div
-        class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
-        data-testid="two-column-row-label"
+        class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
         <div
-          class="rowLabel"
+          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          data-testid="two-column-row-label"
         >
-          1
+          <p
+            class="MuiTypography-root MuiTypography-body1 rowLabel"
+            style="text-align: right;"
+          >
+            Test Label 1
+          </p>
+        </div>
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          data-testid="two-column-row-value"
+        >
+          <div
+            style="text-align: left;"
+          >
+            Test Value 1
+          </div>
         </div>
       </div>
       <div
-        class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
-        data-testid="two-column-row-value"
+        class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
-        Test Value 1
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          data-testid="two-column-row-label"
+        >
+          <div
+            class="rowLabel"
+            style="text-align: right;"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          data-testid="two-column-row-value"
+        >
+          <div
+            style="text-align: left;"
+          >
+            Test Value 1
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
+      >
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          data-testid="two-column-row-label"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 rowLabel"
+            style="text-align: right;"
+          >
+            Test Label 1
+          </p>
+        </div>
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          data-testid="two-column-row-value"
+        >
+          <div
+            style="text-align: right;"
+          >
+            Test Value 1
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
+      >
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          data-testid="two-column-row-label"
+        >
+          <div
+            class="rowLabel"
+            style="text-align: right;"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          data-testid="two-column-row-value"
+        >
+          <div
+            style="text-align: right;"
+          >
+            Test Value 1
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-container"
+    >
+      <div
+        class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
+      >
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          data-testid="two-column-row-label"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 rowLabel"
+            style="text-align: left;"
+          >
+            Test Label 1
+          </p>
+        </div>
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          data-testid="two-column-row-value"
+        >
+          <div
+            style="text-align: left;"
+          >
+            Test Value 1
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
+      >
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          data-testid="two-column-row-label"
+        >
+          <div
+            class="rowLabel"
+            style="text-align: left;"
+          >
+            1
+          </div>
+        </div>
+        <div
+          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          data-testid="two-column-row-value"
+        >
+          <div
+            style="text-align: left;"
+          >
+            Test Value 1
+          </div>
+        </div>
       </div>
     </div>
   </div>

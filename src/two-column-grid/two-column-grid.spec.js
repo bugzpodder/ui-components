@@ -20,7 +20,17 @@ test("render two column grid", () => {
   ];
   const { container, getByTestId } = render(
     <TestWrapper>
-      <TwoColumnGrid rows={rows} />
+      <div>
+        <TwoColumnGrid rows={rows} />
+        <TwoColumnGrid
+          textAlign={[null, "right"]}
+          rows={rows}
+        />
+        <TwoColumnGrid
+          textAlign={["left", null]}
+          rows={rows}
+        />
+      </div>
     </TestWrapper>,
   );
   expect(getByTestId("two-column-row-label")).toHaveTextContent("Test Label 1");

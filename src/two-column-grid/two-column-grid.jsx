@@ -8,11 +8,15 @@ type Props = {
   rows: GridRows,
   /** Takes in a number between 1-11 to determine spacing between columns */
   labelWidth?: GridSizes,
+  /** defines the text alignment of the label and value columns */
+  textAlign?: Array<string>,
 };
 
 /** Provides a styled component for displaying data in two grid columns. */
 export const TwoColumnGrid = (props: Props) => {
-  const { rows, labelWidth, ...other } = props;
+  const {
+    rows, labelWidth, textAlign, ...other
+  } = props;
   return (
     <Grid
       container
@@ -23,6 +27,7 @@ export const TwoColumnGrid = (props: Props) => {
           <TwoColumnRow
             key={index}
             labelWidth={labelWidth}
+            textAlign={textAlign}
             row={row}
           />
         );

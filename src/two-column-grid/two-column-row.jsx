@@ -5,15 +5,18 @@ import Typography from "@material-ui/core/Typography";
 import styles from "./two-column-row.module.scss";
 
 type Props = {
-  labelWidth?: GridSizes,
   row: GridRow,
+  textAlign?: Array<string>,
+  labelWidth?: GridSizes,
 };
 
 export const TwoColumnRow = (props: Props) => {
-  const { row, labelWidth = 2 } = props;
+  const { row, labelWidth = 2, textAlign = [] } = props;
 
   // $FlowFixMe
   const inputWidth: GridSizes = 12 - labelWidth;
+  const labelTextAlign = textAlign[0] || "right";
+  const valueTextAlign = textAlign[1] || "left";
 
   const { label, value } = row;
   return (
@@ -31,9 +34,19 @@ export const TwoColumnRow = (props: Props) => {
         xs={labelWidth}
       >
         {typeof label === "string" ? (
-          <Typography className={styles.rowLabel}>{label}</Typography>
+          <Typography
+            style={{ textAlign: labelTextAlign }}
+            className={styles.rowLabel}
+          >
+            {label}
+          </Typography>
         ) : (
-          <div className={styles.rowLabel}>{label}</div>
+          <div
+            style={{ textAlign: labelTextAlign }}
+            className={styles.rowLabel}
+          >
+            {label}
+          </div>
         )}
       </Grid>
       <Grid
@@ -42,7 +55,7 @@ export const TwoColumnRow = (props: Props) => {
         className={styles.valueColumn}
         xs={inputWidth}
       >
-        {value}
+        <div style={{ textAlign: valueTextAlign }}>{value}</div>
       </Grid>
     </Grid>
   );

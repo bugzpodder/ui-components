@@ -15,11 +15,13 @@ type Props = {
   input?: string,
   /** Remains above the input field upon choosing a value */
   label?: string,
+  /** String that specifies the format of the date field. Defaults to `YYYY-MM-DD`. */
+  format?: string,
 } & ElementConfig<typeof DatePicker>;
 
 /** Provides component for common Date picker. */
 export const DateInput = (props: Props) => {
-  const { readOnly, showEmptyValue = false, value } = props;
+  const { readOnly, showEmptyValue = false, value, format = DATE_FORMAT } = props;
   if (readOnly) {
     return (
       <ReadOnlyTextField showEmptyValue={showEmptyValue}>
@@ -35,7 +37,7 @@ export const DateInput = (props: Props) => {
         InputAdornmentProps={{ className: styles.adornmentWidth }}
         {...props}
         value={value || null}
-        format={DATE_FORMAT}
+        format={format}
       />
     </div>
   );

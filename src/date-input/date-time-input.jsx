@@ -14,10 +14,12 @@ type Props = {
   input?: string,
   /** Remains above the input field upon choosing a value */
   label?: string,
+  /** String that specifies the format of the date field. Defaults to `YYYY-MM-DD HH:mm:ss`. */
+  format?: string,
 } & ElementConfig<typeof DateTimePicker>;
 
 export const DateTimeInput = (props: Props) => {
-  const { readOnly, showEmptyValue = false, value } = props;
+  const { readOnly, showEmptyValue = false, value, format = DATE_TIME_FORMAT } = props;
   if (readOnly) {
     return (
       <ReadOnlyTextField showEmptyValue={showEmptyValue}>
@@ -32,7 +34,7 @@ export const DateTimeInput = (props: Props) => {
       clearable
       {...props}
       value={value || null}
-      format={DATE_TIME_FORMAT}
+      format={format}
     />
   );
 };

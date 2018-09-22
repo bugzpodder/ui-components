@@ -19,7 +19,7 @@ type Props = {
   toggle: Function,
   domain: string,
   externalDomains: Map<string, string>,
-  sidebarContent: (SidebarItem | ParentSidebarItem)[],
+  sidebarContent: SidebarItem[],
   InternalLinkComponent?: React$ElementType,
   footer?: React$Node,
   currentPath: string,
@@ -44,7 +44,22 @@ export class Sidebar extends React.Component<Props, State> {
     }
   };
 
-  getLink = (item: SidebarItem, key: number, nested: boolean = false) => {
+  getPlaceholderLink = (item: SidebarItemPlaceholder, key: number, nested: boolean = false) => {
+    return (
+      <ListItem
+        key={key}
+        disabled
+        button
+        className={classNames({ [styles.nested]: nested })}
+        dense={nested}
+        disableRipple
+      >
+        <ListItemText primary={`${item.name} (coming soon)`} />
+      </ListItem>
+    );
+  }
+
+  getLink = (item: SidebarItemLink, key: number, nested: boolean = false) => {
     const {
       exact = false, domain: itemDomain, path, name,
     } = item;
@@ -96,13 +111,17 @@ export class Sidebar extends React.Component<Props, State> {
     if (state.openItems.has(index) || state.touchedItems.has(index)) {
       return state.openItems.has(index);
     }
-    // $FlowFixMe: getIsOpen is called on ParentSidebarItem and returns false otherwise
+    // $FlowFixMe: getIsOpen is called on SidebarItemParent and returns false otherwise.
     const { children } = sidebarContent[index];
     if (children === undefined) {
       return false;
     }
-    return children.some(child => {
-      const { domain: childDomain, exact = false, path } = child;
+    return children.some((child: SidebarItemChild) => {
+      if (child.placeholder || false) {
+        return false;
+      }
+      const childLink: SidebarItemLink = child;
+      const { domain: childDomain, exact = false, path } = childLink;
       if (childDomain === domain) {
         return pathToRegexp(path, [], { end: exact }).test(currentPath);
       }
@@ -127,7 +146,7 @@ export class Sidebar extends React.Component<Props, State> {
     });
   };
 
-  renderItem = (item: SidebarItem | ParentSidebarItem, index: number) => {
+  renderItem = (item: SidebarItem, index: number) => {
     if (item.children !== undefined) {
       const isOpen = this.getIsOpen(index);
       return (
@@ -137,14 +156,20 @@ export class Sidebar extends React.Component<Props, State> {
           toggleList={this.toggleCollapsableListItem.bind(this, index)}
           headerText={item.name}
         >
-          {/* $FlowFixMe item is ParentSidebarItem if item.children is defined. */
+          {/* $FlowFixMe item is SidebarItemParent if item.children is defined. */
           item.children.map((childItem, childIndex) => {
+            if (childItem.placeholder) {
+              return this.getPlaceholderLink(childItem, index * 1000 + childIndex, true);
+            }
             return this.getLink(childItem, index * 1000 + childIndex, true);
           })}
         </CollapsableListItem>
       );
     }
-    // $FlowFixMe if item.children is undefined it must be type SidebarItem.
+    if (item.placeholder) {
+      return this.getPlaceholderLink(item, index);
+    }
+    // $FlowFixMe if item.children is undefined it must be type SidebarItemLink.
     return this.getLink(item, index);
   };
 

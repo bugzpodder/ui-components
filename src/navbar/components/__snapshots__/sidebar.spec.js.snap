@@ -122,6 +122,24 @@ exports[`render Sidebar 1`] = `
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
+                    href="/lims/accession"
+                    id="lims-lims-accession"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Research Accessioning
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
                     href="/lims/samples"
                     id="lims-lims-samples"
                     role="button"
@@ -134,6 +152,24 @@ exports[`render Sidebar 1`] = `
                         class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Samples
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
+                    href="/lims/stored-samples"
+                    id="lims-lims-stored-samples"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Stored Samples
                       </span>
                     </div>
                   </a>
@@ -155,6 +191,21 @@ exports[`render Sidebar 1`] = `
                       </span>
                     </div>
                   </a>
+                  <div
+                    class="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-disabled MuiListItem-button nested"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Queued Repeats (coming soon)
+                      </span>
+                    </div>
+                  </div>
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"

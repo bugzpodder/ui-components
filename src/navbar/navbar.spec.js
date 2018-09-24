@@ -42,12 +42,12 @@ test("render Sidebar", () => {
       </MemoryRouter>
     </JssProvider>,
   );
-  expect(bodyUtils.queryByText("title")).toBeInTheDOM();
-  expect(bodyUtils.queryByText("breadcrumbs")).toBeInTheDOM();
-  expect(bodyUtils.queryByText("left")).toBeInTheDOM();
-  expect(bodyUtils.queryByText("center")).toBeInTheDOM();
-  expect(bodyUtils.queryByText("right")).toBeInTheDOM();
+  expect(bodyUtils.queryByText("title")).toBeInTheDocument();
+  expect(bodyUtils.queryByText("breadcrumbs")).toBeInTheDocument();
+  expect(bodyUtils.queryByText("left")).toBeInTheDocument();
+  expect(bodyUtils.queryByText("center")).toBeInTheDocument();
+  expect(bodyUtils.queryByText("right")).toBeInTheDocument();
   const hamburger = bodyUtils.queryByTestId("main-nav-button");
   fireEvent.click(hamburger);
-  expect(bodyUtils.queryByText("sidebarFooter")).toBeInTheDOM();
+  expect(bodyUtils.queryByText("sidebarFooter")).toBeInTheDocument();
 });

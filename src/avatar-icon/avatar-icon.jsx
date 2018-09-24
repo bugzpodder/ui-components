@@ -51,7 +51,7 @@ export class AvatarIcon extends React.Component<Props> {
           <Menu
             data-testid={`${id}-avatar-menu`}
             anchorEl={this.avatarRef}
-            anchorOrigin={{ vertical: "bottom" }}
+            anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
             getContentAnchorEl={null}
             open={isMenuOpen}
             TransitionProps={{ timeout: 0 }}

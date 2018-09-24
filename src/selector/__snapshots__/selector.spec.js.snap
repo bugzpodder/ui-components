@@ -11,13 +11,13 @@ exports[`render selector 1`] = `
       class="MuiFormControl-root selectorForm"
     >
       <label
-        class="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+        class="MuiFormLabel-root MuiFormLabel-error MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink="true"
       >
         
       </label>
       <div
-        class="MuiInput-root MuiInput-error MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-error MuiInput-error MuiInputBase-formControl MuiInput-formControl"
         data-testid="selector"
       >
         <div
@@ -27,7 +27,7 @@ exports[`render selector 1`] = `
             aria-haspopup="true"
             aria-owns="menu-test-selector"
             aria-pressed="true"
-            class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+            class="MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             data-testid="selector-button"
             role="button"
             tabindex="0"
@@ -44,6 +44,7 @@ exports[`render selector 1`] = `
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path
@@ -53,7 +54,7 @@ exports[`render selector 1`] = `
         </div>
       </div>
       <p
-        class="MuiFormHelperText-root MuiFormHelperText-error"
+        class="MuiFormHelperText-root MuiFormHelperText-error MuiFormHelperText-filled"
         id="selector-selector-helpertext"
       >
         test helper text
@@ -100,7 +101,7 @@ exports[`render selector without selected value 1`] = `
         
       </label>
       <div
-        class="MuiInput-root MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
         data-testid="selector"
       >
         <div
@@ -109,7 +110,7 @@ exports[`render selector without selected value 1`] = `
           <div
             aria-haspopup="true"
             aria-pressed="false"
-            class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+            class="MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             data-testid="selector-button"
             role="button"
             tabindex="0"
@@ -126,6 +127,7 @@ exports[`render selector without selected value 1`] = `
             aria-hidden="true"
             class="MuiSvgIcon-root MuiSelect-icon"
             focusable="false"
+            role="presentation"
             viewBox="0 0 24 24"
           >
             <path

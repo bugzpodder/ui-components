@@ -1,5 +1,6 @@
 [ignore]
 .*\.spec\.js
+.*/dist/*
 
 [include]
 ../lib
@@ -16,7 +17,7 @@ untyped-type-import=error
 
 [options]
 emoji=true
-module.name_mapper='^@grail\/\(.*\)$' -> '<PROJECT_ROOT>/../\1'
+module.name_mapper='^@grail\/\(.*\)$' -> '<PROJECT_ROOT>/../\1/src'
 module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/CSSModule.js.flow'
 module.file_ext=.js
 module.file_ext=.jsx

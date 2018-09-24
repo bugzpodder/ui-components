@@ -162,7 +162,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
     this.setState({ isOpen });
   };
 
-  updateOmniText = (omniText: string) => {
+  updateOmniText = (omniText: string): Promise<*> => {
     return new Promise(resolve => {
       this.setState(() => {
         const { searchDefs } = this.props;

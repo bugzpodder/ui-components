@@ -2,55 +2,48 @@
 
 exports[`render date input when readOnly is true 1`] = `
 <div>
-   
   <span
     class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     2017-03-07 16:20:00
   </span>
-   
 </div>
 `;
 
 exports[`render date input when readOnly is true showing - for empty value 1`] = `
 <div>
-   
   <span
     class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     -
   </span>
-   
 </div>
 `;
 
 exports[`render date input when readOnly is true showing empty value 1`] = `
 <div>
-   
   <span
     class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     
   </span>
-   
 </div>
 `;
 
 exports[`render date time input 1`] = `
 <div>
-   
   <div
     class="MuiFormControl-root"
   >
     <div
-      class="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils-DateTextField--input-2"
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     >
       <input
         aria-invalid="false"
-        class="MuiInput-input"
+        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
         placeholder="Test DateTime Input"
         type="text"
         value="2016-03-07 16:20:00"
@@ -83,22 +76,20 @@ exports[`render date time input 1`] = `
     </div>
     
   </div>
-   
 </div>
 `;
 
 exports[`render null date time input 1`] = `
 <div>
-   
   <div
     class="MuiFormControl-root"
   >
     <div
-      class="MuiInput-root MuiInput-formControl MuiInput-underline WithUtils-DateTextField--input-66"
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     >
       <input
         aria-invalid="false"
-        class="MuiInput-input"
+        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
         placeholder="Test DateTime Input"
         type="text"
         value=""
@@ -131,6 +122,5 @@ exports[`render null date time input 1`] = `
     </div>
     
   </div>
-   
 </div>
 `;

@@ -30,7 +30,7 @@ test("render avatar with menu", () => {
   );
 
   // TODO(nsawas): figure out why menu items don't show up in snapshot, despite `isMenuOpen`
-  // expect(getByTestId("user-menu")).toBeInTheDOM();
+  // expect(getByTestId("user-menu")).toBeInTheDocument();
   fireEvent.click(bodyUtils.getByTestId("avatar-icon-button"));
   expect(mockMenuOpen).toHaveBeenCalledTimes(1);
   expect(mockMenuOpen.mock.results[0].value).toEqual(false);

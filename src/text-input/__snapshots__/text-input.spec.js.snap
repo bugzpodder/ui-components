@@ -7,11 +7,11 @@ exports[`render text field wrapper 1`] = `
     data-testid="text-field"
   >
     <div
-      class="MuiInput-root MuiInput-formControl MuiInput-underline"
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
     >
       <input
         aria-invalid="false"
-        class="MuiInput-input"
+        class="MuiInputBase-input MuiInput-input"
         id="operator"
         placeholder="Test Placeholder"
         type="text"

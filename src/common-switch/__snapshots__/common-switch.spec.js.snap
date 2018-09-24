@@ -23,6 +23,7 @@ exports[`render error common switch 1`] = `
                 class="MuiSwitch-icon MuiSwitch-iconChecked error"
               />
               <input
+                checked=""
                 class="MuiSwitchBase-input"
                 id=""
                 type="checkbox"
@@ -117,6 +118,7 @@ exports[`render secondary common switch 1`] = `
                 class="MuiSwitch-icon MuiSwitch-iconChecked"
               />
               <input
+                checked=""
                 class="MuiSwitchBase-input"
                 id=""
                 type="checkbox"

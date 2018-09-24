@@ -9,13 +9,13 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-focused MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-focused MuiInput-focused MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInput-input"
+            class="css-10nd86i MuiInputBase-input MuiInput-input"
             id=""
           >
             <span
@@ -59,13 +59,16 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                       class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-ALGERIA"
                       focusable="false"
+                      role="presentation"
                       viewBox="0 0 24 24"
                     >
-                      <g>
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-                        />
-                      </g>
+                      <path
+                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
                     </svg>
                   </span>
                 </div>
@@ -87,13 +90,16 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                       class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-AFGHANISTAN"
                       focusable="false"
+                      role="presentation"
                       viewBox="0 0 24 24"
                     >
-                      <g>
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-                        />
-                      </g>
+                      <path
+                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
                     </svg>
                   </span>
                 </div>
@@ -130,13 +136,16 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                   class="MuiSvgIcon-root common-select__clear-icon"
                   data-testid="clear-icon"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
-                  <g>
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </g>
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
                 </svg>
                 <div
                   class="common-select__dropdown-arrow"
@@ -145,13 +154,16 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 10l5 5 5-5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>
@@ -174,13 +186,13 @@ exports[`render and test CommonSelect 1`] = `
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInput-input"
+            class="css-10nd86i MuiInputBase-input MuiInput-input"
             id="test"
           >
             <div
@@ -227,13 +239,16 @@ exports[`render and test CommonSelect 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 14l5-5 5 5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 14l5-5 5 5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>
@@ -746,13 +761,13 @@ exports[`render async CommonSelect initial message does not display with input v
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInput-input"
+            class="css-10nd86i MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
@@ -798,13 +813,16 @@ exports[`render async CommonSelect initial message does not display with input v
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 14l5-5 5 5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 14l5-5 5 5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>
@@ -848,13 +866,13 @@ exports[`render async CommonSelect with custom initial message 1`] = `
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInput-input"
+            class="css-10nd86i MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
@@ -901,13 +919,16 @@ exports[`render async CommonSelect with custom initial message 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 14l5-5 5 5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 14l5-5 5 5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>
@@ -951,13 +972,13 @@ exports[`render async CommonSelect with default initial message 1`] = `
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInput-input"
+            class="css-10nd86i MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
@@ -1004,13 +1025,16 @@ exports[`render async CommonSelect with default initial message 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 14l5-5 5 5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 14l5-5 5 5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>
@@ -1054,13 +1078,13 @@ exports[`render creatable CommonSelect 1`] = `
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInput-input"
+            class="css-10nd86i MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
@@ -1107,13 +1131,16 @@ exports[`render creatable CommonSelect 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 10l5 5 5-5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>
@@ -1136,13 +1163,13 @@ exports[`test disabled CommonSelect 1`] = `
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-disabled MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-disabled MuiInput-disabled MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-1sontr1 MuiInput-input MuiInput-disabled common-select--is-disabled"
+            class="css-1sontr1 MuiInputBase-input MuiInput-input MuiInputBase-disabled MuiInput-disabled common-select--is-disabled"
             id=""
           >
             <div
@@ -1190,13 +1217,16 @@ exports[`test disabled CommonSelect 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 10l5 5 5-5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>
@@ -1224,13 +1254,13 @@ exports[`test preload and clear single value 1`] = `
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInput-root common-select__input-root MuiInput-formControl MuiInput-underline"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInput-input"
+            class="css-10nd86i MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
@@ -1277,13 +1307,16 @@ exports[`test preload and clear single value 1`] = `
                   class="MuiSvgIcon-root common-select__clear-icon"
                   data-testid="clear-icon"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
-                  <g>
-                    <path
-                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </g>
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
                 </svg>
                 <div
                   class="common-select__dropdown-arrow"
@@ -1292,13 +1325,16 @@ exports[`test preload and clear single value 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <g>
-                      <path
-                        d="M7 14l5-5 5 5z"
-                      />
-                    </g>
+                    <path
+                      d="M7 14l5-5 5 5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
                   </svg>
                 </div>
               </div>

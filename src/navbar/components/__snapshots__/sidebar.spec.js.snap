@@ -36,13 +36,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
-                />
-              </g>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+              />
             </svg>
           </span>
           <span
@@ -79,13 +82,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </g>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
             </svg>
           </div>
           <div
@@ -102,7 +108,7 @@ exports[`render Sidebar 1`] = `
                   class="MuiList-root MuiList-padding"
                 >
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     href="https://edc-client-staging.eng.aws.grail.com/v/VERMILLION/trfs"
                     rel="noopener noreferrer"
                     role="button"
@@ -120,7 +126,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/accession"
                     id="lims-lims-accession"
@@ -138,7 +144,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/samples"
                     id="lims-lims-samples"
@@ -156,7 +162,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/stored-samples"
                     id="lims-lims-stored-samples"
@@ -174,7 +180,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/batches"
                     id="lims-lims-batches"
@@ -192,7 +198,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <div
-                    class="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-disabled MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-disabled MuiListItem-button nested"
                     role="button"
                     tabindex="-1"
                   >
@@ -207,7 +213,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </div>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/sample-issues"
                     id="lims-lims-sample-issues"
@@ -225,7 +231,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/sequencing-runs"
                     id="lims-lims-sequencing-runs"
@@ -243,7 +249,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/new-sequencing-run"
                     id="lims-lims-new-sequencing-run"
@@ -261,7 +267,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/print-labels"
                     id="lims-lims-print-labels"
@@ -279,7 +285,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/study-samples"
                     id="lims-lims-study-samples"
@@ -297,7 +303,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/lims/create-study-samples"
                     id="lims-lims-create-study-samples"
@@ -336,13 +342,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                />
-              </g>
+              <path
+                d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
             </svg>
           </div>
           <div
@@ -359,7 +368,7 @@ exports[`render Sidebar 1`] = `
                   class="MuiList-root MuiList-padding"
                 >
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/program-runs"
                     id="lims-automation-program-runs"
@@ -377,7 +386,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/resources"
                     id="lims-automation-resources"
@@ -395,7 +404,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/programs"
                     id="lims-automation-programs"
@@ -413,7 +422,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
                     href="/automation/program-regex-tester"
                     id="lims-automation-program-regex-tester"
@@ -431,7 +440,7 @@ exports[`render Sidebar 1`] = `
                     </div>
                   </a>
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-button active nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button active nested"
                     exact="false"
                     href="/automation/tasks"
                     id="lims-automation-tasks"
@@ -470,13 +479,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </g>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
             </svg>
           </div>
           <div
@@ -497,13 +509,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </g>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
             </svg>
           </div>
           <div
@@ -524,13 +539,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </g>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
             </svg>
           </div>
           <a
@@ -569,13 +587,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </g>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
             </svg>
           </div>
           <a
@@ -614,13 +635,16 @@ exports[`render Sidebar 1`] = `
               aria-hidden="true"
               class="MuiSvgIcon-root"
               focusable="false"
+              role="presentation"
               viewBox="0 0 24 24"
             >
-              <g>
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </g>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
             </svg>
           </div>
         </ul>

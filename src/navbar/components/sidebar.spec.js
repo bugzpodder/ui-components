@@ -39,19 +39,19 @@ test("render Sidebar", () => {
   );
   // FIXME(jrosenfield): couldn't get test to work
   const sampleManagementDropdown = bodyUtils.queryByText("Sample Management");
-  expect(sampleManagementDropdown).toBeInTheDOM();
-  expect(bodyUtils.queryByText("Footer")).toBeInTheDOM();
+  expect(sampleManagementDropdown).toBeInTheDocument();
+  expect(bodyUtils.queryByText("Footer")).toBeInTheDocument();
   const tasks = bodyUtils.queryByText("Tasks");
-  // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDOM();
-  expect(tasks).toBeInTheDOM();
+  // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDocument();
+  expect(tasks).toBeInTheDocument();
   fireEvent.click(sampleManagementDropdown);
   const batches = bodyUtils.queryByText("Batches");
-  expect(batches).toBeInTheDOM();
+  expect(batches).toBeInTheDocument();
   fireEvent.click(sampleManagementDropdown);
-  // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDOM();
+  // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDocument();
   expect(toggle.mock.calls.length).toBe(0);
   const storage = bodyUtils.queryByText("Storage");
-  expect(storage).toBeInTheDOM();
+  expect(storage).toBeInTheDocument();
   fireEvent.click(storage);
   expect(toggle.mock.calls.length).toBe(1);
   expect(document.body).toMatchSnapshot();

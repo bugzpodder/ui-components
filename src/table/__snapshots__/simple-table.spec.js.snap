@@ -19,7 +19,7 @@ exports[`render full simple table 1`] = `
             scope="col"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked indeterminate"
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
             >
               <span
                 class="MuiIconButton-label"
@@ -28,6 +28,7 @@ exports[`render full simple table 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -35,7 +36,9 @@ exports[`render full simple table 1`] = `
                   />
                 </svg>
                 <input
+                  checked=""
                   class="MuiSwitchBase-input"
+                  data-indeterminate="true"
                   data-testid="table-checkbox-header"
                   type="checkbox"
                   value=""
@@ -85,6 +88,7 @@ exports[`render full simple table 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -92,7 +96,9 @@ exports[`render full simple table 1`] = `
                   />
                 </svg>
                 <input
+                  checked=""
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
                   type="checkbox"
@@ -145,6 +151,7 @@ exports[`render full simple table 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -152,7 +159,9 @@ exports[`render full simple table 1`] = `
                   />
                 </svg>
                 <input
+                  checked=""
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-fourth-datum"
                   id="Fourth Datum"
                   type="checkbox"
@@ -205,6 +214,7 @@ exports[`render full simple table 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -213,6 +223,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventh-datum"
                   id="Seventh Datum"
                   type="checkbox"
@@ -265,6 +276,7 @@ exports[`render full simple table 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -273,6 +285,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-tenth-datum"
                   id="Tenth Datum"
                   type="checkbox"
@@ -325,6 +338,7 @@ exports[`render full simple table 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -333,6 +347,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-thirteenth-datum"
                   id="Thirteenth Datum"
                   type="checkbox"
@@ -385,6 +400,7 @@ exports[`render full simple table 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -393,6 +409,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventeenth-datum"
                   id="Seventeenth Datum"
                   type="checkbox"
@@ -867,7 +884,7 @@ exports[`render simple table with all items selected 1`] = `
             scope="col"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked indeterminate"
+              class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
             >
               <span
                 class="MuiIconButton-label"
@@ -876,6 +893,7 @@ exports[`render simple table with all items selected 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -883,7 +901,9 @@ exports[`render simple table with all items selected 1`] = `
                   />
                 </svg>
                 <input
+                  checked=""
                   class="MuiSwitchBase-input"
+                  data-indeterminate="true"
                   data-testid="table-checkbox-header"
                   type="checkbox"
                   value=""
@@ -933,6 +953,7 @@ exports[`render simple table with all items selected 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -940,7 +961,9 @@ exports[`render simple table with all items selected 1`] = `
                   />
                 </svg>
                 <input
+                  checked=""
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
                   type="checkbox"
@@ -993,6 +1016,7 @@ exports[`render simple table with all items selected 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1000,7 +1024,9 @@ exports[`render simple table with all items selected 1`] = `
                   />
                 </svg>
                 <input
+                  checked=""
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-fourth-datum"
                   id="Fourth Datum"
                   type="checkbox"
@@ -1053,6 +1079,7 @@ exports[`render simple table with all items selected 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1061,6 +1088,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventh-datum"
                   id="Seventh Datum"
                   type="checkbox"
@@ -1113,6 +1141,7 @@ exports[`render simple table with all items selected 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1121,6 +1150,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-tenth-datum"
                   id="Tenth Datum"
                   type="checkbox"
@@ -1173,6 +1203,7 @@ exports[`render simple table with all items selected 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1181,6 +1212,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-thirteenth-datum"
                   id="Thirteenth Datum"
                   type="checkbox"
@@ -1233,6 +1265,7 @@ exports[`render simple table with all items selected 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1241,6 +1274,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   class="MuiSwitchBase-input"
+                  data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventeenth-datum"
                   id="Seventeenth Datum"
                   type="checkbox"

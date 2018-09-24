@@ -445,7 +445,9 @@ exports[`render paged table and test pagination 1`] = `
         >
           Test Table (2 Selected)
         </span>
-        
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+        />
       </div>
       <div
         class="MuiCardHeader-action headerActions"
@@ -475,7 +477,7 @@ exports[`render paged table and test pagination 1`] = `
               scope="col"
             >
               <span
-                class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked indeterminate"
+                class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
               >
                 <span
                   class="MuiIconButton-label"
@@ -484,6 +486,7 @@ exports[`render paged table and test pagination 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -491,7 +494,9 @@ exports[`render paged table and test pagination 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="true"
                     data-testid="table-checkbox-header"
                     type="checkbox"
                     value=""
@@ -541,6 +546,7 @@ exports[`render paged table and test pagination 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -548,7 +554,9 @@ exports[`render paged table and test pagination 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
                     type="checkbox"
@@ -601,6 +609,7 @@ exports[`render paged table and test pagination 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -608,7 +617,9 @@ exports[`render paged table and test pagination 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
                     type="checkbox"
@@ -661,6 +672,7 @@ exports[`render paged table and test pagination 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -669,6 +681,7 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
                     type="checkbox"
@@ -721,6 +734,7 @@ exports[`render paged table and test pagination 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -729,6 +743,7 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
                     type="checkbox"
@@ -781,6 +796,7 @@ exports[`render paged table and test pagination 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -789,6 +805,7 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
                     type="checkbox"
@@ -841,6 +858,7 @@ exports[`render paged table and test pagination 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -849,6 +867,7 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
                     type="checkbox"
@@ -894,7 +913,7 @@ exports[`render paged table and test pagination 1`] = `
         class="table-pager tablePager"
       >
         <div
-          class="MuiToolbar-root MuiToolbar-gutters MuiTablePagination-toolbar"
+          class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters MuiTablePagination-toolbar"
         >
           <div
             class="MuiTablePagination-spacer"
@@ -905,7 +924,7 @@ exports[`render paged table and test pagination 1`] = `
             Rows per page:
           </span>
           <div
-            class="MuiInput-root select-row-count selectRowCount"
+            class="MuiInputBase-root select-row-count selectRowCount"
             data-testid="rows-per-page"
           >
             <div
@@ -914,7 +933,7 @@ exports[`render paged table and test pagination 1`] = `
               <div
                 aria-haspopup="true"
                 aria-pressed="false"
-                class="MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInput-input"
+                class="MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
                 role="button"
                 tabindex="0"
               >
@@ -929,6 +948,7 @@ exports[`render paged table and test pagination 1`] = `
                 aria-hidden="true"
                 class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon"
                 focusable="false"
+                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -959,6 +979,7 @@ exports[`render paged table and test pagination 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -980,6 +1001,7 @@ exports[`render paged table and test pagination 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1034,6 +1056,7 @@ exports[`render paged table and test sorting 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1057,6 +1080,7 @@ exports[`render paged table and test sorting 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1079,6 +1103,7 @@ exports[`render paged table and test sorting 1`] = `
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
                   focusable="false"
+                  role="presentation"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -1279,7 +1304,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
         >
            (6 Selected)
         </span>
-        
+        <span
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+        />
       </div>
     </div>
     <div
@@ -1309,6 +1336,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1316,7 +1344,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
                     value=""
@@ -1366,6 +1396,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1373,7 +1404,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
                     type="checkbox"
@@ -1426,6 +1459,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1433,7 +1467,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
                     type="checkbox"
@@ -1486,6 +1522,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1493,7 +1530,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
                     type="checkbox"
@@ -1546,6 +1585,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1553,7 +1593,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
                     type="checkbox"
@@ -1606,6 +1648,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1613,7 +1656,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
                     type="checkbox"
@@ -1666,6 +1711,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1673,7 +1719,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                     />
                   </svg>
                   <input
+                    checked=""
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
                     type="checkbox"
@@ -1748,6 +1796,7 @@ exports[`render paged table with default ids 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1756,6 +1805,7 @@ exports[`render paged table with default ids 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
                     value=""
@@ -1805,6 +1855,7 @@ exports[`render paged table with default ids 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1813,6 +1864,7 @@ exports[`render paged table with default ids 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-0"
                     id="0"
                     type="checkbox"
@@ -1865,6 +1917,7 @@ exports[`render paged table with default ids 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1873,6 +1926,7 @@ exports[`render paged table with default ids 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-1"
                     id="1"
                     type="checkbox"
@@ -1925,6 +1979,7 @@ exports[`render paged table with default ids 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1933,6 +1988,7 @@ exports[`render paged table with default ids 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-2"
                     id="2"
                     type="checkbox"
@@ -1985,6 +2041,7 @@ exports[`render paged table with default ids 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -1993,6 +2050,7 @@ exports[`render paged table with default ids 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-3"
                     id="3"
                     type="checkbox"
@@ -2045,6 +2103,7 @@ exports[`render paged table with default ids 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2053,6 +2112,7 @@ exports[`render paged table with default ids 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-4"
                     id="4"
                     type="checkbox"
@@ -2105,6 +2165,7 @@ exports[`render paged table with default ids 1`] = `
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2113,6 +2174,7 @@ exports[`render paged table with default ids 1`] = `
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-5"
                     id="5"
                     type="checkbox"
@@ -2187,6 +2249,7 @@ exports[`render paged table with no initially selected items, then select items 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2195,6 +2258,7 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
                     value=""
@@ -2244,6 +2308,7 @@ exports[`render paged table with no initially selected items, then select items 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2252,6 +2317,7 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
                     type="checkbox"
@@ -2304,6 +2370,7 @@ exports[`render paged table with no initially selected items, then select items 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2312,6 +2379,7 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
                     type="checkbox"
@@ -2364,6 +2432,7 @@ exports[`render paged table with no initially selected items, then select items 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2372,6 +2441,7 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
                     type="checkbox"
@@ -2424,6 +2494,7 @@ exports[`render paged table with no initially selected items, then select items 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2432,6 +2503,7 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
                     type="checkbox"
@@ -2484,6 +2556,7 @@ exports[`render paged table with no initially selected items, then select items 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2492,6 +2565,7 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
                     type="checkbox"
@@ -2544,6 +2618,7 @@ exports[`render paged table with no initially selected items, then select items 
                     aria-hidden="true"
                     class="MuiSvgIcon-root"
                     focusable="false"
+                    role="presentation"
                     viewBox="0 0 24 24"
                   >
                     <path
@@ -2552,6 +2627,7 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                   <input
                     class="MuiSwitchBase-input"
+                    data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
                     type="checkbox"

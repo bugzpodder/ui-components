@@ -57,7 +57,7 @@ export class Sidebar extends React.Component<Props, State> {
         <ListItemText primary={`${item.name} (coming soon)`} />
       </ListItem>
     );
-  }
+  };
 
   getLink = (item: SidebarItemLink, key: number, nested: boolean = false) => {
     const {

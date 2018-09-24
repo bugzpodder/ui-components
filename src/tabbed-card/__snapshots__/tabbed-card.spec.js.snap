@@ -17,7 +17,9 @@ exports[`render empty tabbed card 1`] = `
           <span
             class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
           />
-          
+          <span
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          />
         </div>
         <div
           class="MuiCardHeader-action headerActions"
@@ -43,7 +45,7 @@ exports[`render empty tabbed card 1`] = `
               class="MuiTabs-flexContainer"
             />
             <span
-              class="TabIndicator-root-194 TabIndicator-colorPrimary-195 MuiTabs-indicator"
+              class="TabIndicator-root-202 TabIndicator-colorPrimary-203 MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
@@ -74,7 +76,9 @@ exports[`render tabbed card 1`] = `
           >
             Test Card
           </span>
-          
+          <span
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          />
         </div>
         <div
           class="MuiCardHeader-action headerActions"
@@ -168,7 +172,7 @@ exports[`render tabbed card 1`] = `
               </button>
             </div>
             <span
-              class="TabIndicator-root-114 TabIndicator-colorPrimary-115 MuiTabs-indicator"
+              class="TabIndicator-root-118 TabIndicator-colorPrimary-119 MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
@@ -192,13 +196,16 @@ exports[`render tabbed card 1`] = `
                 aria-hidden="true"
                 class="MuiSvgIcon-root alertIcon"
                 focusable="false"
+                role="presentation"
                 viewBox="0 0 24 24"
               >
-                <g>
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  />
-                </g>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
               </svg>
               Tab One!
             </span>

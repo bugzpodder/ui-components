@@ -33,9 +33,9 @@ test("render and test CommonSelect", () => {
   fireEvent.click(bodyUtils.getByText("Algeria"));
   expect(mockOnChange.mock.results[0].value).toEqual(expectedResult);
   COUNTRIES.forEach(country => {
-    expect(getByTestId(country.value)).toBeInTheDOM();
+    expect(getByTestId(country.value)).toBeInTheDocument();
   });
-  expect(getByTestId("test-select-helper-text")).toBeInTheDOM();
+  expect(getByTestId("test-select-helper-text")).toBeInTheDocument();
   expect(getByTestId("test-select-helper-text")).toHaveTextContent("some helper text");
   expect(container).toMatchSnapshot();
 });
@@ -74,7 +74,7 @@ test("test disabled CommonSelect", () => {
       />
     </TestWrapper>,
   );
-  expect(getByTestId("select-helper-text")).toBeInTheDOM();
+  expect(getByTestId("select-helper-text")).toBeInTheDocument();
   expect(getByTestId("select-helper-text")).toHaveTextContent("select is disabled");
   expect(container).toMatchSnapshot();
 });
@@ -113,7 +113,7 @@ test("render async CommonSelect with default initial message", () => {
       />
     </TestWrapper>,
   );
-  expect(getByTestId("no-options-message")).toBeInTheDOM();
+  expect(getByTestId("no-options-message")).toBeInTheDocument();
   expect(getByTestId("no-options-message")).toHaveTextContent("Begin typing...");
   expect(container).toMatchSnapshot();
 });
@@ -132,7 +132,7 @@ test("render async CommonSelect with custom initial message", () => {
       />
     </TestWrapper>,
   );
-  expect(getByTestId("no-options-message")).toBeInTheDOM();
+  expect(getByTestId("no-options-message")).toBeInTheDocument();
   expect(getByTestId("no-options-message")).toHaveTextContent("test custom message");
   expect(container).toMatchSnapshot();
 });
@@ -159,7 +159,7 @@ test("render async CommonSelect initial message does not display with input valu
       />
     </TestWrapper>,
   );
-  expect(getByTestId("no-options-message")).toBeInTheDOM();
+  expect(getByTestId("no-options-message")).toBeInTheDocument();
   expect(getByTestId("no-options-message")).toHaveTextContent("No results found");
   expect(container).toMatchSnapshot();
 });

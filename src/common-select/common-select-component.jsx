@@ -20,6 +20,7 @@ type Props = {
   isFullWidth?: boolean,
   helperText?: string,
   id?: string,
+  "data-testid"?: string,
   initialMessage?: string,
   isDisabled?: boolean,
   menuIsOpen?: boolean,
@@ -40,6 +41,7 @@ export const CommonSelectComponent = (props: Props) => {
     isFullWidth = false,
     helperText = "",
     id = "",
+    "data-testid": dataTestId,
     initialMessage = "",
     isDisabled = false,
     placeholder = "",
@@ -53,6 +55,7 @@ export const CommonSelectComponent = (props: Props) => {
           inputComponent={CommonSelectContainer}
           disabled={isDisabled}
           error={!isDisabled && showError}
+          data-testid={dataTestId}
           inputProps={{
             ...otherProps,
             id,

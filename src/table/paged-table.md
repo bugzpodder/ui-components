@@ -3,6 +3,8 @@
 ```js
 const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
+const EXAMPLE_TABLE_DATA = require("@grail/components/src/utils").EXAMPLE_TABLE_DATA;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const Button = require("@material-ui/core/Button").default;
 
 class TestPagedTable extends React.Component {
@@ -15,25 +17,7 @@ class TestPagedTable extends React.Component {
         sortOptions: [{ id: "name", desc: false }],
         selectedRowIds: [],
       },
-      data: [
-        { word: "Argle-bargle", origin: "Britain" },
-        { word: "Dwaal", origin: "South Africa" },
-        { word: "Floccinaucinihilipilification", origin: "General English" },
-        { word: "Lollygag", origin: "North American" },
-        { word: "Mouse Potato", origin: "General English" },
-        { word: "Ogdoad", origin: "General English" },
-        { word: "Sesquipedalian", origin: "General English" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-      ],
+      data: EXAMPLE_TABLE_DATA,
     };
 
     this.compare = this.compare.bind(this);
@@ -109,7 +93,7 @@ class TestPagedTable extends React.Component {
       </Fragment>
     );
     return (
-      <Fragment>
+      <div>
         <PagedTable
           // required
           data={pagedData}
@@ -133,10 +117,12 @@ class TestPagedTable extends React.Component {
           helperText=" (using idKey) "
           content={this.state.tableOptions.selectedRowIds}
         />
-      </Fragment>
+      </div>
     );
   }
 }
 
-<TestPagedTable />;
+<ExampleWrapper>
+  <TestPagedTable />
+</ExampleWrapper>;
 ```

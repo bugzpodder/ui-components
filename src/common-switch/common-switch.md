@@ -2,6 +2,7 @@
 
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const styles = require("../utils/example-styles.module.scss");
 
 class TestCommonSwitch extends React.Component {
@@ -59,5 +60,7 @@ class TestCommonSwitch extends React.Component {
   }
 }
 
-<TestCommonSwitch />;
+<ExampleWrapper>
+  <TestCommonSwitch />
+</ExampleWrapper>;
 ```

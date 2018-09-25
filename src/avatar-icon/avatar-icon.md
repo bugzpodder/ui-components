@@ -1,6 +1,7 @@
 ### Example
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const SERGEY = require("../utils").SERGEY;
 const Button = require("@material-ui/core/Button").default;
 const Typography = require("@material-ui/core/Typography").default;
@@ -90,5 +91,7 @@ class AvatarExample extends React.Component {
   }
 }
 
-<AvatarExample />;
+<ExampleWrapper>
+  <AvatarExample />
+</ExampleWrapper>;
 ```

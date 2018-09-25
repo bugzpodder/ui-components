@@ -2,6 +2,8 @@
 
 ```js
 const Button = require("@material-ui/core/Button").default;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+
 class DialogDemo extends React.Component {
   constructor(props) {
     super(props);
@@ -48,5 +50,7 @@ class DialogDemo extends React.Component {
   }
 }
 
-<DialogDemo />;
+<ExampleWrapper>
+  <DialogDemo />
+</ExampleWrapper>;
 ```

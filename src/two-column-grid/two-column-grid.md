@@ -2,6 +2,7 @@
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const rows = [
   {
     label: "Label 1",
@@ -17,11 +18,14 @@ const rows = [
   },
 ];
 
-<TwoColumnGrid labelWidth={2} rows={rows} />;
+<ExampleWrapper>
+  <TwoColumnGrid labelWidth={2} rows={rows} />
+</ExampleWrapper>;
 ```
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const rows = [
   {
     label: "Label 4",
@@ -37,11 +41,14 @@ const rows = [
   },
 ];
 
-<TwoColumnGrid textAlign={["left", "right"]} rows={rows} />;
+<ExampleWrapper>
+  <TwoColumnGrid textAlign={["left", "right"]} rows={rows} />
+</ExampleWrapper>;
 ```
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const rows = [
   {
     label: "Label 7",
@@ -57,5 +64,7 @@ const rows = [
   },
 ];
 
-<TwoColumnGrid textAlign={[null, "center"]} rows={rows} />;
+<ExampleWrapper>
+  <TwoColumnGrid textAlign={[null, "center"]} rows={rows} />
+</ExampleWrapper>;
 ```

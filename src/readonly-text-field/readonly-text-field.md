@@ -1,17 +1,29 @@
 ### Example
 
 ```js
-<ReadOnlyTextField>Readonly text field</ReadOnlyTextField>
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+<ExampleWrapper>
+  <ReadOnlyTextField>Readonly text field</ReadOnlyTextField>
+</ExampleWrapper>;
 ```
 
 ```js
-<ReadOnlyTextField />
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+<ExampleWrapper>
+  <ReadOnlyTextField icon="star">Starred</ReadOnlyTextField>
+</ExampleWrapper>;
 ```
 
 ```js
-<ReadOnlyTextField showEmptyValue />
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+<ExampleWrapper>
+  <ReadOnlyTextField />
+</ExampleWrapper>;
 ```
 
 ```js
-<ReadOnlyTextField icon="star">Starred</ReadOnlyTextField>
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+<ExampleWrapper>
+  <ReadOnlyTextField showEmptyValue />
+</ExampleWrapper>;
 ```

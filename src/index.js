@@ -20,7 +20,8 @@ export { PagedTable, SimpleTable } from "./table";
 export { Selector } from "./selector";
 export { SpinnerOverlay } from "./spinner-overlay";
 export { StyleWrapper } from "./style-wrapper";
-export { ExampleBlock } from "./utils/example-block";
 export { TextInput } from "./text-input";
 export { TabbedCard } from "./tabbed-card";
-export { TimelineGraph } from "./timeline-graph";
+export { CommonTimelineGraph, TimelineGraph } from "./timeline-graph";
+// $FlowFixMe: Property `ExampleWrapper/ExampleBlock` is missing in ModuleNamespace for export {}
+export { ExampleWrapper, ExampleBlock } from "./utils";

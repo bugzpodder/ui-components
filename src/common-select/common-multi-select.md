@@ -4,6 +4,7 @@
 
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const Fragment = require("react").Fragment;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
@@ -38,12 +39,15 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```
 
 ### Creatable
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 const Fragment = require("react").Fragment;
 
@@ -81,12 +85,15 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```
 
 ### Asynchronous
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 const Fragment = require("react").Fragment;
 
@@ -140,12 +147,15 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```
 
 ### Custom
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 const Chip = require("@material-ui/core/Chip").default;
 
@@ -191,5 +201,7 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```

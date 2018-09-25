@@ -3,6 +3,7 @@
 ### Default
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 
@@ -37,12 +38,15 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```
 
 ### Creatable
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 
@@ -80,12 +84,15 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```
 
 ### Asynchronous
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 
@@ -138,12 +145,15 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```
 
 ### Custom
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const ExampleBlock = require("@grail/components").ExampleBlock;
 const Chip = require("@material-ui/core/Chip").default;
 
@@ -189,5 +199,7 @@ class SelectExample extends React.Component {
   }
 }
 
-<SelectExample />;
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
 ```

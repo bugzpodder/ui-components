@@ -5,9 +5,12 @@
 ### Example
 
 ```js
-const { ExternalLinkButton } = require("./external-link-button");
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExternalLinkButton = require("./external-link-button");
 
-<ExternalLinkButton variant="raised" color="primary" href="https://www.grail.com">
-  GRAIL Link in new tab
-</ExternalLinkButton>;
+<ExampleWrapper>
+  <ExternalLinkButton variant="raised" color="primary" href="https://www.grail.com">
+    GRAIL Link in new tab
+  </ExternalLinkButton>
+</ExampleWrapper>;
 ```

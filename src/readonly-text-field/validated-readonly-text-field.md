@@ -1,13 +1,22 @@
 ### Example
 
 ```js
-<ValidatedReadOnlyTextField isValid>yes</ValidatedReadOnlyTextField>
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+<ExampleWrapper>
+  <ValidatedReadOnlyTextField isValid>yes</ValidatedReadOnlyTextField>
+</ExampleWrapper>;
 ```
 
 ```js
-<ValidatedReadOnlyTextField isValid={false}>no</ValidatedReadOnlyTextField>
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+<ExampleWrapper>
+  <ValidatedReadOnlyTextField isValid={false}>no</ValidatedReadOnlyTextField>
+</ExampleWrapper>;
 ```
 
 ```js
-<ValidatedReadOnlyTextField isNA>N/A</ValidatedReadOnlyTextField>
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+<ExampleWrapper>
+  <ValidatedReadOnlyTextField isNA>N/A</ValidatedReadOnlyTextField>
+</ExampleWrapper>;
 ```

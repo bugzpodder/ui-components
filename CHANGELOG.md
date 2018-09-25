@@ -1,9 +1,11 @@
-## 0.7.0 - 2018-09-XX
+## 0.7.0 - 2018-09-26
 
 1.  Update `PagedTable` and `CommonTable`: scroll only the table body and limit the max-height
-1.  Convert Omni-bar field to act more like Omni search.
+2.  Convert Omni-bar field to act more like Omni search.
     The first search field will act as global search (only if its type is `OMNI_TEXT_SEARCH_TYPE`).
     This maintains backward compatibility. Ideally, we can require an omni field definition.
+3.  Create New TimelineGraph component, which uses Material-UI components rather than SVGs, allowing for
+    more customization.
 
 ## 0.6.0 - 2018-08-15
 

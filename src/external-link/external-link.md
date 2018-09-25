@@ -5,7 +5,7 @@
 ### Example
 
 ```js
-const { ExternalLink } = require("./external-link");
+const ExternalLink = require("./external-link");
 
 <ExternalLink href="https://www.grail.com">GRAIL Link in new tab</ExternalLink>;
 ```

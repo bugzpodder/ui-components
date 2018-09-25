@@ -2,6 +2,9 @@
 
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const EXAMPLE_TABLE_DATA = require("@grail/components/src/utils").EXAMPLE_TABLE_DATA;
+
 class TestSimpleTable extends React.Component {
   constructor(props) {
     super(props);
@@ -10,25 +13,7 @@ class TestSimpleTable extends React.Component {
         sortOptions: [{ id: "name", desc: false }],
         selectedRowIds: [],
       },
-      data: [
-        { word: "Argle-bargle", origin: "Britain" },
-        { word: "Dwaal", origin: "South Africa" },
-        { word: "Floccinaucinihilipilification", origin: "General English" },
-        { word: "Lollygag", origin: "North American" },
-        { word: "Mouse Potato", origin: "General English" },
-        { word: "Ogdoad", origin: "General English" },
-        { word: "Sesquipedalian", origin: "General English" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-        { word: "Bubbler", origin: "North American" },
-        { word: "Git", origin: "Britain" },
-      ],
+      data: EXAMPLE_TABLE_DATA,
     };
 
     this.compare = this.compare.bind(this);
@@ -109,5 +94,7 @@ class TestSimpleTable extends React.Component {
   }
 }
 
-<TestSimpleTable />;
+<ExampleWrapper>
+  <TestSimpleTable />
+</ExampleWrapper>;
 ```

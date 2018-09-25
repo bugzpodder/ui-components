@@ -1,0 +1,796 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render and select timeline graph with multiple rows 1`] = `
+<div>
+  <div
+    class="timelineGraph card-width-wide card-height-short"
+  >
+    <svg
+      class="timelineSvg"
+      height="300"
+    >
+      <defs>
+        <filter
+          height="200%"
+          id="drop-shadow"
+          width="200%"
+          x="0"
+          y="0"
+        >
+          <fegaussianblur
+            in="SourceAlpha"
+            stdDeviation="3"
+          />
+          <feoffset
+            dx="2"
+            dy="2"
+            result="offsetblur"
+          />
+          <fecomponenttransfer>
+            <fefunca
+              slope="0.5"
+              type="linear"
+            />
+          </fecomponenttransfer>
+          <femerge>
+            <femergenode />
+            <femergenode
+              in="SourceGraphic"
+            />
+          </femerge>
+        </filter>
+      </defs>
+      <g
+        class=""
+        data-row-index="0"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
+        />
+        <circle
+          class="timelinePathFinial"
+          cx="0"
+          cy="-10"
+          r="6"
+        />
+        <g
+          class="isSelectable card-container"
+          transform="translate(20, 10)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="60"
+            width="240"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-0 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="30"
+              >
+                Row 2, Column 0, Field 0
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
+            </text>
+          </g>
+        </g>
+      </g>
+      <g
+        class=""
+        data-row-index="1"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,70
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
+        />
+        <g
+          class="isSelectable card-container"
+          transform="translate(20, 90)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="60"
+            width="240"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-1 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="30"
+              >
+                Row 1, Column 0, Field 0
+              </text>
+            </g>
+            <g
+              data-column-index="1"
+              transform="translate(90, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="12"
+              >
+                Row 1, Column 1, Field 0
+              </text>
+              <text
+                class="timeline-text-1 text"
+                data-field-index="1"
+                y="48"
+              >
+                Row 1, Column 1, Field 1
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
+            </text>
+          </g>
+        </g>
+      </g>
+      <g
+        class="isSelected"
+        data-row-index="2"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,150
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
+        />
+        <rect
+          class="timelinePathFinial"
+          height="12"
+          width="12"
+          x="-6"
+          y="244"
+        />
+        <g
+          class="isSelectable card-container"
+          transform="translate(20, 170)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="60"
+            width="240"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-2 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="30"
+              >
+                Row 0, Column 0, Field 0
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
+            </text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render timeline graph with date 1`] = `
+<div>
+  <div
+    class="timelineGraph card-width-wide card-height-short"
+  >
+    <svg
+      class="timelineSvg"
+      height="140"
+    >
+      <defs>
+        <filter
+          height="200%"
+          id="drop-shadow"
+          width="200%"
+          x="0"
+          y="0"
+        >
+          <fegaussianblur
+            in="SourceAlpha"
+            stdDeviation="3"
+          />
+          <feoffset
+            dx="2"
+            dy="2"
+            result="offsetblur"
+          />
+          <fecomponenttransfer>
+            <fefunca
+              slope="0.5"
+              type="linear"
+            />
+          </fecomponenttransfer>
+          <femerge>
+            <femergenode />
+            <femergenode
+              in="SourceGraphic"
+            />
+          </femerge>
+        </filter>
+      </defs>
+      <g
+        class=""
+        data-row-index="0"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
+        />
+        <circle
+          class="timelinePathFinial"
+          cx="0"
+          cy="-10"
+          r="6"
+        />
+        <rect
+          class="timelinePathFinial"
+          height="12"
+          width="12"
+          x="-6"
+          y="84"
+        />
+        <g
+          class=""
+          transform="translate(20, 10)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="60"
+            width="240"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-0 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="30"
+              >
+                Test column
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
+            </text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render timeline graph with multiple columns 1`] = `
+<div>
+  <div
+    class="timelineGraph card-width-wide card-height-short"
+  >
+    <svg
+      class="timelineSvg"
+      height="140"
+    >
+      <defs>
+        <filter
+          height="200%"
+          id="drop-shadow"
+          width="200%"
+          x="0"
+          y="0"
+        >
+          <fegaussianblur
+            in="SourceAlpha"
+            stdDeviation="3"
+          />
+          <feoffset
+            dx="2"
+            dy="2"
+            result="offsetblur"
+          />
+          <fecomponenttransfer>
+            <fefunca
+              slope="0.5"
+              type="linear"
+            />
+          </fecomponenttransfer>
+          <femerge>
+            <femergenode />
+            <femergenode
+              in="SourceGraphic"
+            />
+          </femerge>
+        </filter>
+      </defs>
+      <g
+        class=""
+        data-row-index="0"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
+        />
+        <circle
+          class="timelinePathFinial"
+          cx="0"
+          cy="-10"
+          r="6"
+        />
+        <rect
+          class="timelinePathFinial"
+          height="12"
+          width="12"
+          x="-6"
+          y="84"
+        />
+        <g
+          class=""
+          transform="translate(20, 10)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="60"
+            width="240"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-0 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="30"
+              >
+                Column 0, Field 0
+              </text>
+            </g>
+            <g
+              data-column-index="1"
+              transform="translate(90, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="12"
+              >
+                Column 1, Field 0
+              </text>
+              <text
+                class="timeline-text-1 text"
+                data-field-index="1"
+                y="48"
+              >
+                Column 1, Field 1
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="30"
+            >
+              2018-04-20
+            </text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render timeline graph with narrow cards 1`] = `
+<div>
+  <div
+    class="timelineGraph card-width-narrow card-height-short"
+  >
+    <svg
+      class="timelineSvg"
+      height="140"
+    >
+      <defs>
+        <filter
+          height="200%"
+          id="drop-shadow"
+          width="200%"
+          x="0"
+          y="0"
+        >
+          <fegaussianblur
+            in="SourceAlpha"
+            stdDeviation="3"
+          />
+          <feoffset
+            dx="2"
+            dy="2"
+            result="offsetblur"
+          />
+          <fecomponenttransfer>
+            <fefunca
+              slope="0.5"
+              type="linear"
+            />
+          </fecomponenttransfer>
+          <femerge>
+            <femergenode />
+            <femergenode
+              in="SourceGraphic"
+            />
+          </femerge>
+        </filter>
+      </defs>
+      <g
+        class=""
+        data-row-index="0"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
+        />
+        <circle
+          class="timelinePathFinial"
+          cx="0"
+          cy="-10"
+          r="6"
+        />
+        <rect
+          class="timelinePathFinial"
+          height="12"
+          width="12"
+          x="-6"
+          y="84"
+        />
+        <g
+          class=""
+          transform="translate(20, 10)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="60"
+            width="160"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-0 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="30"
+              >
+                Test column
+              </text>
+            </g>
+            <text
+              class="date"
+              x="160"
+              y="30"
+            >
+              2018-04-20
+            </text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render timeline graph with tall cards 1`] = `
+<div>
+  <div
+    class="timelineGraph card-width-wide card-height-tall"
+  >
+    <svg
+      class="timelineSvg"
+      height="180"
+    >
+      <defs>
+        <filter
+          height="200%"
+          id="drop-shadow"
+          width="200%"
+          x="0"
+          y="0"
+        >
+          <fegaussianblur
+            in="SourceAlpha"
+            stdDeviation="3"
+          />
+          <feoffset
+            dx="2"
+            dy="2"
+            result="offsetblur"
+          />
+          <fecomponenttransfer>
+            <fefunca
+              slope="0.5"
+              type="linear"
+            />
+          </fecomponenttransfer>
+          <femerge>
+            <femergenode />
+            <femergenode
+              in="SourceGraphic"
+            />
+          </femerge>
+        </filter>
+      </defs>
+      <g
+        class=""
+        data-row-index="0"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,-10
+                  l0,70
+                  l20,0
+                  m-20,0
+                  l0,70
+                "
+        />
+        <circle
+          class="timelinePathFinial"
+          cx="0"
+          cy="-10"
+          r="6"
+        />
+        <rect
+          class="timelinePathFinial"
+          height="12"
+          width="12"
+          x="-6"
+          y="124"
+        />
+        <g
+          class=""
+          transform="translate(20, 10)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="100"
+            width="240"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-0 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="50"
+              >
+                Test column
+              </text>
+            </g>
+            <text
+              class="date"
+              x="240"
+              y="50"
+            >
+              2018-04-20
+            </text>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`render timeline graph without date 1`] = `
+<div>
+  <div
+    class="timelineGraph card-width-wide card-height-short"
+  >
+    <svg
+      class="timelineSvg"
+      height="140"
+    >
+      <defs>
+        <filter
+          height="200%"
+          id="drop-shadow"
+          width="200%"
+          x="0"
+          y="0"
+        >
+          <fegaussianblur
+            in="SourceAlpha"
+            stdDeviation="3"
+          />
+          <feoffset
+            dx="2"
+            dy="2"
+            result="offsetblur"
+          />
+          <fecomponenttransfer>
+            <fefunca
+              slope="0.5"
+              type="linear"
+            />
+          </fecomponenttransfer>
+          <femerge>
+            <femergenode />
+            <femergenode
+              in="SourceGraphic"
+            />
+          </femerge>
+        </filter>
+      </defs>
+      <g
+        class=""
+        data-row-index="0"
+        transform="translate(20, 40)"
+      >
+        <path
+          class="timelinePath"
+          d="
+                  M0,-10
+                  l0,50
+                  l20,0
+                  m-20,0
+                  l0,50
+                "
+        />
+        <circle
+          class="timelinePathFinial"
+          cx="0"
+          cy="-10"
+          r="6"
+        />
+        <rect
+          class="timelinePathFinial"
+          height="12"
+          width="12"
+          x="-6"
+          y="84"
+        />
+        <g
+          class=""
+          transform="translate(20, 10)"
+        >
+          <rect
+            class="timelineBlock"
+            filter="url(#drop-shadow)"
+            height="60"
+            width="240"
+            x="0"
+            y="0"
+          />
+          <g
+            class="timeline-item-0 timelineBlockContent"
+          >
+            <g
+              data-column-index="0"
+              transform="translate(10, 0)"
+            >
+              <text
+                class="timeline-text-0 text"
+                data-field-index="0"
+                y="30"
+              >
+                Test column
+              </text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+`;

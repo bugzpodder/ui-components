@@ -1,6 +1,7 @@
 ### Example
 
 ```js
+const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const {
   setSearchOptionsFromOmni,
   setOmniFromSearchOptions,
@@ -52,8 +53,9 @@ const onChange = (id, values) => {
     }
   }
 };
-
-<OmniSearchBar searchOptions={searchOptions} omniSearch={omniSearch} onChange={onChange}>
-  Children here appear in the dropdown
-</OmniSearchBar>;
+<ExampleWrapper>
+  <OmniSearchBar searchOptions={searchOptions} omniSearch={omniSearch} onChange={onChange}>
+    Children here appear in the dropdown
+  </OmniSearchBar>
+</ExampleWrapper>;
 ```

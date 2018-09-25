@@ -52,7 +52,6 @@ module.exports = {
         "./src/common-card/card.jsx",
         "./src/common-panel/panel.jsx",
         "./src/spinner-overlay/spinner-overlay.jsx",
-        "./src/timeline-graph/timeline-graph.jsx",
       ],
     },
     {
@@ -68,6 +67,7 @@ module.exports = {
         "./src/navbar/navbar.jsx",
         "./src/table/paged-table.jsx",
         "./src/table/simple-table.jsx",
+        "./src/timeline-graph/timeline-graph.jsx",
       ],
     },
   ],

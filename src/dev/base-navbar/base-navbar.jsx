@@ -71,7 +71,7 @@ export const BaseNavbar = (props: Props) => {
   } = props;
   const { classes = {} } = props;
   const isLims = domain === LIMS;
-  const isOctober = moment().month() === 10;
+  const isOctober = moment().month() === 9;
   return (
     <Fragment>
       <AppBar

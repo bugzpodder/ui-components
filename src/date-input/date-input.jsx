@@ -17,11 +17,15 @@ type Props = {
   label?: string,
   /** String that specifies the format of the date field. Defaults to `YYYY-MM-DD`. */
   format?: string,
+  /** Text to display beneath the date input */
+  helperText?: string,
 } & ElementConfig<typeof DatePicker>;
 
 /** Provides component for common Date picker. */
 export const DateInput = (props: Props) => {
-  const { readOnly, showEmptyValue = false, value, format = DATE_FORMAT } = props;
+  const {
+    readOnly, showEmptyValue = false, value, format = DATE_FORMAT,
+  } = props;
   if (readOnly) {
     return (
       <ReadOnlyTextField showEmptyValue={showEmptyValue}>

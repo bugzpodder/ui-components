@@ -22,11 +22,22 @@ type Props = {
   onSelect?: (?number) => any,
   /** The value of the currently selected item. Must be a unique date from the `rows` data objects. */
   selectedItem?: ?number,
+  /** The object used to define `className`s for the TimelineGraph sub components. Options include:
+   *
+   *  - `root`: the component's root element
+   *  - `timelineCard`: the component card container
+   *  - `timelineItem`: class applied to the timeline paper
+   *  - `timelineItemContent`: the class applied to the timeline item content wrapper
+   *
+   */
+  classes?: TimelineGraphClasses,
 };
 
 /** TimelineGraph provides an interactive timeline component */
 export const TimelineGraph = (props: Props) => {
-  const { onSelect, selectedItem, rows } = props;
+  const {
+    onSelect, selectedItem, rows, classes = {},
+  } = props;
   const entries = rows.map((item, index) => {
     const year = moment(item.date).format("YYYY");
     const paperClass = onSelect ? styles.timelinePaperButton : styles.timelinePaper;
@@ -35,10 +46,10 @@ export const TimelineGraph = (props: Props) => {
         id={index}
         data-testid={`timeline-item-${index}`}
         onClick={onSelect ? () => (index === selectedItem ? onSelect(null) : onSelect(index)) : null}
-        classes={{ root: paperClass }}
+        classes={{ root: classNames(paperClass, classes.timelineItem) }}
         elevation={INNER_CARD_ELEVATION}
       >
-        <div className={styles.paperContent}>{item.content}</div>
+        <div className={classNames(styles.paperContent, classes.timelineItemContent)}>{item.content}</div>
       </Paper>
     );
     return {
@@ -67,9 +78,9 @@ export const TimelineGraph = (props: Props) => {
     };
   });
   return (
-    <div className={styles.timelineContainer}>
+    <div className={classNames(styles.timelineContainer, classes.root)}>
       <Card
-        className={styles.timelineCard}
+        className={classNames(styles.timelineCard, classes.timelineCard)}
         elevation={MAIN_CARD_ELEVATION}
       >
         <div className={styles.timelineContent}>

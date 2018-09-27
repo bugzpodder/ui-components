@@ -10,6 +10,7 @@ $selected-line-notch-length: 14px;
 $selected-line-notch-half-length: calc(#{$selected-line-notch-length} / 2);
 
 $shadow-color: rgba(0, 0, 0, 0.14);
+$active-color: $grail-gray-light-color;
 
 @mixin timelinePaper {
   margin-left: 23px;
@@ -39,7 +40,7 @@ $shadow-color: rgba(0, 0, 0, 0.14);
   font-size: 14px;
 
   .timelineCard {
-    height: 400px;
+    min-height: 400px;
     overflow-y: scroll;
     min-width: 380px;
     max-width: 500px;
@@ -71,11 +72,13 @@ $shadow-color: rgba(0, 0, 0, 0.14);
         }
 
         &:active {
+          background: $active-color;
           box-shadow: 0 2px 8px 0 $shadow-color;
         }
 
         &:active:before {
-          box-shadow: 0 1px 1px 0 $shadow-color;
+          background: $active-color;
+          box-shadow: -1px 2px 5px -1px $shadow-color;
         }
       }
 

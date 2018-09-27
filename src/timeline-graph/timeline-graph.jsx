@@ -25,9 +25,10 @@ type Props = {
   /** The object used to define `className`s for the TimelineGraph sub components. Options include:
    *
    *  - `root`: the component's root element
-   *  - `timelineCard`: the component card container
-   *  - `timelineItem`: class applied to the timeline paper
-   *  - `timelineItemContent`: the class applied to the timeline item content wrapper
+   *  - `card`: the component card container
+   *  - `content`: the wrapper around the timeline content, inside of the card body
+   *  - `item`: class applied to the timeline paper
+   *  - `itemContent`: the class applied to the timeline item content wrapper
    *
    */
   classes?: TimelineGraphClasses,
@@ -46,10 +47,10 @@ export const TimelineGraph = (props: Props) => {
         id={index}
         data-testid={`timeline-item-${index}`}
         onClick={onSelect ? () => (index === selectedItem ? onSelect(null) : onSelect(index)) : null}
-        classes={{ root: classNames(paperClass, classes.timelineItem) }}
+        classes={{ root: classNames(paperClass, classes.item) }}
         elevation={INNER_CARD_ELEVATION}
       >
-        <div className={classNames(styles.paperContent, classes.timelineItemContent)}>{item.content}</div>
+        <div className={classNames(styles.paperContent, classes.itemContent)}>{item.content}</div>
       </Paper>
     );
     return {
@@ -80,10 +81,10 @@ export const TimelineGraph = (props: Props) => {
   return (
     <div className={classNames(styles.timelineContainer, classes.root)}>
       <Card
-        className={classNames(styles.timelineCard, classes.timelineCard)}
+        className={classNames(styles.timelineCard, classes.card)}
         elevation={MAIN_CARD_ELEVATION}
       >
-        <div className={styles.timelineContent}>
+        <div className={classNames(styles.timelineContent, classes.content)}>
           {entries.map((entry, index) => {
             const itemIsSelected = selectedItem === entry.id;
             return (

@@ -10,7 +10,8 @@ declare type TimelineGraphRow = {
 
 declare type TimelineGraphClasses = {
   root?: string,
-  timelineCard?: string,
-  timelineItem?: string,
-  timelineItemContent?: string,
+  card?: string,
+  content?: string,
+  item?: string,
+  itemContent?: string,
 }

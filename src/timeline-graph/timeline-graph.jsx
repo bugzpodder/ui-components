@@ -15,13 +15,6 @@ type Props = {
    * Each object should include a unique `date` and some `content` to render.
    */
   rows: Array<TimelineGraphRow>,
-  /**
-   * The function used to set the value of the `selectedItem`. Returns the unique date of the
-   * timeline entry
-   */
-  onSelect?: (?number) => any,
-  /** The value of the currently selected item. Must be a unique date from the `rows` data objects. */
-  selectedItem?: ?number,
   /** The object used to define `className`s for the TimelineGraph sub components. Options include:
    *
    *  - `root`: the component's root element
@@ -32,12 +25,21 @@ type Props = {
    *
    */
   classes?: TimelineGraphClasses,
+  /**
+   * The function used to set the value of the `selectedItem`. Returns the unique date of the
+   * timeline entry
+   */
+  onSelect?: (?number) => any,
+  /** When `true`, displays the time in the timeline graph */
+  isTimeVisible?: boolean,
+  /** The value of the currently selected item. Must be a unique date from the `rows` data objects. */
+  selectedItem?: ?number,
 };
 
 /** TimelineGraph provides an interactive timeline component */
 export const TimelineGraph = (props: Props) => {
   const {
-    onSelect, selectedItem, rows, classes = {},
+    onSelect, selectedItem, isTimeVisible, rows, classes = {},
   } = props;
   const entries = rows.map((item, index) => {
     const year = moment(item.date).format("YYYY");
@@ -59,8 +61,9 @@ export const TimelineGraph = (props: Props) => {
         <div className={styles.timelineDateContainer}>
           <Typography
             classes={{
-              root: styles.timelineDate,
+              root: classNames(styles.timelineDate, styles.smallDate),
             }}
+            data-testid={`timeline-year-${index}`}
             align="center"
           >
             {year}
@@ -69,10 +72,24 @@ export const TimelineGraph = (props: Props) => {
             classes={{
               root: styles.timelineDate,
             }}
+            data-testid={`timeline-date-${index}`}
             align="center"
           >
-            {`${moment(item.date).format("MM")}/${moment(item.date).format("DD")}`}
+            {// Since year is separate from month and day, we can not use ISO-8601 format or numeric date format.
+            // These would be confusing to HK, etc.
+            moment(item.date).format("DD MMM")}
           </Typography>
+          {isTimeVisible && (
+            <Typography
+              classes={{
+                root: classNames(styles.timelineDate, styles.smallDate),
+              }}
+              data-testid={`timeline-time-${index}`}
+              align="center"
+            >
+              {`${moment(item.date).format("HH:mm")}`}
+            </Typography>
+          )}
         </div>
       ),
       content,

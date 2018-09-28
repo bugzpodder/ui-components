@@ -26,7 +26,7 @@ const rows = [
 </ExampleWrapper>;
 ```
 
-### Selectable TimelineGraph
+### Selectable TimelineGraph (with Time)
 
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
@@ -66,7 +66,7 @@ class ExampleTimelineGraph extends React.Component {
   render() {
     return (
       <div>
-        <TimelineGraph onSelect={this.handleSelect} selectedItem={this.state.selectedItem} rows={rows} />
+        <TimelineGraph isTimeVisible onSelect={this.handleSelect} selectedItem={this.state.selectedItem} rows={rows} />
         <ExampleBlock strongHeader="State " content={this.state} />
       </div>
     );

@@ -13,17 +13,32 @@ const bodyUtils = bindElementToQueries(document.body);
 
 const rows = [
   {
-    date: "2018-04-20T16:20:00Z",
+    date: "2018-04-20T16:20:00",
     content: <div>Testing</div>,
   },
 ];
 
 test("render simple timeline graph", () => {
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <CommonTimelineGraph rows={rows} />
     </TestWrapper>,
   );
+  expect(getByTestId("timeline-year-0")).toHaveTextContent("2018");
+  expect(getByTestId("timeline-date-0")).toHaveTextContent("20 Apr");
+  expect(container).toMatchSnapshot();
+});
+
+test("render simple timeline graph with time", () => {
+  const { container, getByTestId } = render(
+    <TestWrapper>
+      <CommonTimelineGraph
+        rows={rows}
+        isTimeVisible
+      />
+    </TestWrapper>,
+  );
+  expect(getByTestId("timeline-time-0")).toHaveTextContent("16:20");
   expect(container).toMatchSnapshot();
 });
 

@@ -18,7 +18,7 @@ exports[`render simple timeline graph 1`] = `
             class="timelineDateContainer"
           >
             <p
-              class="MuiTypography-root timelineDate smallDate MuiTypography-body1 MuiTypography-alignCenter"
+              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
               data-testid="timeline-year-0"
             >
               2018
@@ -75,7 +75,7 @@ exports[`render simple timeline graph with time 1`] = `
             class="timelineDateContainer"
           >
             <p
-              class="MuiTypography-root timelineDate smallDate MuiTypography-body1 MuiTypography-alignCenter"
+              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
               data-testid="timeline-year-0"
             >
               2018
@@ -87,7 +87,7 @@ exports[`render simple timeline graph with time 1`] = `
               20 Apr
             </p>
             <p
-              class="MuiTypography-root timelineDate smallDate MuiTypography-body1 MuiTypography-alignCenter"
+              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
               data-testid="timeline-time-0"
             >
               16:20
@@ -138,7 +138,7 @@ exports[`test selecting an item on the timeline graph 1`] = `
             class="timelineDateContainer"
           >
             <p
-              class="MuiTypography-root timelineDate smallDate MuiTypography-body1 MuiTypography-alignCenter"
+              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
               data-testid="timeline-year-0"
             >
               2018
@@ -195,7 +195,7 @@ exports[`test unselecting an item on the timeline graph 1`] = `
             class="timelineDateContainer"
           >
             <p
-              class="MuiTypography-root timelineDate smallDate MuiTypography-body1 MuiTypography-alignCenter"
+              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
               data-testid="timeline-year-0"
             >
               2018

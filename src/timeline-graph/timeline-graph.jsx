@@ -61,7 +61,7 @@ export const TimelineGraph = (props: Props) => {
         <div className={styles.timelineDateContainer}>
           <Typography
             classes={{
-              root: classNames(styles.timelineDate, styles.smallDate),
+              root: styles.smallDate,
             }}
             data-testid={`timeline-year-${index}`}
             align="center"
@@ -82,7 +82,7 @@ export const TimelineGraph = (props: Props) => {
           {isTimeVisible && (
             <Typography
               classes={{
-                root: classNames(styles.timelineDate, styles.smallDate),
+                root: styles.smallDate,
               }}
               data-testid={`timeline-time-${index}`}
               align="center"

@@ -27,7 +27,7 @@ class SelectExample extends React.Component {
     return (
       <Fragment>
         <CommonSelect
-          placeholder="Choose A Country"
+          helpertext="Choose a country"
           value={this.state.value}
           options={countries}
           onChange={this.handleChange}
@@ -72,7 +72,7 @@ class SelectExample extends React.Component {
         <CommonSelect
           isFullWidth
           selectType="creatable"
-          placeholder="Create or Choose"
+          helpertext="Create or choose"
           createMessage={inputValue => `Invent a new country called "${inputValue}"`}
           options={countries}
           value={this.state.value}
@@ -131,7 +131,7 @@ class SelectExample extends React.Component {
       <Fragment>
         <CommonSelect
           isFullWidth
-          placeholder="Choose A Country"
+          helpertext="Choose a country"
           selectType="async"
           initialMessage="Think of a country between A and B..."
           value={this.state.value}
@@ -182,7 +182,7 @@ class SelectExample extends React.Component {
             root: styles.commonSelect,
           }}
           isFullWidth
-          placeholder="Choose A Country"
+          helpertext="Choose a country"
           value={this.state.value}
           options={countries.map(country => ({ ...country, info: ["country", "place", "region"] }))}
           onChange={this.handleChange}

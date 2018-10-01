@@ -16,4 +16,10 @@
   .error {
     color: $grail-red-color;
   }
+
+  // !important necessary because there are a lot of material-ui styles
+  // overriding the classname when the switch is toggled
+  .errorBar {
+    background-color: $grail-red-color !important;
+  }
 }

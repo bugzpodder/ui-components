@@ -96,6 +96,7 @@ export const TabbedCard = (props: Props) => {
           subheader={subheader}
         />
         <Tabs
+          data-testid="card-tabs"
           textColor="primary"
           indicatorColor="primary"
           value={value}

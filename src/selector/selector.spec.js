@@ -3,11 +3,14 @@ import "jest-dom/extend-expect";
 import React from "react";
 import { Selector } from "./index";
 import { TestWrapper } from "../utils";
-import { cleanup, render } from "react-testing-library";
+import { bindElementToQueries } from "dom-testing-library";
+import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
+const bodyUtils = bindElementToQueries(document.body);
 
 test("render selector", async () => {
+  const mockOnSelect = jest.fn(result => result);
   const selectorData = [
     { key: "testKey1", text: "test text 1" },
     { key: "testKey2", text: "test text 2" },
@@ -21,9 +24,11 @@ test("render selector", async () => {
         showError
         helperText="test helper text"
         value="testKey1"
+        onSelect={mockOnSelect}
       />
     </TestWrapper>,
   );
+  fireEvent.click(bodyUtils.getByTestId("selector-button"));
   expect(getByTestId("selector")).toHaveTextContent("test text 1");
   expect(container).toMatchSnapshot();
 });
@@ -39,7 +44,6 @@ test("render selector without selected value", async () => {
       <Selector
         name="test-selector"
         data={selectorData}
-        value=""
       />
     </TestWrapper>,
   );

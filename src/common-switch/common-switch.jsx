@@ -67,9 +67,8 @@ export class CommonSwitch extends React.Component<Props, State> {
       ...controlProps
     } = this.props;
     const { isChecked } = this.state;
-    const errorClass = {};
-    errorClass[styles.error] = showError;
-    const switchSelection = isSelected !== undefined || isSelected !== null ? isSelected : isChecked;
+    const errorClass = { [styles.error]: showError };
+    const switchSelection = isSelected === undefined || isSelected === null ? isChecked : isSelected;
     return (
       <div className={classNames(styles.commonSwitch, classes.root)}>
         <FormControlLabel
@@ -77,15 +76,16 @@ export class CommonSwitch extends React.Component<Props, State> {
             root: styles.controlLabel,
             label: classNames(classes.label, errorClass),
           }}
+          data-testid="common-switch"
           control={(
             <Switch
               id={id}
-              data-testid="common-switch"
               checked={switchSelection}
               classes={{
                 iconChecked: classNames(errorClass),
                 colorPrimary: classNames(errorClass),
                 colorSecondary: classNames(errorClass),
+                bar: classNames({ [styles.errorBar]: showError }),
               }}
               color={color}
               disabled={!isEnabled}

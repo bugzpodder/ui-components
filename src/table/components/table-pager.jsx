@@ -54,7 +54,11 @@ export const TablePager = (props: Props) => {
       rowsPerPageOptions={[5, 10, 25, 50]}
       backIconButtonProps={{ className: "previous-page", "data-testid": "previous-page" }}
       nextIconButtonProps={{ className: "next-page", "data-testid": "next-page" }}
-      SelectProps={{ id: "rows-per-page", className: `select-row-count ${styles.selectRowCount}` }}
+      SelectProps={{
+        id: "rows-per-page",
+        "data-testid": "rows-per-page",
+        className: `select-row-count ${styles.selectRowCount}`,
+      }}
     />
   );
 };

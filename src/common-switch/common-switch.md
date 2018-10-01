@@ -35,9 +35,9 @@ class TestCommonSwitch extends React.Component {
     const { checkedA, checkedB, showError } = this.state;
     return (
       <div className={styles.container}>
-        <CommonSwitch label="Primary" color="primary" onChange={() => {}} />
+        <CommonSwitch label="Primary" onChange={() => {}} />
 
-        <CommonSwitch label="Secondary" value="secondary" onChange={() => {}} />
+        <CommonSwitch label="Secondary" color="secondary" value="secondary" onChange={() => {}} />
 
         <CommonSwitch
           label="Error"

@@ -1,40 +1,31 @@
 // @flow
 import "jest-dom/extend-expect";
-import Button from "@material-ui/core/Button";
 import React from "react";
 import { SpinnerOverlay } from "./index";
 import { TestWrapper } from "../utils";
-import { fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "react-testing-library";
+
+afterEach(cleanup);
 
 test("render active spinner overlay", () => {
-  const mockCallback = jest.fn();
   const { container, getByTestId } = render(
     <TestWrapper>
-      <div>
-        <Button onClick={mockCallback}>Active Spinner Test</Button>
-        <SpinnerOverlay />
-      </div>
+      <SpinnerOverlay />
     </TestWrapper>,
   );
-  // TODO (jzhao/jsingh): jest does not recognize the overlay on the button and
-  // simulating a click on the button here still works...
-  // fireEvent.click(getByText("Active Spinner Test"));
-  // expect(mockCallback).not.toHaveBeenCalled();
+  // TODO(nsawas): find a way to check preventDefault / stopPropogation.
   fireEvent.click(getByTestId("spinner-overlay"));
+  fireEvent.mouseDown(getByTestId("spinner-overlay"));
+  expect(getByTestId("spinner-overlay")).toHaveAttribute("data-is-active", "true");
   expect(container).toMatchSnapshot();
 });
 
 test("render inactive spinner overlay", () => {
-  const mockCallback = jest.fn();
-  const { container, getByText } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
-      <div>
-        <Button onClick={mockCallback}>Inactive Spinner Test</Button>
-        <SpinnerOverlay isActive={false} />
-      </div>
+      <SpinnerOverlay isActive={false} />
     </TestWrapper>,
   );
-  fireEvent.click(getByText("Inactive Spinner Test"));
-  expect(mockCallback).toHaveBeenCalled();
+  expect(getByTestId("spinner-overlay")).toHaveAttribute("data-is-active", "false");
   expect(container).toMatchSnapshot();
 });

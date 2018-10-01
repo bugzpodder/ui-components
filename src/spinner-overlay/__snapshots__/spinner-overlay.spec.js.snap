@@ -2,60 +2,28 @@
 
 exports[`render active spinner overlay 1`] = `
 <div>
-  <div>
-    <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
-      tabindex="0"
-      type="button"
-    >
-      <span
-        class="MuiButton-label"
-      >
-        Active Spinner Test
-      </span>
-      <span
-        class="MuiTouchRipple-root"
-      />
-    </button>
+  <div
+    class="spinnerOverlay active"
+    data-is-active="true"
+    data-testid="spinner-overlay"
+  >
     <div
-      class="spinnerOverlay active"
-      data-is-active="true"
-      data-testid="spinner-overlay"
-    >
-      <div
-        class="loading"
-      />
-    </div>
+      class="loading"
+    />
   </div>
 </div>
 `;
 
 exports[`render inactive spinner overlay 1`] = `
 <div>
-  <div>
-    <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
-      tabindex="0"
-      type="button"
-    >
-      <span
-        class="MuiButton-label"
-      >
-        Inactive Spinner Test
-      </span>
-      <span
-        class="MuiTouchRipple-root"
-      />
-    </button>
+  <div
+    class="spinnerOverlay"
+    data-is-active="false"
+    data-testid="spinner-overlay"
+  >
     <div
-      class="spinnerOverlay"
-      data-is-active="false"
-      data-testid="spinner-overlay"
-    >
-      <div
-        class="loading"
-      />
-    </div>
+      class="loading"
+    />
   </div>
 </div>
 `;

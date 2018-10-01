@@ -8,13 +8,13 @@ exports[`render error common switch 1`] = `
     >
       <label
         class="MuiFormControlLabel-root controlLabel"
+        data-testid="common-switch"
       >
         <span
           class="MuiSwitch-root"
         >
           <span
             class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary error MuiSwitchBase-checked MuiSwitch-checked"
-            data-testid="common-switch"
           >
             <span
               class="MuiIconButton-label"
@@ -31,7 +31,7 @@ exports[`render error common switch 1`] = `
             </span>
           </span>
           <span
-            class="MuiSwitch-bar"
+            class="MuiSwitch-bar errorBar"
           />
         </span>
         <span
@@ -52,19 +52,19 @@ exports[`render primary common switch 1`] = `
     >
       <label
         class="MuiFormControlLabel-root controlLabel"
+        data-testid="common-switch"
       >
         <span
           class="MuiSwitch-root"
         >
           <span
-            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
-            data-testid="common-switch"
+            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary MuiSwitchBase-checked MuiSwitch-checked"
           >
             <span
               class="MuiIconButton-label"
             >
               <span
-                class="MuiSwitch-icon"
+                class="MuiSwitch-icon MuiSwitch-iconChecked"
               />
               <input
                 class="MuiSwitchBase-input"
@@ -102,19 +102,19 @@ exports[`render secondary common switch 1`] = `
     >
       <label
         class="MuiFormControlLabel-root controlLabel"
+        data-testid="common-switch"
       >
         <span
           class="MuiSwitch-root"
         >
           <span
-            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary"
-            data-testid="common-switch"
+            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary MuiSwitchBase-checked MuiSwitch-checked"
           >
             <span
               class="MuiIconButton-label"
             >
               <span
-                class="MuiSwitch-icon"
+                class="MuiSwitch-icon MuiSwitch-iconChecked"
               />
               <input
                 class="MuiSwitchBase-input"

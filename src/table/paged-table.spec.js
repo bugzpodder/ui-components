@@ -86,6 +86,7 @@ test("render paged table with no initially selected items, then select items", (
       />
     </TestWrapper>,
   );
+  // TODO(nsawas): find out why these get called twice.
   fireEvent.click(bodyUtils.getByTestId("table-checkbox-cell-first-datum"));
   expect(mockSelect.mock.results[0].value).toEqual(["First Datum"]);
   fireEvent.click(bodyUtils.getByTestId("table-checkbox-header"));
@@ -114,6 +115,21 @@ test("render paged table with all items selected, then unselect items", () => {
   expect(container).toMatchSnapshot();
 });
 
+test("render paged table with default ids", () => {
+  const mockSelect = jest.fn();
+  const { container } = render(
+    <TestWrapper>
+      <PagedTable
+        columns={columns}
+        data={data}
+        onSelect={mockSelect}
+        selectedRows={[]}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
 test("render paged table and test pagination", () => {
   const pagedData = data.slice(tableOptions.offset, tableOptions.offset + (tableOptions.count + 1));
   const mockPagination = jest.fn(result => result);
@@ -136,6 +152,7 @@ test("render paged table and test pagination", () => {
   expect(getByTestId("card-header")).toHaveTextContent("Test Table (2 Selected)");
   fireEvent.click(bodyUtils.getByTestId("next-page"));
   expect(mockPagination.mock.results[0].value).toEqual({ offset: 5, count: 5 });
+  fireEvent.click(bodyUtils.getByTestId("rows-per-page"));
   expect(container).toMatchSnapshot();
 });
 

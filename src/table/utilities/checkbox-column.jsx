@@ -49,7 +49,9 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
       />
     ),
     Cell: ({ rowId }: PagedTableCell) => {
-      const testId = typeof rowId === "string" ? rowId.toLowerCase().replace(" ", "-") : rowId;
+      const testId = String(rowId)
+        .toLowerCase()
+        .replace(" ", "-");
       return (
         <Checkbox
           id={String(rowId)}

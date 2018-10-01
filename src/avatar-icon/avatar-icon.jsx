@@ -41,7 +41,7 @@ export class AvatarIcon extends React.Component<Props> {
           buttonRef={ref => {
             this.avatarRef = ref;
           }}
-          onClick={() => onClick && onClick(!isMenuOpen)}
+          onClick={onClick ? () => onClick(!isMenuOpen) : undefined}
           color="inherit"
           {...buttonProps}
         >
@@ -55,7 +55,7 @@ export class AvatarIcon extends React.Component<Props> {
             getContentAnchorEl={null}
             open={isMenuOpen}
             TransitionProps={{ timeout: 0 }}
-            onClose={() => onClick && onClick(false)}
+            onClose={onClick ? () => onClick(false) : undefined}
           >
             {menuItems.map((item, index) => {
               const {
@@ -65,10 +65,14 @@ export class AvatarIcon extends React.Component<Props> {
                 isVisible && (
                   <MenuItem
                     key={`avatar-menu-item-${index}`}
-                    onClick={() => {
-                      onClick && onClick(false);
-                      onClickMenuItem();
-                    }}
+                    onClick={
+                      onClick
+                        ? () => {
+                          onClick(false);
+                          onClickMenuItem();
+                        }
+                        : undefined
+                    }
                     {...menuItemProps}
                   >
                     {content}

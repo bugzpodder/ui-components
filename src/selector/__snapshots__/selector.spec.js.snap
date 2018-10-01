@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render selector 1`] = `
-<div>
+<div
+  aria-hidden="true"
+>
   <div
     class="selectorContainer"
   >
@@ -23,8 +25,10 @@ exports[`render selector 1`] = `
         >
           <div
             aria-haspopup="true"
-            aria-pressed="false"
+            aria-owns="menu-test-selector"
+            aria-pressed="true"
             class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+            data-testid="selector-button"
             role="button"
             tabindex="0"
           >
@@ -106,6 +110,7 @@ exports[`render selector without selected value 1`] = `
             aria-haspopup="true"
             aria-pressed="false"
             class="MuiSelect-select MuiSelect-selectMenu MuiInput-input"
+            data-testid="selector-button"
             role="button"
             tabindex="0"
           >

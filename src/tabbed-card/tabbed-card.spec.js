@@ -4,7 +4,7 @@ import React from "react";
 import { Alert } from "../alert/index";
 import { TabbedCard } from "./index";
 import { TestWrapper } from "../utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
 
@@ -36,6 +36,7 @@ const headerActions = [
 ];
 
 test("render tabbed card", () => {
+  const mockOnChange = jest.fn(result => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <TabbedCard
@@ -43,7 +44,7 @@ test("render tabbed card", () => {
         value="one"
         tabConfigs={validTabConfigs}
         headerActions={headerActions}
-        onChange={() => {}}
+        onChange={mockOnChange}
       />
     </TestWrapper>,
   );
@@ -51,5 +52,16 @@ test("render tabbed card", () => {
   expect(getByTestId("tab-one")).toHaveAttribute("aria-selected", "true");
   expect(getByTestId("alert")).not.toHaveTextContent("Tab Two!");
   expect(getByTestId("tab-two")).toHaveAttribute("aria-selected", "false");
+  fireEvent.click(getByTestId("tab-two"));
+  expect(mockOnChange.mock.results[0].value).toEqual("two");
+  expect(container).toMatchSnapshot();
+});
+
+test("render empty tabbed card", () => {
+  const { container } = render(
+    <TestWrapper>
+      <TabbedCard />
+    </TestWrapper>,
+  );
   expect(container).toMatchSnapshot();
 });

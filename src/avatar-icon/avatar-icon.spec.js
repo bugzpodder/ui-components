@@ -3,56 +3,36 @@ import "jest-dom/extend-expect";
 import React from "react";
 import { AvatarIcon } from "./index";
 import { TestWrapper } from "../utils";
+import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
+const bodyUtils = bindElementToQueries(document.body);
 
 test("render avatar with menu", () => {
+  const mockMenuOpen = jest.fn(result => result);
+  const mockItemClick = jest.fn(result => result);
   const menuItems = [
     {
-      content: "Item One",
+      content: "Test Item",
+      onClick: mockItemClick,
     },
   ];
-  const mockClick = jest.fn();
-  const { container, getByTestId } = render(
+  const { container } = render(
     <TestWrapper>
       <AvatarIcon
         isMenuOpen
         id="avatar-icon-button"
         menuItems={menuItems}
-        onClick={mockClick}
+        onClick={mockMenuOpen}
       />
     </TestWrapper>,
   );
 
   // TODO(nsawas): figure out why menu items don't show up in snapshot, despite `isMenuOpen`
   // expect(getByTestId("user-menu")).toBeInTheDOM();
-  fireEvent(
-    getByTestId("avatar-icon-button"),
-    new MouseEvent("click", {
-      bubbles: true,
-      cancelable: true,
-    }),
-  );
-  expect(mockClick).toHaveBeenCalledTimes(1);
-  expect(container).toMatchSnapshot();
-});
-
-test("render simple avatar", () => {
-  const mockClick = jest.fn();
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <AvatarIcon id="avatar-icon" />
-    </TestWrapper>,
-  );
-  fireEvent(
-    getByTestId("avatar-icon"),
-    new MouseEvent("click", {
-      bubbles: true,
-      cancelable: true,
-    }),
-  );
-  // expect(getByTestId("user-menu")).toBeNull();
-  expect(mockClick).toHaveBeenCalledTimes(0);
+  fireEvent.click(bodyUtils.getByTestId("avatar-icon-button"));
+  expect(mockMenuOpen).toHaveBeenCalledTimes(1);
+  expect(mockMenuOpen.mock.results[0].value).toEqual(false);
   expect(container).toMatchSnapshot();
 });

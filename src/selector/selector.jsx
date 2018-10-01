@@ -85,7 +85,7 @@ export const Selector = (props: SelectorProps) => {
             id={id}
             data-testid={id}
             value={value}
-            onChange={event => onSelect && onSelect(event.target.value)}
+            onChange={onSelect ? event => onSelect(event.target.value) : undefined}
             input={(
               <Input
                 data-testid="selector-value"
@@ -93,6 +93,9 @@ export const Selector = (props: SelectorProps) => {
                 id={id}
               />
 )}
+            SelectDisplayProps={{
+              "data-testid": `${id}-button`,
+            }}
             {...selectProps}
           >
             {!displayText &&

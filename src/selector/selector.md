@@ -43,15 +43,7 @@ class TestCommonSwitch extends React.Component {
     ];
     return (
       <div className={styles.container}>
-        <Selector
-          name="labelType"
-          key="labelType"
-          id="labelType"
-          data={data}
-          onSelect={this.handleChange}
-          value={this.state.value}
-          className={styles.spacing}
-        />
+        <Selector data={data} onSelect={this.handleChange} value={this.state.value} className={styles.spacing} />
         <Selector
           value="error"
           data={[{ key: "error", text: "An Error!" }]}

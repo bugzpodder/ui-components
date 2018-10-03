@@ -8,7 +8,7 @@ import classNames from "classnames";
 import styles from "./common-card.module.scss";
 import { MAIN_CARD_ELEVATION } from "@grail/lib";
 
-type Props = {
+export type CommonCardProps = {
   /** The content provide to the card's body */
   children: Node,
   /** Provides the card's Title */
@@ -47,7 +47,7 @@ type Props = {
  * `CommonCard` provides a component to create basic Material-UI Cards.
  * This was made in order to standardize how we implement cards across UIs.
  */
-export const CommonCard = (props: Props) => {
+export const CommonCard = (props: CommonCardProps) => {
   const {
     classes = {},
     children,

@@ -68,6 +68,7 @@ module.exports = {
         "./src/table/paged-table.jsx",
         "./src/table/simple-table.jsx",
         "./src/timeline-graph/timeline-graph.jsx",
+        "./src/timeline-graph/timeline-card.jsx",
       ],
     },
   ],

@@ -6,48 +6,44 @@ exports[`render simple timeline graph 1`] = `
     class="timelineContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root timelineCard"
+      class="timelineContent"
     >
       <div
-        class="timelineContent"
+        class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
       >
         <div
-          class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+          class="timelineDateContainer"
+        >
+          <p
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            data-testid="timeline-year-0"
+          >
+            2018
+          </p>
+          <p
+            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            data-testid="timeline-date-0"
+          >
+            20 Apr
+          </p>
+        </div>
+        <div
+          class="timeline timelineStart timelineEnd"
         >
           <div
-            class="timelineDateContainer"
-          >
-            <p
-              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-year-0"
-            >
-              2018
-            </p>
-            <p
-              class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-date-0"
-            >
-              20 Apr
-            </p>
-          </div>
+            class="notch"
+          />
+        </div>
+        <div
+          class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+          data-testid="timeline-item-0"
+          id="0"
+        >
           <div
-            class="timeline timelineStart timelineEnd"
+            class="paperContent"
           >
-            <div
-              class="notch"
-            />
-          </div>
-          <div
-            class="MuiPaper-root timelinePaper MuiPaper-elevation4 MuiPaper-rounded"
-            data-testid="timeline-item-0"
-            id="0"
-          >
-            <div
-              class="paperContent"
-            >
-              <div>
-                Testing
-              </div>
+            <div>
+              Testing
             </div>
           </div>
         </div>
@@ -63,53 +59,111 @@ exports[`render simple timeline graph with time 1`] = `
     class="timelineContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root timelineCard"
+      class="timelineContent"
     >
       <div
-        class="timelineContent"
+        class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
       >
         <div
-          class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+          class="timelineDateContainer"
+        >
+          <p
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            data-testid="timeline-year-0"
+          >
+            2018
+          </p>
+          <p
+            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            data-testid="timeline-date-0"
+          >
+            20 Apr
+          </p>
+          <p
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            data-testid="timeline-time-0"
+          >
+            16:20
+          </p>
+        </div>
+        <div
+          class="timeline timelineStart timelineEnd"
         >
           <div
-            class="timelineDateContainer"
-          >
-            <p
-              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-year-0"
-            >
-              2018
-            </p>
-            <p
-              class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-date-0"
-            >
-              20 Apr
-            </p>
-            <p
-              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-time-0"
-            >
-              16:20
-            </p>
-          </div>
+            class="notch"
+          />
+        </div>
+        <div
+          class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+          data-testid="timeline-item-0"
+          id="0"
+        >
           <div
-            class="timeline timelineStart timelineEnd"
+            class="paperContent"
+          >
+            <div>
+              Testing
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`test selecting an item on the timeline card 1`] = `
+<div>
+  <div
+    class="timelineContainer"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root timelineCard card"
+    >
+      <div
+        class="MuiCardContent-root"
+        data-testid="card-content"
+      >
+        <div
+          class="timelineContent"
+        >
+          <div
+            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
-              class="notch"
-            />
-          </div>
-          <div
-            class="MuiPaper-root timelinePaper MuiPaper-elevation4 MuiPaper-rounded"
-            data-testid="timeline-item-0"
-            id="0"
-          >
-            <div
-              class="paperContent"
+              class="timelineDateContainer"
             >
-              <div>
-                Testing
+              <p
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                data-testid="timeline-year-0"
+              >
+                2018
+              </p>
+              <p
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                data-testid="timeline-date-0"
+              >
+                20 Apr
+              </p>
+            </div>
+            <div
+              class="timeline timelineStart timelineEnd"
+            >
+              <div
+                class="notch"
+              />
+            </div>
+            <div
+              class="MuiPaper-root timelinePaperButton MuiPaper-elevation6 MuiPaper-rounded"
+              data-testid="timeline-item-0"
+              id="0"
+            >
+              <div
+                class="paperContent"
+              >
+                <div>
+                  Testing
+                </div>
               </div>
             </div>
           </div>
@@ -120,110 +174,58 @@ exports[`render simple timeline graph with time 1`] = `
 </div>
 `;
 
-exports[`test selecting an item on the timeline graph 1`] = `
+exports[`test unselecting an item on the timeline card 1`] = `
 <div>
   <div
     class="timelineContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root timelineCard"
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root timelineCard card"
     >
       <div
-        class="timelineContent"
+        class="MuiCardContent-root"
+        data-testid="card-content"
       >
         <div
-          class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+          class="timelineContent"
         >
           <div
-            class="timelineDateContainer"
-          >
-            <p
-              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-year-0"
-            >
-              2018
-            </p>
-            <p
-              class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-date-0"
-            >
-              20 Apr
-            </p>
-          </div>
-          <div
-            class="timeline timelineStart timelineEnd"
+            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
-              class="notch"
-            />
-          </div>
-          <div
-            class="MuiPaper-root timelinePaperButton MuiPaper-elevation4 MuiPaper-rounded"
-            data-testid="timeline-item-0"
-            id="0"
-          >
-            <div
-              class="paperContent"
+              class="timelineDateContainer"
             >
-              <div>
-                Testing
-              </div>
+              <p
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                data-testid="timeline-year-0"
+              >
+                2018
+              </p>
+              <p
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                data-testid="timeline-date-0"
+              >
+                20 Apr
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`test unselecting an item on the timeline graph 1`] = `
-<div>
-  <div
-    class="timelineContainer"
-  >
-    <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root timelineCard"
-    >
-      <div
-        class="timelineContent"
-      >
-        <div
-          class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
-        >
-          <div
-            class="timelineDateContainer"
-          >
-            <p
-              class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-year-0"
-            >
-              2018
-            </p>
-            <p
-              class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
-              data-testid="timeline-date-0"
-            >
-              20 Apr
-            </p>
-          </div>
-          <div
-            class="timeline timelineStart timelineEnd"
-          >
             <div
-              class="notch selected"
-            />
-          </div>
-          <div
-            class="MuiPaper-root timelinePaperButton MuiPaper-elevation4 MuiPaper-rounded"
-            data-testid="timeline-item-0"
-            id="0"
-          >
-            <div
-              class="paperContent"
+              class="timeline timelineStart timelineEnd"
             >
-              <div>
-                Testing
+              <div
+                class="notch selected"
+              />
+            </div>
+            <div
+              class="MuiPaper-root timelinePaperButton timelinePaperSelected MuiPaper-elevation4 MuiPaper-rounded"
+              data-testid="timeline-item-0"
+              id="0"
+            >
+              <div
+                class="paperContent"
+              >
+                <div>
+                  Testing
+                </div>
               </div>
             </div>
           </div>

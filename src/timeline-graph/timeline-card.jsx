@@ -2,6 +2,8 @@
 import React from "react";
 import classNames from "classnames";
 import styles from "./timeline-graph.module.scss";
+import { CommonCard } from "../index";
+import { type CommonCardProps } from "../common-card/card";
 import { TimelineGraphComponent } from "./components/timeline-graph-component";
 
 type Props = {
@@ -13,12 +15,16 @@ type Props = {
   /** The object used to define `className`s for the TimelineGraph sub components. Options include:
    *
    *  - `root`: the component's root element
+   *  - `commonCard`: the `classes` object passed to the CommonCard container. See the CommonCard for
+   *     information regarding CommonCard classes.
    *  - `content`: the wrapper around the timeline content, inside of the card body
    *  - `item`: class applied to the timeline paper
    *  - `itemContent`: the class applied to the timeline item content wrapper
    *
    */
-  classes?: TimelineGraphClasses,
+  classes?: TimelineCardClasses,
+  /** The object used to apply props to the CommonCard container */
+  commonCardProps?: CommonCardProps,
   /**
    * The function used to set the value of the `selectedItem`. Returns the unique date of the
    * timeline entry
@@ -30,15 +36,24 @@ type Props = {
   selectedItem?: ?number,
 };
 
-/** TimelineGraph provides an interactive timeline component */
-export const TimelineGraph = (props: Props) => {
-  const { classes = {}, ...timelineProps } = props;
+/** TimelineCard provides an interactive timeline component, wrapped inside of the CommonCard */
+export const TimelineCard = (props: Props) => {
+  const { classes = {}, commonCardProps, ...timelineProps } = props;
+  const { commonCard = {} } = classes;
   return (
     <div className={classNames(styles.timelineContainer, classes.root)}>
-      <TimelineGraphComponent
-        classes={classes}
-        {...timelineProps}
-      />
+      <CommonCard
+        classes={{
+          ...commonCard,
+          root: classNames(styles.timelineCard, commonCard.root),
+        }}
+        {...commonCardProps}
+      >
+        <TimelineGraphComponent
+          classes={classes}
+          {...timelineProps}
+        />
+      </CommonCard>
     </div>
   );
 };

@@ -12,6 +12,8 @@ $selected-line-notch-half-length: calc(#{$selected-line-notch-length} / 2);
 $shadow-color: rgba(0, 0, 0, 0.14);
 $active-color: $grail-gray-light-color;
 
+$border: $grail-purple-color solid 1px;
+
 @mixin timelinePaper {
   margin-left: 23px;
   width: 240px;
@@ -36,127 +38,143 @@ $active-color: $grail-gray-light-color;
 }
 
 .timelineContainer {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
 
+  // Default common card styling.
   .timelineCard {
     min-height: 400px;
     overflow-y: scroll;
     min-width: 380px;
     max-width: 500px;
+  }
 
-    .timelineContent {
-      margin: 25px 0;
+  .timelineContent {
+    margin: 25px 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
 
-      // Date.
-      .timelineDateContainer{
-        margin: auto 15px auto 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40px;
+    // Date.
+    .timelineDateContainer{
+      margin: auto 15px auto 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40px;
 
-        > * {
-          color: $grail-gray-medium-color;
-        }
-
-        .timelineDate {
-          width: 50px;
-        }
-
-        .smallDate {
-          font-size: 11px;
-        }
+      > * {
+        color: $grail-gray-medium-color;
       }
 
-      // Timeline paper.
-      .timelinePaper {
-        @include timelinePaper;
+      .timelineDate {
+        width: 50px;
       }
 
-      // Clickable timeline paper.
-      .timelinePaperButton {
-        @include timelinePaper;
+      .smallDate {
+        font-size: 11px;
+      }
+    }
 
-        &:hover {
-          cursor: pointer;
-        }
+    // Timeline paper.
+    .timelinePaper {
+      @include timelinePaper;
+    }
 
-        &:active {
-          background: $active-color;
-          box-shadow: 0 2px 8px 0 $shadow-color;
-        }
+    // Clickable timeline paper.
+    .timelinePaperButton {
+      @include timelinePaper;
 
-        &:active:before {
-          background: $active-color;
-          box-shadow: -1px 2px 5px -1px $shadow-color;
-        }
+      &:hover {
+        cursor: pointer;
       }
 
-      // Paper content wrapper.
-      .paperContent {
-        margin: 10px;
+      &:active {
+        background: $active-color;
+        box-shadow: 0 2px 8px 0 $shadow-color;
       }
 
-      // Line creating timeline.
-      .timeline {
-        position: relative;
-        margin: 0;
-        width: 2px;
-        height: 100px;
-        background-color: $grail-contrast-color;
-        overflow: visible;
+      &:active:before {
+        background: $active-color;
+        box-shadow: -1px 2px 5px -1px $shadow-color;
       }
 
-      // Notch for dates on line.
-      .notch {
-        position: absolute;
-        background-color: white;
-        height: $line-notch-length;
-        width: $line-notch-length;
-        left: -5px;
-        top: calc(50% - #{$line-notch-half-length});
-        border-radius: 50%;
-        border: 2px solid $grail-contrast-color;
+      // Selected Timeline paper.
+      &.timelinePaperSelected {
+        min-height: 85px;
+        max-height: 120px;
+        font-size: 16px;
+        border: $border;
 
-        // Style notch when selected.
-        &.selected {
-          background-color: $grail-purple-color;
-          border: 1px solid $grail-contrast-color;
-          height: $selected-line-notch-length;
-          width: $selected-line-notch-length;
-          left: -6px;
-          top: calc(50% - #{$selected-line-notch-half-length});
-        }
-      }
-
-      // Timeline start circle.
-      .timelineStart {
         &:before {
-          content: "\A";
-          position: absolute;
-          left: -5px;
-          top: -5px;
-          width: $line-notch-length;
-          height: $line-notch-length;
-          border-radius: 50%;
-          background-color: $grail-contrast-color;
-          display: inline-block;
+          border-bottom: $border;
+          border-left: $border;
+          margin-left: -9px;
         }
-      }
 
-      // Timeline end square.
-      .timelineEnd {
-        &:after {
-          content: "\A";
-          position: absolute;
-          left: -5px;
-          bottom: -5px;
-          width: $line-notch-length;
-          height: $line-notch-length;
-          background-color: $grail-contrast-color;
-          display: inline-block;
-        }
+      }
+    }
+
+    // Paper content wrapper.
+    .paperContent {
+      margin: 10px;
+    }
+
+    // Line creating timeline.
+    .timeline {
+      position: relative;
+      margin: 0;
+      width: 2px;
+      height: 100px;
+      background-color: $grail-contrast-color;
+      overflow: visible;
+    }
+
+    // Notch for dates on line.
+    .notch {
+      position: absolute;
+      background-color: white;
+      height: $line-notch-length;
+      width: $line-notch-length;
+      left: -5px;
+      top: calc(50% - #{$line-notch-half-length});
+      border-radius: 50%;
+      border: 2px solid $grail-contrast-color;
+
+      // Style notch when selected.
+      &.selected {
+        background-color: $grail-purple-color;
+        border: 1px solid $grail-contrast-color;
+        height: $selected-line-notch-length;
+        width: $selected-line-notch-length;
+        left: -6px;
+        top: calc(50% - #{$selected-line-notch-half-length});
+      }
+    }
+
+    // Timeline start circle.
+    .timelineStart {
+      &:before {
+        content: "\A";
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        width: $line-notch-length;
+        height: $line-notch-length;
+        border-radius: 50%;
+        background-color: $grail-contrast-color;
+        display: inline-block;
+      }
+    }
+
+    // Timeline end square.
+    .timelineEnd {
+      &:after {
+        content: "\A";
+        position: absolute;
+        left: -5px;
+        bottom: -5px;
+        width: $line-notch-length;
+        height: $line-notch-length;
+        background-color: $grail-contrast-color;
+        display: inline-block;
       }
     }
   }

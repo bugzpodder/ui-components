@@ -27,8 +27,8 @@ const searchDefs: SearchDefs = [
     name: "Lot Number",
     type: MULTI_FIELD_TEXT_SEARCH_TYPE,
     aliases: ["lot"],
-    description: "Lot Num/External Ref",
-    searchFields: ["lotNumber", "externalReference"],
+    description: "Lot Num/Vendor Lot Num",
+    searchFields: ["lotNumber", "vendorLotNumber"],
   },
   {
     name: "Received Date",

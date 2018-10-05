@@ -18,7 +18,7 @@
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "test": "jest --watch",
-    "test:staged": "jest --coverage && echo --findRelatedTests does not work properly with coverage",
+    "test:staged": "jest --coverage --findRelatedTests",
     "test-all": "jest --coverage",
     "test-e2e": "cypress open",
     "test-e2e:ci": "cypress run --config numTestsKeptInMemory=0"

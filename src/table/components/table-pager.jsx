@@ -31,9 +31,7 @@ export const TablePager = (props: Props) => {
     setPage({ offset: newOffset, count });
   };
 
-  const onChangeRowsPerPage = (event: InputEvent) => {
-    // $FlowFixMe(jsingh) `event.target.value` is correct, but
-    // $FlowFixMe Cannot get event.target.value because property value is missing in EventTarget
+  const onChangeRowsPerPage = (event: SyntheticInputEvent<>) => {
     return setPage({ offset, count: Math.max(1, Number(event.target.value)) });
   };
 

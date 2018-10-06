@@ -150,7 +150,7 @@ declare module "@material-ui/core/ButtonBase/createRippleHandler" {
     eventName: string,
     action: string,
     cb: ?Function
-  ) => handleEvent;
+  ) => (event: SyntheticUIEvent<*>) => void;
 }
 
 declare module "@material-ui/core/ButtonBase" {

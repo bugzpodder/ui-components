@@ -94,7 +94,7 @@ export class CommonSwitch extends React.Component<Props, State> {
               value={value}
             />
 )}
-          label={label}
+          label={label || null}
           {...controlProps}
         />
         {helperText && (

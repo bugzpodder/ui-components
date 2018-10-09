@@ -20,6 +20,8 @@ type Props = {
   children: Node,
   /** Gives a Title to the Dialog */
   title: Node<*>,
+  /** The value of the "Close" button. Defaults to "Close" */
+  closeButtonText?: string,
   /**
    * Provides classNames to the dialog's sub-components. Options include:
    *
@@ -40,7 +42,15 @@ type Props = {
 /** `CommonDialog` provides a component to be used as a UI modal. */
 export const CommonDialog = (props: Props) => {
   const {
-    actions, children, classes = {}, hideModal, isVisible, title, enableOverflow = true, ...dialogProps
+    actions,
+    children,
+    classes = {},
+    hideModal,
+    isVisible,
+    title,
+    closeButtonText = "Close",
+    enableOverflow = true,
+    ...dialogProps
   } = props;
   const leftActionButtons = actions
     .filter(({ isLeftButton = false }) => isLeftButton)
@@ -82,7 +92,7 @@ export const CommonDialog = (props: Props) => {
               id="close"
               onClick={hideModal}
             >
-              Close
+              {closeButtonText}
             </Button>
             {rightActionButtons}
           </div>

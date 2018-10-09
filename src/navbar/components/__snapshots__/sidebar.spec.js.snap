@@ -197,21 +197,6 @@ exports[`render Sidebar 1`] = `
                       </span>
                     </div>
                   </a>
-                  <div
-                    class="MuiButtonBase-root MuiButtonBase-disabled MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-disabled MuiListItem-button nested"
-                    role="button"
-                    tabindex="-1"
-                  >
-                    <div
-                      class="MuiListItemText-root MuiListItemText-dense"
-                    >
-                      <span
-                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
-                      >
-                        Queued Repeats (coming soon)
-                      </span>
-                    </div>
-                  </div>
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"

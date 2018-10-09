@@ -28,6 +28,7 @@ exports[`render text field wrapper with readonly as true 1`] = `
   <span
     class="readonlyTextField"
     data-testid="readonly-text-field"
+    id="operator"
   >
     test value
   </span>
@@ -39,6 +40,7 @@ exports[`render text field wrapper with readonly as true showing - for empty val
   <span
     class="readonlyTextField"
     data-testid="readonly-text-field"
+    id="operator"
   >
     -
   </span>
@@ -61,6 +63,7 @@ exports[`render text field wrapper with readonly as true with showing empty valu
   <span
     class="readonlyTextField"
     data-testid="readonly-text-field"
+    id="operator"
   >
     
   </span>

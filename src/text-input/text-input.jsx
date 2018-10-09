@@ -12,6 +12,8 @@ type Props = {
   readOnlyComponentProps?: Object,
   /** Used for read only input field, see `ReadOnlyTextField`. */
   showEmptyValue?: boolean,
+  /** Id of the element. */
+  id?: string,
 } & ElementConfig<typeof TextField>;
 
 /** `TextInput` is a wrapper around Material UI's `TextField` which allows `readOnly` as a property. */
@@ -23,19 +25,35 @@ export const TextInput = (props: Props) => {
     ReadOnlyComponent,
     readOnlyComponentProps = {},
     showEmptyValue = false,
+    id,
     ...textFieldProps
   } = props;
   if (readOnly) {
     if (ReadOnlyComponent) {
-      return <ReadOnlyComponent {...readOnlyComponentProps}>{props.value}</ReadOnlyComponent>;
+      return (
+        <ReadOnlyComponent
+          id={id}
+          {...readOnlyComponentProps}
+        >
+          {props.value}
+        </ReadOnlyComponent>
+      );
     }
-    return <ReadOnlyTextField showEmptyValue={showEmptyValue}>{props.value}</ReadOnlyTextField>;
+    return (
+      <ReadOnlyTextField
+        showEmptyValue={showEmptyValue}
+        id={id}
+      >
+        {props.value}
+      </ReadOnlyTextField>
+    );
   }
   return (
     <TextField
       data-testid="text-field"
       error={error}
       helperText={helperText}
+      id={id}
       {...textFieldProps}
     />
   );

@@ -13,7 +13,7 @@ export { ExternalLink } from "./external-link";
 export { Navbar } from "./navbar";
 export { NotificationCenter } from "./notification-center";
 export { ReadOnlyTextField, ValidatedReadOnlyTextField } from "./readonly-text-field";
-export { OmniSearchBar } from "./omni-search-bar";
+export { OmniChips, OmniSearchBar } from "./omni-search-bar";
 export { TwoColumnGrid, TwoColumnRow } from "./two-column-grid";
 export { CollapsableListItem } from "./list";
 export { PagedTable, SimpleTable } from "./table";

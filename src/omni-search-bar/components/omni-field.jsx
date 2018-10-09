@@ -15,7 +15,7 @@ type Props = {
   omniText: string,
   onChange: (string, any) => any,
   onSearch: () => any,
-  onClear: () => void,
+  onClear: () => any,
   error: string,
   setDropdownIsOpen: boolean => any,
   isOpen?: boolean,

@@ -49,7 +49,9 @@ type Props = {
   /** Parameters for onPageChange and onSort (see documentation for functions) */
   tableOptions?: PagedTableOptions,
   /** Title to display in card header */
-  title?: string,
+  title?: Node,
+  /** Sub Title to display in card header */
+  subheader?: Node,
   /** Buttons to display in card header */
   headerActions?: Node<*>,
   /**
@@ -71,7 +73,7 @@ type Props = {
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
 export const PagedTable = (props: Props) => {
   const {
-    onPageChange, headerActions = null, title = "", ...tableProps
+    onPageChange, headerActions = null, title = "", subheader, ...tableProps
   } = props;
   const {
     classes = {}, columns, data, isLoading = false, onSelect, selectedRows, tableOptions,
@@ -93,6 +95,7 @@ export const PagedTable = (props: Props) => {
     <Fragment>
       <CommonCard
         title={cardTitle}
+        subheader={subheader}
         headerActions={headerActions}
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
         data-testid="paged-table"

@@ -11,8 +11,8 @@ import { TwoColumnRow } from "../../two-column-grid";
 type Props = {
   searchDefs: SearchDefs,
   searchValues: SearchValues,
-  onChange: (string, string) => void,
-  onClear: () => void,
+  onChange: (string, string) => any,
+  onClear: () => any,
   onSearch: () => void,
   width: number | string,
   children?: Node,

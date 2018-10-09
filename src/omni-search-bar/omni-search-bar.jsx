@@ -197,19 +197,18 @@ export class OmniSearchBar extends React.Component<Props, State> {
     );
   };
 
-  handleClear = () => {
-    this.updateOmniText("");
+  handleClear = async () => {
+    await this.updateOmniText("");
   };
 
-  onChange = (id: string, value: string) => {
+  onChange = async (id: string, value: string) => {
     let omniText = value;
     if (id !== OMNI_KEY) {
       const index = Number.parseInt(id.split("-").pop(), 10);
       const searchValues: SearchValues = new Map(this.state.searchValues).set(index, value);
       omniText = getOmniTextFromSearchValues(this.props.searchDefs, searchValues);
     }
-    // $FlowFixMe: omniText is a string
-    this.updateOmniText(omniText);
+    await this.updateOmniText(omniText);
   };
 
   anchorEl = null;

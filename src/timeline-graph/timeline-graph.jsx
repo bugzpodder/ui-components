@@ -11,9 +11,8 @@ type Props = {
    */
   rows: Array<TimelineGraphRow>,
   /** The object used to define `className`s for the TimelineGraph sub components. Options include:
-   *
    *  - `root`: the component's root element
-   *  - `content`: the wrapper around the timeline content, inside of the card body
+   *  - `content`: the wrapper around the timeline content
    *  - `item`: class applied to the timeline paper
    *  - `itemContent`: the class applied to the timeline item content wrapper
    *

@@ -33,17 +33,17 @@ exports[`render simple timeline graph 1`] = `
           <div
             class="notch"
           />
-        </div>
-        <div
-          class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
-          data-testid="timeline-item-0"
-          id="0"
-        >
           <div
-            class="paperContent"
+            class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+            data-testid="timeline-item-0"
+            id="0"
           >
-            <div>
-              Testing
+            <div
+              class="paperContent"
+            >
+              <div>
+                Testing
+              </div>
             </div>
           </div>
         </div>
@@ -92,17 +92,17 @@ exports[`render simple timeline graph with time 1`] = `
           <div
             class="notch"
           />
-        </div>
-        <div
-          class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
-          data-testid="timeline-item-0"
-          id="0"
-        >
           <div
-            class="paperContent"
+            class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+            data-testid="timeline-item-0"
+            id="0"
           >
-            <div>
-              Testing
+            <div
+              class="paperContent"
+            >
+              <div>
+                Testing
+              </div>
             </div>
           </div>
         </div>
@@ -152,17 +152,17 @@ exports[`test selecting an item on the timeline card 1`] = `
               <div
                 class="notch"
               />
-            </div>
-            <div
-              class="MuiPaper-root timelinePaperButton MuiPaper-elevation6 MuiPaper-rounded"
-              data-testid="timeline-item-0"
-              id="0"
-            >
               <div
-                class="paperContent"
+                class="MuiPaper-root timelinePaperButton MuiPaper-elevation6 MuiPaper-rounded"
+                data-testid="timeline-item-0"
+                id="0"
               >
-                <div>
-                  Testing
+                <div
+                  class="paperContent"
+                >
+                  <div>
+                    Testing
+                  </div>
                 </div>
               </div>
             </div>
@@ -214,17 +214,17 @@ exports[`test unselecting an item on the timeline card 1`] = `
               <div
                 class="notch selected"
               />
-            </div>
-            <div
-              class="MuiPaper-root timelinePaperButton timelinePaperSelected MuiPaper-elevation4 MuiPaper-rounded"
-              data-testid="timeline-item-0"
-              id="0"
-            >
               <div
-                class="paperContent"
+                class="MuiPaper-root timelinePaperButton timelinePaperSelected MuiPaper-elevation4 MuiPaper-rounded"
+                data-testid="timeline-item-0"
+                id="0"
               >
-                <div>
-                  Testing
+                <div
+                  class="paperContent"
+                >
+                  <div>
+                    Testing
+                  </div>
                 </div>
               </div>
             </div>

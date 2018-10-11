@@ -94,8 +94,8 @@ export const TimelineGraphComponent = (props: Props) => {
               })}
             >
               <div className={classNames(styles.notch, { [styles.selected]: itemIsSelected })} />
+              {entry.content}
             </div>
-            {entry.content}
           </Grid>
         );
       })}

@@ -36,7 +36,7 @@ export const ReadOnlyTextField = (props: Props) => {
           {icon}
         </Icon>
       )}
-      {children || showEmptyValue ? children : "-"}
+      {showEmptyValue || (children !== undefined && children !== null && children !== "") ? children : "-"}
     </span>
   );
 };

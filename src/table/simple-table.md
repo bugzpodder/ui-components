@@ -12,6 +12,7 @@ class TestSimpleTable extends React.Component {
       tableOptions: {
         sortOptions: [{ id: "name", desc: false }],
         selectedRowIds: [],
+        highlightedRowId: null,
       },
       data: EXAMPLE_TABLE_DATA,
     };
@@ -19,6 +20,7 @@ class TestSimpleTable extends React.Component {
     this.compare = this.compare.bind(this);
     this.handleSelection = this.handleSelection.bind(this);
     this.handleSort = this.handleSort.bind(this);
+    this.handleHighlight = this.handleHighlight.bind(this);
   }
 
   handleSelection(selectedRowIds) {
@@ -50,6 +52,14 @@ class TestSimpleTable extends React.Component {
       return first > second ? -1 : 1;
     }
     return first < second ? -1 : 1;
+  }
+  
+  handleHighlight(highlightedRowId) {
+    const tableOptions = {
+      ...this.state.tableOptions,
+      highlightedRowId
+    };
+    this.setState({ tableOptions })
   }
 
   render() {
@@ -83,6 +93,8 @@ class TestSimpleTable extends React.Component {
           onSelect={this.handleSelection}
           selectedRows={tableOptions.selectedRowIds}
           onSort={this.handleSort}
+          highlightedRowId={tableOptions.highlightedRowId}
+          onHighlightRow={this.handleHighlight}
         />
         <ExampleBlock
           strongHeader="Selected Rows"

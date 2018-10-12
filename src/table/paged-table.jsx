@@ -42,6 +42,10 @@ type Props = {
   onSelect?: (Array<any>) => any,
   /** Provides the id's for the selected rows when onSelect is used */
   selectedRows?: Array<any>,
+  /** Enables row highlighting */
+  onHighlightRow?: (?string | ?number) => any,
+  /** Provides the id for the highlighted row when onHighlightRow is used */
+  highlightedRowId?: ?string | ?number,
   /** Parameters for onPageChange and onSort (see documentation for functions) */
   tableOptions?: PagedTableOptions,
   /** Title to display in card header */

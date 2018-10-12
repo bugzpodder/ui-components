@@ -19,6 +19,8 @@ type Props = {
   idKey?: string | number,
   onSelect?: (Array<any>) => any,
   onSort?: SortOption => any,
+  onHighlightRow?: (?number | ?string) => any,
+  highlightedRowId?: ?number | ?string,
   sortingProps?: SortingProps,
   tableOptions?: PagedTableOptions,
   enableSelectAll: boolean,
@@ -34,6 +36,8 @@ export const TableComponent = (props: Props) => {
     onSelect,
     onSort,
     selectedRows,
+    onHighlightRow,
+    highlightedRowId,
     tableOptions,
     enableSelectAll,
     ...tableProps
@@ -44,6 +48,8 @@ export const TableComponent = (props: Props) => {
     idKey,
     onSelect,
     selectedRows,
+    onHighlightRow,
+    highlightedRowId,
   };
   const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
   return (
@@ -63,6 +69,7 @@ export const TableComponent = (props: Props) => {
             const id = idKey ? instance[idKey] : `${index}`;
             return (
               <PagedTableRow
+                selectionProps={selectionProps}
                 key={index}
                 instance={instance}
                 columns={tableColumns}

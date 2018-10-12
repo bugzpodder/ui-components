@@ -40,6 +40,10 @@ type Props = {
   onSelect?: (Array<any>) => any,
   /** Provides the id's for the selected rows when onSelect is used */
   selectedRows?: Array<any>,
+  /** Enables row highlighting */
+  onHighlightRow?: (?string | ?number) => any,
+  /** Provides the id for the highlighted row when onHighlightRow is used */
+  highlightedRowId?: ?string | ?number,
   /** Parameters for onSort (see documentation for function) */
   tableOptions?: PagedTableOptions,
   /**

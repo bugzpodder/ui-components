@@ -40,6 +40,8 @@ declare type SelectionProps = {
   idKey?: string | number,
   selectedRows?: Array<string | number>,
   onSelect?: Array<string | number> => any,
+  onHighlightRow?: (?string | ?number) => any,
+  highlightedRowId?: ?string | ?number,
 }
 
 declare type PaginationProps = {

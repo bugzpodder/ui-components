@@ -11,21 +11,29 @@ type Props = {
   rowId: string | number,
   rowIndex: number,
   className?: string | Function,
+  selectionProps: SelectionProps,
 };
 
 export const PagedTableRow = (props: Props) => {
   const {
-    columns, instance, rowIndex, rowId,
+    columns, instance, rowIndex, rowId, selectionProps,
   } = props;
+  const { highlightedRowId, onHighlightRow } = selectionProps;
   let { className } = props;
   if (typeof className === "function") {
     className = className(instance, rowIndex);
   }
+  const rowIsHighlighted = highlightedRowId === rowId;
   return (
     <TableRow
-      className={className}
+      classes={{
+        root: className,
+        selected: styles.highlightedRow,
+      }}
       data-testid={rowId}
       key={rowId}
+      selected={rowIsHighlighted}
+      onClick={onHighlightRow ? () => onHighlightRow(rowId) : undefined}
     >
       {columns.map(({ /* $FlowFixMe: accessor can be string or Function */
         Cell, Header, accessor = "", className = "", isSingleIcon,

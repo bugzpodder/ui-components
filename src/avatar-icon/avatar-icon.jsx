@@ -4,11 +4,25 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import React, { Fragment } from "react";
+import React from "react";
 import classNames from "classnames";
 import styles from "./avatar-icon.module.scss";
 
 type Props = {
+  /** Classes applied to the AvatarIcon sub components. Options include:
+   *
+   *  - root: root div element
+   *
+   *  - button: button component
+   *
+   *  - avatar: avatar image
+   *
+   *  - menu: menu wrapper
+   *
+   *  - menuItem: applied to each menu item
+   *
+   */
+  classes?: AvatarIconClasses,
   /** id applied to the button element */
   id?: string,
   /** Change handler when avatar is clicked. Returns the reverse value of `isMenuOpen` */
@@ -26,16 +40,16 @@ export class AvatarIcon extends React.Component<Props> {
 
   render = () => {
     const {
-      id = "", onClick, pictureUrl, isMenuOpen = false, menuItems = [], ...buttonProps
+      id = "", classes = {}, onClick, pictureUrl, isMenuOpen = false, menuItems = [], ...buttonProps
     } = this.props;
     return (
-      <Fragment>
+      <div className={classNames(styles.avatarIconContainer, classes.root)}>
         <IconButton
           disableRipple
           id={id}
           disabled={!onClick}
           classes={{
-            root: classNames({ [styles.iconButton]: pictureUrl }),
+            root: classNames({ [styles.iconButton]: pictureUrl }, classes.button),
           }}
           data-testid={id}
           buttonRef={ref => {
@@ -45,11 +59,17 @@ export class AvatarIcon extends React.Component<Props> {
           color="inherit"
           {...buttonProps}
         >
-          {pictureUrl ? <Avatar src={pictureUrl} /> : <AccountCircle />}
+          {pictureUrl ? (
+            <Avatar
+              src={pictureUrl}
+              className={classes.avatar}
+            />
+          ) : <AccountCircle className={classes.avatar} />}
         </IconButton>
         {menuItems.length > 0 && (
           <Menu
             data-testid={`${id}-avatar-menu`}
+            className={classes.menu}
             anchorEl={this.avatarRef}
             anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
             getContentAnchorEl={null}
@@ -65,6 +85,7 @@ export class AvatarIcon extends React.Component<Props> {
                 isVisible && (
                   <MenuItem
                     key={`avatar-menu-item-${index}`}
+                    className={classes.menuItem}
                     onClick={
                       onClick
                         ? () => {
@@ -82,7 +103,7 @@ export class AvatarIcon extends React.Component<Props> {
             })}
           </Menu>
         )}
-      </Fragment>
+      </div>
     );
   };
 }

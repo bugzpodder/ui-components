@@ -1,5 +1,10 @@
-.iconButton {
+
+.avatarIconContainer {
+  display: inline-block;
+
+  .iconButton {
     &:hover {
       background-color: rgba(0, 0, 0, 0);
+    }
   }
 }

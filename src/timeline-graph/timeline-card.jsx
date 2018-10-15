@@ -9,7 +9,14 @@ import { TimelineGraphComponent } from "./components/timeline-graph-component";
 type Props = {
   /**
    * The content to display on the timeline graph.
-   * Each object should include a unique `date` and some `content` to render.
+   * Each object should include:
+   *
+   *  - `date`
+   *
+   *  - `content`
+   *
+   *  - `user` (optional)
+   *
    */
   rows: Array<TimelineGraphRow>,
   /** The object used to define `className`s for the TimelineGraph sub components. Options include:

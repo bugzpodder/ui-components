@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import moment from "moment";
 import styles from "../timeline-graph.module.scss";
+import { AvatarIcon } from "../../index";
 import { INNER_CARD_ELEVATION, MAIN_CARD_ELEVATION } from "@grail/lib";
 
 type Props = {
@@ -32,7 +33,18 @@ export const TimelineGraphComponent = (props: Props) => {
         classes={{ root: classNames(paperClass, classes.item, { [styles.timelinePaperSelected]: itemIsSelected }) }}
         elevation={itemIsSelected ? INNER_CARD_ELEVATION : MAIN_CARD_ELEVATION}
       >
-        <div className={classNames(styles.paperContent, classes.itemContent)}>{item.content}</div>
+        <div className={classNames(styles.paperContent, classes.itemContent)}>
+          {item.content}
+          {item.user && (
+          <div className={classNames(styles.user, classes.username)}>
+            <AvatarIcon
+              id="timeline-avatar"
+              classes={{ root: classes.username, avatar: styles.userAvatar, button: styles.userButton }}
+            />
+            {item.user}
+          </div>
+          )}
+        </div>
       </Paper>
     );
     return {

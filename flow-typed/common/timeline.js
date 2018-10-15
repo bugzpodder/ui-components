@@ -5,7 +5,9 @@ declare type TimelineRow = {
 
 declare type TimelineGraphRow = {
   date: string,
-  content: Node<*>
+  content: Node<*>,
+  user?: string,
+  pictureUrl?: string,
 };
 
 declare type TimelineGraphClasses = {
@@ -13,6 +15,7 @@ declare type TimelineGraphClasses = {
   content?: string,
   item?: string,
   itemContent?: string,
+  username?: string,
 }
 
 declare type TimelineCardClasses = {

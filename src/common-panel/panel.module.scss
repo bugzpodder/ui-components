@@ -2,7 +2,10 @@
 .panel {
   .panelHeader {
     padding: 10px;
-    background-color: $grail-purple-light-color;
+
+    &.primary {
+      background-color: $grail-purple-light-color;
+    }
   }
   .panelBody {
     padding-top: 10px;

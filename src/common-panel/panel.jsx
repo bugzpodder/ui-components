@@ -9,8 +9,25 @@ type Props = {
   title: string,
   /** Body of the panel */
   children: Node,
-  /** classname provided to the container of the panel */
+  /** The object used to apply classes to the panel's subcomponents. Options include:
+   *
+   *  - root: the component's root element
+   *
+   *  - title: the component's title
+   *
+   *  - body: the component's content wrapper
+   */
+  classes?: CommonPanelClasses,
+  /** DEPRECATED: DO NOT USE */
   className?: string,
+  /** Determines the color of the panel header. Options include:
+   *
+   * - default: colorless,
+   *
+   * - primary: primary purple GRAIL color
+   *
+   */
+  color?: string,
   /** Variant for the title. (See `Typography`'s `variant`) */
   variant?: string,
 };
@@ -18,21 +35,21 @@ type Props = {
 /** Provides a styled section with a title and body. */
 export const CommonPanel = (props: Props) => {
   const {
-    title, children, variant = "subheading", className = "", ...panelProps
+    title, classes = {}, color = "default", children, variant = "subheading", className = "", ...panelProps
   } = props;
   return (
     <div
-      className={classNames({ [styles.panel]: true }, className)}
+      className={classNames({ [styles.panel]: true }, className, classes.root)}
       {...panelProps}
     >
       <div
-        className={styles.panelHeader}
+        className={classNames(styles.panelHeader, classes.title, { [styles.primary]: color === "primary" })}
         data-testid="panel-title"
       >
         <Typography variant={variant}>{title}</Typography>
       </div>
       <div
-        className={styles.panelBody}
+        className={classNames(styles.panelBody, classes.body)}
         data-testid="panel-body"
       >
         {children}

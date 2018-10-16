@@ -1,46 +1,41 @@
 // @flow
-import Avatar from "@material-ui/core/Avatar";
 import Chip from "@material-ui/core/Chip";
-import React, { Fragment } from "react";
-import SearchIcon from "@material-ui/icons/Search";
-import { OMNI_KEY } from "@grail/lib";
+import React from "react";
+import styles from "./omni.module.scss";
+import { OMNI_DELETE_COMMAND, OMNI_KEY } from "@grail/lib";
 
 type Props = {
+  /** Search Options. */
   searchOptions: SearchOptionsV2,
-  setSearchOptions?: SearchOptionsV2 => any,
+  /** Function to set searchOptions */
+  addOmniSearchCommand?: OmniSearchCommand => any,
 };
 
 export const OmniChips = (props: Props) => {
-  const { searchOptions, setSearchOptions } = props;
-  const onDelete = setSearchOptions
+  const { searchOptions, addOmniSearchCommand } = props;
+  const onDelete = addOmniSearchCommand
     ? deletedName => {
-      const newSearchOptions = searchOptions.filter(({ name }) => deletedName !== name);
-      setSearchOptions(newSearchOptions);
+      addOmniSearchCommand({ command: OMNI_DELETE_COMMAND, omniFieldName: deletedName });
     }
     : undefined;
   return (
-    <Fragment>
+    <div className={styles.omniChips}>
       {searchOptions.map(searchOption => {
         const { name, values = [] } = searchOption;
         const displayName = name === OMNI_KEY ? "" : `${name}: `;
-        const initials = displayName
-          .split(" ")
-          .map(word => word.substring(0, 1).toUpperCase())
-          .join("");
         return (
           <Chip
             key={name}
             data-testid={name}
-            className="margin-right-10"
+            classes={{ root: styles.chip }}
             color="primary"
-            variant="outlined"
+            variant="default"
             aria-label={name}
             label={`${displayName}${values.join(", ")}`}
-            avatar={<Avatar>{initials || <SearchIcon />}</Avatar>}
             onDelete={onDelete && onDelete.bind(this, name)}
           />
         );
       })}
-    </Fragment>
+    </div>
   );
 };

@@ -72,3 +72,10 @@
 .textField {
   font-size: 14;
 }
+
+.omniChips {
+  margin-top: 8px;
+  .chip + .chip{
+    margin-left: 10px;
+  }
+}

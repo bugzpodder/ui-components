@@ -65,6 +65,8 @@ module.exports = {
         "./src/common-select/common-multi-select.jsx",
         "./src/notification-center/notification-center.jsx",
         "./src/navbar/navbar.jsx",
+        "./src/omni-search-bar/omni-chips.jsx",
+        "./src/omni-search-bar/omni-search-bar.jsx",
         "./src/table/paged-table.jsx",
         "./src/table/simple-table.jsx",
         "./src/timeline-graph/timeline-graph.jsx",

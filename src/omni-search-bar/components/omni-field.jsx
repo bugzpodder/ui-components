@@ -11,6 +11,8 @@ import keycode from "keycode";
 import styles from "../omni.module.scss";
 import { OMNI_KEY } from "@grail/lib";
 
+export const OMNI_INPUT_FIELD_ID = `${OMNI_KEY}-input-field-id`;
+
 type Props = {
   omniText: string,
   onChange: (string, any) => any,
@@ -90,14 +92,14 @@ export class OmniField extends React.Component<Props, State> {
           error={!!error}
           helperText={error}
           FormHelperTextProps={{ error: true }}
-          id={OMNI_KEY}
+          id={OMNI_INPUT_FIELD_ID}
           placeholder="Search here or use dropdown"
           InputProps={{
             disableUnderline: true,
             startAdornment: (
               <InputAdornment position="start">
                 <IconButton
-                  id={`${OMNI_KEY}-search`}
+                  id={`${OMNI_INPUT_FIELD_ID}-search`}
                   title="Search"
                   color="inherit"
                   onClick={onSearch}
@@ -114,7 +116,7 @@ export class OmniField extends React.Component<Props, State> {
                 {omniText !== undefined &&
                   omniText !== "" && (
                     <IconButton
-                      id={`${OMNI_KEY}-clear`}
+                      id={`${OMNI_INPUT_FIELD_ID}-clear`}
                       title="Clear"
                       color="inherit"
                       onClick={async () => {
@@ -129,7 +131,7 @@ export class OmniField extends React.Component<Props, State> {
                     </IconButton>
                 )}
                 <IconButton
-                  id={`${OMNI_KEY}-menu`}
+                  id={`${OMNI_INPUT_FIELD_ID}-menu`}
                   data-testid="search-options-expander"
                   label="menu"
                   color="inherit"

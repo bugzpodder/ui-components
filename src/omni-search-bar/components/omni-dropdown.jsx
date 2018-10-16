@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import React, { type Node } from "react";
 import styles from "../omni.module.scss";
-import { OMNI_KEY, OMNI_TEXT_SEARCH_TYPE } from "@grail/lib";
+import { OMNI_TEXT_SEARCH_TYPE } from "@grail/lib";
 import { SearchField } from "./search-field";
 import { TwoColumnRow } from "../../two-column-grid";
 
@@ -41,7 +41,7 @@ export const OmniDropdown = (props: Props) => {
               label: name,
               value: (
                 <Component
-                  searchKey={`${OMNI_KEY}-${index}`}
+                  searchKey={name}
                   placeholder={description}
                   searchType={type}
                   searchValue={searchValue}

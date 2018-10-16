@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import styles from "./omni.module.scss";
 import width from "dom-helpers/query/width";
 import {
+  OMNI_DELETE_COMMAND,
   OMNI_ERROR,
   OMNI_KEY,
   getOmniTextFromSearchValues,
@@ -13,8 +14,8 @@ import {
   localStorage,
   updateQuery,
 } from "@grail/lib/";
+import { OMNI_INPUT_FIELD_ID, OmniField } from "./components/omni-field";
 import { OmniDropdown } from "./components/omni-dropdown";
-import { OmniField } from "./components/omni-field";
 
 type Props = {
   /** Defines the search parameters. */
@@ -25,6 +26,10 @@ type Props = {
   getInitialValues?: (searchDefs: SearchDefs) => SearchValues,
   /** Takes a `node` to include in the omni dropdown after the search fields */
   children?: React$Node,
+  /** Omni search change command queue */
+  omniSearchCommands?: Array<OmniSearchCommand>,
+  /** Function to set omni search change command queue */
+  setOmniSearchCommands?: (Array<OmniSearchCommand>) => any,
 } & NavProps;
 
 type State = {
@@ -77,6 +82,19 @@ export class OmniSearchBar extends React.Component<Props, State> {
     ) {
       await this.updateOmniText(omniText);
       shouldSearch = true;
+    }
+    const { omniSearchCommands, setOmniSearchCommands } = this.props;
+    if (omniSearchCommands && omniSearchCommands.length && omniSearchCommands !== prevProps.omniSearchCommands) {
+      const promises = omniSearchCommands.map(async ({ command, omniFieldName }) => {
+        if (command === OMNI_DELETE_COMMAND) {
+          return await this.onChange(omniFieldName, "");
+        }
+      });
+      await Promise.all(promises);
+      setOmniSearchCommands && setOmniSearchCommands([]);
+      this.updateOmniUrl(true);
+      // The code above will trigger a search since the URL query has (probably) changed.
+      shouldSearch = false;
     }
     if (shouldSearch) {
       this.onSearch();
@@ -187,6 +205,10 @@ export class OmniSearchBar extends React.Component<Props, State> {
   onSearch = (shouldUpdateBrowserHistory: boolean = false) => {
     this.setState({ isOpen: false });
     this.props.setSearchOptions({ searchOptions: getSearchOptions(this.props.searchDefs, this.state.searchValues) });
+    this.updateOmniUrl(shouldUpdateBrowserHistory);
+  };
+
+  updateOmniUrl = (shouldUpdateBrowserHistory: boolean = false) => {
     const { omniText } = this.state;
     updateQuery(
       this.props,
@@ -203,12 +225,16 @@ export class OmniSearchBar extends React.Component<Props, State> {
 
   onChange = async (id: string, value: string) => {
     let omniText = value;
-    if (id !== OMNI_KEY) {
-      const index = Number.parseInt(id.split("-").pop(), 10);
+    if (id !== OMNI_INPUT_FIELD_ID) {
+      const { searchDefs } = this.props;
+      const index = searchDefs.findIndex(({ name }) => name === id);
+      if (index === -1) {
+        return;
+      }
       const searchValues: SearchValues = new Map(this.state.searchValues).set(index, value);
       omniText = getOmniTextFromSearchValues(this.props.searchDefs, searchValues);
     }
-    await this.updateOmniText(omniText);
+    return await this.updateOmniText(omniText);
   };
 
   anchorEl = null;

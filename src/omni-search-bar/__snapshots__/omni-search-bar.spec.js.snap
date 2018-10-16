@@ -20,7 +20,7 @@ exports[`OmniSearchBar renders properly 1`] = `
             <button
               aria-label="Clear entered search values"
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit iconButton text"
-              id="omni-search"
+              id="omni-input-field-id-search"
               tabindex="0"
               title="Search"
               type="button"
@@ -49,7 +49,7 @@ exports[`OmniSearchBar renders properly 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
-            id="omni"
+            id="omni-input-field-id"
             placeholder="Search here or use dropdown"
             type="text"
             value=""
@@ -61,7 +61,7 @@ exports[`OmniSearchBar renders properly 1`] = `
               aria-label="Expand search options"
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit iconButton text"
               data-testid="search-options-expander"
-              id="omni-menu"
+              id="omni-input-field-id-menu"
               label="menu"
               tabindex="0"
               title="Search options"

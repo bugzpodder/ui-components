@@ -3,105 +3,80 @@
 exports[`OmniSearchBar deletes 1`] = `
 <div>
   <div
-    aria-label="omni"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="omni"
-    role="button"
-    tabindex="0"
+    class="omniChips"
   >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="omni"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="omni"
+      role="button"
+      tabindex="0"
     >
+      <span
+        class="MuiChip-label"
+      >
+        test, Test 2
+      </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-avatarChildren"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-        />
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
         />
       </svg>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      test, Test 2
-    </span>
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconOutlinedColorPrimary"
-      focusable="false"
-      role="presentation"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-      />
-    </svg>
-  </div>
-  <div
-    aria-label="Search Field"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="Search Field"
-    role="button"
-    tabindex="0"
-  >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="Search Field"
+      role="button"
+      tabindex="0"
     >
-      SF
+      <span
+        class="MuiChip-label"
+      >
+        Search Field: test
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      Search Field: test
-    </span>
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconOutlinedColorPrimary"
-      focusable="false"
-      role="presentation"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-      />
-    </svg>
-  </div>
-  <div
-    aria-label="Empty Search Field"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="Empty Search Field"
-    role="button"
-    tabindex="0"
-  >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="Empty Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="Empty Search Field"
+      role="button"
+      tabindex="0"
     >
-      ESF
+      <span
+        class="MuiChip-label"
+      >
+        Empty Search Field: 
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      Empty Search Field: 
-    </span>
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconOutlinedColorPrimary"
-      focusable="false"
-      role="presentation"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-      />
-    </svg>
   </div>
 </div>
 `;
@@ -109,105 +84,80 @@ exports[`OmniSearchBar deletes 1`] = `
 exports[`OmniSearchBar deletes 2`] = `
 <div>
   <div
-    aria-label="omni"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="omni"
-    role="button"
-    tabindex="0"
+    class="omniChips"
   >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="omni"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="omni"
+      role="button"
+      tabindex="0"
     >
+      <span
+        class="MuiChip-label"
+      >
+        test, Test 2
+      </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-avatarChildren"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-        />
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
         />
       </svg>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      test, Test 2
-    </span>
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconOutlinedColorPrimary"
-      focusable="false"
-      role="presentation"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-      />
-    </svg>
-  </div>
-  <div
-    aria-label="Search Field"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="Search Field"
-    role="button"
-    tabindex="0"
-  >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="Search Field"
+      role="button"
+      tabindex="0"
     >
-      SF
+      <span
+        class="MuiChip-label"
+      >
+        Search Field: test
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      Search Field: test
-    </span>
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconOutlinedColorPrimary"
-      focusable="false"
-      role="presentation"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-      />
-    </svg>
-  </div>
-  <div
-    aria-label="Empty Search Field"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="Empty Search Field"
-    role="button"
-    tabindex="0"
-  >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="Empty Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="Empty Search Field"
+      role="button"
+      tabindex="0"
     >
-      ESF
+      <span
+        class="MuiChip-label"
+      >
+        Empty Search Field: 
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      Empty Search Field: 
-    </span>
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconOutlinedColorPrimary"
-      focusable="false"
-      role="presentation"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-      />
-    </svg>
   </div>
 </div>
 `;
@@ -215,72 +165,47 @@ exports[`OmniSearchBar deletes 2`] = `
 exports[`OmniSearchBar renders 1`] = `
 <div>
   <div
-    aria-label="omni"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="omni"
-    role="button"
-    tabindex="-1"
+    class="omniChips"
   >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="omni"
+      class="MuiChip-root chip MuiChip-colorPrimary"
+      data-testid="omni"
+      role="button"
+      tabindex="-1"
     >
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-avatarChildren"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
+      <span
+        class="MuiChip-label"
       >
-        <path
-          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-        />
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-      </svg>
+        test, Test 2
+      </span>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      test, Test 2
-    </span>
-  </div>
-  <div
-    aria-label="Search Field"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="Search Field"
-    role="button"
-    tabindex="-1"
-  >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary"
+      data-testid="Search Field"
+      role="button"
+      tabindex="-1"
     >
-      SF
+      <span
+        class="MuiChip-label"
+      >
+        Search Field: test
+      </span>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      Search Field: test
-    </span>
-  </div>
-  <div
-    aria-label="Empty Search Field"
-    class="MuiChip-root MuiChip-colorPrimary MuiChip-outlined MuiChip-outlinedPrimary margin-right-10"
-    data-testid="Empty Search Field"
-    role="button"
-    tabindex="-1"
-  >
     <div
-      class="MuiAvatar-root MuiAvatar-colorDefault MuiChip-avatar MuiChip-avatarColorPrimary"
+      aria-label="Empty Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary"
+      data-testid="Empty Search Field"
+      role="button"
+      tabindex="-1"
     >
-      ESF
+      <span
+        class="MuiChip-label"
+      >
+        Empty Search Field: 
+      </span>
     </div>
-    <span
-      class="MuiChip-label"
-    >
-      Empty Search Field: 
-    </span>
   </div>
 </div>
 `;

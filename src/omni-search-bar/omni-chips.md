@@ -10,56 +10,63 @@ const {
   FULL_TEXT_SEARCH_TYPE,
   MULTI_FIELD_TEXT_SEARCH_TYPE,
   OMNI_KEY,
+  OMNI_DELETE_COMMAND,
 } = require("@grail/lib");
-const { OmniSearchBar } = require("./index");
+const { OmniChips } = require("./index");
 
-const searchDefs = [
+const initialSearchOptions = [
   {
     name: OMNI_KEY,
     type: OMNI_TEXT_SEARCH_TYPE,
     searchFields: ["label", "samples.label", "samples.previousLabel"],
+    values: ["omni value"],
   },
   {
     name: "Labels",
     type: MULTI_FIELD_TEXT_SEARCH_TYPE,
     searchFields: ["label"],
+    values: ["labels value"],
   },
   {
     name: "Operation Time",
     type: DATETIME_SEARCH_TYPE,
     searchFields: ["operationTime"],
+    values: ["2018-04-20", "2019-04-20"],
   },
   {
     name: "Status",
     type: FULL_TEXT_SEARCH_TYPE,
     searchFields: ["status"],
+    values: ["status value"],
   },
 ];
 
-class OmniSearchBarContainer extends React.Component {
+class OmniChipsContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { searchOptions: [] };
-    this.onChange = this.onChange.bind(this);
+    this.state = { searchOptions: initialSearchOptions };
+    this.addOmniSearchCommand = this.addOmniSearchCommand.bind(this);
   }
-  onChange({ searchOptions }) {
-    console.log(searchOptions);
-    this.setState({ searchOptions });
+  addOmniSearchCommand({ command, omniFieldName }) {
+    console.log(command, omniFieldName);
+    if (command === OMNI_DELETE_COMMAND) {
+      this.setState(({ searchOptions }) => {
+        searchOptions = searchOptions.filter(({ name }) => omniFieldName !== name);
+        return { searchOptions };
+      });
+    }
   }
   render() {
     return (
       <div>
-        <OmniSearchBar searchDefs={searchDefs} setSearchOptions={this.onChange}>
-          Children here appear in the dropdown
-        </OmniSearchBar>
+        <OmniChips searchOptions={this.state.searchOptions} addOmniSearchCommand={this.addOmniSearchCommand} />
         <ExampleBlock strongHeader="State" content={this.state} />
       </div>
     );
   }
 }
-const ExampleApp = require("../date-input/picker-util-provider-hoc").wrapPickerUtilProvider(OmniSearchBarContainer);
 
 <ExampleWrapper>
-  <ExampleApp />
+  <OmniChipsContainer />
 </ExampleWrapper>;
 ```

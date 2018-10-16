@@ -3,7 +3,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
-import React, { type Node } from "react";
+import React, { type ElementConfig, type Node } from "react";
 import classNames from "classnames";
 import styles from "./common-card.module.scss";
 import { MAIN_CARD_ELEVATION } from "@grail/lib";
@@ -41,7 +41,10 @@ export type CommonCardProps = {
    *  - `footerActions` (applied to footerActions container)
    */
   classes?: CommonCardClasses,
-};
+
+  /** Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive. */
+  elevation?: number,
+} & ElementConfig<typeof Card>;
 
 /**
  * `CommonCard` provides a component to create basic Material-UI Cards.
@@ -57,13 +60,14 @@ export const CommonCard = (props: CommonCardProps) => {
     avatar = null,
     title = "",
     hasMargin = false,
+    elevation = MAIN_CARD_ELEVATION,
     ...cardProps
   } = props;
   return (
     <Card
       className={classNames(classes.root, styles.card, { [styles.withMargin]: hasMargin })}
+      elevation={elevation}
       {...cardProps}
-      elevation={MAIN_CARD_ELEVATION}
     >
       {(title || headerActions) && (
         <CardHeader

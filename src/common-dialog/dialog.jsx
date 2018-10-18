@@ -27,6 +27,8 @@ type Props = {
    *
    *  - `root`: dialog's outermost div
    *
+   *  - `paper`: wrapper around dialog
+   *
    *  - `title`
    *
    *  - `content`: dialog content wrapper
@@ -62,7 +64,7 @@ export const CommonDialog = (props: Props) => {
     <Dialog
       open={isVisible}
       className={classNames(styles.commonDialog, classes.root)}
-      PaperProps={{ className: styles.commonDialogPaper }}
+      PaperProps={{ className: classNames(styles.commonDialogPaper, classes.paper) }}
       onClose={hideModal}
       {...dialogProps}
     >

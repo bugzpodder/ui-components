@@ -52,17 +52,20 @@ export const TableComponent = (props: Props) => {
     highlightedRowId,
   };
   const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
+  const hasHeaders = tableColumns.find(column => column.Header);
   return (
     <Table
       className={classes.table}
       {...tableProps}
     >
-      <TableHeader
-        columns={tableColumns}
-        // $FlowFixMe undefined props are incompatible with flow definitions.
-        sortingProps={sortingProps}
-        enableSelectAll={enableSelectAll}
-      />
+      {hasHeaders && (
+        <TableHeader
+          columns={tableColumns}
+          // $FlowFixMe undefined props are incompatible with flow definitions.
+          sortingProps={sortingProps}
+          enableSelectAll={enableSelectAll}
+        />
+      )}
       <TableBody>
         {data.length > 0 &&
           data.map((instance, index) => {

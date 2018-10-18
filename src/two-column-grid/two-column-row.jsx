@@ -2,6 +2,7 @@
 import Grid from "@material-ui/core/Grid";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import classNames from "classnames";
 import styles from "./two-column-row.module.scss";
 
 type Props = {
@@ -18,32 +19,32 @@ export const TwoColumnRow = (props: Props) => {
   const labelTextAlign = textAlign[0] || "right";
   const valueTextAlign = textAlign[1] || "left";
 
-  const { label, value } = row;
+  const { label, value, classes = {} } = row;
   return (
     <Grid
       container
       justify="space-between"
       alignItems="center"
       spacing={40}
-      className={styles.gridItem}
+      className={classNames(styles.gridItem, classes.row)}
     >
       <Grid
         item
         data-testid="two-column-row-label"
-        className={styles.labelColumn}
+        className={classNames(styles.labelColumn, classes.labelColumn)}
         xs={labelWidth}
       >
         {typeof label === "string" ? (
           <Typography
             style={{ textAlign: labelTextAlign }}
-            className={styles.rowLabel}
+            className={classNames(styles.rowLabel, classes.label)}
           >
             {label}
           </Typography>
         ) : (
           <div
             style={{ textAlign: labelTextAlign }}
-            className={styles.rowLabel}
+            className={classNames(styles.rowLabel, classes.label)}
           >
             {label}
           </div>
@@ -52,10 +53,15 @@ export const TwoColumnRow = (props: Props) => {
       <Grid
         item
         data-testid="two-column-row-value"
-        className={styles.valueColumn}
+        className={classNames(styles.valueColumn, classes.valueColumn)}
         xs={inputWidth}
       >
-        <div style={{ textAlign: valueTextAlign }}>{value}</div>
+        <div
+          style={{ textAlign: valueTextAlign }}
+          className={classes.value}
+        >
+          {value}
+        </div>
       </Grid>
     </Grid>
   );

@@ -75,8 +75,8 @@ module.exports = {
     },
   ],
   require: [path.join(__dirname, "..", "lims/client/public/material/material.css")],
-  showCode: true,
-  showUsage: true,
+  usageMode: "expand",
+  exampleMode: "expand",
   skipComponentsWithoutExample: true,
   ignore: [
     "components/utils",
@@ -96,7 +96,6 @@ module.exports = {
     }
 
     props.settings.showCode = props.content.length <= 300;
-
     return props;
   },
   webpackConfig: {

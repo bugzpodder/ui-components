@@ -35,7 +35,13 @@ type Props = {
 /** Provides a styled section with a title and body. */
 export const CommonPanel = (props: Props) => {
   const {
-    title, classes = {}, color = "default", children, variant = "subheading", className = "", ...panelProps
+    title,
+    classes = {},
+    color = "default",
+    children,
+    variant = "subheading",
+    className = "",
+    ...panelProps
   } = props;
   return (
     <div

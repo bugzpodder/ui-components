@@ -45,7 +45,7 @@ exports[`render empty tabbed card 1`] = `
               class="MuiTabs-flexContainer"
             />
             <span
-              class="TabIndicator-root-202 TabIndicator-colorPrimary-203 MuiTabs-indicator"
+              class="MuiTabIndicator-root MuiTabIndicator-colorPrimary MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
@@ -172,7 +172,7 @@ exports[`render tabbed card 1`] = `
               </button>
             </div>
             <span
-              class="TabIndicator-root-118 TabIndicator-colorPrimary-119 MuiTabs-indicator"
+              class="MuiTabIndicator-root MuiTabIndicator-colorPrimary MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>

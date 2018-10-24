@@ -1,7 +1,6 @@
 // @flow
 import "jest-dom/extend-expect";
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
-import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
 import React from "react";
 import keycode from "keycode";
 import {
@@ -10,6 +9,7 @@ import {
   LIKE_TEXT_SEARCH_TYPE,
   MULTI_FIELD_TEXT_SEARCH_TYPE,
 } from "@grail/lib";
+import { MuiPickersUtilsProvider } from "material-ui-pickers";
 import { OmniSearchBar } from "./index";
 import { TestWrapper } from "../utils";
 import { fireEvent, render } from "react-testing-library";

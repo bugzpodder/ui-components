@@ -925,7 +925,7 @@ exports[`render paged table and test pagination 1`] = `
             class="MuiTablePagination-spacer"
           />
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTablePagination-caption"
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit MuiTablePagination-caption"
           >
             Rows per page:
           </span>
@@ -964,7 +964,7 @@ exports[`render paged table and test pagination 1`] = `
             </div>
           </div>
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTablePagination-caption"
+            class="MuiTypography-root MuiTypography-caption MuiTypography-colorInherit MuiTablePagination-caption"
           >
             Showing 1 to 5
           </span>

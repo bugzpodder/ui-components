@@ -1,7 +1,7 @@
 // @flow
 import MomentUtils from "material-ui-pickers/utils/moment-utils";
-import MuiPickersUtilsProvider from "material-ui-pickers/utils/MuiPickersUtilsProvider";
 import React from "react";
+import { MuiPickersUtilsProvider } from "material-ui-pickers";
 
 export function wrapPickerUtilProvider<P>(WrappedComponent: React$ComponentType<P>): React$ComponentType<P> {
   return (props: P) => {

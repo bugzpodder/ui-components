@@ -68,13 +68,13 @@ class TestPagedTable extends React.Component {
     }
     return first < second ? -1 : 1;
   }
-  
+
   handleHighlight(highlightedRowId) {
     const tableOptions = {
       ...this.state.tableOptions,
-      highlightedRowId
+      highlightedRowId,
     };
-    this.setState({ tableOptions })
+    this.setState({ tableOptions });
   }
 
   render() {
@@ -124,10 +124,7 @@ class TestPagedTable extends React.Component {
           highlightedRowId={tableOptions.highlightedRowId}
           onHighlightRow={this.handleHighlight}
         />
-        <ExampleBlock
-          strongHeader="Table Options "
-          content={this.state.tableOptions}
-        />
+        <ExampleBlock strongHeader="Table Options " content={this.state.tableOptions} />
       </div>
     );
   }

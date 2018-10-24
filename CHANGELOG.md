@@ -1,14 +1,20 @@
-## 0.7.0 - 2018-10-19
+## 0.7.0 - 2018-10-24
 
-1.  Update `PagedTable` and `CommonTable`: scroll only the table body and limit the max-height
-2.  Convert Omni-bar field to act more like Omni search.
+1.  Bug Fixes
+2.  Improve testing
+3.  Update `PagedTable` and `CommonTable`: scroll only the table body and limit the max-height
+4.  Allow for highlighting of table rows in PagedTable and SimpleTable
+5.  Add chips to `PagedTable` header to indicate searched fields
+6.  Adjust `PagedTable` and `SimpleTable` to make scrolling more obvious. 
+7.  Allow custom date formats for `DateInput` and `DateTimeInput`
+8.  Convert Omni-bar field to act more like Omni search.
     The first search field will act as global search (only if its type is `OMNI_TEXT_SEARCH_TYPE`).
     This maintains backward compatibility. Ideally, we can require an omni field definition.
-3.  Create New TimelineGraph component, which uses Material-UI components rather than SVGs, allowing for
+9.  Create New `CommonTimelineGraph` and `TimelineCard` components, which uses Material-UI components rather than SVGs, allowing for
     more customization.
-4.  Allow for highlighting of table rows in PagedTable and SimpleTable
-5.  Add classes object to some components that didn't have it before, such as `CommonPanel`
-6.  Bug Fixes
+10. Add classes object to some components that didn't have it before, such as `CommonPanel` and `TwoColumnGrid`
+11. Make `CommonDialog` scrollable
+
 
 ## 0.6.0 - 2018-08-15
 

@@ -9,6 +9,7 @@ import styles from "../table.module.scss";
 import { PagedTableRow } from "./table-row";
 import { TableHeader } from "./table-header";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
+import { getRowId, handleKeyboardHighlight } from "../utilities/row-utils";
 
 type Props = {
   columns: Array<PagedTableColumn>,
@@ -51,11 +52,17 @@ export const TableComponent = (props: Props) => {
     onHighlightRow,
     highlightedRowId,
   };
+  const highlightRowProps = {
+    data, idKey, onHighlightRow, highlightedRowId,
+  };
   const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
   const hasHeaders = tableColumns.find(column => column.Header);
   return (
     <Table
-      className={classes.table}
+      tabIndex="0"
+      data-testid="table"
+      onKeyDown={event => handleKeyboardHighlight(event, highlightRowProps)}
+      className={classNames(classes.table, styles.table)}
       {...tableProps}
     >
       {hasHeaders && (
@@ -69,14 +76,14 @@ export const TableComponent = (props: Props) => {
       <TableBody>
         {data.length > 0 &&
           data.map((instance, index) => {
-            const id = idKey ? instance[idKey] : `${index}`;
+            const rowId = getRowId(idKey, instance, index);
             return (
               <PagedTableRow
                 selectionProps={selectionProps}
                 key={index}
                 instance={instance}
                 columns={tableColumns}
-                rowId={id}
+                rowId={rowId}
                 rowIndex={index}
                 className={classes.rows || ""}
               />

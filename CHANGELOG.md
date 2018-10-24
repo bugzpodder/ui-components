@@ -1,4 +1,4 @@
-## 0.7.0 - 2018-09-26
+## 0.7.0 - 2018-10-19
 
 1.  Update `PagedTable` and `CommonTable`: scroll only the table body and limit the max-height
 2.  Convert Omni-bar field to act more like Omni search.
@@ -6,6 +6,9 @@
     This maintains backward compatibility. Ideally, we can require an omni field definition.
 3.  Create New TimelineGraph component, which uses Material-UI components rather than SVGs, allowing for
     more customization.
+4.  Allow for highlighting of table rows in PagedTable and SimpleTable
+5.  Add classes object to some components that didn't have it before, such as `CommonPanel`
+6.  Bug Fixes
 
 ## 0.6.0 - 2018-08-15
 

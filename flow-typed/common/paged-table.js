@@ -55,3 +55,10 @@ declare type SortingProps = {
   onSort: ({ sortOptions: SortOptions }) => any,
   tableOptions: PagedTableOptions,
 }
+
+declare type HighlightRowProps = {
+  data: Array<Object>,
+  idKey?: string | number,
+  onHighlightRow?: (?string | ?number) => any,
+  highlightedRowId: ?string | number,
+}

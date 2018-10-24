@@ -109,7 +109,7 @@ exports[`render Sidebar 1`] = `
                 >
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
-                    href="https://edc-client-staging.eng.aws.grail.com/v/VERMILLION/trfs"
+                    href="https://edc-client-staging.eng.aws.grail.com/v2/trfs"
                     rel="noopener noreferrer"
                     role="button"
                     tabindex="0"
@@ -230,24 +230,6 @@ exports[`render Sidebar 1`] = `
                         class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Sequencing Runs
-                      </span>
-                    </div>
-                  </a>
-                  <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
-                    exact="false"
-                    href="/lims/new-sequencing-run"
-                    id="lims-lims-new-sequencing-run"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <div
-                      class="MuiListItemText-root MuiListItemText-dense"
-                    >
-                      <span
-                        class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary MuiListItemText-textDense"
-                      >
-                        New Sequencing Run
                       </span>
                     </div>
                   </a>
@@ -536,24 +518,6 @@ exports[`render Sidebar 1`] = `
               />
             </svg>
           </div>
-          <a
-            class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-            exact="false"
-            href="/lims/sample-storage/racks"
-            id="lims-lims-sample-storage-racks"
-            role="button"
-            tabindex="0"
-          >
-            <div
-              class="MuiListItemText-root"
-            >
-              <span
-                class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
-              >
-                Storage
-              </span>
-            </div>
-          </a>
           <div
             class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
             role="button"

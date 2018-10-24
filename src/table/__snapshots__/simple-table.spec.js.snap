@@ -6,7 +6,9 @@ exports[`render full simple table 1`] = `
     class="tableContainer"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root table"
+      data-testid="table"
+      tabindex="0"
     >
       <thead
         class="MuiTableHead-root TableHeader"
@@ -456,7 +458,9 @@ exports[`render loading simple table 1`] = `
     class="tableContainer"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root table"
+      data-testid="table"
+      tabindex="0"
     >
       <thead
         class="MuiTableHead-root TableHeader"
@@ -668,7 +672,9 @@ exports[`render simple table 1`] = `
     class="tableContainer"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root table"
+      data-testid="table"
+      tabindex="0"
     >
       <thead
         class="MuiTableHead-root TableHeader"
@@ -871,7 +877,9 @@ exports[`render simple table with all items selected 1`] = `
     class="tableContainer"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root table"
+      data-testid="table"
+      tabindex="0"
     >
       <thead
         class="MuiTableHead-root TableHeader"
@@ -1321,7 +1329,9 @@ exports[`render simple table with no results 1`] = `
     class="tableContainer"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root table"
+      data-testid="table"
+      tabindex="0"
     >
       <thead
         class="MuiTableHead-root TableHeader"
@@ -1372,7 +1382,9 @@ exports[`render simple table with no results and is loading 1`] = `
     class="tableContainer"
   >
     <table
-      class="MuiTable-root"
+      class="MuiTable-root table"
+      data-testid="table"
+      tabindex="0"
     >
       <thead
         class="MuiTableHead-root TableHeader"

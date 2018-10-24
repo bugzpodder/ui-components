@@ -58,6 +58,12 @@
     z-index: 1;
   }
 
+  .table {
+    &:focus {
+      outline: none;
+    }
+  }
+
   .highlightedRow {
     td:first-child {
       position: relative;

@@ -11,7 +11,9 @@ exports[`render basic paged table 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -220,7 +222,9 @@ exports[`render loading paged table 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -464,7 +468,9 @@ exports[`render paged table and test pagination 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -1032,7 +1038,9 @@ exports[`render paged table and test sorting 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -1314,7 +1322,9 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -1763,7 +1773,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
 </div>
 `;
 
-exports[`render paged table with default ids 1`] = `
+exports[`render paged table with default ids, and test row highlighting 1`] = `
 <div>
   <div
     class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root pagedTableCardRoot card"
@@ -1774,7 +1784,9 @@ exports[`render paged table with default ids 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -2227,7 +2239,9 @@ exports[`render paged table with no initially selected items, then select items 
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -2680,7 +2694,9 @@ exports[`render paged table with no results 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"
@@ -2737,7 +2753,9 @@ exports[`render paged table with no results and is loading 1`] = `
       data-testid="card-content"
     >
       <table
-        class="MuiTable-root"
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
       >
         <thead
           class="MuiTableHead-root TableHeader"

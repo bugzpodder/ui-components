@@ -50,9 +50,9 @@ test("render Sidebar", () => {
   fireEvent.click(sampleManagementDropdown);
   // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDocument();
   expect(toggle.mock.calls.length).toBe(0);
-  const storage = bodyUtils.queryByText("Storage");
-  expect(storage).toBeInTheDocument();
-  fireEvent.click(storage);
+  const instruments = bodyUtils.queryByText("Instruments");
+  expect(instruments).toBeInTheDocument();
+  fireEvent.click(instruments);
   expect(toggle.mock.calls.length).toBe(1);
   expect(document.body).toMatchSnapshot();
 });

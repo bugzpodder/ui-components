@@ -115,8 +115,9 @@ test("render paged table with all items selected, then unselect items", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render paged table with default ids", () => {
+test("render paged table with default ids, and test row highlighting", () => {
   const mockSelect = jest.fn();
+  const mockHandleHighlight = jest.fn(result => result);
   const { container } = render(
     <TestWrapper>
       <PagedTable
@@ -124,9 +125,16 @@ test("render paged table with default ids", () => {
         data={data}
         onSelect={mockSelect}
         selectedRows={[]}
+        highlightedRowId={1}
+        onHighlightRow={mockHandleHighlight}
       />
     </TestWrapper>,
   );
+  fireEvent.keyDown(bodyUtils.getByTestId("table"), {
+    key: "up",
+    keyCode: 38,
+    which: 38,
+  });
   expect(container).toMatchSnapshot();
 });
 

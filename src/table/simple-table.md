@@ -97,9 +97,8 @@ class TestSimpleTable extends React.Component {
           onHighlightRow={this.handleHighlight}
         />
         <ExampleBlock
-          strongHeader="Selected Rows"
-          helperText=" (using idKey) "
-          content={this.state.tableOptions.selectedRowIds}
+          strongHeader="Table Options "
+          content={this.state.tableOptions}
         />
       </div>
     );

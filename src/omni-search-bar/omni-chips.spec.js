@@ -1,7 +1,7 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { LIKE_TEXT_SEARCH_TYPE, OMNI_DELETE_COMMAND, OMNI_KEY } from "@grail/lib";
+import { LIKE_TEXT_SEARCH_TYPE, OMNI_KEY, SET_OMNI_FIELD_COMMAND } from "@grail/lib";
 import { OmniChips } from "./omni-chips";
 import { TestWrapper } from "../utils";
 import { cleanup, fireEvent, render } from "react-testing-library";
@@ -18,7 +18,7 @@ const searchOptions = [
   {
     name: "Search Field",
     type: LIKE_TEXT_SEARCH_TYPE,
-    values: ["test"],
+    values: ["test", "test 2", "test 3"],
     searchFields: [],
   },
   {
@@ -49,11 +49,12 @@ describe("OmniSearchBar", () => {
       </TestWrapper>,
     );
     expect(container).toMatchSnapshot();
-    const deleteButton = container.querySelector("[data-testid='Search Field'] .MuiChip-deleteIcon");
+    const deleteButton = container.querySelector("[data-testid='Search Field-1'] .MuiChip-deleteIcon");
     fireEvent.click(deleteButton);
     expect(mockAddCommand.mock.results[0].value).toEqual({
-      command: OMNI_DELETE_COMMAND,
+      command: SET_OMNI_FIELD_COMMAND,
       omniFieldName: "Search Field",
+      omniValues: ["test", "test 3"],
     });
     expect(container).toMatchSnapshot();
   });

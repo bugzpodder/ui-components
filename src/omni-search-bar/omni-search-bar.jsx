@@ -1,11 +1,12 @@
 // @flow
 import React, { Fragment } from "react";
+import isEqual from "lodash/isEqual";
 import styles from "./omni.module.scss";
 import width from "dom-helpers/query/width";
 import {
-  OMNI_DELETE_COMMAND,
   OMNI_ERROR,
   OMNI_KEY,
+  SET_OMNI_FIELD_COMMAND,
   getOmniTextFromSearchValues,
   getQuery,
   getSearchOptions,
@@ -51,6 +52,8 @@ export class OmniSearchBar extends React.Component<Props, State> {
     searchValues: new Map(),
   };
 
+  lastSearchedValues: SearchValues = new Map();
+
   componentDidMount = async () => {
     const { location, getInitialValues } = this.props;
     let omniText = getQuery({ location })[OMNI_KEY];
@@ -76,6 +79,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
       }
     }
     let shouldSearch = false;
+    let shouldUpdateBrowserHistory = false;
     if (
       searchDefs !== prevProps.searchDefs ||
       (prevOmniText !== omniText && prevProps.location.pathname === location.pathname)
@@ -85,28 +89,27 @@ export class OmniSearchBar extends React.Component<Props, State> {
     }
     const { omniSearchCommands, setOmniSearchCommands } = this.props;
     if (omniSearchCommands && omniSearchCommands.length && omniSearchCommands !== prevProps.omniSearchCommands) {
-      const promises = omniSearchCommands.map(async ({ command, omniFieldName }) => {
-        if (command === OMNI_DELETE_COMMAND) {
-          return await this.onChange(omniFieldName, "");
+      const promises = omniSearchCommands.map(async ({ command, omniFieldName, omniValues = [] }) => {
+        if (command === SET_OMNI_FIELD_COMMAND) {
+          return await this.onChange(omniFieldName, omniValues.join(","));
         }
       });
       await Promise.all(promises);
       setOmniSearchCommands && setOmniSearchCommands([]);
-      this.updateOmniUrl(true);
-      // The code above will trigger a search since the URL query has (probably) changed.
-      shouldSearch = false;
+      shouldSearch = true;
+      shouldUpdateBrowserHistory = true;
     }
     if (shouldSearch) {
-      this.onSearch();
+      this.onSearch(shouldUpdateBrowserHistory);
     }
   };
 
   getValuesFromLocalStorage = (searchDefs: SearchDefs) => {
     const storageValues: Map<number, string> = new Map();
     searchDefs.forEach((searchDef, index) => {
-      const { localStorageKey } = searchDef;
-      if (localStorageKey !== undefined) {
-        const storageValue = localStorage.get(localStorageKey);
+      const { localStorageKeySuffix } = searchDef;
+      if (localStorageKeySuffix !== undefined) {
+        const storageValue = localStorage.get(`omni-${localStorageKeySuffix}`);
         if (storageValue !== undefined) {
           storageValues.set(index, String(storageValue));
         }
@@ -117,8 +120,9 @@ export class OmniSearchBar extends React.Component<Props, State> {
 
   setValuesToLocalStorage = (searchDefs: SearchDefs, searchValues: SearchValues) => {
     searchDefs.forEach((searchDef, index) => {
-      const { localStorageKey } = searchDef;
-      if (localStorageKey !== undefined) {
+      const { localStorageKeySuffix } = searchDef;
+      if (localStorageKeySuffix !== undefined) {
+        const localStorageKey = `omni-${localStorageKeySuffix}`;
         if (searchValues.has(index)) {
           const searchValue = searchValues.get(index);
           localStorage.set(localStorageKey, searchValue);
@@ -204,7 +208,12 @@ export class OmniSearchBar extends React.Component<Props, State> {
 
   onSearch = (shouldUpdateBrowserHistory: boolean = false) => {
     this.setState({ isOpen: false });
-    this.props.setSearchOptions({ searchOptions: getSearchOptions(this.props.searchDefs, this.state.searchValues) });
+    const { searchValues } = this.state;
+    if (isEqual(searchValues, this.lastSearchedValues)) {
+      return;
+    }
+    this.lastSearchedValues = searchValues;
+    this.props.setSearchOptions({ searchOptions: getSearchOptions(this.props.searchDefs, searchValues) });
     this.updateOmniUrl(shouldUpdateBrowserHistory);
   };
 

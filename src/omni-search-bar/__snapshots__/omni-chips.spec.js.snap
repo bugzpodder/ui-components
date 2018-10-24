@@ -8,14 +8,38 @@ exports[`OmniSearchBar deletes 1`] = `
     <div
       aria-label="omni"
       class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
-      data-testid="omni"
+      data-testid="omni-0"
       role="button"
       tabindex="0"
     >
       <span
         class="MuiChip-label"
       >
-        test, Test 2
+        test
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
+    </div>
+    <div
+      aria-label="omni"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="omni-1"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="MuiChip-label"
+      >
+        Test 2
       </span>
       <svg
         aria-hidden="true"
@@ -32,7 +56,7 @@ exports[`OmniSearchBar deletes 1`] = `
     <div
       aria-label="Search Field"
       class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
-      data-testid="Search Field"
+      data-testid="Search Field-0"
       role="button"
       tabindex="0"
     >
@@ -54,16 +78,40 @@ exports[`OmniSearchBar deletes 1`] = `
       </svg>
     </div>
     <div
-      aria-label="Empty Search Field"
+      aria-label="Search Field"
       class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
-      data-testid="Empty Search Field"
+      data-testid="Search Field-1"
       role="button"
       tabindex="0"
     >
       <span
         class="MuiChip-label"
       >
-        Empty Search Field: 
+        Search Field: test 2
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
+    </div>
+    <div
+      aria-label="Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="Search Field-2"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="MuiChip-label"
+      >
+        Search Field: test 3
       </span>
       <svg
         aria-hidden="true"
@@ -89,14 +137,38 @@ exports[`OmniSearchBar deletes 2`] = `
     <div
       aria-label="omni"
       class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
-      data-testid="omni"
+      data-testid="omni-0"
       role="button"
       tabindex="0"
     >
       <span
         class="MuiChip-label"
       >
-        test, Test 2
+        test
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
+    </div>
+    <div
+      aria-label="omni"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="omni-1"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="MuiChip-label"
+      >
+        Test 2
       </span>
       <svg
         aria-hidden="true"
@@ -113,7 +185,7 @@ exports[`OmniSearchBar deletes 2`] = `
     <div
       aria-label="Search Field"
       class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
-      data-testid="Search Field"
+      data-testid="Search Field-0"
       role="button"
       tabindex="0"
     >
@@ -135,16 +207,40 @@ exports[`OmniSearchBar deletes 2`] = `
       </svg>
     </div>
     <div
-      aria-label="Empty Search Field"
+      aria-label="Search Field"
       class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
-      data-testid="Empty Search Field"
+      data-testid="Search Field-1"
       role="button"
       tabindex="0"
     >
       <span
         class="MuiChip-label"
       >
-        Empty Search Field: 
+        Search Field: test 2
+      </span>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+        />
+      </svg>
+    </div>
+    <div
+      aria-label="Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletable MuiChip-deletableColorPrimary"
+      data-testid="Search Field-2"
+      role="button"
+      tabindex="0"
+    >
+      <span
+        class="MuiChip-label"
+      >
+        Search Field: test 3
       </span>
       <svg
         aria-hidden="true"
@@ -170,20 +266,33 @@ exports[`OmniSearchBar renders 1`] = `
     <div
       aria-label="omni"
       class="MuiChip-root chip MuiChip-colorPrimary"
-      data-testid="omni"
+      data-testid="omni-0"
       role="button"
       tabindex="-1"
     >
       <span
         class="MuiChip-label"
       >
-        test, Test 2
+        test
+      </span>
+    </div>
+    <div
+      aria-label="omni"
+      class="MuiChip-root chip MuiChip-colorPrimary"
+      data-testid="omni-1"
+      role="button"
+      tabindex="-1"
+    >
+      <span
+        class="MuiChip-label"
+      >
+        Test 2
       </span>
     </div>
     <div
       aria-label="Search Field"
       class="MuiChip-root chip MuiChip-colorPrimary"
-      data-testid="Search Field"
+      data-testid="Search Field-0"
       role="button"
       tabindex="-1"
     >
@@ -194,16 +303,29 @@ exports[`OmniSearchBar renders 1`] = `
       </span>
     </div>
     <div
-      aria-label="Empty Search Field"
+      aria-label="Search Field"
       class="MuiChip-root chip MuiChip-colorPrimary"
-      data-testid="Empty Search Field"
+      data-testid="Search Field-1"
       role="button"
       tabindex="-1"
     >
       <span
         class="MuiChip-label"
       >
-        Empty Search Field: 
+        Search Field: test 2
+      </span>
+    </div>
+    <div
+      aria-label="Search Field"
+      class="MuiChip-root chip MuiChip-colorPrimary"
+      data-testid="Search Field-2"
+      role="button"
+      tabindex="-1"
+    >
+      <span
+        class="MuiChip-label"
+      >
+        Search Field: test 3
       </span>
     </div>
   </div>

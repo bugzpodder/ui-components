@@ -10,7 +10,7 @@ const {
   FULL_TEXT_SEARCH_TYPE,
   MULTI_FIELD_TEXT_SEARCH_TYPE,
   OMNI_KEY,
-  OMNI_DELETE_COMMAND,
+  SET_OMNI_FIELD_COMMAND,
 } = require("@grail/lib");
 const { OmniChips } = require("./index");
 
@@ -37,7 +37,7 @@ const initialSearchOptions = [
     name: "Status",
     type: FULL_TEXT_SEARCH_TYPE,
     searchFields: ["status"],
-    values: ["status value"],
+    values: ["status value", "Another Value"],
   },
 ];
 
@@ -47,11 +47,19 @@ class OmniChipsContainer extends React.Component {
     this.state = { searchOptions: initialSearchOptions };
     this.addOmniSearchCommand = this.addOmniSearchCommand.bind(this);
   }
-  addOmniSearchCommand({ command, omniFieldName }) {
-    console.log(command, omniFieldName);
-    if (command === OMNI_DELETE_COMMAND) {
+  addOmniSearchCommand({ command, omniFieldName, omniValues }) {
+    console.log(command, omniFieldName, omniValues);
+    if (command === SET_OMNI_FIELD_COMMAND) {
       this.setState(({ searchOptions }) => {
-        searchOptions = searchOptions.filter(({ name }) => omniFieldName !== name);
+        searchOptions = searchOptions
+          .map(searchOption => {
+            let { name, values } = searchOption;
+            if (omniFieldName === name) {
+              values = omniValues;
+            }
+            return { ...searchOption, values };
+          })
+          .filter(({ values }) => values && values.length);
         return { searchOptions };
       });
     }

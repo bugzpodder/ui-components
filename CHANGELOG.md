@@ -1,10 +1,14 @@
 ## 1.0.0 - 2018-11-22
 
-1. Deprecate old TimelineGraph component
-2. Rename `CommonTimelineGraph` to `TimelineGraph`
+1. Deprecate old TimelineGraph component.
+2. Rename `CommonTimelineGraph` to `TimelineGraph`.
 3. Fix TimelineGraph bug where width of content did not match the width
    of the card, displaying the username in different places along the
    timeline graph.
+4. Add `OmniChip` component, and communication mechanism for `OmniSearchBar`.
+5. No longer open omni dropdown on focus or click.
+6. `OmniSearchBar` localStorage now includes `omni-` prefix.
+7. If omni search values don't change, don't trigger a search request.
 
 ## 0.7.0 - 2018-10-24
 
@@ -13,7 +17,7 @@
 3.  Update `PagedTable` and `CommonTable`: scroll only the table body and limit the max-height
 4.  Allow for highlighting of table rows in PagedTable and SimpleTable
 5.  Add chips to `PagedTable` header to indicate searched fields
-6.  Adjust `PagedTable` and `SimpleTable` to make scrolling more obvious. 
+6.  Adjust `PagedTable` and `SimpleTable` to make scrolling more obvious.
 7.  Allow custom date formats for `DateInput` and `DateTimeInput`
 8.  Convert Omni-bar field to act more like Omni search.
     The first search field will act as global search (only if its type is `OMNI_TEXT_SEARCH_TYPE`).
@@ -22,7 +26,6 @@
     more customization.
 10. Add classes object to some components that didn't have it before, such as `CommonPanel` and `TwoColumnGrid`
 11. Make `CommonDialog` scrollable
-
 
 ## 0.6.0 - 2018-08-15
 

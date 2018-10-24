@@ -41,8 +41,6 @@ export class OmniField extends React.Component<Props, State> {
 
   activateOmniField = () => {
     this.setState({ isSelected: true });
-    // Purposefully open the dropdown on activation. (Note: Do not close dropdown on deactivate)
-    this.setDropdownVisibility(true);
   };
 
   deactivateOmniField = () => {

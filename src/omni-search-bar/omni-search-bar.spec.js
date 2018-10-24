@@ -102,30 +102,27 @@ describe("OmniSearchBar", () => {
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDocument();
   });
-  it("opens dropdown when focusing", () => {
+  it("does not open dropdown when focusing", () => {
     let dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDocument();
     fireEvent.focus(omniField);
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).toBeInTheDocument();
-    fireEvent.click(getByTestId("search-options-expander"));
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDocument();
   });
-  it("opens and closes dropdown when focusing/entering", () => {
+  it("closes dropdown after pressing enter", () => {
     let dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDocument();
-    fireEvent.focus(omniField);
+    fireEvent.click(getByTestId("search-options-expander"));
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).toBeInTheDocument();
     fireEvent.keyDown(omniField, { keyCode: keycode("Enter") });
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDocument();
   });
-  it("opens dropdown when focusing, leaving open when clicking in dropdown", () => {
+  it("opens dropdown when clicking expander, leaving open when clicking in dropdown", () => {
     let dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).not.toBeInTheDocument();
-    fireEvent.focus(omniField);
+    fireEvent.click(getByTestId("search-options-expander"));
     dropdown = container.querySelector("#omni-dropdown");
     expect(dropdown).toBeInTheDocument();
     fireEvent.click(dropdown);

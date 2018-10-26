@@ -14,6 +14,8 @@ type Props = {
   showEmptyValue?: boolean,
   /** Id of the element. */
   id?: string,
+  /** Classes to pass to the element. */
+  className?: string,
 } & ElementConfig<typeof TextField>;
 
 /** `TextInput` is a wrapper around Material UI's `TextField` which allows `readOnly` as a property. */
@@ -26,6 +28,7 @@ export const TextInput = (props: Props) => {
     readOnlyComponentProps = {},
     showEmptyValue = false,
     id,
+    className,
     ...textFieldProps
   } = props;
   if (readOnly) {
@@ -43,6 +46,7 @@ export const TextInput = (props: Props) => {
       <ReadOnlyTextField
         showEmptyValue={showEmptyValue}
         id={id}
+        className={className}
       >
         {props.value}
       </ReadOnlyTextField>
@@ -54,6 +58,7 @@ export const TextInput = (props: Props) => {
       error={error}
       helperText={helperText}
       id={id}
+      className={className}
       {...textFieldProps}
     />
   );

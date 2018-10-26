@@ -1,7 +1,7 @@
 // @flow
 import React, { type ElementConfig } from "react";
 import moment from "moment";
-import { DATE_TIME_FORMAT } from "@grail/lib";
+import { DATE_TIME_FORMAT, DATE_TIME_INPUT_MASK } from "@grail/lib";
 import { DateTimePicker } from "material-ui-pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
 
@@ -34,6 +34,12 @@ export const DateTimeInput = (props: Props) => {
       ampm={false}
       keyboard
       clearable
+      data-testid="date-time-input"
+      DialogProps={{
+        "data-testid": "date-time-picker-dialog",
+      }}
+      autoOk
+      mask={DATE_TIME_INPUT_MASK}
       {...props}
       value={value || null}
       format={format}

@@ -2,7 +2,7 @@
 import React, { type ElementConfig } from "react";
 import moment from "moment";
 import styles from "./date-input.module.scss";
-import { DATE_FORMAT } from "@grail/lib";
+import { DATE_FORMAT, DATE_INPUT_MASK } from "@grail/lib";
 import { DatePicker } from "material-ui-pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
 
@@ -39,6 +39,12 @@ export const DateInput = (props: Props) => {
         keyboard
         clearable
         InputAdornmentProps={{ className: styles.adornmentWidth }}
+        data-testid="date-input"
+        DialogProps={{
+          "data-testid": "date-picker-dialog",
+        }}
+        autoOk
+        mask={DATE_INPUT_MASK}
         {...props}
         value={value || null}
         format={format}

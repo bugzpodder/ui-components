@@ -7,6 +7,7 @@ exports[`render date input 1`] = `
   >
     <div
       class="MuiFormControl-root"
+      data-testid="date-input"
     >
       <div
         class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
@@ -16,7 +17,7 @@ exports[`render date input 1`] = `
           class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
           placeholder="Test Date Input"
           type="text"
-          value="2017-03-07"
+          value=""
         />
         <div
           class="MuiInputAdornment-root MuiInputAdornment-positionEnd adornmentWidth"

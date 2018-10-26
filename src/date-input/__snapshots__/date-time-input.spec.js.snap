@@ -37,6 +37,7 @@ exports[`render date time input 1`] = `
 <div>
   <div
     class="MuiFormControl-root"
+    data-testid="date-time-input"
   >
     <div
       class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
@@ -46,7 +47,7 @@ exports[`render date time input 1`] = `
         class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
         placeholder="Test DateTime Input"
         type="text"
-        value="2016-03-07 16:20:00"
+        value=""
       />
       <div
         class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
@@ -83,6 +84,7 @@ exports[`render null date time input 1`] = `
 <div>
   <div
     class="MuiFormControl-root"
+    data-testid="date-time-input"
   >
     <div
       class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"

@@ -2,8 +2,8 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import moment from "moment-timezone";
-import { CommonTimelineGraph, TimelineCard } from "./index";
 import { TestWrapper } from "../utils/index";
+import { TimelineCard, TimelineGraph } from "./index";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
@@ -21,7 +21,7 @@ const rows = [
 test("render simple timeline graph", () => {
   const { container, getByTestId } = render(
     <TestWrapper>
-      <CommonTimelineGraph rows={rows} />
+      <TimelineGraph rows={rows} />
     </TestWrapper>,
   );
   expect(getByTestId("timeline-year-0")).toHaveTextContent("2018");
@@ -32,7 +32,7 @@ test("render simple timeline graph", () => {
 test("render simple timeline graph with time", () => {
   const { container, getByTestId } = render(
     <TestWrapper>
-      <CommonTimelineGraph
+      <TimelineGraph
         rows={rows}
         isTimeVisible
       />

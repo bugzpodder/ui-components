@@ -120,6 +120,7 @@ $date-margin: 15px;
     .paperContent {
       z-index: 1;
       margin: 10px;
+      width: 100%;
     }
 
     // Username displayed in paper content.
@@ -137,6 +138,10 @@ $date-margin: 15px;
       .userAvatar {
         height: 20px;
         width: 20px;
+      }
+
+      &.timelinePaperSelected {
+        font-size: 12px;
       }
     }
 

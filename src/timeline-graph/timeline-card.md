@@ -4,10 +4,12 @@
 const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const rows = [
   {
+    user: "wikipedia",
     date: "1848-02-23T16:20:00Z",
     content: <div>John Quincy Adams dies.</div>,
   },
   {
+    user: "wikipedia",
     date: "1818-04-10T12:00:00Z",
     content: (
       <div>
@@ -16,6 +18,7 @@ const rows = [
     ),
   },
   {
+    user: "wikipedia",
     date: "1767-07-11T12:20:00Z",
     content: <div>John Quincy Adams is born.</div>,
   },

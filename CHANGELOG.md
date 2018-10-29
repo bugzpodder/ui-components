@@ -1,3 +1,11 @@
+## 1.0.0 - 2018-11-22
+
+1. Deprecate old TimelineGraph component
+2. Rename `CommonTimelineGraph` to `TimelineGraph`
+3. Fix TimelineGraph bug where width of content did not match the width
+   of the card, displaying the username in different places along the
+   timeline graph.
+
 ## 0.7.0 - 2018-10-24
 
 1.  Bug Fixes

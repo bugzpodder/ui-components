@@ -68,12 +68,14 @@ type Props = {
   onSort?: Object => any,
   /** Enables the "select all" checkbox if specified (default: true). */
   enableSelectAll?: boolean,
+  /** Props for the CommonCard component */
+  cardProps?: Object,
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
 export const PagedTable = (props: Props) => {
   const {
-    onPageChange, headerActions = null, title = "", subheader, ...tableProps
+    onPageChange, headerActions = null, title = "", subheader, cardProps = {}, ...tableProps
   } = props;
   const {
     classes = {}, columns, data, isLoading = false, onSelect, selectedRows, tableOptions,
@@ -104,6 +106,7 @@ export const PagedTable = (props: Props) => {
           body: classNames(styles.pagedTableCardBody, styles.tableContainer, classes.tableContainer, classes.body),
           footer: classNames(styles.pagedTableCardFooter, { [styles.tableFooter]: onPageChange }, classes.pagination),
         }}
+        {...cardProps}
       >
         <TableComponent {...tableProps} />
       </CommonCard>

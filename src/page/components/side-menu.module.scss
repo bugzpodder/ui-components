@@ -1,0 +1,29 @@
+@import "../../styles/colors";
+
+$sidebar-width: 190px;
+
+.sideMenu {
+  position: relative;
+  overflow: auto;
+  margin-top: 20px;
+  z-index: 0;
+  transition: 0.1s;
+  display: inline-block;
+  &.content {
+    margin-left: -$sidebar-width;
+  }
+  &.contentShift {
+    margin-left: 0;
+  }
+  .sideMenuPaper {
+    position: relative;
+    width: $sidebar-width;
+    border: none;
+    height: inherit;
+    background-color: $grail-gray-lightest-color;
+  }
+}
+
+.sideMenuPaper {
+  width: $sidebar-width;
+}

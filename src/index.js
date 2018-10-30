@@ -21,7 +21,7 @@ export { Selector } from "./selector";
 export { SpinnerOverlay } from "./spinner-overlay";
 export { StyleWrapper } from "./style-wrapper";
 export { TextInput } from "./text-input";
-export { TabbedCard } from "./tabbed-card";
 export { TimelineGraph, TimelineCard } from "./timeline-graph";
+export { CommonPage, CommonTabbedPage } from "./page";
 // $FlowFixMe: Property `ExampleWrapper/ExampleBlock` is missing in ModuleNamespace for export {}
 export { ExampleWrapper, ExampleBlock } from "./utils";

@@ -59,7 +59,9 @@ module.exports = {
       components: () => [
         "./src/common-dialog/dialog.jsx",
         "./src/common-dialog/multi-page-dialog.jsx",
-        "./src/tabbed-card/tabbed-card.jsx",
+        "./src/side-menu/side-menu.jsx",
+        "./src/common-page/common-page.jsx",
+        "./src/common-tabbed-page/common-tabbed-page.jsx",
         "./src/avatar-icon/avatar-icon.jsx",
         "./src/common-select/common-select.jsx",
         "./src/common-select/common-multi-select.jsx",

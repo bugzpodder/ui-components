@@ -2,30 +2,32 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import { Alert } from "../alert/index";
-import { TabbedCard } from "./index";
+import { CommonTabbedPage } from "./common-tabbed-page";
 import { TestWrapper } from "../utils";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-const validTabConfigs = [
+const pageConfigs: Array<PageConfig> = [
   {
     label: "Tab One",
-    value: "one",
+    key: "one",
     id: "tab-one",
-    content: <Alert
-      color="success"
-      message="Tab One!"
-    />,
+    Component: Alert,
+    componentProps: {
+      color: "success",
+      message: "Tab One!",
+    },
   },
   {
     label: "Tab Two",
-    value: "two",
+    key: "two",
     id: "tab-two",
-    content: <Alert
-      color="success"
-      message="Tab Two!"
-    />,
+    Component: Alert,
+    componentProps: {
+      color: "warning",
+      message: "Tab Two!",
+    },
   },
 ];
 
@@ -35,16 +37,16 @@ const headerActions = [
   },
 ];
 
-test("render tabbed card", () => {
+test("render common tabbed page", () => {
   const mockOnChange = jest.fn(result => result);
   const { container, getByTestId } = render(
     <TestWrapper>
-      <TabbedCard
+      <CommonTabbedPage
         title="Test Card"
-        value="one"
-        tabConfigs={validTabConfigs}
+        activeTab="one"
+        pageConfigs={pageConfigs}
         headerActions={headerActions}
-        onChange={mockOnChange}
+        onChangeActiveTab={mockOnChange}
       />
     </TestWrapper>,
   );
@@ -57,10 +59,14 @@ test("render tabbed card", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render empty tabbed card", () => {
+test("render empty common tabbed page", () => {
   const { container } = render(
     <TestWrapper>
-      <TabbedCard />
+      <CommonTabbedPage
+        pageConfigs={[]}
+        activeTab=""
+        onChangeActiveTab={() => {}}
+      />
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();

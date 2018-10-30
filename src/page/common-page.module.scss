@@ -1,15 +1,14 @@
-@import "../styles/navbar-constants.scss";
+@import "../styles/colors";
 
-.tabbedCardContainer {
+.pageContainer {
   .stickyHeader {
     position: sticky;
     z-index: 20;
-    top: 118px;
   }
 
+
   .pageHeader {
-    margin-top: -$grail-navbar-margin-bottom;
-    margin-bottom: 20px;
+    border-radius: 0;
 
     .cardHeader {
       .headerActions {
@@ -20,10 +19,12 @@
           margin-left: 12px;
         }
       }
-
-      .headerTab {
-        width: 250px;
-      }
     }
+  }
+
+  .content {
+    display: flex;
+    overflow-x: hidden;
+    background-color: $grail-gray-lightest-color;
   }
 }

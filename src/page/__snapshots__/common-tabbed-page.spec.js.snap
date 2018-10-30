@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render common tabbed page 1`] = `
+<div>
+  <div
+    class="pageContainer"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
+    >
+      <div
+        class="MuiCardHeader-root cardHeader"
+      >
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+          >
+            Test Card
+          </span>
+          <span
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          />
+        </div>
+        <div
+          class="MuiCardHeader-action headerActions"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              Test Action
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      <div
+        class="MuiTabs-root"
+        data-testid="card-tabs"
+      >
+        <div
+          class="MuiTabs-flexContainer"
+        >
+          <div
+            class="MuiTabs-scroller MuiTabs-fixed"
+            role="tablist"
+            style="margin-bottom: 0px;"
+          >
+            <div
+              class="MuiTabs-flexContainer"
+            >
+              <button
+                aria-selected="true"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-selected"
+                data-testid="tab-one"
+                id="tab-one"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiTab-wrapper"
+                >
+                  <span
+                    class="MuiTab-labelContainer"
+                  >
+                    <span
+                      class="MuiTab-label"
+                    >
+                      Tab One
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary"
+                data-testid="tab-two"
+                id="tab-two"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiTab-wrapper"
+                >
+                  <span
+                    class="MuiTab-labelContainer"
+                  >
+                    <span
+                      class="MuiTab-label"
+                    >
+                      Tab Two
+                    </span>
+                  </span>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <span
+              class="TabIndicator-root-118 TabIndicator-colorPrimary-119 MuiTabs-indicator"
+              style="left: 0px; width: 0px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="contentContainer"
+      >
+        <div
+          class="alertContainer"
+          data-testid="alert"
+        >
+          <div
+            class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+            role="alertdialog"
+          >
+            <div
+              class="MuiSnackbarContent-message"
+            >
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root alertIcon"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                Tab One!
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render empty common tabbed page 1`] = `
+<div>
+  <div
+    class="pageContainer"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
+    >
+      <div
+        class="MuiCardHeader-root cardHeader"
+      >
+        <div
+          class="MuiCardHeader-content"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+          />
+          <span
+            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          />
+        </div>
+        <div
+          class="MuiCardHeader-action headerActions"
+        />
+      </div>
+      <div
+        class="MuiTabs-root"
+        data-testid="card-tabs"
+      >
+        <div
+          class="MuiTabs-flexContainer"
+        >
+          <div
+            class="MuiTabs-scroller MuiTabs-fixed"
+            role="tablist"
+            style="margin-bottom: 0px;"
+          >
+            <div
+              class="MuiTabs-flexContainer"
+            />
+            <span
+              class="TabIndicator-root-202 TabIndicator-colorPrimary-203 MuiTabs-indicator"
+              style="left: 0px; width: 0px;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="content"
+    />
+  </div>
+</div>
+`;

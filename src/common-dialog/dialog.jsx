@@ -93,6 +93,7 @@ export const CommonDialog = (props: Props) => {
             <Button
               id="close"
               onClick={hideModal}
+              color="primary"
             >
               {closeButtonText}
             </Button>

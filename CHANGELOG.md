@@ -13,6 +13,7 @@
    anchors on the page).
 9. Add `CommonTabbedPage` which extends `CommonPage` to allow for tabs.
 10. Add classes object to `Alert` component to allow more custom styling.
+11. For `CommonDialog`, changed color of "Close" button to "primary"
 
 ## 0.7.0 - 2018-10-24
 

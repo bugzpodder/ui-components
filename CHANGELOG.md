@@ -1,4 +1,4 @@
-## 1.0.0 - 2018-11-22
+## 1.0.0 - 2018-11-07
 
 1. Deprecate old TimelineGraph component.
 2. Rename `CommonTimelineGraph` to `TimelineGraph`.
@@ -9,6 +9,9 @@
 5. No longer open omni dropdown on focus or click.
 6. `OmniSearchBar` localStorage now includes `omni-` prefix.
 7. If omni search values don't change, don't trigger a search request.
+8. Add `CommonPage` which provides a skeleton for a page with a title, subtitle, and optional side menu (with links to
+   anchors on the page).
+9. Add `CommonTabbedPage` which extends `CommonPage` to allow for tabs.
 
 ## 0.7.0 - 2018-10-24
 

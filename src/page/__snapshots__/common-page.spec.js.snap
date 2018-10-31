@@ -45,11 +45,13 @@ exports[`render common page 1`] = `
       </div>
     </div>
     <div
-      class="content"
+      class="contentAndMenu"
     >
-      <h3>
-        Page Content
-      </h3>
+      <div>
+        <h3>
+          Page Content
+        </h3>
+      </div>
     </div>
   </div>
 </div>
@@ -135,7 +137,7 @@ exports[`render common page with menu 1`] = `
       </div>
     </div>
     <div
-      class="content"
+      class="contentAndMenu"
     >
       <div
         class="MuiDrawer-docked sideMenu contentShift"
@@ -193,69 +195,71 @@ exports[`render common page with menu 1`] = `
           </ul>
         </div>
       </div>
-      <div
-        class="alertContainer"
-        data-testid="alert"
-      >
+      <div>
         <div
-          class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
-          id="one"
-          role="alertdialog"
+          class="alertContainer"
+          data-testid="alert"
         >
           <div
-            class="MuiSnackbarContent-message"
+            class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+            id="one"
+            role="alertdialog"
           >
-            <span>
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root alertIcon"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                />
-              </svg>
-              Alert one
-            </span>
+            <div
+              class="MuiSnackbarContent-message"
+            >
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root alertIcon"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                Alert one
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="alertContainer"
-        data-testid="alert"
-      >
         <div
-          class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
-          id="two"
-          role="alertdialog"
+          class="alertContainer"
+          data-testid="alert"
         >
           <div
-            class="MuiSnackbarContent-message"
+            class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+            id="two"
+            role="alertdialog"
           >
-            <span>
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root alertIcon"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                />
-              </svg>
-              Alert two
-            </span>
+            <div
+              class="MuiSnackbarContent-message"
+            >
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root alertIcon"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+                Alert two
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -342,9 +346,11 @@ exports[`render common page with subheader and content 1`] = `
       </div>
     </div>
     <div
-      class="content"
+      class="contentAndMenu"
     >
-      Some content here.
+      <div>
+        Some content here.
+      </div>
     </div>
   </div>
 </div>
@@ -377,8 +383,10 @@ exports[`render empty common page 1`] = `
       </div>
     </div>
     <div
-      class="content"
-    />
+      class="contentAndMenu"
+    >
+      <div />
+    </div>
   </div>
 </div>
 `;

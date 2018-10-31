@@ -111,7 +111,7 @@ exports[`render common tabbed page 1`] = `
               </button>
             </div>
             <span
-              class="TabIndicator-root-118 TabIndicator-colorPrimary-119 MuiTabs-indicator"
+              class="MuiTabIndicator-root MuiTabIndicator-colorPrimary MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
@@ -119,40 +119,42 @@ exports[`render common tabbed page 1`] = `
       </div>
     </div>
     <div
-      class="content"
+      class="contentAndMenu"
     >
-      <div
-        class="contentContainer"
-      >
+      <div>
         <div
-          class="alertContainer"
-          data-testid="alert"
+          class="contentContainer"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
-            role="alertdialog"
+            class="alertContainer"
+            data-testid="alert"
           >
             <div
-              class="MuiSnackbarContent-message"
+              class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+              role="alertdialog"
             >
-              <span>
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root alertIcon"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  />
-                </svg>
-                Tab One!
-              </span>
+              <div
+                class="MuiSnackbarContent-message"
+              >
+                <span>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root alertIcon"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                  Tab One!
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -203,7 +205,7 @@ exports[`render empty common tabbed page 1`] = `
               class="MuiTabs-flexContainer"
             />
             <span
-              class="TabIndicator-root-202 TabIndicator-colorPrimary-203 MuiTabs-indicator"
+              class="MuiTabIndicator-root MuiTabIndicator-colorPrimary MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
@@ -211,8 +213,10 @@ exports[`render empty common tabbed page 1`] = `
       </div>
     </div>
     <div
-      class="content"
-    />
+      class="contentAndMenu"
+    >
+      <div />
+    </div>
   </div>
 </div>
 `;

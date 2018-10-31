@@ -29,7 +29,10 @@ type Props = {
    *
    *  - `subtitle`
    *
-   *  - `content`
+   *  - `contentAndMenu` - container around content and side menu.
+   *
+   *  - `content` - a container inside of contentAndMenu but still around content. This exists to stop the content
+   *     from being considered part of a flexbox with the side menu.
    *
    *  - `sideMenu`
    */
@@ -121,7 +124,7 @@ export class CommonPage extends React.Component<Props, State> {
           />
           {subheader && subheader}
         </Card>
-        <div className={classNames(styles.content, classes.content)}>
+        <div className={classNames(styles.contentAndMenu, classes.contentAndMenu)}>
           {menuContents.length > 0 && (
             <SideMenu
               isExpanded={sideMenuIsExpanded}
@@ -129,7 +132,7 @@ export class CommonPage extends React.Component<Props, State> {
               classes={classes.sideMenu}
             />
           )}
-          {children}
+          <div className={classes.content}>{children}</div>
         </div>
       </div>
     );

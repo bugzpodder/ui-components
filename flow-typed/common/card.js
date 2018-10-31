@@ -28,6 +28,7 @@ declare type CommonPageClasses = {
   headerActions?: string,
   title?: string,
   subtitle?: string,
+  contentAndMenu?: string,
   content?: string,
   sideMenu?: string,
 }

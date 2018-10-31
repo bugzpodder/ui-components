@@ -106,21 +106,24 @@ module.exports = {
         {
           test: /\.jsx?$/,
           exclude: /node_modules/,
-          loader: "babel-loader",
+          loader: require.resolve("babel-loader"),
         },
         {
           test: /\.css$/,
-          loader: "style-loader!css-loader",
+          loader: [require.resolve("style-loader"), require.resolve("css-loader")],
         },
         {
           test: /\.module\.scss$/,
-          loader: "style-loader!css-loader?modules!sass-loader",
+          loader: [
+            require.resolve("style-loader"),
+            { loader: require.resolve("css-loader"), options: { modules: true } },
+            require.resolve("sass-loader"),
+          ],
         },
-
         {
           test: /\.scss$/,
           exclude: /\.module\.scss$/,
-          loader: "style-loader!css-loader!sass-loader",
+          loader: [require.resolve("style-loader"), require.resolve("css-loader"), require.resolve("sass-loader")],
         },
         {
           test: /\.woff2$/,

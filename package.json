@@ -3,9 +3,9 @@
   "version": "0.7.0",
   "scripts": {
     "build": "NODE_ENV=production yarn build:src && babel-node scripts/build.js",
-    "build:src": "babel ./src --out-dir ./dist --delete-dir-on-start --copy-files",
+    "build:src": "babel ./src --out-dir ./dist --delete-dir-on-start --copy-files --source-maps",
     "build:client": "NODE_ENV=production yarn build:src",
-    "start:client": "NODE_ENV=development yarn build:src --watch --source-maps",
+    "start:client": "NODE_ENV=development yarn build:src --watch",
     "cover": "open coverage/lcov-report/index.html",
     "flow": "flow",
     "lint": "eslint --ext .js --ext .jsx src/ cypress/ scripts/",
@@ -106,7 +106,6 @@
       ],
       "*.config.js": [
         "prettier --write",
-        "eslint --fix",
         "git add"
       ],
       "scripts/*.js": [

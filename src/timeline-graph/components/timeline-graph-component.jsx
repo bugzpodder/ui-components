@@ -37,13 +37,7 @@ export const TimelineGraphComponent = (props: Props) => {
           {item.content}
           {item.user && (
             <div
-              className={
-                classNames(
-                  styles.user,
-                  classes.username,
-                  { [styles.timelinePaperSelected]: itemIsSelected }
-                )
-              }
+              className={classNames(styles.user, classes.username, { [styles.timelinePaperSelected]: itemIsSelected })}
             >
               <AvatarIcon
                 id="timeline-avatar"

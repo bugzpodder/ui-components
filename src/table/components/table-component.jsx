@@ -53,7 +53,10 @@ export const TableComponent = (props: Props) => {
     highlightedRowId,
   };
   const highlightRowProps = {
-    data, idKey, onHighlightRow, highlightedRowId,
+    data,
+    idKey,
+    onHighlightRow,
+    highlightedRowId,
   };
   const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
   const hasHeaders = tableColumns.find(column => column.Header);

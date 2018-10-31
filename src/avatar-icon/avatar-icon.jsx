@@ -40,7 +40,13 @@ export class AvatarIcon extends React.Component<Props> {
 
   render = () => {
     const {
-      id = "", classes = {}, onClick, pictureUrl, isMenuOpen = false, menuItems = [], ...buttonProps
+      id = "",
+      classes = {},
+      onClick,
+      pictureUrl,
+      isMenuOpen = false,
+      menuItems = [],
+      ...buttonProps
     } = this.props;
     return (
       <div className={classNames(styles.avatarIconContainer, classes.root)}>
@@ -64,7 +70,9 @@ export class AvatarIcon extends React.Component<Props> {
               src={pictureUrl}
               className={classes.avatar}
             />
-          ) : <AccountCircle className={classes.avatar} />}
+          ) : (
+            <AccountCircle className={classes.avatar} />
+          )}
         </IconButton>
         {menuItems.length > 0 && (
           <Menu

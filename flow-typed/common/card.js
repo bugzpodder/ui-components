@@ -63,8 +63,9 @@ declare type MenuItem = {
 
 declare type HeaderAction = {
   content: Node<*>,
-  onClick: Function,
   id: string,
   color?: Color,
+  href?: string,
+  onClick?: Function,
   [string]: any,
 }

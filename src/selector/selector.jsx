@@ -15,7 +15,7 @@ type OptionalSelectorProps = {
   /** Id of the element */
   id?: string,
   /** Default text to display if it should be read-only and no value. */
-  defaultDisplayText?: string,
+  defaultDisplayText?: React$Node,
   /** if `true`, displays the value or default display text as a read-only text. */
   readOnly?: boolean,
   /** Function to be called when user chooses a dropdown option */

@@ -1,6 +1,11 @@
 @import "../styles/colors";
 
 .common-select__root {
+  > div {
+    // The default child div of root has z-index of 0 *and* position: relative.
+    // The combination resets z-index context, making the menu not show up over a dialog(z-index: 1300)
+    z-index: unset;
+  }
   .common-select__input-root {
     margin: 0;
     line-height: 1em;
@@ -83,6 +88,7 @@
       box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
       // z-index > 2 is necessary to properly overlay the Styleguidist <code> block.
       z-index: 5;
+      margin-top: 0;
 
       .common-select__menu-list {
         padding: 0;

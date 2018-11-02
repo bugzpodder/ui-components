@@ -40,8 +40,9 @@ export const CommonSuggest = (props: Props) => {
   } = props;
   let items = suggestions.map(value => ({ value }));
   const valueElements = value.split(",").map(element => element.trim());
-  if (value !== "") {
-    const lastValue = valueElements.pop();
+  let lastValue = "";
+  if (valueElements.length > 0) {
+    lastValue = valueElements.pop();
     const fuzzyMatches = fuzzy.filter(lastValue, suggestions);
     items = fuzzyMatches.map(match => ({ value: match.string }));
   }

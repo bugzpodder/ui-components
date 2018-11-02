@@ -25,3 +25,4 @@ export { TimelineGraph, TimelineCard } from "./timeline-graph";
 export { CommonPage, CommonTabbedPage } from "./page";
 // $FlowFixMe: Property `ExampleWrapper/ExampleBlock` is missing in ModuleNamespace for export {}
 export { ExampleWrapper, ExampleBlock } from "./utils";
+export { CommonSuggest } from "./common-suggest";

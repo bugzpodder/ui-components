@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render CommonSuggest 1`] = `
+<div>
+  <div
+    class="commonSuggest"
+  >
+    <div
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-labelledby="common-suggest-label"
+      class="commonSuggestField"
+      role="combobox"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-labelledby="common-suggest-label"
+        class="MuiFormControl-root MuiFormControl-fullWidth"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+          data-testid="common-suggest-input-container"
+        >
+          <input
+            aria-invalid="false"
+            autocomplete="off"
+            class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
+            data-testid="test-common-suggest"
+            id="test-common-suggest"
+            type="text"
+            value=""
+          />
+          <div
+            class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+          >
+            <button
+              aria-haspopup="true"
+              aria-label="open menu"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
+              data-testid="toggle-suggestions"
+              data-toggle="true"
+              id="test-common-suggest-toggle-suggestions"
+              label="menu"
+              role="button"
+              tabindex="-1"
+              title="Show suggestions"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

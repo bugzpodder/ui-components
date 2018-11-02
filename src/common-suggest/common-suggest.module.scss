@@ -1,0 +1,12 @@
+.commonSuggest {
+  position: relative;
+  .commonSuggestField {
+    .commonSuggestPopper {
+      z-index: 5;
+      width: 100%;
+      .noMatches {
+        padding: 10px;
+      }
+    }
+  }
+}

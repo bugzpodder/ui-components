@@ -44,6 +44,8 @@ export const OmniDropdown = (props: Props) => {
                   searchKey={name}
                   placeholder={description}
                   searchType={type}
+                  searchDefs={searchDefs}
+                  searchValues={searchValues}
                   searchValue={searchValue}
                   onChange={onChange}
                   onSearch={onSearch}

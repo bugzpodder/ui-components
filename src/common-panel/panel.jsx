@@ -3,6 +3,7 @@ import React, { type Node } from "react";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./panel.module.scss";
+import type { TextStyle } from "@material-ui/core/styles/createTypography";
 
 type Props = {
   /** Title of the panel */
@@ -29,7 +30,7 @@ type Props = {
    */
   color?: string,
   /** Variant for the title. (See `Typography`'s `variant`) */
-  variant?: string,
+  variant?: TextStyle,
 };
 
 /** Provides a styled section with a title and body. */

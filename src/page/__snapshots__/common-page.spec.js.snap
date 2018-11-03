@@ -16,7 +16,7 @@ exports[`render common page 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
           >
             Test Card
           </span>
@@ -108,7 +108,7 @@ exports[`render common page with menu 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
           >
             This is a title
           </span>
@@ -287,7 +287,7 @@ exports[`render common page with subheader and content 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
           >
             This is a title
           </span>
@@ -377,7 +377,7 @@ exports[`render empty common page 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
           />
           <span
             class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"

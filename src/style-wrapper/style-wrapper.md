@@ -11,13 +11,13 @@ class ExampleApp extends React.Component {
     return (
       <StyleWrapper>
         <div className={styles.container}>
-          <Button className={styles.spacing} variant="raised" color="primary">
+          <Button className={styles.spacing} variant="contained" color="primary">
             Primary
           </Button>
-          <Button className={styles.spacing} variant="raised" color="secondary">
+          <Button className={styles.spacing} variant="contained" color="secondary">
             Secondary
           </Button>
-          <Button className={styles.spacing} variant="raised" color="default">
+          <Button className={styles.spacing} variant="contained" color="default">
             Default
           </Button>
           <Alert className={styles.spacing} color="success" message="Success!" />

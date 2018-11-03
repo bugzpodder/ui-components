@@ -13,10 +13,10 @@ const styles = require("../utils/example-styles.module.scss");
     <Alert className={styles.spacing} message="This is an error!" />
     <br />
     <h2> Flat </h2>
-    <Alert className={styles.spacing} variant="flat" color="success" message="This is successful!" />
-    <Alert className={styles.spacing} variant="flat" color="info" message="This is some info!" />
-    <Alert className={styles.spacing} variant="flat" color="warning" message="This is a warning!" />
-    <Alert className={styles.spacing} variant="flat" message="This is an error!" />
+    <Alert className={styles.spacing} variant="text" color="success" message="This is successful!" />
+    <Alert className={styles.spacing} variant="text" color="info" message="This is some info!" />
+    <Alert className={styles.spacing} variant="text" color="warning" message="This is a warning!" />
+    <Alert className={styles.spacing} variant="text" message="This is an error!" />
   </div>
 </ExampleWrapper>;
 ```

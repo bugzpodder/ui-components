@@ -43,7 +43,7 @@ test("render warning alert pane", () => {
       <div>
         <Alert
           color="warning"
-          variant="flat"
+          variant="text"
           message="Test warning"
         />
       </div>
@@ -58,7 +58,7 @@ test("render error alert pane", () => {
     <TestWrapper>
       <div>
         <Alert
-          variant="flat"
+          variant="text"
           message="Test error"
         />
       </div>

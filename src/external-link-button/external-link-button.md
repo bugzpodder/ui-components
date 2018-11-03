@@ -9,7 +9,7 @@ const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const ExternalLinkButton = require("./external-link-button");
 
 <ExampleWrapper>
-  <ExternalLinkButton variant="raised" color="primary" href="https://www.grail.com">
+  <ExternalLinkButton variant="contained" color="primary" href="https://www.grail.com">
     GRAIL Link in new tab
   </ExternalLinkButton>
 </ExampleWrapper>;

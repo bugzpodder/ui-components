@@ -16,7 +16,7 @@ const Button = require("@material-ui/core/Button").default;
     headerActions={
       <Fragment>
         <Button>First</Button>
-        <Button color="primary" variant="raised">
+        <Button color="primary" variant="contained">
           Second
         </Button>
       </Fragment>

@@ -44,7 +44,7 @@ class AvatarExample extends React.Component {
         content: "Best",
         component: Button,
         color: "primary",
-        variant: "raised",
+        variant: "contained",
       },
       {
         content: "Team",
@@ -58,7 +58,7 @@ class AvatarExample extends React.Component {
 
     return (
       <div className={styles.avatarContainer}>
-        <Typography className={styles.inLine} variant="title">
+        <Typography className={styles.inLine} variant="h6">
           Default
         </Typography>
         <AvatarIcon
@@ -68,7 +68,7 @@ class AvatarExample extends React.Component {
           onClick={this.handleClick}
         />
 
-        <Typography className={styles.inLine} variant="title">
+        <Typography className={styles.inLine} variant="h6">
           With Picture
         </Typography>
         <AvatarIcon
@@ -79,7 +79,7 @@ class AvatarExample extends React.Component {
           onClick={this.handleSergey}
         />
 
-        <Typography className={styles.inLine} variant="title">
+        <Typography className={styles.inLine} variant="h6">
           No Menu
         </Typography>
         <AvatarIcon

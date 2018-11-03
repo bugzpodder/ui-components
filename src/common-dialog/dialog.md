@@ -38,7 +38,7 @@ class DialogDemo extends React.Component {
               callback: () => this.setState({ isVisible: false }),
               icon: "done",
               isEnabled: true,
-              variant: "raised",
+              variant: "contained",
               color: "primary",
             },
           ]}

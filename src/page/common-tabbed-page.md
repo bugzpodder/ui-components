@@ -133,7 +133,7 @@ class ExampleTabbedCard extends React.Component {
             {
               content: "Button One",
               color: "primary",
-              variant: "raised",
+              variant: "contained",
               onClick: () => console.log("Button One was clicked."),
             },
           ]}

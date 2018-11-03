@@ -14,7 +14,7 @@ test("render style wrapper", () => {
       <StyleWrapper>
         <Button color="primary">Primary</Button>
         <Button
-          variant="raised"
+          variant="contained"
           color="secondary"
         >
           Secondary

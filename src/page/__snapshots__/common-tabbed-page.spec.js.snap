@@ -15,7 +15,7 @@ exports[`render common tabbed page 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
           >
             Test Card
           </span>
@@ -181,7 +181,7 @@ exports[`render empty common tabbed page 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-headline MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
           />
           <span
             class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"

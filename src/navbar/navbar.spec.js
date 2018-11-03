@@ -1,20 +1,15 @@
 // @flow
 import "jest-dom/extend-expect";
-import JssProvider from "react-jss/lib/JssProvider";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { EDC, LIMS, PIPELINE } from "@grail/lib";
 import { MemoryRouter } from "react-router-dom";
 import { Navbar } from "./navbar";
+import { TestWrapper } from "../utils";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
-import { createGenerateClassName } from "@material-ui/core/styles";
 
 afterEach(cleanup);
-
-const generateClassName = createGenerateClassName({
-  dangerouslyUseGlobalCSS: true,
-});
 
 const bodyUtils = bindElementToQueries(document.body);
 
@@ -24,7 +19,7 @@ const wrapText = text => {
 
 test("render Sidebar", () => {
   render(
-    <JssProvider generateClassName={generateClassName}>
+    <TestWrapper>
       <MemoryRouter>
         <Navbar
           domain={LIMS}
@@ -40,7 +35,7 @@ test("render Sidebar", () => {
             .set(PIPELINE, "https://proxy.ti-apps.aws.grail.com/pipeline-analyse-ui")}
         />
       </MemoryRouter>
-    </JssProvider>,
+    </TestWrapper>,
   );
   expect(bodyUtils.queryByText("title")).toBeInTheDocument();
   expect(bodyUtils.queryByText("breadcrumbs")).toBeInTheDocument();

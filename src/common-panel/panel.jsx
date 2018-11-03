@@ -40,7 +40,7 @@ export const CommonPanel = (props: Props) => {
     classes = {},
     color = "default",
     children,
-    variant = "subheading",
+    variant = "subtitle1",
     className = "",
     ...panelProps
   } = props;

@@ -4,7 +4,7 @@
 const ExampleWrapper = require("@grail/components").ExampleWrapper;
 
 <ExampleWrapper>
-  <CommonPanel title="Panel Title" variant="display1">
+  <CommonPanel title="Panel Title" variant="h4">
     This is the body of the panel.
   </CommonPanel>
 </ExampleWrapper>;

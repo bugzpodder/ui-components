@@ -97,7 +97,7 @@ class TestPagedTable extends React.Component {
     const headerActions = (
       <Fragment>
         <Button>Second Action</Button>
-        <Button variant="raised" color="primary">
+        <Button variant="contained" color="primary">
           First Action
         </Button>
       </Fragment>

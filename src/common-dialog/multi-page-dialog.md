@@ -27,7 +27,7 @@ class MultiPageDialogDemo extends React.Component {
                 setPage(pageIndex + 1);
               },
               isEnabled: true,
-              variant: "raised",
+              variant: "contained",
               icon: "arrow_forward",
               color: "primary",
               pages: [0],
@@ -39,7 +39,7 @@ class MultiPageDialogDemo extends React.Component {
                 this.setState({ isVisible: false });
               },
               isEnabled: true,
-              variant: "raised",
+              variant: "contained",
               color: "primary",
               pages: [1],
             },

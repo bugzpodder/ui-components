@@ -81,7 +81,7 @@ export const BaseNavbar = (props: Props) => {
         {!isProduction && (
           <Typography
             className={styles.nonProductionWarning}
-            variant="title"
+            variant="h6"
           >
             THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
           </Typography>
@@ -103,7 +103,7 @@ export const BaseNavbar = (props: Props) => {
             {title && (
               <Typography
                 color="inherit"
-                variant="title"
+                variant="h6"
               >
                 {title}
               </Typography>

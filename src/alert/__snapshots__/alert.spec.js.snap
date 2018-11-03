@@ -8,7 +8,7 @@ exports[`render error alert pane 1`] = `
       data-testid="alert"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error flat alert-error"
+        class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error text alert-error"
         role="alertdialog"
       >
         <div
@@ -125,7 +125,7 @@ exports[`render warning alert pane 1`] = `
       data-testid="alert"
     >
       <div
-        class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root warning flat alert-warning"
+        class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root warning text alert-warning"
         role="alertdialog"
       >
         <div

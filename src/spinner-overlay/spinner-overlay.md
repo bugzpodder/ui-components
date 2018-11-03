@@ -13,15 +13,15 @@ class SpinnerOverlayExample extends React.Component {
       <div className={styles.spinnerContainer}>
         <CommonCard title="Spinning on a Sub Component" className="main-container" contentClass="content-container">
           <div className={styles.buttonContainer}>
-            <Button color="primary" variant="raised" className={styles.spacing}>
+            <Button color="primary" variant="contained" className={styles.spacing}>
               Try
             </Button>
             <SpinnerOverlay />
           </div>
-          <Button color="secondary" variant="raised" className={styles.spacing}>
+          <Button color="secondary" variant="contained" className={styles.spacing}>
             Clicking
           </Button>
-          <Button color="default" variant="raised" className={styles.spacing}>
+          <Button color="default" variant="contained" className={styles.spacing}>
             These
           </Button>
         </CommonCard>
@@ -43,13 +43,13 @@ class SpinnerOverlayExample extends React.Component {
     return (
       <div className={styles.spinnerContainer}>
         <CommonCard title="Spinning on the Whole Component" className="main-container" contentClass="content-container">
-          <Button color="primary" variant="raised" className={styles.spacing}>
+          <Button color="primary" variant="contained" className={styles.spacing}>
             Try
           </Button>
-          <Button color="secondary" variant="raised" className={styles.spacing}>
+          <Button color="secondary" variant="contained" className={styles.spacing}>
             Clicking
           </Button>
-          <Button color="default" variant="raised" className={styles.spacing}>
+          <Button color="default" variant="contained" className={styles.spacing}>
             These
           </Button>
         </CommonCard>

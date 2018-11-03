@@ -75,7 +75,7 @@ export const OmniDropdown = (props: Props) => {
               disableRipple
               onClick={onSearch}
               color="primary"
-              variant="raised"
+              variant="contained"
             >
               Search
             </Button>

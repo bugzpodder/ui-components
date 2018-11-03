@@ -103,7 +103,7 @@ export class CommonPage extends React.Component<Props, State> {
           <CardHeader
             title={title}
             titleTypographyProps={{
-              variant: "headline",
+              variant: "h5",
             }}
             classes={{
               root: styles.cardHeader,

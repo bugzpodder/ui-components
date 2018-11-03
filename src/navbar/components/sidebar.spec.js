@@ -1,26 +1,21 @@
 // @flow
 import "jest-dom/extend-expect";
-import JssProvider from "react-jss/lib/JssProvider";
 import React from "react";
 import { EDC, LIMS, PIPELINE } from "@grail/lib";
 import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
+import { TestWrapper } from "../../utils";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
-import { createGenerateClassName } from "@material-ui/core/styles";
 
 afterEach(cleanup);
-
-const generateClassName = createGenerateClassName({
-  dangerouslyUseGlobalCSS: true,
-});
 
 const bodyUtils = bindElementToQueries(document.body);
 
 test("render Sidebar", () => {
   const toggle = jest.fn();
   render(
-    <JssProvider generateClassName={generateClassName}>
+    <TestWrapper>
       <MemoryRouter>
         <Sidebar
           isOpen
@@ -35,7 +30,7 @@ test("render Sidebar", () => {
           footer={<span>Footer</span>}
         />
       </MemoryRouter>
-    </JssProvider>,
+    </TestWrapper>,
   );
   // FIXME(jrosenfield): couldn't get test to work
   const sampleManagementDropdown = bodyUtils.queryByText("Sample Management");

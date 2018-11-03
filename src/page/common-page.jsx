@@ -132,7 +132,7 @@ export class CommonPage extends React.Component<Props, State> {
               classes={classes.sideMenu}
             />
           )}
-          <div className={classes.content}>{children}</div>
+          <div className={classNames(styles.content, classes.content)}>{children}</div>
         </div>
       </div>
     );

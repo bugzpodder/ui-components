@@ -47,7 +47,9 @@ exports[`render common page 1`] = `
     <div
       class="contentAndMenu"
     >
-      <div>
+      <div
+        class="content"
+      >
         <h3>
           Page Content
         </h3>
@@ -195,7 +197,9 @@ exports[`render common page with menu 1`] = `
           </ul>
         </div>
       </div>
-      <div>
+      <div
+        class="content"
+      >
         <div
           class="alertContainer"
           data-testid="alert"
@@ -348,7 +352,9 @@ exports[`render common page with subheader and content 1`] = `
     <div
       class="contentAndMenu"
     >
-      <div>
+      <div
+        class="content"
+      >
         Some content here.
       </div>
     </div>
@@ -385,7 +391,9 @@ exports[`render empty common page 1`] = `
     <div
       class="contentAndMenu"
     >
-      <div />
+      <div
+        class="content"
+      />
     </div>
   </div>
 </div>

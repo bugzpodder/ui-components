@@ -6,7 +6,6 @@
     z-index: 20;
   }
 
-
   .pageHeader {
     border-radius: 0;
 
@@ -26,5 +25,9 @@
     display: flex;
     overflow-x: hidden;
     background-color: $grail-gray-lightest-color;
+
+    .content {
+      width: 100%;
+    }
   }
 }

@@ -121,7 +121,9 @@ exports[`render common tabbed page 1`] = `
     <div
       class="contentAndMenu"
     >
-      <div>
+      <div
+        class="content"
+      >
         <div
           class="contentContainer"
         >
@@ -215,7 +217,9 @@ exports[`render empty common tabbed page 1`] = `
     <div
       class="contentAndMenu"
     >
-      <div />
+      <div
+        class="content"
+      />
     </div>
   </div>
 </div>

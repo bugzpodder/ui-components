@@ -12,6 +12,7 @@ import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import fuzzy from "fuzzy";
 import keycode from "keycode";
+import { unquoteString } from "@grail/lib";
 
 import styles from "./common-suggest.module.scss";
 
@@ -43,12 +44,13 @@ export const CommonSuggest = (props: Props) => {
   let lastValue = "";
   if (valueElements.length > 0) {
     lastValue = valueElements.pop();
+    lastValue = unquoteString(lastValue);
     const fuzzyMatches = fuzzy.filter(lastValue, suggestions);
     items = fuzzyMatches.map(match => ({ value: match.string }));
   }
   const onSelectSuggestion = item => {
     const suggestedValue = item ? item.value : "";
-    valueElements.push(suggestedValue);
+    valueElements.push(`"${suggestedValue}"`);
     onChange(valueElements.join(", "));
   };
   return (

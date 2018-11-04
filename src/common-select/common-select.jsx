@@ -2,6 +2,7 @@
 import React from "react";
 import isEmpty from "lodash/isEmpty";
 import { CommonSelectComponent } from "./common-select-component";
+import { ReadOnlyTextField } from "../index";
 
 type CommonSelectProps = {
   /**
@@ -72,6 +73,8 @@ type CommonSelectProps = {
    * Each object must at least include a `label` and `value` key
    */
   loadOptions?: string => Promise<*>,
+  /** displays component as read only */
+  readOnly?: boolean,
 };
 
 export class CommonSelect extends React.Component<CommonSelectProps> {
@@ -94,8 +97,12 @@ export class CommonSelect extends React.Component<CommonSelectProps> {
 
   render = () => {
     const {
-      onChange, initialOptions, value, options, selectType = "simple", ...otherProps
+      onChange, readOnly, initialOptions, value, options, selectType = "simple", ...otherProps
     } = this.props;
+    if (readOnly && value) {
+      const label = value.label ? value.label : " - ";
+      return <ReadOnlyTextField>{label}</ReadOnlyTextField>;
+    }
     const isAsyncSelect = selectType === "async";
     return (
       <CommonSelectComponent

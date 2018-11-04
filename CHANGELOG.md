@@ -15,6 +15,7 @@
 10. Add classes object to `Alert` component to allow more custom styling.
 11. For `CommonDialog`, changed color of "Close" button to "primary"
 12. Add `CommonSuggest`, development implementation of a free form text input with suggestions. (Dev)
+13. Add read-only functionality to `CommonSelect`.
 
 ## 0.7.0 - 2018-10-24
 

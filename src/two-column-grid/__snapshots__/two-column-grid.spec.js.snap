@@ -15,6 +15,7 @@ exports[`render two column grid 1`] = `
         >
           <p
             class="MuiTypography-root MuiTypography-body2 rowLabel"
+            data-testid="Test Label 1 label"
             style="text-align: right;"
           >
             Test Label 1
@@ -25,6 +26,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            data-testid="Test Label 1 value"
             style="text-align: left;"
           >
             Test Value 1
@@ -40,6 +42,7 @@ exports[`render two column grid 1`] = `
         >
           <div
             class="rowLabel"
+            data-testid="Label label"
             style="text-align: right;"
           >
             1
@@ -50,6 +53,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            data-testid="Label value"
             style="text-align: left;"
           >
             Test Value 1
@@ -69,6 +73,7 @@ exports[`render two column grid 1`] = `
         >
           <p
             class="MuiTypography-root MuiTypography-body2 rowLabel"
+            data-testid="Test Label 1 label"
             style="text-align: right;"
           >
             Test Label 1
@@ -79,6 +84,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            data-testid="Test Label 1 value"
             style="text-align: right;"
           >
             Test Value 1
@@ -94,6 +100,7 @@ exports[`render two column grid 1`] = `
         >
           <div
             class="rowLabel"
+            data-testid="Label label"
             style="text-align: right;"
           >
             1
@@ -104,6 +111,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            data-testid="Label value"
             style="text-align: right;"
           >
             Test Value 1
@@ -123,6 +131,7 @@ exports[`render two column grid 1`] = `
         >
           <p
             class="MuiTypography-root MuiTypography-body2 rowLabel"
+            data-testid="Test Label 1 label"
             style="text-align: left;"
           >
             Test Label 1
@@ -133,6 +142,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            data-testid="Test Label 1 value"
             style="text-align: left;"
           >
             Test Value 1
@@ -148,6 +158,7 @@ exports[`render two column grid 1`] = `
         >
           <div
             class="rowLabel"
+            data-testid="Label label"
             style="text-align: left;"
           >
             1
@@ -158,6 +169,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            data-testid="Label value"
             style="text-align: left;"
           >
             Test Value 1

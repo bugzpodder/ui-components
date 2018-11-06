@@ -20,6 +20,7 @@ export const TwoColumnRow = (props: Props) => {
   const valueTextAlign = textAlign[1] || "left";
 
   const { label, value, classes = {} } = row;
+  const testIdPrefix = typeof label === "string" ? label : "Label";
   return (
     <Grid
       container
@@ -36,6 +37,7 @@ export const TwoColumnRow = (props: Props) => {
       >
         {typeof label === "string" ? (
           <Typography
+            data-testid={`${testIdPrefix} label`}
             style={{ textAlign: labelTextAlign }}
             className={classNames(styles.rowLabel, classes.label)}
           >
@@ -43,6 +45,7 @@ export const TwoColumnRow = (props: Props) => {
           </Typography>
         ) : (
           <div
+            data-testid={`${testIdPrefix} label`}
             style={{ textAlign: labelTextAlign }}
             className={classNames(styles.rowLabel, classes.label)}
           >
@@ -57,6 +60,7 @@ export const TwoColumnRow = (props: Props) => {
         xs={inputWidth}
       >
         <div
+          data-testid={`${testIdPrefix} value`}
           style={{ textAlign: valueTextAlign }}
           className={classes.value}
         >

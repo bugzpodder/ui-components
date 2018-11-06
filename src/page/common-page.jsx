@@ -93,7 +93,10 @@ export class CommonPage extends React.Component<Props, State> {
     });
 
     return (
-      <div className={classNames(classes.root, styles.pageContainer)}>
+      <div
+        className={classNames(classes.root, styles.pageContainer)}
+        data-testid="common-page"
+      >
         <Card
           classes={{
             root: classNames(classes.header, styles.stickyHeader, styles.pageHeader),
@@ -101,6 +104,7 @@ export class CommonPage extends React.Component<Props, State> {
           {...cardProps}
         >
           <CardHeader
+            data-testid="common-page-card-header"
             title={title}
             titleTypographyProps={{
               variant: "h5",
@@ -127,6 +131,7 @@ export class CommonPage extends React.Component<Props, State> {
         <div className={classNames(styles.contentAndMenu, classes.contentAndMenu)}>
           {menuContents.length > 0 && (
             <SideMenu
+              data-testid="common-page-side-menu"
               isExpanded={sideMenuIsExpanded}
               menuContents={menuContents}
               classes={classes.sideMenu}

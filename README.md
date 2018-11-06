@@ -12,6 +12,21 @@ React components built using [Material-UI](https://material-ui.com/getting-start
 
 - Wrap your application in the `StyleWrapper` component.
 
+#### **Running StyleGuidist**
+
+- If you are _not_ doing `cd $GRAIL/ui; yarn start:client`, you will have to manually build `lib` and `components`
+
+```
+cd $GRAIL/ui/lib
+yarn build:client
+cd $GRAIL/ui/components
+yarn build:client
+yarn start
+```
+
+If you make code changes in `lib` or `components`, you will have to re-build.
+Alternatively, you can do `yarn start:client &`, instead of `yarn build:client` which will watch for code changes and rebuild.
+
 #### **Using Released Components**
 
 - `import { COMPONENT } from "@grail/components";`

@@ -4,6 +4,7 @@ exports[`render common page 1`] = `
 <div>
   <div
     class="pageContainer"
+    data-testid="common-page"
   >
     <div
       class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
@@ -11,6 +12,7 @@ exports[`render common page 1`] = `
     >
       <div
         class="MuiCardHeader-root cardHeader"
+        data-testid="common-page-card-header"
       >
         <div
           class="MuiCardHeader-content"
@@ -63,12 +65,14 @@ exports[`render common page with menu 1`] = `
 <div>
   <div
     class="pageContainer"
+    data-testid="common-page"
   >
     <div
       class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
     >
       <div
         class="MuiCardHeader-root cardHeader"
+        data-testid="common-page-card-header"
       >
         <div
           class="MuiCardHeader-avatar"
@@ -276,12 +280,14 @@ exports[`render common page with subheader and content 1`] = `
 <div>
   <div
     class="pageContainer"
+    data-testid="common-page"
   >
     <div
       class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
     >
       <div
         class="MuiCardHeader-root cardHeader"
+        data-testid="common-page-card-header"
       >
         <div
           class="MuiCardHeader-content"
@@ -366,12 +372,14 @@ exports[`render empty common page 1`] = `
 <div>
   <div
     class="pageContainer"
+    data-testid="common-page"
   >
     <div
       class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
     >
       <div
         class="MuiCardHeader-root cardHeader"
+        data-testid="common-page-card-header"
       >
         <div
           class="MuiCardHeader-content"

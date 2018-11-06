@@ -14,18 +14,10 @@ React components built using [Material-UI](https://material-ui.com/getting-start
 
 #### **Running StyleGuidist**
 
-- If you are _not_ doing `cd $GRAIL/ui; yarn start:client`, you will have to manually build `lib` and `components`
-
-```
-cd $GRAIL/ui/lib
-yarn build:client
+```bash
 cd $GRAIL/ui/components
-yarn build:client
-yarn start
+yarn styleguide
 ```
-
-If you make code changes in `lib` or `components`, you will have to re-build.
-Alternatively, you can do `yarn start:client &`, instead of `yarn build:client` which will watch for code changes and rebuild.
 
 #### **Using Released Components**
 
@@ -54,3 +46,12 @@ for production.
   - Comments above each prop explaining the prop.
 - Cypress tests for any interactive components.
   - Note: These Cypress tests rely on working examples in the `README`s.
+
+#### **Releasing**
+
+```bash
+cd $GRAIL/ui/lib
+yarn build # follow instructions from the prompt
+cd $GRAIL/ui/components
+yarn build # follow instructions from the prompt
+```

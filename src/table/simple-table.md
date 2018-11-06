@@ -3,7 +3,7 @@
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
 const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const EXAMPLE_TABLE_DATA = require("@grail/components/src/utils").EXAMPLE_TABLE_DATA;
+const EXAMPLE_TABLE_DATA = require("@grail/components/utils").EXAMPLE_TABLE_DATA;
 
 class TestSimpleTable extends React.Component {
   constructor(props) {
@@ -53,13 +53,13 @@ class TestSimpleTable extends React.Component {
     }
     return first < second ? -1 : 1;
   }
-  
+
   handleHighlight(highlightedRowId) {
     const tableOptions = {
       ...this.state.tableOptions,
-      highlightedRowId
+      highlightedRowId,
     };
-    this.setState({ tableOptions })
+    this.setState({ tableOptions });
   }
 
   render() {
@@ -96,10 +96,7 @@ class TestSimpleTable extends React.Component {
           highlightedRowId={tableOptions.highlightedRowId}
           onHighlightRow={this.handleHighlight}
         />
-        <ExampleBlock
-          strongHeader="Table Options "
-          content={this.state.tableOptions}
-        />
+        <ExampleBlock strongHeader="Table Options " content={this.state.tableOptions} />
       </div>
     );
   }

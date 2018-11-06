@@ -1,4 +1,4 @@
-## 1.0.0 - 2018-11-07
+## 0.8.0 - 2018-11-07
 
 1. Deprecate old TimelineGraph component.
 2. Rename `CommonTimelineGraph` to `TimelineGraph`.

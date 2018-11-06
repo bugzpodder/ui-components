@@ -3,7 +3,7 @@
 ```js
 const Fragment = require("react").Fragment;
 const ExampleBlock = require("@grail/components").ExampleBlock;
-const EXAMPLE_TABLE_DATA = require("@grail/components/src/utils").EXAMPLE_TABLE_DATA;
+const EXAMPLE_TABLE_DATA = require("@grail/components/utils").EXAMPLE_TABLE_DATA;
 const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const Button = require("@material-ui/core/Button").default;
 

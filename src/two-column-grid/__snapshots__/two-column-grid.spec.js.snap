@@ -14,7 +14,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 rowLabel"
+            class="MuiTypography-root MuiTypography-body2 rowLabel"
             style="text-align: right;"
           >
             Test Label 1
@@ -68,7 +68,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 rowLabel"
+            class="MuiTypography-root MuiTypography-body2 rowLabel"
             style="text-align: right;"
           >
             Test Label 1
@@ -122,7 +122,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root MuiTypography-body1 rowLabel"
+            class="MuiTypography-root MuiTypography-body2 rowLabel"
             style="text-align: left;"
           >
             Test Label 1

@@ -13,7 +13,7 @@ exports[`render common card 1`] = `
         class="MuiCardHeader-content"
       >
         <span
-          class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
+          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
         >
           Test Card
         </span>
@@ -45,7 +45,7 @@ exports[`render common card with footer actions 1`] = `
         class="MuiCardHeader-content"
       >
         <span
-          class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
+          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
         >
           Test Card
         </span>
@@ -96,7 +96,7 @@ exports[`render common card with header actions 1`] = `
         class="MuiCardHeader-content"
       >
         <span
-          class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
+          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
         />
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
@@ -144,7 +144,7 @@ exports[`render common card with margin 1`] = `
         class="MuiCardHeader-content"
       >
         <span
-          class="MuiTypography-root MuiTypography-headline MuiCardHeader-title card-title"
+          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
         >
           Test Card
         </span>

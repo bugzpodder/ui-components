@@ -27,16 +27,9 @@ const customTheme = createMuiTheme({
       contrastText: grailGrayLighter,
     },
   },
-  overrides: {
-    // https://github.com/mui-org/material-ui/issues/10735
-    MuiTooltip: {
-      popper: {
-        pointerEvents: "none",
-        "&$open": {
-          pointerEvents: "none",
-        },
-      },
-    },
+  // See https://material-ui.com/style/typography/#migration-to-typography-v2
+  typography: {
+    useNextVariants: true,
   },
 });
 

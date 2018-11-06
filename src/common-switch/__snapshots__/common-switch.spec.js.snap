@@ -36,7 +36,7 @@ exports[`render error common switch 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label error"
+          class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label error"
         />
       </label>
       
@@ -80,7 +80,7 @@ exports[`render primary common switch 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+          class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
         >
           Primary
         </span>
@@ -131,7 +131,7 @@ exports[`render secondary common switch 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+          class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
         />
       </label>
       

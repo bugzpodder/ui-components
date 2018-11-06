@@ -18,7 +18,15 @@ type Props = {
 
 export const SearchField = (props: Props) => {
   const {
-    searchKey, searchType, searchValue, onChange, onSearch = () => {}, ...otherProps
+    searchKey,
+    searchType,
+    searchValue,
+    onChange,
+    onSearch = () => {},
+    // Unused props
+    searchDefs: __searchDefs,
+    searchValues: __searchValues,
+    ...otherProps
   } = props;
   const onChangeComponent = (event: SyntheticInputEvent<HTMLInputElement>) => {
     const {

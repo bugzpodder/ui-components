@@ -24,7 +24,7 @@ type Props = {
   color?: AlertColor,
   /** When "center", aligns the Alert's messages horizontally */
   textAlign?: string,
-  /** When "flat", changes the styling of the alert */
+  /** When "text", changes the styling of the alert */
   variant?: string,
 };
 

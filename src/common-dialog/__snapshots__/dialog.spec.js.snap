@@ -26,11 +26,11 @@ exports[`render dialog 1`] = `
         class="MuiDialogTitle-root"
         id="form-dialog-title"
       >
-        <h2
-          class="MuiTypography-root MuiTypography-title"
+        <h6
+          class="MuiTypography-root MuiTypography-h6"
         >
           test
-        </h2>
+        </h6>
       </div>
       <div
         class="MuiDialogContent-root"
@@ -134,11 +134,11 @@ exports[`render multi page dialog 1`] = `
         class="MuiDialogTitle-root"
         id="form-dialog-title"
       >
-        <h2
-          class="MuiTypography-root MuiTypography-title"
+        <h6
+          class="MuiTypography-root MuiTypography-h6"
         >
           test
-        </h2>
+        </h6>
       </div>
       <div
         class="MuiDialogContent-root commonDialogContent"

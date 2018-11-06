@@ -132,7 +132,7 @@ exports[`render common tabbed page 1`] = `
             data-testid="alert"
           >
             <div
-              class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+              class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
               role="alertdialog"
             >
               <div

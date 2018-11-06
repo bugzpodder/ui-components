@@ -164,7 +164,7 @@ exports[`render common page with menu 1`] = `
                 class="MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+                  class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
                 >
                   Menu item one
                 </span>
@@ -185,7 +185,7 @@ exports[`render common page with menu 1`] = `
                 class="MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-subheading MuiListItemText-primary"
+                  class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
                 >
                   Menu item two
                 </span>
@@ -205,7 +205,7 @@ exports[`render common page with menu 1`] = `
           data-testid="alert"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+            class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
             id="one"
             role="alertdialog"
           >
@@ -238,7 +238,7 @@ exports[`render common page with menu 1`] = `
           data-testid="alert"
         >
           <div
-            class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+            class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
             id="two"
             role="alertdialog"
           >
@@ -321,7 +321,7 @@ exports[`render common page with subheader and content 1`] = `
         data-testid="alert"
       >
         <div
-          class="MuiTypography-root MuiTypography-body1 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+          class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
           role="alertdialog"
         >
           <div

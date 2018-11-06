@@ -15,13 +15,13 @@ exports[`render simple timeline graph 1`] = `
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
             data-testid="timeline-year-0"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
             data-testid="timeline-date-0"
           >
             20 Apr
@@ -68,19 +68,19 @@ exports[`render simple timeline graph with time 1`] = `
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
             data-testid="timeline-year-0"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
             data-testid="timeline-date-0"
           >
             20 Apr
           </p>
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
             data-testid="timeline-time-0"
           >
             16:20
@@ -134,13 +134,13 @@ exports[`test selecting an item on the timeline card 1`] = `
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
                 20 Apr
@@ -196,13 +196,13 @@ exports[`test unselecting an item on the timeline card 1`] = `
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
                 20 Apr

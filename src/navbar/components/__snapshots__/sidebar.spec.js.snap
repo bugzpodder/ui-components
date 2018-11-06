@@ -182,6 +182,24 @@ exports[`render Sidebar 1`] = `
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
+                    href="/lims/containers"
+                    id="lims-lims-containers"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemText-root MuiListItemText-dense"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                      >
+                        Containers
+                      </span>
+                    </div>
+                  </a>
+                  <a
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    exact="false"
                     href="/lims/batches"
                     id="lims-lims-batches"
                     role="button"

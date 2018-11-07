@@ -1,3 +1,5 @@
+## 0.9.0 - 2018-11-21
+
 ## 0.8.0 - 2018-11-07
 
 1. Deprecate old TimelineGraph component.

@@ -11,7 +11,6 @@ import {
   getQuery,
   getSearchOptions,
   getSearchValuesFromOmniText,
-  isValueValid,
   localStorage,
   updateQuery,
 } from "@grail/lib/";
@@ -52,7 +51,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
     searchValues: new Map(),
   };
 
-  lastSearchedValues: SearchValues = new Map();
+  lastSearchedValues: ?SearchValues = null;
 
   componentDidMount = async () => {
     const { location, getInitialValues } = this.props;
@@ -61,17 +60,15 @@ export class OmniSearchBar extends React.Component<Props, State> {
     if (getInitialValues) {
       omniText = this.mergeOmniWithInitialValues(omniText);
     }
-    if (!isValueValid(omniText)) {
-      return null;
-    }
     await this.updateOmniText(omniText);
     this.onSearch();
   };
 
   componentDidUpdate = async (prevProps: Props) => {
-    const { location, searchDefs, getInitialValues } = this.props;
+    const { location = {}, searchDefs, getInitialValues } = this.props;
+    const { location: prevLocation = {} } = prevProps;
     let omniText = getQuery({ location })[OMNI_KEY] || "";
-    const prevOmniText = getQuery({ location: prevProps.location })[OMNI_KEY] || "";
+    const prevOmniText = getQuery({ location: prevLocation })[OMNI_KEY] || "";
     if (searchDefs !== prevProps.searchDefs) {
       omniText = this.mergeOmniWithLocalStorage(omniText);
       if (getInitialValues) {
@@ -80,10 +77,11 @@ export class OmniSearchBar extends React.Component<Props, State> {
     }
     let shouldSearch = false;
     let shouldUpdateBrowserHistory = false;
-    if (
-      searchDefs !== prevProps.searchDefs ||
-      (prevOmniText !== omniText && prevProps.location.pathname === location.pathname)
-    ) {
+    const isNewPath = prevLocation.pathname !== location.pathname;
+    if (isNewPath) {
+      this.lastSearchedValues = null;
+    }
+    if (searchDefs !== prevProps.searchDefs || (prevOmniText !== omniText && !isNewPath)) {
       await this.updateOmniText(omniText);
       shouldSearch = true;
     }
@@ -148,7 +146,9 @@ export class OmniSearchBar extends React.Component<Props, State> {
       if (error.name === OMNI_ERROR) {
         return omniText;
       }
-      throw error;
+      console.error(error);
+      this.setState({ error: error.message });
+      return "";
     }
   };
 
@@ -170,7 +170,9 @@ export class OmniSearchBar extends React.Component<Props, State> {
       if (error.name === OMNI_ERROR) {
         return omniText;
       }
-      throw error;
+      console.error(error);
+      this.setState({ error: error.message });
+      return "";
     }
   };
 
@@ -197,10 +199,10 @@ export class OmniSearchBar extends React.Component<Props, State> {
             error: "",
           };
         } catch (error) {
-          if (error.name === OMNI_ERROR) {
-            return { omniText, error: error.message };
+          if (error.name !== OMNI_ERROR) {
+            console.error(error);
           }
-          throw error;
+          return { omniText, error: error.message };
         }
       }, resolve);
     });

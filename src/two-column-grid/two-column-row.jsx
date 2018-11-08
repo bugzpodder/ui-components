@@ -7,12 +7,15 @@ import styles from "./two-column-row.module.scss";
 
 type Props = {
   row: GridRow,
+  rowIndex: number,
   textAlign?: Array<string>,
   labelWidth?: GridSizes,
 };
 
 export const TwoColumnRow = (props: Props) => {
-  const { row, labelWidth = 2, textAlign = [] } = props;
+  const {
+    row, labelWidth = 2, textAlign = [], rowIndex,
+  } = props;
 
   // $FlowFixMe
   const inputWidth: GridSizes = 12 - labelWidth;
@@ -20,7 +23,13 @@ export const TwoColumnRow = (props: Props) => {
   const valueTextAlign = textAlign[1] || "left";
 
   const { label, value, classes = {} } = row;
-  const testIdPrefix = typeof label === "string" ? label : "Label";
+  const testIdPrefix =
+    typeof label === "string"
+      ? label
+        .toLowerCase()
+        .split(" ")
+        .join("-")
+      : `row-${rowIndex}`;
   return (
     <Grid
       container
@@ -37,7 +46,7 @@ export const TwoColumnRow = (props: Props) => {
       >
         {typeof label === "string" ? (
           <Typography
-            data-testid={`${testIdPrefix} label`}
+            data-testid={`${testIdPrefix}-label`}
             style={{ textAlign: labelTextAlign }}
             className={classNames(styles.rowLabel, classes.label)}
           >
@@ -45,7 +54,7 @@ export const TwoColumnRow = (props: Props) => {
           </Typography>
         ) : (
           <div
-            data-testid={`${testIdPrefix} label`}
+            data-testid={`${testIdPrefix}-label`}
             style={{ textAlign: labelTextAlign }}
             className={classNames(styles.rowLabel, classes.label)}
           >
@@ -60,7 +69,7 @@ export const TwoColumnRow = (props: Props) => {
         xs={inputWidth}
       >
         <div
-          data-testid={`${testIdPrefix} value`}
+          data-testid={`${testIdPrefix}-value`}
           style={{ textAlign: valueTextAlign }}
           className={classes.value}
         >

@@ -38,6 +38,7 @@ export const TwoColumnGrid = (props: Props) => {
         return (
           <TwoColumnRow
             key={index}
+            rowIndex={index}
             labelWidth={labelWidth}
             textAlign={textAlign}
             row={row}

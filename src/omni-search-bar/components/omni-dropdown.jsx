@@ -55,6 +55,7 @@ export const OmniDropdown = (props: Props) => {
             return (
               <TwoColumnRow
                 key={index}
+                rowIndex={index}
                 row={row}
                 labelWidth={3}
               />

@@ -173,6 +173,11 @@ export class Sidebar extends React.Component<Props, State> {
     return this.getLink(item, index);
   };
 
+  collapseAll = (sidebarItems: Array<SidebarItem>) => {
+    const itemIndices = sidebarItems.map((__item, index) => index);
+    this.setState({ openItems: new Set(), touchedItems: new Set(itemIndices) });
+  };
+
   render() {
     const {
       sidebarContent = sidebarItems, footer, isOpen, toggle, drawerVariant, classes = {},
@@ -196,6 +201,11 @@ export class Sidebar extends React.Component<Props, State> {
               <ArrowBack />
             </IconButton>
             <Divider />
+            <span
+              onClick={() => this.collapseAll(sidebarContent)}
+              data-testid="collapse-all-sidebar-items"
+              className={styles.collapseAllSidebarItems}
+            />
           </div>
         )}
         <div

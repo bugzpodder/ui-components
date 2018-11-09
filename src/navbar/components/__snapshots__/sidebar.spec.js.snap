@@ -55,6 +55,10 @@ exports[`render Sidebar 1`] = `
         <hr
           class="MuiDivider-root"
         />
+        <span
+          class="collapseAllSidebarItems"
+          data-testid="collapse-all-sidebar-items"
+        />
       </div>
       <div
         class="drawer"

@@ -115,6 +115,7 @@ export class OmniField extends React.Component<Props, State> {
                   omniText !== "" && (
                     <IconButton
                       id={`${OMNI_INPUT_FIELD_ID}-clear`}
+                      data-testid="clear-omni-field"
                       title="Clear"
                       color="inherit"
                       onClick={async () => {

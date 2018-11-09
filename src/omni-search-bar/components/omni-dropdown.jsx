@@ -68,12 +68,14 @@ export const OmniDropdown = (props: Props) => {
           >
             <Button
               disableRipple
+              data-testid="omni-dropdown-clear-button"
               onClick={onClear}
             >
               Clear
             </Button>
             <Button
               disableRipple
+              data-testid="omni-dropdown-search-button"
               onClick={onSearch}
               color="primary"
               variant="contained"

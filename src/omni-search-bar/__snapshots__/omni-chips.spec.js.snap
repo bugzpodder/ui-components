@@ -4,6 +4,7 @@ exports[`OmniSearchBar deletes 1`] = `
 <div>
   <div
     class="omniChips"
+    data-testid="omni-chips-container"
   >
     <div
       aria-label="omni"
@@ -133,6 +134,7 @@ exports[`OmniSearchBar deletes 2`] = `
 <div>
   <div
     class="omniChips"
+    data-testid="omni-chips-container"
   >
     <div
       aria-label="omni"
@@ -262,6 +264,7 @@ exports[`OmniSearchBar renders 1`] = `
 <div>
   <div
     class="omniChips"
+    data-testid="omni-chips-container"
   >
     <div
       aria-label="omni"

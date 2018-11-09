@@ -22,6 +22,7 @@ type Props = {
   id?: string,
   "data-testid"?: string,
   initialMessage?: string,
+  isClearable?: boolean,
   isDisabled?: boolean,
   menuIsOpen?: boolean,
   onChange: Function,
@@ -43,6 +44,7 @@ export const CommonSelectComponent = (props: Props) => {
     id = "",
     "data-testid": dataTestId,
     initialMessage = "",
+    isClearable = true,
     isDisabled = false,
     placeholder = "",
     showError = false,
@@ -65,7 +67,7 @@ export const CommonSelectComponent = (props: Props) => {
             placeholder,
             menuIsOpen: isDisabled ? false : menuIsOpen,
             classNamePrefix: "common-select",
-            isClearable: true,
+            isClearable,
             onChange: value => onChange(value),
             components: {
               Option: selectProps => (

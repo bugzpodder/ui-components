@@ -39,6 +39,8 @@ type CommonSelectProps = {
   id?: string,
   /** The initial message to display when `selectType` is `async` and no initial options are provided */
   initialMessage?: string,
+  /** When false, removes the button provided to clear the selected option in the input field */
+  isClearable?: boolean,
   /** Disables the select from being used */
   isDisabled?: boolean,
   /** The text displayed in the input before the user begins typing */

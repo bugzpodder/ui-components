@@ -46,6 +46,7 @@ type Props = {
    *  - `action`: wrapper around each individual dialog action
    */
   classes?: CommonDialogClasses,
+  enableOverflow?: boolean,
 };
 export const CommonMultiPageDialog = (props: Props) => {
   const {
@@ -57,6 +58,7 @@ export const CommonMultiPageDialog = (props: Props) => {
     title,
     classes = {},
     showBackButton = true,
+    enableOverflow = true,
     actions,
     ...dialogProps
   } = props;
@@ -82,7 +84,11 @@ export const CommonMultiPageDialog = (props: Props) => {
       >
         {title}
       </DialogTitle>
-      <DialogContent className={classNames(styles.commonDialogContent, classes.content)}>
+      <DialogContent
+        className={classNames(classes.content, {
+          [styles.commonDialogNoOverflow]: !enableOverflow,
+        })}
+      >
         {pages[pageIndex]}
       </DialogContent>
       <DialogActions

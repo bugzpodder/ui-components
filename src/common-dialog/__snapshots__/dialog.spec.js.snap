@@ -141,7 +141,7 @@ exports[`render multi page dialog 1`] = `
         </h6>
       </div>
       <div
-        class="MuiDialogContent-root commonDialogContent"
+        class="MuiDialogContent-root"
       >
         <div
           data-testid="page"

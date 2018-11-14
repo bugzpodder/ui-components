@@ -22,8 +22,7 @@ type Props = {
   onSort?: SortOption => any,
   onHighlightRow?: (?number | ?string) => any,
   highlightedRowId?: ?number | ?string,
-  sortingProps?: SortingProps,
-  tableOptions?: PagedTableOptions,
+  tableOptions?: SimpleTableOptions,
   enableSelectAll: boolean,
 };
 

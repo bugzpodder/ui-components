@@ -45,7 +45,7 @@ type Props = {
   /** Provides the id for the highlighted row when onHighlightRow is used */
   highlightedRowId?: ?string | ?number,
   /** Parameters for onSort (see documentation for function) */
-  tableOptions?: PagedTableOptions,
+  tableOptions?: SimpleTableOptions,
   /**
    * Enables sorting.
    *

@@ -43,6 +43,9 @@ export const SearchField = (props: Props) => {
     return (
       <TextField
         id={searchKey}
+        inputProps={{
+          "data-testid": searchKey,
+        }}
         className={styles.textField}
         value={searchValue ? String(searchValue) : ""}
         onChange={onChangeComponent}

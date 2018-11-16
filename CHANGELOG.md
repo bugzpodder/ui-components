@@ -1,6 +1,7 @@
 ## 0.9.0 - 2018-11-21
 
 1. Add a hidden element to `Sidebar` to collapse all content. This allows tests to consistently control the sidebar state.
+2. Dialog buttons are now `variant="text"` when disabled.
 
 ## 0.8.0 - 2018-11-07
 

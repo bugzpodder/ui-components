@@ -15,7 +15,7 @@ export type CommonDialogAction = {
 
 export const actionToButton = (action: CommonDialogAction) => {
   const {
-    id, icon, color, isEnabled = true, name, callback, isLeftButton, ...buttonProps
+    id, icon, color, isEnabled = true, name, callback, isLeftButton, variant, ...buttonProps
   } = action;
   return (
     <Button
@@ -28,6 +28,7 @@ export const actionToButton = (action: CommonDialogAction) => {
       color={color || "primary"}
       onClick={callback}
       disabled={!isEnabled}
+      variant={isEnabled ? variant : "text"}
       {...buttonProps}
     >
       {icon && <Icon className="margin-right-5">{icon}</Icon>}

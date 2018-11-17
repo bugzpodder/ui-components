@@ -1,0 +1,41 @@
+@import "../styles/colors";
+
+.notificationContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .notificationClose {
+    padding: 2px;
+    width: fit-content;
+    position: absolute;
+    right: 18px;
+
+    @media screen and (max-width: 800px) {
+      right: 12px;
+    }
+  }
+
+  .timestamp {
+    margin-top: 10px;
+  }
+}
+
+
+.notificationCenterPopover {
+  max-height: 40vh;
+  width: 25vw;
+}
+
+.notificationCenterList {
+  @extend .notificationCenterPopover;
+  overflow: auto;
+  .clearButton {
+    margin: 10px;
+  }
+  
+  .emptyText {
+    margin-bottom: 10px;
+  }
+}
+

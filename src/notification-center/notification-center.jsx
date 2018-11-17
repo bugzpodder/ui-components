@@ -1,9 +1,12 @@
 // @flow
+import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import Notifications from "@material-ui/icons/Notifications";
 import Popover from "@material-ui/core/Popover";
 import React, { Fragment } from "react";
+import Typography from "@material-ui/core/Typography";
+import styles from "./notification.module.scss";
 import { NotificationCard } from "./components/notification-card";
 
 type State = {
@@ -23,6 +26,15 @@ type Props = {
    *
    */
   notifications: Array<Notification>,
+  /**
+   * Function to clear all notifications.
+   */
+  removeAllNotifications: () => any,
+  /**
+   * Function to clear a specific notification, it should take in the index of the notification
+   * to be removed.
+   */
+  removeNotification: number => any,
 };
 
 export class NotificationCenter extends React.Component<Props, State> {
@@ -46,7 +58,9 @@ export class NotificationCenter extends React.Component<Props, State> {
   };
 
   render = () => {
-    const { notifications, ...iconProps } = this.props;
+    const {
+      notifications, removeAllNotifications, removeNotification, ...iconProps
+    } = this.props;
     const { anchorElement, isVisible } = this.state;
     return (
       <Fragment>
@@ -65,18 +79,38 @@ export class NotificationCenter extends React.Component<Props, State> {
           onClose={() => this.handleClose()}
           PaperProps={{
             classes: {
-              root: "notification-center-popover",
+              root: styles.notificationCenterPopover,
             },
           }}
           TransitionProps={{ timeout: 0 }}
         >
-          <List className="notification-center-list">
+          <List className={styles.notificationCenterList}>
+            <Button
+              variant="text"
+              color="primary"
+              onClick={removeAllNotifications}
+              disabled={!notifications.length}
+              className={styles.clearButton}
+            >
+              <b>Clear All</b>
+            </Button>
+            {!notifications.length && (
+              <Typography
+                variant="subtitle1"
+                align="center"
+                className={styles.emptyText}
+              >
+                You have no notifications.
+              </Typography>
+            )}
             {notifications.map(({ message, time, type }, index) => (
               <NotificationCard
                 key={index}
                 message={message}
                 time={time}
                 type={type}
+                notificationIndex={index}
+                removeNotification={removeNotification}
               />
             ))}
           </List>

@@ -3,7 +3,7 @@ import Error from "@material-ui/icons/Error";
 import Info from "@material-ui/icons/Info";
 import React from "react";
 import Warning from "@material-ui/icons/Warning";
-
+import styles from "../notification.module.scss";
 import { NotificationTypes } from "@grail/lib";
 
 type Props = {
@@ -29,7 +29,7 @@ export const NotificationTypeIcon = (props: Props) => {
     default:
   }
   return (
-    <div>
+    <div className={styles.notificationIconContainer}>
       <IconComponent color={type} />
     </div>
   );

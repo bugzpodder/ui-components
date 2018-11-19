@@ -52,6 +52,7 @@ export const Selector = (props: SelectorProps) => {
     readOnly,
     ...selectProps
   } = props;
+  console.error("Selector component is now deprecated. Please convert all usages to CommonSelect");
   const menuItems = data.map(({ key = "", text }, index) => {
     return (
       <MenuItem

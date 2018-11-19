@@ -276,8 +276,8 @@ exports[`render Sidebar 1`] = `
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
-                    href="/lims/study-samples"
-                    id="lims-lims-study-samples"
+                    href="/lims/non-patient-samples"
+                    id="lims-lims-non-patient-samples"
                     role="button"
                     tabindex="0"
                   >
@@ -294,8 +294,8 @@ exports[`render Sidebar 1`] = `
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
-                    href="/lims/create-study-samples"
-                    id="lims-lims-create-study-samples"
+                    href="/lims/create-non-patient-samples"
+                    id="lims-lims-create-non-patient-samples"
                     role="button"
                     tabindex="0"
                   >

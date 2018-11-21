@@ -31,122 +31,153 @@ type Props = {
   onEnter: () => any,
 };
 
+type State = {
+  isPopperOpen: boolean,
+  isManuallyOpened: boolean,
+};
+
 /**
  * This is in development.
  * TODO(jsingh) tests + markdown
  */
-export const CommonSuggest = (props: Props) => {
-  const {
-    id, placeholder, suggestions, onChange, onEnter, value,
-  } = props;
-  let items = suggestions.map(value => ({ value }));
-  const valueElements = value.split(",").map(element => element.trim());
-  let lastValue = "";
-  if (valueElements.length > 0) {
-    lastValue = valueElements.pop();
-    lastValue = unquoteString(lastValue);
-    const fuzzyMatches = fuzzy.filter(lastValue, suggestions);
-    items = fuzzyMatches.map(match => ({ value: match.string }));
-  }
-  const onSelectSuggestion = item => {
-    const suggestedValue = item ? item.value : "";
-    valueElements.push(`"${suggestedValue}"`);
-    onChange(valueElements.join(", "));
+export class CommonSuggest extends React.Component<Props, State> {
+  state = {
+    isPopperOpen: false,
+    isManuallyOpened: false,
   };
-  return (
-    <div className={styles.commonSuggest}>
-      <Downshift
-        id="common-suggest"
-        inputValue={value}
-        onChange={onSelectSuggestion}
-        itemToString={item => (item ? item.value : "")}
-      >
-        {({
-          getInputProps, getItemProps, getToggleButtonProps, highlightedIndex, isOpen,
-        }) => {
-          const toggleButtonProps = getToggleButtonProps({
-            id: `${id || ""}-toggle-suggestions`,
-            "data-testid": "toggle-suggestions",
-            label: "menu",
-            color: "inherit",
-            title: "Show suggestions",
-            disableRipple: true,
-            tabIndex: -1,
-          });
-          const onKeyDown = event => {
-            if ((!items.length || !isOpen || highlightedIndex == null) && event.keyCode === keycode("Enter")) {
-              onEnter();
-            }
-          };
-          const { InputProps, ref, ...otherInputProps } = getInputProps({
-            fullWidth: true,
-            onChange: event => onChange(event.target.value),
-            placeholder,
-            InputProps: {
-              "data-testid": "common-suggest-input-container",
-              onKeyDown,
-              endAdornment: (
-                <InputAdornment position="end">
-                  <IconButton {...toggleButtonProps}>
-                    <ArrowDropDownIcon />
-                  </IconButton>
-                </InputAdornment>
-              ),
-            },
-            inputProps: {
-              id,
-              "data-testid": id,
-            },
-          });
-          return (
-            <div className={styles.commonSuggestField}>
-              <TextField
-                InputProps={{
-                  inputRef: ref,
-                  ...InputProps,
-                }}
-                {...otherInputProps}
-              />
-              <Popper
-                id="common-suggest-popover"
-                data-testid="common-suggest-popper"
-                open={isOpen}
-                anchorEl={ref}
-                placement="top"
-                disablePortal
-                className={styles.commonSuggestPopper}
-              >
-                <Paper
-                  square
-                  data-testid="items"
+
+  closePopper = () => {
+    this.setState({ isPopperOpen: false, isManuallyOpened: false });
+  };
+
+  render = () => {
+    const {
+      id, placeholder, suggestions, onChange, onEnter, value,
+    } = this.props;
+    const { isPopperOpen, isManuallyOpened } = this.state;
+    let items = suggestions.map(value => ({ value }));
+    const valueElements = value.split(",").map(element => element.trim());
+    if (valueElements.length > 0) {
+      let lastValue = "";
+      lastValue = valueElements.pop();
+      lastValue = unquoteString(lastValue);
+      if (!isManuallyOpened) {
+        const fuzzyMatches = fuzzy.filter(lastValue, suggestions);
+        items = fuzzyMatches.map(match => ({ value: match.string }));
+      }
+    }
+    const onSelectSuggestion = item => {
+      const suggestedValue = item ? item.value : "";
+      const quotedValue = `"${suggestedValue}"`;
+      valueElements.push(quotedValue);
+      onChange(valueElements.join(", "));
+      this.closePopper();
+    };
+    return (
+      <div className={styles.commonSuggest}>
+        <Downshift
+          id="common-suggest"
+          inputValue={value}
+          onChange={onSelectSuggestion}
+          itemToString={item => (item ? item.value : "")}
+          isOpen={isPopperOpen}
+        >
+          {({
+            getInputProps, getItemProps, getToggleButtonProps, highlightedIndex, isOpen,
+          }) => {
+            const toggleButtonProps = getToggleButtonProps({
+              id: `${id || ""}-toggle-suggestions`,
+              "data-testid": "toggle-suggestions",
+              label: "menu",
+              color: "inherit",
+              title: "Show suggestions",
+              disableRipple: true,
+              tabIndex: -1,
+              onClick: () =>
+                this.setState(({ isPopperOpen }) => {
+                  return { isPopperOpen: !isPopperOpen, isManuallyOpened: true };
+                }),
+              onBlur: this.closePopper,
+            });
+            const onKeyDown = event => {
+              if ((!items.length || !isOpen || highlightedIndex == null) && event.keyCode === keycode("Enter")) {
+                this.closePopper();
+                onEnter();
+              } else {
+                this.setState({ isPopperOpen: true, isManuallyOpened: false });
+              }
+            };
+            const { InputProps, ref, ...otherInputProps } = getInputProps({
+              fullWidth: true,
+              onChange: event => onChange(event.target.value),
+              placeholder,
+              InputProps: {
+                "data-testid": "common-suggest-input-container",
+                onKeyDown,
+                onBlur: this.closePopper,
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton {...toggleButtonProps}>
+                      <ArrowDropDownIcon />
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              },
+              inputProps: {
+                id,
+                "data-testid": id,
+              },
+            });
+            return (
+              <div className={styles.commonSuggestField}>
+                <TextField
+                  InputProps={{
+                    inputRef: ref,
+                    ...InputProps,
+                  }}
+                  {...otherInputProps}
+                />
+                <Popper
+                  id="common-suggest-popover"
+                  data-testid="common-suggest-popper"
+                  open={isOpen}
+                  anchorEl={ref}
+                  placement="top"
+                  disablePortal
+                  className={styles.commonSuggestPopper}
                 >
-                  {items.map((item, index) => {
-                    const itemProps = getItemProps({ key: index, index, item });
-                    return (
-                      <MenuItem
-                        {...itemProps}
-                        selected={index === highlightedIndex}
-                        component="div"
-                        className={styles.item}
+                  <Paper
+                    square
+                    data-testid="items"
+                  >
+                    {items.map((item, index) => {
+                      const itemProps = getItemProps({ key: index, index, item });
+                      return (
+                        <MenuItem
+                          {...itemProps}
+                          selected={index === highlightedIndex}
+                          component="div"
+                          className={styles.item}
+                        >
+                          {item.value}
+                        </MenuItem>
+                      );
+                    })}
+                    {!items.length && (
+                      <Typography
+                        variant="caption"
+                        className={styles.noMatches}
                       >
-                        {item.value}
-                      </MenuItem>
-                    );
-                  })}
-                  {!items.length && (
-                    <Typography
-                      variant="caption"
-                      className={styles.noMatches}
-                    >
-                      No matches
-                    </Typography>
-                  )}
-                </Paper>
-              </Popper>
-            </div>
-          );
-        }}
-      </Downshift>
-    </div>
-  );
-};
+                        No matches
+                      </Typography>
+                    )}
+                  </Paper>
+                </Popper>
+              </div>
+            );
+          }}
+        </Downshift>
+      </div>
+    );
+  };
+}

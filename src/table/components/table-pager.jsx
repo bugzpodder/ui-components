@@ -49,7 +49,7 @@ export const TablePager = (props: Props) => {
       page={page}
       onChangePage={onChangePage}
       onChangeRowsPerPage={onChangeRowsPerPage}
-      rowsPerPageOptions={[5, 10, 25, 50]}
+      rowsPerPageOptions={[5, 10, 25, 50, 100]}
       backIconButtonProps={{ className: "previous-page", "data-testid": "previous-page" }}
       nextIconButtonProps={{ className: "next-page", "data-testid": "next-page" }}
       SelectProps={{

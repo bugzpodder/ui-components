@@ -2,6 +2,7 @@
 
 1. Add a hidden element to `Sidebar` to collapse all content. This allows tests to consistently control the sidebar state.
 2. Dialog buttons are now `variant="text"` when disabled.
+3. Added more options for `PagedTable` pagination numbers.
 
 ## 0.8.0 - 2018-11-07
 

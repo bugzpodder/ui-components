@@ -76,10 +76,10 @@ export const allSelectedRows = [
   "Seventeenth Datum",
 ];
 
-export const tableOptions: LegacyApiQueryOptions = {
+export const tableOptions: ApiQueryOptions = {
   offset: 0,
   count: 5,
-  searchOptions: new Map(),
+  searchOptions: [],
   sortOptions: [{ id: "columnOne", desc: false }],
   isLoading: false,
   selectedRowIds: someSelectedRows,

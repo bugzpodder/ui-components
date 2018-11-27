@@ -233,7 +233,7 @@ exports[`render Sidebar 1`] = `
                       <span
                         class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
                       >
-                        Sample Issues
+                        Issues
                       </span>
                     </div>
                   </a>

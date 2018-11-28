@@ -222,7 +222,7 @@ exports[`render Sidebar 1`] = `
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
                     exact="false"
-                    href="/lims/sample-issues"
+                    href="/lims/issues"
                     id="lims-lims-sample-issues"
                     role="button"
                     tabindex="0"

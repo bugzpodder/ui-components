@@ -5,7 +5,9 @@ import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import keycode from "keycode";
 import moment from "moment";
-import { DATE_FORMAT, DATE_SEARCH_TYPES, isValueValid } from "@grail/lib";
+import {
+  DATE_FORMAT, DATE_SEARCH_TYPES, buildDateRangeString, extractDateRange,
+} from "@grail/lib";
 import { DateInput } from "../../date-input";
 
 import styles from "../omni.module.scss";
@@ -57,10 +59,9 @@ export const SearchField = (props: Props) => {
   }
 
   // $FlowFixMe: split is only called on searchValue if it is valid.
-  const [startDate = "", endDate = ""] = isValueValid(searchValue) ? searchValue.split(",") : [];
-  const onDateSearch = (id: string, startDate: string, endDate: string) => {
-    const dateRange = [startDate, endDate];
-    onChange(id, dateRange.join(","));
+  const { startDate, endDate } = extractDateRange(searchValue);
+  const onDateSearch = (id: string, startDate: ?string, endDate: ?string) => {
+    onChange(id, buildDateRangeString({ startDate, endDate }));
   };
   const onChangeStartDate = (id, date) => {
     date = date ? moment(date).format(DATE_FORMAT) : "";

@@ -31,7 +31,7 @@ type SelectorProps = {
    * Should be an array of Objects in this format: `{ key: string, text: string }`,
    * where `key` is the value for chosen input, and `text` is the display text for the option.
    */
-  data: SelectorData,
+  data: Array<*>,
   /** Name of the selector. */
   name: string,
 } & OptionalSelectorProps &

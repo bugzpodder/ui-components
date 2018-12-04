@@ -27,6 +27,7 @@ export const TwoColumnRow = (props: Props) => {
     typeof label === "string"
       ? label
         .toLowerCase()
+        .replace(/[^A-Za-z0-9_ ]/, "")
         .split(" ")
         .join("-")
       : `row-${rowIndex}`;

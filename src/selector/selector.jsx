@@ -25,6 +25,7 @@ type OptionalSelectorProps = {
   /** Helper text displayed under the selector */
   helperText?: string,
 };
+
 type SelectorProps = {
   /**
    * Possible options for the selector.

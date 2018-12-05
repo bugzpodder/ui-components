@@ -357,7 +357,7 @@ exports[`render Sidebar 1`] = `
                   class="MuiList-root MuiList-padding"
                 >
                   <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
+                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button active nested"
                     exact="false"
                     href="/automation/program-runs"
                     id="lims-automation-program-runs"
@@ -425,24 +425,6 @@ exports[`render Sidebar 1`] = `
                         class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Program Regex Tester
-                      </span>
-                    </div>
-                  </a>
-                  <a
-                    class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button active nested"
-                    exact="false"
-                    href="/automation/tasks"
-                    id="lims-automation-tasks"
-                    role="button"
-                    tabindex="0"
-                  >
-                    <div
-                      class="MuiListItemText-root MuiListItemText-dense"
-                    >
-                      <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
-                      >
-                        Tasks
                       </span>
                     </div>
                   </a>

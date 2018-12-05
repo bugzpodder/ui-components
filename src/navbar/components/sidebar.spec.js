@@ -21,7 +21,7 @@ test("render Sidebar", () => {
           isOpen
           toggle={toggle}
           domain={LIMS}
-          currentPath="/automation/tasks"
+          currentPath="/automation/program-runs"
           InternalLinkComponent={Link}
           drawerVariant="temporary"
           externalDomains={new Map()
@@ -36,9 +36,9 @@ test("render Sidebar", () => {
   const sampleManagementDropdown = bodyUtils.queryByText("Sample Management");
   expect(sampleManagementDropdown).toBeInTheDocument();
   expect(bodyUtils.queryByText("Footer")).toBeInTheDocument();
-  const tasks = bodyUtils.queryByText("Tasks");
+  const programRuns = bodyUtils.queryByText("Program Runs");
   // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDocument();
-  expect(tasks).toBeInTheDocument();
+  expect(programRuns).toBeInTheDocument();
   fireEvent.click(sampleManagementDropdown);
   const batches = bodyUtils.queryByText("Batches");
   expect(batches).toBeInTheDocument();

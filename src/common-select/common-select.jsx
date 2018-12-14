@@ -101,8 +101,8 @@ export class CommonSelect extends React.Component<CommonSelectProps> {
     const {
       onChange, readOnly, initialOptions, value, options, selectType = "simple", ...otherProps
     } = this.props;
-    if (readOnly && value) {
-      const label = value.label ? value.label : " - ";
+    if (readOnly) {
+      const label = value && value.label ? value.label : " - ";
       return <ReadOnlyTextField>{label}</ReadOnlyTextField>;
     }
     const isAsyncSelect = selectType === "async";

@@ -2,7 +2,8 @@
   "name": "@grail/components",
   "version": "0.9.0",
   "scripts": {
-    "build": "NODE_ENV=production yarn build:src && babel-node scripts/build.js",
+    "build": "NODE_ENV=production yarn build:src && yarn build:flow && babel-node ./scripts/build.js",
+    "build:flow": "flow-copy-source src dist",
     "build:src": "babel ./src --out-dir ./dist --delete-dir-on-start --copy-files --source-maps",
     "build:client": "NODE_ENV=production yarn build:src",
     "start:client": "NODE_ENV=development yarn build:src --watch",
@@ -64,6 +65,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.84.0",
+    "flow-copy-source": "^2.0.2",
     "fs-extra": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",

@@ -113,7 +113,7 @@ exports[`render Sidebar 1`] = `
                 >
                   <a
                     class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-dense MuiListItem-gutters MuiListItem-button nested"
-                    href="https://edc-client-staging.eng.aws.grail.com/v2/trfs/table"
+                    href="https://edc-client-staging.eng.aws.grail.com/v2/trfs"
                     rel="noopener noreferrer"
                     role="button"
                     tabindex="0"

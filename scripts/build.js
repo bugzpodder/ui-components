@@ -27,7 +27,7 @@ async function createPackageFile() {
 
 async function run() {
   const distDir = path.resolve(__dirname, "../dist/");
-  await cp.exec("find . -name '*.spec.js' -delete", { cwd: distDir });
+  await cp.exec("find . -name '*.spec.js*' -delete", { cwd: distDir });
   await cp.exec("find . -name '*.snap' -delete", { cwd: distDir });
   await cp.exec("find . -name '*.md' -delete", { cwd: distDir });
   await cp.exec("find . -name '__snapshots__' -delete", { cwd: distDir });

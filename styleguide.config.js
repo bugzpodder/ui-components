@@ -51,6 +51,7 @@ module.exports = {
         "./src/alert/alert.jsx",
         "./src/common-card/card.jsx",
         "./src/common-panel/panel.jsx",
+        "./src/sign-in-page/sign-in-page.jsx",
         "./src/spinner-overlay/spinner-overlay.jsx",
       ],
     },
@@ -125,7 +126,7 @@ module.exports = {
           loader: [require.resolve("style-loader"), require.resolve("css-loader"), require.resolve("sass-loader")],
         },
         {
-          test: /\.woff2$/,
+          test: /\.(woff2|gif|jpg|png|svg)$/,
           exclude: /node_modules/,
           loader: "url-loader",
           options: {

@@ -22,7 +22,7 @@ export { SignInPage } from "./sign-in-page";
 export { SpinnerOverlay } from "./spinner-overlay";
 export { StyleWrapper } from "./style-wrapper";
 export { TextInput } from "./text-input";
-export { TimelineGraph, TimelineCard } from "./timeline-graph";
+export { TabbedTimelineCard, TimelineGraph, TimelineCard } from "./timeline-graph";
 export { CommonPage, CommonTabbedPage } from "./page";
 // $FlowFixMe: Property `ExampleWrapper/ExampleBlock` is missing in ModuleNamespace for export {}
 export { ExampleWrapper, ExampleBlock } from "./utils";

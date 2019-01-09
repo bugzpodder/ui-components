@@ -15,6 +15,8 @@ type Props = {
   onSelect?: (?number) => any,
   isTimeVisible?: boolean,
   selectedItem?: ?number,
+  hasTabs?: boolean,
+  selectedTab?: string,
 };
 
 export const TimelineGraphComponent = (props: Props) => {

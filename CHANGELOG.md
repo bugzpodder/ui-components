@@ -4,12 +4,13 @@
 2. Dialog buttons are now `variant="text"` when disabled.
 3. Added more options for `PagedTable` pagination numbers.
 4. Add ability to use custom `Component`s in `CommonPage` headeractions.
-5. Add `isClearable` to `CommonSelect`
-6. Cleanup Flow types.
-7. Include flow definitions in build.
-8. Bug fixes.
-9. Test updates.
-10. Styleguidist updates.
+5. Add `TabbedTimelineCard`.
+6. Add `isClearable` to `CommonSelect`
+7. Cleanup Flow types.
+8. Include flow definitions in build.
+9. Bug fixes.
+10. Test updates.
+11. Styleguidist updates.
 
 ## 0.8.0 - 2018-11-07
 

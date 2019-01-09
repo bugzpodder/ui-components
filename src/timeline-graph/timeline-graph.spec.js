@@ -2,8 +2,8 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import moment from "moment-timezone";
+import { TabbedTimelineCard, TimelineCard, TimelineGraph } from "./index";
 import { TestWrapper } from "../utils/index";
-import { TimelineCard, TimelineGraph } from "./index";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
@@ -17,6 +17,16 @@ const rows = [
     content: <div>Testing</div>,
   },
 ];
+
+const tabContents = {
+  tabOne: rows,
+  tabTwo: [
+    {
+      date: "2019-04-20T16:20:00",
+      content: <div>Test Two</div>,
+    },
+  ],
+};
 
 test("render simple timeline graph", () => {
   const { container, getByTestId } = render(
@@ -39,6 +49,15 @@ test("render simple timeline graph with time", () => {
     </TestWrapper>,
   );
   expect(getByTestId("timeline-time-0")).toHaveTextContent("16:20");
+  expect(container).toMatchSnapshot();
+});
+
+test("test tabbed timeline card", () => {
+  const { container } = render(
+    <TestWrapper>
+      <TabbedTimelineCard tabContents={tabContents} />
+    </TestWrapper>,
+  );
   expect(container).toMatchSnapshot();
 });
 

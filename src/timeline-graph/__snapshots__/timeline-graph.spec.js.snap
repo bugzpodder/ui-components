@@ -174,6 +174,139 @@ exports[`test selecting an item on the timeline card 1`] = `
 </div>
 `;
 
+exports[`test tabbed timeline card 1`] = `
+<div>
+  <div
+    class="timelineContainer"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root timelineCard card"
+    >
+      <div
+        class="MuiCardContent-root"
+        data-testid="card-content"
+      >
+        <div
+          class="MuiTabs-root"
+          data-testid="card-tabs"
+        >
+          <div
+            class="MuiTabs-flexContainer"
+          >
+            <div
+              class="MuiTabs-scroller MuiTabs-fixed"
+              role="tablist"
+              style="margin-bottom: 0px;"
+            >
+              <div
+                class="MuiTabs-flexContainer"
+              >
+                <button
+                  aria-selected="true"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-selected"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiTab-wrapper"
+                  >
+                    <span
+                      class="MuiTab-labelContainer"
+                    >
+                      <span
+                        class="MuiTab-label"
+                      >
+                        Tab One
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
+                  aria-selected="false"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiTab-wrapper"
+                  >
+                    <span
+                      class="MuiTab-labelContainer"
+                    >
+                      <span
+                        class="MuiTab-label"
+                      >
+                        Tab Two
+                      </span>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <span
+                class="MuiTabIndicator-root MuiTabIndicator-colorPrimary MuiTabs-indicator"
+                style="left: 0px; width: 0px;"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="timelineContent"
+        >
+          <div
+            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+          >
+            <div
+              class="timelineDateContainer"
+            >
+              <p
+                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+                data-testid="timeline-year-0"
+              >
+                2018
+              </p>
+              <p
+                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+                data-testid="timeline-date-0"
+              >
+                20 Apr
+              </p>
+            </div>
+            <div
+              class="timeline timelineStart timelineEnd"
+            >
+              <div
+                class="notch"
+              />
+              <div
+                class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+                data-testid="timeline-item-0"
+                id="0"
+              >
+                <div
+                  class="paperContent"
+                >
+                  <div>
+                    Testing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`test unselecting an item on the timeline card 1`] = `
 <div>
   <div

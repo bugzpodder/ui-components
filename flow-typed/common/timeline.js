@@ -3,6 +3,10 @@ declare type TimelineRow = {
   date: string,
 };
 
+declare type TimelineGraphRows = {
+  [string]: Array<TimelineGraphRow>
+};
+
 declare type TimelineGraphRow = {
   date: string,
   content: Node<*>,

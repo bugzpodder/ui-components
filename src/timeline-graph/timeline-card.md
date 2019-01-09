@@ -2,40 +2,20 @@
 
 ```js
 const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const rows = [
-  {
-    user: "wikipedia",
-    date: "1848-02-23T16:20:00Z",
-    content: <div>John Quincy Adams dies.</div>,
-  },
-  {
-    user: "wikipedia",
-    date: "1818-04-10T12:00:00Z",
-    content: (
-      <div>
-        John Quincy Adams tries to dig to the middle of the Earth to conduct trade with the people living there.
-      </div>
-    ),
-  },
-  {
-    user: "wikipedia",
-    date: "1767-07-11T12:20:00Z",
-    content: <div>John Quincy Adams is born.</div>,
-  },
-];
+const ADAMS_DATA = require("@grail/components/utils").ADAMS_DATA;
 
 <ExampleWrapper>
   <TimelineCard
-    rows={rows}
+    rows={ADAMS_DATA}
     commonCardProps={{
       title: "America 101",
       subheader: "The life of John Quincy Adams.",
     }}
     classes={{
-      root: "timlinecard-root-class",
+      root: "timelinecard-root-class",
       commonCard: {
-        title: "timlinecard-title-class",
-        subheader: "timlinecard-subheader-class",
+        title: "timelinecard-title-class",
+        subheader: "timelinecard-subheader-class",
       },
     }}
   />
@@ -47,24 +27,7 @@ const rows = [
 ```js
 const ExampleBlock = require("@grail/components").ExampleBlock;
 const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const rows = [
-  {
-    date: "1848-02-23T16:20:00Z",
-    content: <div>John Quincy Adams dies.</div>,
-  },
-  {
-    date: "1818-04-10T12:00:00Z",
-    content: (
-      <div>
-        John Quincy Adams tries to dig to the middle of the Earth to conduct trade with the people living there.
-      </div>
-    ),
-  },
-  {
-    date: "1767-07-11T12:20:00Z",
-    content: <div>John Quincy Adams is born.</div>,
-  },
-];
+const ADAMS_DATA = require("@grail/components/utils").ADAMS_DATA;
 
 class ExampleTimelineCard extends React.Component {
   constructor(props) {
@@ -86,16 +49,12 @@ class ExampleTimelineCard extends React.Component {
           isTimeVisible
           onSelect={this.handleSelect}
           selectedItem={this.state.selectedItem}
-          rows={rows}
-          commonCardProps={{
-            title: "America 101",
-            subheader: "The life of John Quincy Adams.",
-          }}
+          rows={ADAMS_DATA}
           classes={{
-            root: "timlinecard-root-class",
+            root: "timelinecard-root-class",
             commonCard: {
-              title: "timlinecard-title-class",
-              subheader: "timlinecard-subheader-class",
+              title: "timelinecard-title-class",
+              subheader: "timelinecard-subheader-class",
             },
           }}
         />

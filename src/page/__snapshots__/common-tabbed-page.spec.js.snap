@@ -42,6 +42,45 @@ exports[`render common tabbed page 1`] = `
               class="MuiTouchRipple-root"
             />
           </button>
+          <div
+            class="commonSwitch"
+          >
+            <label
+              class="MuiFormControlLabel-root controlLabel"
+              data-testid="common-switch"
+            >
+              <span
+                class="MuiSwitch-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <span
+                      class="MuiSwitch-icon"
+                    />
+                    <input
+                      class="MuiSwitchBase-input"
+                      id=""
+                      type="checkbox"
+                      value=""
+                    />
+                  </span>
+                </span>
+                <span
+                  class="MuiSwitch-bar"
+                />
+              </span>
+              <span
+                class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
+              >
+                CUSTOM ACTION
+              </span>
+            </label>
+            
+          </div>
         </div>
       </div>
       <div

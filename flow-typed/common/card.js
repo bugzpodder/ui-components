@@ -62,7 +62,7 @@ declare type MenuItem = {
 }
 
 declare type HeaderAction = {
-  content: Node<*>,
+  content?: Node<*>,
   id: string,
   color?: Color,
   href?: string,

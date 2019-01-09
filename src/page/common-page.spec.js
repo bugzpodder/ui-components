@@ -1,7 +1,7 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { Alert } from "../index";
+import { Alert, CommonSwitch } from "../index";
 import { CommonPage } from "./common-page";
 import { TestWrapper } from "../utils";
 import { cleanup, fireEvent, render } from "react-testing-library";
@@ -11,6 +11,13 @@ afterEach(cleanup);
 const headerActions = [
   {
     content: "Test Action",
+  },
+  {
+    Component: CommonSwitch,
+    componentProps: {
+      label: "CUSTOM ACTION",
+      onChange: () => {},
+    },
   },
 ];
 

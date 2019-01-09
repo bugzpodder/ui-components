@@ -79,7 +79,20 @@ export class CommonPage extends React.Component<Props, State> {
     } = this.props;
     const { sideMenuIsExpanded } = this.state;
     const mappedHeaderActions = headerActions.map((action, index) => {
-      const { content, id, ...buttonProps } = action;
+      const {
+        Component, content = "", id, componentProps, ...buttonProps
+      } = action;
+      if (Component) {
+        return (
+          <Component
+            key={`header-action-${index}`}
+            id={id}
+            {...componentProps}
+          >
+            {content}
+          </Component>
+        );
+      }
       return (
         <Button
           key={`header-action-${index}`}

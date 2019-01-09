@@ -41,6 +41,7 @@ uses CSS anchors and these do not work on styleguidist.
 
 ```js
 const Alert = require("@grail/components").Alert;
+const CommonSwitch = require("@grail/components").CommonSwitch;
 const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const Fragment = require("react").Fragment;
 const { CommonPage } = require("./index");
@@ -52,15 +53,12 @@ const ExampleCommonPage = () => {
       subtitle="Another subtitle"
       headerActions={[
         {
-          content: "Button Two",
-          color: "primary",
-          onClick: () => console.log("Button Two was clicked."),
-        },
-        {
-          content: "Button One",
-          color: "primary",
-          variant: "contained",
-          onClick: () => console.log("Button One was clicked."),
+          Component: CommonSwitch,
+          componentProps: {
+            label: "CUSTOM ACTION",
+            onChange: () => {},
+            color: "secondary",
+          },
         },
       ]}
       menuContents={[

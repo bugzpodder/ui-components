@@ -102,9 +102,6 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
       return null;
     }
     const rows = tabContents[selectedTab];
-    if (typeof rows !== "object" || rows.constructor !== Array || rows.length === 0) {
-      return null;
-    }
     return (
       <div className={classNames(styles.timelineContainer, classes.root)}>
         <CommonCard

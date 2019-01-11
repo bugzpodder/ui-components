@@ -106,40 +106,45 @@ export class OmniSearchBar extends React.Component<Props, State> {
     }
   };
 
-  getValuesFromLocalStorage = (searchDefs: SearchDefs) => {
+  getLocalStorageKey = (pathname: string, searchDef: SearchDef) => {
+    const { name, localStorageKeySuffix } = searchDef;
+    return localStorageKeySuffix != null ? `omni-${localStorageKeySuffix}` : `omni-${pathname}-${name}`;
+  };
+
+  getValuesFromLocalStorage = (pathname: string, searchDefs: SearchDefs) => {
     const storageValues: Map<number, string> = new Map();
+    if (!pathname) {
+      return storageValues;
+    }
     searchDefs.forEach((searchDef, index) => {
-      const { localStorageKeySuffix } = searchDef;
-      if (localStorageKeySuffix !== undefined) {
-        const storageValue = localStorage.get(`omni-${localStorageKeySuffix}`);
-        if (storageValue !== undefined) {
-          storageValues.set(index, String(storageValue));
-        }
+      const storageValue = localStorage.get(this.getLocalStorageKey(pathname, searchDef));
+      if (storageValue !== undefined) {
+        storageValues.set(index, String(storageValue));
       }
     });
     return storageValues;
   };
 
-  setValuesToLocalStorage = (searchDefs: SearchDefs, searchValues: SearchValues) => {
+  setValuesToLocalStorage = (pathname: string, searchDefs: SearchDefs, searchValues: SearchValues) => {
+    if (!pathname) {
+      return;
+    }
     searchDefs.forEach((searchDef, index) => {
-      const { localStorageKeySuffix } = searchDef;
-      if (localStorageKeySuffix !== undefined) {
-        const localStorageKey = `omni-${localStorageKeySuffix}`;
-        if (searchValues.has(index)) {
-          const searchValue = searchValues.get(index);
-          localStorage.set(localStorageKey, searchValue);
-        } else {
-          localStorage.remove(localStorageKey);
-        }
+      const localStorageKey = this.getLocalStorageKey(pathname, searchDef);
+      if (searchValues.has(index)) {
+        const searchValue = searchValues.get(index);
+        localStorage.set(localStorageKey, searchValue);
+      } else {
+        localStorage.remove(localStorageKey);
       }
     });
   };
 
   mergeOmniWithLocalStorage = (omniText: string): string => {
-    const { searchDefs } = this.props;
+    const { location = {}, searchDefs } = this.props;
     try {
       const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
-      const storageValues = this.getValuesFromLocalStorage(searchDefs);
+      const storageValues = this.getValuesFromLocalStorage(location.pathname, searchDefs);
       storageValues.forEach((value, key) => {
         if (!searchValues.has(key)) {
           searchValues.set(key, value);
@@ -193,10 +198,10 @@ export class OmniSearchBar extends React.Component<Props, State> {
   updateOmniText = (omniText: string): Promise<*> => {
     return new Promise(resolve => {
       this.setState(() => {
-        const { searchDefs } = this.props;
+        const { location = {}, searchDefs } = this.props;
         try {
           const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
-          this.setValuesToLocalStorage(searchDefs, searchValues);
+          this.setValuesToLocalStorage(location.pathname, searchDefs, searchValues);
           return {
             omniText,
             searchValues,

@@ -12,6 +12,7 @@
 10. Bug fixes.
 11. Test updates.
 12. Styleguidist updates.
+13. When rendering an omnibar on page that has been searched before, restore the last used search values. See T14858
 
 ## 0.8.0 - 2018-11-07
 

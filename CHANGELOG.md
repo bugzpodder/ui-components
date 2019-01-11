@@ -6,11 +6,12 @@
 4. Add ability to use custom `Component`s in `CommonPage` headeractions.
 5. Add `TabbedTimelineCard`.
 6. Add `isClearable` to `CommonSelect`
-7. Cleanup Flow types.
-8. Include flow definitions in build.
-9. Bug fixes.
-10. Test updates.
-11. Styleguidist updates.
+7. Allow the user to choose falsey values for `CommonSelect`.
+8. Cleanup Flow types.
+9. Include flow definitions in build.
+10. Bug fixes.
+11. Test updates.
+12. Styleguidist updates.
 
 ## 0.8.0 - 2018-11-07
 

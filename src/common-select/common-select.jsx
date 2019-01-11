@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import isEmpty from "lodash/isEmpty";
+import isNil from "lodash/isNil";
 import { CommonSelectComponent } from "./common-select-component";
 import { ReadOnlyTextField } from "../index";
 
@@ -117,7 +118,7 @@ export class CommonSelect extends React.Component<CommonSelectProps> {
           onChange(value);
         }}
         options={isAsyncSelect ? initialOptions : options}
-        value={!isEmpty(value) && value.value ? value : null}
+        value={!isEmpty(value) && !isNil(value.value) ? value : null}
         {...otherProps}
         isMulti={false}
       />

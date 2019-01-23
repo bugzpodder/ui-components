@@ -53,7 +53,7 @@ exports[`render common tabbed page 1`] = `
                 class="MuiSwitch-root"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -62,7 +62,7 @@ exports[`render common tabbed page 1`] = `
                       class="MuiSwitch-icon"
                     />
                     <input
-                      class="MuiSwitchBase-input"
+                      class="MuiPrivateSwitchBase-input"
                       id=""
                       type="checkbox"
                       value=""
@@ -152,7 +152,7 @@ exports[`render common tabbed page 1`] = `
               </button>
             </div>
             <span
-              class="MuiTabIndicator-root MuiTabIndicator-colorPrimary MuiTabs-indicator"
+              class="MuiPrivateTabIndicator-root MuiPrivateTabIndicator-colorPrimary MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
@@ -250,7 +250,7 @@ exports[`render empty common tabbed page 1`] = `
               class="MuiTabs-flexContainer"
             />
             <span
-              class="MuiTabIndicator-root MuiTabIndicator-colorPrimary MuiTabs-indicator"
+              class="MuiPrivateTabIndicator-root MuiPrivateTabIndicator-colorPrimary MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>

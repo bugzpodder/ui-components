@@ -8,8 +8,9 @@ exports[`render Sidebar 1`] = `
     aria-hidden="true"
   />
   <div
-    class="MuiModal-root MuiDrawer-modal"
+    class="MuiModal-root MuiDrawer-root MuiDrawer-modal"
     id="sidebar-drawer"
+    role="presentation"
   >
     <div
       aria-hidden="true"
@@ -18,7 +19,6 @@ exports[`render Sidebar 1`] = `
     />
     <div
       class="MuiPaper-root MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft"
-      direction="right"
       role="document"
       tabindex="-1"
     >
@@ -77,7 +77,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 Sample Management
               </span>
@@ -123,7 +123,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Commercial Accessioning
                       </span>
@@ -141,7 +141,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Research Accessioning
                       </span>
@@ -159,7 +159,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Samples
                       </span>
@@ -177,7 +177,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Stored Samples
                       </span>
@@ -195,7 +195,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Containers
                       </span>
@@ -213,7 +213,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Batches
                       </span>
@@ -231,7 +231,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Issues
                       </span>
@@ -249,7 +249,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Sequencing Runs
                       </span>
@@ -267,7 +267,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Print Labels
                       </span>
@@ -285,7 +285,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Non-Patient Samples
                       </span>
@@ -303,7 +303,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Create Non-Patient Samples
                       </span>
@@ -322,7 +322,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 Automation
               </span>
@@ -368,7 +368,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Program Runs
                       </span>
@@ -386,7 +386,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Resources
                       </span>
@@ -404,7 +404,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Programs
                       </span>
@@ -422,7 +422,7 @@ exports[`render Sidebar 1`] = `
                       class="MuiListItemText-root MuiListItemText-dense"
                     >
                       <span
-                        class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary MuiListItemText-textDense"
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary MuiListItemText-textDense"
                       >
                         Program Regex Tester
                       </span>
@@ -441,7 +441,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 Pipeline
               </span>
@@ -471,7 +471,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 Test Management
               </span>
@@ -501,7 +501,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 Metrics
               </span>
@@ -531,7 +531,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 Reagents
               </span>
@@ -564,7 +564,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 Instruments
               </span>
@@ -579,7 +579,7 @@ exports[`render Sidebar 1`] = `
               class="MuiListItemText-root"
             >
               <span
-                class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
               >
                 R&D
               </span>

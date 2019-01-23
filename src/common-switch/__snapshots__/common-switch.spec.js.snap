@@ -14,7 +14,7 @@ exports[`render error common switch 1`] = `
           class="MuiSwitch-root"
         >
           <span
-            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary error MuiSwitchBase-checked MuiSwitch-checked"
+            class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary error MuiPrivateSwitchBase-checked MuiSwitch-checked"
           >
             <span
               class="MuiIconButton-label"
@@ -24,7 +24,7 @@ exports[`render error common switch 1`] = `
               />
               <input
                 checked=""
-                class="MuiSwitchBase-input"
+                class="MuiPrivateSwitchBase-input"
                 id=""
                 type="checkbox"
                 value=""
@@ -59,7 +59,7 @@ exports[`render primary common switch 1`] = `
           class="MuiSwitch-root"
         >
           <span
-            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary MuiSwitchBase-checked MuiSwitch-checked"
+            class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary MuiPrivateSwitchBase-checked MuiSwitch-checked"
           >
             <span
               class="MuiIconButton-label"
@@ -68,7 +68,7 @@ exports[`render primary common switch 1`] = `
                 class="MuiSwitch-icon MuiSwitch-iconChecked"
               />
               <input
-                class="MuiSwitchBase-input"
+                class="MuiPrivateSwitchBase-input"
                 id=""
                 type="checkbox"
                 value="test"
@@ -109,7 +109,7 @@ exports[`render secondary common switch 1`] = `
           class="MuiSwitch-root"
         >
           <span
-            class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary MuiSwitchBase-checked MuiSwitch-checked"
+            class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary MuiPrivateSwitchBase-checked MuiSwitch-checked"
           >
             <span
               class="MuiIconButton-label"
@@ -119,7 +119,7 @@ exports[`render secondary common switch 1`] = `
               />
               <input
                 checked=""
-                class="MuiSwitchBase-input"
+                class="MuiPrivateSwitchBase-input"
                 id=""
                 type="checkbox"
                 value=""

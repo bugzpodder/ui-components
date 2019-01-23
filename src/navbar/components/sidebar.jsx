@@ -103,11 +103,7 @@ export class Sidebar extends React.Component<Props, State> {
     );
   };
 
-  getIsOpen = (
-    index: number,
-    { sidebarContent = sidebarItems, domain, currentPath }: Props = this.props,
-    state: State = this.state,
-  ): boolean => {
+  getIsOpen = (index: number, { sidebarContent = sidebarItems, domain, currentPath }: Props, state: State): boolean => {
     if (state.openItems.has(index) || state.touchedItems.has(index)) {
       return state.openItems.has(index);
     }
@@ -148,7 +144,7 @@ export class Sidebar extends React.Component<Props, State> {
 
   renderItem = (item: SidebarItem, index: number) => {
     if (item.children !== undefined) {
-      const isOpen = this.getIsOpen(index);
+      const isOpen = this.getIsOpen(index, this.props, this.state);
       return (
         <CollapsableListItem
           key={index}

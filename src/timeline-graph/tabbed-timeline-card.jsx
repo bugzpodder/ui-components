@@ -82,7 +82,7 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
             root: styles.tabs,
             flexContainer: styles.tabsContainer,
           }}
-          fullWidth
+          variant="fullWidth"
           data-testid="card-tabs"
           textColor="primary"
           indicatorColor="primary"

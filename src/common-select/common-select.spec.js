@@ -114,7 +114,7 @@ test("render async CommonSelect with default initial message", () => {
     </TestWrapper>,
   );
   expect(getByTestId("no-options-message")).toBeInTheDocument();
-  expect(getByTestId("no-options-message")).toHaveTextContent("Begin typing...");
+  expect(getByTestId("no-options-message")).toHaveTextContent("Begin Typing...");
   expect(container).toMatchSnapshot();
 });
 

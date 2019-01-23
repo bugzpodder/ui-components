@@ -3,7 +3,9 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./large-table.module.scss";
-import { AutoSizer, Column, Table } from "react-virtualized";
+
+import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
+import Table, { Column } from "react-virtualized/dist/commonjs/Table";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId } from "../utilities/row-utils";
 

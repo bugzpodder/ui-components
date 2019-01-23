@@ -11,7 +11,7 @@ exports[`render selector 1`] = `
       class="MuiFormControl-root selectorForm"
     >
       <label
-        class="MuiFormLabel-root MuiFormLabel-error MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
+        class="MuiFormLabel-root MuiFormLabel-error MuiInputLabel-error MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink"
         data-shrink="true"
       >
         
@@ -29,6 +29,7 @@ exports[`render selector 1`] = `
             aria-pressed="true"
             class="MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             data-testid="selector-button"
+            id="select-test-selector"
             role="button"
             tabindex="0"
           >
@@ -112,6 +113,7 @@ exports[`render selector without selected value 1`] = `
             aria-pressed="false"
             class="MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
             data-testid="selector-button"
+            id="select-test-selector"
             role="button"
             tabindex="0"
           >

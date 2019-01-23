@@ -54,7 +54,7 @@ exports[`render common page 1`] = `
                 class="MuiSwitch-root"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -63,7 +63,7 @@ exports[`render common page 1`] = `
                       class="MuiSwitch-icon"
                     />
                     <input
-                      class="MuiSwitchBase-input"
+                      class="MuiPrivateSwitchBase-input"
                       id=""
                       type="checkbox"
                       value=""
@@ -189,7 +189,7 @@ exports[`render common page with menu 1`] = `
                 class="MuiSwitch-root"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -198,7 +198,7 @@ exports[`render common page with menu 1`] = `
                       class="MuiSwitch-icon"
                     />
                     <input
-                      class="MuiSwitchBase-input"
+                      class="MuiPrivateSwitchBase-input"
                       id=""
                       type="checkbox"
                       value=""
@@ -224,11 +224,10 @@ exports[`render common page with menu 1`] = `
       class="contentAndMenu"
     >
       <div
-        class="MuiDrawer-docked sideMenu contentShift"
+        class="MuiDrawer-root MuiDrawer-docked sideMenu contentShift"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation0 MuiDrawer-paper sideMenuPaper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
-          direction="right"
           style="-webkit-transform: translate(0, 0); transform: translate(0, 0); -webkit-transition: -webkit-transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;"
         >
           <ul
@@ -246,7 +245,7 @@ exports[`render common page with menu 1`] = `
                 class="MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
                 >
                   Menu item one
                 </span>
@@ -267,7 +266,7 @@ exports[`render common page with menu 1`] = `
                 class="MuiListItemText-root"
               >
                 <span
-                  class="MuiTypography-root MuiTypography-subtitle1 MuiListItemText-primary"
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
                 >
                   Menu item two
                 </span>
@@ -409,7 +408,7 @@ exports[`render common page with subheader and content 1`] = `
                 class="MuiSwitch-root"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -418,7 +417,7 @@ exports[`render common page with subheader and content 1`] = `
                       class="MuiSwitch-icon"
                     />
                     <input
-                      class="MuiSwitchBase-input"
+                      class="MuiPrivateSwitchBase-input"
                       id=""
                       type="checkbox"
                       value=""

@@ -1,6 +1,6 @@
 // @flow
 import "jest-dom/extend-expect";
-import MomentUtils from "material-ui-pickers/utils/moment-utils";
+import MomentUtils from "@date-io/moment";
 import React from "react";
 import keycode from "keycode";
 import { DATETIME_SEARCH_TYPE, DATE_SEARCH_TYPE, LIKE_TEXT_SEARCH_TYPE } from "@grail/lib";

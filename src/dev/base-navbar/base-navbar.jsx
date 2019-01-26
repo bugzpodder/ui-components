@@ -76,7 +76,7 @@ export const BaseNavbar = (props: Props) => {
     <Fragment>
       <AppBar
         position="sticky"
-        className={classNames(classes.appBar, styles.appBar)}
+        className={classNames(classes.appBar, styles.appBar, "lims-navbar")}
       >
         {!isProduction && (
           <Typography

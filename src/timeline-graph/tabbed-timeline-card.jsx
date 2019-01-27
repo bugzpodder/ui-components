@@ -1,4 +1,5 @@
 // @flow
+import Card from "@material-ui/core/Card";
 import React from "react";
 import Tab from "@material-ui/core/Tab/Tab";
 import Tabs from "@material-ui/core/Tabs/Tabs";
@@ -72,23 +73,35 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
       return null;
     }
     return (
-      <Tabs
-        data-testid="card-tabs"
-        textColor="primary"
-        indicatorColor="primary"
-        value={selectedTab}
-        onChange={(event, selectedTab) => this.setState({ selectedTab })}
+      <Card
+        square
+        classes={{
+          root: styles.tabsWrapper,
+        }}
       >
-        {Object.keys(tabContents).map((entry, index) => {
-          return (
-            <Tab
-              key={index}
-              value={entry}
-              label={sentenceCase(entry)}
-            />
-          );
-        })}
-      </Tabs>
+        <Tabs
+          classes={{
+            root: styles.tabs,
+            flexContainer: styles.tabsContainer,
+          }}
+          fullWidth
+          data-testid="card-tabs"
+          textColor="primary"
+          indicatorColor="primary"
+          value={selectedTab}
+          onChange={(event, selectedTab) => this.setState({ selectedTab })}
+        >
+          {Object.keys(tabContents).map((entry, index) => {
+            return (
+              <Tab
+                key={index}
+                value={entry}
+                label={sentenceCase(entry)}
+              />
+            );
+          })}
+        </Tabs>
+      </Card>
     );
   };
 
@@ -108,6 +121,7 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
           classes={{
             ...commonCard,
             root: classNames(styles.timelineCard, commonCard.root),
+            body: classNames(styles.timelineCardBody, commonCard.body),
           }}
           {...commonCardProps}
         >

@@ -1,4 +1,9 @@
-## 0.9.0 - 2018-11-21
+## 1.0.0 - ####-##-
+
+1. `TabbedTimelineCard` tabs are now fixed at the top of the card.
+2. Fix timeline card styling to properly handle custom heights.
+
+## 0.9.0 - 2019-01-17
 
 1. Add a hidden element to `Sidebar` to collapse all content. This allows tests to consistently control the sidebar state.
 2. Dialog buttons are now `variant="text"` when disabled.

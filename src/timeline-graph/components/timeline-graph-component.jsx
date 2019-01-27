@@ -95,18 +95,20 @@ export const TimelineGraphComponent = (props: Props) => {
     <div className={classNames(styles.timelineContent, classes.content)}>
       {entries.map((entry, index) => {
         const itemIsSelected = selectedItem === entry.id;
+        const timelineEnd = entries.length - 1;
         return (
           <Grid
             key={index}
             container
             justify="center"
             alignItems="center"
+            className={classNames({ [styles.lastItem]: timelineEnd })}
           >
             {entry.dateNode}
             <div
               className={classNames(styles.timeline, {
                 [styles.timelineStart]: index === 0,
-                [styles.timelineEnd]: index === entries.length - 1,
+                [styles.timelineEnd]: index === timelineEnd,
               })}
             >
               <div className={classNames(styles.notch, { [styles.selected]: itemIsSelected })} />

@@ -49,12 +49,35 @@ $date-margin: 15px;
     overflow-y: scroll;
     min-width: 380px;
     max-width: 500px;
+    height: 100%;
+
+    // Tabs.
+    .timelineCardBody {
+      padding: 0;
+
+      .tabsWrapper {
+        height: 60px;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+
+        .tabs {
+          height: 100%;
+
+          .tabsContainer {
+            height: 100%;
+          }
+        }
+        
+      }
+    }
   }
 
   .timelineContent {
     margin: 25px 0;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
+    padding: 0 24px;
 
     // Date.
     .timelineDateContainer{
@@ -203,6 +226,10 @@ $date-margin: 15px;
         background-color: $grail-contrast-color;
         display: inline-block;
       }
+    }
+
+    .lastItem {
+      margin-bottom: 25px;
     }
   }
 }

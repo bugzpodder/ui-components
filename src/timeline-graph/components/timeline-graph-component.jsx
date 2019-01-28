@@ -96,13 +96,14 @@ export const TimelineGraphComponent = (props: Props) => {
       {entries.map((entry, index) => {
         const itemIsSelected = selectedItem === entry.id;
         const timelineEnd = entries.length - 1;
+        const isLastItem = index === timelineEnd;
         return (
           <Grid
             key={index}
             container
             justify="center"
             alignItems="center"
-            className={classNames({ [styles.lastItem]: timelineEnd })}
+            className={classNames({ [styles.lastItem]: isLastItem })}
           >
             {entry.dateNode}
             <div

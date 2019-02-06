@@ -1,10 +1,11 @@
-declare type TimelineRow = {
-  columns: Array<Array<string>>,
-  date: string,
-};
+declare type TimelineTabProps = {
+  content: Array<TimelineGraphRow>,
+  isDayVisible?: boolean,
+  isTimeVisible?: boolean,
+}
 
-declare type TimelineGraphRows = {
-  [string]: Array<TimelineGraphRow>
+declare type TabbedTimelineGraphContents = {
+  [string]: TimelineTabProps,
 };
 
 declare type TimelineGraphRow = {

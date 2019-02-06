@@ -35,6 +35,8 @@ type Props = {
   onSelect?: (?number) => any,
   /** When `true`, displays the time in the timeline graph */
   isTimeVisible?: boolean,
+  /** When `true`, displays the day of the week in the timeline graph */
+  isDayVisible?: boolean,
   /** The value of the currently selected item. Must be a unique date from the `rows` data objects. */
   selectedItem?: ?number,
 };

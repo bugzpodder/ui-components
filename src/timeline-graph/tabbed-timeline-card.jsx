@@ -12,17 +12,17 @@ import { sentenceCase } from "@grail/lib";
 
 type Props = {
   /**
-   * The content to display on the timeline graph.
-   * Each object should contain an array of objects which should include:
+   * An object where each key is used as the tab name. The value should be an object that contains:
+   *   - content: An array of TimelineGraphRow items. TimelineGraphRow items include:
+   *           - `date`
+   *           - `content`
+   *           - `user` (optional)
    *
-   *  - `date`
-   *
-   *  - `content`
-   *
-   *  - `user` (optional)
+   *   - isDayVisible: when `true`, displays the day of the week in the timeline
+   *   - isTimeVisible: when `true`, displays the time of the operation
    *
    */
-  tabContents: TimelineGraphRows,
+  tabContents: TabbedTimelineGraphContents,
   /** The object used to define `className`s for the TimelineGraph sub components. Options include:
    *
    *  - `root`: the component's root element
@@ -41,8 +41,6 @@ type Props = {
    * timeline entry
    */
   onSelect?: (?number) => any,
-  /** When `true`, displays the time in the timeline graph */
-  isTimeVisible?: boolean,
   /** The value of the currently selected item. Must be a unique date from the `rows` data objects. */
   selectedItem?: ?number,
 };
@@ -114,7 +112,8 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
     if (!tabContents || !selectedTab) {
       return null;
     }
-    const rows = tabContents[selectedTab];
+    const tabContent = tabContents[selectedTab];
+    const rows = tabContent.content;
     return (
       <div className={classNames(styles.timelineContainer, classes.root)}>
         <CommonCard
@@ -131,6 +130,8 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
             classes={classes}
             selectedTab={selectedTab}
             {...timelineProps}
+            isDayVisible={tabContent.isDayVisible}
+            isTimeVisible={tabContent.isTimeVisible}
           />
         </CommonCard>
       </div>

@@ -2,6 +2,9 @@
 
 1. `TabbedTimelineCard` tabs are now fixed at the top of the card.
 2. Fix timeline card styling to properly handle custom heights.
+3. Timelines now support displaying the day of the week (Mon Tue Wed)
+4. TabbedTimelineCard now takes objects for each key which specify content,
+   isTimeVisible, and isDayVisible
 
 ## 0.9.0 - 2019-01-17
 

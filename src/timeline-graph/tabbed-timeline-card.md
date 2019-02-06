@@ -5,8 +5,8 @@ const ExampleWrapper = require("@grail/components").ExampleWrapper;
 const ADAMS_DATA = require("@grail/components/utils").ADAMS_DATA;
 const EMU_DATA = require("@grail/components/utils").EMU_DATA;
 const tabContents = {
-  adams: ADAMS_DATA,
-  emus: EMU_DATA,
+  adams: { content: ADAMS_DATA },
+  emus: { content: EMU_DATA },
 };
 
 <ExampleWrapper>

@@ -14,6 +14,7 @@ type Props = {
   classes?: TimelineGraphClasses,
   onSelect?: (?number) => any,
   isTimeVisible?: boolean,
+  isDayVisible?: boolean,
   selectedItem?: ?number,
   hasTabs?: boolean,
   selectedTab?: string,
@@ -21,7 +22,7 @@ type Props = {
 
 export const TimelineGraphComponent = (props: Props) => {
   const {
-    onSelect, selectedItem, isTimeVisible, rows, classes = {},
+    onSelect, selectedItem, isTimeVisible, isDayVisible, rows, classes = {},
   } = props;
   const entries = rows.map((item, index) => {
     const year = moment(item.date).format("YYYY");
@@ -74,6 +75,7 @@ export const TimelineGraphComponent = (props: Props) => {
             {// Since year is separate from month and day, we can not use ISO-8601 format or numeric date format.
             // These would be confusing to HK, etc.
             moment(item.date).format("DD MMM")}
+            {isDayVisible && <div>{moment(item.date).format("ddd")}</div>}
           </Typography>
           {isTimeVisible && (
             <Typography

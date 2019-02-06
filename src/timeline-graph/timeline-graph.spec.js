@@ -19,13 +19,15 @@ const rows = [
 ];
 
 const tabContents = {
-  tabOne: rows,
-  tabTwo: [
-    {
-      date: "2019-04-20T16:20:00",
-      content: <div>Test Two</div>,
-    },
-  ],
+  tabOne: { content: rows },
+  tabTwo: {
+    content: [
+      {
+        date: "2019-04-20T16:20:00",
+        content: <div>Test Two</div>,
+      },
+    ],
+  },
 };
 
 test("render simple timeline graph", () => {

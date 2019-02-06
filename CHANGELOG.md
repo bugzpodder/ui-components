@@ -5,6 +5,7 @@
 3. Timelines now support displaying the day of the week (Mon Tue Wed)
 4. TabbedTimelineCard now takes objects for each key which specify content,
    isTimeVisible, and isDayVisible
+5. Refactor to use new Api search types like `SearchOptionsV2`. See D24185
 
 ## 0.9.0 - 2019-01-17
 

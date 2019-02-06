@@ -13,19 +13,16 @@ const searchOptions = [
     name: OMNI_KEY,
     type: LIKE_TEXT_SEARCH_TYPE,
     values: ["test", "Test 2"],
-    searchFields: [],
   },
   {
     name: "Search Field",
     type: LIKE_TEXT_SEARCH_TYPE,
     values: ["test", "test 2", "test 3"],
-    searchFields: [],
   },
   {
     name: "Empty Search Field",
     type: LIKE_TEXT_SEARCH_TYPE,
     values: undefined,
-    searchFields: [],
   },
 ];
 

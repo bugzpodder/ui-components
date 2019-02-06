@@ -8,7 +8,7 @@ const {
   OMNI_TEXT_SEARCH_TYPE,
   DATETIME_SEARCH_TYPE,
   FULL_TEXT_SEARCH_TYPE,
-  MULTI_FIELD_TEXT_SEARCH_TYPE,
+  LIKE_TEXT_SEARCH_TYPE,
   OMNI_KEY,
   SET_OMNI_FIELD_COMMAND,
 } = require("@grail/lib");
@@ -23,7 +23,7 @@ const initialSearchOptions = [
   },
   {
     name: "Labels",
-    type: MULTI_FIELD_TEXT_SEARCH_TYPE,
+    type: LIKE_TEXT_SEARCH_TYPE,
     searchFields: ["label"],
     values: ["labels value"],
   },

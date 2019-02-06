@@ -19,11 +19,11 @@ import { OmniDropdown } from "./components/omni-dropdown";
 
 type Props = {
   /** Defines the search parameters. */
-  searchDefs: SearchDefs,
+  searchDefs: OmniSearchDefs,
   /** Handles a request to search. */
   setSearchOptions: ({ searchOptions: SearchOptionsV2 }) => any,
   /** getInitialValues gets values to default to for omni-search. */
-  getInitialValues?: (searchDefs: SearchDefs) => SearchValues,
+  getInitialValues?: (searchDefs: OmniSearchDefs) => OmniSearchValues,
   /** Takes a `node` to include in the omni dropdown after the search fields */
   children?: React$Node,
   /** Omni search change command queue */
@@ -36,7 +36,7 @@ type State = {
   isOpen: boolean,
   omniText: string,
   error: string,
-  searchValues: SearchValues,
+  searchValues: OmniSearchValues,
 };
 
 /**
@@ -51,7 +51,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
     searchValues: new Map(),
   };
 
-  lastSearchedValues: ?SearchValues = null;
+  lastSearchedValues: ?OmniSearchValues = null;
 
   componentDidMount = async () => {
     const { location, getInitialValues } = this.props;
@@ -106,12 +106,12 @@ export class OmniSearchBar extends React.Component<Props, State> {
     }
   };
 
-  getLocalStorageKey = (pathname: string, searchDef: SearchDef) => {
+  getLocalStorageKey = (pathname: string, searchDef: OmniSearchDef) => {
     const { name, localStorageKeySuffix } = searchDef;
     return localStorageKeySuffix != null ? `omni-${localStorageKeySuffix}` : `omni-${pathname}-${name}`;
   };
 
-  getValuesFromLocalStorage = (pathname: string, searchDefs: SearchDefs) => {
+  getValuesFromLocalStorage = (pathname: string, searchDefs: OmniSearchDefs) => {
     const storageValues: Map<number, string> = new Map();
     if (!pathname) {
       return storageValues;
@@ -125,7 +125,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
     return storageValues;
   };
 
-  setValuesToLocalStorage = (pathname: string, searchDefs: SearchDefs, searchValues: SearchValues) => {
+  setValuesToLocalStorage = (pathname: string, searchDefs: OmniSearchDefs, searchValues: OmniSearchValues) => {
     if (!pathname) {
       return;
     }
@@ -251,7 +251,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
       if (index === -1) {
         return;
       }
-      const searchValues: SearchValues = new Map(this.state.searchValues).set(index, value);
+      const searchValues: OmniSearchValues = new Map(this.state.searchValues).set(index, value);
       omniText = getOmniTextFromSearchValues(this.props.searchDefs, searchValues);
     }
     return await this.updateOmniText(omniText);

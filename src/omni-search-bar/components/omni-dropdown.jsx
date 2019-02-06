@@ -9,8 +9,8 @@ import { SearchField } from "./search-field";
 import { TwoColumnRow } from "../../two-column-grid";
 
 type Props = {
-  searchDefs: SearchDefs,
-  searchValues: SearchValues,
+  searchDefs: OmniSearchDefs,
+  searchValues: OmniSearchValues,
   onChange: (string, string) => any,
   onClear: () => any,
   onSearch: () => void,

@@ -4,6 +4,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Close from "@material-ui/icons/Close";
 import IconButton from "@material-ui/core/IconButton";
 import React from "react";
+import Typography from "@material-ui/core/Typography";
 import moment from "moment";
 import styles from "../notification.module.scss";
 import { DATE_TIME_FORMAT } from "@grail/lib";
@@ -41,9 +42,8 @@ export const NotificationCard = (props: Props) => {
           <Close />
         </IconButton>
 
-        {message}
-        <br />
-        <small className={styles.timestamp}>{moment(time).format(DATE_TIME_FORMAT)}</small>
+        <Typography>{message}</Typography>
+        <Typography variant="caption">{moment(time).format(DATE_TIME_FORMAT)}</Typography>
       </CardContent>
     </Card>
   );

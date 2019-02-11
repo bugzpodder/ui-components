@@ -43,12 +43,8 @@ export const TableHeader = (props: Props) => {
     const sortOptions = [];
     if (ctrlKey) {
       // If the user holds ctrl while clicking on a header, multi-sort.
-      if (currentSortField) {
-        sortFieldsById.set(fieldId, newSortField);
-        sortOptions.push(...sortFieldsById.values());
-      } else {
-        sortOptions.push(newSortField);
-      }
+      sortFieldsById.set(fieldId, newSortField);
+      sortOptions.push(...sortFieldsById.values());
     } else {
       sortOptions.push(newSortField);
     }

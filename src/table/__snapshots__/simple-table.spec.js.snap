@@ -77,7 +77,7 @@ exports[`render full simple table 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="First Datum-0"
           >
             <span
@@ -140,7 +140,7 @@ exports[`render full simple table 1`] = `
           data-testid="Fourth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Fourth Datum-0"
           >
             <span
@@ -203,7 +203,7 @@ exports[`render full simple table 1`] = `
           data-testid="Seventh Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Seventh Datum-0"
           >
             <span
@@ -265,7 +265,7 @@ exports[`render full simple table 1`] = `
           data-testid="Tenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Tenth Datum-0"
           >
             <span
@@ -327,7 +327,7 @@ exports[`render full simple table 1`] = `
           data-testid="Thirteenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
@@ -389,7 +389,7 @@ exports[`render full simple table 1`] = `
           data-testid="Seventeenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Seventeenth Datum-0"
           >
             <span
@@ -948,7 +948,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="First Datum-0"
           >
             <span
@@ -1011,7 +1011,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Fourth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Fourth Datum-0"
           >
             <span
@@ -1074,7 +1074,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Seventh Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Seventh Datum-0"
           >
             <span
@@ -1136,7 +1136,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Tenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Tenth Datum-0"
           >
             <span
@@ -1198,7 +1198,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Thirteenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
@@ -1260,7 +1260,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Seventeenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
             data-cell-id="Seventeenth Datum-0"
           >
             <span

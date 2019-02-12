@@ -2,7 +2,6 @@
 import Checkbox from "@material-ui/core/Checkbox/Checkbox";
 import React from "react";
 import classNames from "classnames";
-import styles from "../table.module.scss";
 
 export const getCheckboxColumn = (selectionProps: SelectionProps) => {
   const {
@@ -37,7 +36,6 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
 
   return {
     accessor: "COLUMN_SELECT",
-    className: styles.singleIcon,
     Header: (
       <Checkbox
         className={classNames({ active: allAreChecked, indeterminate: someAreChecked })}

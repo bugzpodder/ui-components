@@ -1,0 +1,26 @@
+@import "../../styles/colors";
+@import "../highlighted-row";
+
+.Table {
+  width: 100%;
+  > div {
+    outline: none;
+  }
+
+  .row, .headerRow {
+    display: flex;
+    flex-direction: row;
+    > div {
+      margin: auto 0;
+    }
+    border-bottom: 1px solid $grail-gray-light-color;
+  }
+
+  .highlightedRow {
+    @include highlighted-row;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .tableCell {
+    padding: 0 4px;
+  }
+}

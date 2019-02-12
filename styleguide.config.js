@@ -71,6 +71,7 @@ module.exports = {
         "./src/omni-search-bar/omni-search-bar.jsx",
         "./src/table/paged-table.jsx",
         "./src/table/simple-table.jsx",
+        "./src/table/large-simple-table.jsx",
         "./src/timeline-graph/timeline-graph.jsx",
         "./src/timeline-graph/timeline-card.jsx",
         "./src/timeline-graph/tabbed-timeline-card.jsx",

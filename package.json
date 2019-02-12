@@ -44,7 +44,8 @@
     "node-sass": "^4.9.4",
     "path-to-regexp": "^2.4.0",
     "react-jss": "^8.6.1",
-    "react-select": "^2.1.1"
+    "react-select": "^2.1.1",
+    "react-virtualized": "^9.21.0"
   },
   "devDependencies": {
     "@babel/node": "^7.0.0",

@@ -1,0 +1,541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render full simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="4"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table Table"
+          role="grid"
+        >
+          <div
+            class="ReactVirtualized__Table__headerRow headerRow"
+            role="row"
+            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+          >
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class="singleIcon"
+              >
+                <span
+                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                      />
+                    </svg>
+                    <input
+                      checked=""
+                      class="MuiSwitchBase-input"
+                      data-indeterminate="true"
+                      data-testid="table-checkbox-header"
+                      type="checkbox"
+                      value=""
+                    />
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column One
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column Two
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render loading simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table Table"
+          role="grid"
+        >
+          <div
+            class="ReactVirtualized__Table__headerRow headerRow"
+            role="row"
+            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+          >
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column One
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column Two
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+    <div
+      class="spinnerOverlay active"
+      data-is-active="true"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table Table"
+          role="grid"
+        >
+          <div
+            class="ReactVirtualized__Table__headerRow headerRow"
+            role="row"
+            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+          >
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column One
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column Two
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render simple table with all items selected 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="4"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table Table"
+          role="grid"
+        >
+          <div
+            class="ReactVirtualized__Table__headerRow headerRow"
+            role="row"
+            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+          >
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class="singleIcon"
+              >
+                <span
+                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                      />
+                    </svg>
+                    <input
+                      checked=""
+                      class="MuiSwitchBase-input"
+                      data-indeterminate="true"
+                      data-testid="table-checkbox-header"
+                      type="checkbox"
+                      value=""
+                    />
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column One
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column Two
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render simple table with no results 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body2"
+    >
+      No data
+    </p>
+  </div>
+</div>
+`;
+
+exports[`render simple table with no results and is loading 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="0"
+          class="ReactVirtualized__Table Table"
+          role="grid"
+        >
+          <div
+            class="ReactVirtualized__Table__headerRow headerRow"
+            role="row"
+            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+          >
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column One
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body2"
+                >
+                  Column Two
+                </p>
+              </div>
+            </div>
+            <div
+              class="ReactVirtualized__Table__headerColumn headerColumn"
+              role="columnheader"
+            >
+              <div
+                class=""
+              />
+            </div>
+          </div>
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+    <div
+      class="spinnerOverlay active"
+      data-is-active="true"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;

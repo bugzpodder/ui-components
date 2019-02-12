@@ -55,6 +55,18 @@ export const EXAMPLE_TABLE_DATA = [
   { word: "Erinaceous", origin: "General English" },
 ];
 
+export const LARGE_EXAMPLE_TABLE_DATA = [];
+for (let i = 0; i < 1000; i++) {
+  // Create about 17,000 records.
+  LARGE_EXAMPLE_TABLE_DATA.push(...EXAMPLE_TABLE_DATA);
+}
+
+export const EXTRA_LARGE_EXAMPLE_TABLE_DATA = [];
+for (let i = 0; i < 100; i++) {
+  // Create about 1,700,000 records
+  EXTRA_LARGE_EXAMPLE_TABLE_DATA.push(...LARGE_EXAMPLE_TABLE_DATA);
+}
+
 export const ADAMS_DATA = [
   {
     date: "1848-02-23T16:20:00Z",

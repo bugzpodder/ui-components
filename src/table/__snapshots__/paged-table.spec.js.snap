@@ -539,7 +539,7 @@ exports[`render paged table and test pagination 1`] = `
             data-testid="First Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="First Datum-0"
             >
               <span
@@ -602,7 +602,7 @@ exports[`render paged table and test pagination 1`] = `
             data-testid="Fourth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Fourth Datum-0"
             >
               <span
@@ -665,7 +665,7 @@ exports[`render paged table and test pagination 1`] = `
             data-testid="Seventh Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Seventh Datum-0"
             >
               <span
@@ -727,7 +727,7 @@ exports[`render paged table and test pagination 1`] = `
             data-testid="Tenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Tenth Datum-0"
             >
               <span
@@ -789,7 +789,7 @@ exports[`render paged table and test pagination 1`] = `
             data-testid="Thirteenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Thirteenth Datum-0"
             >
               <span
@@ -851,7 +851,7 @@ exports[`render paged table and test pagination 1`] = `
             data-testid="Seventeenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Seventeenth Datum-0"
             >
               <span
@@ -1393,7 +1393,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             data-testid="First Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="First Datum-0"
             >
               <span
@@ -1456,7 +1456,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             data-testid="Fourth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Fourth Datum-0"
             >
               <span
@@ -1519,7 +1519,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             data-testid="Seventh Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Seventh Datum-0"
             >
               <span
@@ -1582,7 +1582,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             data-testid="Tenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Tenth Datum-0"
             >
               <span
@@ -1645,7 +1645,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             data-testid="Thirteenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Thirteenth Datum-0"
             >
               <span
@@ -1708,7 +1708,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             data-testid="Seventeenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Seventeenth Datum-0"
             >
               <span
@@ -1854,7 +1854,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             data-testid="0"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="0-0"
             >
               <span
@@ -1916,7 +1916,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             data-testid="1"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="1-0"
             >
               <span
@@ -1978,7 +1978,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             data-testid="2"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="2-0"
             >
               <span
@@ -2040,7 +2040,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             data-testid="3"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="3-0"
             >
               <span
@@ -2102,7 +2102,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             data-testid="4"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="4-0"
             >
               <span
@@ -2164,7 +2164,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             data-testid="5"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="5-0"
             >
               <span
@@ -2309,7 +2309,7 @@ exports[`render paged table with no initially selected items, then select items 
             data-testid="First Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="First Datum-0"
             >
               <span
@@ -2371,7 +2371,7 @@ exports[`render paged table with no initially selected items, then select items 
             data-testid="Fourth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Fourth Datum-0"
             >
               <span
@@ -2433,7 +2433,7 @@ exports[`render paged table with no initially selected items, then select items 
             data-testid="Seventh Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Seventh Datum-0"
             >
               <span
@@ -2495,7 +2495,7 @@ exports[`render paged table with no initially selected items, then select items 
             data-testid="Tenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Tenth Datum-0"
             >
               <span
@@ -2557,7 +2557,7 @@ exports[`render paged table with no initially selected items, then select items 
             data-testid="Thirteenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Thirteenth Datum-0"
             >
               <span
@@ -2619,7 +2619,7 @@ exports[`render paged table with no initially selected items, then select items 
             data-testid="Seventeenth Datum"
           >
             <td
-              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
               data-cell-id="Seventeenth Datum-0"
             >
               <span

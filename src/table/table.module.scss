@@ -1,5 +1,6 @@
 @import "../styles/breakpoints.scss";
 @import "../styles/colors";
+@import "./highlighted-row";
 
 %common-table-cell {
   padding: 4px;
@@ -67,16 +68,7 @@
   .highlightedRow {
     td:first-child {
       position: relative;
-      &:before {
-        display: block;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 3px;
-        background-color: $grail-gold-color;
-      }
+      @include highlighted-row;
     }
   }
 

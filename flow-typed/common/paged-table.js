@@ -20,7 +20,7 @@ declare type PagedTableColumn = {
   Header?: Node<*>,
   accessor?: string | Function,
   sortable?: boolean,
-  Cell?: PagedTableCell => Node<*>,
+  Cell?: Node<PagedTableCell>,
   headerClassName?: string,
   className?: string | Function,
   isSingleIcon?: boolean,

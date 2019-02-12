@@ -6,6 +6,9 @@
 4. TabbedTimelineCard now takes objects for each key which specify content,
    isTimeVisible, and isDayVisible
 5. Refactor to use new Api search types like `SearchOptionsV2`. See D24185
+6. Add `LargeSimpleTable` to render lots (100-millions) of rows of
+   tabular data, performantly. Similar signature to `SimpleTable`.
+7. Make very minor adjustment to padding of `SimpleTable` checkboxes.
 
 ## 0.9.0 - 2019-01-17
 

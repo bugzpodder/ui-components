@@ -16,7 +16,7 @@ export { ReadOnlyTextField, ValidatedReadOnlyTextField } from "./readonly-text-f
 export { OmniChips, OmniSearchBar } from "./omni-search-bar";
 export { TwoColumnGrid, TwoColumnRow } from "./two-column-grid";
 export { CollapsableListItem } from "./list";
-export { PagedTable, SimpleTable } from "./table";
+export { LargeSimpleTable, PagedTable, SimpleTable } from "./table";
 export { Selector } from "./selector";
 export { SignInPage } from "./sign-in-page";
 export { SpinnerOverlay } from "./spinner-overlay";

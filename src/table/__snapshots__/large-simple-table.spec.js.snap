@@ -28,7 +28,7 @@ exports[`render full simple table 1`] = `
                 class="singleIcon"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -46,7 +46,7 @@ exports[`render full simple table 1`] = `
                     </svg>
                     <input
                       checked=""
-                      class="MuiSwitchBase-input"
+                      class="MuiPrivateSwitchBase-input"
                       data-indeterminate="true"
                       data-testid="table-checkbox-header"
                       type="checkbox"
@@ -334,7 +334,7 @@ exports[`render simple table with all items selected 1`] = `
                 class="singleIcon"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -352,7 +352,7 @@ exports[`render simple table with all items selected 1`] = `
                     </svg>
                     <input
                       checked=""
-                      class="MuiSwitchBase-input"
+                      class="MuiPrivateSwitchBase-input"
                       data-indeterminate="true"
                       data-testid="table-checkbox-header"
                       type="checkbox"

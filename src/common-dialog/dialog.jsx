@@ -66,6 +66,8 @@ export const CommonDialog = (props: Props) => {
       className={classNames(styles.commonDialog, classes.root)}
       PaperProps={{ className: classNames(styles.commonDialogPaper, classes.paper) }}
       onClose={hideModal}
+      maxWidth={false}
+      scroll="body"
       {...dialogProps}
     >
       <DialogTitle

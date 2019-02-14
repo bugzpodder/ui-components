@@ -76,6 +76,8 @@ export const CommonMultiPageDialog = (props: Props) => {
       className={classNames(styles.commonDialog, classes.root)}
       PaperProps={{ className: styles.commonDialogPaper }}
       onClose={hideModal}
+      maxWidth={false}
+      scroll="body"
       {...dialogProps}
     >
       <DialogTitle
@@ -99,15 +101,14 @@ export const CommonMultiPageDialog = (props: Props) => {
       >
         <div className={styles.commonDialogFooter}>
           <div className={styles.left}>
-            {pageIndex > 0 &&
-              showBackButton && (
-                <Button
-                  id="back"
-                  className="back"
-                  onClick={setPage.bind(null, pageIndex - 1)}
-                >
-                  <ArrowBackIcon className="margin-right-5" /> Back
-                </Button>
+            {pageIndex > 0 && showBackButton && (
+              <Button
+                id="back"
+                className="back"
+                onClick={setPage.bind(null, pageIndex - 1)}
+              >
+                <ArrowBackIcon className="margin-right-5" /> Back
+              </Button>
             )}
             {leftActionButtons}
           </div>

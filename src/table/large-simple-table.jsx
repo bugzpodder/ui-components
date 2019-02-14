@@ -6,6 +6,8 @@ import { LargeTableComponent } from "./components/large-table-component";
 import { SpinnerOverlay } from "../spinner-overlay";
 
 type Props = {
+  /** id for the table element */
+  id?: string,
   /** Provides the information you wish to display */
   data: Array<Object>,
   /**

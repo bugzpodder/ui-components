@@ -8,6 +8,7 @@ import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId } from "../utilities/row-utils";
 
 type Props = {
+  id?: string,
   columns: Array<PagedTableColumn>,
   data: Array<Object>,
   isLoading: boolean,
@@ -21,6 +22,7 @@ type Props = {
 
 export const LargeTableComponent = (props: Props) => {
   const {
+    id,
     columns,
     data,
     idKey,
@@ -49,6 +51,7 @@ export const LargeTableComponent = (props: Props) => {
         {({ width }) => {
           return (
             <Table
+              id={id}
               height={300}
               overscanRowCount={1}
               rowCount={data.length}

@@ -7,6 +7,77 @@ exports[`render full simple table 1`] = `
   >
     <div>
       <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell COLUMN_SELECT-header singleIcon"
+          >
+            <div
+              class="headerText"
+            >
+              <span
+                class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                    />
+                  </svg>
+                  <input
+                    checked=""
+                    class="MuiPrivateSwitchBase-input"
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+          </div>
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
         style="overflow: visible; width: 0px;"
       >
         <div
@@ -16,100 +87,11 @@ exports[`render full simple table 1`] = `
           role="grid"
         >
           <div
-            class="ReactVirtualized__Table__headerRow headerRow"
-            role="row"
-            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
-          >
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="COLUMN_SELECT-header singleIcon"
-              >
-                <div
-                  class="headerText"
-                >
-                  <span
-                    class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
-                  >
-                    <span
-                      class="MuiIconButton-label"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root"
-                        focusable="false"
-                        role="presentation"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
-                        />
-                      </svg>
-                      <input
-                        checked=""
-                        class="MuiPrivateSwitchBase-input"
-                        data-indeterminate="true"
-                        data-testid="table-checkbox-header"
-                        type="checkbox"
-                        value=""
-                      />
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnOne-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column One
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnTwo-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column Two
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="tableHeader"
-              >
-                <div
-                  class="headerText"
-                />
-              </div>
-            </div>
-          </div>
-          <div
             aria-label="grid"
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
             tabindex="0"
           />
         </div>
@@ -140,6 +122,39 @@ exports[`render loading simple table 1`] = `
   >
     <div>
       <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
         style="overflow: visible; width: 0px;"
       >
         <div
@@ -149,57 +164,11 @@ exports[`render loading simple table 1`] = `
           role="grid"
         >
           <div
-            class="ReactVirtualized__Table__headerRow headerRow"
-            role="row"
-            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
-          >
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnOne-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column One
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnTwo-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column Two
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="tableHeader"
-              >
-                <div
-                  class="headerText"
-                />
-              </div>
-            </div>
-          </div>
-          <div
             aria-label="grid"
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
             tabindex="0"
           />
         </div>
@@ -239,6 +208,39 @@ exports[`render simple table 1`] = `
   >
     <div>
       <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
         style="overflow: visible; width: 0px;"
       >
         <div
@@ -248,57 +250,11 @@ exports[`render simple table 1`] = `
           role="grid"
         >
           <div
-            class="ReactVirtualized__Table__headerRow headerRow"
-            role="row"
-            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
-          >
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnOne-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column One
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnTwo-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column Two
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="tableHeader"
-              >
-                <div
-                  class="headerText"
-                />
-              </div>
-            </div>
-          </div>
-          <div
             aria-label="grid"
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
             tabindex="0"
           />
         </div>
@@ -329,6 +285,77 @@ exports[`render simple table with all items selected 1`] = `
   >
     <div>
       <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell COLUMN_SELECT-header singleIcon"
+          >
+            <div
+              class="headerText"
+            >
+              <span
+                class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                    />
+                  </svg>
+                  <input
+                    checked=""
+                    class="MuiPrivateSwitchBase-input"
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </span>
+            </div>
+          </div>
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
         style="overflow: visible; width: 0px;"
       >
         <div
@@ -338,100 +365,11 @@ exports[`render simple table with all items selected 1`] = `
           role="grid"
         >
           <div
-            class="ReactVirtualized__Table__headerRow headerRow"
-            role="row"
-            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
-          >
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="COLUMN_SELECT-header singleIcon"
-              >
-                <div
-                  class="headerText"
-                >
-                  <span
-                    class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
-                  >
-                    <span
-                      class="MuiIconButton-label"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root"
-                        focusable="false"
-                        role="presentation"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
-                        />
-                      </svg>
-                      <input
-                        checked=""
-                        class="MuiPrivateSwitchBase-input"
-                        data-indeterminate="true"
-                        data-testid="table-checkbox-header"
-                        type="checkbox"
-                        value=""
-                      />
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnOne-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column One
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnTwo-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column Two
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="tableHeader"
-              >
-                <div
-                  class="headerText"
-                />
-              </div>
-            </div>
-          </div>
-          <div
             aria-label="grid"
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
             tabindex="0"
           />
         </div>
@@ -476,6 +414,39 @@ exports[`render simple table with no results and is loading 1`] = `
   >
     <div>
       <div
+        class="headerContainer"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
         style="overflow: visible; width: 0px;"
       >
         <div
@@ -485,57 +456,11 @@ exports[`render simple table with no results and is loading 1`] = `
           role="grid"
         >
           <div
-            class="ReactVirtualized__Table__headerRow headerRow"
-            role="row"
-            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
-          >
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnOne-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column One
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="columnTwo-header tableHeader"
-              >
-                <div
-                  class="headerText"
-                >
-                  Column Two
-                </div>
-              </div>
-            </div>
-            <div
-              class="ReactVirtualized__Table__headerColumn header"
-              role="columnheader"
-            >
-              <div
-                class="tableHeader"
-              >
-                <div
-                  class="headerText"
-                />
-              </div>
-            </div>
-          </div>
-          <div
             aria-label="grid"
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
             tabindex="0"
           />
         </div>

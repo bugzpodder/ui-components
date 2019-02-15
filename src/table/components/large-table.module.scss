@@ -1,7 +1,7 @@
 @import "../../styles/colors";
 @import "../highlighted-row";
 
-.table {
+.table, .headerContainer {
   width: 100%;
   > div {
     outline: none;
@@ -29,4 +29,18 @@
   .tableCell {
     padding: 0 4px;
   }
+  .headerCell {
+    flex: 1 1 50px;
+  }
+  .singleIcon {
+    flex: unset;
+    .headerText {
+      margin: 0;
+    }
+  }
+}
+
+.headerContainerPadding {
+  // account for table scroll bar. This is somewhat hacky.
+  padding-right: 15px;
 }

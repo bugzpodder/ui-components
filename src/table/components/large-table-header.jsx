@@ -5,14 +5,13 @@ import styles from "./large-table.module.scss";
 
 type Props = {
   tableColumns: Array<PagedTableColumn>,
-  data: Array<Object>,
   enableSelectAll: boolean,
 };
 
 export const LargeTableHeader = (props: Props) => {
-  const { tableColumns, data, enableSelectAll = true } = props;
+  const { tableColumns, enableSelectAll = true } = props;
   return (
-    <div className={classNames(styles.headerContainer, { [styles.headerContainerPadding]: data.length > 5 })}>
+    <div className={classNames(styles.headerContainer, styles.headerContainerPadding)}>
       <div className={styles.headerRow}>
         {tableColumns.map((tableColumn, columnIndex) => {
           const {

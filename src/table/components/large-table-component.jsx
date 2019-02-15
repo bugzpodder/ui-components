@@ -51,7 +51,6 @@ export const LargeTableComponent = (props: Props) => {
   return (
     <div>
       <LargeTableHeader
-        data={data}
         tableColumns={tableColumns}
         enableSelectAll={enableSelectAll}
       />
@@ -81,6 +80,7 @@ export const LargeTableComponent = (props: Props) => {
                 });
               }}
               rowGetter={({ index }) => data[index]}
+              gridStyle={{ overflow: "hidden scroll" }}
             >
               {tableColumns.map(({
                 Cell, Header, accessor = "", className = "", isSingleIcon,

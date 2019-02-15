@@ -12,88 +12,96 @@ exports[`render full simple table 1`] = `
         <div
           aria-colcount="4"
           aria-rowcount="6"
-          class="ReactVirtualized__Table Table"
+          class="ReactVirtualized__Table table"
           role="grid"
         >
           <div
             class="ReactVirtualized__Table__headerRow headerRow"
             role="row"
-            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
           >
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class="singleIcon"
+                class="COLUMN_SELECT-header singleIcon"
               >
-                <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                <div
+                  class="headerText"
                 >
                   <span
-                    class="MuiIconButton-label"
+                    class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
+                    <span
+                      class="MuiIconButton-label"
                     >
-                      <path
-                        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                        />
+                      </svg>
+                      <input
+                        checked=""
+                        class="MuiPrivateSwitchBase-input"
+                        data-indeterminate="true"
+                        data-testid="table-checkbox-header"
+                        type="checkbox"
+                        value=""
                       />
-                    </svg>
-                    <input
-                      checked=""
-                      class="MuiPrivateSwitchBase-input"
-                      data-indeterminate="true"
-                      data-testid="table-checkbox-header"
-                      type="checkbox"
-                      value=""
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
                     />
                   </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </span>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnOne-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column One
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnTwo-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column Two
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
-              />
+                class="tableHeader"
+              >
+                <div
+                  class="headerText"
+                />
+              </div>
             </div>
           </div>
           <div
@@ -101,7 +109,7 @@ exports[`render full simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           />
         </div>
@@ -137,49 +145,53 @@ exports[`render loading simple table 1`] = `
         <div
           aria-colcount="3"
           aria-rowcount="6"
-          class="ReactVirtualized__Table Table"
+          class="ReactVirtualized__Table table"
           role="grid"
         >
           <div
             class="ReactVirtualized__Table__headerRow headerRow"
             role="row"
-            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
           >
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnOne-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column One
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnTwo-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column Two
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
-              />
+                class="tableHeader"
+              >
+                <div
+                  class="headerText"
+                />
+              </div>
             </div>
           </div>
           <div
@@ -187,7 +199,7 @@ exports[`render loading simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           />
         </div>
@@ -232,49 +244,53 @@ exports[`render simple table 1`] = `
         <div
           aria-colcount="3"
           aria-rowcount="6"
-          class="ReactVirtualized__Table Table"
+          class="ReactVirtualized__Table table"
           role="grid"
         >
           <div
             class="ReactVirtualized__Table__headerRow headerRow"
             role="row"
-            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
           >
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnOne-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column One
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnTwo-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column Two
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
-              />
+                class="tableHeader"
+              >
+                <div
+                  class="headerText"
+                />
+              </div>
             </div>
           </div>
           <div
@@ -282,7 +298,7 @@ exports[`render simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           />
         </div>
@@ -318,88 +334,96 @@ exports[`render simple table with all items selected 1`] = `
         <div
           aria-colcount="4"
           aria-rowcount="6"
-          class="ReactVirtualized__Table Table"
+          class="ReactVirtualized__Table table"
           role="grid"
         >
           <div
             class="ReactVirtualized__Table__headerRow headerRow"
             role="row"
-            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
           >
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class="singleIcon"
+                class="COLUMN_SELECT-header singleIcon"
               >
-                <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                <div
+                  class="headerText"
                 >
                   <span
-                    class="MuiIconButton-label"
+                    class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
+                    <span
+                      class="MuiIconButton-label"
                     >
-                      <path
-                        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                        />
+                      </svg>
+                      <input
+                        checked=""
+                        class="MuiPrivateSwitchBase-input"
+                        data-indeterminate="true"
+                        data-testid="table-checkbox-header"
+                        type="checkbox"
+                        value=""
                       />
-                    </svg>
-                    <input
-                      checked=""
-                      class="MuiPrivateSwitchBase-input"
-                      data-indeterminate="true"
-                      data-testid="table-checkbox-header"
-                      type="checkbox"
-                      value=""
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
                     />
                   </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </span>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnOne-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column One
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnTwo-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column Two
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
-              />
+                class="tableHeader"
+              >
+                <div
+                  class="headerText"
+                />
+              </div>
             </div>
           </div>
           <div
@@ -407,7 +431,7 @@ exports[`render simple table with all items selected 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           />
         </div>
@@ -457,49 +481,53 @@ exports[`render simple table with no results and is loading 1`] = `
         <div
           aria-colcount="3"
           aria-rowcount="0"
-          class="ReactVirtualized__Table Table"
+          class="ReactVirtualized__Table table"
           role="grid"
         >
           <div
             class="ReactVirtualized__Table__headerRow headerRow"
             role="row"
-            style="height: 50px; overflow: hidden; padding-right: 0px; width: 0px;"
+            style="height: 60px; overflow: hidden; padding-right: 0px; width: 0px;"
           >
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnOne-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column One
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
+                class="columnTwo-header tableHeader"
               >
-                <p
-                  class="MuiTypography-root MuiTypography-body2"
+                <div
+                  class="headerText"
                 >
                   Column Two
-                </p>
+                </div>
               </div>
             </div>
             <div
-              class="ReactVirtualized__Table__headerColumn headerColumn"
+              class="ReactVirtualized__Table__headerColumn header"
               role="columnheader"
             >
               <div
-                class=""
-              />
+                class="tableHeader"
+              >
+                <div
+                  class="headerText"
+                />
+              </div>
             </div>
           </div>
           <div
@@ -507,7 +535,7 @@ exports[`render simple table with no results and is loading 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 250px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
+            style="box-sizing: border-box; direction: ltr; height: 240px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden;"
             tabindex="0"
           />
         </div>

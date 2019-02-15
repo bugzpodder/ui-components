@@ -13,6 +13,7 @@ type Props = {
   data: Array<Object>,
   isLoading: boolean,
   selectedRows: Array<number | string>,
+  classes?: PagedTableClasses,
   idKey?: string | number,
   onSelect?: (Array<any>) => any,
   onHighlightRow?: (?number | ?string) => any,
@@ -23,6 +24,7 @@ type Props = {
 export const LargeTableComponent = (props: Props) => {
   const {
     id,
+    classes = {},
     columns,
     data,
     idKey,
@@ -55,88 +57,98 @@ export const LargeTableComponent = (props: Props) => {
               height={300}
               overscanRowCount={1}
               rowCount={data.length}
-              headerHeight={50}
+              headerHeight={60}
               rowHeight={50}
               width={width}
-              headerClassName={styles.headerColumn}
-              className={styles.Table}
-              rowClassName={({ rowData, index }) => {
+              headerClassName={styles.header}
+              className={classNames(styles.table, classes.table)}
+              rowClassName={({ index }) => {
                 if (index < 0) {
                   return styles.headerRow;
                 }
-                return classNames(styles.row, {
+                const rowData = data[index];
+                let rowClassName = classes.rows;
+                if (typeof rowClassName === "function") {
+                  rowClassName = rowClassName(rowData, index);
+                }
+                return classNames(styles.row, rowClassName, {
                   [styles.highlightedRow]: highlightedRowId === getRowId(idKey, rowData, index),
                 });
               }}
               rowGetter={({ index }) => data[index]}
             >
-              {tableColumns.map(({
-                Cell, Header, accessor = "", className = "", isSingleIcon,
-              }, columnIndex) => {
-                const isCheckboxColumn = accessor === "COLUMN_SELECT";
-                return (
-                  <Column
-                    key={columnIndex}
-                    headerRenderer={() => {
-                      if (isCheckboxColumn && !enableSelectAll) {
-                        return null;
-                      }
-                      return (
-                        <div
-                          className={classNames({
-                            [styles.singleIcon]: isCheckboxColumn || isSingleIcon,
-                          })}
-                        >
-                          {typeof Header === "string" ? <Typography>{Header}</Typography> : Header}
-                        </div>
-                      );
-                    }}
-                    width={50}
-                    flexGrow={isCheckboxColumn ? undefined : 1}
-                    dataKey={accessor}
-                    cellRenderer={({ rowData, rowIndex }) => {
-                      const rowId = getRowId(idKey, rowData, rowIndex);
-                      const itemKey = `${rowId}-${rowIndex}`;
-                      let value = "";
-                      if (typeof accessor === "string") {
-                        value = rowData[accessor];
-                      } else if (typeof accessor === "function") {
-                        value = accessor(rowData);
-                      }
-                      let inner = null;
-                      if (Cell) {
-                        inner = Cell({
-                          instance: rowData,
-                          original: rowData,
-                          value,
-                          accessor,
-                          rowId,
-                          rowIndex,
-                          label: Header || "",
-                        });
-                      } else {
-                        inner = <Typography>{value}</Typography>;
-                      }
-                      if (typeof className === "function") {
-                        className = className(value);
-                      }
-                      return (
-                        <div
-                          key={itemKey}
-                          data-cell-id={itemKey}
-                          className={classNames(className, {
-                            [styles.tableCell]: !isCheckboxColumn,
-                            [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
-                          })}
-                          onClick={onHighlightRow ? () => onHighlightRow(rowId) : undefined}
-                        >
-                          {inner}
-                        </div>
-                      );
-                    }}
-                  />
-                );
-              })}
+              {tableColumns.map(
+                ({
+                  Cell, Header, accessor = "", className = "", headerClassName, isSingleIcon,
+                }, columnIndex) => {
+                  const isCheckboxColumn = accessor === "COLUMN_SELECT";
+                  return (
+                    <Column
+                      key={columnIndex}
+                      headerRenderer={() => {
+                        if (isCheckboxColumn && !enableSelectAll) {
+                          return null;
+                        }
+                        const fieldId = typeof accessor === "string" ? accessor : "";
+                        return (
+                          <div
+                            className={classNames(headerClassName, {
+                              [`${fieldId}-header`]: fieldId,
+                              [styles.singleIcon]: isCheckboxColumn || isSingleIcon,
+                              [styles.tableHeader]: !isCheckboxColumn,
+                            })}
+                          >
+                            {<div className={styles.headerText}>{Header}</div>}
+                          </div>
+                        );
+                      }}
+                      width={50}
+                      flexGrow={isCheckboxColumn ? undefined : 1}
+                      dataKey={accessor}
+                      cellRenderer={({ rowData, rowIndex }) => {
+                        const rowId = getRowId(idKey, rowData, rowIndex);
+                        const itemKey = `${rowId}-${rowIndex}`;
+                        let value = "";
+                        if (typeof accessor === "string") {
+                          value = rowData[accessor];
+                        } else if (typeof accessor === "function") {
+                          value = accessor(rowData);
+                        }
+                        let inner = null;
+                        if (Cell) {
+                          inner = Cell({
+                            instance: rowData,
+                            original: rowData,
+                            value,
+                            accessor,
+                            rowId,
+                            rowIndex,
+                            label: Header || "",
+                          });
+                        } else {
+                          inner = <Typography>{value}</Typography>;
+                        }
+                        if (typeof className === "function") {
+                          className = className(value);
+                        }
+                        return (
+                          <div
+                            key={itemKey}
+                            data-cell-id={itemKey}
+                            className={classNames(className, {
+                              [styles.tableCell]: !isCheckboxColumn,
+                              [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
+                            })}
+                            onClick={onHighlightRow ? () => onHighlightRow(rowId) : undefined}
+                          >
+                            {inner}
+                          </div>
+                        );
+                      }}
+                    />
+                  );
+                },
+              )}
             </Table>
           );
         }}

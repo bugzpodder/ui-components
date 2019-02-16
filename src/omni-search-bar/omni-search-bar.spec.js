@@ -22,7 +22,7 @@ const searchDefs: OmniSearchDefs = [
     name: "Lot Number",
     type: LIKE_TEXT_SEARCH_TYPE,
     aliases: ["lot"],
-    description: "Lot Num/Vendor Lot Num",
+    description: "e.g. L00001 (GRAIL lot number) or ZRC203172 (vendor lot number)",
     searchFields: ["lotNumber", "vendorLotNumber"],
   },
   {

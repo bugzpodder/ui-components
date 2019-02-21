@@ -9,6 +9,7 @@
 6. Add `LargeSimpleTable` to render lots (100-millions) of rows of
    tabular data, performantly. Similar signature to `SimpleTable`.
 7. Make very minor adjustment to padding of `SimpleTable` checkboxes.
+8. Ensure that `CommonSelect` logs exceptions in `loadOptions` callback.
 
 ## 0.9.0 - 2019-01-17
 

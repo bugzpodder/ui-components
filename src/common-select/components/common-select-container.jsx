@@ -8,12 +8,26 @@ type Props = {
   selectType: string,
   createMessage?: string => Node,
   defaultOptions: Array<CommonSelectOption>,
+  loadOptions?: string => Promise<*>,
 };
 
 const CommonSelectTypeComponent = props => {
   const {
     createMessage, defaultOptions, selectType, ...other
   } = props;
+  const { loadOptions } = other;
+  if (loadOptions) {
+    other.loadOptions = async (...args) => {
+      try {
+        return await loadOptions(...args);
+      } catch (error) {
+        // `react-select` silently swallows exceptions. Log exceptions to help with debugging.
+        console.error(error);
+        // Rethrow. Technically, `react-select` will swallow this exception...
+        throw error;
+      }
+    };
+  }
   switch (selectType) {
     case "async": {
       return (

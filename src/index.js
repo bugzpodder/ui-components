@@ -6,6 +6,7 @@ export { BreastCancerRibbon, GrailLogo } from "./logos";
 export { CommonDialog, CommonMultiPageDialog } from "./common-dialog";
 export { CommonPanel } from "./common-panel";
 export { CommonMultiSelect, CommonSelect } from "./common-select";
+export { CommonSuggest, SuggestionsOmniField } from "./common-suggest";
 export { CommonSwitch } from "./common-switch";
 export { DateInput, DateTimeInput, wrapPickerUtilProvider } from "./date-input";
 export { ExternalLinkButton } from "./external-link-button";
@@ -26,4 +27,3 @@ export { TabbedTimelineCard, TimelineGraph, TimelineCard } from "./timeline-grap
 export { CommonPage, CommonTabbedPage } from "./page";
 // $FlowFixMe: Property `ExampleWrapper/ExampleBlock` is missing in ModuleNamespace for export {}
 export { ExampleWrapper, ExampleBlock } from "./utils";
-export { CommonSuggest } from "./common-suggest";

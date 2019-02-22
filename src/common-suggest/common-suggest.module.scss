@@ -1,3 +1,5 @@
+@import "../styles/colors.scss";
+
 .commonSuggest {
   position: relative;
   .commonSuggestField {
@@ -7,6 +9,14 @@
       .noMatches {
         padding: 10px;
       }
+      > div {
+        max-height: 400px;
+        overflow-y: auto;
+        @include popup-shadow;
+      }
     }
+  }
+  .commonSuggestButton {
+    padding: 0;
   }
 }

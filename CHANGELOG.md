@@ -10,6 +10,9 @@
    tabular data, performantly. Similar signature to `SimpleTable`.
 7. Make very minor adjustment to padding of `SimpleTable` checkboxes.
 8. Ensure that `CommonSelect` logs exceptions in `loadOptions` callback.
+9. Add `Clear` button to `CommonSuggest` and remove button padding.
+10. Add max-height and overflow to `CommonSuggest` popdown.
+11. Move value suggest logic to common lib.
 
 ## 0.9.0 - 2019-01-17
 

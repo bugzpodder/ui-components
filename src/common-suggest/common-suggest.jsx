@@ -1,5 +1,6 @@
 // @flow
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ClearIcon from "@material-ui/icons/Close";
 import Downshift from "downshift";
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -10,9 +11,8 @@ import Popper from "@material-ui/core/Popper";
 import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
-import fuzzy from "fuzzy";
 import keycode from "keycode";
-import { unquoteString } from "@grail/lib";
+import { unquoteString, valueToSuggestions } from "@grail/lib";
 
 import styles from "./common-suggest.module.scss";
 
@@ -55,15 +55,13 @@ export class CommonSuggest extends React.Component<Props, State> {
       id, placeholder, suggestions, onChange, onEnter, value,
     } = this.props;
     const { isPopperOpen, isManuallyOpened } = this.state;
-    let items = suggestions.map(value => ({ value }));
     const valueElements = value.split(",").map(element => element.trim());
+    let items = suggestions.map(value => ({ value }));
     if (valueElements.length > 0) {
-      let lastValue = "";
-      lastValue = valueElements.pop();
+      let lastValue = valueElements.pop();
       lastValue = unquoteString(lastValue);
       if (!isManuallyOpened) {
-        const fuzzyMatches = fuzzy.filter(lastValue, suggestions);
-        items = fuzzyMatches.map(match => ({ value: match.string }));
+        items = valueToSuggestions(lastValue, suggestions).map(value => ({ value }));
       }
     }
     const onSelectSuggestion = item => {
@@ -98,6 +96,7 @@ export class CommonSuggest extends React.Component<Props, State> {
                   return { isPopperOpen: !isPopperOpen, isManuallyOpened: true };
                 }),
               onBlur: this.closePopper,
+              classes: { root: styles.commonSuggestButton },
             });
             const onKeyDown = event => {
               if ((!items.length || !isOpen || highlightedIndex == null) && event.keyCode === keycode("Enter")) {
@@ -117,6 +116,18 @@ export class CommonSuggest extends React.Component<Props, State> {
                 onBlur: this.closePopper,
                 endAdornment: (
                   <InputAdornment position="end">
+                    {value && (
+                      <IconButton
+                        data-testid="clear-value"
+                        color="inherit"
+                        disableRipple
+                        tabIndex={-1}
+                        onClick={() => onChange("")}
+                        classes={{ root: styles.commonSuggestButton }}
+                      >
+                        <ClearIcon />
+                      </IconButton>
+                    )}
                     <IconButton {...toggleButtonProps}>
                       <ArrowDropDownIcon />
                     </IconButton>

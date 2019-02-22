@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render CommonSuggest 1`] = `
+exports[`render SuggestionsOmniField 1`] = `
 <div>
   <div
     class="commonSuggest"
@@ -25,8 +25,6 @@ exports[`render CommonSuggest 1`] = `
             aria-invalid="false"
             autocomplete="off"
             class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
-            data-testid="test-common-suggest"
-            id="test-common-suggest"
             type="text"
             value=""
           />
@@ -40,7 +38,7 @@ exports[`render CommonSuggest 1`] = `
               class="MuiButtonBase-root MuiIconButton-root commonSuggestButton MuiIconButton-colorInherit"
               data-testid="toggle-suggestions"
               data-toggle="true"
-              id="test-common-suggest-toggle-suggestions"
+              id="-toggle-suggestions"
               label="menu"
               role="button"
               tabindex="-1"

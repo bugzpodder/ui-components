@@ -94,7 +94,7 @@ export const LargeTableComponent = (props: Props) => {
                     dataKey={accessor}
                     cellRenderer={({ rowData, rowIndex }) => {
                       const rowId = getRowId(idKey, rowData, rowIndex);
-                      const itemKey = `${rowId}-${rowIndex}`;
+                      const itemKey = `${rowId}-${columnIndex}`;
                       let value = "";
                       if (typeof accessor === "string") {
                         value = rowData[accessor];

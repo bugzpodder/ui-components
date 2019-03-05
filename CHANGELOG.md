@@ -14,6 +14,8 @@
 10. Add max-height and overflow to `CommonSuggest` popdown.
 11. Move value suggest logic to common lib.
 12. Deprecate `Selector` component.
+13. Add Export to CSV in `PagedTable`. Can be disabled by passing includeExportAsCsvButton={false}.
+14. `ExportTableButton` to export CSV can be used with any data passed into it.
 
 ## 0.9.0 - 2019-01-17
 

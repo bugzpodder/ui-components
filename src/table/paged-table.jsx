@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { CommonCard } from "../common-card";
+import { ExportTableButton } from "./components/export-button";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
 import { TablePager } from "./components/table-pager";
@@ -38,6 +39,8 @@ type Props = {
   idKey?: string | number,
   /** Provides a spinner when `isLoading` is true */
   isLoading?: boolean,
+  /** Provides an `Export CSV button` when includeExportAsCsvButton is true */
+  includeExportAsCsvButton?: boolean,
   /** Enables checkbox selection. Must change the state of selectedRows */
   onSelect?: (Array<any>) => any,
   /** Provides the id's for the selected rows when onSelect is used */
@@ -75,11 +78,18 @@ type Props = {
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
 export const PagedTable = (props: Props) => {
   const {
-    onPageChange, headerActions = null, title = "", subheader, cardProps = {}, ...tableProps
+    onPageChange,
+    headerActions = [],
+    title = "",
+    subheader,
+    includeExportAsCsvButton = true,
+    cardProps = {},
+    ...tableProps
   } = props;
   const {
     classes = {}, columns, data, isLoading = false, onSelect, selectedRows, tableOptions,
   } = tableProps;
+
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");
   }
@@ -93,12 +103,26 @@ export const PagedTable = (props: Props) => {
   };
   const numberSelected = (selectedRows && selectedRows.length) || 0;
   const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
+
+  const tableHeaderActions = includeExportAsCsvButton ? (
+    <Fragment>
+      <ExportTableButton
+        columns={columns}
+        data={data}
+        title={typeof title === "string" ? title : "data"}
+      />
+      {headerActions}
+    </Fragment>
+  ) : (
+    <Fragment> {headerActions} </Fragment>
+  );
+
   return (
     <Fragment>
       <CommonCard
         title={cardTitle}
         subheader={subheader}
-        headerActions={headerActions}
+        headerActions={tableHeaderActions}
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
         data-testid="paged-table"
         classes={{

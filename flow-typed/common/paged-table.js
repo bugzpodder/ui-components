@@ -18,13 +18,12 @@ declare type PagedTableCell = {
 
 declare type PagedTableColumn = {
   Header?: Node<*>,
-  accessor?: string | Function,
   sortable?: boolean,
   Cell?: Node<PagedTableCell>,
   headerClassName?: string,
   className?: string | Function,
   isSingleIcon?: boolean,
-};
+} & ReportColumn;
 
 declare type PagedTableClasses = {
   root?: string,

@@ -18,7 +18,6 @@ export { OmniChips, OmniSearchBar } from "./omni-search-bar";
 export { TwoColumnGrid, TwoColumnRow } from "./two-column-grid";
 export { CollapsableListItem } from "./list";
 export { LargeSimpleTable, PagedTable, SimpleTable } from "./table";
-export { Selector } from "./selector";
 export { SignInPage } from "./sign-in-page";
 export { SpinnerOverlay } from "./spinner-overlay";
 export { StyleWrapper } from "./style-wrapper";

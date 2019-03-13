@@ -13,6 +13,7 @@
 9. Add `Clear` button to `CommonSuggest` and remove button padding.
 10. Add max-height and overflow to `CommonSuggest` popdown.
 11. Move value suggest logic to common lib.
+12. Deprecate `Selector` component.
 
 ## 0.9.0 - 2019-01-17
 

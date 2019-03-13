@@ -37,12 +37,11 @@ module.exports = {
       ],
     },
     {
-      name: "Selectors & Buttons",
+      name: "Switches & Buttons",
       components: () => [
         "./src/common-switch/common-switch.jsx",
         "./src/external-link/external-link.jsx",
         "./src/external-link-button/external-link-button.jsx",
-        "./src/selector/selector.jsx",
       ],
     },
     {

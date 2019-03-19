@@ -1,9 +1,8 @@
 ### Example
 
 ```js
-const ExampleBlock = require("../test-utils").ExampleBlock;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-
+const { ExampleBlock, ExampleWrapper } = require("../test-utils");
+const { useState } = require("react");
 const {
   OMNI_TEXT_SEARCH_TYPE,
   DATETIME_SEARCH_TYPE,
@@ -12,7 +11,6 @@ const {
   OMNI_KEY,
   SET_OMNI_FIELD_COMMAND,
 } = require("@grail/lib");
-const { OmniChips } = require("./index");
 
 const initialSearchOptions = [
   {
@@ -41,38 +39,34 @@ const initialSearchOptions = [
   },
 ];
 
-class OmniChipsContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { searchOptions: initialSearchOptions };
-    this.addOmniSearchCommand = this.addOmniSearchCommand.bind(this);
-  }
-  addOmniSearchCommand({ command, omniFieldName, omniValues }) {
+const OmniChipsContainer = () => {
+  const [searchOptions, setSearchOptions] = useState(initialSearchOptions);
+
+  const addOmniSearchCommand = ({ command, omniFieldName, omniValues }) => {
     console.log(command, omniFieldName, omniValues);
     if (command === SET_OMNI_FIELD_COMMAND) {
-      this.setState(({ searchOptions }) => {
-        searchOptions = searchOptions
+      setSearchOptions(searchOptions => {
+        const newOptions = searchOptions
           .map(searchOption => {
             let { name, values } = searchOption;
             if (omniFieldName === name) {
               values = omniValues;
             }
-            return { ...searchOption, values };
+            return { ...newOptions, values };
           })
           .filter(({ values }) => values && values.length);
-        return { searchOptions };
+        return newOptions;
       });
     }
-  }
-  render() {
-    return (
-      <div>
-        <OmniChips searchOptions={this.state.searchOptions} addOmniSearchCommand={this.addOmniSearchCommand} />
-        <ExampleBlock strongHeader="State" content={this.state} />
-      </div>
-    );
-  }
-}
+  };
+
+  return (
+    <div>
+      <OmniChips searchOptions={searchOptions} addOmniSearchCommand={addOmniSearchCommand} />
+      <ExampleBlock strongHeader="State" content={searchOptions} />
+    </div>
+  );
+};
 
 <ExampleWrapper>
   <OmniChipsContainer />

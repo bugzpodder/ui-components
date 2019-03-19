@@ -1,5 +1,5 @@
 // @flow
-import React from "react";
+import React, { useState } from "react";
 import { BaseNavbar } from "../dev/base-navbar/base-navbar";
 
 type Props = {
@@ -29,27 +29,19 @@ type Props = {
   currentPath: string,
 };
 
-type State = {
-  isSidebarOpen: boolean,
+export const Navbar = (props: Props) => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(isSidebarOpen => !isSidebarOpen);
+  };
+
+  return (
+    <BaseNavbar
+      drawerVariant="temporary"
+      isSidebarOpen={isSidebarOpen}
+      toggleSidebar={toggleSidebar}
+      {...props}
+    />
+  );
 };
-
-export class Navbar extends React.Component<Props, State> {
-  state = {
-    isSidebarOpen: false,
-  };
-
-  toggleSidebar = () => {
-    this.setState(({ isSidebarOpen }) => ({ isSidebarOpen: !isSidebarOpen }));
-  };
-
-  render = () => {
-    return (
-      <BaseNavbar
-        drawerVariant="temporary"
-        isSidebarOpen={this.state.isSidebarOpen}
-        toggleSidebar={this.toggleSidebar}
-        {...this.props}
-      />
-    );
-  };
-}

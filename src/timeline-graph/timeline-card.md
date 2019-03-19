@@ -1,8 +1,7 @@
 ### Simple TimelineCard
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ADAMS_DATA = require("../test-utils").ADAMS_DATA;
+const { ADAMS_DATA, ExampleWrapper } = require("../test-utils");
 
 <ExampleWrapper>
   <TimelineCard
@@ -25,44 +24,30 @@ const ADAMS_DATA = require("../test-utils").ADAMS_DATA;
 ### Selectable TimelineCard (with Time)
 
 ```js
-const ExampleBlock = require("../test-utils").ExampleBlock;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ADAMS_DATA = require("../test-utils").ADAMS_DATA;
+const { ExampleBlock, ExampleWrapper, ADAMS_DATA } = require("../test-utils");
+const { useState } = require("react");
 
-class ExampleTimelineCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedItem: null,
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-
-  handleSelect(selectedItem) {
-    this.setState({ selectedItem });
-  }
-
-  render() {
-    return (
-      <div>
-        <TimelineCard
-          isTimeVisible
-          onSelect={this.handleSelect}
-          selectedItem={this.state.selectedItem}
-          rows={ADAMS_DATA}
-          classes={{
-            root: "timelinecard-root-class",
-            commonCard: {
-              title: "timelinecard-title-class",
-              subheader: "timelinecard-subheader-class",
-            },
-          }}
-        />
-        <ExampleBlock strongHeader="State " content={this.state} />
-      </div>
-    );
-  }
-}
+const ExampleTimelineCard = () => {
+  const [selectedItem, setSelectedItem] = useState(null);
+  return (
+    <div>
+      <TimelineCard
+        isTimeVisible
+        onSelect={setSelectedItem}
+        selectedItem={selectedItem}
+        rows={ADAMS_DATA}
+        classes={{
+          root: "timelinecard-root-class",
+          commonCard: {
+            title: "timelinecard-title-class",
+            subheader: "timelinecard-subheader-class",
+          },
+        }}
+      />
+      <ExampleBlock strongHeader="State " content={selectedItem} />
+    </div>
+  );
+};
 
 <ExampleWrapper>
   <ExampleTimelineCard />

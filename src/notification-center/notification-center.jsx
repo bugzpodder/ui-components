@@ -4,15 +4,10 @@ import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import Notifications from "@material-ui/icons/Notifications";
 import Popover from "@material-ui/core/Popover";
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import Typography from "@material-ui/core/Typography";
 import styles from "./notification.module.scss";
 import { NotificationCard } from "./components/notification-card";
-
-type State = {
-  isVisible: boolean,
-  anchorElement: ?HTMLAnchorElement,
-};
 
 type Props = {
   /**
@@ -37,85 +32,75 @@ type Props = {
   removeNotification: number => any,
 };
 
-export class NotificationCenter extends React.Component<Props, State> {
-  state = {
-    isVisible: false,
-    anchorElement: null,
+export const NotificationCenter = (props: Props) => {
+  const anchorEl = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleClick = (event: SyntheticEvent<HTMLAnchorElement>) => {
+    anchorEl.current = event.currentTarget;
+    setIsVisible(isVisible => !isVisible);
   };
 
-  handleClick = (event: SyntheticEvent<HTMLAnchorElement>) => {
-    const { isVisible } = this.state;
-    event.preventDefault();
-    this.setState({ anchorElement: event.currentTarget, isVisible: !isVisible });
+  const handleClose = () => {
+    setIsVisible(false);
   };
 
-  handleClose = () => {
-    this.setState({ anchorElement: null, isVisible: false });
-  };
-
-  componentWillUnmount = () => {
-    this.setState({ anchorElement: null });
-  };
-
-  render = () => {
-    const {
-      notifications, removeAllNotifications, removeNotification, ...iconProps
-    } = this.props;
-    const { anchorElement, isVisible } = this.state;
-    return (
-      <Fragment>
-        <IconButton
-          disableRipple
-          color="inherit"
-          onClick={this.handleClick}
-          {...iconProps}
-        >
-          <Notifications />
-        </IconButton>
-        <Popover
-          open={isVisible}
-          anchorEl={anchorElement}
-          anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
-          onClose={() => this.handleClose()}
-          PaperProps={{
-            classes: {
-              root: styles.notificationCenterPopover,
-            },
-          }}
-          TransitionProps={{ timeout: 0 }}
-        >
-          <List className={styles.notificationCenterList}>
-            <Button
-              variant="text"
-              color="primary"
-              onClick={removeAllNotifications}
-              disabled={!notifications.length}
-              className={styles.clearButton}
+  const {
+    notifications, removeAllNotifications, removeNotification, ...iconProps
+  } = props;
+  return (
+    <Fragment>
+      <IconButton
+        disableRipple
+        color="inherit"
+        onClick={handleClick}
+        {...iconProps}
+      >
+        <Notifications />
+      </IconButton>
+      <Popover
+        open={isVisible}
+        anchorEl={anchorEl.current}
+        anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+        onClose={handleClose}
+        PaperProps={{
+          classes: {
+            root: styles.notificationCenterPopover,
+          },
+        }}
+        TransitionProps={{ timeout: 0 }}
+      >
+        <List className={styles.notificationCenterList}>
+          <Button
+            variant="text"
+            color="primary"
+            onClick={removeAllNotifications}
+            disabled={!notifications.length}
+            className={styles.clearButton}
+          >
+            <b>Clear All</b>
+          </Button>
+          {!notifications.length && (
+            <Typography
+              variant="subtitle1"
+              align="center"
+              className={styles.emptyText}
             >
-              <b>Clear All</b>
-            </Button>
-            {!notifications.length && (
-              <Typography
-                variant="subtitle1"
-                align="center"
-                className={styles.emptyText}
-              >
-                You have no notifications.
-              </Typography>
-            )}
-            {notifications.map(({ message, time, type }, index) => (
-              <NotificationCard
-                key={index}
-                message={message}
-                time={time}
-                type={type}
-                notificationIndex={index}
-                removeNotification={removeNotification}
-              />
-            ))}
-          </List>
-        </Popover>
-      </Fragment>
-    );
-  };
-}
+              You have no notifications.
+            </Typography>
+          )}
+          {notifications.map(({ message, time, type }, index) => (
+            <NotificationCard
+              key={index}
+              message={message}
+              time={time}
+              type={type}
+              notificationIndex={index}
+              removeNotification={removeNotification}
+            />
+          ))}
+        </List>
+      </Popover>
+    </Fragment>
+  );
+};

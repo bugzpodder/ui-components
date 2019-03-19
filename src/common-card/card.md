@@ -1,8 +1,8 @@
 ### Example
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const Fragment = require("react").Fragment;
+const { ExampleWrapper } = require("../test-utils");
+const { Fragment } = require("react");
 const Button = require("@material-ui/core/Button").default;
 
 <ExampleWrapper>

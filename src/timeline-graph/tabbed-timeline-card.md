@@ -1,9 +1,7 @@
 ### Tabbed TimelineCard
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ADAMS_DATA = require("../test-utils").ADAMS_DATA;
-const EMU_DATA = require("../test-utils").EMU_DATA;
+const { ADAMS_DATA, EMU_DATA, ExampleWrapper } = require("../test-utils");
 const tabContents = {
   adams: { content: ADAMS_DATA },
   emus: { content: EMU_DATA },

@@ -6,7 +6,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 type Props = {
   /** Defines the text of the main item. */
@@ -25,60 +25,48 @@ type Props = {
   toggleList?: () => any,
 };
 
-type State = {
-  isOpen: boolean,
-};
+export const CollapsableListItem = (props: Props) => {
+  const {
+    headerText, headerTextProps, headerItemProps, headerIcon, children, isOpen,
+  } = props;
 
-export class CollapsableListItem extends React.Component<Props, State> {
-  state = {
-    isOpen: false,
-  };
-
-  static getDerivedStateFromProps(nextProps: Props, prevState: State) {
-    const propsOpen = nextProps.isOpen;
-    if (propsOpen !== undefined) {
-      if (propsOpen !== prevState.isOpen) {
-        return { isOpen: propsOpen };
-      }
+  const [isCurrentlyOpen, setIsCurrentlyOpen] = useState(!!isOpen);
+  useEffect(() => {
+    if (isOpen !== undefined) {
+      setIsCurrentlyOpen(!!isOpen);
     }
-    return null;
-  }
+  }, [isOpen]);
 
-  toggleList = () => {
-    this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
+  const toggleList = () => {
+    setIsCurrentlyOpen(isOpen => !isOpen);
   };
 
-  render = () => {
-    const {
-      headerText, headerTextProps, headerItemProps, headerIcon, children,
-    } = this.props;
-    const toggleList = this.props.toggleList || this.toggleList;
-    return (
-      <Fragment>
-        <ListItem
-          button
-          disableRipple
-          onClick={event => {
-            toggleList();
-            event.stopPropagation();
-          }}
-          {...headerItemProps}
-        >
-          {headerIcon && <ListItemIcon>{headerIcon}</ListItemIcon>}
-          <ListItemText
-            primary={headerText}
-            {...headerTextProps}
-          />
-          {this.state.isOpen ? <ExpandLess /> : <ExpandMore />}
-        </ListItem>
-        <Collapse
-          in={this.state.isOpen}
-          timeout={0}
-          unmountOnExit
-        >
-          <List>{children}</List>
-        </Collapse>
-      </Fragment>
-    );
-  };
-}
+  const handleToggleList = props.toggleList || toggleList;
+  return (
+    <Fragment>
+      <ListItem
+        button
+        disableRipple
+        onClick={event => {
+          handleToggleList();
+          event.stopPropagation();
+        }}
+        {...headerItemProps}
+      >
+        {headerIcon && <ListItemIcon>{headerIcon}</ListItemIcon>}
+        <ListItemText
+          primary={headerText}
+          {...headerTextProps}
+        />
+        {isCurrentlyOpen ? <ExpandLess /> : <ExpandMore />}
+      </ListItem>
+      <Collapse
+        in={isCurrentlyOpen}
+        timeout={0}
+        unmountOnExit
+      >
+        <List>{children}</List>
+      </Collapse>
+    </Fragment>
+  );
+};

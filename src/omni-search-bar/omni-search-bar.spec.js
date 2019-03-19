@@ -5,7 +5,7 @@ import React from "react";
 import keycode from "keycode";
 import { DATETIME_SEARCH_TYPE, DATE_SEARCH_TYPE, LIKE_TEXT_SEARCH_TYPE } from "@grail/lib";
 import { MuiPickersUtilsProvider } from "material-ui-pickers";
-import { OmniSearchBar } from "./index";
+import { OmniSearchBar } from ".";
 import { TestWrapper } from "../test-utils";
 import { fireEvent, render } from "react-testing-library";
 

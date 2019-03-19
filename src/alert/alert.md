@@ -1,7 +1,7 @@
 ## Examples
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
 const styles = require("../test-utils/example-styles.module.scss");
 
 <ExampleWrapper>

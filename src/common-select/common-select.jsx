@@ -80,48 +80,44 @@ type CommonSelectProps = {
   readOnly?: boolean,
 };
 
-export class CommonSelect extends React.Component<CommonSelectProps> {
-  componentDidMount = () => {
-    const { selectType, options, loadOptions } = this.props;
-    switch (selectType) {
-      case "async":
-        if (!loadOptions) {
-          throw new Error("Must provide `loadOptions` prop for async select type");
-        }
-        break;
-      case "creatable":
-        break;
-      default:
-        if (!options) {
-          throw new Error("Must provide `options` prop");
-        }
-    }
-  };
+export const CommonSelect = (props: CommonSelectProps) => {
+  const {
+    onChange, readOnly, initialOptions, value, options, selectType = "simple", ...otherProps
+  } = props;
 
-  render = () => {
-    const {
-      onChange, readOnly, initialOptions, value, options, selectType = "simple", ...otherProps
-    } = this.props;
-    if (readOnly) {
-      const label = value && value.label ? value.label : " - ";
-      return <ReadOnlyTextField>{label}</ReadOnlyTextField>;
-    }
-    const isAsyncSelect = selectType === "async";
-    return (
-      <CommonSelectComponent
-        selectType={selectType}
-        onChange={value => {
-          if (!value || (Array.isArray(value) && value.length === 0)) {
-            onChange({});
-            return;
-          }
-          onChange(value);
-        }}
-        options={isAsyncSelect ? initialOptions : options}
-        value={!isEmpty(value) && !isNil(value.value) ? value : null}
-        {...otherProps}
-        isMulti={false}
-      />
-    );
-  };
-}
+  switch (selectType) {
+    case "async":
+      if (!props.loadOptions) {
+        throw new Error("Must provide `loadOptions` prop for async select type");
+      }
+      break;
+    case "creatable":
+      break;
+    default:
+      if (!options) {
+        throw new Error("Must provide `options` prop");
+      }
+  }
+
+  if (readOnly) {
+    const label = value && value.label ? value.label : " - ";
+    return <ReadOnlyTextField>{label}</ReadOnlyTextField>;
+  }
+  const isAsyncSelect = selectType === "async";
+  return (
+    <CommonSelectComponent
+      selectType={selectType}
+      onChange={value => {
+        if (!value || (Array.isArray(value) && value.length === 0)) {
+          onChange({});
+          return;
+        }
+        onChange(value);
+      }}
+      options={isAsyncSelect ? initialOptions : options}
+      value={!isEmpty(value) && !isNil(value.value) ? value : null}
+      {...otherProps}
+      isMulti={false}
+    />
+  );
+};

@@ -1,106 +1,82 @@
 ### Example
 
 ```js
-const ExampleBlock = require("../test-utils").ExampleBlock;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const EXAMPLE_TABLE_DATA = require("../test-utils").EXAMPLE_TABLE_DATA;
+const { EXAMPLE_TABLE_DATA, ExampleBlock, ExampleWrapper } = require("../test-utils");
+const { useState } = require("react");
 
-class TestSimpleTable extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      tableOptions: {
-        sortOptions: [{ id: "name", desc: false }],
-        selectedRowIds: [],
-        highlightedRowId: null,
-      },
-      data: EXAMPLE_TABLE_DATA,
-    };
+const TestSimpleTable = () => {
+  const [tableOptions, setTableOptions] = useState({
+    sortOptions: [{ id: "name", desc: false }],
+    selectedRowIds: [],
+    highlightedRowId: null,
+  });
+  const [data, setData] = useState(EXAMPLE_TABLE_DATA);
 
-    this.compare = this.compare.bind(this);
-    this.handleSelection = this.handleSelection.bind(this);
-    this.handleSort = this.handleSort.bind(this);
-    this.handleHighlight = this.handleHighlight.bind(this);
-  }
+  const handleSelection = selectedRowIds => {
+    setTableOptions(tableOptions => ({ ...tableOptions, selectedRowIds }));
+  };
 
-  handleSelection(selectedRowIds) {
-    const tableOptions = { ...this.state.tableOptions, selectedRowIds };
-    this.setState({ tableOptions });
-  }
-
-  handleSort(params) {
+  const handleSort = params => {
     const { sortOptions } = params;
-    const tableOptions = {
-      ...this.state.tableOptions,
-      sortOptions,
+
+    const compare = (a, b) => {
+      const desc = sortOptions[0].desc;
+      const sortParam = sortOptions[0].id;
+      const first = a[sortParam].toLowerCase();
+      const second = b[sortParam].toLowerCase();
+      if (first === second) {
+        return 0;
+      }
+      if (desc) {
+        return first > second ? -1 : 1;
+      }
+      return first < second ? -1 : 1;
     };
-    this.setState({ tableOptions }, () => {
-      const data = this.state.data.sort(this.compare);
-      this.setState({ data });
-    });
-  }
 
-  compare(a, b) {
-    const desc = this.state.tableOptions.sortOptions[0].desc;
-    const sortParam = this.state.tableOptions.sortOptions[0].id;
-    const first = a[sortParam].toLowerCase();
-    const second = b[sortParam].toLowerCase();
-    if (first === second) {
-      return 0;
-    }
-    if (desc) {
-      return first > second ? -1 : 1;
-    }
-    return first < second ? -1 : 1;
-  }
+    setTableOptions(tableOptions => ({ ...tableOptions, sortOptions }));
+    setData(data.sort(compare));
+  };
 
-  handleHighlight(highlightedRowId) {
-    const tableOptions = {
-      ...this.state.tableOptions,
-      highlightedRowId,
-    };
-    this.setState({ tableOptions });
-  }
+  const handleHighlight = highlightedRowId => {
+    setTableOptions(tableOptions => ({ ...tableOptions, highlightedRowId }));
+  };
 
-  render() {
-    const { data, tableOptions } = this.state;
-    const columns = [
-      {
-        Header: "Word",
-        accessor: "word", // this can also be a function, and takes the datum for the row
-        className: "word-class", // className applied to cell
-        headerClassName: "main-header", // className applied to header
-      },
-      {
-        Header: "Origin",
-        accessor: "origin",
-        className: "origin-class",
-        Cell: ({ value }) => <div>{value}</div>,
-      },
-    ];
-    return (
-      <div>
-        <SimpleTable
-          // required
-          data={data}
-          columns={columns}
-          // optional
-          tableOptions={tableOptions}
-          classes={{
-            root: "table-root",
-            rows: (datum, index) => `${datum.word}-${index}-example`,
-          }}
-          onSelect={this.handleSelection}
-          selectedRows={tableOptions.selectedRowIds}
-          onSort={this.handleSort}
-          highlightedRowId={tableOptions.highlightedRowId}
-          onHighlightRow={this.handleHighlight}
-        />
-        <ExampleBlock strongHeader="Table Options " content={this.state.tableOptions} />
-      </div>
-    );
-  }
-}
+  const columns = [
+    {
+      Header: "Word",
+      accessor: "word", // this can also be a function, and takes the datum for the row
+      className: "word-class", // className applied to cell
+      headerClassName: "main-header", // className applied to header
+    },
+    {
+      Header: "Origin",
+      accessor: "origin",
+      className: "origin-class",
+      Cell: ({ value }) => <div>{value}</div>,
+    },
+  ];
+  return (
+    <div>
+      <SimpleTable
+        // required
+        data={data}
+        columns={columns}
+        // optional
+        tableOptions={tableOptions}
+        classes={{
+          root: "table-root",
+          rows: (datum, index) => `${datum.word}-${index}-example`,
+        }}
+        onSelect={handleSelection}
+        selectedRows={tableOptions.selectedRowIds}
+        onSort={handleSort}
+        highlightedRowId={tableOptions.highlightedRowId}
+        onHighlightRow={handleHighlight}
+      />
+      <ExampleBlock strongHeader="Table Options " content={tableOptions} />
+    </div>
+  );
+};
 
 <ExampleWrapper>
   <TestSimpleTable />

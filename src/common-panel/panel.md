@@ -1,7 +1,7 @@
 ### Example
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
 
 <ExampleWrapper>
   <CommonPanel title="Panel Title" variant="h4">
@@ -11,7 +11,7 @@ const ExampleWrapper = require("../test-utils").ExampleWrapper;
 ```
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
 
 <ExampleWrapper>
   <CommonPanel title="Panel Title">This is the body of the panel.</CommonPanel>

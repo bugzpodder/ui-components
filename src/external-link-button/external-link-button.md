@@ -5,8 +5,7 @@
 ### Example
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ExternalLinkButton = require("./external-link-button");
+const { ExampleWrapper } = require("../test-utils");
 
 <ExampleWrapper>
   <ExternalLinkButton variant="contained" color="primary" href="https://www.grail.com">

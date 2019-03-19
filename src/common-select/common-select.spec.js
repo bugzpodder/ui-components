@@ -3,7 +3,7 @@ import "jest-dom/extend-expect";
 import React from "react";
 import mockConsole from "jest-mock-console";
 import { COUNTRIES, TestWrapper } from "../test-utils";
-import { CommonMultiSelect, CommonSelect } from "./index";
+import { CommonMultiSelect, CommonSelect } from ".";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 

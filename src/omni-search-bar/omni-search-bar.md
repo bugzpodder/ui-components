@@ -1,9 +1,9 @@
 ### Example
 
 ```js
-const ExampleBlock = require("../test-utils").ExampleBlock;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-
+const { ExampleBlock, ExampleWrapper } = require("../test-utils");
+const { wrapPickerUtilProvider } = require("@grail/components");
+const { useState } = require("react");
 const {
   OMNI_TEXT_SEARCH_TYPE,
   DATETIME_SEARCH_TYPE,
@@ -11,7 +11,6 @@ const {
   LIKE_TEXT_SEARCH_TYPE,
   OMNI_KEY,
 } = require("@grail/lib");
-const { OmniSearchBar } = require("./index");
 
 const searchDefs = [
   {
@@ -36,28 +35,18 @@ const searchDefs = [
   },
 ];
 
-class OmniSearchBarContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { searchOptions: [] };
-    this.onChange = this.onChange.bind(this);
-  }
-  onChange({ searchOptions }) {
-    console.log(searchOptions);
-    this.setState({ searchOptions });
-  }
-  render() {
-    return (
-      <div>
-        <OmniSearchBar searchDefs={searchDefs} setSearchOptions={this.onChange}>
-          Children here appear in the dropdown
-        </OmniSearchBar>
-        <ExampleBlock strongHeader="State" content={this.state} />
-      </div>
-    );
-  }
-}
-const ExampleApp = require("../date-input/picker-util-provider-hoc").wrapPickerUtilProvider(OmniSearchBarContainer);
+const ExampleApp = wrapPickerUtilProvider(() => {
+  const [searchOptions, setSearchOptions] = useState([]);
+
+  return (
+    <div>
+      <OmniSearchBar searchDefs={searchDefs} setSearchOptions={setSearchOptions}>
+        Children here appear in the dropdown
+      </OmniSearchBar>
+      <ExampleBlock strongHeader="State" content={searchOptions} />
+    </div>
+  );
+});
 
 <ExampleWrapper>
   <ExampleApp />

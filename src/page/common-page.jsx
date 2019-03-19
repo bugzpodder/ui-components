@@ -2,7 +2,7 @@
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
-import React, { type Node } from "react";
+import React, { type Node, useState } from "react";
 import classNames from "classnames";
 import styles from "./common-page.module.scss";
 import { SideMenu } from "./components/side-menu";
@@ -47,112 +47,103 @@ type Props = {
   menuContents?: Array<MenuItem>,
 };
 
-type State = {
-  sideMenuIsExpanded: boolean,
-};
-
 /**
  * `CommonPage` provides a component for a page with a flush card header and an
  * optional side menu. Note: if you are using this component
  * in a new environment, we recommend building a new child component for your
  * environment; take a look at the `LimsPage` component as an example.
  */
-export class CommonPage extends React.Component<Props, State> {
-  state = {
-    sideMenuIsExpanded: false,
+export const CommonPage = (props: Props) => {
+  const [sideMenuIsExpanded, setSideMenuIsExpanded] = useState(false);
+
+  const toggleSideMenu = () => {
+    setSideMenuIsExpanded(sideMenuIsExpanded => !sideMenuIsExpanded);
   };
 
-  toggleSideMenu = () => {
-    this.setState(state => ({ sideMenuIsExpanded: !state.sideMenuIsExpanded }));
-  };
-
-  render = () => {
+  const {
+    classes = {},
+    headerActions = [],
+    subtitle = "",
+    title = "",
+    subheader,
+    children,
+    menuContents = [],
+    ...cardProps
+  } = props;
+  const mappedHeaderActions = headerActions.map((action, index) => {
     const {
-      classes = {},
-      headerActions = [],
-      subtitle = "",
-      title = "",
-      subheader,
-      children,
-      menuContents = [],
-      ...cardProps
-    } = this.props;
-    const { sideMenuIsExpanded } = this.state;
-    const mappedHeaderActions = headerActions.map((action, index) => {
-      const {
-        Component, content = "", id, componentProps, ...buttonProps
-      } = action;
-      if (Component) {
-        return (
-          <Component
-            key={`header-action-${index}`}
-            id={id}
-            {...componentProps}
-          >
-            {content}
-          </Component>
-        );
-      }
+      Component, content = "", id, componentProps, ...buttonProps
+    } = action;
+    if (Component) {
       return (
-        <Button
+        <Component
           key={`header-action-${index}`}
           id={id}
-          data-testid={id}
-          {...buttonProps}
+          {...componentProps}
         >
           {content}
-        </Button>
+        </Component>
       );
-    });
-
+    }
     return (
-      <div
-        className={classNames(classes.root, styles.pageContainer)}
-        data-testid="common-page"
+      <Button
+        key={`header-action-${index}`}
+        id={id}
+        data-testid={id}
+        {...buttonProps}
       >
-        <Card
-          classes={{
-            root: classNames(classes.header, styles.stickyHeader, styles.pageHeader),
-          }}
-          {...cardProps}
-        >
-          <CardHeader
-            data-testid="common-page-card-header"
-            title={title}
-            titleTypographyProps={{
-              variant: "h5",
-            }}
-            classes={{
-              root: styles.cardHeader,
-              action: classNames(styles.headerActions, classes.headerActions),
-              title: classNames("header-title", classes.title),
-              subheader: classes.subtitle,
-            }}
-            action={mappedHeaderActions}
-            subheader={subtitle}
-            avatar={
-              menuContents.length > 0 && (
-                <SideMenuButton
-                  isExpanded={sideMenuIsExpanded}
-                  toggleMenu={this.toggleSideMenu}
-                />
-              )
-            }
-          />
-          {subheader && subheader}
-        </Card>
-        <div className={classNames(styles.contentAndMenu, classes.contentAndMenu)}>
-          {menuContents.length > 0 && (
-            <SideMenu
-              data-testid="common-page-side-menu"
-              isExpanded={sideMenuIsExpanded}
-              menuContents={menuContents}
-              classes={classes.sideMenu}
-            />
-          )}
-          <div className={classNames(styles.content, classes.content)}>{children}</div>
-        </div>
-      </div>
+        {content}
+      </Button>
     );
-  };
-}
+  });
+
+  return (
+    <div
+      className={classNames(classes.root, styles.pageContainer)}
+      data-testid="common-page"
+    >
+      <Card
+        classes={{
+          root: classNames(classes.header, styles.stickyHeader, styles.pageHeader),
+        }}
+        {...cardProps}
+      >
+        <CardHeader
+          data-testid="common-page-card-header"
+          title={title}
+          titleTypographyProps={{
+            variant: "h5",
+          }}
+          classes={{
+            root: styles.cardHeader,
+            action: classNames(styles.headerActions, classes.headerActions),
+            title: classNames("header-title", classes.title),
+            subheader: classes.subtitle,
+          }}
+          action={mappedHeaderActions}
+          subheader={subtitle}
+          avatar={
+            menuContents.length > 0 && (
+            <SideMenuButton
+              isExpanded={sideMenuIsExpanded}
+              toggleMenu={toggleSideMenu}
+            />
+            )
+          }
+        />
+        {subheader && subheader}
+      </Card>
+      <div className={classNames(styles.contentAndMenu, classes.contentAndMenu)}>
+        {menuContents.length > 0 && (
+          <SideMenu
+            data-testid="common-page-side-menu"
+            isExpanded={sideMenuIsExpanded}
+            menuContents={menuContents}
+            classes={classes.sideMenu}
+          />
+        )}
+        <div className={classNames(styles.content, classes.content)}>{children}</div>
+      </div>
+    </div>
+  );
+};

@@ -3,111 +3,88 @@
 ### Default
 
 ```js
-const Fragment = require("react").Fragment;
-const ExampleBlock = require("../test-utils").ExampleBlock;
+const { useState, Fragment } = require("react");
+const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
 
-// countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const TypeaheadExample = () => {
+  const [value, setValue] = useState("");
 
-class TypeaheadExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: "",
-    };
-    this.handleChange = this.handleChange.bind(this);
+  const handleChange = (suggestion) => {
+    setValue(suggestion.value);
   }
 
-  handleChange(suggestion) {
-    this.setState({ value: suggestion.value });
-  }
-
-  render() {
     return (
       <Fragment>
-        <CommonTypeahead placeholder="Choose A Country" suggestions={countries} onChange={this.handleChange} />
-        <ExampleBlock strongHeader="value " content={this.state.value} />
+        <CommonTypeahead placeholder="Choose A Country" suggestions={COUNTRIES} onChange={handleChange} />
+        <ExampleBlock strongHeader="value " content={value} />
       </Fragment>
     );
-  }
 }
 
-<TypeaheadExample />;
+<ExampleWrapper>
+  <TypeaheadExample>
+</ExampleWrapper>;
 ```
 
 ### Creatable
 
 ```js
-const Fragment = require("react").Fragment;
-const ExampleBlock = require("../test-utils").ExampleBlock;
+const { Fragment } = require("react");
+const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
 
-// countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const TypeaheadExample = () => {
+  const [value, setValue] = useState("");
 
-class TypeaheadExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: "",
-    };
-    this.handleChange = this.handleChange.bind(this);
+  const handleChange = (suggestion) => {
+    setValue(suggestion.value);
   }
-
-  handleChange(suggestion) {
-    this.setState({ value: suggestion.value });
-  }
-
-  render() {
     return (
       <Fragment>
         <CommonTypeahead
           selectType="creatable"
           placeholder="Create or Choose"
-          suggestions={countries}
-          onChange={this.handleChange}
+          suggestions={COUNTRIES}
+          onChange={handleChange}
         />
-        <ExampleBlock strongHeader="value " content={this.state.value} />
+        <ExampleBlock strongHeader="value " content={value} />
       </Fragment>
     );
-  }
 }
 
-<TypeaheadExample />;
+<ExampleWrapper>
+  <TypeaheadExample>
+</ExampleWrapper>;
 ```
 
 ### Asynchronous
 
 ```js
-const Fragment = require("react").Fragment;
-const ExampleBlock = require("../test-utils").ExampleBlock;
+const { useState, Fragment } = require("react");
+const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
 
-// countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const TypeaheadExample = () => {
+  const [value, setValue] = useState("");
 
-class TypeaheadExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: "",
-      countries: countries.slice(0, 5),
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.filterCountries = this.filterCountries.bind(this);
+  const handleChange = (suggestion) => {
+    setValue(suggestion.value);
   }
 
-  handleChange(suggestion) {
-    this.setState({ value: suggestion.value });
+const TypeaheadExample = () => {
+  const [value, setValue] = useState("");
+  const [countries, setCountries] = useState(COUNTRIES.slice(0, 5));
+
+  const handleChange = (suggestion) => {
+    setValue(suggestion.value);
   }
 
-  filterCountries(inputValue) {
+  const filterCountries = (inputValue) => {
     return new Promise(resolve => {
-      const newCountries = countries
+      const newCountries = COUNTRIES
         .filter(country => country.label.toLowerCase().includes(inputValue.toLowerCase()))
         .slice(0, 5);
       setTimeout(() => {
-        this.setState(() => {
-          return { countries: newCountries };
-        }, resolve.bind(this, newCountries));
+        setCountries(newCountries);
+        resolve(newCountries);
       }, 500);
     });
   }
@@ -118,58 +95,48 @@ class TypeaheadExample extends React.Component {
         <CommonTypeahead
           placeholder="Choose A Country"
           selectType="async"
-          suggestions={this.state.countries}
-          updateSuggestions={this.filterCountries}
-          onChange={this.handleChange}
+          suggestions={countries}
+          updateSuggestions={filterCountries}
+          onChange={handleChange}
         />
-        <ExampleBlock strongHeader="value " content={this.state} />
+        <ExampleBlock strongHeader="value " content={{ value, countries }} />
       </Fragment>
     );
   }
 }
 
-<TypeaheadExample />;
+<ExampleWrapper>
+  <TypeaheadExample>
+</ExampleWrapper>;
 ```
 
 ### Multiselect
 
 ```js
-const Fragment = require("react").Fragment;
-const ExampleBlock = require("../test-utils").ExampleBlock;
+const { Fragment } = require("react");
+const { COUNTRIES, ExampleBlock, ExampleWrapper } = require("../test-utils");
 
-// countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const TypeaheadExample = () => {
+  const [values, setValues] = useState(["Bermuda"]);
 
-class TypeaheadExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      values: ["Bermuda"],
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
+  const handleChange = selections => {
+    setValues(selections.map(selection => selection.value));
+  };
 
-  handleChange(selections) {
-    const values = selections.map(selection => selection.value);
-    this.setState({ values });
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <CommonTypeahead
-          isMulti={true}
-          fullWidth={true}
-          placeholder="Choose Some Countries"
-          suggestions={countries}
-          onChange={this.handleChange}
-          value={this.state.values}
-        />
-        <ExampleBlock strongHeader="values " content={this.state.values} />
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <CommonTypeahead
+        isMulti={true}
+        fullWidth={true}
+        placeholder="Choose Some COUNTRIES"
+        suggestions={COUNTRIES}
+        onChange={handleChange}
+        value={values}
+      />
+      <ExampleBlock strongHeader="values " content={values} />
+    </Fragment>
+  );
+};
 
 <TypeaheadExample />;
 ```
@@ -177,39 +144,30 @@ class TypeaheadExample extends React.Component {
 ### Controlled Value
 
 ```js
-const Fragment = require("react").Fragment;
-const ExampleBlock = require("../test-utils").ExampleBlock;
+const { Fragment } = require("react");
+const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
 
-// countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
-const countries = require("../../utils/constants").COUNTRIES;
+const TypeaheadExample = () => {
+  const [value, setValue] = useState("Bermuda");
 
-class TypeaheadExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: "Bermuda",
-    };
-    this.onChange = this.onChange.bind(this);
+  const onChange = (suggestion) => {
+    setValue(suggestion.value);
   }
 
-  onChange(suggestion) {
-    this.setState({ value: suggestion.value });
-  }
-
-  render() {
     return (
       <Fragment>
         <CommonTypeahead
           placeholder="Choose A Country"
-          suggestions={countries}
-          value={this.state.value}
-          onChange={this.onChange}
+          suggestions={COUNTRIES}
+          value={value}
+          onChange={onChange}
         />
-        <ExampleBlock strongHeader="value " content={this.state} />
+        <ExampleBlock strongHeader="value " content={value} />
       </Fragment>
     );
-  }
 }
 
-<TypeaheadExample />;
+<ExampleWrapper>
+  <TypeaheadExample>
+</ExampleWrapper>;
 ```

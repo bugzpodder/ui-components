@@ -5,7 +5,5 @@
 ### Example
 
 ```js
-const ExternalLink = require("./external-link").ExternalLink;
-
-<ExternalLink href="https://www.grail.com">GRAIL Link in new tab</ExternalLink>;
+<ExternalLink href="https://www.grail.com">GRAIL Link in new tab</ExternalLink>
 ```

@@ -2,7 +2,7 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import { TestWrapper } from "../test-utils";
-import { TwoColumnGrid } from "./index";
+import { TwoColumnGrid } from ".";
 import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);

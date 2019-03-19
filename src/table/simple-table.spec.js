@@ -2,7 +2,7 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import mockConsole from "jest-mock-console";
-import { SimpleTable } from "./index";
+import { SimpleTable } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 import {

@@ -1,6 +1,6 @@
 ## 1.0.0 - 2019-##-
 
-1.
+1. Update react peer dependency to 16.8 for hooks usage.
 
 ## 0.10.0 - 2019-04-01
 

@@ -1,7 +1,7 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { Alert } from "./index";
+import { Alert } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 

@@ -1,7 +1,7 @@
 ### Simple TimelineGraph
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
 const rows = [
   {
     user: "wikipedia",
@@ -32,8 +32,8 @@ const rows = [
 ### Selectable TimelineGraph (with Time)
 
 ```js
-const ExampleBlock = require("../test-utils").ExampleBlock;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { useState } = require("react");
+const { ExampleBlock, ExampleWrapper } = require("../test-utils");
 const rows = [
   {
     date: "1848-02-23T16:20:00Z",
@@ -53,28 +53,16 @@ const rows = [
   },
 ];
 
-class ExampleTimelineGraph extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedItem: null,
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
+const ExampleTimelineGraph = () => {
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  handleSelect(selectedItem) {
-    this.setState({ selectedItem });
-  }
-
-  render() {
-    return (
-      <div>
-        <TimelineGraph isTimeVisible onSelect={this.handleSelect} selectedItem={this.state.selectedItem} rows={rows} />
-        <ExampleBlock strongHeader="State " content={this.state} />
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <TimelineGraph isTimeVisible onSelect={setSelectedItem} selectedItem={selectedItem} rows={rows} />
+      <ExampleBlock strongHeader="State " content={selectedItem} />
+    </div>
+  );
+};
 
 <ExampleWrapper>
   <ExampleTimelineGraph />

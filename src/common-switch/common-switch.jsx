@@ -1,7 +1,7 @@
 // @flow
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormHelperText from "@material-ui/core/FormHelperText";
-import React from "react";
+import React, { useState } from "react";
 import Switch from "@material-ui/core/Switch";
 import classNames from "classnames";
 import styles from "./common-switch.module.scss";
@@ -35,79 +35,70 @@ type Props = {
   classes?: CommonSwitchClasses,
 };
 
-type State = {
-  isChecked: boolean,
-};
-
 /** `CommonSwitch` renders a Material-UI switch component */
-export class CommonSwitch extends React.Component<Props, State> {
-  state = {
-    isChecked: false,
-  };
-
-  handleChange = (e: InputEvent, checked: boolean) => {
-    const { onChange, isSelected } = this.props;
+export const CommonSwitch = (props: Props) => {
+  const [isChecked, setIsChecked] = useState(false);
+  const handleChange = (e: InputEvent, checked: boolean) => {
+    const { onChange, isSelected } = props;
     onChange(checked, e.currentTarget.value);
     if (isSelected === undefined || isSelected === null) {
-      this.setState({ isChecked: checked });
+      setIsChecked(checked);
     }
   };
 
-  render = () => {
-    const {
-      id = "",
-      classes = {},
-      color = "primary",
-      showError = false,
-      helperText = "",
-      label,
-      isEnabled = true,
-      isSelected,
-      value = "",
-      ...controlProps
-    } = this.props;
-    const { isChecked } = this.state;
-    const errorClass = { [styles.error]: showError };
-    const switchSelection = isSelected === undefined || isSelected === null ? isChecked : isSelected;
-    return (
-      <div className={classNames(styles.commonSwitch, classes.root)}>
-        <FormControlLabel
-          classes={{
-            root: styles.controlLabel,
-            label: classNames(classes.label, errorClass),
-          }}
-          data-testid="common-switch"
-          control={(
-            <Switch
-              id={id}
-              checked={switchSelection}
-              classes={{
-                iconChecked: classNames(errorClass),
-                colorPrimary: classNames(errorClass),
-                colorSecondary: classNames(errorClass),
-                bar: classNames({ [styles.errorBar]: showError }),
-              }}
-              color={color}
-              disabled={!isEnabled}
-              disableRipple
-              onChange={this.handleChange}
-              value={value}
-            />
-)}
-          label={label || null}
-          {...controlProps}
-        />
-        {helperText && (
-          <FormHelperText
+  const {
+    id = "",
+    classes = {},
+    color = "primary",
+    showError = false,
+    helperText = "",
+    label,
+    isEnabled = true,
+    isSelected,
+    value = "",
+    ...controlProps
+  } = props;
+
+  const errorClass = { [styles.error]: showError };
+  const switchSelection = isSelected === undefined || isSelected === null ? isChecked : isSelected;
+  return (
+    <div className={classNames(styles.commonSwitch, classes.root)}>
+      <FormControlLabel
+        classes={{
+          root: styles.controlLabel,
+          label: classNames(classes.label, errorClass),
+        }}
+        data-testid="common-switch"
+        control={(
+          <Switch
+            id={id}
+            checked={switchSelection}
             classes={{
-              root: styles.switchHelperText,
+              iconChecked: classNames(errorClass),
+              colorPrimary: classNames(errorClass),
+              colorSecondary: classNames(errorClass),
+              bar: classNames({ [styles.errorBar]: showError }),
             }}
-            error={showError}
-          >
-            {helperText}
-          </FormHelperText>
-        )}
-      </div>
-    );
-  };
-}
+            color={color}
+            disabled={!isEnabled}
+            disableRipple
+            onChange={handleChange}
+            value={value}
+          />
+)}
+        label={label || null}
+        {...controlProps}
+      />
+      {helperText && (
+        <FormHelperText
+          classes={{
+            root: styles.switchHelperText,
+          }}
+          error={showError}
+        >
+          {helperText}
+        </FormHelperText>
+      )}
+    </div>
+  );
+};

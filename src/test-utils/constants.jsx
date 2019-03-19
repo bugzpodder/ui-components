@@ -32,8 +32,7 @@ export const COUNTRIES: Array<Object> = [
   value: suggestion.label.toUpperCase().replace(" ", "_"),
 }));
 
-export const SERGEY =
-  "https://media.licdn.com/dms/image/C5603AQGlBIPst1V4Ew/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=2V2knyEhbTrhRWzgydsXLZqiX8gnoD1poj8jGeFpA0w";
+export const GRAIL = "https://grail.com/wp-content/uploads/2016/12/cropped-final-favicon-32x32.png";
 
 export const EXAMPLE_TABLE_DATA = [
   { word: "Argle-bargle", origin: "Britain" },

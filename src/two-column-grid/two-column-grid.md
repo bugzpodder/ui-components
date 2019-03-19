@@ -2,7 +2,8 @@
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
+
 const rows = [
   {
     label: "Label 1",
@@ -25,7 +26,7 @@ const rows = [
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
 const rows = [
   {
     label: "Label 4",
@@ -48,7 +49,7 @@ const rows = [
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
 const rows = [
   {
     label: "Label 7",

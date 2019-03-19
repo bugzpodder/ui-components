@@ -4,7 +4,7 @@ import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 
 import "jest-dom/extend-expect";
-import { UploadButton } from "./index";
+import { UploadButton } from ".";
 
 afterEach(cleanup);
 

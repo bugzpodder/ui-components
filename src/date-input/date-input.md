@@ -5,52 +5,25 @@
 ```js
 const Typography = require("@material-ui/core/Typography").default;
 const styles = require("../test-utils/example-styles.module.scss");
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleWrapper } = require("../test-utils");
+const { wrapPickerUtilProvider } = require("@grail/components");
+const { useState } = require("react");
 
-// You must wrap your app in the wrapPickerUtilProvider below
-class ExampleAppComponents extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dateOne: "",
-      dateTwo: "",
-    };
-    this.handleFirst = this.handleFirst.bind(this);
-    this.handleSecond = this.handleSecond.bind(this);
-  }
+// You must wrap your app in the wrapPickerUtilProvider.
+const ExampleApp = wrapPickerUtilProvider(() => {
+  const [dateOne, setDateOne] = useState("");
+  const [dateTwo, setDateTwo] = useState("");
 
-  handleFirst(dateOne) {
-    this.setState({ dateOne });
-  }
-
-  handleSecond(dateTwo) {
-    this.setState({ dateTwo });
-  }
-
-  render() {
-    return (
-      <div className={styles.container}>
-        <Typography>
-          Labels will persist above the input field, while placeholders will disappear upon selecting a value
-        </Typography>
-        <DateInput
-          className={styles.spacing}
-          value={this.state.dateOne}
-          onChange={this.handleFirst}
-          label="Release Date"
-        />
-        <DateInput
-          value={this.state.dateTwo}
-          onChange={this.handleSecond}
-          placeholder="Release Date"
-          className={styles.spacing}
-        />
-      </div>
-    );
-  }
-}
-
-const ExampleApp = require("./picker-util-provider-hoc").wrapPickerUtilProvider(ExampleAppComponents);
+  return (
+    <div className={styles.container}>
+      <Typography>
+        Labels will persist above the input field, while placeholders will disappear upon selecting a value
+      </Typography>
+      <DateInput className={styles.spacing} value={dateOne} onChange={setDateOne} label="Release Date" />
+      <DateInput value={dateTwo} onChange={setDateTwo} placeholder="Release Date" className={styles.spacing} />
+    </div>
+  );
+});
 
 <ExampleWrapper>
   <ExampleApp />

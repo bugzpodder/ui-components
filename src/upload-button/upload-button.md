@@ -2,19 +2,13 @@
 
 ```js
 const styles = require("../test-utils/example-styles.module.scss");
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ExampleBlock = require("../test-utils").ExampleBlock;
+const { ExampleBlock, ExampleWrapper } = require("../test-utils");
+const { useState } = require("react");
 
-class UploadButtonExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      filesMetadata: [],
-    };
-    this.handleFileUpload = this.handleFileUpload.bind(this);
-  }
+const UploadButtonExample = () => {
+  const [filesMetadata, setFilesMetadata] = useState([]);
 
-  handleFileUpload(fileList) {
+  const handleFileUpload = fileList => {
     const filesMetadata = [];
     for (let i = 0; i < fileList.length; i++) {
       let file = fileList.item(i);
@@ -27,25 +21,23 @@ class UploadButtonExample extends React.Component {
       };
       filesMetadata.push(fileValues);
     }
-    this.setState({ filesMetadata });
-  }
+    setFilesMetadata(filesMetadata);
+  };
 
-  render() {
-    return (
-      <div className={styles.container}>
-        <UploadButton
-          allowMultiple
-          buttonProps={{
-            variant: "contained",
-            color: "primary",
-          }}
-          onChange={this.handleFileUpload}
-        />
-        <ExampleBlock strongHeader="state " content={this.state} />
-      </div>
-    );
-  }
-}
+  return (
+    <div className={styles.container}>
+      <UploadButton
+        allowMultiple
+        buttonProps={{
+          variant: "contained",
+          color: "primary",
+        }}
+        onChange={handleFileUpload}
+      />
+      <ExampleBlock strongHeader="state " content={filesMetadata} />
+    </div>
+  );
+};
 
 <ExampleWrapper>
   <UploadButtonExample />

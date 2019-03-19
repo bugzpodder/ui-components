@@ -1,9 +1,8 @@
 ### Examples
 
 ```js
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ReadOnlyTextField = require("@grail/components").ReadOnlyTextField;
-const { CommonPage } = require("./index");
+const { ExampleWrapper } = require("../test-utils");
+const { ReadOnlyTextField } = require("@grail/components");
 
 const ExampleCommonPage = () => {
   return (
@@ -40,11 +39,9 @@ matches the `key` given in the object in `menuContents`. However, it
 uses CSS anchors and these do not work on styleguidist.
 
 ```js
-const Alert = require("@grail/components").Alert;
-const CommonSwitch = require("@grail/components").CommonSwitch;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const Fragment = require("react").Fragment;
-const { CommonPage } = require("./index");
+const { Alert, CommonSwitch, CommonPage } = require("@grail/components");
+const { ExampleWrapper } = require("../test-utils");
+const { Fragment } = require("react");
 
 const ExampleCommonPage = () => {
   return (

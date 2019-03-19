@@ -1,64 +1,54 @@
 ### Example
 
 ```js
-const ExampleBlock = require("../test-utils").ExampleBlock;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const { ExampleBlock, ExampleWrapper } = require("../test-utils");
 const styles = require("../test-utils/example-styles.module.scss");
+const { useState } = require("react");
 
-class TestCommonSwitch extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      checkedA: false,
-      checkedB: false,
-      showError: false,
-      value: "",
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleError = this.handleError.bind(this);
-  }
+const TestCommonSwitch = () => {
+  const [checkedA, setCheckedA] = useState(false);
+  const [checkedB, setCheckedB] = useState(false);
+  const [showError, setShowError] = useState(false);
+  const [value, setValue] = useState("");
 
-  handleError(checked) {
-    this.setState({ showError: checked });
-  }
-
-  handleChange(checked, val) {
+  const handleChange = (checked, val) => {
     const value = checked ? val : "";
     if (val === "first") {
-      this.setState({ checkedA: checked, checkedB: false, value });
-      return;
+      setCheckedA(checked);
+      setCheckedB(false);
+      setValue(value);
+    } else {
+      setCheckedA(false);
+      setCheckedB(checked);
+      setValue(value);
     }
-    this.setState({ checkedA: false, checkedB: checked, value });
-  }
+  };
 
-  render() {
-    const { checkedA, checkedB, showError } = this.state;
-    return (
-      <div className={styles.container}>
-        <CommonSwitch label="Primary" onChange={() => {}} />
+  return (
+    <div className={styles.container}>
+      <CommonSwitch label="Primary" onChange={() => {}} />
 
-        <CommonSwitch label="Secondary" color="secondary" value="secondary" onChange={() => {}} />
+      <CommonSwitch label="Secondary" color="secondary" value="secondary" onChange={() => {}} />
 
-        <CommonSwitch
-          label="Error"
-          value="error"
-          showError={showError}
-          helperText="some helper text"
-          onChange={this.handleError}
-        />
+      <CommonSwitch
+        label="Error"
+        value="error"
+        showError={showError}
+        helperText="some helper text"
+        onChange={setShowError}
+      />
 
-        <CommonSwitch className={styles.spacing} label="Disabled" isEnabled={false} onChange={this.handleError} />
-        <br />
+      <CommonSwitch className={styles.spacing} label="Disabled" isEnabled={false} onChange={setShowError} />
+      <br />
 
-        <CommonSwitch color="primary" value="first" isSelected={checkedA} onChange={this.handleChange} />
+      <CommonSwitch color="primary" value="first" isSelected={checkedA} onChange={handleChange} />
 
-        <CommonSwitch value="second" isSelected={checkedB} onChange={this.handleChange} />
+      <CommonSwitch value="second" isSelected={checkedB} onChange={handleChange} />
 
-        <ExampleBlock strongHeader="Switch value" content={this.state.value} />
-      </div>
-    );
-  }
-}
+      <ExampleBlock strongHeader="Switch value" content={value} />
+    </div>
+  );
+};
 
 <ExampleWrapper>
   <TestCommonSwitch />

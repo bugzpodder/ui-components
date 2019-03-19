@@ -1,7 +1,7 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { DateTimeInput } from "./index";
+import { DateTimeInput } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";

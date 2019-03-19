@@ -1,4 +1,2 @@
 // @flow
-import { CommonPanel } from "./panel";
-
-export { CommonPanel };
+export { CommonPanel } from "./panel";

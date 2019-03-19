@@ -1,7 +1,7 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { SpinnerOverlay } from "./index";
+import { SpinnerOverlay } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "react-testing-library";
 

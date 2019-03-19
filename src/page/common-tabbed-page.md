@@ -1,71 +1,57 @@
 ### Example
 
 ```js
-const Alert = require("@grail/components").Alert;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ExampleBlock = require("../test-utils").ExampleBlock;
-const Fragment = require("react").Fragment;
+const { Alert } = require("@grail/components");
+const { ExampleBlock, ExampleWrapper } = require("../test-utils");
+const { Fragment, useState } = require("react");
 
-class ExampleTabbedCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeTab: "one",
-    };
-    this.onChange = this.onChange.bind(this);
-  }
-
-  onChange(activeTab) {
-    this.setState({ activeTab });
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <CommonTabbedPage
-          title="Example Tabbed Page"
-          subtitle="This is a subtitle"
-          activeTab={this.state.activeTab}
-          onChangeActiveTab={this.onChange}
-          headerActions={[
-            {
-              content: "Button Two",
-              color: "primary",
-              onClick: () => console.log("Button Two was clicked."),
+const ExampleTabbedCard = () => {
+  const [activeTab, setActiveTab] = useState("one");
+  return (
+    <Fragment>
+      <CommonTabbedPage
+        title="Example Tabbed Page"
+        subtitle="This is a subtitle"
+        activeTab={activeTab}
+        onChangeActiveTab={setActiveTab}
+        headerActions={[
+          {
+            content: "Button Two",
+            color: "primary",
+            onClick: () => console.log("Button Two was clicked."),
+          },
+          {
+            content: "Button One",
+            color: "primary",
+            variant: "contained",
+            onClick: () => console.log("Button One was clicked."),
+          },
+        ]}
+        pageConfigs={[
+          {
+            label: "Tab One",
+            key: "one",
+            Component: Alert,
+            componentProps: {
+              color: "success",
+              message: "Tab One!",
             },
-            {
-              content: "Button One",
-              color: "primary",
-              variant: "contained",
-              onClick: () => console.log("Button One was clicked."),
+          },
+          {
+            label: "Tab Two",
+            key: "two",
+            Component: Alert,
+            componentProps: {
+              color: "warning",
+              message: "Tab Two!",
             },
-          ]}
-          pageConfigs={[
-            {
-              label: "Tab One",
-              key: "one",
-              Component: Alert,
-              componentProps: {
-                color: "success",
-                message: "Tab One!",
-              },
-            },
-            {
-              label: "Tab Two",
-              key: "two",
-              Component: Alert,
-              componentProps: {
-                color: "warning",
-                message: "Tab Two!",
-              },
-            },
-          ]}
-        />
-        <ExampleBlock strongHeader="state " content={this.state} />
-      </Fragment>
-    );
-  }
-}
+          },
+        ]}
+      />
+      <ExampleBlock strongHeader="state " content={activeTab} />
+    </Fragment>
+  );
+};
 
 <ExampleWrapper>
   <ExampleTabbedCard />
@@ -78,11 +64,9 @@ matches the `key` given in the object in `menuContents`. However, it
 uses CSS anchors and these do not work on styleguidist.
 
 ```js
-const Fragment = require("react").Fragment;
-const Alert = require("@grail/components").Alert;
-const CommonSwitch = require("@grail/components").CommonSwitch;
-const ExampleWrapper = require("../test-utils").ExampleWrapper;
-const ExampleBlock = require("../test-utils").ExampleBlock;
+const { Fragment, useState } = require("react");
+const { Alert, CommonSwitch } = require("@grail/components");
+const { ExampleBlock, ExampleWrapper } = require("../test-utils");
 
 const TabOneComponent = () => {
   return (
@@ -104,85 +88,72 @@ const TabTwoComponent = () => {
   );
 };
 
-class ExampleTabbedCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeTab: "one",
-    };
-    this.onChange = this.onChange.bind(this);
-  }
-
-  onChange(activeTab) {
-    this.setState({ activeTab });
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <CommonTabbedPage
-          title="Example With Menu"
-          subtitle="Another subtitle"
-          activeTab={this.state.activeTab}
-          onChangeActiveTab={this.onChange}
-          headerActions={[
-            {
-              Component: CommonSwitch,
-              componentProps: {
-                label: "CUSTOM ACTION",
-                onChange: () => {},
-                color: "secondary",
+const ExampleTabbedCard = () => {
+  const [activeTab, setActiveTab] = useState("one");
+  return (
+    <Fragment>
+      <CommonTabbedPage
+        title="Example With Menu"
+        subtitle="Another subtitle"
+        activeTab={activeTab}
+        onChangeActiveTab={setActiveTab}
+        headerActions={[
+          {
+            Component: CommonSwitch,
+            componentProps: {
+              label: "CUSTOM ACTION",
+              onChange: () => {},
+              color: "secondary",
+            },
+          },
+        ]}
+        pageConfigs={[
+          {
+            label: "Tab One",
+            key: "one",
+            Component: TabOneComponent,
+            componentProps: {},
+            menuContents: [
+              {
+                label: "Element A",
+                key: "elementA",
               },
-            },
-          ]}
-          pageConfigs={[
-            {
-              label: "Tab One",
-              key: "one",
-              Component: TabOneComponent,
-              componentProps: {},
-              menuContents: [
-                {
-                  label: "Element A",
-                  key: "elementA",
-                },
-                {
-                  label: "Element B",
-                  key: "elementB",
-                },
-                {
-                  label: "Element C",
-                  key: "elementC",
-                },
-              ],
-            },
-            {
-              label: "Tab Two",
-              key: "two",
-              Component: TabTwoComponent,
-              componentProps: {},
-              menuContents: [
-                {
-                  label: "Element I",
-                  key: "elementI",
-                },
-                {
-                  label: "Element II",
-                  key: "elementII",
-                },
-                {
-                  label: "Element III",
-                  key: "elementIII",
-                },
-              ],
-            },
-          ]}
-        />
-        <ExampleBlock strongHeader="state " content={this.state} />
-      </Fragment>
-    );
-  }
-}
+              {
+                label: "Element B",
+                key: "elementB",
+              },
+              {
+                label: "Element C",
+                key: "elementC",
+              },
+            ],
+          },
+          {
+            label: "Tab Two",
+            key: "two",
+            Component: TabTwoComponent,
+            componentProps: {},
+            menuContents: [
+              {
+                label: "Element I",
+                key: "elementI",
+              },
+              {
+                label: "Element II",
+                key: "elementII",
+              },
+              {
+                label: "Element III",
+                key: "elementIII",
+              },
+            ],
+          },
+        ]}
+      />
+      <ExampleBlock strongHeader="state " content={activeTab} />
+    </Fragment>
+  );
+};
 
 <ExampleWrapper>
   <ExampleTabbedCard />

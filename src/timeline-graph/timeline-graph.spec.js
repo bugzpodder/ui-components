@@ -2,7 +2,7 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import moment from "moment-timezone";
-import { TabbedTimelineCard, TimelineCard, TimelineGraph } from "./index";
+import { TabbedTimelineCard, TimelineCard, TimelineGraph } from ".";
 import { TestWrapper } from "../test-utils";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";

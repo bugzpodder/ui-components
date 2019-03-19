@@ -1,6 +1,6 @@
 // @flow
 import Card from "@material-ui/core/Card";
-import React from "react";
+import React, { useState } from "react";
 import Tab from "@material-ui/core/Tab/Tab";
 import Tabs from "@material-ui/core/Tabs/Tabs";
 import classNames from "classnames";
@@ -45,28 +45,14 @@ type Props = {
   selectedItem?: ?number,
 };
 
-type State = {
-  selectedTab: string,
-};
-
 /** TabbedTimelineCard provides an interactive tabbed timeline component, wrapped inside of the CommonCard */
-export class TabbedTimelineCard extends React.Component<Props, State> {
-  state = {
-    selectedTab: "",
-  };
+export const TabbedTimelineCard = (props: Props) => {
+  const {
+    classes = {}, commonCardProps, tabContents, ...timelineProps
+  } = props;
+  const [selectedTab, setSelectedTab] = useState(Object.keys(tabContents)[0] || "");
 
-  componentDidMount = () => {
-    const { tabContents } = this.props;
-    if (!tabContents) {
-      return null;
-    }
-    const [selectedTab] = Object.keys(tabContents);
-    this.setState({ selectedTab });
-  };
-
-  getTabs = () => {
-    const { selectedTab } = this.state;
-    const { tabContents } = this.props;
+  const getTabs = () => {
     if (!selectedTab) {
       return null;
     }
@@ -87,7 +73,7 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
           textColor="primary"
           indicatorColor="primary"
           value={selectedTab}
-          onChange={(event, selectedTab) => this.setState({ selectedTab })}
+          onChange={(event, selectedTab) => setSelectedTab(selectedTab)}
         >
           {Object.keys(tabContents).map((entry, index) => {
             return (
@@ -103,38 +89,32 @@ export class TabbedTimelineCard extends React.Component<Props, State> {
     );
   };
 
-  render = () => {
-    const { selectedTab } = this.state;
-    const {
-      classes = {}, commonCardProps, tabContents, ...timelineProps
-    } = this.props;
-    const { commonCard = {} } = classes;
-    if (!tabContents || !selectedTab) {
-      return null;
-    }
-    const tabContent = tabContents[selectedTab];
-    const rows = tabContent.content;
-    return (
-      <div className={classNames(styles.timelineContainer, classes.root)}>
-        <CommonCard
-          classes={{
-            ...commonCard,
-            root: classNames(styles.timelineCard, commonCard.root),
-            body: classNames(styles.timelineCardBody, commonCard.body),
-          }}
-          {...commonCardProps}
-        >
-          {this.getTabs()}
-          <TimelineGraphComponent
-            rows={rows}
-            classes={classes}
-            selectedTab={selectedTab}
-            {...timelineProps}
-            isDayVisible={tabContent.isDayVisible}
-            isTimeVisible={tabContent.isTimeVisible}
-          />
-        </CommonCard>
-      </div>
-    );
-  };
-}
+  const { commonCard = {} } = classes;
+  if (!tabContents || !selectedTab) {
+    return null;
+  }
+  const tabContent = tabContents[selectedTab];
+  const rows = tabContent.content;
+  return (
+    <div className={classNames(styles.timelineContainer, classes.root)}>
+      <CommonCard
+        classes={{
+          ...commonCard,
+          root: classNames(styles.timelineCard, commonCard.root),
+          body: classNames(styles.timelineCardBody, commonCard.body),
+        }}
+        {...commonCardProps}
+      >
+        {getTabs()}
+        <TimelineGraphComponent
+          rows={rows}
+          classes={classes}
+          selectedTab={selectedTab}
+          {...timelineProps}
+          isDayVisible={tabContent.isDayVisible}
+          isTimeVisible={tabContent.isTimeVisible}
+        />
+      </CommonCard>
+    </div>
+  );
+};

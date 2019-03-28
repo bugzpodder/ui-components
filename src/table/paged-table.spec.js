@@ -3,7 +3,7 @@ import "jest-dom/extend-expect";
 import React from "react";
 import mockConsole from "jest-mock-console";
 import { PagedTable } from "./index";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import {
   allSelectedRows,
   columns,

@@ -3,12 +3,12 @@
 ### Default
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../utils/constants").COUNTRIES;
+const countries = require("../test-utils").COUNTRIES;
 
 class SelectExample extends React.Component {
   constructor(props) {
@@ -46,12 +46,12 @@ class SelectExample extends React.Component {
 ### Creatable
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../utils/constants").COUNTRIES;
+const countries = require("../test-utils").COUNTRIES;
 
 class SelectExample extends React.Component {
   constructor(props) {
@@ -92,12 +92,12 @@ class SelectExample extends React.Component {
 ### Asynchronous
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../utils/constants").COUNTRIES;
+const countries = require("../test-utils").COUNTRIES;
 
 class SelectExample extends React.Component {
   constructor(props) {
@@ -153,13 +153,13 @@ class SelectExample extends React.Component {
 ### Custom
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 const Chip = require("@material-ui/core/Chip").default;
 
 // `countries` returns an array of { label: "Country Name", value: "COUNTRY_NAME" } objects;
-const countries = require("../utils/constants").COUNTRIES;
-const styles = require("../utils/example-styles.module.scss");
+const countries = require("../test-utils").COUNTRIES;
+const styles = require("../test-utils/example-styles.module.scss");
 
 class SelectExample extends React.Component {
   constructor(props) {
@@ -189,7 +189,11 @@ class SelectExample extends React.Component {
           formatOption={item => (
             <div>
               <span>{item.label}</span>
-              <div>{item.info.map(info => <Chip label={info} />)}</div>
+              <div>
+                {item.info.map(info => (
+                  <Chip label={info} />
+                ))}
+              </div>
             </div>
           )}
         />

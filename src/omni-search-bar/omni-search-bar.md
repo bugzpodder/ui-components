@@ -1,8 +1,8 @@
 ### Example
 
 ```js
-const ExampleBlock = require("@grail/components").ExampleBlock;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleBlock = require("../test-utils").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 
 const {
   OMNI_TEXT_SEARCH_TYPE,

@@ -3,7 +3,7 @@
 ##### NOTE: To use this component across any app, the app must be wrapped in the `wrapPickerUtilProvider` function imported from `@grail/components`;
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 
 // You must wrap your app in the wrapPickerUtilProvider below
 class ExampleAppComponents extends React.Component {

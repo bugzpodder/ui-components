@@ -1,9 +1,9 @@
 ### Example
 
 ```js
-const ExampleBlock = require("@grail/components").ExampleBlock;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const EXAMPLE_TABLE_DATA = require("@grail/components/utils").EXAMPLE_TABLE_DATA;
+const ExampleBlock = require("../test-utils").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const EXAMPLE_TABLE_DATA = require("../test-utils").EXAMPLE_TABLE_DATA;
 
 class TestSimpleTable extends React.Component {
   constructor(props) {

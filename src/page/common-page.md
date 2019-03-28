@@ -1,7 +1,7 @@
 ### Examples
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const ReadOnlyTextField = require("@grail/components").ReadOnlyTextField;
 const { CommonPage } = require("./index");
 
@@ -27,7 +27,7 @@ const ExampleCommonPage = () => {
       <ReadOnlyTextField>Any content can go inside of CommonPage</ReadOnlyTextField>
     </CommonPage>
   );
-}
+};
 
 <ExampleWrapper>
   <ExampleCommonPage />
@@ -42,7 +42,7 @@ uses CSS anchors and these do not work on styleguidist.
 ```js
 const Alert = require("@grail/components").Alert;
 const CommonSwitch = require("@grail/components").CommonSwitch;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const Fragment = require("react").Fragment;
 const { CommonPage } = require("./index");
 
@@ -83,7 +83,7 @@ const ExampleCommonPage = () => {
       </div>
     </CommonPage>
   );
-}
+};
 
 <ExampleWrapper>
   <ExampleCommonPage />

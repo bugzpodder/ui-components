@@ -1,8 +1,8 @@
 ### Simple TimelineCard
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const ADAMS_DATA = require("@grail/components/utils").ADAMS_DATA;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const ADAMS_DATA = require("../test-utils").ADAMS_DATA;
 
 <ExampleWrapper>
   <TimelineCard
@@ -25,9 +25,9 @@ const ADAMS_DATA = require("@grail/components/utils").ADAMS_DATA;
 ### Selectable TimelineCard (with Time)
 
 ```js
-const ExampleBlock = require("@grail/components").ExampleBlock;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const ADAMS_DATA = require("@grail/components/utils").ADAMS_DATA;
+const ExampleBlock = require("../test-utils").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const ADAMS_DATA = require("../test-utils").ADAMS_DATA;
 
 class ExampleTimelineCard extends React.Component {
   constructor(props) {

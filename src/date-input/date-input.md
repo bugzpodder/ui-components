@@ -4,8 +4,8 @@
 
 ```js
 const Typography = require("@material-ui/core/Typography").default;
-const styles = require("../utils/example-styles.module.scss");
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const styles = require("../test-utils/example-styles.module.scss");
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 
 // You must wrap your app in the wrapPickerUtilProvider below
 class ExampleAppComponents extends React.Component {

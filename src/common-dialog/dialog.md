@@ -2,7 +2,7 @@
 
 ```js
 const Button = require("@material-ui/core/Button").default;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 
 class DialogDemo extends React.Component {
   constructor(props) {

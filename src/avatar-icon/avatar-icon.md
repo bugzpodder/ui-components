@@ -1,11 +1,11 @@
 ### Example
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const SERGEY = require("../utils").SERGEY;
 const Button = require("@material-ui/core/Button").default;
 const Typography = require("@material-ui/core/Typography").default;
-const styles = require("../utils/example-styles.module.scss");
+const styles = require("../test-utils/example-styles.module.scss");
 
 class AvatarExample extends React.Component {
   constructor(props) {

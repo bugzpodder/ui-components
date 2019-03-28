@@ -1,10 +1,10 @@
 ### Example
 
 ```js
-const ExampleBlock = require("@grail/components").ExampleBlock;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const LARGE_EXAMPLE_TABLE_DATA = require("@grail/components/utils").LARGE_EXAMPLE_TABLE_DATA;
-const EXTRA_LARGE_EXAMPLE_TABLE_DATA = require("@grail/components/utils").EXTRA_LARGE_EXAMPLE_TABLE_DATA;
+const ExampleBlock = require("../test-utils").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const LARGE_EXAMPLE_TABLE_DATA = require("../test-utils").LARGE_EXAMPLE_TABLE_DATA;
+const EXTRA_LARGE_EXAMPLE_TABLE_DATA = require("../test-utils").EXTRA_LARGE_EXAMPLE_TABLE_DATA;
 const Typography = require("@material-ui/core").Typography;
 
 class TestLargeSimpleTable extends React.Component {

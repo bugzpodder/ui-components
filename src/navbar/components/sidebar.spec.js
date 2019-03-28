@@ -4,7 +4,7 @@ import React from "react";
 import { EDC, LIMS, PIPELINE } from "@grail/lib";
 import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
-import { TestWrapper } from "../../utils";
+import { TestWrapper } from "../../test-utils";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 

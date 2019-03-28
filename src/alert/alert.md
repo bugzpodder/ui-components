@@ -1,8 +1,8 @@
 ## Examples
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const styles = require("../utils/example-styles.module.scss");
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const styles = require("../test-utils/example-styles.module.scss");
 
 <ExampleWrapper>
   <div className={styles.container}>

@@ -1,10 +1,10 @@
 ## Example
 
 ```js
-const StyleWrapper = require("@grail/components").StyleWrapper;
+const StyleWrapper = require("../test-utils").StyleWrapper;
 const Button = require("@material-ui/core/Button").default;
 const Alert = require("@grail/components").Alert;
-const styles = require("../utils/example-styles.module.scss");
+const styles = require("../test-utils/example-styles.module.scss");
 
 class ExampleApp extends React.Component {
   render() {

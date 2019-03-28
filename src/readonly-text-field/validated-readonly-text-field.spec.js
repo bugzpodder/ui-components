@@ -1,7 +1,7 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import { ValidatedReadOnlyTextField } from "./index";
 import { cleanup, render } from "react-testing-library";
 

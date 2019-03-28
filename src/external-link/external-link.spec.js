@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { ExternalLink } from "./external-link";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);

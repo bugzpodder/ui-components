@@ -3,7 +3,7 @@ import "jest-dom/extend-expect";
 import Button from "@material-ui/core/Button";
 import React from "react";
 import { CommonCard } from "./index";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);

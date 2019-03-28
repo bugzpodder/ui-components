@@ -1,7 +1,7 @@
 ### Example
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const Fragment = require("react").Fragment;
 const Button = require("@material-ui/core/Button").default;
 

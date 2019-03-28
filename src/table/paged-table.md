@@ -2,9 +2,9 @@
 
 ```js
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
-const EXAMPLE_TABLE_DATA = require("@grail/components/utils").EXAMPLE_TABLE_DATA;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleBlock = require("../test-utils").ExampleBlock;
+const EXAMPLE_TABLE_DATA = require("../test-utils").EXAMPLE_TABLE_DATA;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const Button = require("@material-ui/core/Button").default;
 
 class TestPagedTable extends React.Component {

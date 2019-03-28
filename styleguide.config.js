@@ -34,6 +34,7 @@ module.exports = {
         "./src/readonly-text-field/validated-readonly-text-field.jsx",
         "./src/text-input/text-input.jsx",
         "./src/two-column-grid/two-column-grid.jsx",
+        "./src/upload-button/upload-button.jsx",
       ],
     },
     {

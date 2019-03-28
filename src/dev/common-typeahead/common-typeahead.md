@@ -4,7 +4,7 @@
 
 ```js
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
 const countries = require("../../utils/constants").COUNTRIES;
@@ -39,7 +39,7 @@ class TypeaheadExample extends React.Component {
 
 ```js
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
 const countries = require("../../utils/constants").COUNTRIES;
@@ -79,7 +79,7 @@ class TypeaheadExample extends React.Component {
 
 ```js
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
 const countries = require("../../utils/constants").COUNTRIES;
@@ -135,7 +135,7 @@ class TypeaheadExample extends React.Component {
 
 ```js
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
 const countries = require("../../utils/constants").COUNTRIES;
@@ -178,7 +178,7 @@ class TypeaheadExample extends React.Component {
 
 ```js
 const Fragment = require("react").Fragment;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 // countries returns an array of { label: COUNTRY_NAME, value: COUNTRY_NAME } objects;
 const countries = require("../../utils/constants").COUNTRIES;

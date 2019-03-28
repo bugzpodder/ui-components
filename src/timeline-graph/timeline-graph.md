@@ -1,7 +1,7 @@
 ### Simple TimelineGraph
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const rows = [
   {
     user: "wikipedia",
@@ -32,8 +32,8 @@ const rows = [
 ### Selectable TimelineGraph (with Time)
 
 ```js
-const ExampleBlock = require("@grail/components").ExampleBlock;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleBlock = require("../test-utils").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const rows = [
   {
     date: "1848-02-23T16:20:00Z",

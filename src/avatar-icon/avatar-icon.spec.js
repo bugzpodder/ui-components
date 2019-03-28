@@ -2,7 +2,7 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import { AvatarIcon } from "./index";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 

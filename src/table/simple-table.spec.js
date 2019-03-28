@@ -3,7 +3,7 @@ import "jest-dom/extend-expect";
 import React from "react";
 import mockConsole from "jest-mock-console";
 import { SimpleTable } from "./index";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 import {
   columns, data, invalidColumns, tableOptions,

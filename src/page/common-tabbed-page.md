@@ -2,8 +2,8 @@
 
 ```js
 const Alert = require("@grail/components").Alert;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 const Fragment = require("react").Fragment;
 
 class ExampleTabbedCard extends React.Component {
@@ -81,8 +81,8 @@ uses CSS anchors and these do not work on styleguidist.
 const Fragment = require("react").Fragment;
 const Alert = require("@grail/components").Alert;
 const CommonSwitch = require("@grail/components").CommonSwitch;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const ExampleBlock = require("@grail/components").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const ExampleBlock = require("../test-utils").ExampleBlock;
 
 const TabOneComponent = () => {
   return (

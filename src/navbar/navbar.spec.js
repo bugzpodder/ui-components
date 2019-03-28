@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import { EDC, LIMS, PIPELINE } from "@grail/lib";
 import { MemoryRouter } from "react-router-dom";
 import { Navbar } from "./navbar";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 

@@ -1,9 +1,9 @@
 ### Example
 
 ```js
-const ExampleBlock = require("@grail/components").ExampleBlock;
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
-const styles = require("../utils/example-styles.module.scss");
+const ExampleBlock = require("../test-utils").ExampleBlock;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
+const styles = require("../test-utils/example-styles.module.scss");
 
 class TestCommonSwitch extends React.Component {
   constructor(props) {

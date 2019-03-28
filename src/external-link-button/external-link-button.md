@@ -5,7 +5,7 @@
 ### Example
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 const ExternalLinkButton = require("./external-link-button");
 
 <ExampleWrapper>

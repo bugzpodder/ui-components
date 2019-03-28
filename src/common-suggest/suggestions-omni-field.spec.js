@@ -2,7 +2,7 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import { SuggestionsOmniField } from "./suggestions-omni-field";
-import { TestWrapper } from "../utils";
+import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);

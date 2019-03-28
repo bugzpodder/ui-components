@@ -14,8 +14,11 @@
 10. Add max-height and overflow to `CommonSuggest` popdown.
 11. Move value suggest logic to common lib.
 12. Deprecate `Selector` component.
-13. Add Export to CSV in `PagedTable`. Can be disabled by passing includeExportAsCsvButton={false}.
-14. `ExportTableButton` to export CSV can be used with any data passed into it.
+13. Add Export to CSV button in `PagedTable`. Can be disabled by passing includeExportAsCsvButton={false}.
+14. Add `ExportTableButton` which exports a CSV containing any generic data that is passed into it.
+15. Add `UploadButton` component to handle file uploads through a Button component.
+16. Add file utils to extract content from uploaded files.
+17. Un-export components that are used internally for testing (e.g. ExampleBlock, TestWrapper, ExampleWrapper).
 
 ## 0.9.0 - 2019-01-17
 

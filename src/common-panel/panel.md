@@ -1,7 +1,7 @@
 ### Example
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 
 <ExampleWrapper>
   <CommonPanel title="Panel Title" variant="h4">
@@ -11,7 +11,7 @@ const ExampleWrapper = require("@grail/components").ExampleWrapper;
 ```
 
 ```js
-const ExampleWrapper = require("@grail/components").ExampleWrapper;
+const ExampleWrapper = require("../test-utils").ExampleWrapper;
 
 <ExampleWrapper>
   <CommonPanel title="Panel Title">This is the body of the panel.</CommonPanel>

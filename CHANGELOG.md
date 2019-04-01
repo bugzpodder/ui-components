@@ -1,4 +1,8 @@
-## 1.0.0 - ####-##-
+## 1.0.0 - 2019-##-
+
+1.
+
+## 0.10.0 - 2019-04-01
 
 1. `TabbedTimelineCard` tabs are now fixed at the top of the card.
 2. Fix timeline card styling to properly handle custom heights.

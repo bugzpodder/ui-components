@@ -1,6 +1,7 @@
 ## 1.0.0 - 2019-##-
 
 1. Update react peer dependency to 16.8 for hooks usage.
+2. Fix sidebar to grow and shrink using flex-grow/shrink.
 
 ## 0.10.0 - 2019-04-01
 

@@ -73,6 +73,20 @@ test("render paged table with no results and is loading", () => {
   expect(container).toMatchSnapshot();
 });
 
+test("render paged table with no results and isFullBleed, noMargin", () => {
+  const { container } = render(
+    <TestWrapper>
+      <PagedTable
+        columns={columns}
+        data={[]}
+        isFullBleed
+        hasTableMargin={false}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
 test("render paged table with no initially selected items, then select items", () => {
   const mockSelect = jest.fn(result => result);
   const { container } = render(

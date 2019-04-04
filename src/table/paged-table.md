@@ -4,6 +4,7 @@
 const { Fragment, useState } = require("react");
 const { ExampleBlock, ExampleWrapper, EXAMPLE_TABLE_DATA } = require("../test-utils");
 const Button = require("@material-ui/core/Button").default;
+const styles = require("../test-utils/example-styles.module.scss");
 
 const TestPagedTable = () => {
   const [tableOptions, setTableOptions] = useState({
@@ -16,12 +17,12 @@ const TestPagedTable = () => {
   const [data, setData] = useState(EXAMPLE_TABLE_DATA);
   const handlePageChange = params => {
     const { offset, count } = params;
-    console.log(params);
+    console.debug(params);
     setTableOptions(tableOptions => ({ ...tableOptions, offset, count }));
   };
 
   const handleSelection = selectedRowIds => {
-    console.log(selectedRowIds);
+    console.debug(selectedRowIds);
     setTableOptions(tableOptions => ({ ...tableOptions, selectedRowIds }));
   };
 
@@ -73,7 +74,7 @@ const TestPagedTable = () => {
     </Fragment>
   );
   return (
-    <div>
+    <div className={styles.pagedTable}>
       <PagedTable
         // required
         data={pagedData}
@@ -93,6 +94,8 @@ const TestPagedTable = () => {
         onSort={handleSort}
         highlightedRowId={tableOptions.highlightedRowId}
         onHighlightRow={handleHighlight}
+        isFullBleed
+        hasTableMargin={false}
       />
       <ExampleBlock strongHeader="Table Options " content={tableOptions} />
     </div>

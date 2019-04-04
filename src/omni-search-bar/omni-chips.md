@@ -43,7 +43,7 @@ const OmniChipsContainer = () => {
   const [searchOptions, setSearchOptions] = useState(initialSearchOptions);
 
   const addOmniSearchCommand = ({ command, omniFieldName, omniValues }) => {
-    console.log(command, omniFieldName, omniValues);
+    console.debug(command, omniFieldName, omniValues);
     if (command === SET_OMNI_FIELD_COMMAND) {
       setSearchOptions(searchOptions => {
         const newOptions = searchOptions

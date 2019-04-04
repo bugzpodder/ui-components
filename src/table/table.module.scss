@@ -12,7 +12,14 @@
 .pagedTableCardRoot {
   .pagedTableCardBody {
     padding: 0;
-    margin: 0 20px;
+    &.hasTableMargin {
+      margin: 0 20px;
+    }
+  }
+  &.fullBleedPagedTableCardRoot {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   .pagedTableCardFooter {
     &.tableFooter {
@@ -33,9 +40,23 @@
 }
 
 .tableContainer {
+  max-height: 400px;
+
+  @include media-breakpoint-up(ul) {
+    max-height: 600px;
+  }
+}
+.fullBleedPagedTableCardRoot {
+  .tableContainer {
+    height: unset;
+    max-height: unset;
+    margin: 0;
+  }
+}
+
+.tableContainer {
   position: relative;
   overflow: auto;
-  max-height: 400px;
   // Make scrollbar more obvious on tables, since users have a hard time seeing
   // overflowable content (especially on Mac)
   &::-webkit-scrollbar {
@@ -47,10 +68,6 @@
     border-radius: 4px;
     background-color: rgba(0,0,0,.25);
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-  }
-
-  @include media-breakpoint-up(ul) {
-    max-height: 600px;
   }
   thead th {
     position: sticky;

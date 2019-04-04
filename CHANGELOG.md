@@ -2,6 +2,8 @@
 
 1. Update react peer dependency to 16.8 for hooks usage.
 2. Fix sidebar to grow and shrink using flex-grow/shrink.
+3. Add `isFullBleed` to `PagedTable` to allow for non-card based paged table that expands to 100% of the height of the parent element.
+4. Add `hasTableMargin` to `PagedTable` to enable/disable table margin.
 
 ## 0.10.0 - 2019-04-01
 

@@ -18,13 +18,13 @@ const ExampleTabbedCard = () => {
           {
             content: "Button Two",
             color: "primary",
-            onClick: () => console.log("Button Two was clicked."),
+            onClick: () => console.debug("Button Two was clicked."),
           },
           {
             content: "Button One",
             color: "primary",
             variant: "contained",
-            onClick: () => console.log("Button One was clicked."),
+            onClick: () => console.debug("Button One was clicked."),
           },
         ]}
         pageConfigs={[

@@ -8,7 +8,7 @@ import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
 import { TablePager } from "./components/table-pager";
 
-type Props = {
+export type PagedTableProps = {
   /** Provides the information you wish to display */
   data: Array<Object>,
   /**
@@ -73,22 +73,32 @@ type Props = {
   enableSelectAll?: boolean,
   /** Props for the CommonCard component */
   cardProps?: Object,
+  /** Add margins to card body */
+  hasTableMargin?: boolean,
+  /** If true, fill parent element with card and table (should specify parent height)
+  If false, show as fixed height card. */
+  isFullBleed?: boolean,
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
-export const PagedTable = (props: Props) => {
+export const PagedTable = (props: PagedTableProps) => {
   const {
     onPageChange,
     headerActions = [],
     title = "",
     subheader,
     includeExportAsCsvButton = true,
+    hasTableMargin = true,
+    isFullBleed = false,
     cardProps = {},
     ...tableProps
   } = props;
   const {
     classes = {}, columns, data, isLoading = false, onSelect, selectedRows, tableOptions,
   } = tableProps;
+  if (isFullBleed) {
+    cardProps.elevation = 0;
+  }
 
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");
@@ -126,8 +136,18 @@ export const PagedTable = (props: Props) => {
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
         data-testid="paged-table"
         classes={{
-          root: classNames(styles.pagedTableCardRoot, classes.root),
-          body: classNames(styles.pagedTableCardBody, styles.tableContainer, classes.tableContainer, classes.body),
+          root: classNames(styles.pagedTableCardRoot, classes.root, {
+            [styles.fullBleedPagedTableCardRoot]: isFullBleed,
+          }),
+          body: classNames(
+            styles.pagedTableCardBody,
+            {
+              [styles.hasTableMargin]: hasTableMargin,
+            },
+            styles.tableContainer,
+            classes.tableContainer,
+            classes.body,
+          ),
           footer: classNames(styles.pagedTableCardFooter, { [styles.tableFooter]: onPageChange }, classes.pagination),
         }}
         {...cardProps}

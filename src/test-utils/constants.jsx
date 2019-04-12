@@ -99,3 +99,11 @@ export const EMU_DATA = [
     content: <div>Sir George Pearce wages war on the local population of emus in Australia.</div>,
   },
 ];
+
+export const ALPHABET_ANIMALS_DATA: Array<Array<?string>> = [
+  ["alligator", "bat", "cat", "dog", "elephant", "fox"],
+  ["goat", "horse", "iguana", "jaguar", "kangaroo", "lion"],
+  ["monkey", "narwhal", "octopus", "penguin", "quail", "raccoon"],
+  ["seal", "tiger", "umbrella bird", "vulture", "whale", "x-ray tetra"],
+  ["yak", "zebra", null, null, null, null],
+];

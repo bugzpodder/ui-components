@@ -12,6 +12,7 @@
 10. `CommonTabbedPage` now has `SpinnerOverlay` built-in. If `isLoading` is provided and true, the overlay will be displayed over
     the page content.
 11. `CommonTypeahead` removed fromd dev components.
+12. Add `SelectionGrid`.
 
 ## 0.10.0 - 2019-04-01
 

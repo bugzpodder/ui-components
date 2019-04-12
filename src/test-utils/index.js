@@ -1,5 +1,6 @@
 // @flow
 export {
+  ALPHABET_ANIMALS_DATA,
   ADAMS_DATA,
   COUNTRIES,
   EMU_DATA,

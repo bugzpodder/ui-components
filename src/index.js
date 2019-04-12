@@ -31,6 +31,7 @@ export { TabbedTimelineCard, TimelineGraph, TimelineCard } from "./timeline-grap
 export { TextInput } from "./text-input";
 export { TwoColumnGrid, TwoColumnRow } from "./two-column-grid";
 export { UploadButton } from "./upload-button";
+export { SelectionGrid } from "./selection-grid";
 export {
   // $FlowFixMe: Property `readFileListAsTextArray` is missing in ModuleNamespace for export {}
   readFileListAsTextArray,

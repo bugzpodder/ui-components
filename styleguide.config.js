@@ -73,6 +73,7 @@ module.exports = {
         "./src/omni-search-bar/omni-chips.jsx",
         "./src/omni-search-bar/omni-search-bar.jsx",
         "./src/table/paged-table.jsx",
+        "./src/selection-grid/selection-grid.jsx",
         "./src/table/simple-table.jsx",
         "./src/table/large-simple-table.jsx",
         "./src/timeline-graph/timeline-graph.jsx",

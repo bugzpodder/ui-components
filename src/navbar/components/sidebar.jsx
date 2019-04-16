@@ -90,10 +90,9 @@ const reducer = (state, action: Object) => {
 
 export const Sidebar = (props: Props) => {
   const [state, dispatch] = useReducer(reducer, { openItems: new Set(), touchedItems: new Set() });
-
   useEffect(() => {
     dispatch({ type: CLEAR });
-  }, [props]);
+  }, [props.isOpen]);
 
   const getPlaceholderLink = (item: SidebarItemPlaceholder, key: number, nested: boolean = false) => {
     return (

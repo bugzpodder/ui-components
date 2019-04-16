@@ -91,7 +91,7 @@ exports[`render full simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
           />
         </div>
@@ -168,7 +168,7 @@ exports[`render loading simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
           />
         </div>
@@ -254,7 +254,7 @@ exports[`render simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
           />
         </div>
@@ -369,7 +369,7 @@ exports[`render simple table with all items selected 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
           />
         </div>
@@ -460,7 +460,7 @@ exports[`render simple table with no results and is loading 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
           />
         </div>

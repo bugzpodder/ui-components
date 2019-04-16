@@ -16,11 +16,11 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInputBase-input MuiInput-input"
+            class="css-1pcexqc-container MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
-              class="css-vj8t7z common-select__control"
+              class="css-bg1rzq-control common-select__control"
             >
               <div
                 class="css-1hwfws3 common-select__value-container common-select__value-container--is-multi common-select__value-container--has-value"

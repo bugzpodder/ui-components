@@ -61,7 +61,7 @@ export const TabbedTimelineCard = (props: Props) => {
 
   useEffect(() => {
     setSelectedTab(Object.keys(tabContents)[0]);
-  });
+  }, [tabContents]);
 
   const tabContent = tabContents[selectedTab] || {};
   const rows = tabContent.content || [];

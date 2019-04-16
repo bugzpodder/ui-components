@@ -16,11 +16,11 @@ exports[`async CommonSelect with initial and no options messages 1`] = `
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInputBase-input MuiInput-input"
+            class="css-1pcexqc-container MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
-              class="css-vj8t7z common-select__control common-select__control--menu-is-open"
+              class="css-bg1rzq-control common-select__control common-select__control--menu-is-open"
             >
               <div
                 class="css-1hwfws3 common-select__value-container"
@@ -77,7 +77,7 @@ exports[`async CommonSelect with initial and no options messages 1`] = `
               </div>
             </div>
             <div
-              class="css-15k3avv common-select__menu"
+              class="css-kj6f9i-menu common-select__menu"
             >
               <div
                 class="css-11unzgr common-select__menu-list"
@@ -120,17 +120,17 @@ exports[`render and test CommonSelect 1`] = `
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInputBase-input MuiInput-input"
+            class="css-1pcexqc-container MuiInputBase-input MuiInput-input"
             id="test"
           >
             <div
-              class="css-vj8t7z common-select__control common-select__control--menu-is-open"
+              class="css-bg1rzq-control common-select__control common-select__control--menu-is-open"
             >
               <div
                 class="css-1hwfws3 common-select__value-container"
               >
                 <div
-                  class="css-1492t68 common-select__placeholder"
+                  class="css-151xaom-placeholder common-select__placeholder"
                 />
                 <div
                   class="css-1g6gooi"
@@ -182,7 +182,7 @@ exports[`render and test CommonSelect 1`] = `
               </div>
             </div>
             <div
-              class="css-15k3avv common-select__menu"
+              class="css-kj6f9i-menu common-select__menu"
             >
               <div
                 class="css-11unzgr common-select__menu-list"
@@ -694,11 +694,11 @@ exports[`render creatable CommonSelect 1`] = `
           class="common-select__container"
         >
           <div
-            class="css-10nd86i MuiInputBase-input MuiInput-input"
+            class="css-1pcexqc-container MuiInputBase-input MuiInput-input"
             id=""
           >
             <div
-              class="css-vj8t7z common-select__control common-select__control--menu-is-open"
+              class="css-bg1rzq-control common-select__control common-select__control--menu-is-open"
             >
               <div
                 class="css-1hwfws3 common-select__value-container"
@@ -755,7 +755,7 @@ exports[`render creatable CommonSelect 1`] = `
               </div>
             </div>
             <div
-              class="css-15k3avv common-select__menu"
+              class="css-kj6f9i-menu common-select__menu"
             >
               <div
                 class="css-11unzgr common-select__menu-list"
@@ -809,17 +809,17 @@ exports[`test disabled CommonSelect 1`] = `
           class="common-select__container"
         >
           <div
-            class="css-1sontr1 MuiInputBase-input MuiInput-input MuiInputBase-disabled MuiInput-disabled common-select--is-disabled"
+            class="css-ssi0ig-container MuiInputBase-input MuiInput-input MuiInputBase-disabled MuiInput-disabled common-select--is-disabled"
             id=""
           >
             <div
-              class="css-162g8z5 common-select__control common-select__control--is-disabled"
+              class="css-14ojxsb-control common-select__control common-select__control--is-disabled"
             >
               <div
                 class="css-1hwfws3 common-select__value-container"
               >
                 <div
-                  class="css-1492t68 common-select__placeholder"
+                  class="css-151xaom-placeholder common-select__placeholder"
                 />
                 <div
                   class="css-1g6gooi"

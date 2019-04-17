@@ -15,7 +15,7 @@ type Props = {
   /** Takes the handler used to switch between tabs, based on the tab's value */
   onChangeActiveTab: string => any,
   /** The value of the tab header. Used to define which tab is open */
-  activeTab: string,
+  activeTab: string | false,
   /** Provides the page's Title */
   title?: Node,
   /** Provides for action components to be rendered in the top right corner */
@@ -72,12 +72,12 @@ export const CommonTabbedPage = (props: Props) => {
     children,
     isLoading = false,
   } = props;
-  const { tabs, contentContainer, ...commonPageClasses } = classes;
-  if (!pageConfigs) {
+  const { contentContainer, ...commonPageClasses } = classes;
+  if (!isLoading && !pageConfigs) {
     throw new Error("pageConfigs is required");
   }
   const selectedTab = pageConfigs.find(tab => tab.key === activeTab);
-  if (!selectedTab) {
+  if (!isLoading && !selectedTab) {
     console.error("no pageConfig keys match the provided activeTab");
   }
   let PageContent = null;
@@ -100,9 +100,9 @@ export const CommonTabbedPage = (props: Props) => {
       menuContents={selectedMenuContents}
       subheader={(
         <TabsComponent
-          activeTab={activeTab}
+          activeTab={!isLoading && activeTab}
           onChangeActiveTab={onChangeActiveTab}
-          className={tabs}
+          className={classes.tabs}
           pageConfigs={pageConfigs}
           tabProps={tabProps}
         />

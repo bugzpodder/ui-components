@@ -19,6 +19,9 @@ const pageConfigs: Array<PageConfig> = [
       "data-testid": "alert-one",
       message: "Tab One!",
     },
+    tabClasses: {
+      root: "test-tab-root",
+    },
   },
   {
     label: "Tab Two",
@@ -97,6 +100,12 @@ test("render common tabbed page", () => {
   expect(queryByTestId("alert-two")).toBeInTheDocument();
   expect(getByTestId("test")).toBeInTheDocument();
   fireEvent.click(getByTestId("tab-three"));
+});
+
+test("CommonTabbedPage classes", () => {
+  const { getByTestId } = render(<TestCommonTabbedPage classes={{ tabs: "test-tabs" }} />);
+  expect(getByTestId("card-tabs")).toHaveClass("test-tabs");
+  expect(getByTestId("tab-one")).toHaveClass("test-tab-root");
 });
 
 test("display loading tabbed page", () => {

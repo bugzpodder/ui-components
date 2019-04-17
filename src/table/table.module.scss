@@ -4,7 +4,7 @@
 
 %common-table-cell {
   padding: 4px;
-  @include media-breakpoint-up(ul) {
+  @include media-breakpoint-up(lg) {
     padding: 4px 48px 4px 24px;
   }
 }
@@ -42,7 +42,7 @@
 .tableContainer {
   max-height: 400px;
 
-  @include media-breakpoint-up(ul) {
+  @include media-breakpoint-up(lg) {
     max-height: 600px;
   }
 }

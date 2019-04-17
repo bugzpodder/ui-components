@@ -23,6 +23,8 @@
     rows default to 50px. `rowHeight` can either be a number or function.
 19. Set default row width for `LargeSimpleTable` to 100px. This change allows a more comprehensive
     snapshot testing of the rendered table.
+20. Update `CommonTabbedPage` classes and tab styling.
+21. Update `breakpoints.scss` to use material-ui breakpoint values. Previously they were using bootstrap ones.
 
 ## 0.10.0 - 2019-04-01
 

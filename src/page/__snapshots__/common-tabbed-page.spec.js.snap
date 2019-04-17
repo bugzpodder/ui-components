@@ -85,7 +85,7 @@ exports[`render common tabbed page 1`] = `
         </div>
       </div>
       <div
-        class="MuiTabs-root"
+        class="MuiTabs-root tabs"
         data-testid="card-tabs"
       >
         <div
@@ -101,7 +101,7 @@ exports[`render common tabbed page 1`] = `
             >
               <button
                 aria-selected="true"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-selected"
+                class="MuiButtonBase-root MuiTab-root test-tab-root tab MuiTab-textColorPrimary MuiTab-selected"
                 data-testid="tab-one"
                 id="tab-one"
                 role="tab"
@@ -127,7 +127,7 @@ exports[`render common tabbed page 1`] = `
               </button>
               <button
                 aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary"
+                class="MuiButtonBase-root MuiTab-root tab MuiTab-textColorPrimary"
                 data-testid="tab-two"
                 id="tab-two"
                 role="tab"
@@ -153,7 +153,7 @@ exports[`render common tabbed page 1`] = `
               </button>
               <button
                 aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary"
+                class="MuiButtonBase-root MuiTab-root tab MuiTab-textColorPrimary"
                 data-testid="tab-three"
                 id="tab-three"
                 role="tab"

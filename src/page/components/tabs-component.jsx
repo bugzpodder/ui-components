@@ -2,10 +2,12 @@
 import React from "react";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
+import classNames from "classnames";
+import styles from "../common-tabbed-page.module.scss";
 
 type Props = {
   onChangeActiveTab: string => any,
-  activeTab: string,
+  activeTab: string | false,
   className?: string,
   tabProps?: Object,
   pageConfigs: Array<PageConfig>,
@@ -23,7 +25,7 @@ export const TabsComponent = (props: Props) => {
       value={activeTab}
       onChange={(event, value) => onChangeActiveTab(value)}
       classes={{
-        root: className,
+        root: classNames(className, styles.tabs),
       }}
     >
       {pageConfigs.map(tab => {
@@ -37,7 +39,10 @@ export const TabsComponent = (props: Props) => {
             label={label}
             id={id}
             data-testid={id}
-            classes={tabClasses}
+            classes={{
+              ...tabClasses,
+              root: classNames(tabClasses.root, styles.tab),
+            }}
             {...tabProps}
           />
         );

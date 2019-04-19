@@ -28,8 +28,11 @@ module.exports = {
     {
       name: "Text & Inputs",
       components: () => [
-        "./src/date-input/date-input.jsx",
-        "./src/date-input/date-time-input.jsx",
+        "./src/date/date-input.jsx",
+        "./src/date/date-time-input.jsx",
+        "./src/date/date-value.jsx",
+        "./src/date/date-time-value.jsx",
+        "./src/date/humanized-date-time.jsx",
         "./src/readonly-text-field/readonly-text-field.jsx",
         "./src/readonly-text-field/validated-readonly-text-field.jsx",
         "./src/text-input/text-input.jsx",

@@ -8,7 +8,7 @@ import moment from "moment";
 import {
   DATE_FORMAT, DATE_SEARCH_TYPES, buildDateRangeString, extractDateRange,
 } from "@grail/lib";
-import { DateInput } from "../../date-input";
+import { DateInput } from "../../date/date-input";
 
 import styles from "../omni.module.scss";
 

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render datetime value with datetime 1`] = `
+<div>
+  <span
+    class=""
+    data-testid="date-time-value"
+  >
+    2017-03-13 00:00:00
+  </span>
+</div>
+`;
+
+exports[`render datetime value with no datetime 1`] = `
+<div>
+  <span
+    class=""
+    data-testid="date-time-value"
+  >
+    -
+  </span>
+</div>
+`;

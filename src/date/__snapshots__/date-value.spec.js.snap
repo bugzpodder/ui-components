@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render date value with date 1`] = `
+<div>
+  <span
+    class=""
+    data-testid="date-value"
+  >
+    2017-03-13
+  </span>
+</div>
+`;
+
+exports[`render date value with no date 1`] = `
+<div>
+  <span
+    class=""
+    data-testid="date-value"
+  >
+    -
+  </span>
+</div>
+`;

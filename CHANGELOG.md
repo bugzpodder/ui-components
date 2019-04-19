@@ -4,6 +4,7 @@
 2. Fix sidebar to grow and shrink using flex-grow/shrink.
 3. Add `isFullBleed` to `PagedTable` to allow for non-card based paged table that expands to 100% of the height of the parent element.
 4. Add `hasTableMargin` to `PagedTable` to enable/disable table margin.
+5. Add `DateValue`, `DateTimeValue`, and `HumanizedDateTime`.
 
 ## 0.10.0 - 2019-04-01
 

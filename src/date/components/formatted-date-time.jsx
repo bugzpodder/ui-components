@@ -9,6 +9,10 @@ type FormatProps = {
   className?: string,
 };
 
+export const formatDate = (value: any, format: string) => {
+  return value ? moment(value).format(format) : "-";
+};
+
 export const FormattedDateTime = (props: FormatProps) => {
   const {
     id, value, format, className = "", ...otherProps
@@ -20,7 +24,7 @@ export const FormattedDateTime = (props: FormatProps) => {
       className={className}
       {...otherProps}
     >
-      {value ? moment(value).format(format) : "-"}
+      {formatDate(value, format)}
     </span>
   );
 };

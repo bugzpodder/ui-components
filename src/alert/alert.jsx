@@ -49,13 +49,17 @@ export const Alert = (props: Props) => {
       className={classNames(styles.alertContainer, classes.root)}
     >
       <SnackbarContent
+        data-testid="content"
         className={classNames(styles[color], styles[variant], `alert-${color}`, className, classes.content)}
         classes={{
           message: styles[textAlign],
         }}
         message={(
-          <span>
-            <Icon className={styles.alertIcon} />
+          <span data-testid={`${color}-alert-message`}>
+            <Icon
+              data-testid={`${color}-alert-icon`}
+              className={styles.alertIcon}
+            />
             {message}
           </span>
 )}

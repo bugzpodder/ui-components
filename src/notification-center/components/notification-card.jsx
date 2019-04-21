@@ -23,7 +23,10 @@ export const NotificationCard = (props: Props) => {
     notificationIndex, message, time, type, removeNotification,
   } = props;
   return (
-    <Card className="margin-left-10 margin-right-10 margin-bottom-10">
+    <Card
+      data-testid={`notification-${time}`}
+      className="margin-left-10 margin-right-10 margin-bottom-10"
+    >
       <CardContent
         classes={{
           root: styles.notificationContainer,
@@ -32,6 +35,7 @@ export const NotificationCard = (props: Props) => {
         <NotificationTypeIcon type={type} />
 
         <IconButton
+          data-testid={`close-notification-${time}`}
           disableRipple
           color="inherit"
           classes={{
@@ -42,8 +46,13 @@ export const NotificationCard = (props: Props) => {
           <Close />
         </IconButton>
 
-        <Typography>{message}</Typography>
-        <Typography variant="caption">{moment(time).format(DATE_TIME_FORMAT)}</Typography>
+        <Typography data-testid={`message-${time}`}>{message}</Typography>
+        <Typography
+          data-testid={`time-${time}`}
+          variant="caption"
+        >
+          {moment(time).format(DATE_TIME_FORMAT)}
+        </Typography>
       </CardContent>
     </Card>
   );

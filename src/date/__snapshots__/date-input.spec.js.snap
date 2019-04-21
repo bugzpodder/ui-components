@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render date input 1`] = `
+exports[`render date time input 1`] = `
 <div>
   <div
     class="datePicker"
@@ -24,6 +24,7 @@ exports[`render date input 1`] = `
         >
           <button
             class="MuiButtonBase-root MuiIconButton-root"
+            data-testid="date-picker-button"
             tabindex="0"
             type="button"
           >
@@ -58,35 +59,13 @@ exports[`render date input 1`] = `
 </div>
 `;
 
-exports[`render date input when readOnly is true 1`] = `
+exports[`render readOnly DateInput 1`] = `
 <div>
   <span
     class="readonlyTextField"
     data-testid="readonly-text-field"
   >
     2017-03-07
-  </span>
-</div>
-`;
-
-exports[`render date input when readOnly is true showing - as empty value 1`] = `
-<div>
-  <span
-    class="readonlyTextField"
-    data-testid="readonly-text-field"
-  >
-    -
-  </span>
-</div>
-`;
-
-exports[`render date input when readOnly is true showing empty value 1`] = `
-<div>
-  <span
-    class="readonlyTextField"
-    data-testid="readonly-text-field"
-  >
-    
   </span>
 </div>
 `;

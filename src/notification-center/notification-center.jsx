@@ -46,11 +46,13 @@ export const NotificationCenter = (props: Props) => {
   };
 
   const {
-    notifications, removeAllNotifications, removeNotification, ...iconProps
+    notifications = [], removeAllNotifications, removeNotification, ...iconProps
   } = props;
+
   return (
     <Fragment>
       <IconButton
+        data-testid="notifications-button"
         disableRipple
         color="inherit"
         onClick={handleClick}
@@ -72,6 +74,7 @@ export const NotificationCenter = (props: Props) => {
       >
         <List className={styles.notificationCenterList}>
           <Button
+            data-testid="notifications-clear-all"
             variant="text"
             color="primary"
             onClick={removeAllNotifications}

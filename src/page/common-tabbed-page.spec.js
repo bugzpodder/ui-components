@@ -1,6 +1,7 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
+import mockConsole from "jest-mock-console";
 import { Alert, CommonSwitch } from "../index";
 import { CommonTabbedPage } from "./common-tabbed-page";
 import { TestWrapper } from "../test-utils";
@@ -29,6 +30,11 @@ const pageConfigs: Array<PageConfig> = [
       message: "Tab Two!",
     },
   },
+  {
+    label: "Tab",
+    key: "tab",
+    id: "tab",
+  },
 ];
 
 const headerActions = [
@@ -54,7 +60,9 @@ test("render common tabbed page", () => {
         pageConfigs={pageConfigs}
         headerActions={headerActions}
         onChangeActiveTab={mockOnChange}
-      />
+      >
+        <div data-testid="test">Test</div>
+      </CommonTabbedPage>
     </TestWrapper>,
   );
   expect(getByTestId("alert")).toHaveTextContent("Tab One!");
@@ -64,9 +72,36 @@ test("render common tabbed page", () => {
   fireEvent.click(getByTestId("tab-two"));
   expect(mockOnChange.mock.results[0].value).toEqual("two");
   expect(container).toMatchSnapshot();
+  expect(getByTestId("spinner-overlay")).toHaveAttribute("data-is-active", "false");
+  expect(getByTestId("test")).toBeInTheDocument();
+});
+
+test("display loading tabbed page", () => {
+  mockConsole();
+  const { container, getByTestId } = render(
+    <TestWrapper>
+      <CommonTabbedPage
+        pageConfigs={[
+          {
+            label: "Tab",
+            key: "tab",
+            id: "tab",
+            Component: Alert,
+          },
+        ]}
+        activeTab="tab"
+        onChangeActiveTab={() => {}}
+        isLoading
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+  expect(getByTestId("alert")).toHaveTextContent("");
+  expect(getByTestId("spinner-overlay")).toHaveAttribute("data-is-active", "true");
 });
 
 test("render empty common tabbed page", () => {
+  mockConsole();
   const { container } = render(
     <TestWrapper>
       <CommonTabbedPage
@@ -77,4 +112,19 @@ test("render empty common tabbed page", () => {
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
+  expect(console.error).toHaveBeenCalled();
+});
+
+test("require pageConfigs is defined", () => {
+  mockConsole();
+  expect(() =>
+    render(
+      <TestWrapper>
+        <CommonTabbedPage
+          activeTab=""
+          onChangeActiveTab={() => {}}
+        />
+      </TestWrapper>,
+    ),
+  ).toThrowError();
 });

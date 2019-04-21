@@ -75,7 +75,7 @@ export const TimelineGraphComponent = (props: Props) => {
             {// Since year is separate from month and day, we can not use ISO-8601 format or numeric date format.
             // These would be confusing to HK, etc.
             moment(item.date).format("DD MMM")}
-            {isDayVisible && <div>{moment(item.date).format("ddd")}</div>}
+            {isDayVisible && <div data-testid={`timeline-day-${index}`}>{moment(item.date).format("ddd")}</div>}
           </Typography>
           {isTimeVisible && (
             <Typography

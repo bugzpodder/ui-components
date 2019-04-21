@@ -13,6 +13,7 @@ exports[`render selector 1`] = `
     >
       <svg
         class="grailLogo purple"
+        data-testid="grail-logo"
         id="grail-logo-svg"
         viewBox="0, 0, 572, 108"
       >
@@ -86,6 +87,7 @@ exports[`render selector with child 1`] = `
     >
       <svg
         class="grailLogo purple"
+        data-testid="grail-logo"
         id="grail-logo-svg"
         viewBox="0, 0, 572, 108"
       >

@@ -12,6 +12,7 @@ export const GrailLogo = (props: Props) => {
   /* eslint-disable max-len */
   return (
     <svg
+      data-testid="grail-logo"
       id="grail-logo-svg"
       className={classNames({ [styles.grailLogo]: true, [styles[color]]: true })}
       viewBox="0, 0, 572, 108"

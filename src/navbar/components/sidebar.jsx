@@ -11,7 +11,7 @@ import classNames from "classnames";
 import pathToRegexp from "path-to-regexp";
 import styles from "./sidebar.module.scss";
 import { CollapsableListItem } from "../../list";
-import { ExternalLink } from "../../external-link";
+import { ExternalLink } from "../../link";
 import { sidebarItems } from "@grail/lib";
 
 type Props = {
@@ -97,6 +97,7 @@ export const Sidebar = (props: Props) => {
   const getPlaceholderLink = (item: SidebarItemPlaceholder, key: number, nested: boolean = false) => {
     return (
       <ListItem
+        data-testid={key}
         key={key}
         disabled
         button
@@ -116,9 +117,11 @@ export const Sidebar = (props: Props) => {
     const { currentPath, domain, InternalLinkComponent } = props;
     if (InternalLinkComponent !== undefined && itemDomain === domain) {
       const active = pathToRegexp(path, [], { end: exact }).test(currentPath);
+      const id = `${domain}${item.path.replace(/\//g, "-")}`;
       return (
         <ListItem
-          id={`${domain}${item.path.replace(/\//g, "-")}`}
+          id={id}
+          data-testid={id}
           key={key}
           component={InternalLinkComponent}
           to={item.path}
@@ -194,6 +197,7 @@ export const Sidebar = (props: Props) => {
   return (
     <Drawer
       id="sidebar-drawer"
+      data-testid="navbar-sidebar"
       anchor="left"
       open={isOpen}
       transitionDuration={0}

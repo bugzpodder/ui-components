@@ -3,11 +3,14 @@ import React, { type Node } from "react";
 import classNames from "classnames";
 import styles from "./common-tabbed-page.module.scss";
 import { CommonPage } from "./common-page";
+import { SpinnerOverlay } from "../spinner-overlay";
 import { TabsComponent } from "./components/tabs-component";
 
 type Props = {
-  /** The array of objects used to define the tabs displayed in the header, and their corresponding pages. If only
-   *  one element is passed to pageConfigs, the tab bar will not be shown. */
+  /**
+   * The array of objects used to define the tabs displayed in the header, and their corresponding pages.
+   * The `key` property is used to determine which tab is selected.
+   */
   pageConfigs: Array<PageConfig>,
   /** Takes the handler used to switch between tabs, based on the tab's value */
   onChangeActiveTab: string => any,
@@ -44,6 +47,10 @@ type Props = {
   classes?: CommonTabbedPageClasses,
   /** Props applied to the `Tabs` container */
   tabProps?: Object,
+  /** Components to be shared between all pages */
+  children?: React$Node,
+  /** Displays an uninteractive loading animation over the page content when true */
+  isLoading?: boolean,
 };
 
 /**
@@ -62,9 +69,17 @@ export const CommonTabbedPage = (props: Props) => {
     onChangeActiveTab,
     pageConfigs,
     tabProps,
+    children,
+    isLoading = false,
   } = props;
   const { tabs, contentContainer, ...commonPageClasses } = classes;
+  if (!pageConfigs) {
+    throw new Error("pageConfigs is required");
+  }
   const selectedTab = pageConfigs.find(tab => tab.key === activeTab);
+  if (!selectedTab) {
+    console.error("no pageConfig keys match the provided activeTab");
+  }
   let PageContent = null;
   let selectedMenuContents = [];
   if (selectedTab && selectedTab.Component) {
@@ -94,6 +109,8 @@ export const CommonTabbedPage = (props: Props) => {
 )}
     >
       {PageContent}
+      {children}
+      <SpinnerOverlay isActive={isLoading} />
     </CommonPage>
   );
 };

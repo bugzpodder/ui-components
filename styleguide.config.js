@@ -44,8 +44,8 @@ module.exports = {
       name: "Switches & Buttons",
       components: () => [
         "./src/common-switch/common-switch.jsx",
-        "./src/external-link/external-link.jsx",
-        "./src/external-link-button/external-link-button.jsx",
+        "./src/link/external-link.jsx",
+        "./src/link/external-link-button.jsx",
       ],
     },
     {

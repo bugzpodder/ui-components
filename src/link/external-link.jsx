@@ -16,6 +16,7 @@ export const ExternalLink = (props: Props) => {
   const { children, ...aTagProps } = props;
   return (
     <a
+      data-testid="external-link"
       {...aTagProps}
       target="_blank"
       rel="noopener noreferrer"

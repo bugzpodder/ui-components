@@ -1,9 +1,10 @@
 // @flow
 import Card from "@material-ui/core/Card";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Tab from "@material-ui/core/Tab/Tab";
 import Tabs from "@material-ui/core/Tabs/Tabs";
 import classNames from "classnames";
+import isEmpty from "lodash/isEmpty";
 import styles from "./timeline-graph.module.scss";
 import { CommonCard } from "../index";
 import { type CommonCardProps } from "../common-card/card";
@@ -50,7 +51,20 @@ export const TabbedTimelineCard = (props: Props) => {
   const {
     classes = {}, commonCardProps, tabContents, ...timelineProps
   } = props;
-  const [selectedTab, setSelectedTab] = useState(Object.keys(tabContents)[0] || "");
+  const { commonCard = {} } = classes;
+
+  // TODO(nsawas): Reconsider local state.
+  const [selectedTab, setSelectedTab] = useState("");
+  if (!tabContents || isEmpty(tabContents)) {
+    throw new Error("tabContents must be defined");
+  }
+
+  useEffect(() => {
+    setSelectedTab(Object.keys(tabContents)[0]);
+  });
+
+  const tabContent = tabContents[selectedTab] || {};
+  const rows = tabContent.content || [];
 
   const getTabs = () => {
     if (!selectedTab) {
@@ -78,6 +92,7 @@ export const TabbedTimelineCard = (props: Props) => {
           {Object.keys(tabContents).map((entry, index) => {
             return (
               <Tab
+                data-testid={`timeline-tab-${entry}`}
                 key={index}
                 value={entry}
                 label={sentenceCase(entry)}
@@ -89,12 +104,6 @@ export const TabbedTimelineCard = (props: Props) => {
     );
   };
 
-  const { commonCard = {} } = classes;
-  if (!tabContents || !selectedTab) {
-    return null;
-  }
-  const tabContent = tabContents[selectedTab];
-  const rows = tabContent.content;
   return (
     <div className={classNames(styles.timelineContainer, classes.root)}>
       <CommonCard

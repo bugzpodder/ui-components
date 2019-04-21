@@ -4,6 +4,7 @@ exports[`render default (white) GrailLogo 1`] = `
 <div>
   <svg
     class="grailLogo white"
+    data-testid="grail-logo"
     id="grail-logo-svg"
     viewBox="0, 0, 572, 108"
   >
@@ -42,6 +43,7 @@ exports[`render gold GrailLogo 1`] = `
 <div>
   <svg
     class="grailLogo gold"
+    data-testid="grail-logo"
     id="grail-logo-svg"
     viewBox="0, 0, 572, 108"
   >
@@ -80,6 +82,7 @@ exports[`render purple GrailLogo 1`] = `
 <div>
   <svg
     class="grailLogo purple"
+    data-testid="grail-logo"
     id="grail-logo-svg"
     viewBox="0, 0, 572, 108"
   >
@@ -118,6 +121,7 @@ exports[`render white GrailLogo 1`] = `
 <div>
   <svg
     class="grailLogo white"
+    data-testid="grail-logo"
     id="grail-logo-svg"
     viewBox="0, 0, 572, 108"
   >

@@ -1,178 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render common card 1`] = `
+exports[`common card classes and margin 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card"
+    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root test-root card withMargin"
+    data-testid="card"
   >
     <div
-      class="MuiCardHeader-root"
+      class="MuiCardHeader-root test-header"
       data-testid="card-header"
     >
       <div
         class="MuiCardHeader-content"
       >
         <span
-          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title test-title"
+          data-testid="card-title"
         >
           Test Card
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader test-subheader"
+          data-testid="card-subheader"
         />
       </div>
     </div>
     <div
-      class="MuiCardContent-root"
-      data-testid="card-content"
-    >
-      This is a test
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render common card with footer actions 1`] = `
-<div>
-  <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card"
-  >
-    <div
-      class="MuiCardHeader-root"
-      data-testid="card-header"
-    >
-      <div
-        class="MuiCardHeader-content"
-      >
-        <span
-          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
-        >
-          Test Card
-        </span>
-        <span
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-        />
-      </div>
-    </div>
-    <div
-      class="MuiCardContent-root"
-      data-testid="card-content"
+      class="MuiCardContent-root test-body"
+      data-testid="card-body"
     >
       This is a test
     </div>
     <div
-      class="MuiCardActions-root"
-      data-testid="card-actions"
+      class="MuiCardActions-root test-footer"
+      data-testid="card-footer-actions"
     >
-      <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat MuiCardActions-action footerActions"
-        tabindex="0"
-        type="button"
+      <span
+        class="MuiCardActions-action footerActions"
       >
-        <span
-          class="MuiButton-label"
-        >
-          Test Footer Action Button
-        </span>
-        <span
-          class="MuiTouchRipple-root"
-        />
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render common card with header actions 1`] = `
-<div>
-  <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card"
-  >
-    <div
-      class="MuiCardHeader-root"
-      data-testid="card-header"
-    >
-      <div
-        class="MuiCardHeader-content"
-      >
-        <span
-          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
-        />
-        <span
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-        />
-      </div>
-      <div
-        class="MuiCardHeader-action headerActions"
-      >
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            Test Header Action Button
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      class="MuiCardContent-root"
-      data-testid="card-content"
-    >
-      This is a test
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render common card with margin 1`] = `
-<div>
-  <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card withMargin"
-  >
-    <div
-      class="MuiCardHeader-root"
-      data-testid="card-header"
-    >
-      <div
-        class="MuiCardHeader-content"
-      >
-        <span
-          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
-        >
-          Test Card
-        </span>
-        <span
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-        />
-      </div>
-    </div>
-    <div
-      class="MuiCardContent-root"
-      data-testid="card-content"
-    >
-      This is a test
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render common card without title or header actions 1`] = `
-<div>
-  <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root card"
-  >
-    <div
-      class="MuiCardContent-root"
-      data-testid="card-content"
-    >
-      This is a test
+        test
+      </span>
     </div>
   </div>
 </div>

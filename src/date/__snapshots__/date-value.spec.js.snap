@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render date value with date 1`] = `
+exports[`render DateTimeValue 1`] = `
+<div>
+  <span
+    class=""
+    data-testid="date-time-value"
+  >
+    2017-03-13 00:00:00
+  </span>
+</div>
+`;
+
+exports[`render DateTimeValue 2`] = `
 <div>
   <span
     class=""
@@ -11,13 +22,23 @@ exports[`render date value with date 1`] = `
 </div>
 `;
 
-exports[`render date value with no date 1`] = `
+exports[`render HumanizedDateTime 1`] = `
 <div>
-  <span
-    class=""
-    data-testid="date-value"
+  <div
+    data-testid="humanized-date-time"
   >
-    -
-  </span>
+    <span
+      class=""
+      data-testid="date-time-value"
+    >
+      -
+    </span>
+    <div
+      class="humanized"
+      data-testid="humanized"
+    >
+      a few seconds ago
+    </div>
+  </div>
 </div>
 `;

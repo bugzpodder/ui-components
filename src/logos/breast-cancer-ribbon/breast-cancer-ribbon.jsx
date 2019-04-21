@@ -5,6 +5,7 @@ import React from "react";
 export const BreastCancerRibbon = () => {
   return (
     <svg
+      data-testid="breast-cancer-ribbon"
       width="35"
       height="35"
       viewBox="39.39 1.172 324.975 406.495"

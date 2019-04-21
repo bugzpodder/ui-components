@@ -51,7 +51,10 @@ export const CommonSelectComponent = (props: Props) => {
     ...otherProps
   } = props;
   return (
-    <div className={classNames("common-select__root", classes.root)}>
+    <div
+      data-testid="common-select"
+      className={classNames("common-select__root", classes.root)}
+    >
       <FormControl fullWidth={isFullWidth}>
         <Input
           inputComponent={CommonSelectContainer}
@@ -61,7 +64,7 @@ export const CommonSelectComponent = (props: Props) => {
           inputProps={{
             ...otherProps,
             id,
-            inputId: id && `${id}-select-input`,
+            inputId: `${id && `${id}-`}select-input${isDisabled ? "-disabled" : ""}`,
             initialMessage,
             isDisabled,
             placeholder,

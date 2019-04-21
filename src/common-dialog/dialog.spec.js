@@ -1,90 +1,66 @@
 // @flow
+import "jest-dom/extend-expect";
 import React from "react";
-import { CommonDialog, CommonMultiPageDialog } from ".";
+import { CommonDialog } from ".";
 import { TestWrapper } from "../test-utils";
-import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-const bodyUtils = bindElementToQueries(document.body);
-
 test("render dialog", () => {
-  const mockCallback = jest.fn();
-  render(
+  const mockHide = jest.fn(result => result);
+  const mockActionOne = jest.fn(result => result);
+  const { container, getByText, getByTestId } = render(
     <TestWrapper>
       <CommonDialog
+        isVisible
         actions={[
-          { id: "action-button", name: "action one", callback: jest.fn() },
+          { id: "action-button", name: "action one", callback: mockActionOne },
           { name: "action two", isLeftButton: true, callback: jest.fn() },
         ]}
         title="test"
-        isVisible
-        hideModal={mockCallback}
+        hideModal={mockHide}
       >
         Test Content
       </CommonDialog>
     </TestWrapper>,
   );
-  fireEvent.click(bodyUtils.getByText("Close"));
-  expect(mockCallback).toBeCalled();
-  expect(document.body).toMatchSnapshot();
+  expect(getByTestId("dialog-title")).toHaveTextContent("test");
+  expect(getByTestId("dialog-content")).toHaveTextContent("Test Content");
+  fireEvent.click(getByText("action one"));
+  expect(mockActionOne).toBeCalled();
+  fireEvent.click(getByText("Close"));
+  expect(mockHide).toBeCalled();
+  // TODO(nsawas): Find out why snapshots are empty.
+  expect(container).toMatchSnapshot();
 });
 
-test("render multi page dialog", () => {
-  const mockCallback = jest.fn();
-  render(
+test("dialog classes", () => {
+  const { getByTestId } = render(
     <TestWrapper>
-      <CommonMultiPageDialog
-        actions={[
-          { id: "action-button", name: "action one", callback: jest.fn() },
-          {
-            id: "action-button",
-            name: "action two",
-            isLeftButton: true,
-            callback: jest.fn(),
-            pages: [1],
-          },
-          {
-            id: "action-button",
-            name: "action three",
-            icon: "arrow_forward",
-            callback: jest.fn(),
-            pages: [0],
-          },
-          {
-            id: "action-button",
-            name: "action four",
-            icon: "arrow_backward",
-            callback: jest.fn(),
-            pages: [1],
-          },
-        ]}
-        title="test"
+      <CommonDialog
         isVisible
-        hideModal={jest.fn()}
-        pages={[
-          <div
-            key="0"
-            data-testid="page"
-          >
-            Page 1
-          </div>,
-          <div
-            key="1"
-            data-testid="page"
-          >
-            Page 2
-          </div>,
-        ]}
-        pageIndex={1}
-        setPage={mockCallback}
+        title=""
+        actions={[]}
+        enableOverflow={false}
+        hideModal={() => {}}
+        classes={{
+          root: "test-root",
+          paper: "test-paper",
+          title: "test-title",
+          content: "test-content",
+          actions: "test-actions",
+        }}
       >
         Test Content
-      </CommonMultiPageDialog>
+      </CommonDialog>
     </TestWrapper>,
   );
-  fireEvent.click(bodyUtils.getByText("Back"));
-  expect(mockCallback).toBeCalled();
-  expect(document.body).toMatchSnapshot();
+
+  expect(getByTestId("dialog")).toHaveClass("test-root");
+  expect(getByTestId("dialog-paper")).toHaveClass("test-paper");
+  expect(getByTestId("dialog-title")).toHaveClass("test-title");
+  expect(getByTestId("dialog-content")).toHaveClass("test-content");
+  expect(getByTestId("dialog-actions")).toHaveClass("test-actions");
+  expect(getByTestId("dialog-content")).toHaveClass("commonDialogNoOverflow");
 });

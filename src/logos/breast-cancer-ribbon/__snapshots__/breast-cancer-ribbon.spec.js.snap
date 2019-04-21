@@ -3,6 +3,7 @@
 exports[`render BreastCancerRibbon 1`] = `
 <div>
   <svg
+    data-testid="breast-cancer-ribbon"
     height="35"
     viewBox="39.39 1.172 324.975 406.495"
     width="35"

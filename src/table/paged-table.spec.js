@@ -13,42 +13,48 @@ import {
   invalidTableOptions,
   tableOptions,
 } from "./utilities/test-table-properties";
-import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
-const bodyUtils = bindElementToQueries(document.body);
 
 /**
  Passing Cases
  */
 
 test("render basic paged table", () => {
-  const { container } = render(
+  mockConsole();
+  const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
+        title="Test Table"
         columns={columns}
         data={data}
       />
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
+  expect(getByTestId("export-test-table")).toBeInTheDocument();
+  expect(getByTestId("export-test-table")).toHaveTextContent("Export to CSV");
+  fireEvent.click(getByTestId("export-test-table"));
+  expect(console.error).toHaveBeenCalled();
 });
 
 test("render paged table with no results", () => {
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
+        title={4}
         columns={columns}
         data={[]}
       />
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
+  expect(getByTestId("export-data")).toBeInTheDocument();
 });
 
 test("render loading paged table", () => {
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
         columns={columns}
@@ -58,6 +64,7 @@ test("render loading paged table", () => {
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
+  expect(getByTestId("spinner-overlay")).toHaveAttribute("data-is-active", "true");
 });
 
 test("render paged table with no results and is loading", () => {
@@ -89,7 +96,7 @@ test("render paged table with no results and isFullBleed, noMargin", () => {
 
 test("render paged table with no initially selected items, then select items", () => {
   const mockSelect = jest.fn(result => result);
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
         idKey="columnOne"
@@ -101,16 +108,16 @@ test("render paged table with no initially selected items, then select items", (
     </TestWrapper>,
   );
   // TODO(nsawas): find out why these get called twice.
-  fireEvent.click(bodyUtils.getByTestId("table-checkbox-cell-first-datum"));
+  fireEvent.click(getByTestId("table-checkbox-cell-first-datum"));
   expect(mockSelect.mock.results[0].value).toEqual(["First Datum"]);
-  fireEvent.click(bodyUtils.getByTestId("table-checkbox-header"));
+  fireEvent.click(getByTestId("table-checkbox-header"));
   expect(mockSelect.mock.results[1].value).toEqual(allSelectedRows);
   expect(container).toMatchSnapshot();
 });
 
 test("render paged table with all items selected, then unselect items", () => {
   const mockSelect = jest.fn(result => result);
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
         idKey="columnOne"
@@ -122,9 +129,9 @@ test("render paged table with all items selected, then unselect items", () => {
       />
     </TestWrapper>,
   );
-  fireEvent.click(bodyUtils.getByTestId("table-checkbox-cell-first-datum"));
+  fireEvent.click(getByTestId("table-checkbox-cell-first-datum"));
   expect(mockSelect.mock.results[0].value).toEqual(allSelectedRows.slice(1, allSelectedRows.length));
-  fireEvent.click(bodyUtils.getByTestId("table-checkbox-header"));
+  fireEvent.click(getByTestId("table-checkbox-header"));
   expect(mockSelect.mock.results[1].value).toEqual([]);
   expect(container).toMatchSnapshot();
 });
@@ -132,7 +139,7 @@ test("render paged table with all items selected, then unselect items", () => {
 test("render paged table with default ids, and test row highlighting", () => {
   const mockSelect = jest.fn();
   const mockHandleHighlight = jest.fn(result => result);
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
         columns={columns}
@@ -141,10 +148,11 @@ test("render paged table with default ids, and test row highlighting", () => {
         selectedRows={[]}
         highlightedRowId={1}
         onHighlightRow={mockHandleHighlight}
+        includeExportAsCsvButton={false}
       />
     </TestWrapper>,
   );
-  fireEvent.keyDown(bodyUtils.getByTestId("table"), {
+  fireEvent.keyDown(getByTestId("table"), {
     key: "up",
     keyCode: 38,
     which: 38,
@@ -172,7 +180,7 @@ test("render paged table and test pagination", () => {
     </TestWrapper>,
   );
   expect(getByTestId("card-header")).toHaveTextContent("Test Table (2 Selected)");
-  fireEvent.click(bodyUtils.getByTestId("next-page"));
+  fireEvent.click(getByTestId("next-page"));
   expect(mockPagination.mock.results[0].value).toEqual({ offset: 5, count: 5 });
   // TODO(nsawas): TypeError: _this.inputRef.focus is not a function
   // fireEvent.click(bodyUtils.getByTestId("rows-per-page"));
@@ -181,7 +189,7 @@ test("render paged table and test pagination", () => {
 
 test("render paged table and test sorting", () => {
   const mockSort = jest.fn(result => result);
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
         idKey="columnOne"
@@ -192,7 +200,7 @@ test("render paged table and test sorting", () => {
       />
     </TestWrapper>,
   );
-  fireEvent.click(bodyUtils.getByTestId("sort-columnOne"));
+  fireEvent.click(getByTestId("sort-columnOne"));
   expect(mockSort.mock.results[0].value).toEqual({ sortOptions: [{ id: "columnOne", desc: true }] });
   expect(container).toMatchSnapshot();
 });

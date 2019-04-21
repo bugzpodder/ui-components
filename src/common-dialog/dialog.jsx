@@ -63,8 +63,12 @@ export const CommonDialog = (props: Props) => {
   return (
     <Dialog
       open={isVisible}
+      data-testid="dialog"
       className={classNames(styles.commonDialog, classes.root)}
-      PaperProps={{ className: classNames(styles.commonDialogPaper, classes.paper) }}
+      PaperProps={{
+        "data-testid": "dialog-paper",
+        className: classNames(styles.commonDialogPaper, classes.paper),
+      }}
       onClose={hideModal}
       maxWidth={false}
       scroll="body"
@@ -72,11 +76,13 @@ export const CommonDialog = (props: Props) => {
     >
       <DialogTitle
         id="form-dialog-title"
-        className={classes.title || ""}
+        data-testid="dialog-title"
+        className={classes.title}
       >
         {title}
       </DialogTitle>
       <DialogContent
+        data-testid="dialog-content"
         className={classNames(classes.content, {
           [styles.commonDialogNoOverflow]: !enableOverflow,
         })}
@@ -84,6 +90,7 @@ export const CommonDialog = (props: Props) => {
         {children}
       </DialogContent>
       <DialogActions
+        data-testid="dialog-actions"
         classes={{
           root: classes.actions,
           action: classes.action,

@@ -42,7 +42,10 @@ export const AvatarIcon = (props: Props) => {
     id = "", classes = {}, onClick, pictureUrl, isMenuOpen = false, menuItems = [], ...buttonProps
   } = props;
   return (
-    <div className={classNames(styles.avatarIconContainer, classes.root)}>
+    <div
+      data-testid="avatar-icon"
+      className={classNames(styles.avatarIconContainer, classes.root)}
+    >
       <IconButton
         disableRipple
         id={id}
@@ -58,11 +61,15 @@ export const AvatarIcon = (props: Props) => {
       >
         {pictureUrl ? (
           <Avatar
+            data-testid="avatar-icon-avatar"
             src={pictureUrl}
             className={classes.avatar}
           />
         ) : (
-          <AccountCircle className={classes.avatar} />
+          <AccountCircle
+            data-testid="avatar-icon-avatar"
+            className={classes.avatar}
+          />
         )}
       </IconButton>
       {menuItems.length > 0 && (
@@ -80,10 +87,13 @@ export const AvatarIcon = (props: Props) => {
             const {
               isVisible = true, content, onClick: onClickMenuItem, ...menuItemProps
             } = item;
+            const id = `avatar-menu-item-${index}`;
             return (
               isVisible && (
                 <MenuItem
-                  key={`avatar-menu-item-${index}`}
+                  key={id}
+                  id={id}
+                  data-testid={id}
                   className={classes.menuItem}
                   onClick={
                     onClick

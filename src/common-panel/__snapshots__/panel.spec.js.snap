@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render validated readonly text field 1`] = `
+exports[`CommonPanel classes 1`] = `
 <div>
   <div
-    class="panel"
+    class="panel test-root"
+    data-testid="panel"
   >
     <div
-      class="panelHeader"
+      class="panelHeader test-title primary"
       data-testid="panel-title"
     >
       <h6
@@ -16,7 +17,7 @@ exports[`render validated readonly text field 1`] = `
       </h6>
     </div>
     <div
-      class="panelBody"
+      class="panelBody test-body"
       data-testid="panel-body"
     >
       panel body

@@ -26,12 +26,18 @@ export const HumanizedDateTime = (props: Props) => {
   const { classes = {}, id, ...otherProps } = props;
 
   return (
-    <div id={id}>
+    <div
+      data-testid="humanized-date-time"
+      id={id}
+    >
       <DateTimeValue
         className={classes.dateTime}
         {...otherProps}
       />
-      <div className={classNames(styles.humanized, classes.humanizedText)}>
+      <div
+        data-testid="humanized"
+        className={classNames(styles.humanized, classes.humanizedText)}
+      >
         {moment(props.value).fromNow()}
       </div>
     </div>

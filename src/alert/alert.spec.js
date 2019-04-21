@@ -7,63 +7,56 @@ import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-test("render success alert pane", () => {
+test("default alert pane is error", () => {
   const { container, getByTestId } = render(
     <TestWrapper>
-      <div>
-        <Alert
-          color="success"
-          message="Test success"
-        />
-      </div>
+      <Alert message="Default" />
     </TestWrapper>,
   );
-  expect(getByTestId("alert")).toHaveTextContent("Test success");
+  expect(getByTestId("error-alert-icon")).toBeInTheDocument();
+  expect(getByTestId("error-alert-message")).toHaveTextContent("Default");
   expect(container).toMatchSnapshot();
 });
 
-test("render info alert pane", () => {
-  const { container, getByTestId } = render(
+test("alert classes", () => {
+  const { getByTestId } = render(
     <TestWrapper>
-      <div>
-        <Alert
-          color="info"
-          message="Test info"
-        />
-      </div>
+      <Alert
+        classes={{
+          root: "test-root",
+          content: "test-content",
+        }}
+      />
     </TestWrapper>,
   );
-  expect(getByTestId("alert")).toHaveTextContent("Test info");
-  expect(container).toMatchSnapshot();
+  expect(getByTestId("alert")).toBeInTheDocument();
+  expect(getByTestId("alert")).toHaveClass("test-root");
+  expect(getByTestId("content")).toBeInTheDocument();
+  expect(getByTestId("content")).toHaveClass("test-content");
 });
 
-test("render warning alert pane", () => {
-  const { container, getByTestId } = render(
+test("alternative alert colors", () => {
+  const { getByTestId } = render(
     <TestWrapper>
-      <div>
-        <Alert
-          color="warning"
-          variant="text"
-          message="Test warning"
-        />
-      </div>
+      <Alert
+        color="info"
+        message="Test info"
+      />
+      <Alert
+        color="success"
+        message="Test success"
+      />
+      <Alert
+        color="warning"
+        variant="text"
+        message="Test warning"
+      />
     </TestWrapper>,
   );
-  expect(getByTestId("alert")).toHaveTextContent("Test warning");
-  expect(container).toMatchSnapshot();
-});
-
-test("render error alert pane", () => {
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <div>
-        <Alert
-          variant="text"
-          message="Test error"
-        />
-      </div>
-    </TestWrapper>,
-  );
-  expect(getByTestId("alert")).toHaveTextContent("Test error");
-  expect(container).toMatchSnapshot();
+  expect(getByTestId("info-alert-icon")).toBeInTheDocument();
+  expect(getByTestId("info-alert-message")).toHaveTextContent("Test info");
+  expect(getByTestId("success-alert-icon")).toBeInTheDocument();
+  expect(getByTestId("success-alert-message")).toHaveTextContent("Test success");
+  expect(getByTestId("warning-alert-icon")).toBeInTheDocument();
+  expect(getByTestId("warning-alert-message")).toHaveTextContent("Test warning");
 });

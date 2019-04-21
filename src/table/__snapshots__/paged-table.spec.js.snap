@@ -15,9 +15,13 @@ exports[`render basic paged table 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
-        />
+          data-testid="card-title"
+        >
+          Test Table
+        </span>
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -25,6 +29,7 @@ exports[`render basic paged table 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export-test-table"
           tabindex="0"
           type="button"
         >
@@ -41,7 +46,7 @@ exports[`render basic paged table 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -259,9 +264,11 @@ exports[`render loading paged table 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         />
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -269,6 +276,7 @@ exports[`render loading paged table 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export"
           tabindex="0"
           type="button"
         >
@@ -285,7 +293,7 @@ exports[`render loading paged table 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -512,11 +520,13 @@ exports[`render paged table and test pagination 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         >
           Test Table (2 Selected)
         </span>
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -524,6 +534,7 @@ exports[`render paged table and test pagination 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export-test-table"
           tabindex="0"
           type="button"
         >
@@ -545,7 +556,7 @@ exports[`render paged table and test pagination 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -993,7 +1004,7 @@ exports[`render paged table and test pagination 1`] = `
     </div>
     <div
       class="MuiCardActions-root pagedTableCardFooter tableFooter"
-      data-testid="card-actions"
+      data-testid="card-footer-actions"
     >
       <div
         class="table-pager tablePager"
@@ -1122,9 +1133,11 @@ exports[`render paged table and test sorting 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         />
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -1132,6 +1145,7 @@ exports[`render paged table and test sorting 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export"
           tabindex="0"
           type="button"
         >
@@ -1148,7 +1162,7 @@ exports[`render paged table and test sorting 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -1422,11 +1436,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         >
            (6 Selected)
         </span>
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -1434,6 +1450,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export"
           tabindex="0"
           type="button"
         >
@@ -1450,7 +1467,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -1919,33 +1936,23 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         />
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
         class="MuiCardHeader-action headerActions"
       >
-        <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiButton-label"
-          >
-            Export to CSV
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
+         
+         
       </div>
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -2407,9 +2414,11 @@ exports[`render paged table with no initially selected items, then select items 
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         />
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -2417,6 +2426,7 @@ exports[`render paged table with no initially selected items, then select items 
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export"
           tabindex="0"
           type="button"
         >
@@ -2433,7 +2443,7 @@ exports[`render paged table with no initially selected items, then select items 
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -2895,9 +2905,13 @@ exports[`render paged table with no results 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
-        />
+          data-testid="card-title"
+        >
+          4
+        </span>
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -2905,6 +2919,7 @@ exports[`render paged table with no results 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export-data"
           tabindex="0"
           type="button"
         >
@@ -2921,7 +2936,7 @@ exports[`render paged table with no results 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -2987,9 +3002,11 @@ exports[`render paged table with no results and is loading 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         />
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -2997,6 +3014,7 @@ exports[`render paged table with no results and is loading 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export"
           tabindex="0"
           type="button"
         >
@@ -3013,7 +3031,7 @@ exports[`render paged table with no results and is loading 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"
@@ -3086,9 +3104,11 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
       >
         <span
           class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title"
+          data-testid="card-title"
         />
         <span
           class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+          data-testid="card-subheader"
         />
       </div>
       <div
@@ -3096,6 +3116,7 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
       >
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          data-testid="export"
           tabindex="0"
           type="button"
         >
@@ -3112,7 +3133,7 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
     </div>
     <div
       class="MuiCardContent-root pagedTableCardBody tableContainer"
-      data-testid="card-content"
+      data-testid="card-body"
     >
       <table
         class="MuiTable-root table"

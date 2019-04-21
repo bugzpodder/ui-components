@@ -2,15 +2,13 @@
 import React from "react";
 import { CommonSwitch } from "./common-switch";
 import { TestWrapper } from "../test-utils";
-import { bindElementToQueries } from "dom-testing-library";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
-const bodyUtils = bindElementToQueries(document.body);
 
 test("render primary common switch", () => {
   const mockChange = jest.fn(result => result);
-  const { container } = render(
+  const { container, getByTestId } = render(
     <TestWrapper>
       <div>
         <CommonSwitch
@@ -22,15 +20,18 @@ test("render primary common switch", () => {
       </div>
     </TestWrapper>,
   );
-  // TODO(nsawas): find out why this calls onChange twice.
-  fireEvent.click(bodyUtils.getByTestId("common-switch"));
+  fireEvent.click(getByTestId("common-switch"));
+  expect(mockChange).toHaveBeenCalledTimes(1);
   expect(mockChange.mock.results[0].value).toEqual(true);
+  fireEvent.click(getByTestId("common-switch"));
+  expect(mockChange).toHaveBeenCalledTimes(2);
+  expect(mockChange.mock.results[1].value).toEqual(false);
   expect(container).toMatchSnapshot();
 });
 
 test("render secondary common switch", () => {
   const mockChange = jest.fn(result => result);
-  const { container } = render(
+  const { getByTestId } = render(
     <TestWrapper>
       <div>
         <CommonSwitch
@@ -42,10 +43,9 @@ test("render secondary common switch", () => {
       </div>
     </TestWrapper>,
   );
-  // TODO(nsawas): find out why this calls onChange twice.
-  fireEvent.click(bodyUtils.getByTestId("common-switch"));
+  fireEvent.click(getByTestId("common-switch"));
+  expect(mockChange).toHaveBeenCalledTimes(1);
   expect(mockChange.mock.results[0].value).toEqual(false);
-  expect(container).toMatchSnapshot();
 });
 
 test("render error common switch", () => {

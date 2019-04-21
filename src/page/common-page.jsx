@@ -72,28 +72,19 @@ export const CommonPage = (props: Props) => {
   } = props;
   const mappedHeaderActions = headerActions.map((action, index) => {
     const {
-      Component, content = "", id, componentProps, ...buttonProps
+      Component = Button, content = "", id, color = "primary", componentProps, ...otherProps
     } = action;
-    if (Component) {
-      return (
-        <Component
-          key={`header-action-${index}`}
-          id={id}
-          {...componentProps}
-        >
-          {content}
-        </Component>
-      );
-    }
     return (
-      <Button
+      <Component
         key={`header-action-${index}`}
         id={id}
         data-testid={id}
-        {...buttonProps}
+        color={color}
+        {...componentProps}
+        {...otherProps}
       >
         {content}
-      </Button>
+      </Component>
     );
   });
 
@@ -122,6 +113,9 @@ export const CommonPage = (props: Props) => {
           }}
           action={mappedHeaderActions}
           subheader={subtitle}
+          subheaderTypographyProps={{
+            variant: "body2",
+          }}
           avatar={
             menuContents.length > 0 && (
             <SideMenuButton

@@ -45,6 +45,7 @@ export const UploadButton = (props: Props) => {
       {text}
       <input
         type="file"
+        data-testid="upload-button-input-field"
         multiple={allowMultiple}
         style={{ display: "none" }}
         onChange={({ currentTarget: { files } }) => onChange(files)}

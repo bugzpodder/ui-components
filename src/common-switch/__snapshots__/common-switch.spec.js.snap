@@ -59,13 +59,13 @@ exports[`render primary common switch 1`] = `
           class="MuiSwitch-root"
         >
           <span
-            class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary MuiPrivateSwitchBase-checked MuiSwitch-checked"
+            class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
           >
             <span
               class="MuiIconButton-label"
             >
               <span
-                class="MuiSwitch-icon MuiSwitch-iconChecked"
+                class="MuiSwitch-icon"
               />
               <input
                 class="MuiPrivateSwitchBase-input"
@@ -90,51 +90,6 @@ exports[`render primary common switch 1`] = `
       >
         test switch
       </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render secondary common switch 1`] = `
-<div>
-  <div>
-    <div
-      class="commonSwitch"
-    >
-      <label
-        class="MuiFormControlLabel-root controlLabel"
-        data-testid="common-switch"
-      >
-        <span
-          class="MuiSwitch-root"
-        >
-          <span
-            class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary MuiPrivateSwitchBase-checked MuiSwitch-checked"
-          >
-            <span
-              class="MuiIconButton-label"
-            >
-              <span
-                class="MuiSwitch-icon MuiSwitch-iconChecked"
-              />
-              <input
-                checked=""
-                class="MuiPrivateSwitchBase-input"
-                id=""
-                type="checkbox"
-                value=""
-              />
-            </span>
-          </span>
-          <span
-            class="MuiSwitch-bar"
-          />
-        </span>
-        <span
-          class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
-        />
-      </label>
-      
     </div>
   </div>
 </div>

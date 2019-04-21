@@ -1,28 +1,47 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { DateValue } from ".";
+import { DateTimeValue, DateValue, HumanizedDateTime } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-test("render date value with no date", async () => {
-  const { container, getByTestId } = render(
+test("render DateTimeValue", async () => {
+  const { container, getByTestId, rerender } = render(
     <TestWrapper>
-      <DateValue />
+      <DateTimeValue value="2017-03-13" />
     </TestWrapper>,
   );
-  expect(getByTestId("date-value")).toHaveTextContent("-");
   expect(container).toMatchSnapshot();
+  expect(getByTestId("date-time-value")).toHaveTextContent("2017-03-13 00:00:00");
+  rerender(<DateTimeValue />);
+  expect(getByTestId("date-time-value")).not.toBeEmpty();
+  expect(getByTestId("date-time-value")).toHaveTextContent("-");
 });
 
-test("render date value with date", async () => {
-  const { container, getByTestId } = render(
+test("render DateTimeValue", async () => {
+  const { container, getByTestId, rerender } = render(
     <TestWrapper>
       <DateValue value="2017-03-13" />
     </TestWrapper>,
   );
-  expect(getByTestId("date-value")).toHaveTextContent("2017-03-13");
   expect(container).toMatchSnapshot();
+  expect(getByTestId("date-value")).toHaveTextContent("2017-03-13");
+  rerender(<DateValue />);
+  expect(getByTestId("date-value")).not.toBeEmpty();
+  expect(getByTestId("date-value")).toHaveTextContent("-");
+});
+
+test("render HumanizedDateTime", async () => {
+  const { container, getByTestId } = render(
+    <TestWrapper>
+      <HumanizedDateTime />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+  expect(getByTestId("date-time-value")).not.toBeEmpty();
+  expect(getByTestId("date-time-value")).toHaveTextContent("-");
+  expect(getByTestId("humanized")).not.toBeEmpty();
+  expect(getByTestId("humanized")).toHaveTextContent("a few seconds ago");
 });

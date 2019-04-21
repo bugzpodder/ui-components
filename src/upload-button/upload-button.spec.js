@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "react-testing-library";
 
 import "jest-dom/extend-expect";
 import { UploadButton } from ".";
@@ -10,6 +10,7 @@ afterEach(cleanup);
 
 test("render upload button with default text", async () => {
   const testId = "upload-button";
+  const mockOnChange = jest.fn(result => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <UploadButton
@@ -18,16 +19,22 @@ test("render upload button with default text", async () => {
           color: "primary",
           "data-testid": testId,
         }}
-        onChange={() => {}}
+        onChange={mockOnChange}
       />
     </TestWrapper>,
   );
   expect(getByTestId(testId)).toHaveTextContent("Upload File");
   expect(getByTestId(testId)).not.toHaveTextContent("Upload File(s)");
+  fireEvent.change(getByTestId("upload-button-input-field"));
+  expect(mockOnChange).toHaveBeenCalled();
+
+  // TODO(nsawas): Figure out how to test return result of Filelist {}.
+  const valueType = typeof mockOnChange.mock.results[0].value;
+  expect(valueType).toEqual("object");
   expect(container).toMatchSnapshot();
 });
 
-test("render upload button with default text for uploading multiple files", async () => {
+test("render upload button with default text and default props for uploading multiple files", async () => {
   const testId = "upload-button";
   const { container, getByTestId } = render(
     <TestWrapper>
@@ -38,6 +45,10 @@ test("render upload button with default text for uploading multiple files", asyn
           color: "primary",
           "data-testid": testId,
         }}
+        onChange={() => {}}
+      />
+      <UploadButton
+        allowMultiple
         onChange={() => {}}
       />
     </TestWrapper>,

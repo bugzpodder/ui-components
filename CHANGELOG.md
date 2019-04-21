@@ -1,10 +1,17 @@
 ## 1.0.0 - 2019-##-
 
-1. Update react peer dependency to 16.8 for hooks usage.
-2. Fix sidebar to grow and shrink using flex-grow/shrink.
-3. Add `isFullBleed` to `PagedTable` to allow for non-card based paged table that expands to 100% of the height of the parent element.
-4. Add `hasTableMargin` to `PagedTable` to enable/disable table margin.
-5. Add `DateValue`, `DateTimeValue`, and `HumanizedDateTime`.
+1. Bug fixes and improved unit tests.
+2. Update react peer dependency to 16.8 for hooks usage.
+3. Fix sidebar to grow and shrink using flex-grow/shrink.
+4. Add `isFullBleed` to `PagedTable` to allow for non-card based paged table that expands to 100% of the height of the parent element.
+5. Add `hasTableMargin` to `PagedTable` to enable/disable table margin.
+6. Add `DateValue`, `DateTimeValue`, and `HumanizedDateTime`.
+7. Standardize CommonPage-based components subtitle size.
+8. `CommonPage` now takes `children`, allowing shared components to be held or displayed across pages.
+9. `CommonTabbedPage` tabs now take a `tabClasses` prop to specify classes for each individual tab.
+10. `CommonTabbedPage` now has `SpinnerOverlay` built-in. If `isLoading` is provided and true, the overlay will be displayed over
+    the page content.
+11. `CommonTypeahead` removed fromd dev components.
 
 ## 0.10.0 - 2019-04-01
 

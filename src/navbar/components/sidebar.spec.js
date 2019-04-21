@@ -5,16 +5,13 @@ import { EDC, LIMS, PIPELINE } from "@grail/lib";
 import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
 import { TestWrapper } from "../../test-utils";
-import { bindElementToQueries } from "dom-testing-library";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-const bodyUtils = bindElementToQueries(document.body);
-
 test("render Sidebar", () => {
   const toggle = jest.fn();
-  render(
+  const { container } = render(
     <TestWrapper>
       <MemoryRouter>
         <Sidebar
@@ -32,22 +29,27 @@ test("render Sidebar", () => {
       </MemoryRouter>
     </TestWrapper>,
   );
-  // FIXME(jrosenfield): couldn't get test to work
-  const sampleManagementDropdown = bodyUtils.queryByText("Sample Management");
-  expect(sampleManagementDropdown).toBeInTheDocument();
-  expect(bodyUtils.queryByText("Footer")).toBeInTheDocument();
-  const programRuns = bodyUtils.queryByText("Program Runs");
-  // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDocument();
-  expect(programRuns).toBeInTheDocument();
-  fireEvent.click(sampleManagementDropdown);
-  const batches = bodyUtils.queryByText("Batches");
-  expect(batches).toBeInTheDocument();
-  fireEvent.click(sampleManagementDropdown);
-  // expect(bodyUtils.queryByText("Batches")).not.toBeInTheDocument();
-  expect(toggle.mock.calls.length).toBe(0);
-  const instruments = bodyUtils.queryByText("Instruments");
-  expect(instruments).toBeInTheDocument();
-  fireEvent.click(instruments);
-  expect(toggle.mock.calls.length).toBe(1);
-  expect(document.body).toMatchSnapshot();
+  expect(container).toMatchSnapshot();
+
+  // const sampleManagementDropdown = getByTestId("list");
+  // expect(sampleManagementDropdown).toBeInTheDocument();
+  // expect(getByTestId("automation")).toBeInTheDocument();
+  // expect(getByText("Footer")).toBeInTheDocument();
+  // expect(getByText("Footer")).toBeInTheDocument();
+
+  // expect(getByText("Footer")).toBeInTheDocument();
+  // const programRuns = getByText("Program Runs");
+  // // expect(getByText("Batches")).not.toBeInTheDocument();
+  // expect(programRuns).toBeInTheDocument();
+  // fireEvent.click(sampleManagementDropdown);
+  // const batches = getByText("Batches");
+  // expect(batches).toBeInTheDocument();
+  // fireEvent.click(sampleManagementDropdown);
+  // // expect(getByText("Batches")).not.toBeInTheDocument();
+  // expect(toggle.mock.calls.length).toBe(0);
+  // const instruments = getByText("Instruments");
+  // expect(instruments).toBeInTheDocument();
+  // fireEvent.click(instruments);
+  // expect(toggle.mock.calls.length).toBe(1);
+  // fireEvent.click(getByTestId("collapse-all-sidebar-items"));
 });

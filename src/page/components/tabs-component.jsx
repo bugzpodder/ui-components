@@ -28,7 +28,7 @@ export const TabsComponent = (props: Props) => {
     >
       {pageConfigs.map(tab => {
         const {
-          key, label, id, className,
+          key, label, id, tabClasses = {},
         } = tab;
         return (
           <Tab
@@ -37,9 +37,7 @@ export const TabsComponent = (props: Props) => {
             label={label}
             id={id}
             data-testid={id}
-            classes={{
-              root: className,
-            }}
+            classes={tabClasses}
             {...tabProps}
           />
         );

@@ -12,16 +12,6 @@ declare type CommonCardClasses = {
   title?: string,
 };
 
-declare type TabbedCardClasses = {
-  content?: string,
-  header?: string,
-  headerActions?: string,
-  tabs?: string,
-  root?: string,
-  subheader?: string,
-  title?: string,
-}
-
 declare type CommonPageClasses = {
   root?: string,
   header?: string,
@@ -38,14 +28,6 @@ declare type CommonTabbedPageClasses = CommonPageClasses & {
   contentContainer?: string,
 }
 
-declare type TabConfig = {
-  label: string,
-  value: string,
-  content: Node<*>,
-  id: string,
-  [string]: any,
-}
-
 declare type PageConfig = {
   key: string,
   label: Node,
@@ -54,6 +36,7 @@ declare type PageConfig = {
   id?: string,
   className?: string,
   menuContents?: Array<MenuItem>,
+  tabClasses?: Object,
 }
 
 declare type MenuItem = {

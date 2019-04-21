@@ -42,11 +42,13 @@ export const CollapsableListItem = (props: Props) => {
   };
 
   const handleToggleList = props.toggleList || toggleList;
+  const formattedHeaderText = headerText.toLowerCase().replace(" ", "-");
   return (
     <Fragment>
       <ListItem
         button
         disableRipple
+        data-testid={`list-item-${formattedHeaderText}`}
         onClick={event => {
           handleToggleList();
           event.stopPropagation();
@@ -55,6 +57,7 @@ export const CollapsableListItem = (props: Props) => {
       >
         {headerIcon && <ListItemIcon>{headerIcon}</ListItemIcon>}
         <ListItemText
+          data-testid={formattedHeaderText}
           primary={headerText}
           {...headerTextProps}
         />

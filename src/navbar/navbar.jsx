@@ -1,6 +1,6 @@
 // @flow
 import React, { useState } from "react";
-import { BaseNavbar } from "../dev/base-navbar/base-navbar";
+import { BaseNavbar } from "./components/base-navbar";
 
 type Props = {
   /** Determines whether to put warning banner above the navigation bar. */

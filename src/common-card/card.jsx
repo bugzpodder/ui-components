@@ -66,6 +66,7 @@ export const CommonCard = (props: CommonCardProps) => {
   } = props;
   return (
     <Card
+      data-testid="card"
       className={classNames(classes.root, styles.card, { [styles.withMargin]: hasMargin })}
       elevation={elevation}
       {...cardProps}
@@ -75,6 +76,12 @@ export const CommonCard = (props: CommonCardProps) => {
           data-testid="card-header"
           title={title}
           subheader={subheader}
+          titleTypographyProps={{
+            "data-testid": "card-title",
+          }}
+          subheaderTypographyProps={{
+            "data-testid": "card-subheader",
+          }}
           classes={{
             root: classes.header,
             action: classNames(styles.headerActions, classes.headerActions),
@@ -86,7 +93,7 @@ export const CommonCard = (props: CommonCardProps) => {
         />
       )}
       <CardContent
-        data-testid="card-content"
+        data-testid="card-body"
         classes={{
           root: classes.body,
         }}
@@ -95,7 +102,7 @@ export const CommonCard = (props: CommonCardProps) => {
       </CardContent>
       {footerActions && (
         <CardActions
-          data-testid="card-actions"
+          data-testid="card-footer-actions"
           classes={{
             root: classes.footer,
             action: classNames(styles.footerActions, classes.footerActions),

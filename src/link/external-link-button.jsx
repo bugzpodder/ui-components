@@ -16,6 +16,7 @@ export const ExternalLinkButton = (props: Props) => {
   const { children, ...buttonProps } = props;
   return (
     <Button
+      data-testid="external-link-button"
       {...buttonProps}
       target="_blank"
       rel="noopener noreferrer"

@@ -82,11 +82,12 @@ export const CommonMultiPageDialog = (props: Props) => {
     >
       <DialogTitle
         id="form-dialog-title"
-        className={classes.title || ""}
+        className={classes.title}
       >
         {title}
       </DialogTitle>
       <DialogContent
+        data-testid="dialog-content"
         className={classNames(classes.content, {
           [styles.commonDialogNoOverflow]: !enableOverflow,
         })}
@@ -101,10 +102,11 @@ export const CommonMultiPageDialog = (props: Props) => {
       >
         <div className={styles.commonDialogFooter}>
           <div className={styles.left}>
-            {pageIndex > 0 && showBackButton && (
+            {showBackButton && (
               <Button
                 id="back"
                 className="back"
+                disabled={pageIndex === 0}
                 onClick={setPage.bind(null, pageIndex - 1)}
               >
                 <ArrowBackIcon className="margin-right-5" /> Back

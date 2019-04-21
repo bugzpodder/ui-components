@@ -5,10 +5,11 @@ exports[`render avatar with menu 1`] = `
   aria-hidden="true"
 >
   <div
-    class="avatarIconContainer"
+    class="avatarIconContainer test-root"
+    data-testid="avatar-icon"
   >
     <button
-      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
+      class="MuiButtonBase-root MuiIconButton-root test-button MuiIconButton-colorInherit"
       data-testid="avatar-icon-button"
       id="avatar-icon-button"
       tabindex="0"
@@ -19,7 +20,8 @@ exports[`render avatar with menu 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root"
+          class="MuiSvgIcon-root test-avatar"
+          data-testid="avatar-icon-avatar"
           focusable="false"
           role="presentation"
           viewBox="0 0 24 24"
@@ -34,6 +36,42 @@ exports[`render avatar with menu 1`] = `
         </svg>
       </span>
     </button>
+  </div>
+  <div
+    class="alertContainer"
+    data-testid="alert"
+  >
+    <div
+      class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error"
+      data-testid="content"
+      role="alertdialog"
+    >
+      <div
+        class="MuiSnackbarContent-message"
+      >
+        <span
+          data-testid="error-alert-message"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root alertIcon"
+            data-testid="error-alert-icon"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+            />
+          </svg>
+          test
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 `;

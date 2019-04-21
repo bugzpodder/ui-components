@@ -10,7 +10,7 @@ import moment from "moment";
 import styles from "./base-navbar.module.scss";
 import { BreastCancerRibbon, GrailLogo } from "../../logos";
 import { LIMS } from "@grail/lib";
-import { Sidebar } from "../../navbar/components/sidebar";
+import { Sidebar } from "./sidebar";
 
 type Props = {
   /** Determines whether to put warning banner above the navigation bar. */
@@ -75,11 +75,13 @@ export const BaseNavbar = (props: Props) => {
   return (
     <Fragment>
       <AppBar
+        data-testid="navbar"
         position="sticky"
         className={classNames(classes.appBar, styles.appBar, "lims-navbar")}
       >
         {!isProduction && (
           <Typography
+            data-testid="non-production-warning"
             className={styles.nonProductionWarning}
             variant="h6"
           >
@@ -90,7 +92,10 @@ export const BaseNavbar = (props: Props) => {
           className={styles.toolbar}
           disableGutters
         >
-          <div className={styles.left}>
+          <div
+            data-testid="navbar-left"
+            className={styles.left}
+          >
             <IconButton
               id="main-nav-button"
               data-testid="main-nav-button"
@@ -102,6 +107,7 @@ export const BaseNavbar = (props: Props) => {
             </IconButton>
             {title && (
               <Typography
+                data-testid="navbar-title"
                 color="inherit"
                 variant="h6"
               >
@@ -110,8 +116,16 @@ export const BaseNavbar = (props: Props) => {
             )}
             {left}
           </div>
-          <div className={styles.center}>{center}</div>
-          <div className={styles.right}>
+          <div
+            data-testid="navbar-center"
+            className={styles.center}
+          >
+            {center}
+          </div>
+          <div
+            data-testid="navbar-right"
+            className={styles.right}
+          >
             {isLims && isOctober && <BreastCancerRibbon />}
             <div className={styles.brand}>
               <GrailLogo />

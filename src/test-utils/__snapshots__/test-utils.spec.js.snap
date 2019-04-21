@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render example block 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <pre
+      class="text"
+      data-testid="example"
+    >
+      <strong>
+        State 
+      </strong>
+      
+      = 
+      {
+  "test": "one"
+}
+    </pre>
+  </div>
+</div>
+`;

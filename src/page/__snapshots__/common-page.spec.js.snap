@@ -23,14 +23,14 @@ exports[`render common page 1`] = `
             Test Card
           </span>
           <span
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
           />
         </div>
         <div
           class="MuiCardHeader-action headerActions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
             tabindex="0"
             type="button"
           >
@@ -48,7 +48,6 @@ exports[`render common page 1`] = `
           >
             <label
               class="MuiFormControlLabel-root controlLabel"
-              data-testid="common-switch"
             >
               <span
                 class="MuiSwitch-root"
@@ -165,7 +164,7 @@ exports[`render common page with menu 1`] = `
           class="MuiCardHeader-action headerActions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
             tabindex="0"
             type="button"
           >
@@ -183,7 +182,6 @@ exports[`render common page with menu 1`] = `
           >
             <label
               class="MuiFormControlLabel-root controlLabel"
-              data-testid="common-switch"
             >
               <span
                 class="MuiSwitch-root"
@@ -287,16 +285,20 @@ exports[`render common page with menu 1`] = `
         >
           <div
             class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+            data-testid="content"
             id="one"
             role="alertdialog"
           >
             <div
               class="MuiSnackbarContent-message"
             >
-              <span>
+              <span
+                data-testid="success-alert-message"
+              >
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root alertIcon"
+                  data-testid="success-alert-icon"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -320,16 +322,20 @@ exports[`render common page with menu 1`] = `
         >
           <div
             class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+            data-testid="content"
             id="two"
             role="alertdialog"
           >
             <div
               class="MuiSnackbarContent-message"
             >
-              <span>
+              <span
+                data-testid="success-alert-message"
+              >
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root alertIcon"
+                  data-testid="success-alert-icon"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -375,7 +381,7 @@ exports[`render common page with subheader and content 1`] = `
             This is a title
           </span>
           <span
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
           >
             This is a subtitle
           </span>
@@ -384,7 +390,7 @@ exports[`render common page with subheader and content 1`] = `
           class="MuiCardHeader-action headerActions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
             tabindex="0"
             type="button"
           >
@@ -402,7 +408,6 @@ exports[`render common page with subheader and content 1`] = `
           >
             <label
               class="MuiFormControlLabel-root controlLabel"
-              data-testid="common-switch"
             >
               <span
                 class="MuiSwitch-root"
@@ -444,15 +449,19 @@ exports[`render common page with subheader and content 1`] = `
       >
         <div
           class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+          data-testid="content"
           role="alertdialog"
         >
           <div
             class="MuiSnackbarContent-message"
           >
-            <span>
+            <span
+              data-testid="success-alert-message"
+            >
               <svg
                 aria-hidden="true"
                 class="MuiSvgIcon-root alertIcon"
+                data-testid="success-alert-icon"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -504,7 +513,7 @@ exports[`render empty common page 1`] = `
             class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
           />
           <span
-            class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
           />
         </div>
         <div

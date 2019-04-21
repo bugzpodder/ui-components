@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render ExternalLink 1`] = `
+<div>
+  <a
+    class="test"
+    data-testid="external-link"
+    href="https://www.grail.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    GRAIL
+  </a>
+</div>
+`;
+
+exports[`render ExternalLink 2`] = `
+<div>
+  <a
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat test"
+    data-testid="external-link-button"
+    href="https://www.grail.com"
+    rel="noopener noreferrer"
+    role="button"
+    tabindex="0"
+    target="_blank"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      GRAIL
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </a>
+</div>
+`;
+
+exports[`render ExternalLink 3`] = `
+<div>
+  <a
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat test"
+    data-testid="external-link-button"
+    href="https://www.grail.com"
+    rel="noopener noreferrer"
+    role="button"
+    tabindex="0"
+    target="_blank"
+  >
+    <span
+      class="MuiButton-label"
+    >
+      GRAIL
+    </span>
+    <span
+      class="MuiTouchRipple-root"
+    />
+  </a>
+</div>
+`;

@@ -12,7 +12,10 @@ export const ExampleBlock = (props: Props) => {
   const { strongHeader, helperText = "", content } = props;
   return (
     <div className={styles.container}>
-      <pre className={styles.text}>
+      <pre
+        data-testid="example"
+        className={styles.text}
+      >
         <strong>{strongHeader}</strong>
         {helperText}= {JSON.stringify(content, null, 2)}
       </pre>

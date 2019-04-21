@@ -15,8 +15,7 @@ export { CommonPage, CommonTabbedPage } from "./page";
 export {
   DateValue, DateTimeValue, HumanizedDateTime, DateInput, DateTimeInput, wrapPickerUtilProvider,
 } from "./date";
-export { ExternalLinkButton } from "./external-link-button";
-export { ExternalLink } from "./external-link";
+export { ExternalLink, ExternalLinkButton } from "./link";
 export { Navbar } from "./navbar";
 export { NotificationCenter } from "./notification-center";
 export { ReadOnlyTextField, ValidatedReadOnlyTextField } from "./readonly-text-field";

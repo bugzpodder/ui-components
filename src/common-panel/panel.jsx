@@ -46,6 +46,7 @@ export const CommonPanel = (props: Props) => {
   } = props;
   return (
     <div
+      data-testid="panel"
       className={classNames({ [styles.panel]: true }, className, classes.root)}
       {...panelProps}
     >

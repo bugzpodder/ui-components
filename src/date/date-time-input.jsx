@@ -1,9 +1,9 @@
 // @flow
 import React, { type ElementConfig } from "react";
-import moment from "moment";
 import { DATE_TIME_FORMAT, DATE_TIME_INPUT_MASK } from "@grail/lib";
 import { DateTimePicker } from "material-ui-pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
+import { formatDate } from "./components/formatted-date-time";
 
 type Props = {
   /** When `true`, displays a read only input field (ReadOnlyTextField) */
@@ -24,10 +24,11 @@ export const DateTimeInput = (props: Props) => {
   } = props;
   if (readOnly) {
     return (
-      <ReadOnlyTextField showEmptyValue={showEmptyValue}>
-        {props.value ? moment(props.value).format(DATE_TIME_FORMAT) : ""}
-      </ReadOnlyTextField>
+      <ReadOnlyTextField showEmptyValue={showEmptyValue}>{formatDate(props.value, DATE_TIME_FORMAT)}</ReadOnlyTextField>
     );
+  }
+  if (!props.onChange) {
+    throw new Error("onChange must be defined for DateTimeInput");
   }
   return (
     <DateTimePicker
@@ -35,6 +36,7 @@ export const DateTimeInput = (props: Props) => {
       keyboard
       clearable
       data-testid="date-time-input"
+      KeyboardButtonProps={{ "data-testid": "date-time-picker-button" }}
       DialogProps={{
         "data-testid": "date-time-picker-dialog",
       }}

@@ -88,7 +88,10 @@ export const SelectionGrid = (props: Props) => {
   });
 
   return (
-    <div className={classNames(styles.grid, classes.root)}>
+    <div
+      data-testid="selection-grid"
+      className={classNames(styles.grid, classes.root)}
+    >
       {showHeader && (
         <div className={classNames(styles.row, classes.row)}>
           <GridHeader classes={classes} />
@@ -97,7 +100,8 @@ export const SelectionGrid = (props: Props) => {
               <GridHeader
                 key={index}
                 classes={classes}
-              >{header}
+              >
+                {header}
               </GridHeader>
             );
           })}
@@ -110,12 +114,11 @@ export const SelectionGrid = (props: Props) => {
         }
         return (
           <div
+            data-testid={`selection-grid-row-${rowIndex}`}
             className={classNames(styles.row, rowClass)}
             key={rowIndex}
           >
-            {showHeader && (
-              <GridHeader classes={classes}>{rowHeaders[rowIndex]}</GridHeader>
-            )}
+            {showHeader && <GridHeader classes={classes}>{rowHeaders[rowIndex]}</GridHeader>}
             {row.map((instance, colIndex) => {
               const cellIndex = rowIndex * numCols + colIndex;
               const gridCellInfo = {

@@ -8,97 +8,94 @@ import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-const headerActions = [
-  {
-    content: "Test Action",
-  },
-  {
-    Component: CommonSwitch,
-    componentProps: {
-      label: "CUSTOM ACTION",
-      onChange: () => {},
-    },
-  },
-];
-
-test("render common page", () => {
-  const { container } = render(
+const TestCommonPage = props => {
+  return (
     <TestWrapper>
       <CommonPage
-        title="Test Card"
-        value="one"
-        headerActions={headerActions}
-      >
-        <h3>Page Content</h3>
-      </CommonPage>
-    </TestWrapper>,
-  );
-  expect(container).toMatchSnapshot();
-});
-
-test("render empty common page", () => {
-  const { container } = render(
-    <TestWrapper>
-      <CommonPage />
-    </TestWrapper>,
-  );
-  expect(container).toMatchSnapshot();
-});
-
-test("render common page with subheader and content", () => {
-  const { container } = render(
-    <TestWrapper>
-      <CommonPage
-        headerActions={headerActions}
-        subtitle="This is a subtitle"
-        title="This is a title"
+        {...props}
         subheader={(
           <Alert
             message="Some alert message"
             color="success"
           />
 )}
+        value="one"
       >
         Some content here.
       </CommonPage>
-    </TestWrapper>,
+    </TestWrapper>
+  );
+};
+
+test("renders common page", () => {
+  const { rerender, container } = render(<TestCommonPage />);
+  rerender(
+    <TestCommonPage
+      title="Test Card"
+      subtitle="This is a subtitle"
+      headerActions={[
+        {
+          content: "Test Action",
+        },
+        {
+          Component: CommonSwitch,
+          componentProps: {
+            label: "CUSTOM ACTION",
+            onChange: () => {},
+          },
+        },
+      ]}
+    />,
   );
   expect(container).toMatchSnapshot();
 });
 
-test("render common page with menu", () => {
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <CommonPage
-        headerActions={headerActions}
-        subtitle="This is a subtitle"
-        title="This is a title"
-        menuContents={[
-          {
-            label: "Menu item one",
-            key: "one",
-          },
-          {
-            label: "Menu item two",
-            key: "two",
-          },
-        ]}
-      >
-        <Alert
-          message="Alert one"
-          color="success"
-          id="one"
-        />
-        <Alert
-          message="Alert two"
-          color="success"
-          id="two"
-        />
-      </CommonPage>
-    </TestWrapper>,
-  );
+test("displays a side menu", () => {
+  const menuContents = [
+    {
+      label: "Menu item one",
+      key: "one",
+    },
+    {
+      label: "Menu item two",
+      key: "two",
+    },
+  ];
+
+  const { getByTestId } = render(<TestCommonPage menuContents={menuContents} />);
   fireEvent.click(getByTestId("toggle-side-menu"));
   expect(getByTestId("side-menu-item-one")).toBeInTheDocument();
   expect(getByTestId("side-menu-item-one")).toHaveAttribute("href", "#one");
-  expect(container).toMatchSnapshot();
+});
+
+test("common page classes", () => {
+  const { getByTestId } = render(
+    <TestCommonPage
+      menuContents={[{ key: "test", label: "test" }]}
+      classes={{
+        root: "test-root",
+        header: "test-header",
+        headerActions: "test-actions",
+        title: "test-title",
+        subtitle: "test-subtitle",
+        contentAndMenu: "test-container",
+        content: "test-content",
+        sideMenu: "test-side-menu",
+      }}
+    />,
+  );
+  const classes = {
+    "common-page": "test-root",
+    "common-page-header": "test-header",
+    // test headerActions
+    "common-page-title": "test-title",
+    "common-page-subtitle": "test-subtitle",
+    "common-page-content-and-menu": "test-container",
+    "common-page-content": "test-content",
+    "common-page-side-menu": "test-side-menu",
+  };
+  Object.keys(classes).forEach(key => {
+    expect(getByTestId(key)).toBeInTheDocument();
+    expect(getByTestId(key)).toHaveClass(classes[key]);
+  });
 });

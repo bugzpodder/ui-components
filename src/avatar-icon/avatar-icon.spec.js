@@ -45,6 +45,7 @@ test("render avatar with menu", () => {
   expect(mockItemClick).toHaveBeenCalledTimes(1);
   expect(container).toMatchSnapshot();
 
+  // Test classes.
   expect(getByTestId("avatar-icon")).toBeInTheDocument();
   expect(getByTestId("avatar-icon")).toHaveClass("test-root");
   expect(getByTestId("avatar-icon-button")).toHaveClass("test-button");

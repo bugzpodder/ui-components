@@ -94,16 +94,17 @@ export const CommonPage = (props: Props) => {
       data-testid="common-page"
     >
       <Card
+        data-testid="common-page-header"
         classes={{
           root: classNames(classes.header, styles.stickyHeader, styles.pageHeader),
         }}
         {...cardProps}
       >
         <CardHeader
-          data-testid="common-page-card-header"
           title={title}
           titleTypographyProps={{
             variant: "h5",
+            "data-testid": "common-page-title",
           }}
           classes={{
             root: styles.cardHeader,
@@ -115,6 +116,7 @@ export const CommonPage = (props: Props) => {
           subheader={subtitle}
           subheaderTypographyProps={{
             variant: "body2",
+            "data-testid": "common-page-subtitle",
           }}
           avatar={
             menuContents.length > 0 && (
@@ -127,16 +129,24 @@ export const CommonPage = (props: Props) => {
         />
         {subheader && subheader}
       </Card>
-      <div className={classNames(styles.contentAndMenu, classes.contentAndMenu)}>
+      <div
+        data-testid="common-page-content-and-menu"
+        className={classNames(styles.contentAndMenu, classes.contentAndMenu)}
+      >
         {menuContents.length > 0 && (
           <SideMenu
             data-testid="common-page-side-menu"
             isExpanded={sideMenuIsExpanded}
             menuContents={menuContents}
-            classes={classes.sideMenu}
+            className={classes.sideMenu}
           />
         )}
-        <div className={classNames(styles.content, classes.content)}>{children}</div>
+        <div
+          data-testid="common-page-content"
+          className={classNames(styles.content, classes.content)}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );

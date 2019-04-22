@@ -10,23 +10,26 @@ import styles from "./side-menu.module.scss";
 type Props = {
   isExpanded: boolean,
   menuContents: Array<MenuItem>,
-  classes?: string,
+  className?: string,
 };
 
 export const SideMenu = (props: Props) => {
-  const { isExpanded, menuContents, classes } = props;
+  const {
+    isExpanded, menuContents, className, ...otherProps
+  } = props;
   return (
     <Drawer
       variant="persistent"
       anchor="left"
       open={isExpanded}
-      className={classNames(styles.sideMenu, classes, {
+      className={classNames(styles.sideMenu, className, {
         [styles.contentShift]: isExpanded,
         [styles.content]: !isExpanded,
       })}
       classes={{
         paper: styles.sideMenuPaper,
       }}
+      {...otherProps}
     >
       <List>
         {menuContents.map(({ key, label }) => (

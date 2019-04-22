@@ -7,48 +7,30 @@ import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 
+const TestReadOnlyTextField = props => {
+  const { children, ...otherProps } = props;
+  return (
+    <TestWrapper>
+      <ReadOnlyTextField {...otherProps}>{children}</ReadOnlyTextField>
+    </TestWrapper>
+  );
+};
+
 test("render readonly text field", async () => {
   const testText = "readOnly text";
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <ReadOnlyTextField>{testText}</ReadOnlyTextField>
-    </TestWrapper>,
-  );
-  expect(getByTestId("readonly-text-field")).toHaveTextContent(testText);
+  const { container, getByTestId, rerender } = render(<TestReadOnlyTextField>{testText}</TestReadOnlyTextField>);
   expect(container).toMatchSnapshot();
-});
+  expect(getByTestId("readonly-text-field")).toHaveTextContent(testText);
 
-test("render readonly text field with empty children shown as -", async () => {
-  const testText = "";
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <ReadOnlyTextField>{testText}</ReadOnlyTextField>
-    </TestWrapper>,
-  );
+  // Default empty children.
+  rerender(<TestReadOnlyTextField />);
   expect(getByTestId("readonly-text-field")).toHaveTextContent("-");
-  expect(container).toMatchSnapshot();
-});
 
-test("render readonly text field with empty children", async () => {
-  const testText = "";
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <ReadOnlyTextField showEmptyValue>{testText}</ReadOnlyTextField>
-    </TestWrapper>,
-  );
+  // Override empty children.
+  rerender(<TestReadOnlyTextField showEmptyValue />);
   expect(getByTestId("readonly-text-field")).toHaveTextContent("");
-  expect(container).toMatchSnapshot();
-});
 
-test("render readonly text field with an icon", async () => {
-  const testText = "Starred";
-  const testIcon = "star";
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <ReadOnlyTextField icon={testIcon}>{testText}</ReadOnlyTextField>
-    </TestWrapper>,
-  );
-  expect(getByTestId("readonly-text-field")).toHaveTextContent(testText);
-  expect(getByTestId("icon")).toHaveTextContent(testIcon);
-  expect(container).toMatchSnapshot();
+  // With icon.
+  rerender(<TestReadOnlyTextField icon="star">Starred</TestReadOnlyTextField>);
+  expect(getByTestId("icon")).toHaveTextContent("star");
 });

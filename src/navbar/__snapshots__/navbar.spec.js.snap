@@ -159,7 +159,7 @@ exports[`navbar with breast cancer logo 1`] = `
 </div>
 `;
 
-exports[`render Sidebar 1`] = `
+exports[`render default Sidebar 1`] = `
 <div>
   <header
     class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary appBar lims-navbar"
@@ -293,7 +293,7 @@ exports[`render Sidebar 1`] = `
 </div>
 `;
 
-exports[`render Sidebar 2`] = `
+exports[`render default Sidebar 2`] = `
 <div
   aria-hidden="true"
 >

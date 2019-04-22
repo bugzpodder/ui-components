@@ -10,5 +10,12 @@ type Props = {
 
 export const GridHeader = (props: Props) => {
   const { children, classes = {} } = props;
-  return <div className={classNames(styles.header, classes.header)}>{children}</div>;
+  return (
+    <div
+      data-testid="selection-grid-header"
+      className={classNames(styles.header, classes.header)}
+    >
+      {children}
+    </div>
+  );
 };

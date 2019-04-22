@@ -7,6 +7,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import React, { Fragment, useEffect, useState } from "react";
+import { getListItemDataTestId } from "../util";
 
 type Props = {
   /** Defines the text of the main item. */
@@ -42,13 +43,13 @@ export const CollapsableListItem = (props: Props) => {
   };
 
   const handleToggleList = props.toggleList || toggleList;
-  const formattedHeaderText = typeof headerText === "string" ? headerText.toLowerCase().replace(" ", "-") : "";
+  const dataTestId = getListItemDataTestId(headerText);
   return (
     <Fragment>
       <ListItem
         button
         disableRipple
-        data-testid={`list-item${formattedHeaderText ? `-${formattedHeaderText}` : ""}`}
+        data-testid={dataTestId}
         onClick={event => {
           handleToggleList();
           event.stopPropagation();
@@ -57,7 +58,7 @@ export const CollapsableListItem = (props: Props) => {
       >
         {headerIcon && <ListItemIcon>{headerIcon}</ListItemIcon>}
         <ListItemText
-          data-testid={formattedHeaderText}
+          data-testid={`${dataTestId}-text`}
           primary={headerText}
           {...headerTextProps}
         />

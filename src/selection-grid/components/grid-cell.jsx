@@ -30,6 +30,7 @@ export const GridCell = (props: Props) => {
       onClick={isSelectable ? onSelect.bind(this, gridCellInfo) : null}
     >
       <div
+        data-testid={`selection-grid-cell-${gridCellInfo.cellIndex}`}
         className={classNames(styles.cellContent, classes.cellContent, {
           [styles.isSelected]: isSelectable && isSelected,
         })}

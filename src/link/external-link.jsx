@@ -6,6 +6,8 @@ type Props = {
   children?: Node,
   /** The link */
   href: string,
+  /** data-testid for the component */
+  "data-testid"?: string,
 };
 
 /**
@@ -13,10 +15,10 @@ type Props = {
  * https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
  */
 export const ExternalLink = (props: Props) => {
-  const { children, ...aTagProps } = props;
+  const { children, "data-testid": dataTestId = "external-link", ...aTagProps } = props;
   return (
     <a
-      data-testid="external-link"
+      data-testid={dataTestId}
       {...aTagProps}
       target="_blank"
       rel="noopener noreferrer"

@@ -17,33 +17,3 @@ exports[`render validated readonly text field 1`] = `
   </span>
 </div>
 `;
-
-exports[`render validated readonly text field with \`isNA\` 1`] = `
-<div>
-  <span
-    class="test-classname readonlyTextField"
-    data-testid="readonly-text-field"
-  >
-    
-    readOnly text
-  </span>
-</div>
-`;
-
-exports[`render validated readonly text field with false \`isValid\` 1`] = `
-<div>
-  <span
-    class="fail readonlyTextField"
-    data-testid="readonly-text-field"
-  >
-    <span
-      aria-hidden="true"
-      class="material-icons MuiIcon-root icon"
-      data-testid="icon"
-    >
-      clear
-    </span>
-    readOnly text
-  </span>
-</div>
-`;

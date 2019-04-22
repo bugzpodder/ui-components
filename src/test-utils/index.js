@@ -8,6 +8,7 @@ export {
   LARGE_EXAMPLE_TABLE_DATA,
   EXAMPLE_TABLE_DATA,
   GRAIL,
+  TEST_EXTERNAL_DOMAINS,
 } from "./constants";
 export { ExampleBlock } from "./example-block";
 export { TestWrapper } from "./test-wrapper";

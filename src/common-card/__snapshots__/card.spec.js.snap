@@ -24,6 +24,24 @@ exports[`common card classes and margin 1`] = `
           data-testid="card-subheader"
         />
       </div>
+      <div
+        class="MuiCardHeader-action headerActions"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Test Header Action Button
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
     </div>
     <div
       class="MuiCardContent-root test-body"

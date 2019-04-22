@@ -4,49 +4,59 @@ exports[`render selection grid and select a cell 1`] = `
 <div>
   <div
     class="grid"
+    data-testid="selection-grid"
   >
     <div
       class="row"
     >
       <div
         class="header"
+        data-testid="selection-grid-header"
       />
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         1
       </div>
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         2
       </div>
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         3
       </div>
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         4
       </div>
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         5
       </div>
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         6
       </div>
     </div>
     <div
       class="row"
+      data-testid="selection-grid-row-0"
     >
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         A
       </div>
@@ -56,6 +66,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-0"
         >
           <div>
             <div>
@@ -85,6 +96,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-1"
         >
           <div>
             <div>
@@ -114,6 +126,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-2"
         >
           <div>
             <div>
@@ -143,6 +156,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-3"
         >
           <div>
             <div>
@@ -172,6 +186,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-4"
         >
           <div>
             <div>
@@ -201,6 +216,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-5"
         >
           <div>
             <div>
@@ -227,9 +243,11 @@ exports[`render selection grid and select a cell 1`] = `
     </div>
     <div
       class="row"
+      data-testid="selection-grid-row-1"
     >
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         B
       </div>
@@ -239,6 +257,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-6"
         >
           <div>
             <div>
@@ -268,6 +287,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-7"
         >
           <div>
             <div>
@@ -297,6 +317,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-8"
         >
           <div>
             <div>
@@ -326,6 +347,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-9"
         >
           <div>
             <div>
@@ -355,6 +377,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-10"
         >
           <div>
             <div>
@@ -384,6 +407,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-11"
         >
           <div>
             <div>
@@ -410,9 +434,11 @@ exports[`render selection grid and select a cell 1`] = `
     </div>
     <div
       class="row"
+      data-testid="selection-grid-row-2"
     >
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         C
       </div>
@@ -422,6 +448,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-12"
         >
           <div>
             <div>
@@ -451,6 +478,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-13"
         >
           <div>
             <div>
@@ -480,6 +508,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-14"
         >
           <div>
             <div>
@@ -509,6 +538,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-15"
         >
           <div>
             <div>
@@ -538,6 +568,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-16"
         >
           <div>
             <div>
@@ -567,6 +598,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-17"
         >
           <div>
             <div>
@@ -593,9 +625,11 @@ exports[`render selection grid and select a cell 1`] = `
     </div>
     <div
       class="row"
+      data-testid="selection-grid-row-3"
     >
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         D
       </div>
@@ -605,6 +639,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-18"
         >
           <div>
             <div>
@@ -634,6 +669,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-19"
         >
           <div>
             <div>
@@ -663,6 +699,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-20"
         >
           <div>
             <div>
@@ -692,6 +729,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-21"
         >
           <div>
             <div>
@@ -721,6 +759,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-22"
         >
           <div>
             <div>
@@ -750,6 +789,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-23"
         >
           <div>
             <div>
@@ -776,9 +816,11 @@ exports[`render selection grid and select a cell 1`] = `
     </div>
     <div
       class="row"
+      data-testid="selection-grid-row-4"
     >
       <div
         class="header"
+        data-testid="selection-grid-header"
       >
         E
       </div>
@@ -788,6 +830,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-24"
         >
           <div>
             <div>
@@ -817,6 +860,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-25"
         >
           <div>
             <div>
@@ -846,6 +890,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-26"
         />
       </div>
       <div
@@ -854,6 +899,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-27"
         />
       </div>
       <div
@@ -862,6 +908,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-28"
         />
       </div>
       <div
@@ -870,6 +917,7 @@ exports[`render selection grid and select a cell 1`] = `
       >
         <div
           class="cellContent"
+          data-testid="selection-grid-cell-29"
         />
       </div>
     </div>

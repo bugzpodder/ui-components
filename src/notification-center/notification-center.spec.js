@@ -46,7 +46,7 @@ const TestNotificationCenter = props => {
 test("render notification center", () => {
   const mockRemoveNotification = jest.fn(result => result);
   const mockRemoveAllNotifications = jest.fn(result => result);
-  const { container, getByTestId } = render(
+  const { container, getByTestId, queryByTestId } = render(
     <TestNotificationCenter
       mockRemoveNotification={mockRemoveNotification}
       mockRemoveAllNotifications={mockRemoveAllNotifications}
@@ -55,7 +55,7 @@ test("render notification center", () => {
 
   // Notification center should be closed.
   expect(container).toMatchSnapshot();
-  expect(() => getByTestId(`notification-${testUtcTime}`)).toThrowError();
+  expect(queryByTestId(`notification-${testUtcTime}`)).not.toBeInTheDocument();
 
   // Open notification center.
   fireEvent.click(getByTestId("notifications-button"));

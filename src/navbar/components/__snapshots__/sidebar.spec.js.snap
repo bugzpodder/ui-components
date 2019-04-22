@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render Sidebar 1`] = `
+exports[`render temporary Sidebar 1`] = `
 <div
   aria-hidden="true"
 />

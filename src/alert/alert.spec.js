@@ -7,12 +7,20 @@ import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-test("default alert pane is error", () => {
-  const { container, getByTestId } = render(
+const TestAlert = props => {
+  const { classes } = props;
+  return (
     <TestWrapper>
-      <Alert message="Default" />
-    </TestWrapper>,
+      <Alert
+        classes={classes}
+        message="Default"
+      />
+    </TestWrapper>
   );
+};
+
+test("default alert pane is error", () => {
+  const { container, getByTestId } = render(<TestAlert />);
   expect(getByTestId("error-alert-icon")).toBeInTheDocument();
   expect(getByTestId("error-alert-message")).toHaveTextContent("Default");
   expect(container).toMatchSnapshot();
@@ -20,14 +28,12 @@ test("default alert pane is error", () => {
 
 test("alert classes", () => {
   const { getByTestId } = render(
-    <TestWrapper>
-      <Alert
-        classes={{
-          root: "test-root",
-          content: "test-content",
-        }}
-      />
-    </TestWrapper>,
+    <TestAlert
+      classes={{
+        root: "test-root",
+        content: "test-content",
+      }}
+    />,
   );
   expect(getByTestId("alert")).toBeInTheDocument();
   expect(getByTestId("alert")).toHaveClass("test-root");

@@ -1,142 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`display loading tabbed page 1`] = `
-<div>
-  <div
-    class="pageContainer"
-    data-testid="common-page"
-  >
-    <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
-    >
-      <div
-        class="MuiCardHeader-root cardHeader"
-        data-testid="common-page-card-header"
-      >
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
-          />
-          <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-          />
-        </div>
-        <div
-          class="MuiCardHeader-action headerActions"
-        />
-      </div>
-      <div
-        class="MuiTabs-root"
-        data-testid="card-tabs"
-      >
-        <div
-          class="MuiTabs-flexContainer"
-        >
-          <div
-            class="MuiTabs-scroller MuiTabs-fixed"
-            role="tablist"
-            style="margin-bottom: 0px;"
-          >
-            <div
-              class="MuiTabs-flexContainer"
-            >
-              <button
-                aria-selected="true"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-selected"
-                data-testid="tab"
-                id="tab"
-                role="tab"
-                tabindex="0"
-                type="button"
-              >
-                <span
-                  class="MuiTab-wrapper"
-                >
-                  <span
-                    class="MuiTab-labelContainer"
-                  >
-                    <span
-                      class="MuiTab-label"
-                    >
-                      Tab
-                    </span>
-                  </span>
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </div>
-            <span
-              class="MuiPrivateTabIndicator-root MuiPrivateTabIndicator-colorPrimary MuiTabs-indicator"
-              style="left: 0px; width: 0px;"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="contentAndMenu"
-    >
-      <div
-        class="content"
-      >
-        <div
-          class="contentContainer"
-        >
-          <div
-            class="alertContainer"
-            data-testid="alert"
-          >
-            <div
-              class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error"
-              data-testid="content"
-              role="alertdialog"
-            >
-              <div
-                class="MuiSnackbarContent-message"
-              >
-                <span
-                  data-testid="error-alert-message"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root alertIcon"
-                    data-testid="error-alert-icon"
-                    focusable="false"
-                    role="presentation"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
-                    />
-                  </svg>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="spinnerOverlay active"
-          data-is-active="true"
-          data-testid="spinner-overlay"
-        >
-          <div
-            class="loading"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`render common tabbed page 1`] = `
 <div>
   <div
@@ -145,21 +8,23 @@ exports[`render common tabbed page 1`] = `
   >
     <div
       class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
+      data-testid="common-page-header"
     >
       <div
         class="MuiCardHeader-root cardHeader"
-        data-testid="common-page-card-header"
       >
         <div
           class="MuiCardHeader-content"
         >
           <span
             class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
+            data-testid="common-page-title"
           >
             Test Card
           </span>
           <span
             class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+            data-testid="common-page-subtitle"
           />
         </div>
         <div
@@ -289,8 +154,8 @@ exports[`render common tabbed page 1`] = `
               <button
                 aria-selected="false"
                 class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary"
-                data-testid="tab"
-                id="tab"
+                data-testid="tab-three"
+                id="tab-three"
                 role="tab"
                 tabindex="0"
                 type="button"
@@ -304,7 +169,7 @@ exports[`render common tabbed page 1`] = `
                     <span
                       class="MuiTab-label"
                     >
-                      Tab
+                      Tab Three
                     </span>
                   </span>
                 </span>
@@ -323,9 +188,11 @@ exports[`render common tabbed page 1`] = `
     </div>
     <div
       class="contentAndMenu"
+      data-testid="common-page-content-and-menu"
     >
       <div
         class="content"
+        data-testid="common-page-content"
       >
         <div
           class="contentContainer"
@@ -335,20 +202,20 @@ exports[`render common tabbed page 1`] = `
             data-testid="alert"
           >
             <div
-              class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
-              data-testid="content"
+              class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error"
+              data-testid="alert-one"
               role="alertdialog"
             >
               <div
                 class="MuiSnackbarContent-message"
               >
                 <span
-                  data-testid="success-alert-message"
+                  data-testid="error-alert-message"
                 >
                   <svg
                     aria-hidden="true"
                     class="MuiSvgIcon-root alertIcon"
-                    data-testid="success-alert-icon"
+                    data-testid="error-alert-icon"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -358,7 +225,7 @@ exports[`render common tabbed page 1`] = `
                       fill="none"
                     />
                     <path
-                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
                     />
                   </svg>
                   Tab One!
@@ -372,77 +239,6 @@ exports[`render common tabbed page 1`] = `
         >
           Test
         </div>
-        <div
-          class="spinnerOverlay"
-          data-is-active="false"
-          data-testid="spinner-overlay"
-        >
-          <div
-            class="loading"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render empty common tabbed page 1`] = `
-<div>
-  <div
-    class="pageContainer"
-    data-testid="common-page"
-  >
-    <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
-    >
-      <div
-        class="MuiCardHeader-root cardHeader"
-        data-testid="common-page-card-header"
-      >
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
-          />
-          <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-          />
-        </div>
-        <div
-          class="MuiCardHeader-action headerActions"
-        />
-      </div>
-      <div
-        class="MuiTabs-root"
-        data-testid="card-tabs"
-      >
-        <div
-          class="MuiTabs-flexContainer"
-        >
-          <div
-            class="MuiTabs-scroller MuiTabs-fixed"
-            role="tablist"
-            style="margin-bottom: 0px;"
-          >
-            <div
-              class="MuiTabs-flexContainer"
-            />
-            <span
-              class="MuiPrivateTabIndicator-root MuiPrivateTabIndicator-colorPrimary MuiTabs-indicator"
-              style="left: 0px; width: 0px;"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="contentAndMenu"
-    >
-      <div
-        class="content"
-      >
         <div
           class="spinnerOverlay"
           data-is-active="false"

@@ -7,35 +7,37 @@ import { cleanup, render } from "react-testing-library";
 
 afterEach(cleanup);
 
-test("render CommonPanel", async () => {
-  const testTitle = "panel title";
-  const testBody = "panel body";
-  const { getByTestId } = render(
+const TestCommonPanel = props => {
+  const { color, classes } = props;
+  return (
     <TestWrapper>
-      <CommonPanel title={testTitle}>{testBody}</CommonPanel>
-    </TestWrapper>,
+      <CommonPanel
+        title="panel title"
+        color={color}
+        classes={classes}
+      >
+        panel body
+      </CommonPanel>
+    </TestWrapper>
   );
-  expect(getByTestId("panel-title")).toHaveTextContent(testTitle);
-  expect(getByTestId("panel-body")).toHaveTextContent(testBody);
+};
+
+test("render CommonPanel", async () => {
+  const { getByTestId } = render(<TestCommonPanel />);
+  expect(getByTestId("panel-title")).toHaveTextContent("panel title");
+  expect(getByTestId("panel-body")).toHaveTextContent("panel body");
 });
 
 test("CommonPanel classes", async () => {
-  const testTitle = "panel title";
-  const testBody = "panel body";
   const { container, getByTestId } = render(
-    <TestWrapper>
-      <CommonPanel
-        title={testTitle}
-        color="primary"
-        classes={{
-          root: "test-root",
-          title: "test-title",
-          body: "test-body",
-        }}
-      >
-        {testBody}
-      </CommonPanel>
-    </TestWrapper>,
+    <TestCommonPanel
+      color="primary"
+      classes={{
+        root: "test-root",
+        title: "test-title",
+        body: "test-body",
+      }}
+    />,
   );
   expect(getByTestId("panel")).toHaveClass("test-root");
   expect(getByTestId("panel-title")).toHaveClass("test-title");

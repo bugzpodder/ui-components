@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render common page 1`] = `
+exports[`renders common page 1`] = `
 <div>
   <div
     class="pageContainer"
@@ -8,380 +8,24 @@ exports[`render common page 1`] = `
   >
     <div
       class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
+      data-testid="common-page-header"
       value="one"
     >
       <div
         class="MuiCardHeader-root cardHeader"
-        data-testid="common-page-card-header"
       >
         <div
           class="MuiCardHeader-content"
         >
           <span
             class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
+            data-testid="common-page-title"
           >
             Test Card
           </span>
           <span
             class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-          />
-        </div>
-        <div
-          class="MuiCardHeader-action headerActions"
-        >
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              Test Action
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-          <div
-            class="commonSwitch"
-          >
-            <label
-              class="MuiFormControlLabel-root controlLabel"
-            >
-              <span
-                class="MuiSwitch-root"
-              >
-                <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
-                >
-                  <span
-                    class="MuiIconButton-label"
-                  >
-                    <span
-                      class="MuiSwitch-icon"
-                    />
-                    <input
-                      class="MuiPrivateSwitchBase-input"
-                      id=""
-                      type="checkbox"
-                      value=""
-                    />
-                  </span>
-                </span>
-                <span
-                  class="MuiSwitch-bar"
-                />
-              </span>
-              <span
-                class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
-              >
-                CUSTOM ACTION
-              </span>
-            </label>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="contentAndMenu"
-    >
-      <div
-        class="content"
-      >
-        <h3>
-          Page Content
-        </h3>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render common page with menu 1`] = `
-<div>
-  <div
-    class="pageContainer"
-    data-testid="common-page"
-  >
-    <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
-    >
-      <div
-        class="MuiCardHeader-root cardHeader"
-        data-testid="common-page-card-header"
-      >
-        <div
-          class="MuiCardHeader-avatar"
-        >
-          <button
-            class="MuiButtonBase-root MuiIconButton-root toggle-side-menu expanded"
-            data-testid="toggle-side-menu"
-            tabindex="0"
-            title="Collapse Menu"
-            type="button"
-          >
-            <span
-              class="MuiIconButton-label"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
-                />
-              </svg>
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </div>
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
-          >
-            This is a title
-          </span>
-          <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-          >
-            This is a subtitle
-          </span>
-        </div>
-        <div
-          class="MuiCardHeader-action headerActions"
-        >
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              Test Action
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-          <div
-            class="commonSwitch"
-          >
-            <label
-              class="MuiFormControlLabel-root controlLabel"
-            >
-              <span
-                class="MuiSwitch-root"
-              >
-                <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
-                >
-                  <span
-                    class="MuiIconButton-label"
-                  >
-                    <span
-                      class="MuiSwitch-icon"
-                    />
-                    <input
-                      class="MuiPrivateSwitchBase-input"
-                      id=""
-                      type="checkbox"
-                      value=""
-                    />
-                  </span>
-                </span>
-                <span
-                  class="MuiSwitch-bar"
-                />
-              </span>
-              <span
-                class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
-              >
-                CUSTOM ACTION
-              </span>
-            </label>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="contentAndMenu"
-    >
-      <div
-        class="MuiDrawer-root MuiDrawer-docked sideMenu contentShift"
-      >
-        <div
-          class="MuiPaper-root MuiPaper-elevation0 MuiDrawer-paper sideMenuPaper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft"
-          style="webkit-transform: translate(0, 0); transform: translate(0, 0); webkit-transition: -webkit-transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms; transition: transform 225ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;"
-        >
-          <ul
-            class="MuiList-root MuiList-padding"
-          >
-            <a
-              class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-              data-testid="side-menu-item-one"
-              href="#one"
-              id="side-menu-item-one"
-              role="button"
-              tabindex="0"
-            >
-              <div
-                class="MuiListItemText-root"
-              >
-                <span
-                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
-                >
-                  Menu item one
-                </span>
-              </div>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </a>
-            <a
-              class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button"
-              data-testid="side-menu-item-two"
-              href="#two"
-              id="side-menu-item-two"
-              role="button"
-              tabindex="0"
-            >
-              <div
-                class="MuiListItemText-root"
-              >
-                <span
-                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary"
-                >
-                  Menu item two
-                </span>
-              </div>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </a>
-          </ul>
-        </div>
-      </div>
-      <div
-        class="content"
-      >
-        <div
-          class="alertContainer"
-          data-testid="alert"
-        >
-          <div
-            class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
-            data-testid="content"
-            id="one"
-            role="alertdialog"
-          >
-            <div
-              class="MuiSnackbarContent-message"
-            >
-              <span
-                data-testid="success-alert-message"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root alertIcon"
-                  data-testid="success-alert-icon"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  />
-                </svg>
-                Alert one
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="alertContainer"
-          data-testid="alert"
-        >
-          <div
-            class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
-            data-testid="content"
-            id="two"
-            role="alertdialog"
-          >
-            <div
-              class="MuiSnackbarContent-message"
-            >
-              <span
-                data-testid="success-alert-message"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root alertIcon"
-                  data-testid="success-alert-icon"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                  />
-                </svg>
-                Alert two
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render common page with subheader and content 1`] = `
-<div>
-  <div
-    class="pageContainer"
-    data-testid="common-page"
-  >
-    <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
-    >
-      <div
-        class="MuiCardHeader-root cardHeader"
-        data-testid="common-page-card-header"
-      >
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
-          >
-            This is a title
-          </span>
-          <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+            data-testid="common-page-subtitle"
           >
             This is a subtitle
           </span>
@@ -482,51 +126,14 @@ exports[`render common page with subheader and content 1`] = `
     </div>
     <div
       class="contentAndMenu"
+      data-testid="common-page-content-and-menu"
     >
       <div
         class="content"
+        data-testid="common-page-content"
       >
         Some content here.
       </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`render empty common page 1`] = `
-<div>
-  <div
-    class="pageContainer"
-    data-testid="common-page"
-  >
-    <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
-    >
-      <div
-        class="MuiCardHeader-root cardHeader"
-        data-testid="common-page-card-header"
-      >
-        <div
-          class="MuiCardHeader-content"
-        >
-          <span
-            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
-          />
-          <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
-          />
-        </div>
-        <div
-          class="MuiCardHeader-action headerActions"
-        />
-      </div>
-    </div>
-    <div
-      class="contentAndMenu"
-    >
-      <div
-        class="content"
-      />
     </div>
   </div>
 </div>

@@ -11,7 +11,7 @@ afterEach(cleanup);
 /** ******* Sync ******* */
 
 const TestCommonSelect = props => {
-  const { mockOnChange } = props;
+  const { mockOnChange, "data-testid": dataTestId, classes } = props;
   const [value, setValue] = useState({});
   const setChange = value => {
     mockOnChange(value);
@@ -21,6 +21,8 @@ const TestCommonSelect = props => {
     <TestWrapper>
       <CommonSelect
         menuIsOpen
+        data-testid={dataTestId}
+        classes={classes}
         options={COUNTRIES}
         id="test"
         helperText="some helper text"
@@ -63,6 +65,22 @@ test("render and test CommonSelect", () => {
   });
   expect(mockOnChange).toHaveBeenCalledTimes(2);
   expect(mockOnChange.mock.results[1].value).toEqual({});
+});
+
+test("CommonSelect classes", () => {
+  const { getByTestId } = render(
+    <TestCommonSelect
+      data-testid="test-input"
+      classes={{
+        root: "test-root",
+        input: "test-input",
+        options: "test-options",
+      }}
+    />,
+  );
+  expect(getByTestId("common-select")).toHaveClass("test-root");
+  expect(getByTestId("test-input")).toHaveClass("test-input");
+  expect(getByTestId("ALGERIA")).toHaveClass("test-options");
 });
 
 test("test disabled CommonSelect", () => {
@@ -156,14 +174,16 @@ const TestReadOnlyCommonSelect = props => {
 test("render read-only CommonSelect with value", () => {
   const mockOnChange = jest.fn();
   const value = { label: "Algeria", value: "ALGERIA" };
-  const { container, getByTestId, rerender } = render(
+  const {
+    container, getByTestId, queryByTestId, rerender,
+  } = render(
     <TestReadOnlyCommonSelect
       value={value}
       mockOnChange={mockOnChange}
     />,
   );
   expect(container).toMatchSnapshot();
-  // TODO(nsawas): expect(getByTestId("common-select")) to not exist.
+  expect(queryByTestId("common-select")).not.toBeInTheDocument();
   expect(getByTestId("readonly-text-field")).toBeInTheDocument();
   expect(getByTestId("readonly-text-field")).toHaveTextContent("Algeria");
   rerender(<TestReadOnlyCommonSelect

@@ -2,17 +2,20 @@
 
 1. Bug fixes and improved unit tests.
 2. Update react peer dependency to 16.8 for hooks usage.
-3. Fix sidebar to grow and shrink using flex-grow/shrink.
-4. Add `isFullBleed` to `PagedTable` to allow for non-card based paged table that expands to 100% of the height of the parent element.
-5. Add `hasTableMargin` to `PagedTable` to enable/disable table margin.
-6. Add `DateValue`, `DateTimeValue`, and `HumanizedDateTime`.
-7. Standardize CommonPage-based components subtitle size.
-8. `CommonPage` now takes `children`, allowing shared components to be held or displayed across pages.
-9. `CommonTabbedPage` tabs now take a `tabClasses` prop to specify classes for each individual tab.
-10. `CommonTabbedPage` now has `SpinnerOverlay` built-in. If `isLoading` is provided and true, the overlay will be displayed over
+3. Update to Material-UI 3.9.3
+4. Fix sidebar to grow and shrink using flex-grow/shrink.
+5. Add `isFullBleed` to `PagedTable` to allow for non-card based paged table that expands to 100% of the height of the parent element.
+6. Add `hasTableMargin` to `PagedTable` to enable/disable table margin.
+7. Add `DateValue`, `DateTimeValue`, and `HumanizedDateTime`.
+8. Standardize CommonPage-based components subtitle size.
+9. `CommonPage` now takes `children`, allowing shared components to be held or displayed across pages.
+10. `CommonTabbedPage` tabs now take a `tabClasses` prop to specify classes for each individual tab.
+11. `CommonTabbedPage` now has `SpinnerOverlay` built-in. If `isLoading` is provided and true, the overlay will be displayed over
     the page content.
-11. `CommonTypeahead` removed fromd dev components.
-12. Add `SelectionGrid`.
+12. `CommonTypeahead` removed from dev components.
+13. Add `SelectionGrid`.
+14. `CollapsableList` is now identified as a specific component of NavBar.
+15. `NavBar` sidebar does not support placeholders anymore.
 
 ## 0.10.0 - 2019-04-01
 

@@ -1,55 +1,82 @@
 // @flow
 import "jest-dom/extend-expect";
 import React from "react";
-import { EDC, LIMS, PIPELINE } from "@grail/lib";
+import { LIMS, sidebarItems } from "@grail/lib";
 import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
-import { TestWrapper } from "../../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../../test-utils";
+import { cleanup, fireEvent, render } from "react-testing-library";
+import { getListItemDataTestId } from "../util";
 
 afterEach(cleanup);
 
-test("render Sidebar", () => {
-  const toggle = jest.fn();
-  const { container } = render(
+const TestSidebar = props => {
+  const { mockToggle, drawerVariant } = props;
+  return (
     <TestWrapper>
       <MemoryRouter>
         <Sidebar
           isOpen
-          toggle={toggle}
+          toggle={mockToggle}
           domain={LIMS}
           currentPath="/automation/program-runs"
           InternalLinkComponent={Link}
-          drawerVariant="temporary"
-          externalDomains={new Map()
-            .set(EDC, "https://edc-client-staging.eng.aws.grail.com")
-            .set(PIPELINE, "https://proxy.ti-apps.aws.grail.com/pipeline-analyse-ui")}
+          drawerVariant={drawerVariant}
+          externalDomains={TEST_EXTERNAL_DOMAINS}
           footer={<span>Footer</span>}
         />
       </MemoryRouter>
-    </TestWrapper>,
+    </TestWrapper>
   );
+};
+
+test("render temporary Sidebar", () => {
+  const mockToggle = jest.fn(result => result);
+  const { container, getByTestId } = render(<TestSidebar
+    drawerVariant="temporary"
+    mockToggle={mockToggle}
+  />);
   expect(container).toMatchSnapshot();
+  const sampleManagementDropdown = getByTestId("navbar-sidebar");
+  expect(sampleManagementDropdown).toBeInTheDocument();
+  expect(getByTestId("navbar-sidebar-footer")).toBeInTheDocument();
+  expect(getByTestId("navbar-sidebar-footer")).toHaveTextContent("Footer");
 
-  // const sampleManagementDropdown = getByTestId("list");
-  // expect(sampleManagementDropdown).toBeInTheDocument();
-  // expect(getByTestId("automation")).toBeInTheDocument();
-  // expect(getByText("Footer")).toBeInTheDocument();
-  // expect(getByText("Footer")).toBeInTheDocument();
+  // Verify default sidebarItems are displayed in the sidebar.
+  sidebarItems.forEach(item => {
+    const parent = getListItemDataTestId(item.name);
+    expect(getByTestId(parent)).toBeInTheDocument();
 
-  // expect(getByText("Footer")).toBeInTheDocument();
-  // const programRuns = getByText("Program Runs");
-  // // expect(getByText("Batches")).not.toBeInTheDocument();
-  // expect(programRuns).toBeInTheDocument();
-  // fireEvent.click(sampleManagementDropdown);
-  // const batches = getByText("Batches");
-  // expect(batches).toBeInTheDocument();
-  // fireEvent.click(sampleManagementDropdown);
-  // // expect(getByText("Batches")).not.toBeInTheDocument();
-  // expect(toggle.mock.calls.length).toBe(0);
-  // const instruments = getByText("Instruments");
-  // expect(instruments).toBeInTheDocument();
-  // fireEvent.click(instruments);
-  // expect(toggle.mock.calls.length).toBe(1);
-  // fireEvent.click(getByTestId("collapse-all-sidebar-items"));
+    // If list is collapsable, test children.
+    if (item.children && item.children.length) {
+      fireEvent.click(getByTestId(parent));
+      item.children.forEach(child => {
+        const testId = getListItemDataTestId(child.name);
+        expect(getByTestId(testId)).toBeInTheDocument();
+        expect(getByTestId(`${testId}-text`)).toBeInTheDocument();
+        expect(getByTestId(`${testId}-text`)).toHaveTextContent(child.name);
+        const domain = TEST_EXTERNAL_DOMAINS.get(child.domain) || "";
+        expect(getByTestId(testId)).toHaveAttribute("href", `${domain}${child.path}`);
+      });
+      // Else just test the item
+    } else {
+      expect(getByTestId(`${parent}-text`)).toHaveTextContent(item.name);
+      const domain = TEST_EXTERNAL_DOMAINS.get(item.domain) || "";
+      expect(getByTestId(parent)).toHaveAttribute("href", `${domain}${item.path}`);
+    }
+  });
+
+  // Test toggle callback.
+  expect(mockToggle).toHaveBeenCalledTimes(0);
+  fireEvent.click(getByTestId("navbar-sidebar-close"));
+  expect(mockToggle).toHaveBeenCalledTimes(1);
+});
+
+test("persistent Sidebar", () => {
+  const mockToggle = jest.fn(result => result);
+  const { queryByTestId } = render(<TestSidebar
+    drawerVariant="persistent"
+    mockToggle={mockToggle}
+  />);
+  expect(queryByTestId("navbar-sidebar-close")).not.toBeInTheDocument();
 });

@@ -20,7 +20,7 @@ type Props = {
   /** Defines links to use for external domains. */
   externalDomains: Map<string, string>,
   /** Overrieds lib/constants with items to populate the sidebar. */
-  sidebarContent?: (SidebarItemLink | SidebarItemParent | SidebarItemPlaceholder)[],
+  sidebarContent?: (SidebarItemLink | SidebarItemParent)[],
   /** Defines the footer of the sidebar. */
   sidebarFooter?: React$Node,
   /** Defines the component to handle routing to internal links. */

@@ -1,6 +1,6 @@
 // @flow
 import "jest-dom/extend-expect";
-import React from "react";
+import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
 import { Alert, CommonSwitch } from "../index";
 import { CommonTabbedPage } from "./common-tabbed-page";
@@ -16,7 +16,7 @@ const pageConfigs: Array<PageConfig> = [
     id: "tab-one",
     Component: Alert,
     componentProps: {
-      color: "success",
+      "data-testid": "alert-one",
       message: "Tab One!",
     },
   },
@@ -26,14 +26,15 @@ const pageConfigs: Array<PageConfig> = [
     id: "tab-two",
     Component: Alert,
     componentProps: {
-      color: "warning",
+      "data-testid": "alert-two",
       message: "Tab Two!",
     },
   },
   {
-    label: "Tab",
-    key: "tab",
-    id: "tab",
+    label: "Tab Three",
+    key: "three",
+    id: "tab-three",
+    Component: Alert,
   },
 ];
 
@@ -50,69 +51,61 @@ const headerActions = [
   },
 ];
 
-test("render common tabbed page", () => {
-  const mockOnChange = jest.fn(result => result);
-  const { container, getByTestId } = render(
+const TestCommonTabbedPage = props => {
+  const { mockOnChange, ...otherProps } = props;
+
+  const [activeTab, setActiveTab] = useState("one");
+  const setChange = value => {
+    mockOnChange(value);
+    setActiveTab(value);
+  };
+
+  return (
     <TestWrapper>
       <CommonTabbedPage
         title="Test Card"
-        activeTab="one"
+        activeTab={activeTab}
         pageConfigs={pageConfigs}
         headerActions={headerActions}
-        onChangeActiveTab={mockOnChange}
+        {...otherProps}
+        onChangeActiveTab={setChange}
       >
         <div data-testid="test">Test</div>
       </CommonTabbedPage>
-    </TestWrapper>,
+    </TestWrapper>
   );
-  expect(getByTestId("alert")).toHaveTextContent("Tab One!");
-  expect(getByTestId("tab-one")).toHaveAttribute("aria-selected", "true");
-  expect(getByTestId("alert")).not.toHaveTextContent("Tab Two!");
-  expect(getByTestId("tab-two")).toHaveAttribute("aria-selected", "false");
-  fireEvent.click(getByTestId("tab-two"));
-  expect(mockOnChange.mock.results[0].value).toEqual("two");
+};
+
+test("render common tabbed page", () => {
+  const mockOnChange = jest.fn(result => result);
+  const { container, queryByTestId, getByTestId } = render(<TestCommonTabbedPage mockOnChange={mockOnChange} />);
   expect(container).toMatchSnapshot();
+  expect(getByTestId("alert-one")).toHaveTextContent("Tab One!");
+  expect(getByTestId("tab-one")).toHaveAttribute("aria-selected", "true");
+  expect(queryByTestId("alert-two")).not.toBeInTheDocument();
+  expect(getByTestId("tab-two")).toHaveAttribute("aria-selected", "false");
   expect(getByTestId("spinner-overlay")).toHaveAttribute("data-is-active", "false");
   expect(getByTestId("test")).toBeInTheDocument();
+
+  // Select a new tab
+  fireEvent.click(getByTestId("tab-two"));
+  expect(mockOnChange).toHaveBeenCalledTimes(1);
+  expect(mockOnChange.mock.results[0].value).toEqual("two");
+  expect(getByTestId("tab-one")).toHaveAttribute("aria-selected", "false");
+  expect(getByTestId("tab-two")).toHaveAttribute("aria-selected", "true");
+  expect(queryByTestId("alert-one")).not.toBeInTheDocument();
+  expect(queryByTestId("alert-two")).toBeInTheDocument();
+  expect(getByTestId("test")).toBeInTheDocument();
+  fireEvent.click(getByTestId("tab-three"));
 });
 
 test("display loading tabbed page", () => {
   mockConsole();
-  const { container, getByTestId } = render(
-    <TestWrapper>
-      <CommonTabbedPage
-        pageConfigs={[
-          {
-            label: "Tab",
-            key: "tab",
-            id: "tab",
-            Component: Alert,
-          },
-        ]}
-        activeTab="tab"
-        onChangeActiveTab={() => {}}
-        isLoading
-      />
-    </TestWrapper>,
-  );
-  expect(container).toMatchSnapshot();
-  expect(getByTestId("alert")).toHaveTextContent("");
+  const { getByTestId } = render(<TestCommonTabbedPage
+    title=""
+    isLoading
+  />);
   expect(getByTestId("spinner-overlay")).toHaveAttribute("data-is-active", "true");
-});
-
-test("render empty common tabbed page", () => {
-  mockConsole();
-  const { container } = render(
-    <TestWrapper>
-      <CommonTabbedPage
-        pageConfigs={[]}
-        activeTab=""
-        onChangeActiveTab={() => {}}
-      />
-    </TestWrapper>,
-  );
-  expect(container).toMatchSnapshot();
-  expect(console.error).toHaveBeenCalled();
 });
 
 test("require pageConfigs is defined", () => {
@@ -120,11 +113,15 @@ test("require pageConfigs is defined", () => {
   expect(() =>
     render(
       <TestWrapper>
-        <CommonTabbedPage
-          activeTab=""
-          onChangeActiveTab={() => {}}
-        />
+        <CommonTabbedPage />
       </TestWrapper>,
     ),
   ).toThrowError();
+});
+
+test("activeTab must match at least one page config", () => {
+  mockConsole();
+  render(<TestCommonTabbedPage activeTab="" />);
+  // TODO(nsawas): expect error message.
+  expect(console.error).toHaveBeenCalled();
 });

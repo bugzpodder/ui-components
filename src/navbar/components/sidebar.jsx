@@ -57,6 +57,7 @@ const getIsOpen = (
 };
 
 const TOGGLE = "TOGGLE";
+const COLLAPSE_ALL = "COLLAPSE_ALL";
 const CLEAR = "CLEAR";
 
 const reducer = (state, action: Object) => {
@@ -78,6 +79,8 @@ const reducer = (state, action: Object) => {
     }
     case CLEAR:
       return { ...state, touchedItems: new Set() };
+    case COLLAPSE_ALL:
+      return { openItems: new Set(), touchedItems: new Set(action.sidebarItems.map((__item, index) => index)) };
     default:
       return state;
   }
@@ -164,6 +167,10 @@ export const Sidebar = (props: Props) => {
     return getLink(item, index);
   };
 
+  const collapseAll = (sidebarItems: Array<SidebarItem>) => {
+    dispatch({ type: COLLAPSE_ALL, sidebarItems });
+  };
+
   const {
     sidebarContent = sidebarItems, footer, isOpen, toggle, drawerVariant, classes = {},
   } = props;
@@ -188,6 +195,12 @@ export const Sidebar = (props: Props) => {
             <ArrowBack />
           </IconButton>
           <Divider />
+          {/** the below collapse-all span is a hidden element used in E2E testing */}
+          <span
+            onClick={() => collapseAll(sidebarContent)}
+            data-testid="collapse-all-sidebar-items"
+            className={styles.collapseAllSidebarItems}
+          />
         </div>
       )}
       <div

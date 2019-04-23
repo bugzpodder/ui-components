@@ -40,6 +40,7 @@ test("render temporary Sidebar", () => {
   const sampleManagementDropdown = getByTestId("navbar-sidebar");
   expect(sampleManagementDropdown).toBeInTheDocument();
   expect(getByTestId("navbar-sidebar-footer")).toBeInTheDocument();
+  expect(getByTestId("collapse-all-sidebar-items")).toBeInTheDocument();
   expect(getByTestId("navbar-sidebar-footer")).toHaveTextContent("Footer");
 
   // Verify default sidebarItems are displayed in the sidebar.

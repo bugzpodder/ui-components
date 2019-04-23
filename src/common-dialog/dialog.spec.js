@@ -9,7 +9,7 @@ afterEach(cleanup);
 
 const TestCommonDialog = props => {
   const {
-    mockHide, classes, title, actions, enableOverflow,
+    mockHide, classes, title, actions,
   } = props;
   return (
     <TestWrapper>
@@ -18,7 +18,6 @@ const TestCommonDialog = props => {
         actions={actions}
         title={title}
         hideModal={mockHide}
-        enableOverflow={enableOverflow}
         classes={classes}
       >
         Test Content
@@ -45,8 +44,8 @@ test("render dialog", () => {
   expect(getByTestId("dialog-title")).toHaveTextContent("test");
   expect(getByTestId("dialog-content")).toHaveTextContent("Test Content");
 
-  // enableOverflow should be true by default.
-  expect(getByTestId("dialog-content")).not.toHaveClass("commonDialogNoOverflow");
+  // Check default classes
+  expect(getByTestId("dialog-content")).toHaveClass("commonDialogNoOverflow");
 
   // Check callbacks.
   fireEvent.click(getByText("action one"));
@@ -63,12 +62,12 @@ test("dialog classes", () => {
     <TestCommonDialog
       title=""
       actions={[]}
-      enableOverflow={false}
       classes={{
         root: "test-root",
         paper: "test-paper",
         title: "test-title",
         content: "test-content",
+        container: "test-container",
         actions: "test-actions",
       }}
     />,
@@ -78,6 +77,7 @@ test("dialog classes", () => {
   expect(getByTestId("dialog-paper")).toHaveClass("test-paper");
   expect(getByTestId("dialog-title")).toHaveClass("test-title");
   expect(getByTestId("dialog-content")).toHaveClass("test-content");
+  expect(getByTestId("dialog").querySelector(".test-container")).toBeInTheDocument();
   expect(getByTestId("dialog-actions")).toHaveClass("test-actions");
   expect(getByTestId("dialog-content")).toHaveClass("commonDialogNoOverflow");
 });

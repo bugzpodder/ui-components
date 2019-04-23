@@ -37,6 +37,10 @@ type Props = {
    *
    *  - `root`: dialog's outermost div
    *
+   *  - `paper`: wrapper around dialog
+   *
+   *  - `container`: wrapper around container content
+   *
    *  - `title`
    *
    *  - `content`: dialog content wrapper
@@ -46,8 +50,8 @@ type Props = {
    *  - `action`: wrapper around each individual dialog action
    */
   classes?: CommonDialogClasses,
-  enableOverflow?: boolean,
 };
+
 export const CommonMultiPageDialog = (props: Props) => {
   const {
     isVisible,
@@ -58,7 +62,6 @@ export const CommonMultiPageDialog = (props: Props) => {
     title,
     classes = {},
     showBackButton = true,
-    enableOverflow = true,
     actions,
     ...dialogProps
   } = props;
@@ -73,8 +76,14 @@ export const CommonMultiPageDialog = (props: Props) => {
   return (
     <Dialog
       open={isVisible}
-      className={classNames(styles.commonDialog, classes.root)}
-      PaperProps={{ className: styles.commonDialogPaper }}
+      classes={{
+        root: classNames(styles.commonDialog, classes.root),
+        container: classNames(styles.commonDialogContainer, classes.container),
+        paper: classNames(styles.commonDialogPaper, classes.paper),
+      }}
+      PaperProps={{
+        "data-testid": "dialog-paper",
+      }}
       onClose={hideModal}
       maxWidth={false}
       scroll="body"
@@ -88,9 +97,7 @@ export const CommonMultiPageDialog = (props: Props) => {
       </DialogTitle>
       <DialogContent
         data-testid="dialog-content"
-        className={classNames(classes.content, {
-          [styles.commonDialogNoOverflow]: !enableOverflow,
-        })}
+        classes={{ root: classNames(classes.content, styles.commonDialogNoOverflow) }}
       >
         {pages[pageIndex]}
       </DialogContent>

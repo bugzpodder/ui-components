@@ -29,6 +29,8 @@ type Props = {
    *
    *  - `paper`: wrapper around dialog
    *
+   *  - `container`: wrapper around container content
+   *
    *  - `title`
    *
    *  - `content`: dialog content wrapper
@@ -38,7 +40,6 @@ type Props = {
    *  - `action`: wrapper around each individual dialog action
    */
   classes?: CommonDialogClasses,
-  enableOverflow?: boolean,
 };
 
 /** `CommonDialog` provides a component to be used as a UI modal. */
@@ -51,7 +52,6 @@ export const CommonDialog = (props: Props) => {
     isVisible,
     title,
     closeButtonText = "Close",
-    enableOverflow = true,
     ...dialogProps
   } = props;
   const leftActionButtons = actions
@@ -64,10 +64,13 @@ export const CommonDialog = (props: Props) => {
     <Dialog
       open={isVisible}
       data-testid="dialog"
-      className={classNames(styles.commonDialog, classes.root)}
+      classes={{
+        root: classNames(styles.commonDialog, classes.root),
+        container: classNames(styles.commonDialogContainer, classes.container),
+        paper: classNames(styles.commonDialogPaper, classes.paper),
+      }}
       PaperProps={{
         "data-testid": "dialog-paper",
-        className: classNames(styles.commonDialogPaper, classes.paper),
       }}
       onClose={hideModal}
       maxWidth={false}
@@ -83,9 +86,7 @@ export const CommonDialog = (props: Props) => {
       </DialogTitle>
       <DialogContent
         data-testid="dialog-content"
-        className={classNames(classes.content, {
-          [styles.commonDialogNoOverflow]: !enableOverflow,
-        })}
+        classes={{ root: classNames(classes.content, styles.commonDialogNoOverflow) }}
       >
         {children}
       </DialogContent>

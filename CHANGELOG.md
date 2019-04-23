@@ -16,6 +16,8 @@
 13. Add `SelectionGrid`.
 14. `CollapsableList` is now identified as a specific component of NavBar.
 15. `NavBar` sidebar does not support placeholders anymore.
+16. Update `CommonDialog` and `CommonMultiPageDialog` to use `body` scrolling by default, and correct style to match latest Material UI.
+    Delete unneeded `enableOverflow`.
 
 ## 0.10.0 - 2019-04-01
 

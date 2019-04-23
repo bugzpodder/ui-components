@@ -2,15 +2,7 @@ $TABLET_WIDTH: 1200px;
 $screen-sm: $TABLET_WIDTH - 1px;
 $screen-md: $TABLET_WIDTH;
 
-.commonDialog {
-  position: relative;
-  overflow-y: auto;
-
-  // (mkim) unset material-ui css flex rules to allow dialog-scrolling
-  display: block !important;
-  align-items: normal !important;
-  justify-content: normal !important;
-
+body .commonDialog {
   .commonDialogPaper {
     min-width: 300px;
     width: 600px;
@@ -28,6 +20,14 @@ $screen-md: $TABLET_WIDTH;
     }
     &:focus {
       outline: none;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 600px;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 900px;
     }
     .commonDialogNoOverflow {
       overflow-y: unset;
@@ -47,22 +47,6 @@ $screen-md: $TABLET_WIDTH;
       .right {
         text-align: right;
       }
-    }
-  }
-}
-
-@media (min-width: $screen-sm) {
-  .commonDialog {
-    .commonDialogPaper {
-      width: 600px;
-    }
-  }
-}
-
-@media (min-width: $screen-md) {
-  .commonDialog {
-    .commonDialogPaper {
-      width: 900px;
     }
   }
 }

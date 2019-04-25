@@ -84,6 +84,7 @@ export const MultiValueContainer = (props: MultiValueContainerProps) => {
   const { children } = props;
   return (
     <Chip
+      data-testid="multi-value-chip"
       tabIndex={-1}
       label={children}
       classes={{

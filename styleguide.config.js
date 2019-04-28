@@ -41,11 +41,12 @@ module.exports = {
       ],
     },
     {
-      name: "Switches & Buttons",
+      name: "Switches, Buttons & Links",
       components: () => [
         "./src/common-switch/common-switch.jsx",
         "./src/link/external-link.jsx",
         "./src/link/external-link-button.jsx",
+        "./src/link/link-button.jsx",
       ],
     },
     {

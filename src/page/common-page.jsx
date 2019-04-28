@@ -5,6 +5,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import React, { type Node, useState } from "react";
 import classNames from "classnames";
 import styles from "./common-page.module.scss";
+import { LinkButton } from "../link";
 import { SideMenu } from "./components/side-menu";
 import { SideMenuButton } from "./components/side-menu-button";
 
@@ -72,10 +73,11 @@ export const CommonPage = (props: Props) => {
   } = props;
   const mappedHeaderActions = headerActions.map((action, index) => {
     const {
-      Component = Button, content = "", id, color = "primary", componentProps, ...otherProps
+      Component, content = "", id, color = "primary", componentProps = {}, ...otherProps
     } = action;
+    const ComponentToUse = Component || (componentProps.href != null || otherProps.href != null ? LinkButton : Button);
     return (
-      <Component
+      <ComponentToUse
         key={`header-action-${index}`}
         id={id}
         data-testid={id}
@@ -84,7 +86,7 @@ export const CommonPage = (props: Props) => {
         {...otherProps}
       >
         {content}
-      </Component>
+      </ComponentToUse>
     );
   });
 

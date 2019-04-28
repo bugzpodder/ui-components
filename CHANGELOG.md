@@ -27,6 +27,7 @@
 21. Update `breakpoints.scss` to use material-ui breakpoint values. Previously they were using bootstrap ones.
 22. Introduce new `NavbarV2`, a slimmer version of the original Navbar. Tag `Navbar` as a soon-to-be-deprecated component.
 23. Convert `OmniDropdown` to `OmniDialog` to correctly handle scroll.
+24. Add `LinkButton` component and use it in `CommonPage`. As part of this, add `react-router-dom` as a peer dependency.
 
 ## 0.10.0 - 2019-04-01
 

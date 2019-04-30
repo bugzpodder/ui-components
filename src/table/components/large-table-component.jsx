@@ -20,6 +20,7 @@ type Props = {
   onHighlightRow?: (?number | ?string) => any,
   highlightedRowId?: ?number | ?string,
   enableSelectAll: boolean,
+  rowHeight?: number | ((Object, number) => number),
 };
 
 export const LargeTableComponent = (props: Props) => {
@@ -35,6 +36,7 @@ export const LargeTableComponent = (props: Props) => {
     onHighlightRow,
     highlightedRowId,
     enableSelectAll = true,
+    rowHeight,
   } = props;
   if (!isLoading && data.length === 0) {
     return <Typography>No data</Typography>;
@@ -62,8 +64,13 @@ export const LargeTableComponent = (props: Props) => {
               height={300}
               overscanRowCount={1}
               rowCount={data.length}
-              rowHeight={50}
-              width={width}
+              rowHeight={({ index }) => {
+                if (typeof rowHeight === "function") {
+                  return rowHeight(data[index], index);
+                }
+                return rowHeight || 50;
+              }}
+              width={width || 100}
               disableHeader
               className={classNames(styles.table, classes.table)}
               rowClassName={({ index }) => {

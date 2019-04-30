@@ -25,6 +25,38 @@ test("render simple table", () => {
   expect(container).toMatchSnapshot();
 });
 
+test("render simple table with set row height", () => {
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        rowHeight={75}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render simple table with dynamic row height", () => {
+  const mockRowHeight = jest.fn((item, index) => index * 50);
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        rowHeight={mockRowHeight}
+      />
+    </TestWrapper>,
+  );
+  expect(mockRowHeight).toBeCalled();
+  expect(container).toMatchSnapshot();
+});
+
 test("render simple table with no results", () => {
   const { container } = render(
     <TestWrapper>

@@ -19,6 +19,10 @@
 16. Update `CommonDialog` and `CommonMultiPageDialog` to use `body` scrolling by default, and correct style to match latest Material UI.
     Delete unneeded `enableOverflow`.
 17. Update CSS of `TwoColumnGrid` so that padding doesn't obscure clickable areas.
+18. Add `rowHeight` prop to `LargeSimpleTable`. Row height for the table
+    rows default to 50px. `rowHeight` can either be a number or function.
+19. Set default row width for `LargeSimpleTable` to 100px. This change allows a more comprehensive
+    snapshot testing of the rendered table.
 
 ## 0.10.0 - 2019-04-01
 

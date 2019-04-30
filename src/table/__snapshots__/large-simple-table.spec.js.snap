@@ -91,9 +91,594 @@ exports[`render full simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          />
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                aria-rowindex="1"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="First Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          />
+                        </svg>
+                        <input
+                          checked=""
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-first-datum"
+                          id="First Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-1"
+                  >
+                    <span>
+                      First Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Second Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="First Datum-3"
+                  >
+                    <span>
+                      Third Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="2"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Fourth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          />
+                        </svg>
+                        <input
+                          checked=""
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-fourth-datum"
+                          id="Fourth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-1"
+                  >
+                    <span>
+                      Fourth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Fourth Datum-3"
+                  >
+                    <span>
+                      Sixth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="3"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Seventh Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-seventh-datum"
+                          id="Seventh Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-1"
+                  >
+                    <span>
+                      Seventh Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventh Datum-3"
+                  >
+                    <span>
+                      Ninth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="4"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Tenth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-tenth-datum"
+                          id="Tenth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-1"
+                  >
+                    <span>
+                      Tenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eleventh Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Tenth Datum-3"
+                  >
+                    <span>
+                      Twelfth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="5"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Thirteenth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-thirteenth-datum"
+                          id="Thirteenth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-1"
+                  >
+                    <span>
+                      Thirteenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Thirteenth Datum-3"
+                  >
+                    <span>
+                      Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="6"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Seventeenth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-seventeenth-datum"
+                          id="Seventeenth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-1"
+                  >
+                    <span>
+                      Seventeenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventeenth Datum-3"
+                  >
+                    <span>
+                      Ninteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -168,9 +753,340 @@ exports[`render loading simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          />
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                aria-rowindex="1"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="0-0"
+                  >
+                    <span>
+                      First Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="0-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Second Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="0-2"
+                  >
+                    <span>
+                      Third Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="2"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="1-0"
+                  >
+                    <span>
+                      Fourth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="1-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="1-2"
+                  >
+                    <span>
+                      Sixth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="3"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="2-0"
+                  >
+                    <span>
+                      Seventh Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="2-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="2-2"
+                  >
+                    <span>
+                      Ninth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="4"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="3-0"
+                  >
+                    <span>
+                      Tenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="3-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eleventh Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="3-2"
+                  >
+                    <span>
+                      Twelfth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="5"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="4-0"
+                  >
+                    <span>
+                      Thirteenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="4-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="4-2"
+                  >
+                    <span>
+                      Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="6"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="5-0"
+                  >
+                    <span>
+                      Seventeenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="5-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="5-2"
+                  >
+                    <span>
+                      Ninteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -254,9 +1170,340 @@ exports[`render simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          />
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                aria-rowindex="1"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="0-0"
+                  >
+                    <span>
+                      First Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="0-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Second Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="0-2"
+                  >
+                    <span>
+                      Third Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="2"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="1-0"
+                  >
+                    <span>
+                      Fourth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="1-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="1-2"
+                  >
+                    <span>
+                      Sixth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="3"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="2-0"
+                  >
+                    <span>
+                      Seventh Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="2-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="2-2"
+                  >
+                    <span>
+                      Ninth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="4"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="3-0"
+                  >
+                    <span>
+                      Tenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="3-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eleventh Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="3-2"
+                  >
+                    <span>
+                      Twelfth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="5"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="4-0"
+                  >
+                    <span>
+                      Thirteenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="4-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="4-2"
+                  >
+                    <span>
+                      Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="6"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="5-0"
+                  >
+                    <span>
+                      Seventeenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="5-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="5-2"
+                  >
+                    <span>
+                      Ninteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -369,9 +1616,948 @@ exports[`render simple table with all items selected 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                aria-rowindex="1"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="First Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          />
+                        </svg>
+                        <input
+                          checked=""
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-first-datum"
+                          id="First Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-1"
+                  >
+                    <span>
+                      First Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Second Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="First Datum-3"
+                  >
+                    <span>
+                      Third Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="2"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Fourth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                          />
+                        </svg>
+                        <input
+                          checked=""
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-fourth-datum"
+                          id="Fourth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-1"
+                  >
+                    <span>
+                      Fourth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Fourth Datum-3"
+                  >
+                    <span>
+                      Sixth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="3"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Seventh Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-seventh-datum"
+                          id="Seventh Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-1"
+                  >
+                    <span>
+                      Seventh Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventh Datum-3"
+                  >
+                    <span>
+                      Ninth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="4"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Tenth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-tenth-datum"
+                          id="Tenth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-1"
+                  >
+                    <span>
+                      Tenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eleventh Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Tenth Datum-3"
+                  >
+                    <span>
+                      Twelfth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="5"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Thirteenth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-thirteenth-datum"
+                          id="Thirteenth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-1"
+                  >
+                    <span>
+                      Thirteenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Thirteenth Datum-3"
+                  >
+                    <span>
+                      Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="6"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 0 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="singleIcon"
+                    data-cell-id="Seventeenth Datum-0"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                    >
+                      <span
+                        class="MuiIconButton-label"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root"
+                          focusable="false"
+                          role="presentation"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                          />
+                        </svg>
+                        <input
+                          class="MuiPrivateSwitchBase-input"
+                          data-indeterminate="false"
+                          data-testid="table-checkbox-cell-seventeenth-datum"
+                          id="Seventeenth Datum"
+                          type="checkbox"
+                          value=""
+                        />
+                      </span>
+                      <span
+                        class="MuiTouchRipple-root"
+                      />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-1"
+                  >
+                    <span>
+                      Seventeenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-2"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="4"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventeenth Datum-3"
+                  >
+                    <span>
+                      Ninteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
           />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render simple table with dynamic row height 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: auto; overflow: hidden scroll;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: auto; height: 530px; max-width: 100px; max-height: 530px; overflow: hidden; position: relative;"
+            >
+              <div
+                aria-rowindex="1"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 0px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-0"
+                  >
+                    <span>
+                      First Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Second Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="First Datum-2"
+                  >
+                    <span>
+                      Third Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="2"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-0"
+                  >
+                    <span>
+                      Fourth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Fourth Datum-2"
+                  >
+                    <span>
+                      Sixth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="3"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 100px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-0"
+                  >
+                    <span>
+                      Seventh Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventh Datum-2"
+                  >
+                    <span>
+                      Ninth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="4"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 150px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-0"
+                  >
+                    <span>
+                      Tenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eleventh Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Tenth Datum-2"
+                  >
+                    <span>
+                      Twelfth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="5"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 200px; left: 0px; position: absolute; top: 300px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-0"
+                  >
+                    <span>
+                      Thirteenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Thirteenth Datum-2"
+                  >
+                    <span>
+                      Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -460,7 +2646,7 @@ exports[`render simple table with no results and is loading 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
           />
         </div>
@@ -488,6 +2674,360 @@ exports[`render simple table with no results and is loading 1`] = `
       <div
         class="loading"
       />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render simple table with set row height 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: auto; overflow: hidden scroll;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: auto; height: 405px; max-width: 100px; max-height: 405px; overflow: hidden; position: relative;"
+            >
+              <div
+                aria-rowindex="1"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 75px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-0"
+                  >
+                    <span>
+                      First Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="First Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Second Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="First Datum-2"
+                  >
+                    <span>
+                      Third Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="2"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 75px; left: 0px; position: absolute; top: 75px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-0"
+                  >
+                    <span>
+                      Fourth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Fourth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Fourth Datum-2"
+                  >
+                    <span>
+                      Sixth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="3"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 75px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-0"
+                  >
+                    <span>
+                      Seventh Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventh Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eighth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventh Datum-2"
+                  >
+                    <span>
+                      Ninth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="4"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 75px; left: 0px; position: absolute; top: 225px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-0"
+                  >
+                    <span>
+                      Tenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Tenth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Eleventh Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Tenth Datum-2"
+                  >
+                    <span>
+                      Twelfth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="5"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 75px; left: 0px; position: absolute; top: 300px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-0"
+                  >
+                    <span>
+                      Thirteenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Thirteenth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body2"
+                    >
+                      Fifteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Thirteenth Datum-2"
+                  >
+                    <span>
+                      Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
     </div>
   </div>
 </div>

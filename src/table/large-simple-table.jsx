@@ -45,6 +45,8 @@ type Props = {
   /** Provides the id for the highlighted row when onHighlightRow is used */
   highlightedRowId?: ?string | ?number,
   enableSelectAll?: boolean,
+  /** Provides the rowHeight for each row of the table. Can take either a number or function. */
+  rowHeight?: number | (Object, number) => number,
 };
 
 /** Provides a large simple table for displaying data, with the ability to opt into additional features. */

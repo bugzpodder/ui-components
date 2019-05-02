@@ -42,7 +42,7 @@ export const TwoColumnRow = (props: Props) => {
       <Grid
         item
         data-testid="two-column-row-label"
-        className={classNames(styles.labelColumn, classes.labelColumn)}
+        className={classNames(styles.column, styles.labelColumn, classes.labelColumn)}
         xs={labelWidth}
       >
         {typeof label === "string" ? (
@@ -66,7 +66,7 @@ export const TwoColumnRow = (props: Props) => {
       <Grid
         item
         data-testid="two-column-row-value"
-        className={classNames(styles.valueColumn, classes.valueColumn)}
+        className={classNames(styles.column, classes.valueColumn)}
         xs={inputWidth}
       >
         <div

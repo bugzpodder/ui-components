@@ -18,6 +18,7 @@
 15. `NavBar` sidebar does not support placeholders anymore.
 16. Update `CommonDialog` and `CommonMultiPageDialog` to use `body` scrolling by default, and correct style to match latest Material UI.
     Delete unneeded `enableOverflow`.
+17. Update CSS of `TwoColumnGrid` so that padding doesn't obscure clickable areas.
 
 ## 0.10.0 - 2019-04-01
 

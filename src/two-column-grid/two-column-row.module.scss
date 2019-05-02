@@ -2,21 +2,28 @@
 
 .gridItem {
   width: 100%;
-  padding: 6px;
   display: flex;
 
-  .labelColumn {
-    margin: auto 0;
+  .column {
+    &.labelColumn {
+      .rowLabel {
+        color: $grail-gray-medium-color;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
 
-    .rowLabel {
-      color: $grail-gray-medium-color;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 20px;
+    // Listing .column twice as a selector raises specificity over some Material UI Grid selectors which would otherwise
+    // override this one.
+    &.column {
+      margin: 6px auto;
+      padding: 0 10px;
     }
   }
 
-  .valueColumn {
-    margin: auto 0;
+  // Similarly, .gridItem is listed twice to raise specificity over Material UI Grid selectors.
+  &.gridItem {
+    margin: 0;
   }
 }

@@ -10,7 +10,7 @@ exports[`render two column grid 1`] = `
         class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-2 column labelColumn"
           data-testid="two-column-row-label"
         >
           <p
@@ -22,7 +22,7 @@ exports[`render two column grid 1`] = `
           </p>
         </div>
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-10 column"
           data-testid="two-column-row-value"
         >
           <div
@@ -37,7 +37,7 @@ exports[`render two column grid 1`] = `
         class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-2 column labelColumn"
           data-testid="two-column-row-label"
         >
           <div
@@ -49,7 +49,7 @@ exports[`render two column grid 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-10 column"
           data-testid="two-column-row-value"
         >
           <div
@@ -68,7 +68,7 @@ exports[`render two column grid 1`] = `
         class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-2 column labelColumn"
           data-testid="two-column-row-label"
         >
           <p
@@ -80,7 +80,7 @@ exports[`render two column grid 1`] = `
           </p>
         </div>
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-10 column"
           data-testid="two-column-row-value"
         >
           <div
@@ -95,7 +95,7 @@ exports[`render two column grid 1`] = `
         class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-2 column labelColumn"
           data-testid="two-column-row-label"
         >
           <div
@@ -107,7 +107,7 @@ exports[`render two column grid 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-10 column"
           data-testid="two-column-row-value"
         >
           <div
@@ -126,7 +126,7 @@ exports[`render two column grid 1`] = `
         class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-2 column labelColumn"
           data-testid="two-column-row-label"
         >
           <p
@@ -138,7 +138,7 @@ exports[`render two column grid 1`] = `
           </p>
         </div>
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-10 column"
           data-testid="two-column-row-value"
         >
           <div
@@ -153,7 +153,7 @@ exports[`render two column grid 1`] = `
         class="MuiGrid-container MuiGrid-spacing-xs-40 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between gridItem"
       >
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-2 labelColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-2 column labelColumn"
           data-testid="two-column-row-label"
         >
           <div
@@ -165,7 +165,7 @@ exports[`render two column grid 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-item MuiGrid-grid-xs-10 valueColumn"
+          class="MuiGrid-item MuiGrid-grid-xs-10 column"
           data-testid="two-column-row-value"
         >
           <div

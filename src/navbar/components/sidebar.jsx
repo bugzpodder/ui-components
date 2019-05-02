@@ -6,7 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import React, { useEffect, useReducer } from "react";
+import React, { useEffect, useMemo, useReducer } from "react";
 import classNames from "classnames";
 import pathToRegexp from "path-to-regexp";
 import styles from "./sidebar.module.scss";
@@ -28,69 +28,76 @@ type Props = {
   classes?: BaseNavbarClasses,
 };
 
-type State = {
-  openItems: Set<number>,
-  touchedItems: Set<number>,
-};
-
-const getIsOpen = (
-  index: number,
-  { sidebarContent = sidebarItems, domain, currentPath }: Props,
-  state: State,
-): boolean => {
-  if (state.openItems.has(index) || state.touchedItems.has(index)) {
-    return state.openItems.has(index);
-  }
-  // $FlowFixMe: getIsOpen is called on SidebarItemParent and returns false otherwise.
-  const { children } = sidebarContent[index];
-  if (children == null) {
-    return false;
-  }
-  return children.some((child: SidebarItemChild) => {
-    const childLink: SidebarItemLink = child;
-    const { domain: childDomain, exact = false, path } = childLink;
-    if (childDomain === domain) {
-      return pathToRegexp(path, [], { end: exact }).test(currentPath);
-    }
-    return false;
-  });
-};
-
 const TOGGLE = "TOGGLE";
 const COLLAPSE_ALL = "COLLAPSE_ALL";
 const CLEAR = "CLEAR";
+const OPEN = "OPEN";
 
 const reducer = (state, action: Object) => {
   const { type } = action;
   switch (type) {
     case TOGGLE: {
-      const touchedItems = new Set(state.touchedItems || []);
       const openItems = new Set(state.openItems);
-      const { props, index } = action;
-      if (getIsOpen(index, props, state)) {
+      const { index } = action;
+      if (openItems.has(index)) {
         openItems.delete(index);
       } else {
         openItems.add(index);
       }
-      if (!state.touchedItems.has(index)) {
-        touchedItems.add(index);
-      }
-      return { openItems, touchedItems };
+      return { openItems };
+    }
+    case OPEN: {
+      const openItems = new Set(state.openItems);
+      openItems.add(action.matchedItem);
+      return { openItems };
     }
     case CLEAR:
-      return { ...state, touchedItems: new Set() };
+      return { openItems: new Set([action.matchedItem]) };
     case COLLAPSE_ALL:
-      return { openItems: new Set(), touchedItems: new Set(action.sidebarItems.map((__item, index) => index)) };
+      return { openItems: new Set() };
     default:
       return state;
   }
 };
 
 export const Sidebar = (props: Props) => {
-  const [state, dispatch] = useReducer(reducer, { openItems: new Set(), touchedItems: new Set() });
+  const {
+    sidebarContent = sidebarItems,
+    domain,
+    currentPath,
+    footer,
+    isOpen,
+    toggle,
+    drawerVariant,
+    classes = {},
+  } = props;
+
+  const matchedItem = useMemo(
+    () =>
+      // $FlowFixMe: getIsOpen is called on SidebarItemParent and returns false otherwise.
+      sidebarContent.findIndex(({ children }) => {
+        if (children == null) {
+          return false;
+        }
+        return children.some((child: SidebarItemChild) => {
+          const childLink: SidebarItemLink = child;
+          const { domain: childDomain, exact = false, path } = childLink;
+          if (childDomain === domain) {
+            return pathToRegexp(path, [], { end: exact }).test(currentPath);
+          }
+          return false;
+        });
+      }),
+    [currentPath, domain, sidebarContent],
+  );
+
+  const [state, dispatch] = useReducer(reducer, { openItems: new Set() });
   useEffect(() => {
-    dispatch({ type: CLEAR });
-  }, [props.isOpen]);
+    dispatch({ type: CLEAR, matchedItem });
+  }, [matchedItem]);
+  useEffect(() => {
+    isOpen && dispatch({ type: OPEN, matchedItem });
+  }, [isOpen, matchedItem]);
 
   const getLink = (item: SidebarItemLink, key: number, nested: boolean = false) => {
     const {
@@ -150,7 +157,7 @@ export const Sidebar = (props: Props) => {
 
   const renderItem = (item: SidebarItem, index: number) => {
     if (item.children !== undefined) {
-      const isOpen = getIsOpen(index, props, state);
+      const isOpen = state.openItems.has(index);
       return (
         <CollapsableListItem
           key={index}
@@ -167,13 +174,10 @@ export const Sidebar = (props: Props) => {
     return getLink(item, index);
   };
 
-  const collapseAll = (sidebarItems: Array<SidebarItem>) => {
-    dispatch({ type: COLLAPSE_ALL, sidebarItems });
+  const collapseAll = () => {
+    dispatch({ type: COLLAPSE_ALL });
   };
 
-  const {
-    sidebarContent = sidebarItems, footer, isOpen, toggle, drawerVariant, classes = {},
-  } = props;
   return (
     <Drawer
       id="sidebar-drawer"
@@ -197,7 +201,7 @@ export const Sidebar = (props: Props) => {
           <Divider />
           {/** the below collapse-all span is a hidden element used in E2E testing */}
           <span
-            onClick={() => collapseAll(sidebarContent)}
+            onClick={collapseAll}
             data-testid="collapse-all-sidebar-items"
             className={styles.collapseAllSidebarItems}
           />

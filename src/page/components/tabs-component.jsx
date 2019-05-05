@@ -41,7 +41,7 @@ export const TabsComponent = (props: Props) => {
             data-testid={id}
             classes={{
               ...tabClasses,
-              root: classNames(tabClasses.root, styles.tab),
+              root: classNames(tabClasses.root, styles.tab, "tabbed-page-tab"),
             }}
             {...tabProps}
           />

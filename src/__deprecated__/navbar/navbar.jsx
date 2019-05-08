@@ -5,6 +5,8 @@ import { BaseNavbar } from "./components/base-navbar";
 type Props = {
   /** Determines whether to put warning banner above the navigation bar. */
   isProduction?: boolean,
+  /** Defines the title of the page to display. */
+  title?: string,
   /** Defines the breadcrumbs to go underneath the navbar. */
   breadcrumbs?: React$Node,
   /** Defines the content aligned left on the navbar to the right of menu button. */
@@ -27,12 +29,13 @@ type Props = {
   currentPath: string,
 };
 
-export const NavbarV2 = (props: Props) => {
+export const Navbar = (props: Props) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(isSidebarOpen => !isSidebarOpen);
   };
+  console.error("Navbar is deprecated. Please convert to NavbarV2");
 
   return (
     <BaseNavbar

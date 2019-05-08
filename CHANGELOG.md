@@ -25,6 +25,7 @@
     snapshot testing of the rendered table.
 20. Update `CommonTabbedPage` classes and tab styling.
 21. Update `breakpoints.scss` to use material-ui breakpoint values. Previously they were using bootstrap ones.
+22. Introduce new `NavbarV2`, a slimmer version of the original Navbar. Tag `Navbar` as a soon-to-be-deprecated component.
 
 ## 0.10.0 - 2019-04-01
 

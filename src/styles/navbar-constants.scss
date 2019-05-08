@@ -1,3 +1,6 @@
 $grail-navbar-margin-bottom: 20px;
-$grail-navbar-height: 93px;
+$grail-navbarv2-height: 64px;
 $dev-warning-height: 32px;
+
+// TODO(nsawas): Deprecate once all clients have moved to navbarv2.
+$grail-navbar-height: 93px;

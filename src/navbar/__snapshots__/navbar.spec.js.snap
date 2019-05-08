@@ -50,16 +50,11 @@ exports[`navbar with breast cancer logo 1`] = `
             class="MuiTouchRipple-root"
           />
         </button>
-        <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit"
-          data-testid="navbar-title"
+        <p
+          class="MuiTypography-root MuiTypography-body2"
         >
-          <p
-            class="MuiTypography-root MuiTypography-body2"
-          >
-            title
-          </p>
-        </h6>
+          breadcrumbs
+        </p>
         <p
           class="MuiTypography-root MuiTypography-body2"
         >
@@ -150,11 +145,6 @@ exports[`navbar with breast cancer logo 1`] = `
         </p>
       </div>
     </div>
-    <p
-      class="MuiTypography-root MuiTypography-body2"
-    >
-      breadcrumbs
-    </p>
   </header>
 </div>
 `;
@@ -209,16 +199,11 @@ exports[`render default Sidebar 1`] = `
             class="MuiTouchRipple-root"
           />
         </button>
-        <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit"
-          data-testid="navbar-title"
+        <p
+          class="MuiTypography-root MuiTypography-body2"
         >
-          <p
-            class="MuiTypography-root MuiTypography-body2"
-          >
-            title
-          </p>
-        </h6>
+          breadcrumbs
+        </p>
         <p
           class="MuiTypography-root MuiTypography-body2"
         >
@@ -284,11 +269,6 @@ exports[`render default Sidebar 1`] = `
         </p>
       </div>
     </div>
-    <p
-      class="MuiTypography-root MuiTypography-body2"
-    >
-      breadcrumbs
-    </p>
   </header>
 </div>
 `;
@@ -339,16 +319,11 @@ exports[`render default Sidebar 2`] = `
             class="MuiTouchRipple-root"
           />
         </button>
-        <h6
-          class="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit"
-          data-testid="navbar-title"
+        <p
+          class="MuiTypography-root MuiTypography-body2"
         >
-          <p
-            class="MuiTypography-root MuiTypography-body2"
-          >
-            title
-          </p>
-        </h6>
+          breadcrumbs
+        </p>
         <p
           class="MuiTypography-root MuiTypography-body2"
         >
@@ -414,11 +389,6 @@ exports[`render default Sidebar 2`] = `
         </p>
       </div>
     </div>
-    <p
-      class="MuiTypography-root MuiTypography-body2"
-    >
-      breadcrumbs
-    </p>
   </header>
 </div>
 `;

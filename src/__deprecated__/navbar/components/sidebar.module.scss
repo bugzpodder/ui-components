@@ -1,0 +1,31 @@
+// Test when screen is larger than height of sidebar.
+// Ensure help stays on bottom
+.list {
+  overflow-y: auto;
+  flex-grow: 1;
+  .nested {
+    padding-left: 36px;
+  }
+  .active {
+    background-color: rgba(0, 0, 0, 0.24);
+    h3 {
+      font-weight: bold;
+    }
+  }
+}
+
+.drawerFooter {
+  width: 300px;
+}
+
+.drawer {
+  flex: 1 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapseAllSidebarItems {
+  width: 0;
+  height: 0;
+}

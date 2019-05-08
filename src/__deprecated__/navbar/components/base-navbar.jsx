@@ -8,13 +8,15 @@ import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import moment from "moment";
 import styles from "./base-navbar.module.scss";
-import { BreastCancerRibbon, GrailLogo } from "../../logos";
+import { BreastCancerRibbon, GrailLogo } from "../../../logos";
 import { LIMS } from "@grail/lib";
 import { Sidebar } from "./sidebar";
 
 type Props = {
   /** Determines whether to put warning banner above the navigation bar. */
   isProduction?: boolean,
+  /** Defines the title of the page to display. */
+  title?: string,
   /** Defines the breadcrumbs to go underneath the navbar. */
   breadcrumbs?: React$Node,
   /** Defines the content aligned left on the navbar to the right of menu button. */
@@ -57,6 +59,7 @@ export const BaseNavbar = (props: Props) => {
   const {
     isProduction = false,
     domain,
+    title,
     breadcrumbs,
     left,
     center,
@@ -102,7 +105,15 @@ export const BaseNavbar = (props: Props) => {
             >
               <MenuIcon />
             </IconButton>
-            {breadcrumbs}
+            {title && (
+              <Typography
+                data-testid="navbar-title"
+                color="inherit"
+                variant="h6"
+              >
+                {title}
+              </Typography>
+            )}
             {left}
           </div>
           <div
@@ -122,6 +133,7 @@ export const BaseNavbar = (props: Props) => {
             {right}
           </div>
         </Toolbar>
+        {breadcrumbs}
       </AppBar>
       <Sidebar
         isOpen={isSidebarOpen}

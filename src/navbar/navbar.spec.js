@@ -4,7 +4,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { LIMS } from "@grail/lib";
 import { MemoryRouter } from "react-router-dom";
-import { Navbar } from "./navbar";
+import { NavbarV2 } from "./navbar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "react-testing-library";
 import { getListItemDataTestId } from "./util";
@@ -20,12 +20,11 @@ const TestNavbar = props => {
   return (
     <TestWrapper>
       <MemoryRouter>
-        <Navbar
+        <NavbarV2
           sidebarContent={sidebarContent}
           isProduction={isProduction}
           domain={LIMS}
           currentPath="/automation/tasks"
-          title={wrapText("title")}
           breadcrumbs={wrapText("breadcrumbs")}
           left={wrapText("left")}
           center={wrapText("center")}
@@ -44,7 +43,6 @@ test("render default Sidebar", () => {
   } = render(<TestNavbar />);
   const items = {
     navbar: "breadcrumbs",
-    "navbar-title": "title",
     "navbar-left": "left",
     "navbar-center": "center",
     "navbar-right": "right",

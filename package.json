@@ -125,6 +125,7 @@
       "src/**/*.{js,jsx}",
       "!src/**/index.js",
       "!src/dev/**/*.{js,jsx}",
+      "!src/__deprecated__/**/*.{js,jsx}",
       "!src/utils/*.{js,jsx}"
     ],
     "coverageThreshold": {

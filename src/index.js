@@ -15,7 +15,8 @@ export {
   DateValue, DateTimeValue, HumanizedDateTime, DateInput, DateTimeInput, wrapPickerUtilProvider,
 } from "./date";
 export { ExternalLink, ExternalLinkButton } from "./link";
-export { Navbar } from "./navbar";
+export { Navbar } from "./__deprecated__/navbar";
+export { NavbarV2 } from "./navbar";
 export { NotificationCenter } from "./notification-center";
 export { ReadOnlyTextField, ValidatedReadOnlyTextField } from "./readonly-text-field";
 export { OmniChips, OmniSearchBar } from "./omni-search-bar";

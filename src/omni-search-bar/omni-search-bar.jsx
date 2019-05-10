@@ -2,7 +2,6 @@
 import React, { Fragment } from "react";
 import isEqual from "lodash/isEqual";
 import styles from "./omni.module.scss";
-import width from "dom-helpers/query/width";
 import {
   OMNI_ERROR,
   OMNI_KEY,
@@ -15,7 +14,7 @@ import {
   updateQuery,
 } from "@grail/lib";
 import { OMNI_INPUT_FIELD_ID, OmniField } from "./components/omni-field";
-import { OmniDropdown } from "./components/omni-dropdown";
+import { OmniDialog } from "./components/omni-dialog";
 
 type Props = {
   /** Defines the search parameters. */
@@ -185,13 +184,13 @@ export class OmniSearchBar extends React.Component<Props, State> {
     }
   };
 
-  toggleDropdown = () => {
+  toggleOmniIsOpen = () => {
     this.setState(prevState => {
       return { isOpen: !prevState.isOpen };
     });
   };
 
-  setDropdownIsOpen = (isOpen: boolean) => {
+  setOmniIsOpen = (isOpen: boolean) => {
     this.setState({ isOpen });
   };
 
@@ -257,26 +256,19 @@ export class OmniSearchBar extends React.Component<Props, State> {
     return await this.updateOmniText(omniText);
   };
 
-  anchorEl = null;
-
   render = () => {
     const { searchDefs, children } = this.props;
     const { isOpen } = this.state;
     return (
       <Fragment>
         {isOpen && (
-        <div
-          id={`${OMNI_KEY}-clickaway`}
-          className={styles.clickAwayLayer}
-          onClick={this.toggleDropdown}
-        />
+          <div
+            id={`${OMNI_KEY}-clickaway`}
+            className={styles.clickAwayLayer}
+            onClick={this.toggleOmniIsOpen}
+          />
         )}
-        <div
-          className={styles.omniBar}
-          ref={node => {
-            this.anchorEl = node;
-          }}
-        >
+        <div className={styles.omniBar}>
           <OmniField
             omniText={this.state.omniText}
             onChange={this.onChange.bind(this)}
@@ -286,27 +278,22 @@ export class OmniSearchBar extends React.Component<Props, State> {
             onClear={this.handleClear}
             error={this.state.error}
             isOpen={isOpen}
-            setDropdownIsOpen={this.setDropdownIsOpen}
+            setOmniIsOpen={this.setOmniIsOpen}
             defaultField={searchDefs[0].name.toLowerCase()}
           />
           {isOpen && (
-            <div
-              id={`${OMNI_KEY}-dropdown`}
-              className={styles.omniDropdown}
+            <OmniDialog
+              searchDefs={searchDefs}
+              searchValues={this.state.searchValues}
+              onSearch={() => {
+                this.onSearch(true);
+              }}
+              onChange={this.onChange.bind(this)}
+              onClear={this.handleClear}
+              setIsOpen={this.setOmniIsOpen}
             >
-              <OmniDropdown
-                searchDefs={searchDefs}
-                searchValues={this.state.searchValues}
-                onSearch={() => {
-                  this.onSearch(true);
-                }}
-                onChange={this.onChange.bind(this)}
-                onClear={this.handleClear}
-                width={width(this.anchorEl, true)}
-              >
-                {children}
-              </OmniDropdown>
-            </div>
+              {children}
+            </OmniDialog>
           )}
         </div>
       </Fragment>

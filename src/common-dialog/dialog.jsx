@@ -72,6 +72,9 @@ export const CommonDialog = (props: Props) => {
       PaperProps={{
         "data-testid": "dialog-paper",
       }}
+      BackdropProps={{
+        "data-testid": "dialog-backdrop",
+      }}
       onClose={hideModal}
       maxWidth={false}
       scroll="body"

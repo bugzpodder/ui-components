@@ -38,6 +38,7 @@ export const SearchField = (props: Props) => {
   };
   const onEnter = event => {
     if (event.keyCode === keycode("Enter")) {
+      event.preventDefault();
       onSearch();
     }
   };

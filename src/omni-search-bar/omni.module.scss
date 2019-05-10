@@ -10,24 +10,14 @@
   background-color: rgba($grail-gray-dark-color, 0.1);
 }
 
+.omniDialog {
+  .contents {
+  }
+}
+
 .omniBar {
   flex-grow: 1;
   max-width: 650px;
-  position: relative;
-  z-index: 15;
-  .omniDropdown {
-    position: absolute;
-    .paper {
-      padding: 12px;
-      display: flex;
-      .footer {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-      }
-    }
-  }
   .omniField {
     .field {
       width: 100%;

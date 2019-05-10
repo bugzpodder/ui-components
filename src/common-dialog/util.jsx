@@ -1,7 +1,7 @@
 // @flow
 import Button from "@material-ui/core/Button";
 import Icon from "@material-ui/core/Icon";
-import React, { type ElementConfig } from "react";
+import React from "react";
 
 export type CommonDialogAction = {
   name: string,
@@ -9,9 +9,10 @@ export type CommonDialogAction = {
   icon?: string,
   id?: string,
   isEnabled?: boolean,
-  variant?: string,
+  variant?: "text" | "flat" | "outlined" | "contained" | "raised" | "fab" | "extendedFab",
+  color?: "default" | "inherit" | "primary" | "secondary",
   isLeftButton?: boolean,
-} & ElementConfig<typeof Button>;
+};
 
 export const actionToButton = (action: CommonDialogAction) => {
   const {

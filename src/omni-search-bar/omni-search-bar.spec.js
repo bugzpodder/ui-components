@@ -37,9 +37,9 @@ const searchDefs: OmniSearchDefs = [
   },
 ];
 
-describe("OmniSearchBar", () => {
+const renderWrapper = () => {
   const onSearch = jest.fn();
-  const { getByPlaceholderText, container, getByTestId } = render(
+  const props = render(
     <TestWrapper>
       <MuiPickersUtilsProvider utils={MomentUtils}>
         <OmniSearchBar
@@ -51,77 +51,92 @@ describe("OmniSearchBar", () => {
       </MuiPickersUtilsProvider>
     </TestWrapper>,
   );
-  const omniField = getByPlaceholderText("Search here or use dropdown");
+  const omniField = props.getByPlaceholderText("Search here or use dropdown");
+  return {
+    ...props,
+    onSearch,
+    omniField,
+  };
+};
+
+describe("OmniSearchBar", () => {
   it("renders properly", () => {
+    const { getByPlaceholderText, container } = renderWrapper();
     expect(getByPlaceholderText("Search here or use dropdown")).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
-  it("doesn't render dropdown or clickaway", () => {
-    expect(container.querySelector("#omni-clickaway")).toBeNull();
-    expect(container.querySelector("#omni-dropdown")).toBeNull();
+  it("doesn't render omniDialog or backdrop", () => {
+    const { queryByTestId } = renderWrapper();
+    expect(queryByTestId("dialog-backdrop")).toBeNull();
+    expect(queryByTestId("omni-dialog")).toBeNull();
   });
-  it("opens and closes dropdown & clickaway when toggled", () => {
-    let clickaway = container.querySelector("#omni-clickaway");
-    let dropdown = container.querySelector("#omni-dropdown");
-    expect(clickaway).not.toBeInTheDocument();
-    expect(dropdown).not.toBeInTheDocument();
+  it("opens and closes omniDialog & backdrop when toggled", () => {
+    const { getByPlaceholderText, getByTestId, queryByTestId } = renderWrapper();
+    let backdrop = queryByTestId("dialog-backdrop");
+    expect(backdrop).toBeNull();
+    expect(queryByTestId("omni-dialog")).toBeNull();
     fireEvent.click(getByTestId("search-options-expander"));
-    clickaway = container.querySelector("#omni-clickaway");
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(clickaway).toBeInTheDocument();
-    expect(dropdown).toBeInTheDocument();
+    backdrop = queryByTestId("dialog-backdrop");
+    let omniDialog = queryByTestId("omni-dialog");
+    expect(backdrop).toBeInTheDocument();
+    expect(omniDialog).toBeInTheDocument();
     expect(getByPlaceholderText("e.g. G0000")).toBeInTheDocument();
-    fireEvent.click(clickaway);
-    clickaway = container.querySelector("#omni-clickaway");
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(clickaway).not.toBeInTheDocument();
-    expect(dropdown).not.toBeInTheDocument();
+    fireEvent.click(backdrop);
+    backdrop = queryByTestId("dialog-backdrop");
+    omniDialog = queryByTestId("omni-dialog");
+    expect(backdrop).not.toBeInTheDocument();
+    expect(omniDialog).toBeNull();
   });
-  it("opens and closes dropdown when clicking expander", () => {
-    let dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+  it("opens and closes omniDialog when clicking expander", () => {
+    const { getByTestId, queryByTestId } = renderWrapper();
+    let omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
     fireEvent.click(getByTestId("search-options-expander"));
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).toBeInTheDocument();
+    omniDialog = getByTestId("omni-dialog");
+    expect(omniDialog).toBeInTheDocument();
     fireEvent.click(getByTestId("search-options-expander"));
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+    omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
   });
-  it("opens and closes dropdown when typing up/down arrows", () => {
-    let dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+  it("opens and closes omniDialog when typing up/down arrows", () => {
+    const { getByTestId, queryByTestId, omniField } = renderWrapper();
+    let omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
     fireEvent.keyDown(omniField, { keyCode: keycode("Down") });
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).toBeInTheDocument();
+    omniDialog = getByTestId("omni-dialog");
+    expect(omniDialog).toBeInTheDocument();
     fireEvent.keyDown(omniField, { keyCode: keycode("Up") });
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+    omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
   });
-  it("does not open dropdown when focusing", () => {
-    let dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+  it("does not open omniDialog when focusing", () => {
+    const { queryByTestId, omniField } = renderWrapper();
+    let omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
     fireEvent.focus(omniField);
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+    omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
   });
-  it("closes dropdown after pressing enter", () => {
-    let dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+  it("closes omniDialog after pressing enter", () => {
+    const { getByTestId, queryByTestId, omniField } = renderWrapper();
+    let omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
     fireEvent.click(getByTestId("search-options-expander"));
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).toBeInTheDocument();
+    omniDialog = getByTestId("omni-dialog");
+    expect(omniDialog).toBeInTheDocument();
     fireEvent.keyDown(omniField, { keyCode: keycode("Enter") });
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+    omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
   });
-  it("opens dropdown when clicking expander, leaving open when clicking in dropdown", () => {
-    let dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).not.toBeInTheDocument();
+  it("opens omniDialog when clicking expander, leaving open when clicking in omniDialog", () => {
+    const { getByTestId, queryByTestId } = renderWrapper();
+    let omniDialog = queryByTestId("omni-dialog");
+    expect(omniDialog).toBeNull();
     fireEvent.click(getByTestId("search-options-expander"));
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).toBeInTheDocument();
-    fireEvent.click(dropdown);
-    dropdown = container.querySelector("#omni-dropdown");
-    expect(dropdown).toBeInTheDocument();
+    omniDialog = getByTestId("omni-dialog");
+    expect(omniDialog).toBeInTheDocument();
+    fireEvent.click(omniDialog);
+    omniDialog = getByTestId("omni-dialog");
+    expect(omniDialog).toBeInTheDocument();
   });
 });

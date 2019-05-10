@@ -19,14 +19,14 @@ type Props = {
   onSearch: () => any,
   onClear: () => any,
   error: string,
-  setDropdownIsOpen: boolean => any,
+  setOmniIsOpen: boolean => any,
   isOpen?: boolean,
   defaultField?: string,
 };
 
 export const OmniField = (props: Props) => {
   const {
-    omniText, onChange, onSearch, onClear, error, isOpen = false, setDropdownIsOpen,
+    omniText, onChange, onSearch, onClear, error, isOpen = false, setOmniIsOpen,
   } = props;
   const [isSelected, setIsSelected] = useState(isOpen);
 
@@ -42,12 +42,12 @@ export const OmniField = (props: Props) => {
     setIsSelected(false);
   };
 
-  const setDropdownVisibility = (isVisible: boolean) => {
-    setDropdownIsOpen(isVisible);
+  const setOmniVisibility = (isVisible: boolean) => {
+    setOmniIsOpen(isVisible);
   };
 
-  const toggleDropdownVisibility = () => {
-    setDropdownIsOpen(!isOpen);
+  const toggleOmniVisibility = () => {
+    setOmniIsOpen(!isOpen);
   };
 
   const omniChange = (event: InputEvent) => {
@@ -69,11 +69,11 @@ export const OmniField = (props: Props) => {
             case keycode("Enter"):
               return onSearch();
             case keycode("Down"):
-              setDropdownVisibility(true);
+              setOmniVisibility(true);
               event.preventDefault();
               break;
             case keycode("Up"):
-              setDropdownVisibility(false);
+              setOmniVisibility(false);
               event.preventDefault();
               break;
             default:
@@ -132,7 +132,7 @@ export const OmniField = (props: Props) => {
                 className={classNames(styles.iconButton, textClass)}
                 disableRipple
                 aria-label="Expand search options"
-                onClick={toggleDropdownVisibility}
+                onClick={toggleOmniVisibility}
               >
                 <ArrowDropDownIcon />
               </IconButton>

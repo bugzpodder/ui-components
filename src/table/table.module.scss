@@ -10,6 +10,7 @@
 }
 
 .pagedTableCardRoot {
+  position: relative;
   .pagedTableCardBody {
     padding: 0;
     &.hasTableMargin {

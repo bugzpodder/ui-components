@@ -3,10 +3,7 @@ import { generateColHeaders, generateRowHeaders, validateGridData } from "./grid
 import { upperAlphaChars } from "@grail/lib";
 
 describe("validateGridData", () => {
-  const testGridData = [
-    ["alligator", "bat", "cat", "dog"],
-    ["elephant", "fox", null, null],
-  ];
+  const testGridData = [["alligator", "bat", "cat", "dog"], ["elephant", "fox", null, null]];
   const numRows = testGridData.length;
   const numCols = testGridData[0].length;
 
@@ -40,6 +37,6 @@ describe("generateRowHeaders", () => {
 
   it("should error when `numRows` is invalid", () => {
     expect(() => generateRowHeaders(-1)).toThrowError();
-    expect(() => generateRowHeaders(upperAlphaChars.length + 1)).toThrowError();
+    expect(() => generateRowHeaders(upperAlphaChars.length * 26)).toThrowError();
   });
 });

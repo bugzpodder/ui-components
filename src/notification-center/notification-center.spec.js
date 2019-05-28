@@ -1,13 +1,13 @@
 // @flow
 import "jest-dom/extend-expect";
 import React, { useState } from "react";
+import moment from "moment-timezone";
 import { NotificationCenter } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
 afterEach(cleanup);
 const testUtcTime = "2019-04-20T23:20:00+00:00";
-const expectedLocalTime = "2019-04-20 16:20:00";
 
 const TestNotificationCenter = props => {
   const { mockRemoveAllNotifications, mockRemoveNotification } = props;
@@ -63,7 +63,8 @@ test("render notification center", () => {
   expect(getByTestId(`notification-${testUtcTime}`)).toBeInTheDocument();
   expect(getByTestId("notification-type-error")).toBeInTheDocument();
   expect(getByTestId(`message-${testUtcTime}`)).toHaveTextContent("test");
-  expect(getByTestId(`time-${testUtcTime}`)).toHaveTextContent(expectedLocalTime);
+  const expectedTime = moment.tz(testUtcTime, "YYYY-MM-DDTHH:mm:ssZ", moment.tz.guess()).format("YYYY-MM-DD hh:mm:ss");
+  expect(getByTestId(`time-${testUtcTime}`)).toHaveTextContent(expectedTime);
 
   // Clear buttons.
   fireEvent.click(getByTestId("notifications-button"));

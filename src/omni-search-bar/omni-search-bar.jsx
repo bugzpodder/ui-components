@@ -21,6 +21,8 @@ type Props = {
   searchDefs: OmniSearchDefs,
   /** Handles a request to search. */
   setSearchOptions: ({ searchOptions: SearchOptionsV2 }) => any,
+  /** Handles a request to update search options but not perform the search. */
+  updateSearchOptions: ({ searchOptions: SearchOptionsV2 }) => any,
   /** getInitialValues gets values to default to for omni-search. */
   getInitialValues?: (searchDefs: OmniSearchDefs) => OmniSearchValues,
   /** Takes a `node` to include in the omni dropdown after the search fields */
@@ -197,10 +199,13 @@ export class OmniSearchBar extends React.Component<Props, State> {
   updateOmniText = (omniText: string): Promise<*> => {
     return new Promise(resolve => {
       this.setState(() => {
-        const { location = {}, searchDefs } = this.props;
+        const { location = {}, searchDefs, updateSearchOptions } = this.props;
         try {
           const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
           this.setValuesToLocalStorage(location.pathname, searchDefs, searchValues);
+          if (updateSearchOptions && !isEqual(searchValues, this.lastSearchedValues)) {
+            updateSearchOptions({ searchOptions: getSearchOptions(searchDefs, searchValues) });
+          }
           return {
             omniText,
             searchValues,

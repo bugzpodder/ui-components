@@ -10,7 +10,7 @@ type Props = {
   isSelected: boolean,
   classes: SelectionGridClasses,
   cellRenderer: GridCellInfo => Node,
-  onSelect: GridCellInfo => any,
+  onSelect?: GridCellInfo => any,
 };
 
 export const GridCell = (props: Props) => {
@@ -27,7 +27,7 @@ export const GridCell = (props: Props) => {
         [styles.isSelectable]: isSelectable,
         [styles.isEmpty]: isEmpty,
       })}
-      onClick={isSelectable ? onSelect.bind(this, gridCellInfo) : null}
+      onClick={isSelectable && onSelect ? onSelect.bind(this, gridCellInfo) : null}
     >
       <div
         data-testid={`selection-grid-cell-${gridCellInfo.cellIndex}`}

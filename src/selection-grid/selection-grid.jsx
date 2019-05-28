@@ -23,7 +23,7 @@ type Props = {
   cellRenderer: GridCellInfo => Node,
 
   /** Onclick handler for selecting cell */
-  onSelect: GridCellInfo => void,
+  onSelect?: GridCellInfo => void,
 
   /** Dictates whether to show the row/column header */
   showHeader?: boolean,
@@ -132,7 +132,7 @@ export const SelectionGrid = (props: Props) => {
                   key={cellIndex}
                   gridCellInfo={gridCellInfo}
                   classes={classes}
-                  isSelectable={isCellSelectable(gridCellInfo)}
+                  isSelectable={!!onSelect && isCellSelectable(gridCellInfo)}
                   isSelected={selectedIndices.has(cellIndex)}
                   isEmpty={isCellEmpty(gridCellInfo)}
                   onSelect={onSelect}

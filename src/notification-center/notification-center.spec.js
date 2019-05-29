@@ -6,6 +6,8 @@ import { NotificationCenter } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "react-testing-library";
 
+moment.tz.setDefault("America/Los_Angeles");
+
 afterEach(cleanup);
 const testUtcTime = "2019-04-20T23:20:00+00:00";
 
@@ -63,7 +65,7 @@ test("render notification center", () => {
   expect(getByTestId(`notification-${testUtcTime}`)).toBeInTheDocument();
   expect(getByTestId("notification-type-error")).toBeInTheDocument();
   expect(getByTestId(`message-${testUtcTime}`)).toHaveTextContent("test");
-  const expectedTime = moment.tz(testUtcTime, "YYYY-MM-DDTHH:mm:ssZ", moment.tz.guess()).format("YYYY-MM-DD hh:mm:ss");
+  const expectedTime = moment(testUtcTime).format("YYYY-MM-DD HH:mm:ss");
   expect(getByTestId(`time-${testUtcTime}`)).toHaveTextContent(expectedTime);
 
   // Clear buttons.

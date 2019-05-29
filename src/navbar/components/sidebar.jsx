@@ -104,7 +104,9 @@ export const Sidebar = (props: Props) => {
       exact = false, domain: itemDomain, path, name,
     } = item;
     const { currentPath, domain, InternalLinkComponent } = props;
-    if (InternalLinkComponent !== undefined && itemDomain === domain) {
+    const isPipelineUi =
+      (path && path.startsWith("/pipeline-ui")) || (currentPath && currentPath.startsWith("/pipeline-ui"));
+    if (InternalLinkComponent !== undefined && itemDomain === domain && !isPipelineUi) {
       const active = pathToRegexp(path, [], { end: exact }).test(currentPath);
       return (
         <ListItem
@@ -114,8 +116,6 @@ export const Sidebar = (props: Props) => {
           component={InternalLinkComponent}
           to={item.path}
           exact={exact.toString()}
-          // When navigating to or from pipeline-ui we want a full reload instead of react-router handling
-          target={path.startsWith("/pipeline-ui") || currentPath.startsWith("/pipeline-ui") ? "_self" : undefined}
           button
           className={classNames({ [styles.active]: active, [styles.nested]: nested })}
           dense={nested}
@@ -133,7 +133,8 @@ export const Sidebar = (props: Props) => {
       <ListItem
         key={key}
         data-testid={`${getListItemDataTestId(name)}`}
-        component={ExternalLink}
+        // When navigating to or from pipeline-ui we want a full reload instead of react-router handling
+        component={isPipelineUi ? "a" : ExternalLink}
         href={`${domainString}${path}`}
         button
         className={classNames({ [styles.nested]: nested })}

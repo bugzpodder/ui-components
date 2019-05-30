@@ -24,17 +24,9 @@ declare type CommonPageClasses = {
 };
 
 declare type CommonTabbedPageClasses = {
-  root?: string,
-  header?: string,
-  headerActions?: string,
-  title?: string,
-  subtitle?: string,
-  contentAndMenu?: string,
-  content?: string,
-  sideMenu?: string,
   tabs?: string,
   contentContainer?: string,
-};
+} & CommonPageClasses;
 
 declare type PageConfig = {
   key: string,
@@ -59,4 +51,41 @@ declare type HeaderAction = {
   href?: string,
   onClick?: Function,
   [string]: any,
+};
+
+declare type PageConfigV2 = {
+  key: string,
+  label: Node,
+  Component: React$ComponentType<*>,
+  componentProps: Object,
+  id?: string,
+  className?: string,
+  tabClasses?: Object,
+};
+
+declare type CommonPageV2Classes = {
+  root?: string,
+  header?: string,
+  headerActions?: string,
+  primaryActions?: string,
+  secondaryActions?: string,
+  titleContainer?: string,
+  title?: string,
+  subtitle?: string,
+  content?: string,
+};
+
+// TODO(nsawas): Figure out why flow fails when doing "& CommonPageV2Classes".
+declare type CommonTabbedPageV2Classes = {
+  root?: string,
+  header?: string,
+  headerActions?: string,
+  primaryActions?: string,
+  secondaryActions?: string,
+  titleContainer?: string,
+  title?: string,
+  subtitle?: string,
+  content?: string,
+  tabs?: string,
+  tab?: string,
 };

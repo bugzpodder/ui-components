@@ -58,7 +58,7 @@ module.exports = {
         "./src/common-panel/panel.jsx",
         "./src/sign-in-page/sign-in-page.jsx",
         "./src/spinner-overlay/spinner-overlay.jsx",
-        "./src/page/common-page.jsx",
+        "./src/page/page-v2/common-page-v2.jsx",
       ],
     },
     {
@@ -66,7 +66,7 @@ module.exports = {
       components: () => [
         "./src/common-dialog/dialog.jsx",
         "./src/common-dialog/multi-page-dialog.jsx",
-        "./src/page/common-tabbed-page.jsx",
+        "./src/page/page-v2/common-tabbed-page-v2.jsx",
         "./src/avatar-icon/avatar-icon.jsx",
         "./src/common-select/common-select.jsx",
         "./src/common-select/common-multi-select.jsx",

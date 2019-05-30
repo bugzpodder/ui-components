@@ -30,6 +30,7 @@
 24. Add `LinkButton` component and use it in `CommonPage`. As part of this, add `react-router-dom` as a peer dependency.
 25. Add `shadeOnHover` prop to `SimpleTable` and `PagedTable` (works only when `onHighlightRow` is defined). Enables
     rows to be highlighted when hovered over.
+26. Introduce CommonPageV2 and CommonTabbedPageV2 which are slimmer versions of the original CommonPage and CommonTabbedPage.
 
 ## 0.10.0 - 2019-04-01
 

@@ -2,9 +2,9 @@
 import "jest-dom/extend-expect";
 import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
-import { Alert, CommonSwitch } from "../index";
-import { CommonTabbedPage } from "./common-tabbed-page";
-import { TestWrapper } from "../test-utils";
+import { Alert, CommonSwitch } from "../../index";
+import { CommonTabbedPageV2 } from "./common-tabbed-page-v2";
+import { TestWrapper } from "../../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
@@ -18,9 +18,6 @@ const pageConfigs: Array<PageConfig> = [
     componentProps: {
       "data-testid": "alert-one",
       message: "Tab One!",
-    },
-    tabClasses: {
-      root: "test-tab-root",
     },
   },
   {
@@ -41,19 +38,6 @@ const pageConfigs: Array<PageConfig> = [
   },
 ];
 
-const headerActions = [
-  {
-    content: "Test Action",
-  },
-  {
-    Component: CommonSwitch,
-    componentProps: {
-      label: "CUSTOM ACTION",
-      onChange: () => {},
-    },
-  },
-];
-
 const TestCommonTabbedPage = props => {
   const { mockOnChange, ...otherProps } = props;
 
@@ -65,16 +49,29 @@ const TestCommonTabbedPage = props => {
 
   return (
     <TestWrapper>
-      <CommonTabbedPage
+      <CommonTabbedPageV2
         title="Test Card"
         activeTab={activeTab}
         pageConfigs={pageConfigs}
-        headerActions={headerActions}
+        primaryActions={[
+          {
+            content: "Test Action",
+          },
+        ]}
+        secondaryActions={[
+          {
+            Component: CommonSwitch,
+            componentProps: {
+              label: "CUSTOM ACTION",
+              onChange: () => {},
+            },
+          },
+        ]}
         {...otherProps}
         onChangeActiveTab={setChange}
       >
         <div data-testid="test">Test</div>
-      </CommonTabbedPage>
+      </CommonTabbedPageV2>
     </TestWrapper>
   );
 };
@@ -103,9 +100,9 @@ test("render common tabbed page", () => {
 });
 
 test("CommonTabbedPage classes", () => {
-  const { getByTestId } = render(<TestCommonTabbedPage classes={{ tabs: "test-tabs" }} />);
-  expect(getByTestId("card-tabs")).toHaveClass("test-tabs");
-  expect(getByTestId("tab-one")).toHaveClass("test-tab-root");
+  const { getByTestId } = render(<TestCommonTabbedPage classes={{ tabs: "test-tabs", tab: "test-tab" }} />);
+  expect(getByTestId("common-tabbed-page-tabs")).toHaveClass("test-tabs");
+  expect(getByTestId("tab-one")).toHaveClass("test-tab");
 });
 
 test("display loading tabbed page", () => {
@@ -122,7 +119,7 @@ test("require pageConfigs is defined", () => {
   expect(() =>
     render(
       <TestWrapper>
-        <CommonTabbedPage />
+        <CommonTabbedPageV2 />
       </TestWrapper>,
     ),
   ).toThrowError();

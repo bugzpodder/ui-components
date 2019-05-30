@@ -10,7 +10,9 @@ export { CommonPanel } from "./common-panel";
 export { CommonMultiSelect, CommonSelect } from "./common-select";
 export { CommonSuggest, SuggestionsOmniField } from "./common-suggest";
 export { CommonSwitch } from "./common-switch";
-export { CommonPage, CommonTabbedPage } from "./page";
+export {
+  CommonPage, CommonTabbedPage, CommonPageV2, CommonTabbedPageV2,
+} from "./page";
 export {
   DateValue, DateTimeValue, HumanizedDateTime, DateInput, DateTimeInput, wrapPickerUtilProvider,
 } from "./date";

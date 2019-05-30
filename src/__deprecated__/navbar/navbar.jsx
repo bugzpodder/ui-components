@@ -35,7 +35,6 @@ export const Navbar = (props: Props) => {
   const toggleSidebar = () => {
     setIsSidebarOpen(isSidebarOpen => !isSidebarOpen);
   };
-  console.error("Navbar is deprecated. Please convert to NavbarV2");
 
   return (
     <BaseNavbar

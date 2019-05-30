@@ -1,0 +1,72 @@
+@import "../../styles/colors";
+@import "./constants";
+
+.pageContainer {
+  .stickyHeader {
+    position: sticky;
+    z-index: 20;
+  }
+
+  // Wrapper around header items.
+  .pageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .titleContainer {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0 10px 24px;
+
+      .title {
+        font-weight: bold;
+      }
+    }
+
+    .tabs {
+      flex: 0 1 auto;
+      align-self: stretch;
+
+      .tabsContainer {
+        height: 100%;
+
+        .tab {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .headerActions {
+      flex: 0 0 auto;
+
+      > * + * {
+        margin-left: 5px;
+      }
+
+      .primaryActions {
+        display: inline-block;
+      }
+      .secondaryActionsButton {
+        display: inline-block;
+
+        .disabled {
+          color: transparent;
+        }
+      }
+    }
+  }
+
+  // Page content.
+  .content {
+    width: 100%;
+    overflow-y: auto;
+  }
+}
+
+// Wrapper around list of secondary actions.
+.secondaryActions {
+  > ul {
+    padding: 0;
+  }
+}

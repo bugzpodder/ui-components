@@ -2,8 +2,7 @@
 
 ```js
 import { ExampleWrapper } from "../test-utils";
-import { ReadOnlyTextField } from "@grail/components";
-import { CommonPage } from "./";
+import { ReadOnlyTextField, CommonPage } from "@grail/components";
 
 const ExampleCommonPage = () => {
   return (
@@ -42,7 +41,6 @@ uses CSS anchors and these do not work on styleguidist.
 ```js
 import { Alert, CommonSwitch, CommonPage } from "@grail/components";
 import { ExampleWrapper } from "../test-utils";
-import { Fragment } from "react";
 
 const ExampleCommonPage = () => {
   return (

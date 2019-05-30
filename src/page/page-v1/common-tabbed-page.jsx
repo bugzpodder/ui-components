@@ -3,7 +3,7 @@ import React, { type Node } from "react";
 import classNames from "classnames";
 import styles from "./common-tabbed-page.module.scss";
 import { CommonPage } from "./common-page";
-import { SpinnerOverlay } from "../spinner-overlay";
+import { SpinnerOverlay } from "../../spinner-overlay";
 import { TabsComponent } from "./components/tabs-component";
 
 type Props = {

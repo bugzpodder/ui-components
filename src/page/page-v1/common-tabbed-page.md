@@ -1,10 +1,9 @@
 ### Example
 
 ```js
-import { Alert } from "@grail/components";
+import { Alert, CommonTabbedPage } from "@grail/components";
 import { ExampleBlock, ExampleWrapper } from "../test-utils";
 import { Fragment, useState } from "react";
-import { CommonTabbedPage } from "./";
 
 const ExampleTabbedCard = () => {
   const [activeTab, setActiveTab] = useState("one");
@@ -66,9 +65,8 @@ uses CSS anchors and these do not work on styleguidist.
 
 ```js
 import { Fragment, useState } from "react";
-import { Alert, CommonSwitch } from "@grail/components";
-import { ExampleBlock, ExampleWrapper } from "../test-utils";
-import { CommonTabbedPage } from "./";
+import { Alert, CommonSwitch, CommonTabbedPage } from "@grail/components";
+import { ExampleBlock, ExampleWrapper } from "../../test-utils";
 
 const TabOneComponent = () => {
   return (

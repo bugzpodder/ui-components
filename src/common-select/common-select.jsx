@@ -2,6 +2,7 @@
 import React from "react";
 import isEmpty from "lodash/isEmpty";
 import isNil from "lodash/isNil";
+import isString from "lodash/isString";
 import { CommonSelectComponent } from "./common-select-component";
 import { ReadOnlyTextField } from "../index";
 
@@ -66,8 +67,9 @@ type CommonSelectProps = {
    * Optional initial options for `async`
    */
   options?: Array<CommonSelectOption>,
-  /** The content do display in the option menu item. Allows for customization of options to display
-   * information from the data object. When null will default to the `label` provided in the options object.
+  /** The content to display in the option menu item. Allows for customization
+   * of options to display information from the data object. When undefined
+   * will default to the `label` provided in the options object.
    */
   formatOption?: CommonSelectOption => Node,
   /**
@@ -101,7 +103,10 @@ export const CommonSelect = (props: CommonSelectProps) => {
 
   if (readOnly) {
     const label = value && value.label ? value.label : " - ";
-    return <ReadOnlyTextField>{label}</ReadOnlyTextField>;
+    if (isString(label)) {
+      return <ReadOnlyTextField>{label}</ReadOnlyTextField>;
+    }
+    return label;
   }
   const isAsyncSelect = selectType === "async";
   return (

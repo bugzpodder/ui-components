@@ -1,7 +1,7 @@
 // @flow
 // Suggestion object must include the following keys, but may also include others.
 declare type CommonSelectOption = {
-  label: string,
+  label: Node<*>,
   value: string,
   [string]: any,
 };

@@ -93,6 +93,7 @@ const TestPagedTable = () => {
         onSelect={handleSelection}
         selectedRows={tableOptions.selectedRowIds}
         onSort={handleSort}
+        shadeOnHover
         highlightedRowId={tableOptions.highlightedRowId}
         onHighlightRow={handleHighlight}
         isFullBleed

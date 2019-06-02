@@ -78,6 +78,8 @@ export type PagedTableProps = {
   /** If true, fill parent element with card and table (should specify parent height)
   If false, show as fixed height card. */
   isFullBleed?: boolean,
+  /** Displays rows as shade when hovered over. Can only be used with onHighlightRow */
+  shadeOnHover?: boolean,
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
@@ -113,7 +115,7 @@ export const PagedTable = (props: PagedTableProps) => {
   };
   const numberSelected = (selectedRows && selectedRows.length) || 0;
   const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
-
+  const hasHeaderActions = Array.isArray(headerActions) ? headerActions.length > 0 : !!headerActions;
   const tableHeaderActions = includeExportAsCsvButton ? (
     <Fragment>
       <ExportTableButton
@@ -121,12 +123,11 @@ export const PagedTable = (props: PagedTableProps) => {
         data={data}
         title={typeof title === "string" ? title : "data"}
       />
-      {headerActions}
+      {hasHeaderActions && headerActions}
     </Fragment>
   ) : (
-    <Fragment> {headerActions} </Fragment>
+    hasHeaderActions && headerActions
   );
-
   return (
     <Fragment>
       <CommonCard

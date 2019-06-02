@@ -54,6 +54,8 @@ type Props = {
   onSort?: Object => any,
   /** Enables the "select all" checkbox if specified (default: true). */
   enableSelectAll?: boolean,
+  /** Displays rows as shade when hovered over. Can only be used with onHighlightRow */
+  shadeOnHover?: boolean,
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */

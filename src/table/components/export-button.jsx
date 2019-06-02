@@ -10,7 +10,9 @@ type Props = {
 };
 
 export const ExportTableButton = (props: Props) => {
-  const { columns, data, title = "file" } = props;
+  const {
+    columns, data, title = "file", ...buttonProps
+  } = props;
   const reportColumns = columns.map(({ accessor, exportHeaderName }) => ({ accessor, exportHeaderName }));
   const formattedTitle = title
     .toString()
@@ -20,6 +22,7 @@ export const ExportTableButton = (props: Props) => {
   return (
     <Button
       data-testid={`export${title && `-${formattedTitle}`}`}
+      {...buttonProps}
       onClick={() => generateReport(`${title}.csv`, reportColumns, data)}
     >
       Export to CSV

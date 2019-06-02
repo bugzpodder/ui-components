@@ -28,6 +28,8 @@
 22. Introduce new `NavbarV2`, a slimmer version of the original Navbar. Tag `Navbar` as a soon-to-be-deprecated component.
 23. Convert `OmniDropdown` to `OmniDialog` to correctly handle scroll.
 24. Add `LinkButton` component and use it in `CommonPage`. As part of this, add `react-router-dom` as a peer dependency.
+25. Add `shadeOnHover` prop to `SimpleTable` and `PagedTable` (works only when `onHighlightRow` is defined). Enables
+    rows to be highlighted when hovered over.
 
 ## 0.10.0 - 2019-04-01
 

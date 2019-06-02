@@ -24,6 +24,7 @@ type Props = {
   highlightedRowId?: ?number | ?string,
   tableOptions?: SimpleTableOptions,
   enableSelectAll: boolean,
+  shadeOnHover: boolean,
 };
 
 export const TableComponent = (props: Props) => {
@@ -40,6 +41,7 @@ export const TableComponent = (props: Props) => {
     highlightedRowId,
     tableOptions,
     enableSelectAll,
+    shadeOnHover,
     ...tableProps
   } = props;
   const sortingProps = { onSort, tableOptions };
@@ -87,6 +89,7 @@ export const TableComponent = (props: Props) => {
                 columns={tableColumns}
                 rowId={rowId}
                 rowIndex={index}
+                shadeOnHover={shadeOnHover}
                 className={classes.rows || ""}
               />
             );

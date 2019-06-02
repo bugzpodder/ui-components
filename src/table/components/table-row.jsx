@@ -9,6 +9,7 @@ type Props = {
   columns: Array<PagedTableColumn>,
   instance: Object,
   rowId: string | number,
+  shadeOnHover: boolean,
   rowIndex: number,
   className?: string | Function,
   selectionProps: SelectionProps,
@@ -16,7 +17,7 @@ type Props = {
 
 export const PagedTableRow = (props: Props) => {
   const {
-    columns, instance, rowIndex, rowId, selectionProps,
+    columns, instance, rowIndex, rowId, selectionProps, shadeOnHover,
   } = props;
   const { highlightedRowId, onHighlightRow } = selectionProps;
   let { className } = props;
@@ -32,6 +33,7 @@ export const PagedTableRow = (props: Props) => {
       }}
       data-testid={rowId}
       key={rowId}
+      hover={onHighlightRow ? shadeOnHover : false}
       selected={rowIsHighlighted}
       onClick={onHighlightRow ? () => onHighlightRow(rowId) : undefined}
     >

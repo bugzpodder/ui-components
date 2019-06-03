@@ -1,33 +1,33 @@
-{
-  "env": {
-    "browser": true,
+module.exports = {
+  env: {
+    browser: true,
     "cypress/globals": true,
-    "es6": true,
-    "jest": true,
-    "node": true
+    es6: true,
+    jest: true,
+    node: true,
   },
-  "extends": [
+  extends: [
     "@grail/eslint-config-grail/src/front-end",
     "@grail/eslint-config-grail/src/flow",
-    "@grail/eslint-config-grail/src/cypress"
+    "@grail/eslint-config-grail/src/cypress",
   ],
-  "plugins": ["cypress", "flowtype", "import", "react", "filenames"],
-  "rules": {
+  plugins: ["cypress", "flowtype", "import", "react", "filenames"],
+  rules: {
     "no-restricted-imports": [
       "error",
       {
-        "paths": [
+        paths: [
           {
-            "name": "lodash",
-            "message": "Please import lodash functions directly, eg: import isEmpty from \"lodash/isEmpty\"."
+            name: "lodash",
+            message: 'Please import lodash functions directly, eg: import isEmpty from "lodash/isEmpty".',
           },
           {
-            "name": "@material-ui/core",
-            "message": "Please import material-ui components directly, eg: import Card from \"@material-ui/core/Card\"."
-          }
+            name: "@material-ui/core",
+            message: 'Please import material-ui components directly, eg: import Card from "@material-ui/core/Card".',
+          },
         ],
-        "patterns": ["@grail/lib/src/*", "@grail/components/src/*"]
-      }
+        patterns: ["@grail/lib/src/*", "@grail/components/src/*"],
+      },
     ],
 
     "function-paren-newline": 0,
@@ -50,6 +50,6 @@
     "consistent-return": 0,
     "arrow-parens": 0,
     "implicit-arrow-linebreak": 0,
-    "operator-linebreak": 0
-  }
-}
+    "operator-linebreak": 0,
+  },
+};

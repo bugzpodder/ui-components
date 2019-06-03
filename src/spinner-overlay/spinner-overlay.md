@@ -3,9 +3,11 @@
 **NOTE**: `SpinnerOverlay` container must specify a non static position, e.g. `position: relative;`.
 
 ```js
-const { Fragment } = require("react");
-const Button = require("@material-ui/core/Button").default;
-const styles = require("../test-utils/example-styles.module.scss");
+import { Fragment } from "react";
+import Button from "@material-ui/core/Button";
+import styles from "../test-utils/example-styles.module.scss";
+import { SpinnerOverlay } from "./";
+import { CommonCard } from "@grail/components";
 
 const SpinnerOverlayExample = () => (
   <div className={styles.spinnerContainer}>
@@ -30,9 +32,11 @@ const SpinnerOverlayExample = () => (
 ```
 
 ```js
-const { Fragment } = require("react");
-const Button = require("@material-ui/core/Button").default;
-const styles = require("../test-utils/example-styles.module.scss");
+import { Fragment } from "react";
+import Button from "@material-ui/core/Button";
+import styles from "../test-utils/example-styles.module.scss";
+import { SpinnerOverlay } from "./";
+import { CommonCard } from "@grail/components";
 
 const SpinnerOverlayExample = () => (
   <div className={styles.spinnerContainer}>

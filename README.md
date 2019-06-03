@@ -3,16 +3,15 @@ React components built using [Material-UI](https://material-ui.com/getting-start
 #### **Installation**
 
 - `yarn add react`
-- `yarn add material-ui`
+- `yarn add @material-ui/core @material-ui/icons @material-ui/styles`
 - To use the `DateInput` and `DateTimeInput` components:
-  - `yarn add material-ui-pickers`.
   - Wrap your application in the `wrapPickerUtilProvider` component.
 
 ###### **GRAIL Theme**
 
 - Wrap your application in the `StyleWrapper` component.
 
-#### **Running StyleGuidist**
+#### **Running StyleGuide**
 
 ```bash
 cd $GRAIL/ui/components

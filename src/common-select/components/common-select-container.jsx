@@ -1,6 +1,6 @@
 // @flow
-import AsyncSelect from "react-select/lib/Async";
-import CreatableSelect from "react-select/lib/Creatable";
+import AsyncSelect from "react-select/async";
+import CreatableSelect from "react-select/creatable";
 import React from "react";
 import Select from "react-select";
 

@@ -1,10 +1,11 @@
 ### Example
 
 ```js
-const { Fragment, useState } = require("react");
-const { ExampleBlock, ExampleWrapper, EXAMPLE_TABLE_DATA } = require("../test-utils");
-const Button = require("@material-ui/core/Button").default;
-const styles = require("../test-utils/example-styles.module.scss");
+import { Fragment, useState } from "react";
+import { ExampleBlock, ExampleWrapper, EXAMPLE_TABLE_DATA } from "../test-utils";
+import Button from "@material-ui/core/Button";
+import styles from "../test-utils/example-styles.module.scss";
+import { PagedTable } from "./";
 
 const TestPagedTable = () => {
   const [tableOptions, setTableOptions] = useState({

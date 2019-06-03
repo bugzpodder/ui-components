@@ -36,7 +36,6 @@ export const CommonSelectComponent = (props: Props) => {
   const {
     onChange,
     formatOption,
-
     menuIsOpen,
     classes = {},
     isFullWidth = false,

@@ -1,28 +1,32 @@
 ### Example
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { ReadOnlyTextField } from "./";
 <ExampleWrapper>
   <ReadOnlyTextField>Readonly text field</ReadOnlyTextField>
 </ExampleWrapper>;
 ```
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { ReadOnlyTextField } from "./";
 <ExampleWrapper>
   <ReadOnlyTextField icon="star">Starred</ReadOnlyTextField>
 </ExampleWrapper>;
 ```
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { ReadOnlyTextField } from "./";
 <ExampleWrapper>
   <ReadOnlyTextField />
 </ExampleWrapper>;
 ```
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { ReadOnlyTextField } from "./";
 <ExampleWrapper>
   <ReadOnlyTextField showEmptyValue />
 </ExampleWrapper>;

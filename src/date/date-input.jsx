@@ -2,7 +2,7 @@
 import React, { type ElementConfig } from "react";
 import styles from "./date-input.module.scss";
 import { DATE_FORMAT, DATE_INPUT_MASK } from "@grail/lib";
-import { DatePicker } from "material-ui-pickers";
+import { KeyboardDatePicker } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
 import { formatDate } from "./components/formatted-date-time";
 
@@ -19,12 +19,12 @@ type Props = {
   format?: string,
   /** Text to display beneath the date input */
   helperText?: string,
-} & ElementConfig<typeof DatePicker>;
+} & ElementConfig<typeof KeyboardDatePicker>;
 
 /** Provides component for common Date picker. */
 export const DateInput = (props: Props) => {
   const {
-    readOnly, showEmptyValue = false, value, format = DATE_FORMAT,
+    readOnly, showEmptyValue = false, value, onChange, format = DATE_FORMAT,
   } = props;
   if (readOnly) {
     return <ReadOnlyTextField showEmptyValue={showEmptyValue}>{formatDate(value, format)}</ReadOnlyTextField>;
@@ -34,8 +34,7 @@ export const DateInput = (props: Props) => {
   }
   return (
     <div className={styles.datePicker}>
-      <DatePicker
-        keyboard
+      <KeyboardDatePicker
         clearable
         InputAdornmentProps={{ className: styles.adornmentWidth }}
         KeyboardButtonProps={{ "data-testid": "date-picker-button" }}
@@ -46,6 +45,7 @@ export const DateInput = (props: Props) => {
         autoOk
         mask={DATE_INPUT_MASK}
         {...props}
+        onChange={(_, value) => onChange && onChange(value)}
         value={value || null}
         format={format}
       />

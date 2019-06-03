@@ -1,8 +1,9 @@
 ### Example
 
 ```js
-const Typography = require("@material-ui/core/Typography").default;
-const { ExampleWrapper } = require("../test-utils");
+import Typography from "@material-ui/core/Typography";
+import { ExampleWrapper } from "../test-utils";
+import { TwoColumnGrid } from "./";
 
 const rows = [
   {
@@ -25,8 +26,9 @@ const rows = [
 ```
 
 ```js
-const Typography = require("@material-ui/core/Typography").default;
-const { ExampleWrapper } = require("../test-utils");
+import Typography from "@material-ui/core/Typography";
+import { ExampleWrapper } from "../test-utils";
+import { TwoColumnGrid } from "./";
 const rows = [
   {
     label: "Label 4",
@@ -48,8 +50,9 @@ const rows = [
 ```
 
 ```js
-const Typography = require("@material-ui/core/Typography").default;
-const { ExampleWrapper } = require("../test-utils");
+import Typography from "@material-ui/core/Typography";
+import { ExampleWrapper } from "../test-utils";
+import { TwoColumnGrid } from "./";
 const rows = [
   {
     label: "Label 7",

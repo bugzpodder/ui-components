@@ -4,7 +4,7 @@ import React from "react";
 import { LinkButton } from "./link-button";
 import { MemoryRouter } from "react-router-dom";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

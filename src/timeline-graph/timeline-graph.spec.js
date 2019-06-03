@@ -5,7 +5,7 @@ import mockConsole from "jest-mock-console";
 import moment from "moment-timezone";
 import { TabbedTimelineCard, TimelineCard, TimelineGraph } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 moment.tz.setDefault("America/Los_Angeles");

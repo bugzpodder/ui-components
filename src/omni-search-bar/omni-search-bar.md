@@ -13,16 +13,17 @@ As an example, LIMS implementation wraps `OmniSearchBar` with redux to manage ap
 ### Example
 
 ```js
-const { ExampleBlock, ExampleWrapper } = require("../test-utils");
-const { wrapPickerUtilProvider } = require("@grail/components");
-const { useState } = require("react");
-const {
+import { ExampleBlock, ExampleWrapper } from "../test-utils";
+import { wrapPickerUtilProvider } from "@grail/components";
+import { useState } from "react";
+import { OmniSearchBar } from "./";
+import {
   OMNI_TEXT_SEARCH_TYPE,
   DATETIME_SEARCH_TYPE,
   FULL_TEXT_SEARCH_TYPE,
   LIKE_TEXT_SEARCH_TYPE,
   OMNI_KEY,
-} = require("@grail/lib");
+} from "@grail/lib";
 
 const searchDefs = [
   {

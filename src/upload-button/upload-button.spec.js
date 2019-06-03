@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { TestWrapper } from "../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 import "jest-dom/extend-expect";
 import { UploadButton } from ".";

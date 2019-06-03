@@ -3,8 +3,9 @@
 ### Default
 
 ```js
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const { Fragment, useState } = require("react");
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import { Fragment, useState } from "react";
+import { CommonSelect } from "./";
 
 const SelectExample = () => {
   const [value, setValue] = useState({});
@@ -24,8 +25,9 @@ const SelectExample = () => {
 ### Creatable
 
 ```js
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const { Fragment, useState } = require("react");
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import { Fragment, useState } from "react";
+import { CommonSelect } from "./";
 
 const SelectExample = () => {
   const [value, setValue] = useState({});
@@ -53,8 +55,9 @@ const SelectExample = () => {
 ### Asynchronous
 
 ```js
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const { Fragment, useState } = require("react");
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import { Fragment, useState } from "react";
+import { CommonSelect } from "./";
 
 const SelectExample = () => {
   const [value, setValue] = useState({});
@@ -93,10 +96,11 @@ const SelectExample = () => {
 ### Custom
 
 ```js
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const Chip = require("@material-ui/core/Chip").default;
-const { useState } = require("react");
-const styles = require("../test-utils/example-styles.module.scss");
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import Chip from "@material-ui/core/Chip";
+import { useState } from "react";
+import styles from "../test-utils/example-styles.module.scss";
+import { CommonSelect } from "./";
 
 const SelectExample = () => {
   const [value, setValue] = useState({});
@@ -109,7 +113,10 @@ const SelectExample = () => {
         isFullWidth
         helpertext="Choose a country"
         value={value}
-        options={COUNTRIES.map(country => ({ ...country, info: ["country", "place", "region"] }))}
+        options={COUNTRIES.map(country => ({
+          ...country,
+          info: ["country", "place", "region"],
+        }))}
         onChange={setValue}
         formatOption={item => (
           <div>

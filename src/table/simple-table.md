@@ -1,8 +1,9 @@
 ### Example
 
 ```js
-const { EXAMPLE_TABLE_DATA, ExampleBlock, ExampleWrapper } = require("../test-utils");
-const { useState } = require("react");
+import { EXAMPLE_TABLE_DATA, ExampleBlock, ExampleWrapper } from "../test-utils";
+import { useState } from "react";
+import { SimpleTable } from "./";
 
 const TestSimpleTable = () => {
   const [tableOptions, setTableOptions] = useState({

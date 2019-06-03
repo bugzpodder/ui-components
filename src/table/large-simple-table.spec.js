@@ -4,7 +4,7 @@ import React from "react";
 import mockConsole from "jest-mock-console";
 import { LargeSimpleTable } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, render } from "@testing-library/react";
 import { columns, data, tableOptions } from "./utilities/test-table-properties";
 
 afterEach(cleanup);

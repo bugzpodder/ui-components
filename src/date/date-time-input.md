@@ -3,9 +3,10 @@
 ##### NOTE: To use this component across any app, the app must be wrapped in the `wrapPickerUtilProvider` function imported from `@grail/components`;
 
 ```js
-const { wrapPickerUtilProvider } = require("@grail/components");
-const { ExampleWrapper } = require("../test-utils");
-const { useState } = require("react");
+import { wrapPickerUtilProvider } from "@grail/components";
+import { ExampleWrapper, ExampleBlock } from "../test-utils";
+import { useState } from "react";
+import { DateTimeInput } from "./";
 
 // You must wrap your app in the wrapPickerUtilProvider below
 const ExampleApp = wrapPickerUtilProvider(() => {
@@ -13,6 +14,7 @@ const ExampleApp = wrapPickerUtilProvider(() => {
   return (
     <div>
       <DateTimeInput value={value} onChange={setValue} label="Date & Time" />
+      <ExampleBlock content={value} />
     </div>
   );
 });

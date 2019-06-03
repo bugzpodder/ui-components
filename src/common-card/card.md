@@ -1,10 +1,10 @@
 ### Example
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
-const { Fragment } = require("react");
-const Button = require("@material-ui/core/Button").default;
-
+import { ExampleWrapper } from "../test-utils";
+import { Fragment } from "react";
+import Button from "@material-ui/core/Button";
+import { CommonCard } from "./";
 <ExampleWrapper>
   <CommonCard
     title="New Instrument"

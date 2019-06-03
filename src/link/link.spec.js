@@ -4,7 +4,7 @@ import React from "react";
 import { ExternalLink } from "./external-link";
 import { ExternalLinkButton } from "./external-link-button";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

@@ -142,6 +142,14 @@ declare module 'react-select/lib/animated/ValueContainer' {
   declare module.exports: any;
 }
 
+declare module 'react-select/async' {
+  declare module.exports: any;
+}
+
+declare module 'react-select/creatable' {
+  declare module.exports: any;
+}
+
 declare module 'react-select/lib/Async' {
   declare module.exports: any;
 }

@@ -151,6 +151,7 @@ export const CommonSuggest = (props: Props) => {
                 className={styles.commonSuggestPopper}
               >
                 <Paper
+                  elevation={2}
                   square
                   data-testid="items"
                 >

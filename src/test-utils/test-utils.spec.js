@@ -3,7 +3,7 @@ import "jest-dom/extend-expect";
 import React from "react";
 import { ExampleBlock } from "./example-block";
 import { TestWrapper } from "./test-wrapper";
-import { render } from "react-testing-library";
+import { render } from "@testing-library/react";
 
 test("render example block", () => {
   const { container, getByTestId } = render(

@@ -1,3 +1,4 @@
+// @flow
 import * as tableActions from "../utils/table";
 
 describe("Simple Table", () => {

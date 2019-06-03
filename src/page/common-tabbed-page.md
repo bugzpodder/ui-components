@@ -1,9 +1,10 @@
 ### Example
 
 ```js
-const { Alert } = require("@grail/components");
-const { ExampleBlock, ExampleWrapper } = require("../test-utils");
-const { Fragment, useState } = require("react");
+import { Alert } from "@grail/components";
+import { ExampleBlock, ExampleWrapper } from "../test-utils";
+import { Fragment, useState } from "react";
+import { CommonTabbedPage } from "./";
 
 const ExampleTabbedCard = () => {
   const [activeTab, setActiveTab] = useState("one");
@@ -64,9 +65,10 @@ matches the `key` given in the object in `menuContents`. However, it
 uses CSS anchors and these do not work on styleguidist.
 
 ```js
-const { Fragment, useState } = require("react");
-const { Alert, CommonSwitch } = require("@grail/components");
-const { ExampleBlock, ExampleWrapper } = require("../test-utils");
+import { Fragment, useState } from "react";
+import { Alert, CommonSwitch } from "@grail/components";
+import { ExampleBlock, ExampleWrapper } from "../test-utils";
+import { CommonTabbedPage } from "./";
 
 const TabOneComponent = () => {
   return (

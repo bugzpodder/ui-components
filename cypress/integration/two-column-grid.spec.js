@@ -1,3 +1,4 @@
+// @flow
 describe("Two Column Grid", () => {
   it("successfully loads", () => {
     cy.visit("/#!/TwoColumnGrid");

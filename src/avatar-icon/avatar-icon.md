@@ -1,11 +1,12 @@
 ### Example
 
 ```js
-const { ExampleWrapper, GRAIL } = require("../test-utils");
-const Button = require("@material-ui/core/Button").default;
-const Typography = require("@material-ui/core/Typography").default;
-const styles = require("../test-utils/example-styles.module.scss");
-const { useState } = require("react");
+import { ExampleWrapper, GRAIL } from "../test-utils";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import styles from "../test-utils/example-styles.module.scss";
+import { useState } from "react";
+import { AvatarIcon } from "./";
 
 const AvatarExample = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

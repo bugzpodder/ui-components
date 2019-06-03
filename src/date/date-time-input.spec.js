@@ -4,7 +4,7 @@ import React from "react";
 import mockConsole from "jest-mock-console";
 import { DateTimeInput } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, render } from "@testing-library/react";
 import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 
 afterEach(cleanup);

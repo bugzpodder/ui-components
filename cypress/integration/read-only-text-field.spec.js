@@ -1,3 +1,4 @@
+// @flow
 describe("ReadOnlyTextField", () => {
   it("successfully loads", () => {
     cy.visit("/#!/ReadOnlyTextField");

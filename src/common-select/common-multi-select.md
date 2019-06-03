@@ -3,9 +3,10 @@
 ### Default
 
 ```js
-const { Fragment, useState } = require("react");
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const styles = require("../test-utils/example-styles.module.scss");
+import { Fragment, useState } from "react";
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import styles from "../test-utils/example-styles.module.scss";
+import { CommonMultiSelect } from "./";
 
 const SelectExample = () => {
   const [values, setValues] = useState([]);
@@ -25,9 +26,10 @@ const SelectExample = () => {
 ### Creatable
 
 ```js
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const { Fragment, useState } = require("react");
-const styles = require("../test-utils/example-styles.module.scss");
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import { Fragment, useState } from "react";
+import styles from "../test-utils/example-styles.module.scss";
+import { CommonMultiSelect } from "./";
 
 const SelectExample = () => {
   const [values, setValues] = useState([]);
@@ -55,9 +57,10 @@ const SelectExample = () => {
 ### Asynchronous
 
 ```js
-const { Fragment, useEffect, useState } = require("react");
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const styles = require("../test-utils/example-styles.module.scss");
+import { Fragment, useEffect, useState } from "react";
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import styles from "../test-utils/example-styles.module.scss";
+import { CommonMultiSelect } from "./";
 
 const SelectExample = () => {
   const [values, setValues] = useState([]);
@@ -100,10 +103,11 @@ const SelectExample = () => {
 ### Custom
 
 ```js
-const { useState } = require("react");
-const { ExampleBlock, ExampleWrapper, COUNTRIES } = require("../test-utils");
-const Chip = require("@material-ui/core/Chip").default;
-const styles = require("../test-utils/example-styles.module.scss");
+import { useState } from "react";
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import Chip from "@material-ui/core/Chip";
+import styles from "../test-utils/example-styles.module.scss";
+import { CommonMultiSelect } from "./";
 
 const SelectExample = () => {
   const [values, setValues] = useState([]);
@@ -117,7 +121,10 @@ const SelectExample = () => {
         isFullWidth
         helpertext="Choose a country"
         values={values}
-        options={COUNTRIES.map(country => ({ ...country, info: ["country", "place", "region"] }))}
+        options={COUNTRIES.map(country => ({
+          ...country,
+          info: ["country", "place", "region"],
+        }))}
         onChange={setValues}
         formatOption={item => (
           <div>

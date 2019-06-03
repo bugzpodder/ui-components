@@ -1,14 +1,10 @@
 ### Example
 
 ```js
-const {
-  ExampleBlock,
-  ExampleWrapper,
-  LARGE_EXAMPLE_TABLE_DATA,
-  EXTRA_LARGE_EXAMPLE_TABLE_DATA,
-} = require("../test-utils");
-const Typography = require("@material-ui/core/Typography").default;
-const { useState } = require("react");
+import { ExampleBlock, ExampleWrapper, LARGE_EXAMPLE_TABLE_DATA, EXTRA_LARGE_EXAMPLE_TABLE_DATA } from "../test-utils";
+import Typography from "@material-ui/core/Typography";
+import { useState } from "react";
+import { LargeSimpleTable } from "./";
 
 const TestLargeSimpleTable = () => {
   const [tableOptions, setTableOptions] = useState({

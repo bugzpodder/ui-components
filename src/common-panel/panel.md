@@ -1,8 +1,8 @@
 ### Example
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
-
+import { ExampleWrapper } from "../test-utils";
+import { CommonPanel } from "./";
 <ExampleWrapper>
   <CommonPanel title="Panel Title" variant="h4">
     This is the body of the panel.
@@ -11,8 +11,8 @@ const { ExampleWrapper } = require("../test-utils");
 ```
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
-
+import { ExampleWrapper } from "../test-utils";
+import { CommonPanel } from "./";
 <ExampleWrapper>
   <CommonPanel title="Panel Title">This is the body of the panel.</CommonPanel>
 </ExampleWrapper>;

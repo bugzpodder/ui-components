@@ -14,10 +14,11 @@ type Props = {
  *  ExternalLink opens in a new tab, while ensuring that the link protects from:
  * https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
  */
-export const ExternalLink = (props: Props) => {
+export const ExternalLink = React.forwardRef<Props, any>((props: Props, ref: any) => {
   const { children, "data-testid": dataTestId = "external-link", ...aTagProps } = props;
   return (
     <a
+      ref={ref}
       data-testid={dataTestId}
       {...aTagProps}
       target="_blank"
@@ -26,4 +27,4 @@ export const ExternalLink = (props: Props) => {
       {children}
     </a>
   );
-};
+});

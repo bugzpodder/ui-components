@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
 import { ALPHABET_ANIMALS_DATA, TestWrapper } from "../test-utils";
 import { SelectionGrid } from "./selection-grid";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
@@ -88,7 +88,6 @@ test("selection grid classes", () => {
   const mockRowClass = jest.fn(result => result);
   const mockCellClass = jest.fn(result => result);
   expect(getByTestId("selection-grid")).toHaveClass("test-root");
-  expect(getByTestId("selection-grid-header")).toHaveClass("test-header");
   expect(getByTestId("selection-grid-row-1")).toHaveClass("test-row");
   expect(getByTestId("grid-cell-2")).toHaveClass("test-cell");
   expect(getByTestId("selection-grid-cell-2")).toHaveClass("test-content");

@@ -1,3 +1,4 @@
+// @flow
 describe("Common Panel", () => {
   it("successfully loads", () => {
     cy.visit("/#!/CommonPanel");

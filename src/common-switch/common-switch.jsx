@@ -74,10 +74,10 @@ export const CommonSwitch = (props: Props) => {
             id={id}
             checked={switchSelection}
             classes={{
-              iconChecked: classNames(errorClass),
+              checked: classNames(errorClass),
               colorPrimary: classNames(errorClass),
               colorSecondary: classNames(errorClass),
-              bar: classNames({ [styles.errorBar]: showError }),
+              track: classNames({ [styles.errorBar]: showError }),
             }}
             color={color}
             disabled={!isEnabled}

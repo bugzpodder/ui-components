@@ -13,7 +13,7 @@ import {
   invalidTableOptions,
   tableOptions,
 } from "./utilities/test-table-properties";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

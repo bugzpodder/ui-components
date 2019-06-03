@@ -1,9 +1,9 @@
 ### Example
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
-const moment = require("moment");
-
+import { ExampleWrapper } from "../test-utils";
+import moment from "moment";
+import { DateValue } from "./";
 <ExampleWrapper>
   <div>
     <DateValue value="2019-03-12" />
@@ -16,6 +16,6 @@ const moment = require("moment");
   </div>
   <div>
     <DateValue value={moment("2019-03-15T16:00Z")} />
-  </div> 
+  </div>
 </ExampleWrapper>;
 ```

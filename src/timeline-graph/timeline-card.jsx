@@ -50,6 +50,7 @@ export const TimelineCard = (props: Props) => {
   const { classes = {}, commonCardProps, ...timelineProps } = props;
   const { commonCard = {} } = classes;
   return (
+    // $FlowFixMe
     <div className={classNames(styles.timelineContainer, classes.root)}>
       <CommonCard
         classes={{
@@ -58,6 +59,7 @@ export const TimelineCard = (props: Props) => {
         }}
         {...commonCardProps}
       >
+        {/* $FlowFixMe */}
         <TimelineGraphComponent
           classes={classes}
           {...timelineProps}

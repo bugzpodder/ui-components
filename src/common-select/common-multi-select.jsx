@@ -74,11 +74,14 @@ type CommonMultiSelectProps = {
 };
 
 export const CommonMultiSelect = (props: CommonMultiSelectProps) => {
-  const { initialOptions, values, ...otherProps } = props;
+  const {
+    initialOptions, values, onChange, ...otherProps
+  } = props;
   return (
     <CommonSelectComponent
       defaultOptions={initialOptions}
       value={values}
+      onChange={values => onChange(values === null ? [] : values)}
       {...otherProps}
       isMulti
     />

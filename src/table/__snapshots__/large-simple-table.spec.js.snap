@@ -19,7 +19,8 @@ exports[`render full simple table 1`] = `
               class="headerText"
             >
               <span
-                class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-229 Mui-checked indeterminate"
               >
                 <span
                   class="MuiIconButton-label"
@@ -37,7 +38,7 @@ exports[`render full simple table 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="MuiPrivateSwitchBase-input"
+                    class="PrivateSwitchBase-input-231"
                     data-indeterminate="true"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -116,7 +117,8 @@ exports[`render full simple table 1`] = `
                     data-cell-id="First Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-229 Mui-checked active"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -134,7 +136,7 @@ exports[`render full simple table 1`] = `
                         </svg>
                         <input
                           checked=""
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-231"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-first-datum"
                           id="First Datum"
@@ -174,7 +176,7 @@ exports[`render full simple table 1`] = `
                     data-cell-id="First Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Second Datum
                     </p>
@@ -213,7 +215,8 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Fourth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-229 Mui-checked active"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -231,7 +234,7 @@ exports[`render full simple table 1`] = `
                         </svg>
                         <input
                           checked=""
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-231"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-fourth-datum"
                           id="Fourth Datum"
@@ -271,7 +274,7 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Fourth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifth Datum
                     </p>
@@ -310,7 +313,8 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Seventh Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -327,7 +331,7 @@ exports[`render full simple table 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-231"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-seventh-datum"
                           id="Seventh Datum"
@@ -367,7 +371,7 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Seventh Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighth Datum
                     </p>
@@ -406,7 +410,8 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Tenth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -423,7 +428,7 @@ exports[`render full simple table 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-231"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-tenth-datum"
                           id="Tenth Datum"
@@ -463,7 +468,7 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Tenth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eleventh Datum
                     </p>
@@ -502,7 +507,8 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Thirteenth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -519,7 +525,7 @@ exports[`render full simple table 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-231"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-thirteenth-datum"
                           id="Thirteenth Datum"
@@ -559,7 +565,7 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Thirteenth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifteenth Datum
                     </p>
@@ -598,7 +604,8 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Seventeenth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -615,7 +622,7 @@ exports[`render full simple table 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-231"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-seventeenth-datum"
                           id="Seventeenth Datum"
@@ -655,7 +662,7 @@ exports[`render full simple table 1`] = `
                     data-cell-id="Seventeenth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighteenth Datum
                     </p>
@@ -793,7 +800,7 @@ exports[`render loading simple table 1`] = `
                     data-cell-id="0-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Second Datum
                     </p>
@@ -847,7 +854,7 @@ exports[`render loading simple table 1`] = `
                     data-cell-id="1-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifth Datum
                     </p>
@@ -901,7 +908,7 @@ exports[`render loading simple table 1`] = `
                     data-cell-id="2-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighth Datum
                     </p>
@@ -955,7 +962,7 @@ exports[`render loading simple table 1`] = `
                     data-cell-id="3-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eleventh Datum
                     </p>
@@ -1009,7 +1016,7 @@ exports[`render loading simple table 1`] = `
                     data-cell-id="4-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifteenth Datum
                     </p>
@@ -1063,7 +1070,7 @@ exports[`render loading simple table 1`] = `
                     data-cell-id="5-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighteenth Datum
                     </p>
@@ -1210,7 +1217,7 @@ exports[`render simple table 1`] = `
                     data-cell-id="0-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Second Datum
                     </p>
@@ -1264,7 +1271,7 @@ exports[`render simple table 1`] = `
                     data-cell-id="1-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifth Datum
                     </p>
@@ -1318,7 +1325,7 @@ exports[`render simple table 1`] = `
                     data-cell-id="2-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighth Datum
                     </p>
@@ -1372,7 +1379,7 @@ exports[`render simple table 1`] = `
                     data-cell-id="3-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eleventh Datum
                     </p>
@@ -1426,7 +1433,7 @@ exports[`render simple table 1`] = `
                     data-cell-id="4-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifteenth Datum
                     </p>
@@ -1480,7 +1487,7 @@ exports[`render simple table 1`] = `
                     data-cell-id="5-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighteenth Datum
                     </p>
@@ -1544,7 +1551,8 @@ exports[`render simple table with all items selected 1`] = `
               class="headerText"
             >
               <span
-                class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-158 Mui-checked indeterminate"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1562,7 +1570,7 @@ exports[`render simple table with all items selected 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="MuiPrivateSwitchBase-input"
+                    class="PrivateSwitchBase-input-160"
                     data-indeterminate="true"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -1641,7 +1649,8 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="First Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-158 Mui-checked active"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1659,7 +1668,7 @@ exports[`render simple table with all items selected 1`] = `
                         </svg>
                         <input
                           checked=""
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-160"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-first-datum"
                           id="First Datum"
@@ -1699,7 +1708,7 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="First Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Second Datum
                     </p>
@@ -1738,7 +1747,8 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Fourth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-158 Mui-checked active"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1756,7 +1766,7 @@ exports[`render simple table with all items selected 1`] = `
                         </svg>
                         <input
                           checked=""
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-160"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-fourth-datum"
                           id="Fourth Datum"
@@ -1796,7 +1806,7 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Fourth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifth Datum
                     </p>
@@ -1835,7 +1845,8 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Seventh Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1852,7 +1863,7 @@ exports[`render simple table with all items selected 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-160"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-seventh-datum"
                           id="Seventh Datum"
@@ -1892,7 +1903,7 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Seventh Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighth Datum
                     </p>
@@ -1931,7 +1942,8 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Tenth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1948,7 +1960,7 @@ exports[`render simple table with all items selected 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-160"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-tenth-datum"
                           id="Tenth Datum"
@@ -1988,7 +2000,7 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Tenth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eleventh Datum
                     </p>
@@ -2027,7 +2039,8 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Thirteenth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -2044,7 +2057,7 @@ exports[`render simple table with all items selected 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-160"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-thirteenth-datum"
                           id="Thirteenth Datum"
@@ -2084,7 +2097,7 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Thirteenth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifteenth Datum
                     </p>
@@ -2123,7 +2136,8 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Seventeenth Datum-0"
                   >
                     <span
-                      class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      aria-disabled="false"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -2140,7 +2154,7 @@ exports[`render simple table with all items selected 1`] = `
                           />
                         </svg>
                         <input
-                          class="MuiPrivateSwitchBase-input"
+                          class="PrivateSwitchBase-input-160"
                           data-indeterminate="false"
                           data-testid="table-checkbox-cell-seventeenth-datum"
                           id="Seventeenth Datum"
@@ -2180,7 +2194,7 @@ exports[`render simple table with all items selected 1`] = `
                     data-cell-id="Seventeenth Datum-2"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighteenth Datum
                     </p>
@@ -2284,7 +2298,7 @@ exports[`render simple table with dynamic row height 1`] = `
             <div
               class="ReactVirtualized__Grid__innerScrollContainer"
               role="rowgroup"
-              style="width: auto; height: 530px; max-width: 100px; max-height: 530px; overflow: hidden; position: relative;"
+              style="width: auto; height: 750px; max-width: 100px; max-height: 750px; overflow: hidden; position: relative;"
             >
               <div
                 aria-rowindex="1"
@@ -2318,7 +2332,7 @@ exports[`render simple table with dynamic row height 1`] = `
                     data-cell-id="First Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Second Datum
                     </p>
@@ -2372,7 +2386,7 @@ exports[`render simple table with dynamic row height 1`] = `
                     data-cell-id="Fourth Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifth Datum
                     </p>
@@ -2426,7 +2440,7 @@ exports[`render simple table with dynamic row height 1`] = `
                     data-cell-id="Seventh Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighth Datum
                     </p>
@@ -2480,7 +2494,7 @@ exports[`render simple table with dynamic row height 1`] = `
                     data-cell-id="Tenth Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eleventh Datum
                     </p>
@@ -2534,7 +2548,7 @@ exports[`render simple table with dynamic row height 1`] = `
                     data-cell-id="Thirteenth Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifteenth Datum
                     </p>
@@ -2552,6 +2566,60 @@ exports[`render simple table with dynamic row height 1`] = `
                   >
                     <span>
                       Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="6"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 250px; left: 0px; position: absolute; top: 500px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-0"
+                  >
+                    <span>
+                      Seventeenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Eighteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventeenth Datum-2"
+                  >
+                    <span>
+                      Ninteenth Datum
                     </span>
                   </div>
                 </div>
@@ -2585,7 +2653,7 @@ exports[`render simple table with no results 1`] = `
     class="tableContainer"
   >
     <p
-      class="MuiTypography-root MuiTypography-body2"
+      class="MuiTypography-root MuiTypography-body1"
     >
       No data
     </p>
@@ -2738,7 +2806,7 @@ exports[`render simple table with set row height 1`] = `
             <div
               class="ReactVirtualized__Grid__innerScrollContainer"
               role="rowgroup"
-              style="width: auto; height: 405px; max-width: 100px; max-height: 405px; overflow: hidden; position: relative;"
+              style="width: auto; height: 450px; max-width: 100px; max-height: 450px; overflow: hidden; position: relative;"
             >
               <div
                 aria-rowindex="1"
@@ -2772,7 +2840,7 @@ exports[`render simple table with set row height 1`] = `
                     data-cell-id="First Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Second Datum
                     </p>
@@ -2826,7 +2894,7 @@ exports[`render simple table with set row height 1`] = `
                     data-cell-id="Fourth Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifth Datum
                     </p>
@@ -2880,7 +2948,7 @@ exports[`render simple table with set row height 1`] = `
                     data-cell-id="Seventh Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eighth Datum
                     </p>
@@ -2934,7 +3002,7 @@ exports[`render simple table with set row height 1`] = `
                     data-cell-id="Tenth Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Eleventh Datum
                     </p>
@@ -2988,7 +3056,7 @@ exports[`render simple table with set row height 1`] = `
                     data-cell-id="Thirteenth Datum-1"
                   >
                     <p
-                      class="MuiTypography-root MuiTypography-body2"
+                      class="MuiTypography-root MuiTypography-body1"
                     >
                       Fifteenth Datum
                     </p>
@@ -3006,6 +3074,60 @@ exports[`render simple table with set row height 1`] = `
                   >
                     <span>
                       Sixteenth Datum
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-rowindex="6"
+                class="ReactVirtualized__Table__row row"
+                role="row"
+                style="height: 75px; left: 0px; position: absolute; top: 375px; width: 100px; overflow: hidden; padding-right: 0px;"
+              >
+                <div
+                  aria-colindex="1"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-0"
+                  >
+                    <span>
+                      Seventeenth Datum
+                    </span>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="2"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="tableCell"
+                    data-cell-id="Seventeenth Datum-1"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1"
+                    >
+                      Eighteenth Datum
+                    </p>
+                  </div>
+                </div>
+                <div
+                  aria-colindex="3"
+                  class="ReactVirtualized__Table__rowColumn"
+                  role="gridcell"
+                  style="flex: 1 1 50px; overflow: hidden;"
+                >
+                  <div
+                    class="test-third-datum-className tableCell"
+                    data-cell-id="Seventeenth Datum-2"
+                  >
+                    <span>
+                      Ninteenth Datum
                     </span>
                   </div>
                 </div>

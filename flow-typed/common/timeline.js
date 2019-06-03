@@ -1,8 +1,9 @@
+// @flow
 declare type TimelineTabProps = {
   content: Array<TimelineGraphRow>,
   isDayVisible?: boolean,
   isTimeVisible?: boolean,
-}
+};
 
 declare type TabbedTimelineGraphContents = {
   [string]: TimelineTabProps,
@@ -21,7 +22,7 @@ declare type TimelineGraphClasses = {
   item?: string,
   itemContent?: string,
   username?: string,
-}
+};
 
 declare type TimelineCardClasses = {
   commonCard?: CommonCardClasses,

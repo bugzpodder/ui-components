@@ -1,3 +1,4 @@
+// @flow
 describe("Date Input", () => {
   it("successfully loads", () => {
     cy.visit("/#!/DateInput");

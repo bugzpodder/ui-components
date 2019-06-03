@@ -3,11 +3,12 @@
 ##### NOTE: To use this component across any app, the app must be wrapped in the `wrapPickerUtilProvider` function imported from `@grail/components`;
 
 ```js
-const Typography = require("@material-ui/core/Typography").default;
-const styles = require("../test-utils/example-styles.module.scss");
-const { ExampleWrapper } = require("../test-utils");
-const { wrapPickerUtilProvider } = require("@grail/components");
-const { useState } = require("react");
+import Typography from "@material-ui/core/Typography";
+import styles from "../test-utils/example-styles.module.scss";
+import { ExampleWrapper, ExampleBlock } from "../test-utils";
+import { wrapPickerUtilProvider } from "@grail/components";
+import { useState } from "react";
+import { DateInput } from "./";
 
 // You must wrap your app in the wrapPickerUtilProvider.
 const ExampleApp = wrapPickerUtilProvider(() => {
@@ -20,7 +21,9 @@ const ExampleApp = wrapPickerUtilProvider(() => {
         Labels will persist above the input field, while placeholders will disappear upon selecting a value
       </Typography>
       <DateInput className={styles.spacing} value={dateOne} onChange={setDateOne} label="Release Date" />
+      <ExampleBlock content={dateOne} />
       <DateInput value={dateTwo} onChange={setDateTwo} placeholder="Release Date" className={styles.spacing} />
+      <ExampleBlock content={dateTwo} />
     </div>
   );
 });

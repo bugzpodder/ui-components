@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import React from "react";
 import { StyleWrapper } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

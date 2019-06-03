@@ -1,3 +1,4 @@
+// @flow
 describe("Common Dialog", () => {
   it("successfully loads", () => {
     cy.visit("/#!/CommonDialog");

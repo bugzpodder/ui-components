@@ -1,8 +1,8 @@
 ### Simple TimelineCard
 
 ```js
-const { ADAMS_DATA, ExampleWrapper } = require("../test-utils");
-
+import { ADAMS_DATA, ExampleWrapper } from "../test-utils";
+import { TimelineCard } from "./";
 <ExampleWrapper>
   <TimelineCard
     rows={ADAMS_DATA}
@@ -24,8 +24,9 @@ const { ADAMS_DATA, ExampleWrapper } = require("../test-utils");
 ### Selectable TimelineCard (with Time)
 
 ```js
-const { ExampleBlock, ExampleWrapper, ADAMS_DATA } = require("../test-utils");
-const { useState } = require("react");
+import { ExampleBlock, ExampleWrapper, ADAMS_DATA } from "../test-utils";
+import { useState } from "react";
+import { TimelineCard } from "./";
 
 const ExampleTimelineCard = () => {
   const [selectedItem, setSelectedItem] = useState(null);

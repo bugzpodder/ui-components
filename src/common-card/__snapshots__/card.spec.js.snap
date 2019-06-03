@@ -14,13 +14,13 @@ exports[`common card classes and margin 1`] = `
         class="MuiCardHeader-content"
       >
         <span
-          class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title card-title test-title"
+          class="MuiTypography-root MuiTypography-h5 MuiTypography-displayBlock MuiCardHeader-title card-title test-title"
           data-testid="card-title"
         >
           Test Card
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiCardHeader-subheader test-subheader"
+          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock MuiCardHeader-subheader test-subheader"
           data-testid="card-subheader"
         />
       </div>
@@ -28,7 +28,7 @@ exports[`common card classes and margin 1`] = `
         class="MuiCardHeader-action headerActions"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           tabindex="0"
           type="button"
         >
@@ -50,12 +50,10 @@ exports[`common card classes and margin 1`] = `
       This is a test
     </div>
     <div
-      class="MuiCardActions-root test-footer"
+      class="MuiCardActions-root test-footer MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
-      <span
-        class="MuiCardActions-action footerActions"
-      >
+      <span>
         test
       </span>
     </div>

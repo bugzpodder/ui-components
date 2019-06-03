@@ -5,9 +5,10 @@ All the props of `TextField` are included for `TextInput`.
 ### Example
 
 ```js
-const styles = require("../test-utils/example-styles.module.scss");
-const { ExampleWrapper } = require("../test-utils");
-const { useState } = require("react");
+import styles from "../test-utils/example-styles.module.scss";
+import { ExampleWrapper } from "../test-utils";
+import { useState } from "react";
+import { TextInput } from "./";
 
 const TextInputExample = () => {
   const [one, setOne] = useState("");
@@ -59,7 +60,10 @@ const TextInputExample = () => {
       <TextInput
         readOnly={true}
         ReadOnlyComponent="div"
-        readOnlyComponentProps={{ className: "example-classname", style: { color: "red", fontSize: "32px" } }}
+        readOnlyComponentProps={{
+          className: "example-classname",
+          style: { color: "red", fontSize: "32px" },
+        }}
         placeholder="Text Field"
         value="read-only value"
         className={styles.spacing}

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import moment from "moment-timezone";
 import { NotificationCenter } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 moment.tz.setDefault("America/Los_Angeles");
 

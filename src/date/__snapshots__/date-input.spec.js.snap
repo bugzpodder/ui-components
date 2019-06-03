@@ -6,7 +6,7 @@ exports[`render date time input 1`] = `
     class="datePicker"
   >
     <div
-      class="MuiFormControl-root"
+      class="MuiFormControl-root MuiTextField-root"
       data-testid="date-input"
     >
       <div
@@ -17,7 +17,7 @@ exports[`render date time input 1`] = `
           class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
           placeholder="Test Date Input"
           type="text"
-          value=""
+          value="2016-03-07"
         />
         <div
           class="MuiInputAdornment-root MuiInputAdornment-positionEnd adornmentWidth"

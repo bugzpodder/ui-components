@@ -3,7 +3,8 @@
 exports[`render upload button with default text 1`] = `
 <div>
   <label
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary"
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiButton-root MuiButton-containedPrimary MuiButton-contained"
     data-testid="upload-button"
     role="button"
     tabindex="0"
@@ -43,7 +44,8 @@ exports[`render upload button with default text 1`] = `
 exports[`render upload button with default text and default props for uploading multiple files 1`] = `
 <div>
   <label
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary"
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiButton-root MuiButton-containedPrimary MuiButton-contained"
     data-testid="upload-button"
     role="button"
     tabindex="0"
@@ -79,7 +81,8 @@ exports[`render upload button with default text and default props for uploading 
     />
   </label>
   <label
-    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-flat"
+    aria-disabled="false"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
     role="button"
     tabindex="0"
   >

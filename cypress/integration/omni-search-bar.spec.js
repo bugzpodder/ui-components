@@ -1,3 +1,4 @@
+// @flow
 describe("OmniSearchBar", () => {
   it("successfully loads", () => {
     cy.visit("/#!/OmniSearchBar");

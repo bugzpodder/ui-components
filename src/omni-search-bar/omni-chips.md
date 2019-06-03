@@ -1,16 +1,17 @@
 ### Example
 
 ```js
-const { ExampleBlock, ExampleWrapper } = require("../test-utils");
-const { useState } = require("react");
-const {
+import { ExampleBlock, ExampleWrapper } from "../test-utils";
+import { useState } from "react";
+import { OmniChips } from "./";
+import {
   OMNI_TEXT_SEARCH_TYPE,
   DATETIME_SEARCH_TYPE,
   FULL_TEXT_SEARCH_TYPE,
   LIKE_TEXT_SEARCH_TYPE,
   OMNI_KEY,
   SET_OMNI_FIELD_COMMAND,
-} = require("@grail/lib");
+} from "@grail/lib";
 
 const initialSearchOptions = [
   {

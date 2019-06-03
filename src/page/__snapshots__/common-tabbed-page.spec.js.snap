@@ -17,13 +17,13 @@ exports[`render common tabbed page 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-displayBlock MuiCardHeader-title header-title"
             data-testid="common-page-title"
           >
             Test Card
           </span>
           <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock MuiCardHeader-subheader"
             data-testid="common-page-subtitle"
           />
         </div>
@@ -31,7 +31,7 @@ exports[`render common tabbed page 1`] = `
           class="MuiCardHeader-action headerActions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-text"
             tabindex="0"
             type="button"
           >
@@ -54,16 +54,17 @@ exports[`render common tabbed page 1`] = `
                 class="MuiSwitch-root"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-102 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <span
-                      class="MuiSwitch-icon"
+                      class="MuiSwitch-thumb"
                     />
                     <input
-                      class="MuiPrivateSwitchBase-input"
+                      class="PrivateSwitchBase-input-105 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
@@ -71,11 +72,11 @@ exports[`render common tabbed page 1`] = `
                   </span>
                 </span>
                 <span
-                  class="MuiSwitch-bar"
+                  class="MuiSwitch-track"
                 />
               </span>
               <span
-                class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
+                class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 CUSTOM ACTION
               </span>
@@ -94,14 +95,14 @@ exports[`render common tabbed page 1`] = `
           <div
             class="MuiTabs-scroller MuiTabs-fixed"
             role="tablist"
-            style="margin-bottom: 0px;"
+            style="overflow: hidden;"
           >
             <div
               class="MuiTabs-flexContainer"
             >
               <button
                 aria-selected="true"
-                class="MuiButtonBase-root MuiTab-root test-tab-root tab tabbed-page-tab MuiTab-textColorPrimary MuiTab-selected"
+                class="MuiButtonBase-root MuiTab-root test-tab-root tab tabbed-page-tab MuiTab-textColorPrimary Mui-selected"
                 data-testid="tab-one"
                 id="tab-one"
                 role="tab"
@@ -111,15 +112,7 @@ exports[`render common tabbed page 1`] = `
                 <span
                   class="MuiTab-wrapper"
                 >
-                  <span
-                    class="MuiTab-labelContainer"
-                  >
-                    <span
-                      class="MuiTab-label"
-                    >
-                      Tab One
-                    </span>
-                  </span>
+                  Tab One
                 </span>
                 <span
                   class="MuiTouchRipple-root"
@@ -137,15 +130,7 @@ exports[`render common tabbed page 1`] = `
                 <span
                   class="MuiTab-wrapper"
                 >
-                  <span
-                    class="MuiTab-labelContainer"
-                  >
-                    <span
-                      class="MuiTab-label"
-                    >
-                      Tab Two
-                    </span>
-                  </span>
+                  Tab Two
                 </span>
                 <span
                   class="MuiTouchRipple-root"
@@ -163,15 +148,7 @@ exports[`render common tabbed page 1`] = `
                 <span
                   class="MuiTab-wrapper"
                 >
-                  <span
-                    class="MuiTab-labelContainer"
-                  >
-                    <span
-                      class="MuiTab-label"
-                    >
-                      Tab Three
-                    </span>
-                  </span>
+                  Tab Three
                 </span>
                 <span
                   class="MuiTouchRipple-root"
@@ -179,7 +156,7 @@ exports[`render common tabbed page 1`] = `
               </button>
             </div>
             <span
-              class="MuiPrivateTabIndicator-root MuiPrivateTabIndicator-colorPrimary MuiTabs-indicator"
+              class="PrivateTabIndicator-root-134 PrivateTabIndicator-colorPrimary-135 MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>

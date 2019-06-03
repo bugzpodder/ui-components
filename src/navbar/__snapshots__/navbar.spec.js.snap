@@ -51,12 +51,12 @@ exports[`navbar with breast cancer logo 1`] = `
           />
         </button>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           breadcrumbs
         </p>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           left
         </p>
@@ -66,7 +66,7 @@ exports[`navbar with breast cancer logo 1`] = `
         data-testid="navbar-center"
       >
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           center
         </p>
@@ -139,7 +139,7 @@ exports[`navbar with breast cancer logo 1`] = `
           </svg>
         </div>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           right
         </p>
@@ -200,12 +200,12 @@ exports[`render default Sidebar 1`] = `
           />
         </button>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           breadcrumbs
         </p>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           left
         </p>
@@ -215,7 +215,7 @@ exports[`render default Sidebar 1`] = `
         data-testid="navbar-center"
       >
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           center
         </p>
@@ -263,7 +263,7 @@ exports[`render default Sidebar 1`] = `
           </svg>
         </div>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           right
         </p>
@@ -320,12 +320,12 @@ exports[`render default Sidebar 2`] = `
           />
         </button>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           breadcrumbs
         </p>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           left
         </p>
@@ -335,7 +335,7 @@ exports[`render default Sidebar 2`] = `
         data-testid="navbar-center"
       >
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           center
         </p>
@@ -383,7 +383,7 @@ exports[`render default Sidebar 2`] = `
           </svg>
         </div>
         <p
-          class="MuiTypography-root MuiTypography-body2"
+          class="MuiTypography-root MuiTypography-body1"
         >
           right
         </p>

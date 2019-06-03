@@ -1,21 +1,24 @@
 ### Example
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { ValidatedReadOnlyTextField } from "./";
 <ExampleWrapper>
   <ValidatedReadOnlyTextField isValid>yes</ValidatedReadOnlyTextField>
 </ExampleWrapper>;
 ```
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { ValidatedReadOnlyTextField } from "./";
 <ExampleWrapper>
   <ValidatedReadOnlyTextField isValid={false}>no</ValidatedReadOnlyTextField>
 </ExampleWrapper>;
 ```
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { ValidatedReadOnlyTextField } from "./";
 <ExampleWrapper>
   <ValidatedReadOnlyTextField isNA>N/A</ValidatedReadOnlyTextField>
 </ExampleWrapper>;

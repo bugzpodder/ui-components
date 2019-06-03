@@ -9,19 +9,19 @@ exports[`render simple timeline graph 1`] = `
       class="timelineContent"
     >
       <div
-        class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-year-0"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-0"
           >
             20 Apr
@@ -49,19 +49,19 @@ exports[`render simple timeline graph 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center lastItem"
+        class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-year-1"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-1"
           >
             20 Apr
@@ -92,7 +92,7 @@ exports[`render simple timeline graph 1`] = `
                   data-testid="avatar-icon"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root userButton MuiIconButton-colorInherit MuiIconButton-disabled"
+                    class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
                     data-testid="timeline-avatar"
                     disabled=""
                     id="timeline-avatar"
@@ -141,25 +141,25 @@ exports[`render simple timeline graph with time 1`] = `
       class="timelineContent"
     >
       <div
-        class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-year-0"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-0"
           >
             20 Apr
           </p>
           <p
-            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-time-0"
           >
             16:20
@@ -187,25 +187,25 @@ exports[`render simple timeline graph with time 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center lastItem"
+        class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-year-1"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-1"
           >
             20 Apr
           </p>
           <p
-            class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-time-1"
           >
             16:20
@@ -236,7 +236,7 @@ exports[`render simple timeline graph with time 1`] = `
                   data-testid="avatar-icon"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root userButton MuiIconButton-colorInherit MuiIconButton-disabled"
+                    class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
                     data-testid="timeline-avatar"
                     disabled=""
                     id="timeline-avatar"
@@ -293,19 +293,19 @@ exports[`test selecting an item on the timeline card 1`] = `
           class="timelineContent"
         >
           <div
-            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
                 20 Apr
@@ -333,19 +333,19 @@ exports[`test selecting an item on the timeline card 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center lastItem"
+            class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-year-1"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-1"
               >
                 20 Apr
@@ -376,7 +376,7 @@ exports[`test selecting an item on the timeline card 1`] = `
                       data-testid="avatar-icon"
                     >
                       <button
-                        class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root userButton MuiIconButton-colorInherit MuiIconButton-disabled"
+                        class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
                         data-testid="timeline-avatar"
                         disabled=""
                         id="timeline-avatar"
@@ -444,14 +444,14 @@ exports[`test tabbed timeline cartd 1`] = `
               <div
                 class="MuiTabs-scroller MuiTabs-fixed"
                 role="tablist"
-                style="margin-bottom: 0px;"
+                style="overflow: hidden;"
               >
                 <div
                   class="MuiTabs-flexContainer tabsContainer"
                 >
                   <button
                     aria-selected="true"
-                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-selected MuiTab-fullWidth"
+                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected MuiTab-fullWidth"
                     data-testid="timeline-tab-tabOne"
                     role="tab"
                     tabindex="0"
@@ -460,15 +460,7 @@ exports[`test tabbed timeline cartd 1`] = `
                     <span
                       class="MuiTab-wrapper"
                     >
-                      <span
-                        class="MuiTab-labelContainer"
-                      >
-                        <span
-                          class="MuiTab-label"
-                        >
-                          Tab One
-                        </span>
-                      </span>
+                      Tab One
                     </span>
                     <span
                       class="MuiTouchRipple-root"
@@ -485,15 +477,7 @@ exports[`test tabbed timeline cartd 1`] = `
                     <span
                       class="MuiTab-wrapper"
                     >
-                      <span
-                        class="MuiTab-labelContainer"
-                      >
-                        <span
-                          class="MuiTab-label"
-                        >
-                          Tab Two
-                        </span>
-                      </span>
+                      Tab Two
                     </span>
                     <span
                       class="MuiTouchRipple-root"
@@ -501,7 +485,7 @@ exports[`test tabbed timeline cartd 1`] = `
                   </button>
                 </div>
                 <span
-                  class="MuiPrivateTabIndicator-root MuiPrivateTabIndicator-colorPrimary MuiTabs-indicator"
+                  class="PrivateTabIndicator-root-414 PrivateTabIndicator-colorPrimary-415 MuiTabs-indicator"
                   style="left: 0px; width: 0px;"
                 />
               </div>
@@ -512,19 +496,19 @@ exports[`test tabbed timeline cartd 1`] = `
           class="timelineContent"
         >
           <div
-            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
                 20 Apr
@@ -552,19 +536,19 @@ exports[`test tabbed timeline cartd 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center lastItem"
+            class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-year-1"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-1"
               >
                 20 Apr
@@ -595,7 +579,7 @@ exports[`test tabbed timeline cartd 1`] = `
                       data-testid="avatar-icon"
                     >
                       <button
-                        class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root userButton MuiIconButton-colorInherit MuiIconButton-disabled"
+                        class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
                         data-testid="timeline-avatar"
                         disabled=""
                         id="timeline-avatar"
@@ -654,19 +638,19 @@ exports[`test unselecting an item on the timeline card 1`] = `
           class="timelineContent"
         >
           <div
-            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
                 20 Apr
@@ -699,19 +683,19 @@ exports[`test unselecting an item on the timeline card 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center lastItem"
+            class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-year-1"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body2 MuiTypography-alignCenter"
+                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-1"
               >
                 20 Apr
@@ -747,7 +731,7 @@ exports[`test unselecting an item on the timeline card 1`] = `
                       data-testid="avatar-icon"
                     >
                       <button
-                        class="MuiButtonBase-root MuiButtonBase-disabled MuiIconButton-root userButton MuiIconButton-colorInherit MuiIconButton-disabled"
+                        class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
                         data-testid="timeline-avatar"
                         disabled=""
                         id="timeline-avatar"

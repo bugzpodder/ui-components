@@ -1,3 +1,4 @@
+// @flow
 describe("Common Typeahead", () => {
   it("successfully loads", () => {
     cy.visit("/#!/CommonSelect");

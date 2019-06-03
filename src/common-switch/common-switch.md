@@ -1,9 +1,10 @@
 ### Example
 
 ```js
-const { ExampleBlock, ExampleWrapper } = require("../test-utils");
-const styles = require("../test-utils/example-styles.module.scss");
-const { useState } = require("react");
+import { ExampleBlock, ExampleWrapper } from "../test-utils";
+import styles from "../test-utils/example-styles.module.scss";
+import { useState } from "react";
+import { CommonSwitch } from "./";
 
 const TestCommonSwitch = () => {
   const [checkedA, setCheckedA] = useState(false);

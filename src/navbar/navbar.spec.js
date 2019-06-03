@@ -6,7 +6,7 @@ import { LIMS } from "@grail/lib";
 import { MemoryRouter } from "react-router-dom";
 import { NavbarV2 } from "./navbar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "./util";
 
 afterEach(cleanup);

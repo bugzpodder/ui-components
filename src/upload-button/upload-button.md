@@ -1,9 +1,10 @@
-### Example
+## Example
 
 ```js
-const styles = require("../test-utils/example-styles.module.scss");
-const { ExampleBlock, ExampleWrapper } = require("../test-utils");
-const { useState } = require("react");
+import styles from "../test-utils/example-styles.module.scss";
+import { ExampleBlock, ExampleWrapper } from "../test-utils";
+import { useState } from "react";
+import { UploadButton } from "./";
 
 const UploadButtonExample = () => {
   const [filesMetadata, setFilesMetadata] = useState([]);

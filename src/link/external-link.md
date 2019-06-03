@@ -5,5 +5,6 @@
 ### Example
 
 ```js
-<ExternalLink href="https://www.grail.com">GRAIL Link in new tab</ExternalLink>
+import { ExternalLink } from "./";
+<ExternalLink href="https://www.grail.com">GRAIL Link in new tab</ExternalLink>;
 ```

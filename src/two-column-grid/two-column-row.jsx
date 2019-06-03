@@ -36,7 +36,7 @@ export const TwoColumnRow = (props: Props) => {
       container
       justify="space-between"
       alignItems="center"
-      spacing={40}
+      spacing={10}
       className={classNames(styles.gridItem, classes.row)}
     >
       <Grid

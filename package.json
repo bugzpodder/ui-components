@@ -4,157 +4,88 @@
   "scripts": {
     "build": "NODE_ENV=production yarn build:src && yarn build:flow && babel-node ./scripts/build.js",
     "build:flow": "flow-copy-source src dist",
-    "build:src": "babel ./src --out-dir ./dist --delete-dir-on-start --copy-files --source-maps",
+    "build:src": "kcd-scripts build",
     "build:client": "NODE_ENV=production yarn build:src",
     "start:client": "NODE_ENV=development yarn build:src --watch",
     "cover": "open coverage/lcov-report/index.html",
     "flow": "flow",
-    "lint": "eslint --ext .js --ext .jsx src/ cypress/ scripts/",
+    "lint": "kcd-scripts lint",
     "lint-fix": "yarn lint --fix",
     "format": "prettier --write \"src/**/*.{js,jsx}\" \"cypress/**/*.js\" \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
-    "precommit": "lint-staged",
+    "precommit": "kcd-scripts pre-commit",
     "start": "yarn styleguide",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "test": "jest --watch",
-    "test:staged": "jest --coverage && echo --findRelatedTests does not work properly with coverage",
-    "test-all": "jest --coverage",
+    "test": "kcd-scripts test --watch",
+    "test:staged": "kcd-scripts test --coverage && echo --findRelatedTests does not work properly with coverage",
+    "test-all": "kcd-scripts test --coverage",
     "test-e2e": "cypress open",
     "test-e2e:ci": "cypress run --config numTestsKeptInMemory=0"
   },
   "dependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-transform-runtime": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.4.3",
-    "@date-io/moment": "^1.3.5",
+    "@babel/runtime": "^7.4.5",
+    "@date-io/core": "^1.3.6",
+    "@date-io/moment": "^1.3.6",
     "@grail/lib": ">=0.0.0",
     "classnames": "^2.2.6",
     "dom-helpers": "^3.4.0",
-    "downshift": "^3.2.8",
-    "file-saver": "^2.0.1",
+    "downshift": "^3.2.10",
+    "file-saver": "^2.0.2",
     "keycode": "^2.2.0",
     "lodash": "^4.17.11",
-    "material-ui-pickers": "2.2.4",
+    "@material-ui/pickers": "^3.0.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "path-to-regexp": "^3.0.0",
-    "react-jss": "^8.6.1",
-    "react-select": "^2.4.3",
-    "react-virtualized": "^9.21.0"
+    "react-select": "^3.0.4",
+    "react-virtualized": "^9.21.1"
   },
   "devDependencies": {
-    "@babel/node": "^7.2.2",
+    "@babel/node": "^7.4.5",
     "@grail/eslint-config-grail": ">=0.0.0",
+    "@testing-library/react": "^8.0.1",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "10.0.1",
-    "babel-jest": "^24.7.1",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
-    "cypress": "3.2.0",
-    "dom-testing-library": "^3.19.3",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-cypress": "^2.2.1",
-    "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-flowtype": "^3.6.1",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.6.0",
-    "flow-bin": "^0.97.0",
-    "flow-copy-source": "^2.0.3",
-    "fs-extra": "^7.0.1",
+    "cypress": "^3.3.1",
+    "flow-bin": "^0.100.0",
+    "flow-copy-source": "^2.0.6",
+    "fs-extra": "^8.0.1",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.7.1",
-    "jest-dom": "^3.1.3",
-    "jest-mock-console": "^0.4.2",
-    "lint-staged": "7.3.0",
+    "jest-dom": "^3.4.0",
+    "jest-mock-console": "^1.0.0",
+    "kcd-scripts": "^1.4.0",
     "moment-timezone": "^0.5.25",
-    "prettier": "^1.17.0",
+    "prettier": "^1.17.1",
     "react-jss": "^8.6.1",
     "react-router-dom": "^5.0.0",
-    "react-styleguidist": "^9.0.8",
-    "react-testing-library": "^6.1.2",
+    "react-styleguidist": "^9.1.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "webpack": "4.29.6"
   },
   "peerDependencies": {
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/icons": "^3.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^4.3.1"
+    "@material-ui/core": "^4.0.0",
+    "@material-ui/icons": "^4.0.0",
+    "@material-ui/styles": "^4.0.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-router-dom": "^4.3.1 || ^5.0.0"
   },
   "lint-staged": {
-    "concurrent": false,
     "linters": {
-      "src/**/*.{js,jsx}": [
+      "*.+(js|jsx|ts|tsx)": [
         "prettier --write",
-        "eslint --rule flowtype/require-valid-file-annotation:2 --fix",
+        "kcd-scripts lint --rule flowtype/require-valid-file-annotation:2 --rule react-hooks/exhaustive-deps:0 --fix",
         "git add"
       ],
-      "cypress/**/*.{js,jsx}": [
+      "*.+(json|yml|yaml|css|less|scss|md|graphql|mdx)": [
         "prettier --write",
-        "eslint --fix",
-        "git add"
-      ],
-      "*.{json,md}": [
-        "prettier --write",
-        "git add"
-      ],
-      "*.config.js": [
-        "prettier --write",
-        "git add"
-      ],
-      "scripts/*.js": [
-        "prettier --write",
-        "eslint --fix",
         "git add"
       ]
     }
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/**/index.js",
-      "!src/dev/**/*.{js,jsx}",
-      "!src/__deprecated__/**/*.{js,jsx}",
-      "!src/utils/*.{js,jsx}"
-    ],
-    "coverageThreshold": {
-      "src/**/*.{js,jsx}": {
-        "lines": 25
-      }
-    },
-    "moduleNameMapper": {
-      "^@grail/(.*)$": "<rootDir>/../$1/src",
-      "^.+\\.(css|less|scss)$": "identity-obj-proxy"
-    },
-    "modulePathIgnorePatterns": [
-      "dist/"
-    ],
-    "testEnvironment": "jsdom",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/cypress/"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(@grail/.*)/)"
-    ],
-    "transform": {
-      ".jsx?$": "babel-jest"
-    },
-    "setupFilesAfterEnv": [
-      "jest-mock-console/dist/setupTestFramework.js"
-    ]
   },
   "main": "dist/index.js",
   "private": true,

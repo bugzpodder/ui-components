@@ -1,9 +1,9 @@
 ### Example SignInPage
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
-const styles = require("../test-utils/example-styles.module.scss");
-
+import { ExampleWrapper } from "../test-utils";
+import styles from "../test-utils/example-styles.module.scss";
+import { SignInPage } from "./";
 <ExampleWrapper>
   <div
     style={{

@@ -46,7 +46,7 @@ exports[`render selector 1`] = `
         />
       </svg>
       <p
-        class="MuiTypography-root MuiTypography-body2 mission"
+        class="MuiTypography-root MuiTypography-body1 mission"
       >
         Detect cancer early, when it can be cured.
       </p>
@@ -54,7 +54,7 @@ exports[`render selector 1`] = `
         class="sign-in"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary MuiButton-sizeLarge"
+          class="MuiButtonBase-root MuiButton-root MuiButton-containedPrimary MuiButton-contained MuiButton-sizeLarge"
           data-testid="sign-in-button"
           tabindex="0"
           type="button"
@@ -120,7 +120,7 @@ exports[`render selector with child 1`] = `
         />
       </svg>
       <p
-        class="MuiTypography-root MuiTypography-body2 mission"
+        class="MuiTypography-root MuiTypography-body1 mission"
       >
         Detect cancer early, when it can be cured.
       </p>
@@ -128,7 +128,7 @@ exports[`render selector with child 1`] = `
         class="sign-in"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-raised MuiButton-raisedPrimary MuiButton-sizeLarge"
+          class="MuiButtonBase-root MuiButton-root MuiButton-containedPrimary MuiButton-contained MuiButton-sizeLarge"
           data-testid="sign-in-button"
           tabindex="0"
           type="button"

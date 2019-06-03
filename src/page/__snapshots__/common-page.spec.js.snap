@@ -18,13 +18,13 @@ exports[`renders common page 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-displayBlock MuiCardHeader-title header-title"
             data-testid="common-page-title"
           >
             Test Card
           </span>
           <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiCardHeader-subheader"
+            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock MuiCardHeader-subheader"
             data-testid="common-page-subtitle"
           >
             This is a subtitle
@@ -34,7 +34,7 @@ exports[`renders common page 1`] = `
           class="MuiCardHeader-action headerActions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-flat MuiButton-flatPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-text"
             tabindex="0"
             type="button"
           >
@@ -57,16 +57,17 @@ exports[`renders common page 1`] = `
                 class="MuiSwitch-root"
               >
                 <span
-                  class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-114 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <span
-                      class="MuiSwitch-icon"
+                      class="MuiSwitch-thumb"
                     />
                     <input
-                      class="MuiPrivateSwitchBase-input"
+                      class="PrivateSwitchBase-input-117 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
@@ -74,11 +75,11 @@ exports[`renders common page 1`] = `
                   </span>
                 </span>
                 <span
-                  class="MuiSwitch-bar"
+                  class="MuiSwitch-track"
                 />
               </span>
               <span
-                class="MuiTypography-root MuiTypography-body2 MuiFormControlLabel-label"
+                class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
               >
                 CUSTOM ACTION
               </span>

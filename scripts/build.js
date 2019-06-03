@@ -1,3 +1,4 @@
+// @flow
 import cp from "child_process";
 import path from "path";
 // eslint-disable-next-line import/no-extraneous-dependencies

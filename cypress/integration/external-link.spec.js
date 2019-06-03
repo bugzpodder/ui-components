@@ -1,3 +1,4 @@
+// @flow
 describe("External Link", () => {
   it("successfully loads", () => {
     cy.visit("/#!/ExternalLink");

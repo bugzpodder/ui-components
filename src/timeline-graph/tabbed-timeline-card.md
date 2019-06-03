@@ -1,7 +1,8 @@
 ### Tabbed TimelineCard
 
 ```js
-const { ADAMS_DATA, EMU_DATA, ExampleWrapper } = require("../test-utils");
+import { ADAMS_DATA, EMU_DATA, ExampleWrapper } from "../test-utils";
+import { TabbedTimelineCard } from "./";
 const tabContents = {
   adams: { content: ADAMS_DATA },
   emus: { content: EMU_DATA },

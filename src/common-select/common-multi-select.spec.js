@@ -3,7 +3,7 @@ import "jest-dom/extend-expect";
 import React, { useState } from "react";
 import { COUNTRIES, TestWrapper } from "../test-utils";
 import { CommonMultiSelect } from ".";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

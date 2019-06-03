@@ -3,7 +3,7 @@ import "jest-dom/extend-expect";
 import React from "react";
 import { DateTimeValue, DateValue, HumanizedDateTime } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "react-testing-library";
+import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

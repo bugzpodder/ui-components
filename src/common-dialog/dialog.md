@@ -1,9 +1,10 @@
 #### CommonDialogAction
 
 ```js
-const Button = require("@material-ui/core/Button").default;
-const { ExampleWrapper } = require("../test-utils");
-const { useState } = require("react");
+import Button from "@material-ui/core/Button";
+import { ExampleWrapper } from "../test-utils";
+import { useState } from "react";
+import { CommonDialog } from "./";
 
 const DialogDemo = () => {
   const [isVisible, setIsVisible] = useState(false);

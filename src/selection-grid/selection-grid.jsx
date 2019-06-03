@@ -92,7 +92,7 @@ export const SelectionGrid = (props: Props) => {
       data-testid="selection-grid"
       className={classNames(styles.grid, classes.root)}
     >
-      {showHeader && (
+      {showHeader && ( // $FlowFixMe
         <div className={classNames(styles.row, classes.row)}>
           <GridHeader classes={classes} />
           {colHeaders.map((header, index) => {

@@ -9,7 +9,7 @@ exports[`OmniSearchBar renders properly 1`] = `
       class="omniField"
     >
       <div
-        class="MuiFormControl-root MuiFormControl-fullWidth placeholder text field"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root placeholder text field"
       >
         <div
           class="MuiInputBase-root MuiInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"

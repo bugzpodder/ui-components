@@ -1,3 +1,4 @@
+// @flow
 describe("Text Input", () => {
   it("successfully loads", () => {
     cy.visit("/#!/TextInput");

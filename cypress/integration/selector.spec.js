@@ -1,3 +1,4 @@
+// @flow
 describe("Selector", () => {
   it("successfully loads", () => {
     cy.visit("/#!/Selector");

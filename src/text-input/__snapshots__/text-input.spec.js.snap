@@ -3,7 +3,7 @@
 exports[`render text field wrapper 1`] = `
 <div>
   <div
-    class="MuiFormControl-root"
+    class="MuiFormControl-root MuiTextField-root"
     data-testid="text-field"
   >
     <div

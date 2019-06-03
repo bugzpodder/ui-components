@@ -5,7 +5,7 @@ import { LIMS, sidebarItems } from "@grail/lib";
 import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "../util";
 
 afterEach(cleanup);

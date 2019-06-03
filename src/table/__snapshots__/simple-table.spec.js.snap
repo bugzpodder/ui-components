@@ -21,7 +21,8 @@ exports[`render full simple table 1`] = `
             scope="col"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-162 Mui-checked indeterminate"
             >
               <span
                 class="MuiIconButton-label"
@@ -39,7 +40,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   checked=""
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-164"
                   data-indeterminate="true"
                   data-testid="table-checkbox-header"
                   type="checkbox"
@@ -81,7 +82,8 @@ exports[`render full simple table 1`] = `
             data-cell-id="First Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-162 Mui-checked active"
             >
               <span
                 class="MuiIconButton-label"
@@ -99,7 +101,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   checked=""
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-164"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
@@ -144,7 +146,8 @@ exports[`render full simple table 1`] = `
             data-cell-id="Fourth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-162 Mui-checked active"
             >
               <span
                 class="MuiIconButton-label"
@@ -162,7 +165,7 @@ exports[`render full simple table 1`] = `
                 </svg>
                 <input
                   checked=""
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-164"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-fourth-datum"
                   id="Fourth Datum"
@@ -207,7 +210,8 @@ exports[`render full simple table 1`] = `
             data-cell-id="Seventh Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -224,7 +228,7 @@ exports[`render full simple table 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-164"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventh-datum"
                   id="Seventh Datum"
@@ -269,7 +273,8 @@ exports[`render full simple table 1`] = `
             data-cell-id="Tenth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -286,7 +291,7 @@ exports[`render full simple table 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-164"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-tenth-datum"
                   id="Tenth Datum"
@@ -331,7 +336,8 @@ exports[`render full simple table 1`] = `
             data-cell-id="Thirteenth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -348,7 +354,7 @@ exports[`render full simple table 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-164"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-thirteenth-datum"
                   id="Thirteenth Datum"
@@ -393,7 +399,8 @@ exports[`render full simple table 1`] = `
             data-cell-id="Seventeenth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -410,7 +417,7 @@ exports[`render full simple table 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-164"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventeenth-datum"
                   id="Seventeenth Datum"
@@ -892,7 +899,8 @@ exports[`render simple table with all items selected 1`] = `
             scope="col"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked MuiCheckbox-indeterminate indeterminate"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-102 Mui-checked indeterminate"
             >
               <span
                 class="MuiIconButton-label"
@@ -910,7 +918,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   checked=""
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-104"
                   data-indeterminate="true"
                   data-testid="table-checkbox-header"
                   type="checkbox"
@@ -952,7 +960,8 @@ exports[`render simple table with all items selected 1`] = `
             data-cell-id="First Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-102 Mui-checked active"
             >
               <span
                 class="MuiIconButton-label"
@@ -970,7 +979,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   checked=""
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-104"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
@@ -1015,7 +1024,8 @@ exports[`render simple table with all items selected 1`] = `
             data-cell-id="Fourth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiPrivateSwitchBase-checked MuiCheckbox-checked active"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-102 Mui-checked active"
             >
               <span
                 class="MuiIconButton-label"
@@ -1033,7 +1043,7 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
                 <input
                   checked=""
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-104"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-fourth-datum"
                   id="Fourth Datum"
@@ -1078,7 +1088,8 @@ exports[`render simple table with all items selected 1`] = `
             data-cell-id="Seventh Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1095,7 +1106,7 @@ exports[`render simple table with all items selected 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-104"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventh-datum"
                   id="Seventh Datum"
@@ -1140,7 +1151,8 @@ exports[`render simple table with all items selected 1`] = `
             data-cell-id="Tenth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1157,7 +1169,7 @@ exports[`render simple table with all items selected 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-104"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-tenth-datum"
                   id="Tenth Datum"
@@ -1202,7 +1214,8 @@ exports[`render simple table with all items selected 1`] = `
             data-cell-id="Thirteenth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1219,7 +1232,7 @@ exports[`render simple table with all items selected 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-104"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-thirteenth-datum"
                   id="Thirteenth Datum"
@@ -1264,7 +1277,8 @@ exports[`render simple table with all items selected 1`] = `
             data-cell-id="Seventeenth Datum-0"
           >
             <span
-              class="MuiButtonBase-root MuiIconButton-root MuiPrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary"
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1281,7 +1295,7 @@ exports[`render simple table with all items selected 1`] = `
                   />
                 </svg>
                 <input
-                  class="MuiPrivateSwitchBase-input"
+                  class="PrivateSwitchBase-input-104"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventeenth-datum"
                   id="Seventeenth Datum"

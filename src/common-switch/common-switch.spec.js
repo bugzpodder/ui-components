@@ -2,7 +2,7 @@
 import React from "react";
 import { CommonSwitch } from "./common-switch";
 import { TestWrapper } from "../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

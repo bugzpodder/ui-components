@@ -1,3 +1,4 @@
+// @flow
 export const setRowsPerPage = (rowsPerPage = 10) => {
   cy.get("[data-testid=rows-per-page]").click();
   cy.get(`#menu- [role=listbox] [role=option][data-value=${rowsPerPage}]`).click();

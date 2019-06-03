@@ -1,15 +1,16 @@
 ### Example
 
 ```js
-const { ALPHABET_ANIMALS_DATA, ExampleWrapper } = require("../test-utils");
-const { useState, Fragment } = require("react");
-const cloneDeep = require("lodash/cloneDeep");
+import { ALPHABET_ANIMALS_DATA, ExampleWrapper } from "../test-utils";
+import { useState, Fragment } from "react";
+import cloneDeep from "lodash/cloneDeep";
+import { SelectionGrid } from "./";
 
 const ExampleSelectionGrid = () => {
   const [selectedCoordinates, setSelectedCoordinates] = useState([]);
   const numRows = ALPHABET_ANIMALS_DATA.length;
   const numCols = ALPHABET_ANIMALS_DATA[0].length;
-  const cellRenderer = (gridCellInfo) => {
+  const cellRenderer = gridCellInfo => {
     const { rowIndex, colIndex, cellIndex, instance: animal } = gridCellInfo;
     if (isCellEmpty(gridCellInfo)) {
       return null;
@@ -27,7 +28,9 @@ const ExampleSelectionGrid = () => {
   const isCellSelectable = ({ instance }) => instance != null;
   const onSelect = ({ rowIndex, colIndex }) => {
     const coordinates = cloneDeep(selectedCoordinates);
-    const index = coordinates.findIndex(coordinate => coordinate.rowIndex === rowIndex && coordinate.colIndex === colIndex);
+    const index = coordinates.findIndex(
+      coordinate => coordinate.rowIndex === rowIndex && coordinate.colIndex === colIndex,
+    );
     if (index >= 0) {
       coordinates.splice(index, 1);
     } else {

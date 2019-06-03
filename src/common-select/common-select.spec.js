@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
 import { COUNTRIES, TestWrapper } from "../test-utils";
 import { CommonSelect } from ".";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

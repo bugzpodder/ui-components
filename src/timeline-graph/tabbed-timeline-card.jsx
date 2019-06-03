@@ -105,6 +105,7 @@ export const TabbedTimelineCard = (props: Props) => {
   };
 
   return (
+    // $FlowFixMe
     <div className={classNames(styles.timelineContainer, classes.root)}>
       <CommonCard
         classes={{
@@ -115,6 +116,7 @@ export const TabbedTimelineCard = (props: Props) => {
         {...commonCardProps}
       >
         {getTabs()}
+        {/* $FlowFixMe */}
         <TimelineGraphComponent
           rows={rows}
           classes={classes}

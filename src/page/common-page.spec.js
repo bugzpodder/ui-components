@@ -4,7 +4,7 @@ import React from "react";
 import { Alert, CommonSwitch } from "../index";
 import { CommonPage } from "./common-page";
 import { TestWrapper } from "../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

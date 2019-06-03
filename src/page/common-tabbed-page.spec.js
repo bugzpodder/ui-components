@@ -5,7 +5,7 @@ import mockConsole from "jest-mock-console";
 import { Alert, CommonSwitch } from "../index";
 import { CommonTabbedPage } from "./common-tabbed-page";
 import { TestWrapper } from "../test-utils";
-import { cleanup, fireEvent, render } from "react-testing-library";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

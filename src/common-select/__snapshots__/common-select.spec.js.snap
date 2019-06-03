@@ -16,14 +16,14 @@ exports[`async CommonSelect with initial and no options messages 1`] = `
           class="common-select__container"
         >
           <div
-            class="css-1pcexqc-container MuiInputBase-input MuiInput-input"
+            class="MuiInputBase-input MuiInput-input css-2b097c-container"
             id=""
           >
             <div
-              class="css-bg1rzq-control common-select__control common-select__control--menu-is-open"
+              class="common-select__control common-select__control--menu-is-open css-yk16xz-control"
             >
               <div
-                class="css-1hwfws3 common-select__value-container"
+                class="common-select__value-container css-1hwfws3"
               >
                 <div
                   class="css-1g6gooi"
@@ -53,7 +53,7 @@ exports[`async CommonSelect with initial and no options messages 1`] = `
                 </div>
               </div>
               <div
-                class="css-1wy0on6 common-select__indicators"
+                class="common-select__indicators css-1wy0on6"
               >
                 <div
                   class="common-select__dropdown-arrow"
@@ -77,13 +77,14 @@ exports[`async CommonSelect with initial and no options messages 1`] = `
               </div>
             </div>
             <div
-              class="css-kj6f9i-menu common-select__menu"
+              class="common-select__menu css-26l3qy-menu"
             >
               <div
-                class="css-11unzgr common-select__menu-list"
+                class="common-select__menu-list css-11unzgr"
               >
                 <li
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
                   data-testid="no-options-message"
                   role="menuitem"
                   tabindex="-1"
@@ -120,17 +121,17 @@ exports[`render and test CommonSelect 1`] = `
           class="common-select__container"
         >
           <div
-            class="css-1pcexqc-container MuiInputBase-input MuiInput-input"
+            class="MuiInputBase-input MuiInput-input css-2b097c-container"
             id="test"
           >
             <div
-              class="css-bg1rzq-control common-select__control common-select__control--menu-is-open"
+              class="common-select__control common-select__control--menu-is-open css-yk16xz-control"
             >
               <div
-                class="css-1hwfws3 common-select__value-container"
+                class="common-select__value-container css-1hwfws3"
               >
                 <div
-                  class="css-151xaom-placeholder common-select__placeholder"
+                  class="common-select__placeholder css-1wa3eu0-placeholder"
                 />
                 <div
                   class="css-1g6gooi"
@@ -158,7 +159,7 @@ exports[`render and test CommonSelect 1`] = `
                 </div>
               </div>
               <div
-                class="css-1wy0on6 common-select__indicators"
+                class="common-select__indicators css-1wy0on6"
               >
                 <div
                   class="common-select__dropdown-arrow"
@@ -182,13 +183,14 @@ exports[`render and test CommonSelect 1`] = `
               </div>
             </div>
             <div
-              class="css-kj6f9i-menu common-select__menu"
+              class="common-select__menu css-26l3qy-menu"
             >
               <div
-                class="css-11unzgr common-select__menu-list"
+                class="common-select__menu-list css-11unzgr"
               >
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="AFGHANISTAN"
                   id="AFGHANISTAN"
                   role="menuitem"
@@ -207,7 +209,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ALAND_ISLANDS"
                   id="ALAND_ISLANDS"
                   role="menuitem"
@@ -226,7 +229,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ALBANIA"
                   id="ALBANIA"
                   role="menuitem"
@@ -245,7 +249,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ALGERIA"
                   id="ALGERIA"
                   role="menuitem"
@@ -264,7 +269,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="AMERICAN_SAMOA"
                   id="AMERICAN_SAMOA"
                   role="menuitem"
@@ -283,7 +289,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ANDORRA"
                   id="ANDORRA"
                   role="menuitem"
@@ -302,7 +309,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ANGOLA"
                   id="ANGOLA"
                   role="menuitem"
@@ -321,7 +329,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ANGUILLA"
                   id="ANGUILLA"
                   role="menuitem"
@@ -340,7 +349,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ANTARCTICA"
                   id="ANTARCTICA"
                   role="menuitem"
@@ -359,7 +369,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ARGENTINA"
                   id="ARGENTINA"
                   role="menuitem"
@@ -378,7 +389,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ARMENIA"
                   id="ARMENIA"
                   role="menuitem"
@@ -397,7 +409,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="ARUBA"
                   id="ARUBA"
                   role="menuitem"
@@ -416,7 +429,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="AUSTRALIA"
                   id="AUSTRALIA"
                   role="menuitem"
@@ -435,7 +449,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="AUSTRIA"
                   id="AUSTRIA"
                   role="menuitem"
@@ -454,7 +469,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="AZERBAIJAN"
                   id="AZERBAIJAN"
                   role="menuitem"
@@ -473,7 +489,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BAHAMAS"
                   id="BAHAMAS"
                   role="menuitem"
@@ -492,7 +509,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BAHRAIN"
                   id="BAHRAIN"
                   role="menuitem"
@@ -511,7 +529,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BANGLADESH"
                   id="BANGLADESH"
                   role="menuitem"
@@ -530,7 +549,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BARBADOS"
                   id="BARBADOS"
                   role="menuitem"
@@ -549,7 +569,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BELARUS"
                   id="BELARUS"
                   role="menuitem"
@@ -568,7 +589,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BELGIUM"
                   id="BELGIUM"
                   role="menuitem"
@@ -587,7 +609,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BELIZE"
                   id="BELIZE"
                   role="menuitem"
@@ -606,7 +629,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BENIN"
                   id="BENIN"
                   role="menuitem"
@@ -625,7 +649,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BERMUDA"
                   id="BERMUDA"
                   role="menuitem"
@@ -644,7 +669,8 @@ exports[`render and test CommonSelect 1`] = `
                   />
                 </div>
                 <div
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters common-select__menu-item custom-content"
                   data-testid="BHUTAN"
                   id="BHUTAN"
                   role="menuitem"
@@ -694,14 +720,14 @@ exports[`render creatable CommonSelect 1`] = `
           class="common-select__container"
         >
           <div
-            class="css-1pcexqc-container MuiInputBase-input MuiInput-input"
+            class="MuiInputBase-input MuiInput-input css-2b097c-container"
             id=""
           >
             <div
-              class="css-bg1rzq-control common-select__control common-select__control--menu-is-open"
+              class="common-select__control common-select__control--menu-is-open css-yk16xz-control"
             >
               <div
-                class="css-1hwfws3 common-select__value-container"
+                class="common-select__value-container css-1hwfws3"
               >
                 <div
                   class="css-1g6gooi"
@@ -731,7 +757,7 @@ exports[`render creatable CommonSelect 1`] = `
                 </div>
               </div>
               <div
-                class="css-1wy0on6 common-select__indicators"
+                class="common-select__indicators css-1wy0on6"
               >
                 <div
                   class="common-select__dropdown-arrow"
@@ -755,13 +781,14 @@ exports[`render creatable CommonSelect 1`] = `
               </div>
             </div>
             <div
-              class="css-kj6f9i-menu common-select__menu"
+              class="common-select__menu css-26l3qy-menu"
             >
               <div
-                class="css-11unzgr common-select__menu-list"
+                class="common-select__menu-list css-11unzgr"
               >
                 <li
-                  class="MuiButtonBase-root MuiListItem-root MuiListItem-default MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiMenuItem-root MuiMenuItem-gutters"
                   data-testid="no-options-message"
                   role="menuitem"
                   tabindex="-1"
@@ -803,23 +830,23 @@ exports[`test disabled CommonSelect 1`] = `
       class="MuiFormControl-root"
     >
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-disabled MuiInput-disabled MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="css-ssi0ig-container MuiInputBase-input MuiInput-input MuiInputBase-disabled MuiInput-disabled common-select--is-disabled"
+            class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled common-select--is-disabled css-14jk2my-container"
             id=""
           >
             <div
-              class="css-14ojxsb-control common-select__control common-select__control--is-disabled"
+              class="common-select__control common-select__control--is-disabled css-1fhf3k1-control"
             >
               <div
-                class="css-1hwfws3 common-select__value-container"
+                class="common-select__value-container css-1hwfws3"
               >
                 <div
-                  class="css-151xaom-placeholder common-select__placeholder"
+                  class="common-select__placeholder css-1wa3eu0-placeholder"
                 />
                 <div
                   class="css-1g6gooi"
@@ -848,7 +875,7 @@ exports[`test disabled CommonSelect 1`] = `
                 </div>
               </div>
               <div
-                class="css-1wy0on6 common-select__indicators"
+                class="common-select__indicators css-1wy0on6"
               >
                 <div
                   class="common-select__dropdown-arrow"

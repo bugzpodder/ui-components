@@ -1,7 +1,8 @@
 ### Simple TimelineGraph
 
 ```js
-const { ExampleWrapper } = require("../test-utils");
+import { ExampleWrapper } from "../test-utils";
+import { TimelineGraph } from "./";
 const rows = [
   {
     user: "wikipedia",
@@ -32,8 +33,9 @@ const rows = [
 ### Selectable TimelineGraph (with Time)
 
 ```js
-const { useState } = require("react");
-const { ExampleBlock, ExampleWrapper } = require("../test-utils");
+import { useState } from "react";
+import { ExampleBlock, ExampleWrapper } from "../test-utils";
+import { TimelineGraph } from "./";
 const rows = [
   {
     date: "1848-02-23T16:20:00Z",

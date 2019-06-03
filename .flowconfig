@@ -1,6 +1,9 @@
 [ignore]
+.*\.config\.js
 .*\.spec\.js
 .*/dist/*
+.*/scripts/*
+.*/cypress/*
 
 [include]
 ../lib
@@ -10,6 +13,7 @@
 ./flow-typed
 
 [lints]
+deprecated-utility=off
 nonstrict-import=error
 unsafe-getters-setters=error
 untyped-import=error

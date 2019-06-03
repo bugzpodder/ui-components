@@ -21,12 +21,20 @@ declare type CommonPageClasses = {
   contentAndMenu?: string,
   content?: string,
   sideMenu?: string,
-}
+};
 
-declare type CommonTabbedPageClasses = CommonPageClasses & {
+declare type CommonTabbedPageClasses = {
+  root?: string,
+  header?: string,
+  headerActions?: string,
+  title?: string,
+  subtitle?: string,
+  contentAndMenu?: string,
+  content?: string,
+  sideMenu?: string,
   tabs?: string,
   contentContainer?: string,
-}
+};
 
 declare type PageConfig = {
   key: string,
@@ -37,12 +45,12 @@ declare type PageConfig = {
   className?: string,
   menuContents?: Array<MenuItem>,
   tabClasses?: Object,
-}
+};
 
 declare type MenuItem = {
   key: string,
   label: Node,
-}
+};
 
 declare type HeaderAction = {
   content?: Node<*>,
@@ -51,4 +59,4 @@ declare type HeaderAction = {
   href?: string,
   onClick?: Function,
   [string]: any,
-}
+};

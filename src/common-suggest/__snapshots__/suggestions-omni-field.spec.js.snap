@@ -15,7 +15,7 @@ exports[`render SuggestionsOmniField 1`] = `
       <div
         aria-autocomplete="list"
         aria-labelledby="common-suggest-label"
-        class="MuiFormControl-root MuiFormControl-fullWidth"
+        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root"
       >
         <div
           class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"

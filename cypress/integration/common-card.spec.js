@@ -1,3 +1,4 @@
+// @flow
 describe("Common Card", () => {
   it("successfully loads", () => {
     cy.visit("/#!/CommonCard");

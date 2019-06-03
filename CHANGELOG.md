@@ -2,7 +2,7 @@
 
 1. Bug fixes and improved unit tests.
 2. Update react peer dependency to 16.8 for hooks usage.
-3. Update to Material-UI 3.9.3
+3. Update to Material-UI and Material-UI date-picker to 4.0.0
 4. Fix sidebar to grow and shrink using flex-grow/shrink.
 5. Add `isFullBleed` to `PagedTable` to allow for non-card based paged table that expands to 100% of the height of the parent element.
 6. Add `hasTableMargin` to `PagedTable` to enable/disable table margin.

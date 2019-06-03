@@ -1,8 +1,9 @@
 #### CommonDialogActions
 
 ```js
-const Button = require("@material-ui/core/Button").default;
-const { useState } = require("react");
+import Button from "@material-ui/core/Button";
+import { useState } from "react";
+import { CommonMultiPageDialog } from "./";
 
 const MultiPageDialogDemo = () => {
   const [isVisible, setIsVisible] = useState(false);

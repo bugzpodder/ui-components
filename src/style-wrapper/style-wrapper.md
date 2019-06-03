@@ -1,9 +1,10 @@
 ## Example
 
 ```js
-const Button = require("@material-ui/core/Button").default;
-const { Alert } = require("@grail/components");
-const styles = require("../test-utils/example-styles.module.scss");
+import Button from "@material-ui/core/Button";
+import { Alert } from "@grail/components";
+import styles from "../test-utils/example-styles.module.scss";
+import { StyleWrapper } from "./";
 
 const ExampleApp = () => (
   <StyleWrapper>

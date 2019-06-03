@@ -1,10 +1,9 @@
 // @flow
 import CssBaseline from "@material-ui/core/CssBaseline";
 import React, { type Node } from "react";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import {
-  grailGrayLighter, grailPurpleDark, grailPurpleMed, grailRed, grailTan, white,
-} from "@grail/lib";
+import { ThemeProvider } from "@material-ui/styles";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { grailGrayLighter, grailPurpleDark, grailPurpleMed, grailRed, grailTan, white } from "@grail/lib";
 
 type Props = {
   children: Node,
@@ -27,19 +26,15 @@ const customTheme = createMuiTheme({
       contrastText: grailGrayLighter,
     },
   },
-  // See https://material-ui.com/style/typography/#migration-to-typography-v2
-  typography: {
-    useNextVariants: true,
-  },
 });
 
-export function StyleWrapper(props: Props) {
+export const StyleWrapper = (props: Props) => {
   const { children } = props;
 
   return (
-    <MuiThemeProvider theme={customTheme}>
+    <ThemeProvider theme={customTheme}>
       <CssBaseline />
       {children}
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
-}
+};

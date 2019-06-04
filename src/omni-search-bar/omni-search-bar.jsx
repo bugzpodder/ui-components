@@ -203,7 +203,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
         try {
           const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
           this.setValuesToLocalStorage(location.pathname, searchDefs, searchValues);
-          if (updateSearchOptions && !isEqual(searchValues, this.lastSearchedValues)) {
+          if (updateSearchOptions) {
             updateSearchOptions({ searchOptions: getSearchOptions(searchDefs, searchValues) });
           }
           return {

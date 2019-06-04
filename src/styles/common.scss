@@ -1,0 +1,57 @@
+@import "./colors.scss";
+
+a {
+  color: $grail-purple-action-color;
+  font-weight: 800;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    &:not([role="button"]) {
+      color: $grail-purple-color;
+    }
+  }
+}
+
+a,
+.pointer,
+.cursor-pointer {
+  cursor: pointer;
+  &[disabled] {
+    cursor: default;
+    color: $grail-gray-medium-color;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid $grail-purple-dark-color;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input[readonly].form-control,
+input[disabled].form-control {
+  border-color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+input[disabled].form-control {
+  background-color: $grail-gray-lighter-color;
+}

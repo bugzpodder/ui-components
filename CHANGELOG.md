@@ -31,6 +31,9 @@
 25. Add `shadeOnHover` prop to `SimpleTable` and `PagedTable` (works only when `onHighlightRow` is defined). Enables
     rows to be highlighted when hovered over.
 26. Introduce CommonPageV2 and CommonTabbedPageV2 which are slimmer versions of the original CommonPage and CommonTabbedPage.
+27. Add `common.scss` styles for bold purple links, etc.
+28. Update `primary` colors for Material components, and default plain button color.
+29. Increase button weight.
 
 ## 0.10.0 - 2019-04-01
 

@@ -48,6 +48,7 @@ $grail-colors: (
 );
 
 $material-ui-disabled: lighten($grail-gray-medium-color, 18%);
+$box-shadow-color: rgba(0, 0, 0, 0.14);
 
 @each $name, $color in $grail-colors {
   .#{$name} {

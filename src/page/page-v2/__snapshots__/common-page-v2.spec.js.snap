@@ -11,115 +11,126 @@ exports[`renders common page 1`] = `
       data-testid="common-page-header"
     >
       <div
-        class="titleContainer"
+        class="titleFlexContainer"
         data-testid="common-page-title-container"
       >
-        <h6
-          class="MuiTypography-root MuiTypography-subtitle1 title"
-          data-testid="common-page-title"
+        <div
+          class="titleContainer"
         >
-          Test Card
-        </h6>
-        <p
-          class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
-          data-testid="common-page-subtitle"
-        >
-          This is a subtitle
-        </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-noWrap title"
+            data-testid="common-page-title"
+          >
+            Test Card
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap"
+            data-testid="common-page-subtitle"
+          >
+            This is a subtitle
+          </p>
+        </div>
       </div>
       <div
-        class="headerActions"
+        class="centerHeader"
+      />
+      <div
+        class="headerActionsContainer"
         data-testid="common-page-header-actions"
       >
         <div
-          class="primaryActions"
-          data-testid="common-page-primary-actions"
+          class="headerActions"
         >
+          <div
+            class="primaryActions"
+            data-testid="common-page-primary-actions"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root primaryAction MuiButton-containedPrimary MuiButton-contained"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Test Action
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <div
+              class="commonSwitch"
+            >
+              <label
+                class="MuiFormControlLabel-root controlLabel primaryAction"
+                variant="contained"
+              >
+                <span
+                  class="MuiSwitch-root"
+                >
+                  <span
+                    aria-disabled="false"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-95 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  >
+                    <span
+                      class="MuiIconButton-label"
+                    >
+                      <span
+                        class="MuiSwitch-thumb"
+                      />
+                      <input
+                        class="PrivateSwitchBase-input-98 MuiSwitch-input"
+                        id=""
+                        type="checkbox"
+                        value=""
+                      />
+                    </span>
+                  </span>
+                  <span
+                    class="MuiSwitch-track"
+                  />
+                </span>
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+                >
+                  Test
+                </span>
+              </label>
+              
+            </div>
+          </div>
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-containedPrimary MuiButton-contained"
+            aria-describedby="test"
+            class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton"
+            data-testid="common-page-secondary-actions-button"
             tabindex="0"
             type="button"
           >
             <span
-              class="MuiButton-label"
+              class="MuiIconButton-label"
             >
-              Test Action
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
             </span>
             <span
               class="MuiTouchRipple-root"
             />
           </button>
-          <div
-            class="commonSwitch"
-          >
-            <label
-              class="MuiFormControlLabel-root controlLabel"
-              variant="contained"
-            >
-              <span
-                class="MuiSwitch-root"
-              >
-                <span
-                  aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-95 MuiSwitch-switchBase MuiSwitch-colorPrimary"
-                >
-                  <span
-                    class="MuiIconButton-label"
-                  >
-                    <span
-                      class="MuiSwitch-thumb"
-                    />
-                    <input
-                      class="PrivateSwitchBase-input-98 MuiSwitch-input"
-                      id=""
-                      type="checkbox"
-                      value=""
-                    />
-                  </span>
-                </span>
-                <span
-                  class="MuiSwitch-track"
-                />
-              </span>
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
-              >
-                Test
-              </span>
-            </label>
-            
-          </div>
         </div>
-        <button
-          aria-describedby="test"
-          class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton"
-          data-testid="common-page-secondary-actions-button"
-          tabindex="0"
-          type="button"
-        >
-          <span
-            class="MuiIconButton-label"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root"
-              focusable="false"
-              role="presentation"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-              />
-            </svg>
-          </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
-        </button>
       </div>
     </div>
     <div

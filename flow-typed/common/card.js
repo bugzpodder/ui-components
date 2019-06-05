@@ -65,6 +65,7 @@ declare type PageConfigV2 = {
 
 declare type CommonPageV2Classes = {
   root?: string,
+  centerHeader?: string,
   header?: string,
   headerActions?: string,
   primaryActions?: string,
@@ -75,17 +76,7 @@ declare type CommonPageV2Classes = {
   content?: string,
 };
 
-// TODO(nsawas): Figure out why flow fails when doing "& CommonPageV2Classes".
 declare type CommonTabbedPageV2Classes = {
-  root?: string,
-  header?: string,
-  headerActions?: string,
-  primaryActions?: string,
-  secondaryActions?: string,
-  titleContainer?: string,
-  title?: string,
-  subtitle?: string,
-  content?: string,
   tabs?: string,
   tab?: string,
-};
+} & CommonPageV2Classes;

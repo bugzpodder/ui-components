@@ -22,7 +22,7 @@ export const HeaderActions = (props: Props) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const mappedPrimaryActions = primaryActions.map((action, index) => {
     const {
-      Component, content = "", id, color = "primary", ...otherProps
+      Component, content = "", id, color = "primary", className = "", ...otherProps
     } = action;
     const isLink = otherProps.href != null;
     let ComponentToUse = null;
@@ -41,6 +41,7 @@ export const HeaderActions = (props: Props) => {
         color={color}
         {...otherProps}
         variant="contained"
+        className={classNames(className, styles.primaryAction)}
       >
         {content}
       </ComponentToUse>
@@ -65,57 +66,59 @@ export const HeaderActions = (props: Props) => {
   return (
     <div
       data-testid="common-page-header-actions"
-      className={classNames(styles.headerActions, classes.headerActions)}
+      className={classNames(styles.headerActionsContainer, classes.headerActions)}
     >
-      {mappedPrimaryActions.length > 0 && (
-        <div
-          data-testid="common-page-primary-actions"
-          className={classNames(styles.primaryActions, classes.primaryActions)}
-        >
-          {mappedPrimaryActions}
-        </div>
-      )}
-      <Fragment>
-        <IconButton
-          aria-describedby={id}
-          data-testid="common-page-secondary-actions-button"
-          disabled={!hasSecondaryActions}
-          classes={{
-            root: styles.secondaryActionsButton,
-            label: classNames({ [styles.disabled]: !hasSecondaryActions }),
-          }}
-          onClick={event => {
-            setAnchorEl(event.currentTarget);
-            setMenuIsOpen(true);
-          }}
-        >
-          <MoreVertIcon />
-        </IconButton>
-        <Menu
-          id={id}
-          data-testid="common-page-secondary-actions"
-          classes={{
-            paper: classNames(styles.secondaryActions, classes.secondaryActions),
-          }}
-          anchorEl={anchorEl}
-          getContentAnchorEl={null}
-          open={menuIsOpen}
-          onClose={() => {
-            setMenuIsOpen(false);
-            setAnchorEl(null);
-          }}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "right",
-          }}
-          transformOrigin={{
-            vertical: "top",
-            horizontal: "right",
-          }}
-        >
-          {mappedSecondaryActions}
-        </Menu>
-      </Fragment>
+      <div className={styles.headerActions}>
+        {mappedPrimaryActions.length > 0 && (
+          <div
+            data-testid="common-page-primary-actions"
+            className={classNames(styles.primaryActions, classes.primaryActions)}
+          >
+            {mappedPrimaryActions}
+          </div>
+        )}
+        <Fragment>
+          <IconButton
+            aria-describedby={id}
+            data-testid="common-page-secondary-actions-button"
+            disabled={!hasSecondaryActions}
+            classes={{
+              root: styles.secondaryActionsButton,
+              label: classNames({ [styles.disabled]: !hasSecondaryActions }),
+            }}
+            onClick={event => {
+              setAnchorEl(event.currentTarget);
+              setMenuIsOpen(true);
+            }}
+          >
+            <MoreVertIcon />
+          </IconButton>
+          <Menu
+            id={id}
+            data-testid="common-page-secondary-actions"
+            classes={{
+              paper: classNames(styles.secondaryActions, classes.secondaryActions),
+            }}
+            anchorEl={anchorEl}
+            getContentAnchorEl={null}
+            open={menuIsOpen}
+            onClose={() => {
+              setMenuIsOpen(false);
+              setAnchorEl(null);
+            }}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "right",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+          >
+            {mappedSecondaryActions}
+          </Menu>
+        </Fragment>
+      </div>
     </div>
   );
 };

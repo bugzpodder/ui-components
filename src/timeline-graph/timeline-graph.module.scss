@@ -10,7 +10,6 @@ $line-notch-half-length: calc(#{$line-notch-length} / 2);
 $selected-line-notch-length: 14px;
 $selected-line-notch-half-length: calc(#{$selected-line-notch-length} / 2);
 
-$shadow-color: rgba(0, 0, 0, 0.14);
 $active-color: $grail-gray-light-color;
 
 $border: $grail-purple-color solid 1px;
@@ -36,9 +35,9 @@ $date-margin: 15px;
     top: calc(50% - #{$paper-pointer-half-length});
     content: "";
     transform: rotate(45deg);
-    box-shadow: -1px 3px 5px -1px $shadow-color;
+    box-shadow: -1px 3px 5px -1px $box-shadow-color;
     margin-left: -8px;
-    background: #FFF;
+    background: #fff;
   }
 }
 
@@ -68,7 +67,6 @@ $date-margin: 15px;
             height: 100%;
           }
         }
-        
       }
     }
   }
@@ -80,7 +78,7 @@ $date-margin: 15px;
     padding: 0 24px;
 
     // Date.
-    .timelineDateContainer{
+    .timelineDateContainer {
       margin: auto $date-margin auto 0;
       display: flex;
       flex-direction: column;
@@ -115,12 +113,12 @@ $date-margin: 15px;
 
       &:active {
         background: $active-color;
-        box-shadow: 0 2px 8px 0 $shadow-color;
+        box-shadow: 0 2px 8px 0 $box-shadow-color;
       }
 
       &:active:before {
         background: $active-color;
-        box-shadow: -1px 2px 5px -1px $shadow-color;
+        box-shadow: -1px 2px 5px -1px $box-shadow-color;
       }
 
       // Selected Timeline paper.
@@ -135,7 +133,6 @@ $date-margin: 15px;
           border-left: $border;
           margin-left: -9px;
         }
-
       }
     }
 

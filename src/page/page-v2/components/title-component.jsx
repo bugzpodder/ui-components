@@ -16,23 +16,27 @@ export const TitleComponent = (props: Props) => {
   return (
     <div
       data-testid="common-page-title-container"
-      className={classNames(styles.titleContainer, classes.titleContainer)}
+      className={classNames(styles.titleFlexContainer, classes.titleContainer)}
     >
-      <Typography
-        data-testid="common-page-title"
-        variant="subtitle1"
-        className={classNames(styles.title, classes.title)}
-      >
-        {title}
-      </Typography>
-      <Typography
-        data-testid="common-page-subtitle"
-        variant="body2"
-        className={classNames(classes.subtitle)}
-        color="textSecondary"
-      >
-        {subtitle}
-      </Typography>
+      <div className={styles.titleContainer}>
+        <Typography
+          noWrap
+          data-testid="common-page-title"
+          variant="subtitle1"
+          className={classNames(styles.title, classes.title)}
+        >
+          {title}
+        </Typography>
+        <Typography
+          noWrap
+          data-testid="common-page-subtitle"
+          variant="body2"
+          className={classNames(classes.subtitle)}
+          color="textSecondary"
+        >
+          {subtitle}
+        </Typography>
+      </div>
     </div>
   );
 };

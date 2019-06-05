@@ -20,14 +20,16 @@ export const TabsComponent = (props: Props) => {
   } = props;
   return (
     <Tabs
+      variant="scrollable"
       data-testid="common-tabbed-page-tabs"
       textColor="primary"
       indicatorColor="primary"
       value={activeTab}
       onChange={(event, value) => onChangeActiveTab(value)}
       classes={{
-        root: classNames(classes.tabs, styles.tabs),
-        flexContainer: styles.tabsContainer,
+        root: classNames(classes.tabs, styles.tabsContainer),
+        flexContainer: styles.tabs,
+        scrollButtons: styles.scrollButton,
       }}
     >
       {pageConfigs.map(tab => {

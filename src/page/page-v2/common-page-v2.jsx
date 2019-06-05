@@ -18,6 +18,8 @@ type Props = {
    *
    *  - `root`
    *
+   *  - `centerHeader`
+   *
    *  - `header` (applied to entire header container which contains headerActions, title, subtitle, and special actions)
    *
    *  - `headerActions` (applied to the container around the header actions)
@@ -34,7 +36,7 @@ type Props = {
    *
    *  - `content` - (applied to the container around the content)
    */
-  classes?: CommonTabbedPageV2Classes,
+  classes?: CommonPageV2Classes,
   /** `Node` displayed in the center of the header. For example, page tabs. */
   centerHeader?: Node,
   /** Takes a `node` to show on the page */
@@ -66,6 +68,8 @@ export const CommonPageV2 = (props: Props) => {
     ...cardProps
   } = props;
   const hasChildren = Array.isArray(children) ? children.filter(child => child).length > 0 : !!children;
+  const hasPrimaryActions = primaryActions && primaryActions.length > 0;
+  const hasSecondaryActions = secondaryActions && secondaryActions.length > 0;
   return (
     <div
       className={classNames(classes.root, styles.pageContainer)}
@@ -79,15 +83,13 @@ export const CommonPageV2 = (props: Props) => {
         }}
         {...cardProps}
       >
-        {(title || subtitle) && (
         <TitleComponent
           title={title}
           classes={classes}
           subtitle={subtitle}
         />
-        )}
-        {centerHeader && centerHeader}
-        {(primaryActions || secondaryActions) && (
+        <div className={classNames(styles.centerHeader, classes.centerHeader)}>{centerHeader}</div>
+        {(hasPrimaryActions || hasSecondaryActions) && (
           <HeaderActions
             classes={classes}
             primaryActions={primaryActions}

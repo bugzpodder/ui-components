@@ -55,12 +55,10 @@ export const OmniDialog = (props: Props) => {
           const {
             name, type, Component = SearchField, description = "",
           } = searchDef;
-          if (type === OMNI_TEXT_SEARCH_TYPE) {
-            return null;
-          }
+          const label = type === OMNI_TEXT_SEARCH_TYPE ? "Global" : name;
           const searchValue = searchValues.get(index);
           const row: GridRow = {
-            label: name,
+            label,
             value: (
               <Component
                 searchKey={name}

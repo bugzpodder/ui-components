@@ -81,7 +81,7 @@ exports[`render basic paged table 1`] = `
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
@@ -108,7 +108,7 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
@@ -135,7 +135,7 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
@@ -162,7 +162,7 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
@@ -189,7 +189,7 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
@@ -216,7 +216,7 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
@@ -328,7 +328,7 @@ exports[`render loading paged table 1`] = `
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
@@ -355,7 +355,7 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
@@ -382,7 +382,7 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
@@ -409,7 +409,7 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
@@ -436,7 +436,7 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
@@ -463,7 +463,7 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
@@ -627,7 +627,7 @@ exports[`render paged table and test pagination 1`] = `
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="First Datum"
           >
             <td
@@ -691,7 +691,7 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Fourth Datum"
           >
             <td
@@ -755,7 +755,7 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventh Datum"
           >
             <td
@@ -818,7 +818,7 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Tenth Datum"
           >
             <td
@@ -881,7 +881,7 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
@@ -944,7 +944,7 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventeenth Datum"
           >
             <td
@@ -1260,7 +1260,7 @@ exports[`render paged table and test sorting 1`] = `
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="First Datum"
           >
             <td
@@ -1287,7 +1287,7 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Fourth Datum"
           >
             <td
@@ -1314,7 +1314,7 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventh Datum"
           >
             <td
@@ -1341,7 +1341,7 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Tenth Datum"
           >
             <td
@@ -1368,7 +1368,7 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
@@ -1395,7 +1395,7 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventeenth Datum"
           >
             <td
@@ -1545,7 +1545,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root test-row-classname"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="First Datum"
           >
             <td
@@ -1609,7 +1609,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root test-row-classname"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Fourth Datum"
           >
             <td
@@ -1673,7 +1673,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root test-row-classname"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Seventh Datum"
           >
             <td
@@ -1737,7 +1737,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root test-row-classname"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Tenth Datum"
           >
             <td
@@ -1801,7 +1801,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root test-row-classname"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
@@ -1865,7 +1865,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root test-row-classname"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Seventeenth Datum"
           >
             <td
@@ -2013,7 +2013,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
@@ -2076,7 +2076,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
@@ -2139,7 +2139,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
@@ -2202,7 +2202,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
@@ -2265,7 +2265,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
@@ -2328,7 +2328,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
@@ -2511,7 +2511,7 @@ exports[`render paged table with no initially selected items, then select items 
           class="MuiTableBody-root"
         >
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="First Datum"
           >
             <td
@@ -2574,7 +2574,7 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Fourth Datum"
           >
             <td
@@ -2637,7 +2637,7 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventh Datum"
           >
             <td
@@ -2700,7 +2700,7 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Tenth Datum"
           >
             <td
@@ -2763,7 +2763,7 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
@@ -2826,7 +2826,7 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="MuiTableRow-root"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventeenth Datum"
           >
             <td

@@ -4,7 +4,7 @@
 
 %common-table-cell {
   padding: 4px;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(xl) {
     padding: 4px 48px 4px 24px;
   }
 }
@@ -67,8 +67,8 @@
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: rgba(0,0,0,.25);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   }
   thead th {
     position: sticky;
@@ -104,6 +104,10 @@
 
   .tableHeader {
     @extend %common-table-cell;
+  }
+
+  .tableRow {
+    height: 48px;
   }
 
   .tableCell {

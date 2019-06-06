@@ -28,7 +28,7 @@ export const PagedTableRow = (props: Props) => {
   return (
     <TableRow
       classes={{
-        root: className,
+        root: classNames(className, styles.tableRow),
         selected: styles.highlightedRow,
       }}
       data-testid={rowId}

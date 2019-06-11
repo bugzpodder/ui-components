@@ -34,6 +34,12 @@
 27. Add `common.scss` styles for bold purple links, etc.
 28. Update `primary` colors for Material components, and default plain button color.
 29. Increase button weight.
+30. Replaces `ExportTableButton` with `ExportButton` which has a slightly different signature and shows
+    a modal to give user options (e.g. CSV/TSV) before downloading. Mark `ExportTableButton` as deprecated (although in
+    the meantime it just wraps `ExportButton`).
+31. Update `PagedTable` to use new `ExportButton`.
+32. Rename `PagedTable` prop from `includeExportAsCsvButton` to `includeExportButton`.
+33. Add `fetchBulkExportRows` prop to PagedTable to specify bulk data to be exported when using the Export button.
 
 ## 0.10.0 - 2019-04-01
 

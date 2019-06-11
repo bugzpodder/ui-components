@@ -59,7 +59,8 @@ export const TableComponent = (props: Props) => {
     onHighlightRow,
     highlightedRowId,
   };
-  const tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
+  let tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
+  tableColumns = tableColumns.filter(column => !column.excludeFromTable);
   const hasHeaders = tableColumns.find(column => column.Header);
   return (
     <Table

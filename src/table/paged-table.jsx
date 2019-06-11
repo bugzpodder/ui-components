@@ -3,10 +3,11 @@ import React, { Fragment } from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { CommonCard } from "../common-card";
-import { ExportTableButton } from "./components/export-button";
+import { ExportButton } from "../export-button/export-button";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
 import { TablePager } from "./components/table-pager";
+import { getRowId } from "./utilities/row-utils";
 
 export type PagedTableProps = {
   /** Provides the information you wish to display */
@@ -39,8 +40,17 @@ export type PagedTableProps = {
   idKey?: string | number,
   /** Provides a spinner when `isLoading` is true */
   isLoading?: boolean,
-  /** Provides an `Export CSV button` when includeExportAsCsvButton is true */
-  includeExportAsCsvButton?: boolean,
+  /** Includes an export button which allows users to download the contents of
+   * the table in various formats. Defaults to true. */
+  includeExportButton?: boolean,
+  /** A function which takes no input and returns a promise to a list of the
+   * data that will be exported if the user chooses the option "All rows on all
+   * pages matching the given search filter" in the modal that appears when
+   * they click the export button. If this function is not specified, such an
+   * option does not appear and so users can only export the data present in
+   * the table (which is limited by pagination). Has no effect if
+   * `includeExportButton` is false. */
+  fetchBulkExportRows?: () => Promise<Array<Object>>,
   /** Enables checkbox selection. Must change the state of selectedRows */
   onSelect?: (Array<any>) => any,
   /** Provides the id's for the selected rows when onSelect is used */
@@ -89,14 +99,15 @@ export const PagedTable = (props: PagedTableProps) => {
     headerActions = [],
     title = "",
     subheader,
-    includeExportAsCsvButton = true,
     hasTableMargin = true,
     isFullBleed = false,
     cardProps = {},
+    includeExportButton = true,
+    fetchBulkExportRows,
     ...tableProps
   } = props;
   const {
-    classes = {}, columns, data, isLoading = false, onSelect, selectedRows, tableOptions,
+    classes = {}, columns, data, isLoading = false, onSelect, selectedRows, tableOptions, idKey,
   } = tableProps;
   if (isFullBleed) {
     cardProps.elevation = 0;
@@ -116,24 +127,35 @@ export const PagedTable = (props: PagedTableProps) => {
   const numberSelected = (selectedRows && selectedRows.length) || 0;
   const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
   const hasHeaderActions = Array.isArray(headerActions) ? headerActions.length > 0 : !!headerActions;
-  const tableHeaderActions = includeExportAsCsvButton ? (
-    <Fragment>
-      <ExportTableButton
-        columns={columns}
-        data={data}
-        title={typeof title === "string" ? title : "data"}
-      />
-      {hasHeaderActions && headerActions}
-    </Fragment>
-  ) : (
-    hasHeaderActions && headerActions
-  );
+
   return (
     <Fragment>
       <CommonCard
         title={cardTitle}
         subheader={subheader}
-        headerActions={tableHeaderActions}
+        headerActions={(
+          <Fragment>
+            {includeExportButton && (
+            <ExportButton
+              columns={columns}
+              visibleRows={data}
+              filenamePrefix={
+                  typeof title === "string" ? title.toLowerCase().replace(/[^a-z\d]/g, "-") : "exported-table"
+                }
+              selectedRows={
+                  selectedRows
+                    ? data.filter((instance, index) => {
+                      const rowId = getRowId(idKey, instance, index);
+                      return selectedRows.includes(rowId);
+                    })
+                    : undefined
+                }
+              fetchBulkExportRows={fetchBulkExportRows}
+            />
+            )}
+            {hasHeaderActions && headerActions}
+          </Fragment>
+)}
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
         data-testid="paged-table"
         classes={{

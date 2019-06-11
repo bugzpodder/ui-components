@@ -33,14 +33,14 @@ test("render basic paged table", () => {
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
-  expect(getByTestId("export-test-table")).toBeInTheDocument();
-  expect(getByTestId("export-test-table")).toHaveTextContent("Export to CSV");
-  fireEvent.click(getByTestId("export-test-table"));
-  expect(console.error).toHaveBeenCalled();
+  expect(getByTestId("export-button")).toBeInTheDocument();
+  expect(getByTestId("export-button")).toHaveTextContent("Export");
+  fireEvent.click(getByTestId("export-button"));
+  expect(getByTestId("export-modal")).toBeInTheDocument();
 });
 
 test("render paged table with no results", () => {
-  const { container, getByTestId } = render(
+  const { container } = render(
     <TestWrapper>
       <PagedTable
         title={4}
@@ -50,7 +50,6 @@ test("render paged table with no results", () => {
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
-  expect(getByTestId("export-data")).toBeInTheDocument();
 });
 
 test("render loading paged table", () => {
@@ -148,7 +147,7 @@ test("render paged table with default ids, and test row highlighting", () => {
         selectedRows={[]}
         highlightedRowId={1}
         onHighlightRow={mockHandleHighlight}
-        includeExportAsCsvButton={false}
+        includeExportButton={false}
       />
     </TestWrapper>,
   );

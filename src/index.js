@@ -1,5 +1,5 @@
 // @flow
-import { type PagedTableProps } from "./table";
+import type { PagedTableProps } from "./table";
 
 export { Alert } from "./alert";
 export { AvatarIcon } from "./avatar-icon";
@@ -25,6 +25,7 @@ export { OmniChips, OmniSearchBar } from "./omni-search-bar";
 export {
   SimpleTable, ExportTableButton, LargeSimpleTable, PagedTable,
 } from "./table";
+export { ExportButton, generateReport } from "./export-button";
 export type { PagedTableProps };
 export { SignInPage } from "./sign-in-page";
 export { SpinnerOverlay } from "./spinner-overlay";

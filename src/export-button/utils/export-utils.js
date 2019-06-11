@@ -4,7 +4,7 @@ import { toDelimitedReport } from "@grail/lib";
 
 export const generateReport = (
   fileName: string,
-  columns: Array<ReportColumn>,
+  columns: Array<ExportableColumn>,
   data: Array<Object>,
   options: ReportOptions = {},
 ) => {

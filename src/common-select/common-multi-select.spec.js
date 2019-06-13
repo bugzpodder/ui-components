@@ -8,7 +8,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 afterEach(cleanup);
 
 const TestMultiSelect = props => {
-  const { mockOnChange } = props;
+  const { mockOnChange, label } = props;
   const [values, setValues] = useState([
     { label: "Algeria", value: "ALGERIA" },
     { label: "Afghanistan", value: "AFGHANISTAN" },
@@ -21,6 +21,7 @@ const TestMultiSelect = props => {
     <TestWrapper>
       <CommonMultiSelect
         options={COUNTRIES}
+        label={label}
         values={values}
         onChange={setChange}
       />
@@ -36,4 +37,11 @@ test("render CommonMultiSelect with preloaded values and clear one value", () =>
   expect(mockOnChange.mock.results[0].value).toEqual([{ label: "Afghanistan", value: "AFGHANISTAN" }]);
   fireEvent.click(getByTestId("remove-AFGHANISTAN"));
   expect(mockOnChange.mock.results[1].value).toEqual([]);
+});
+
+test("CommonMultiSelect label", () => {
+  const label = "Countries";
+  const { container, getByTestId } = render(<TestMultiSelect label={label} />);
+  expect(container).toMatchSnapshot();
+  expect(getByTestId("common-select-input-label")).toHaveTextContent(label);
 });

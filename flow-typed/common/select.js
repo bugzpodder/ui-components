@@ -15,6 +15,7 @@ declare type CommonSelectClasses = {
   input?: string,
   options?: string,
   root?: string,
+  label?: string,
 };
 
 // TODO(nsawas): deprecate Typeahead types

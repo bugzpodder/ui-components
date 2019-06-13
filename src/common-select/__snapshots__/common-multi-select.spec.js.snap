@@ -1,5 +1,174 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CommonMultiSelect label 1`] = `
+<div>
+  <div
+    class="common-select__root"
+    data-testid="common-select"
+  >
+    <div
+      class="MuiFormControl-root"
+    >
+      <label
+        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl common-select__input-label MuiInputLabel-animated MuiInputLabel-shrink"
+        data-shrink="true"
+        data-testid="common-select-input-label"
+        for=""
+      >
+        Countries
+      </label>
+      <div
+        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      >
+        <div
+          class="common-select__container"
+        >
+          <div
+            class="MuiInputBase-input MuiInput-input css-2b097c-container"
+            id=""
+          >
+            <div
+              class="common-select__control css-yk16xz-control"
+            >
+              <div
+                class="common-select__value-container common-select__value-container--is-multi common-select__value-container--has-value css-1hwfws3"
+              >
+                <div
+                  class="MuiChip-root common-select__chip-root"
+                  data-testid="multi-value-chip"
+                  tabindex="-1"
+                >
+                  <span
+                    class="MuiChip-label common-select__chip-label"
+                  >
+                    <div
+                      class="css-12jo7m5 common-select__multi-value__label"
+                    >
+                      Algeria
+                    </div>
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      data-testid="remove-ALGERIA"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="MuiChip-root common-select__chip-root"
+                  data-testid="multi-value-chip"
+                  tabindex="-1"
+                >
+                  <span
+                    class="MuiChip-label common-select__chip-label"
+                  >
+                    <div
+                      class="css-12jo7m5 common-select__multi-value__label"
+                    >
+                      Afghanistan
+                    </div>
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      data-testid="remove-AFGHANISTAN"
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  class="css-1g6gooi"
+                >
+                  <div
+                    class="common-select__input"
+                    style="display: inline-block;"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocapitalize="none"
+                      autocomplete="off"
+                      autocorrect="off"
+                      id="select-input"
+                      spellcheck="false"
+                      style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="common-select__indicators css-1wy0on6"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root common-select__clear-icon"
+                  data-testid="clear-icon"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+                <div
+                  class="common-select__dropdown-arrow"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
 exports[`render CommonMultiSelect with preloaded values and clear one value 1`] = `
 <div>
   <div
@@ -9,6 +178,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
     <div
       class="MuiFormControl-root"
     >
+      
       <div
         class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >

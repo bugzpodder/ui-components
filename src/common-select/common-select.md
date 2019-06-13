@@ -107,6 +107,8 @@ const SelectExample = () => {
   return (
     <div className={styles.selectContainer}>
       <CommonSelect
+        id="country-select"
+        label="Country"
         classes={{
           root: styles.commonSelect,
         }}

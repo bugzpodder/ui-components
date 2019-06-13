@@ -25,6 +25,8 @@ type CommonSelectProps = {
   initialOptions?: Array<CommonSelectOption>,
   /** Renders the input at its full width */
   isFullWidth?: boolean,
+  /** Label for the select. */
+  label?: string,
   /** Text displayed directly under the input */
   helperText?: string,
   /**
@@ -33,6 +35,8 @@ type CommonSelectProps = {
    *  - `root`: card root div element
    *
    *  - `input`: input component
+   *
+   *  - `label`: input label component
    *
    *  - `options`: option dropdown items
    */

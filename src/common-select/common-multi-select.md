@@ -115,6 +115,8 @@ const SelectExample = () => {
   return (
     <div className={styles.selectContainer}>
       <CommonMultiSelect
+        id="countries-select"
+        label="Countries"
         classes={{
           root: styles.commonSelect,
         }}

@@ -40,6 +40,7 @@
 31. Update `PagedTable` to use new `ExportButton`.
 32. Rename `PagedTable` prop from `includeExportAsCsvButton` to `includeExportButton`.
 33. Add `fetchBulkExportRows` prop to PagedTable to specify bulk data to be exported when using the Export button.
+34. Support input labels for `CommonSelect`/`CommonMultiSelect`.
 
 ## 0.10.0 - 2019-04-01
 

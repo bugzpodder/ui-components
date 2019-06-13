@@ -6,6 +6,11 @@
     // The combination resets z-index context, making the menu not show up over a dialog(z-index: 1300)
     z-index: unset;
   }
+
+  .common-select__input-label + .common-select__input-root {
+    margin-top: 16px;
+  }
+
   .common-select__input-root {
     margin: 0;
     line-height: 1em;

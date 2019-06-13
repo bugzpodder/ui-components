@@ -11,7 +11,9 @@ afterEach(cleanup);
 /** ******* Sync ******* */
 
 const TestCommonSelect = props => {
-  const { mockOnChange, "data-testid": dataTestId, classes } = props;
+  const {
+    mockOnChange, "data-testid": dataTestId, classes, label,
+  } = props;
   const [value, setValue] = useState({});
   const setChange = value => {
     mockOnChange(value);
@@ -23,6 +25,7 @@ const TestCommonSelect = props => {
         menuIsOpen
         data-testid={dataTestId}
         classes={classes}
+        label={label}
         options={COUNTRIES}
         id="test"
         helperText="some helper text"
@@ -81,6 +84,14 @@ test("CommonSelect classes", () => {
   expect(getByTestId("common-select")).toHaveClass("test-root");
   expect(getByTestId("test-input")).toHaveClass("test-input");
   expect(getByTestId("ALGERIA")).toHaveClass("test-options");
+});
+
+test("CommonSelect label", () => {
+  const label = "Country";
+  const { container, getByTestId } = render(<TestCommonSelect label={label} />);
+  // Check document.
+  expect(container).toMatchSnapshot();
+  expect(getByTestId("common-select-input-label")).toHaveTextContent(label);
 });
 
 test("test disabled CommonSelect", () => {

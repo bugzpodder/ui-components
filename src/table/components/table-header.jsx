@@ -82,10 +82,9 @@ export const TableHeader = (props: Props) => {
             ((enableSelectAll || !isCheckboxHeader) && (
               <TableCell
                 key={key}
-                className={classNames(headerClassName, {
+                className={classNames(headerClassName, styles.tableHeader, {
                   [`${fieldId}-header`]: fieldId,
                   [styles.singleIcon]: isCheckboxHeader || isSingleIcon,
-                  [styles.tableHeader]: !isCheckboxHeader,
                 })}
                 sortDirection={isSorted ? sortOrder : false}
               >

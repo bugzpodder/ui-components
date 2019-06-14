@@ -75,13 +75,13 @@ exports[`render basic paged table 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -337,13 +337,13 @@ exports[`render loading paged table 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -615,7 +615,7 @@ exports[`render paged table and test pagination 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
@@ -651,13 +651,13 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -1244,7 +1244,7 @@ exports[`render paged table and test sorting 1`] = `
           >
             <th
               aria-sort="ascending"
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               <span
@@ -1268,7 +1268,7 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               <span
@@ -1563,7 +1563,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
@@ -1599,13 +1599,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
               </span>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -2052,7 +2052,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
@@ -2087,13 +2087,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
               </span>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -2565,7 +2565,7 @@ exports[`render paged table with no initially selected items, then select items 
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
@@ -2600,13 +2600,13 @@ exports[`render paged table with no initially selected items, then select items 
               </span>
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -3080,13 +3080,13 @@ exports[`render paged table with no results 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -3190,13 +3190,13 @@ exports[`render paged table with no results and is loading 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
@@ -3307,13 +3307,13 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
             class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head columnOne-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head columnTwo-header tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two

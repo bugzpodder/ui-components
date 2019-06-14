@@ -52,6 +52,11 @@
     height: unset;
     max-height: unset;
     margin: 0;
+
+    .tableHeader:first-child,
+    .tableCell:first-child {
+      padding-left: 16px;
+    }
   }
 }
 

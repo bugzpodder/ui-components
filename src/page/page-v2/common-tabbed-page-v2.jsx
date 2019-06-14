@@ -82,7 +82,7 @@ export const CommonTabbedPageV2 = (props: Props) => {
     throw new Error("pageConfigs is required");
   }
   const selectedTab = pageConfigs.find(tab => tab.key === activeTab);
-  if (!isLoading && !selectedTab) {
+  if (!isLoading && activeTab && !selectedTab) {
     console.error("no pageConfig keys match the provided activeTab");
   }
   let PageContent = null;
@@ -100,7 +100,7 @@ export const CommonTabbedPageV2 = (props: Props) => {
         pageConfigs && (
           <TabsComponent
             wrapTabLabels={wrapTabLabels}
-            activeTab={!isLoading && activeTab}
+            activeTab={(!isLoading && activeTab) || false}
             onChangeActiveTab={onChangeActiveTab}
             classes={{ tabs, tab }}
             pageConfigs={pageConfigs}

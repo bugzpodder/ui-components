@@ -21,6 +21,7 @@ export const TabsComponent = (props: Props) => {
   return (
     <Tabs
       variant="scrollable"
+      scrollButtons="on"
       data-testid="common-tabbed-page-tabs"
       textColor="primary"
       indicatorColor="primary"

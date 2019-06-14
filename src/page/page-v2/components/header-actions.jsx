@@ -5,7 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import React, { Fragment, useState } from "react";
+import React, { Fragment, forwardRef, useState } from "react";
 import classNames from "classnames";
 import styles from "../common-page-v2.module.scss";
 import { LinkButton } from "../../../link";
@@ -16,10 +16,18 @@ type Props = {
   classes?: CommonPageV2Classes,
 };
 
-export const HeaderActions = (props: Props) => {
+export const HeaderActions = forwardRef<Props, any>((props: Props, ref: any) => {
   const { primaryActions = [], secondaryActions = [], classes = {} } = props;
   const [anchorEl, setAnchorEl] = useState(null);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  if (primaryActions.length === 0 && secondaryActions.length === 0) {
+    return (
+      <div
+        ref={ref}
+        className={styles.headerActions}
+      />
+    );
+  }
   const mappedPrimaryActions = primaryActions.map((action, index) => {
     const {
       Component, content = "", id, color = "primary", className = "", ...otherProps
@@ -65,60 +73,59 @@ export const HeaderActions = (props: Props) => {
   const id = "test";
   return (
     <div
+      ref={ref}
       data-testid="common-page-header-actions"
-      className={classNames(styles.headerActionsContainer, classes.headerActions)}
+      className={classNames(styles.headerActions, classes.headerActions)}
     >
-      <div className={styles.headerActions}>
-        {mappedPrimaryActions.length > 0 && (
-          <div
-            data-testid="common-page-primary-actions"
-            className={classNames(styles.primaryActions, classes.primaryActions)}
-          >
-            {mappedPrimaryActions}
-          </div>
-        )}
-        <Fragment>
-          <IconButton
-            aria-describedby={id}
-            data-testid="common-page-secondary-actions-button"
-            disabled={!hasSecondaryActions}
-            classes={{
-              root: styles.secondaryActionsButton,
-              label: classNames({ [styles.disabled]: !hasSecondaryActions }),
-            }}
-            onClick={event => {
-              setAnchorEl(event.currentTarget);
-              setMenuIsOpen(true);
-            }}
-          >
-            <MoreVertIcon />
-          </IconButton>
-          <Menu
-            id={id}
-            data-testid="common-page-secondary-actions"
-            classes={{
-              paper: classNames(styles.secondaryActions, classes.secondaryActions),
-            }}
-            anchorEl={anchorEl}
-            getContentAnchorEl={null}
-            open={menuIsOpen}
-            onClose={() => {
-              setMenuIsOpen(false);
-              setAnchorEl(null);
-            }}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "right",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "right",
-            }}
-          >
-            {mappedSecondaryActions}
-          </Menu>
-        </Fragment>
-      </div>
+      {mappedPrimaryActions.length > 0 && (
+        <div
+          data-testid="common-page-primary-actions"
+          className={classNames(styles.primaryActions, classes.primaryActions)}
+        >
+          {mappedPrimaryActions}
+        </div>
+      )}
+      <Fragment>
+        <IconButton
+          aria-describedby={id}
+          data-testid="common-page-secondary-actions-button"
+          disabled={!hasSecondaryActions}
+          classes={{
+            root: styles.secondaryActionsButton,
+            label: classNames({ [styles.disabled]: !hasSecondaryActions }),
+          }}
+          onClick={event => {
+            setAnchorEl(event.currentTarget);
+            setMenuIsOpen(true);
+          }}
+        >
+          <MoreVertIcon />
+        </IconButton>
+        <Menu
+          id={id}
+          data-testid="common-page-secondary-actions"
+          classes={{
+            paper: classNames(styles.secondaryActions, classes.secondaryActions),
+          }}
+          anchorEl={anchorEl}
+          getContentAnchorEl={null}
+          open={menuIsOpen}
+          onClose={() => {
+            setMenuIsOpen(false);
+            setAnchorEl(null);
+          }}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "right",
+          }}
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+        >
+          {mappedSecondaryActions}
+        </Menu>
+      </Fragment>
     </div>
   );
-};
+});

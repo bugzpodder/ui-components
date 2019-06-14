@@ -11,23 +11,16 @@ exports[`render common tabbed page 1`] = `
       data-testid="common-page-header"
     >
       <div
-        class="titleFlexContainer"
+        class="titleContainer"
         data-testid="common-page-title-container"
       >
-        <div
-          class="titleContainer"
+        <h6
+          class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-noWrap title"
+          data-testid="common-page-title"
         >
-          <h6
-            class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-noWrap title"
-            data-testid="common-page-title"
-          >
-            Test Card
-          </h6>
-          <p
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-noWrap"
-            data-testid="common-page-subtitle"
-          />
-        </div>
+          Test Card
+        </h6>
+        
       </div>
       <div
         class="centerHeader"
@@ -39,6 +32,9 @@ exports[`render common tabbed page 1`] = `
           <div
             class="MuiTabs-flexContainer tabs"
           >
+            <div
+              class="PrivateTabScrollButton-root-67 MuiTabs-scrollButtons scrollButton"
+            />
             <div
               class="MuiTabs-scrollable"
               style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
@@ -107,70 +103,69 @@ exports[`render common tabbed page 1`] = `
                 </button>
               </div>
               <span
-                class="PrivateTabIndicator-root-80 PrivateTabIndicator-colorPrimary-81 MuiTabs-indicator"
+                class="PrivateTabIndicator-root-81 PrivateTabIndicator-colorPrimary-82 MuiTabs-indicator"
                 style="left: 0px; width: 0px;"
               />
             </div>
+            <div
+              class="PrivateTabScrollButton-root-67 MuiTabs-scrollButtons scrollButton"
+            />
           </div>
         </div>
       </div>
       <div
-        class="headerActionsContainer"
+        class="headerActions"
         data-testid="common-page-header-actions"
       >
         <div
-          class="headerActions"
+          class="primaryActions"
+          data-testid="common-page-primary-actions"
         >
-          <div
-            class="primaryActions"
-            data-testid="common-page-primary-actions"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root primaryAction MuiButton-containedPrimary MuiButton-contained"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                Test Action
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </div>
           <button
-            aria-describedby="test"
-            class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton"
-            data-testid="common-page-secondary-actions-button"
+            class="MuiButtonBase-root MuiButton-root primaryAction MuiButton-containedPrimary MuiButton-contained"
             tabindex="0"
             type="button"
           >
             <span
-              class="MuiIconButton-label"
+              class="MuiButton-label"
             >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-                />
-              </svg>
+              Test Action
             </span>
             <span
               class="MuiTouchRipple-root"
             />
           </button>
         </div>
+        <button
+          aria-describedby="test"
+          class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton"
+          data-testid="common-page-secondary-actions-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+              />
+            </svg>
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
       </div>
     </div>
     <div

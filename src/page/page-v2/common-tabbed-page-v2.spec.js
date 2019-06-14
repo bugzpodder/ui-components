@@ -127,7 +127,7 @@ test("require pageConfigs is defined", () => {
 
 test("activeTab must match at least one page config", () => {
   mockConsole();
-  render(<TestCommonTabbedPage activeTab="" />);
+  render(<TestCommonTabbedPage activeTab="hi" />);
   // TODO(nsawas): expect error message.
   expect(console.error).toHaveBeenCalled();
 });

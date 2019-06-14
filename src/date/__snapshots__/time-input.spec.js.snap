@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render readOnly TimeInput 1`] = `
+<div>
+  <span
+    class="readonlyTextField"
+    data-testid="readonly-text-field"
+  >
+    04:20 PM
+  </span>
+</div>
+`;
+
+exports[`render time input 1`] = `
+<div>
+  <div
+    class="timePicker"
+  >
+    <div
+      class="MuiFormControl-root MuiTextField-root"
+      data-testid="time-input"
+    >
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+      >
+        <input
+          aria-invalid="false"
+          class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
+          placeholder="Test Time Input"
+          type="text"
+          value="04:20 PM"
+        />
+        <div
+          class="MuiInputAdornment-root MuiInputAdornment-positionEnd adornmentWidth"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root"
+            data-testid="time-picker-button"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;

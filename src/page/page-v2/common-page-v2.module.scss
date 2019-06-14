@@ -13,24 +13,36 @@
     align-items: center;
     justify-content: space-between;
 
-    .titleFlexContainer {
-      flex: 1 1 auto;
+    .titleContainer {
+      margin: 10px 10px 10px 24px;
       display: flex;
+      justify-content: center;
       flex-direction: column;
-
-      .titleContainer {
-        margin: 10px 5px 10px 24px;
-
-        .title {
-          font-weight: bold;
-        }
+      flex: 0 1 auto;
+      align-self: stretch;
+      &:empty {
+        flex: 1 1 auto;
       }
+
+      .title {
+        font-weight: bold;
+      }
+    }
+
+    .placeHolder {
+      flex: 1 1 auto;
     }
 
     .centerHeader {
       flex: 1 1 auto;
       align-self: stretch;
       overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      min-width: 160px;
+      &:empty {
+        flex: 1 1 auto;
+      }
 
       .tabsContainer {
         height: 100%;
@@ -42,15 +54,16 @@
           }
         }
 
+        // Display a slight shadow if tabs are hidden.
         .scrollButton:first-child {
-          box-shadow: inset 6px 0px 5px 0px $box-shadow-color;
+          box-shadow: inset 6px 0 5px 0 $box-shadow-color;
           &:empty {
             box-shadow: none;
           }
         }
 
         .scrollButton:last-child {
-          box-shadow: inset -6px 0px 5px 0px $box-shadow-color;
+          box-shadow: inset -6px 0 5px 0 $box-shadow-color;
           &:empty {
             box-shadow: none;
           }
@@ -58,32 +71,38 @@
       }
     }
 
-    .headerActionsContainer {
+    .headerActions {
+      padding: 5px 0 5px 10px;
+      display: flex;
+      align-items: center;
+      align-self: stretch;
       flex: 0 1 auto;
+      justify-content: flex-end;
+      &:empty {
+        flex: 1 1 auto;
+      }
 
-      .headerActions {
-        padding: 5px 0 5px 5px;
+      > * + * {
+        margin-left: 5px;
+      }
+
+      .primaryActions {
         display: flex;
-        align-items: center;
 
-        > * + * {
+        .primaryAction {
+          white-space: nowrap;
+        }
+
+        .primaryAction + .primaryAction {
           margin-left: 5px;
         }
+      }
 
-        .primaryActions {
-          display: inline-block;
+      .secondaryActionsButton {
+        display: inline-block;
 
-          .primaryAction {
-            white-space: nowrap;
-          }
-        }
-
-        .secondaryActionsButton {
-          display: inline-block;
-
-          .disabled {
-            color: transparent;
-          }
+        .disabled {
+          color: transparent;
         }
       }
     }

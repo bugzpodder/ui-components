@@ -15,6 +15,13 @@ const generateClassName = createGenerateClassName({
   dangerouslyUseGlobalCSS: true,
 });
 
+class MockResizeObserver {
+  observe = () => {};
+  disconnect = () => {};
+}
+
+window.ResizeObserver = MockResizeObserver;
+
 export const TestWrapper = (props: Props) => {
   const { children } = props;
   return (

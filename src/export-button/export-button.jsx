@@ -32,6 +32,8 @@ type Props = {
    * filename (i.e. "prefix 2019-04-20 04-20-00.csv"). Prefix defaults to
    * "export". */
   filenamePrefix?: string,
+  /* Props applied to the button component */
+  buttonProps?: Object,
 };
 
 const DATA_SOURCE = {
@@ -66,7 +68,7 @@ export const pagedTableColumnsToExportableColumnsIfNecessary = (
 
 export const ExportButton = (props: Props) => {
   const {
-    columns, visibleRows, filenamePrefix = "export", fetchBulkExportRows, selectedRows,
+    columns, visibleRows, filenamePrefix = "export", fetchBulkExportRows, selectedRows, buttonProps,
   } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -289,8 +291,9 @@ export const ExportButton = (props: Props) => {
         <TwoColumnGrid rows={rows} />
       </CommonDialog>
       <Button
-        onClick={() => setIsOpen(true)}
         data-testid="export-button"
+        {...buttonProps}
+        onClick={() => setIsOpen(true)}
       >
         <CloudDownloadIcon className="margin-right-5" />
         Export

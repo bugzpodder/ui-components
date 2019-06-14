@@ -1,6 +1,8 @@
 // @flow
 import Paper from "@material-ui/core/Paper";
-import React, { type Node } from "react";
+import React, {
+  type Node, useEffect, useRef, useState,
+} from "react";
 import classNames from "classnames";
 import styles from "./common-page-v2.module.scss";
 import { HeaderActions } from "./components/header-actions";
@@ -68,8 +70,33 @@ export const CommonPageV2 = (props: Props) => {
     ...cardProps
   } = props;
   const hasChildren = Array.isArray(children) ? children.filter(child => child).length > 0 : !!children;
-  const hasPrimaryActions = primaryActions && primaryActions.length > 0;
-  const hasSecondaryActions = secondaryActions && secondaryActions.length > 0;
+  const titleRef = useRef(null);
+  const headerActionsRef = useRef(null);
+
+  // useContentRect is a custom react hook that gets the rectangle of the ref provided. The function must start
+  // with `use` in order to be considered a hook, and to use `useState` and `useEffect` internally.
+  const useContentRect = ref => {
+    const currentRef = ref.current;
+    const [contentRect, setContentRect] = useState(currentRef ? currentRef.getBoundingClientRect() : {});
+    useEffect(() => {
+      if (!currentRef) {
+        return;
+      }
+      const observer = new window.ResizeObserver(entries => setContentRect(entries[0].contentRect));
+      observer.observe(currentRef);
+      return () => observer.disconnect(currentRef);
+    }, [currentRef]);
+    return contentRect;
+  };
+  // By getting the rectangle of each edge (left/right) header item we can accurately find out which item is wider.
+  // Then, a placeholder div of exactly that size is inserted on the inside of the shorter item in order to accurately
+  // center the centerHeader div.
+  const { width: titleWidth } = useContentRect(titleRef);
+  const { width: headerActionsWidth } = useContentRect(headerActionsRef);
+  const sizeDifference = titleWidth - headerActionsWidth;
+  const isTitleBiggerThanHeaderActions = sizeDifference > 0;
+  const isHeaderActionsBiggerThanTitle = sizeDifference < 0;
+
   return (
     <div
       className={classNames(classes.root, styles.pageContainer)}
@@ -84,18 +111,30 @@ export const CommonPageV2 = (props: Props) => {
         {...cardProps}
       >
         <TitleComponent
+          ref={titleRef}
           title={title}
           classes={classes}
           subtitle={subtitle}
         />
-        <div className={classNames(styles.centerHeader, classes.centerHeader)}>{centerHeader}</div>
-        {(hasPrimaryActions || hasSecondaryActions) && (
-          <HeaderActions
-            classes={classes}
-            primaryActions={primaryActions}
-            secondaryActions={secondaryActions}
-          />
+        {isHeaderActionsBiggerThanTitle && (
+        <div
+          className={styles.placeHolder}
+          style={{ maxWidth: -sizeDifference }}
+        />
         )}
+        <div className={classNames(styles.centerHeader, classes.centerHeader)}>{centerHeader}</div>
+        {isTitleBiggerThanHeaderActions && (
+        <div
+          className={styles.placeHolder}
+          style={{ maxWidth: sizeDifference }}
+        />
+        )}
+        <HeaderActions
+          ref={headerActionsRef}
+          classes={classes}
+          primaryActions={primaryActions}
+          secondaryActions={secondaryActions}
+        />
       </Paper>
       {hasChildren && (
         <div

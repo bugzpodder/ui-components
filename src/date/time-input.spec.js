@@ -2,8 +2,8 @@
 import "jest-dom/extend-expect";
 import React from "react";
 import mockConsole from "jest-mock-console";
-import { TimeInput } from ".";
 import { TestWrapper } from "../test-utils";
+import { TimeInput } from ".";
 import { cleanup, render } from "@testing-library/react";
 import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 

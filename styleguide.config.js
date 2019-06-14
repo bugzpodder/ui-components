@@ -34,6 +34,7 @@ module.exports = {
         "./src/date/date-value.jsx",
         "./src/date/date-time-value.jsx",
         "./src/date/humanized-date-time.jsx",
+        "./src/date/time-input.jsx",
         "./src/readonly-text-field/readonly-text-field.jsx",
         "./src/readonly-text-field/validated-readonly-text-field.jsx",
         "./src/text-input/text-input.jsx",

@@ -21,7 +21,7 @@ const rows = [
 ];
 
 <ExampleWrapper>
-  <TwoColumnGrid labelWidth={2} rows={rows} />
+  <TwoColumnGrid header={{ label: "Label Header", value: "Value Header" }} labelWidth={2} rows={rows} />
 </ExampleWrapper>;
 ```
 

@@ -43,6 +43,7 @@
 34. Support input labels for `CommonSelect`/`CommonMultiSelect`.
 35. Increase `padding-left` for the first column of full-bleed tables.
 36. Update buggy CSS media query for `CommonDialog` and get rid of unused size CSS classes.
+37. Add header option to `TwoColumnGrid`.
 
 ## 0.10.0 - 2019-04-01
 

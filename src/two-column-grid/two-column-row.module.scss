@@ -1,5 +1,16 @@
 @import "../styles/colors.scss";
 
+@mixin largerTextSize {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin header {
+  font-weight: bold;
+  color: $material-ui-black;
+  @include largerTextSize;
+}
+
 .gridItem {
   width: 100%;
   display: flex;
@@ -9,8 +20,11 @@
       .rowLabel {
         color: $grail-gray-medium-color;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+        @include largerTextSize;
+      }
+
+      .header {
+        @include header;
       }
     }
 
@@ -19,6 +33,10 @@
     &.column {
       margin: 6px auto;
       padding: 0 10px;
+
+      .header {
+        @include header;
+      }
     }
   }
 

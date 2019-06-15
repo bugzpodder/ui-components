@@ -26,6 +26,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            class=""
             data-testid="test-label-1-value"
             style="text-align: left;"
           >
@@ -53,6 +54,7 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
+            class=""
             data-testid="row-1-value"
             style="text-align: left;"
           >
@@ -91,6 +93,7 @@ exports[`render two column grid 2`] = `
           data-testid="two-column-row-value"
         >
           <div
+            class=""
             data-testid="test-label-1-value"
             style="text-align: right;"
           >
@@ -118,6 +121,7 @@ exports[`render two column grid 2`] = `
           data-testid="two-column-row-value"
         >
           <div
+            class=""
             data-testid="row-1-value"
             style="text-align: right;"
           >
@@ -156,6 +160,7 @@ exports[`render two column grid 3`] = `
           data-testid="two-column-row-value"
         >
           <div
+            class=""
             data-testid="test-label-1-value"
             style="text-align: left;"
           >
@@ -183,6 +188,7 @@ exports[`render two column grid 3`] = `
           data-testid="two-column-row-value"
         >
           <div
+            class=""
             data-testid="row-1-value"
             style="text-align: left;"
           >

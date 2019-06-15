@@ -22,7 +22,9 @@ export const TwoColumnRow = (props: Props) => {
   const labelTextAlign = textAlign[0] || "right";
   const valueTextAlign = textAlign[1] || "left";
 
-  const { label, value, classes = {} } = row;
+  const {
+    label, value, isHeader = false, classes = {},
+  } = row;
   const testIdPrefix =
     typeof label === "string"
       ? label
@@ -30,7 +32,7 @@ export const TwoColumnRow = (props: Props) => {
         .replace(/[^A-Za-z0-9_ ]/, "")
         .split(" ")
         .join("-")
-      : `row-${rowIndex}`;
+      : `row-${isHeader ? "header" : rowIndex}`;
   return (
     <Grid
       container
@@ -49,7 +51,7 @@ export const TwoColumnRow = (props: Props) => {
           <Typography
             data-testid={`${testIdPrefix}-label`}
             style={{ textAlign: labelTextAlign }}
-            className={classNames(styles.rowLabel, classes.label)}
+            className={classNames(styles.rowLabel, classes.label, { [styles.header]: isHeader })}
           >
             {label}
           </Typography>
@@ -57,7 +59,7 @@ export const TwoColumnRow = (props: Props) => {
           <div
             data-testid={`${testIdPrefix}-label`}
             style={{ textAlign: labelTextAlign }}
-            className={classNames(styles.rowLabel, classes.label)}
+            className={classNames(styles.rowLabel, classes.label, { [styles.header]: isHeader })}
           >
             {label}
           </div>
@@ -72,7 +74,7 @@ export const TwoColumnRow = (props: Props) => {
         <div
           data-testid={`${testIdPrefix}-value`}
           style={{ textAlign: valueTextAlign }}
-          className={classes.value}
+          className={classNames(classes.value, { [styles.header]: isHeader })}
         >
           {value}
         </div>

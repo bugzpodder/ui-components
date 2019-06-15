@@ -18,6 +18,8 @@ type Props = {
    *  - `value` (applied directly the the value element's wrapper)
    */
   rows: GridRows,
+  /** If provided, displays bold, black-colored header text above the label and value columns */
+  header?: GridRow,
   /** Takes in a number between 1-11 to determine spacing between columns */
   labelWidth?: GridSizes,
   /** Defines the text alignment of the label and value columns */
@@ -27,8 +29,11 @@ type Props = {
 /** Provides a styled component for displaying data in two grid columns. */
 export const TwoColumnGrid = (props: Props) => {
   const {
-    rows, labelWidth, textAlign, ...other
+    rows, labelWidth, textAlign, header, ...other
   } = props;
+  if (header) {
+    rows.unshift({ ...header, isHeader: true });
+  }
   return (
     <Grid
       container

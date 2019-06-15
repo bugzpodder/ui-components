@@ -9,20 +9,11 @@ body .commonDialog {
     margin: 10vh auto;
     overflow: visible;
 
-    &.sm {
-      width: 300px;
-    }
-    &.md {
-      width: 600px;
-    }
-    &.lg {
-      width: 900px;
-    }
     &:focus {
       outline: none;
     }
 
-    @media (min-width: $screen-sm) {
+    @media (max-width: $screen-sm) {
       width: 600px;
     }
 
@@ -36,7 +27,8 @@ body .commonDialog {
       padding-bottom: 8px;
       display: flex;
       width: 100%;
-      .left, .right {
+      .left,
+      .right {
         flex: 1 1 auto;
         button {
           + button {

@@ -127,35 +127,36 @@ export const PagedTable = (props: PagedTableProps) => {
   const numberSelected = (selectedRows && selectedRows.length) || 0;
   const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
   const hasHeaderActions = Array.isArray(headerActions) ? headerActions.length > 0 : !!headerActions;
-
   return (
     <Fragment>
       <CommonCard
         title={cardTitle}
         subheader={subheader}
-        headerActions={(
-          <Fragment>
-            {includeExportButton && (
-            <ExportButton
-              columns={columns}
-              visibleRows={data}
-              filenamePrefix={
-                  typeof title === "string" ? title.toLowerCase().replace(/[^a-z\d]/g, "-") : "exported-table"
-                }
-              selectedRows={
-                  selectedRows
-                    ? data.filter((instance, index) => {
-                      const rowId = getRowId(idKey, instance, index);
-                      return selectedRows.includes(rowId);
-                    })
-                    : undefined
-                }
-              fetchBulkExportRows={fetchBulkExportRows}
-            />
-            )}
-            {hasHeaderActions && headerActions}
-          </Fragment>
-)}
+        headerActions={
+          (includeExportButton || hasHeaderActions) && (
+            <Fragment>
+              {includeExportButton && (
+                <ExportButton
+                  columns={columns}
+                  visibleRows={data}
+                  filenamePrefix={
+                    typeof title === "string" ? title.toLowerCase().replace(/[^a-z\d]/g, "-") : "exported-table"
+                  }
+                  selectedRows={
+                    selectedRows
+                      ? data.filter((instance, index) => {
+                        const rowId = getRowId(idKey, instance, index);
+                        return selectedRows.includes(rowId);
+                      })
+                      : undefined
+                  }
+                  fetchBulkExportRows={fetchBulkExportRows}
+                />
+              )}
+              {hasHeaderActions && headerActions}
+            </Fragment>
+          )
+        }
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
         data-testid="paged-table"
         classes={{

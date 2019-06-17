@@ -71,7 +71,7 @@ export const CommonCard = (props: CommonCardProps) => {
       elevation={elevation}
       {...cardProps}
     >
-      {(title || headerActions) && (
+      {(title || subheader || headerActions) && (
         <CardHeader
           data-testid="card-header"
           title={title}

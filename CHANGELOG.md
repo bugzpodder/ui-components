@@ -1,4 +1,8 @@
-## 1.0.0 - 2019-##-
+## 1.1.0 - 2019-##-
+
+1.
+
+## 1.0.0 - 2019-06-17
 
 1. Bug fixes and improved unit tests.
 2. Update react peer dependency to 16.8 for hooks usage.

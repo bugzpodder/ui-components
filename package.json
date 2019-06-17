@@ -1,6 +1,6 @@
 {
   "name": "@grail/components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "build": "NODE_ENV=production yarn build:src && yarn build:flow && babel-node ./scripts/build.js",
     "build:flow": "flow-copy-source src dist",

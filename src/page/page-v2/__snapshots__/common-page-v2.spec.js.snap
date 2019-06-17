@@ -28,9 +28,6 @@ exports[`renders common page 1`] = `
         </p>
       </div>
       <div
-        class="centerHeader"
-      />
-      <div
         class="headerActions"
         data-testid="common-page-header-actions"
       >

@@ -116,18 +116,18 @@ export const CommonPageV2 = (props: Props) => {
           classes={classes}
           subtitle={subtitle}
         />
-        {isHeaderActionsBiggerThanTitle && (
-        <div
-          className={styles.placeHolder}
-          style={{ maxWidth: -sizeDifference }}
-        />
+        {centerHeader && isHeaderActionsBiggerThanTitle && (
+          <div
+            className={styles.placeHolder}
+            style={{ maxWidth: -sizeDifference }}
+          />
         )}
-        <div className={classNames(styles.centerHeader, classes.centerHeader)}>{centerHeader}</div>
-        {isTitleBiggerThanHeaderActions && (
-        <div
-          className={styles.placeHolder}
-          style={{ maxWidth: sizeDifference }}
-        />
+        {centerHeader && <div className={classNames(styles.centerHeader, classes.centerHeader)}>{centerHeader}</div>}
+        {centerHeader && isTitleBiggerThanHeaderActions && (
+          <div
+            className={styles.placeHolder}
+            style={{ maxWidth: sizeDifference }}
+          />
         )}
         <HeaderActions
           ref={headerActionsRef}

@@ -88,7 +88,7 @@ export const CommonTabbedPageV2 = (props: Props) => {
   let PageContent = null;
   if (selectedTab && selectedTab.Component) {
     const SelectedComponent = selectedTab.Component;
-    PageContent = <SelectedComponent {...selectedTab.componentProps || {}} />;
+    PageContent = <SelectedComponent {...(selectedTab.componentProps || {})} />;
   }
   const { tabs, tab, ...commonPageClasses } = classes;
   return (
@@ -97,7 +97,8 @@ export const CommonTabbedPageV2 = (props: Props) => {
       classes={{ ...commonPageClasses }}
       isLoading={isLoading}
       centerHeader={
-        pageConfigs && (
+        pageConfigs &&
+        pageConfigs.length > 0 && (
           <TabsComponent
             wrapTabLabels={wrapTabLabels}
             activeTab={(!isLoading && activeTab) || false}

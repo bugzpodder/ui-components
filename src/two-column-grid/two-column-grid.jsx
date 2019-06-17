@@ -1,6 +1,7 @@
 // @flow
 import Grid from "@material-ui/core/Grid";
 import React from "react";
+import cloneDeep from "lodash/cloneDeep";
 import { TwoColumnRow } from "./two-column-row";
 
 type Props = {
@@ -31,15 +32,16 @@ export const TwoColumnGrid = (props: Props) => {
   const {
     rows, labelWidth, textAlign, header, ...other
   } = props;
+  const gridRows = cloneDeep(rows);
   if (header) {
-    rows.unshift({ ...header, isHeader: true });
+    gridRows.unshift({ ...header, isHeader: true });
   }
   return (
     <Grid
       container
       {...other}
     >
-      {rows.map((row, index) => {
+      {gridRows.map((row, index) => {
         return (
           <TwoColumnRow
             key={index}

@@ -4,6 +4,7 @@ import styles from "./time-input.module.scss";
 import { KeyboardTimePicker } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
 import { TIME_FORMAT } from "@grail/lib";
+import { TimePicker } from "material-ui-pickers";
 import { formatDate } from "./components/formatted-date-time";
 
 type Props = {
@@ -21,12 +22,13 @@ type Props = {
   helperText?: string,
   /** Input Value */
   value?: string,
+  useOldPicker?: boolean,
 } & ElementConfig<typeof KeyboardTimePicker>;
 
 /** Provides component for common Time picker. */
 export const TimeInput = (props: Props) => {
   const {
-    readOnly, showEmptyValue = false, value, onChange, format = TIME_FORMAT,
+    readOnly, showEmptyValue = false, value, useOldPicker, onChange, format = TIME_FORMAT,
   } = props;
   if (readOnly) {
     return <ReadOnlyTextField showEmptyValue={showEmptyValue}>{formatDate(value, format)}</ReadOnlyTextField>;
@@ -34,7 +36,25 @@ export const TimeInput = (props: Props) => {
   if (!props.onChange) {
     throw new Error("onChange must be defined for TimeInput");
   }
-  return (
+  return useOldPicker ? (
+    <div className={styles.timePicker}>
+      <TimePicker
+        keyboard
+        clearable
+        InputAdornmentProps={{ className: styles.adornmentWidth }}
+        KeyboardButtonProps={{ "data-testid": "time-picker-button" }}
+        data-testid="time-input"
+        DialogProps={{
+          "data-testid": "time-picker-dialog",
+        }}
+        autoOk
+        {...props}
+        onAccept={onChange}
+        value={value || null}
+        format={format}
+      />
+    </div>
+  ) : (
     <div className={styles.timePicker}>
       <KeyboardTimePicker
         clearable

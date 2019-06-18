@@ -60,7 +60,7 @@
     "moment-timezone": "^0.5.25",
     "prettier": "^1.18.2",
     "react-jss": "^8.6.1",
-    "react-router-dom": "^5.0.0",
+    "react-router-dom": "^5.0.1",
     "react-styleguidist": "^9.1.7",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",

@@ -20,7 +20,7 @@ exports[`render date time input 1`] = `
           value="2016-03-07"
         />
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionEnd adornmentWidth"
+          class="MuiInputAdornment-root adornmentWidth MuiInputAdornment-positionEnd"
         >
           <button
             class="MuiButtonBase-root MuiIconButton-root"

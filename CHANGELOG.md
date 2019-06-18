@@ -1,6 +1,6 @@
 ## 1.1.0 - 2019-##-
 
-1.
+1. Add back old date picker for backward compatibility.
 
 ## 1.0.0 - 2019-06-17
 

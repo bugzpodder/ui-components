@@ -20,7 +20,7 @@ exports[`render full simple table 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-229 Mui-checked indeterminate"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-229 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -118,7 +118,7 @@ exports[`render full simple table 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-229 Mui-checked active"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-229 Mui-checked MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -216,7 +216,7 @@ exports[`render full simple table 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-229 Mui-checked active"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-229 Mui-checked MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -314,7 +314,7 @@ exports[`render full simple table 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -411,7 +411,7 @@ exports[`render full simple table 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -508,7 +508,7 @@ exports[`render full simple table 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -605,7 +605,7 @@ exports[`render full simple table 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1552,7 +1552,7 @@ exports[`render simple table with all items selected 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-158 Mui-checked indeterminate"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-158 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1650,7 +1650,7 @@ exports[`render simple table with all items selected 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-158 Mui-checked active"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-158 Mui-checked MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1748,7 +1748,7 @@ exports[`render simple table with all items selected 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-158 Mui-checked active"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-158 Mui-checked MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1846,7 +1846,7 @@ exports[`render simple table with all items selected 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -1943,7 +1943,7 @@ exports[`render simple table with all items selected 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -2040,7 +2040,7 @@ exports[`render simple table with all items selected 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"
@@ -2137,7 +2137,7 @@ exports[`render simple table with all items selected 1`] = `
                   >
                     <span
                       aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary"
+                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                     >
                       <span
                         class="MuiIconButton-label"

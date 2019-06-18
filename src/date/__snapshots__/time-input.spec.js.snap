@@ -31,7 +31,7 @@ exports[`render time input 1`] = `
           value="04:20 PM"
         />
         <div
-          class="MuiInputAdornment-root MuiInputAdornment-positionEnd adornmentWidth"
+          class="MuiInputAdornment-root adornmentWidth MuiInputAdornment-positionEnd"
         >
           <button
             class="MuiButtonBase-root MuiIconButton-root"

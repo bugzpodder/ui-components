@@ -7,7 +7,7 @@ exports[`renders common page 1`] = `
     data-testid="common-page"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded MuiCard-root stickyHeader pageHeader"
+      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root stickyHeader pageHeader MuiPaper-rounded"
       data-testid="common-page-header"
       value="one"
     >
@@ -18,13 +18,13 @@ exports[`renders common page 1`] = `
           class="MuiCardHeader-content"
         >
           <span
-            class="MuiTypography-root MuiTypography-h5 MuiTypography-displayBlock MuiCardHeader-title header-title"
+            class="MuiTypography-root MuiCardHeader-title header-title MuiTypography-h5 MuiTypography-displayBlock"
             data-testid="common-page-title"
           >
             Test Card
           </span>
           <span
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock MuiCardHeader-subheader"
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
             data-testid="common-page-subtitle"
           >
             This is a subtitle
@@ -34,7 +34,7 @@ exports[`renders common page 1`] = `
           class="MuiCardHeader-action headerActions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-text"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
             tabindex="0"
             type="button"
           >
@@ -79,7 +79,7 @@ exports[`renders common page 1`] = `
                 />
               </span>
               <span
-                class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
               >
                 CUSTOM ACTION
               </span>
@@ -93,7 +93,7 @@ exports[`renders common page 1`] = `
         data-testid="alert"
       >
         <div
-          class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success"
+          class="MuiTypography-root MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success MuiTypography-body2"
           data-testid="content"
           role="alertdialog"
         >

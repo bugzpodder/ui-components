@@ -42,7 +42,7 @@ exports[`render avatar with menu 1`] = `
     data-testid="alert"
   >
     <div
-      class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error"
+      class="MuiTypography-root MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error MuiTypography-body2"
       data-testid="content"
       role="alertdialog"
     >

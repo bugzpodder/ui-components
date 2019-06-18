@@ -1,6 +1,7 @@
 // @flow
 import React, { type ElementConfig } from "react";
-import { DATE_TIME_FORMAT } from "@grail/lib";
+import { DATE_TIME_FORMAT, DATE_TIME_INPUT_MASK } from "@grail/lib";
+import { DateTimePicker } from "material-ui-pickers";
 import { KeyboardDateTimePicker } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
 import { formatDate } from "./components/formatted-date-time";
@@ -16,11 +17,12 @@ type Props = {
   label?: string,
   /** String that specifies the format of the date field. Defaults to `YYYY-MM-DD HH:mm:ss`. */
   format?: string,
+  useOldPicker?: boolean,
 } & ElementConfig<typeof KeyboardDateTimePicker>;
 
 export const DateTimeInput = (props: Props) => {
   const {
-    readOnly, showEmptyValue = false, value, onChange, format = DATE_TIME_FORMAT,
+    readOnly, showEmptyValue = false, value, useOldPicker, onChange, format = DATE_TIME_FORMAT,
   } = props;
   if (readOnly) {
     return (
@@ -30,7 +32,24 @@ export const DateTimeInput = (props: Props) => {
   if (!props.onChange) {
     throw new Error("onChange must be defined for DateTimeInput");
   }
-  return (
+
+  return useOldPicker ? (
+    <DateTimePicker
+      ampm={false}
+      keyboard
+      clearable
+      data-testid="date-time-input"
+      KeyboardButtonProps={{ "data-testid": "date-time-picker-button" }}
+      DialogProps={{
+        "data-testid": "date-time-picker-dialog",
+      }}
+      autoOk
+      mask={DATE_TIME_INPUT_MASK}
+      {...props}
+      value={value || null}
+      format={format}
+    />
+  ) : (
     <KeyboardDateTimePicker
       ampm={false}
       clearable

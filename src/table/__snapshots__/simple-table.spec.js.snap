@@ -17,12 +17,12 @@ exports[`render full simple table 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
+            class="MuiTableCell-root tableHeader COLUMN_SELECT-header singleIcon MuiTableCell-head"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-162 Mui-checked indeterminate"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-162 Mui-checked MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -53,19 +53,19 @@ exports[`render full simple table 1`] = `
             </span>
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
+            class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
+            class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            class="MuiTableCell-root tableHeader MuiTableCell-head"
             scope="col"
           />
         </tr>
@@ -78,12 +78,12 @@ exports[`render full simple table 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="First Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-162 Mui-checked active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-162 Mui-checked MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -115,7 +115,7 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="First Datum-1"
           >
             <span>
@@ -123,13 +123,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="First Datum-2"
           >
             Second Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            class="MuiTableCell-root tableCell test-third-datum-className MuiTableCell-body"
             data-cell-id="First Datum-3"
           >
             <span>
@@ -142,12 +142,12 @@ exports[`render full simple table 1`] = `
           data-testid="Fourth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Fourth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-162 Mui-checked active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-162 Mui-checked MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -179,7 +179,7 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Fourth Datum-1"
           >
             <span>
@@ -187,13 +187,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Fourth Datum-2"
           >
             Fifth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            class="MuiTableCell-root tableCell test-sixth-datum-className MuiTableCell-body"
             data-cell-id="Fourth Datum-3"
           >
             <span>
@@ -206,12 +206,12 @@ exports[`render full simple table 1`] = `
           data-testid="Seventh Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Seventh Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -242,7 +242,7 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventh Datum-1"
           >
             <span>
@@ -250,13 +250,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventh Datum-2"
           >
             Eighth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            class="MuiTableCell-root tableCell test-ninth-datum-className MuiTableCell-body"
             data-cell-id="Seventh Datum-3"
           >
             <span>
@@ -269,12 +269,12 @@ exports[`render full simple table 1`] = `
           data-testid="Tenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Tenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -305,7 +305,7 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Tenth Datum-1"
           >
             <span>
@@ -313,13 +313,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Tenth Datum-2"
           >
             Eleventh Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root tableCell test-twelfth-datum-className MuiTableCell-body"
             data-cell-id="Tenth Datum-3"
           >
             <span>
@@ -332,12 +332,12 @@ exports[`render full simple table 1`] = `
           data-testid="Thirteenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -368,7 +368,7 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Thirteenth Datum-1"
           >
             <span>
@@ -376,13 +376,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Thirteenth Datum-2"
           >
             Fifteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root tableCell test-sixteenth-datum-className MuiTableCell-body"
             data-cell-id="Thirteenth Datum-3"
           >
             <span>
@@ -395,12 +395,12 @@ exports[`render full simple table 1`] = `
           data-testid="Seventeenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Seventeenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-161 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -431,7 +431,7 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventeenth Datum-1"
           >
             <span>
@@ -439,13 +439,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventeenth Datum-2"
           >
             Eighteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root tableCell test-ninteenth-datum-className MuiTableCell-body"
             data-cell-id="Seventeenth Datum-3"
           >
             <span>
@@ -476,19 +476,19 @@ exports[`render loading simple table 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
+            class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
+            class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            class="MuiTableCell-root tableHeader MuiTableCell-head"
             scope="col"
           />
         </tr>
@@ -501,7 +501,7 @@ exports[`render loading simple table 1`] = `
           data-testid="0"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="0-0"
           >
             <span>
@@ -509,13 +509,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="0-1"
           >
             Second Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            class="MuiTableCell-root tableCell test-third-datum-className MuiTableCell-body"
             data-cell-id="0-2"
           >
             <span>
@@ -528,7 +528,7 @@ exports[`render loading simple table 1`] = `
           data-testid="1"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="1-0"
           >
             <span>
@@ -536,13 +536,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="1-1"
           >
             Fifth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            class="MuiTableCell-root tableCell test-sixth-datum-className MuiTableCell-body"
             data-cell-id="1-2"
           >
             <span>
@@ -555,7 +555,7 @@ exports[`render loading simple table 1`] = `
           data-testid="2"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="2-0"
           >
             <span>
@@ -563,13 +563,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="2-1"
           >
             Eighth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            class="MuiTableCell-root tableCell test-ninth-datum-className MuiTableCell-body"
             data-cell-id="2-2"
           >
             <span>
@@ -582,7 +582,7 @@ exports[`render loading simple table 1`] = `
           data-testid="3"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="3-0"
           >
             <span>
@@ -590,13 +590,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="3-1"
           >
             Eleventh Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root tableCell test-twelfth-datum-className MuiTableCell-body"
             data-cell-id="3-2"
           >
             <span>
@@ -609,7 +609,7 @@ exports[`render loading simple table 1`] = `
           data-testid="4"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="4-0"
           >
             <span>
@@ -617,13 +617,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="4-1"
           >
             Fifteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root tableCell test-sixteenth-datum-className MuiTableCell-body"
             data-cell-id="4-2"
           >
             <span>
@@ -636,7 +636,7 @@ exports[`render loading simple table 1`] = `
           data-testid="5"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="5-0"
           >
             <span>
@@ -644,13 +644,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="5-1"
           >
             Eighteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root tableCell test-ninteenth-datum-className MuiTableCell-body"
             data-cell-id="5-2"
           >
             <span>
@@ -690,19 +690,19 @@ exports[`render simple table 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
+            class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
+            class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            class="MuiTableCell-root tableHeader MuiTableCell-head"
             scope="col"
           />
         </tr>
@@ -715,7 +715,7 @@ exports[`render simple table 1`] = `
           data-testid="0"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="0-0"
           >
             <span>
@@ -723,13 +723,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="0-1"
           >
             Second Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            class="MuiTableCell-root tableCell test-third-datum-className MuiTableCell-body"
             data-cell-id="0-2"
           >
             <span>
@@ -742,7 +742,7 @@ exports[`render simple table 1`] = `
           data-testid="1"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="1-0"
           >
             <span>
@@ -750,13 +750,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="1-1"
           >
             Fifth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            class="MuiTableCell-root tableCell test-sixth-datum-className MuiTableCell-body"
             data-cell-id="1-2"
           >
             <span>
@@ -769,7 +769,7 @@ exports[`render simple table 1`] = `
           data-testid="2"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="2-0"
           >
             <span>
@@ -777,13 +777,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="2-1"
           >
             Eighth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            class="MuiTableCell-root tableCell test-ninth-datum-className MuiTableCell-body"
             data-cell-id="2-2"
           >
             <span>
@@ -796,7 +796,7 @@ exports[`render simple table 1`] = `
           data-testid="3"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="3-0"
           >
             <span>
@@ -804,13 +804,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="3-1"
           >
             Eleventh Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root tableCell test-twelfth-datum-className MuiTableCell-body"
             data-cell-id="3-2"
           >
             <span>
@@ -823,7 +823,7 @@ exports[`render simple table 1`] = `
           data-testid="4"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="4-0"
           >
             <span>
@@ -831,13 +831,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="4-1"
           >
             Fifteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root tableCell test-sixteenth-datum-className MuiTableCell-body"
             data-cell-id="4-2"
           >
             <span>
@@ -850,7 +850,7 @@ exports[`render simple table 1`] = `
           data-testid="5"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="5-0"
           >
             <span>
@@ -858,13 +858,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="5-1"
           >
             Eighteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root tableCell test-ninteenth-datum-className MuiTableCell-body"
             data-cell-id="5-2"
           >
             <span>
@@ -895,12 +895,12 @@ exports[`render simple table with all items selected 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
+            class="MuiTableCell-root tableHeader COLUMN_SELECT-header singleIcon MuiTableCell-head"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-102 Mui-checked indeterminate"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-102 Mui-checked MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -931,19 +931,19 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
+            class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
+            class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            class="MuiTableCell-root tableHeader MuiTableCell-head"
             scope="col"
           />
         </tr>
@@ -956,12 +956,12 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="First Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-102 Mui-checked active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-102 Mui-checked MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -993,7 +993,7 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="First Datum-1"
           >
             <span>
@@ -1001,13 +1001,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="First Datum-2"
           >
             Second Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
+            class="MuiTableCell-root tableCell test-third-datum-className MuiTableCell-body"
             data-cell-id="First Datum-3"
           >
             <span>
@@ -1020,12 +1020,12 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Fourth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Fourth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-checked-102 Mui-checked active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-102 Mui-checked MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1057,7 +1057,7 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Fourth Datum-1"
           >
             <span>
@@ -1065,13 +1065,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Fourth Datum-2"
           >
             Fifth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
+            class="MuiTableCell-root tableCell test-sixth-datum-className MuiTableCell-body"
             data-cell-id="Fourth Datum-3"
           >
             <span>
@@ -1084,12 +1084,12 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Seventh Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Seventh Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1120,7 +1120,7 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventh Datum-1"
           >
             <span>
@@ -1128,13 +1128,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventh Datum-2"
           >
             Eighth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
+            class="MuiTableCell-root tableCell test-ninth-datum-className MuiTableCell-body"
             data-cell-id="Seventh Datum-3"
           >
             <span>
@@ -1147,12 +1147,12 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Tenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Tenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1183,7 +1183,7 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Tenth Datum-1"
           >
             <span>
@@ -1191,13 +1191,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Tenth Datum-2"
           >
             Eleventh Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root tableCell test-twelfth-datum-className MuiTableCell-body"
             data-cell-id="Tenth Datum-3"
           >
             <span>
@@ -1210,12 +1210,12 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Thirteenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1246,7 +1246,7 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Thirteenth Datum-1"
           >
             <span>
@@ -1254,13 +1254,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Thirteenth Datum-2"
           >
             Fifteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root tableCell test-sixteenth-datum-className MuiTableCell-body"
             data-cell-id="Thirteenth Datum-3"
           >
             <span>
@@ -1273,12 +1273,12 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Seventeenth Datum"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell singleIcon"
+            class="MuiTableCell-root tableCell singleIcon MuiTableCell-body"
             data-cell-id="Seventeenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-101 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
               <span
                 class="MuiIconButton-label"
@@ -1309,7 +1309,7 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventeenth Datum-1"
           >
             <span>
@@ -1317,13 +1317,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell"
+            class="MuiTableCell-root tableCell MuiTableCell-body"
             data-cell-id="Seventeenth Datum-2"
           >
             Eighteenth Datum
           </td>
           <td
-            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root tableCell test-ninteenth-datum-className MuiTableCell-body"
             data-cell-id="Seventeenth Datum-3"
           >
             <span>
@@ -1354,19 +1354,19 @@ exports[`render simple table with no results 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
+            class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
+            class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            class="MuiTableCell-root tableHeader MuiTableCell-head"
             scope="col"
           />
         </tr>
@@ -1378,7 +1378,7 @@ exports[`render simple table with no results 1`] = `
           class="MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body no-results noResults"
+            class="MuiTableCell-root no-results noResults MuiTableCell-body"
             colspan="3"
           >
             0 Results
@@ -1407,19 +1407,19 @@ exports[`render simple table with no results and is loading 1`] = `
           class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
+            class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
+            class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="MuiTableCell-root MuiTableCell-head tableHeader"
+            class="MuiTableCell-root tableHeader MuiTableCell-head"
             scope="col"
           />
         </tr>
@@ -1431,7 +1431,7 @@ exports[`render simple table with no results and is loading 1`] = `
           class="MuiTableRow-root"
         >
           <td
-            class="MuiTableCell-root MuiTableCell-body no-results noResults"
+            class="MuiTableCell-root no-results noResults MuiTableCell-body"
             colspan="3"
           />
         </tr>

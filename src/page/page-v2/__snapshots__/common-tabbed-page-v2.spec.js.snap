@@ -15,7 +15,7 @@ exports[`render common tabbed page 1`] = `
         data-testid="common-page-title-container"
       >
         <h6
-          class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-noWrap title"
+          class="MuiTypography-root title MuiTypography-subtitle1 MuiTypography-noWrap"
           data-testid="common-page-title"
         >
           Test Card
@@ -122,7 +122,7 @@ exports[`render common tabbed page 1`] = `
           data-testid="common-page-primary-actions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root primaryAction MuiButton-containedPrimary MuiButton-contained"
+            class="MuiButtonBase-root MuiButton-root primaryAction MuiButton-contained MuiButton-containedPrimary"
             tabindex="0"
             type="button"
           >
@@ -177,7 +177,7 @@ exports[`render common tabbed page 1`] = `
         data-testid="alert"
       >
         <div
-          class="MuiTypography-root MuiTypography-body2 MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error"
+          class="MuiTypography-root MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error MuiTypography-body2"
           data-testid="alert-one"
           role="alertdialog"
         >

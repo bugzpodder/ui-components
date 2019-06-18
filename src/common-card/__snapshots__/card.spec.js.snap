@@ -3,7 +3,7 @@
 exports[`common card classes and margin 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiPaper-rounded MuiCard-root test-root card withMargin"
+    class="MuiPaper-root MuiPaper-elevation6 MuiCard-root test-root card withMargin MuiPaper-rounded"
     data-testid="card"
   >
     <div
@@ -14,13 +14,13 @@ exports[`common card classes and margin 1`] = `
         class="MuiCardHeader-content"
       >
         <span
-          class="MuiTypography-root MuiTypography-h5 MuiTypography-displayBlock MuiCardHeader-title card-title test-title"
+          class="MuiTypography-root MuiCardHeader-title card-title test-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           Test Card
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock MuiCardHeader-subheader test-subheader"
+          class="MuiTypography-root MuiCardHeader-subheader test-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>

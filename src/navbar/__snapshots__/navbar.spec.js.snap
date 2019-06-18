@@ -3,11 +3,11 @@
 exports[`navbar with breast cancer logo 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary appBar lims-navbar"
+    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary"
     data-testid="navbar"
   >
     <h6
-      class="MuiTypography-root MuiTypography-h6 nonProductionWarning"
+      class="MuiTypography-root nonProductionWarning MuiTypography-h6"
       data-testid="non-production-warning"
     >
       THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
@@ -152,11 +152,11 @@ exports[`navbar with breast cancer logo 1`] = `
 exports[`render default Sidebar 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary appBar lims-navbar"
+    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary"
     data-testid="navbar"
   >
     <h6
-      class="MuiTypography-root MuiTypography-h6 nonProductionWarning"
+      class="MuiTypography-root nonProductionWarning MuiTypography-h6"
       data-testid="non-production-warning"
     >
       THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
@@ -278,7 +278,7 @@ exports[`render default Sidebar 2`] = `
   aria-hidden="true"
 >
   <header
-    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary appBar lims-navbar"
+    class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary"
     data-testid="navbar"
   >
     <div

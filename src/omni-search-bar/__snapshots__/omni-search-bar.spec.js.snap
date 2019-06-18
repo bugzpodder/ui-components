@@ -9,7 +9,7 @@ exports[`OmniSearchBar renders properly 1`] = `
       class="omniField"
     >
       <div
-        class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root placeholder text field"
+        class="MuiFormControl-root MuiTextField-root placeholder text field MuiFormControl-fullWidth"
       >
         <div
           class="MuiInputBase-root MuiInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"
@@ -19,7 +19,7 @@ exports[`OmniSearchBar renders properly 1`] = `
           >
             <button
               aria-label="Clear entered search values"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit iconButton text"
+              class="MuiButtonBase-root MuiIconButton-root iconButton text MuiIconButton-colorInherit"
               id="omni-input-field-id-search"
               tabindex="0"
               title="Search"
@@ -59,7 +59,7 @@ exports[`OmniSearchBar renders properly 1`] = `
           >
             <button
               aria-label="Expand search options"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit iconButton text"
+              class="MuiButtonBase-root MuiIconButton-root iconButton text MuiIconButton-colorInherit"
               data-testid="search-options-expander"
               id="omni-input-field-id-menu"
               label="menu"

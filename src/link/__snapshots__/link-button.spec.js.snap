@@ -8,7 +8,7 @@ exports[`render LinkButton 1`] = `
     href="/some-page"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-text"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
       data-testid="button"
       tabindex="0"
       type="button"

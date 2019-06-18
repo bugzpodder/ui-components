@@ -37,7 +37,7 @@ exports[`render error common switch 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label error"
+          class="MuiTypography-root MuiFormControlLabel-label error MuiTypography-body1"
         />
       </label>
       
@@ -82,7 +82,7 @@ exports[`render primary common switch 1`] = `
           />
         </span>
         <span
-          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label"
+          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
         >
           Primary
         </span>

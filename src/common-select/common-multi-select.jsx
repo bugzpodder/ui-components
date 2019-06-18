@@ -23,6 +23,8 @@ type CommonMultiSelectProps = {
   isFullWidth?: boolean,
   /** Label for the select. */
   label?: string,
+  /** Variant styles for the select component - "standard", "filled", "outlined" */
+  variant?: SelectVariant,
   /** Text displayed directly under the input */
   helperText?: string,
   /**

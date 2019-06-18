@@ -18,7 +18,7 @@ exports[`CommonSelect label 1`] = `
         Country
       </label>
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
@@ -618,7 +618,7 @@ exports[`async CommonSelect with initial and no options messages 1`] = `
     >
       
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
@@ -724,7 +724,7 @@ exports[`render and test CommonSelect 1`] = `
     >
       
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
@@ -1324,7 +1324,7 @@ exports[`render creatable CommonSelect 1`] = `
     >
       
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
@@ -1441,7 +1441,7 @@ exports[`test disabled CommonSelect 1`] = `
     >
       
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline Mui-disabled Mui-disabled MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"

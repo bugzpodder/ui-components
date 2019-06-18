@@ -693,6 +693,48 @@ declare module "@material-ui/core/ExpansionPanelSummary" {
   >;
 }
 
+declare module "@material-ui/core/FilledInput" {
+  declare export default $Exports<"@material-ui/core/FilledInput/FilledInput">;
+}
+
+declare module "@material-ui/core/FilledInput/FilledInput" {
+  import type {ComponentType, Node} from "react";
+
+  declare module.exports: ComponentType<{
+    autoComplete?: string,
+    autoFocus?: boolean,
+    classes?: Object,
+    className?: string,
+    defaultValue?: string | number,
+    disabled?: boolean,
+    disableUnderline?: boolean,
+    endAdornment?: Node,
+    error?: boolean,
+    fullWidth?: boolean,
+    id?: string,
+    inputComponent?: string | ComponentType<*>,
+    inputProps?: Object,
+    inputRef?: Function,
+    margin?: "dense" | "none",
+    multiline?: boolean,
+    name?: string,
+    onBlur?: (event: SyntheticFocusEvent<*>) => void,
+    onChange?: (event: SyntheticInputEvent<*>) => void,
+    onClean?: () => void,
+    onDirty?: () => void,
+    onFocus?: (event: SyntheticFocusEvent<*>) => void,
+    onKeyDown?: (event: SyntheticKeyboardEvent<*>) => void,
+    onKeyUp?: (event: SyntheticKeyboardEvent<*>) => void,
+    placeholder?: string,
+    rows?: string | number,
+    rowsMax?: string | number,
+    startAdornment?: Node,
+    type?: string,
+    value?: string | number | Array<string | number>
+  }>;
+}
+
+
 declare module "@material-ui/core/FormControl/FormControl" {
   import type {ComponentType, ElementType, Node} from "react";
 
@@ -1478,6 +1520,49 @@ declare module "@material-ui/core/NativeSelect/NativeSelect" {
     inputProps?: Object,
     onChange?: Function,
     value?: string | number
+  }>;
+}
+
+declare module "@material-ui/core/OutlinedInput" {
+  declare export default $Exports<"@material-ui/core/OutlinedInput/OutlinedInput">;
+}
+
+declare module "@material-ui/core/OutlinedInput/OutlinedInput" {
+  import type {ComponentType, Node} from "react";
+
+  declare module.exports: ComponentType<{
+    autoComplete?: string,
+    autoFocus?: boolean,
+    classes?: Object,
+    className?: string,
+    defaultValue?: string | number,
+    disabled?: boolean,
+    disableUnderline?: boolean,
+    endAdornment?: Node,
+    error?: boolean,
+    fullWidth?: boolean,
+    id?: string,
+    inputComponent?: string | ComponentType<*>,
+    inputProps?: Object,
+    inputRef?: Function,
+    labelWidth?: number,
+    margin?: "dense" | "none",
+    multiline?: boolean,
+    name?: string,
+    notched?: boolean,
+    onBlur?: (event: SyntheticFocusEvent<*>) => void,
+    onChange?: (event: SyntheticInputEvent<*>) => void,
+    onClean?: () => void,
+    onDirty?: () => void,
+    onFocus?: (event: SyntheticFocusEvent<*>) => void,
+    onKeyDown?: (event: SyntheticKeyboardEvent<*>) => void,
+    onKeyUp?: (event: SyntheticKeyboardEvent<*>) => void,
+    placeholder?: string,
+    rows?: string | number,
+    rowsMax?: string | number,
+    startAdornment?: Node,
+    type?: string,
+    value?: string | number | Array<string | number>
   }>;
 }
 
@@ -3397,6 +3482,14 @@ declare module "@material-ui/core/ExpansionPanel/ExpansionPanelSummary.js" {
 declare module "@material-ui/core/ExpansionPanelSummary/index.js" {
   declare module.exports: $Exports<"@material-ui/core/ExpansionPanelSummary">;
 }
+
+declare module "@material-ui/core/FilledInput/index.js" {
+  declare module.exports: $Exports<"@material-ui/core/FilledInput">;
+}
+declare module "@material-ui/core/FilledInput/FilledInput.js" {
+  declare module.exports: $Exports<"@material-ui/core/FilledInput/FilledInput">;
+}
+
 declare module "@material-ui/core/FormControl/FormControl.js" {
   declare module.exports: $Exports<"@material-ui/core/FormControl/FormControl">;
 }
@@ -3615,6 +3708,12 @@ declare module "@material-ui/core/NativeSelect/NativeSelect.js" {
   declare module.exports: $Exports<
     "@material-ui/core/NativeSelect/NativeSelect"
   >;
+}
+declare module "@material-ui/core/OutlinedInput/index.js" {
+  declare module.exports: $Exports<"@material-ui/core/OutlinedInput">;
+}
+declare module "@material-ui/core/OutlinedInput/OutlinedInput.js" {
+  declare module.exports: $Exports<"@material-ui/core/OutlinedInput/OutlinedInput">;
 }
 declare module "@material-ui/core/Paper/index.js" {
   declare module.exports: $Exports<"@material-ui/core/Paper">;
@@ -4068,7 +4167,7 @@ declare module "@material-ui/core" {
   declare export var ExpansionPanelSummary: $Exports<
     "@material-ui/core/ExpansionPanelSummary/ExpansionPanelSummary"
   >;
-
+  declare export var FilledInput: $Exports<"@material-ui/core/FilledInput/FilledInput">;
   declare export var FormControl: $Exports<
     "@material-ui/core/FormControl/FormControl"
   >;
@@ -4135,6 +4234,7 @@ declare module "@material-ui/core" {
   declare export var NativeSelect: $Exports<
     "@material-ui/core/NativeSelect/NativeSelect"
   >;
+  declare export var OutlinedInput: $Exports<"@material-ui/core/OutlinedInput/OutlinedInput">;
   declare export var Paper: $Exports<"@material-ui/core/Paper/Paper">;
   declare export var Popover: $Exports<"@material-ui/core/Popover/Popover">;
   declare export var Portal: $Exports<"@material-ui/core/Portal/Portal">;

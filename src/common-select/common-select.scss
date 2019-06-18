@@ -1,5 +1,11 @@
 @import "../styles/colors";
 
+$icon-height: 24px;
+$chip-height: 24px;
+$chip-margin: 1px;
+$mui-filled-outlined-field-height: 56px;
+$mui-standard-field-height: 32px;
+
 .common-select__root {
   > div {
     // The default child div of root has z-index of 0 *and* position: relative.
@@ -7,13 +13,90 @@
     z-index: unset;
   }
 
-  .common-select__input-label + .common-select__input-root {
-    margin-top: 16px;
+  .common-select__input-label {
+    + .common-select__input-root.common-select__input-standard {
+      margin-top: 16px;
+    }
+
+    // Make label legible when shrunk for outlined field
+    &.MuiInputLabel-outlined {
+      background-color: white;
+      padding: 0 4px;
+      
+      &.Mui-focused {
+        background-color: white;
+        padding: 0 4px;
+      }
+    }
   }
 
   .common-select__input-root {
     margin: 0;
     line-height: 1em;
+
+    &.common-select__input-standard {
+      .common-select__container {
+        > div {
+          padding: 0;
+        }
+      }
+    }
+    
+    &.common-select__input-filled,
+    &.common-select__input-outlined {
+      .common-select__container {
+        min-height: $mui-filled-outlined-field-height;
+
+        > div {
+          box-sizing: border-box;
+          height: auto;
+        }
+
+        .common-select__control {
+          min-height: 22px;
+
+          .common-select__value-container {
+            flex: 1;
+            
+            .common-select__indicators {
+              flex: 0 1;
+              align-self: center; // Center indicators vertically
+            }
+          }
+        }
+        
+        .common-select__menu {
+          left: 0; // Align menu to the left
+        }
+      }
+    }
+
+    &.common-select__input-filled {
+      .common-select__container {
+        > div {
+          padding: 23px 12px 7px; // Update padding to account for value container height
+        }
+        
+        .common-select__control {
+          .common-select__indicators {
+            position: relative;
+            top: -8px; // Vertically center within filled box
+
+            .common-select__chip-root {
+              background: white;
+            }
+          }
+        }
+      }
+    }
+
+    &.common-select__input-outlined {
+      .common-select__container {
+        > div {
+          padding: 15px 15px; // Update padding to account for value container height
+        }
+      }
+    }
   }
 
   .common-select__container {
@@ -21,7 +104,6 @@
     min-width: 167px;
 
     > div {
-      padding: 0;
       height: 100%;
     }
 
@@ -37,15 +119,14 @@
       height: auto;
       background: transparent;
       box-shadow: 0 0 0 0;
-      min-height: 34px;
+      min-height: $mui-standard-field-height;
       &:hover {
         box-shadow: none;
       }
 
       .common-select__value-container {
-        width: 100%;
-        padding: 4px 0;
-
+        padding: 0;
+        
         .common-select__placeholder,
         .common-select__single-value {
           padding: 0;
@@ -59,20 +140,23 @@
           font-size: 0.8125rem;
         }
 
-        .common-select__multi-value__remove {
-          background-color: transparent;
-          color: initial;
-          padding: 0 0 0 5px;
-          cursor: pointer;
-          opacity: 0.25;
-          width: 29px;
-          height: 29px;
-          &:hover {
-            opacity: 0.4;
-          }
-        }
         .common-select__chip-root {
-          margin: 2px;
+          height: $icon-height;
+          margin: 1px;
+
+          .common-select__multi-value__remove {
+            background-color: transparent;
+            color: initial;
+            padding: 0 0 0 5px;
+            cursor: pointer;
+            opacity: 0.25;
+            height: $icon-height;
+            width: $icon-height;
+            font-size: 0.8125rem;
+            &:hover {
+              opacity: 0.4;
+            }
+          }
 
           .common-select__chip-label {
             padding: 0 4px 0 10px;
@@ -83,10 +167,18 @@
 
     .common-select__clear-icon {
       cursor: pointer;
+      height: $icon-height;
+      width: $icon-height;
     }
 
     .common-select__dropdown-arrow {
       cursor: pointer;
+      height: $icon-height;
+
+      svg {
+        height: $icon-height;
+        width: $icon-height;
+      }
     }
 
     .common-select__menu {

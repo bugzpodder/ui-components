@@ -29,3 +29,5 @@ declare type Suggestion = {
   value: string,
   [string]: any,
 };
+
+declare type SelectVariant = "standard" | "filled" | "outlined";

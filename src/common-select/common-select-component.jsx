@@ -1,9 +1,11 @@
 // @flow
 import "./common-select.scss";
+import FilledInput from "@material-ui/core/FilledInput";
 import FormControl from "@material-ui/core/FormControl";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
+import OutlinedInput from "@material-ui/core/OutlinedInput";
 import React, { useState } from "react";
 import classNames from "classnames";
 import isEmpty from "lodash/isEmpty";
@@ -30,10 +32,27 @@ type Props = {
   menuIsOpen?: boolean,
   onChange: Function,
   label?: string,
+  variant?: SelectVariant,
   placeholder?: string,
   selectType?: "simple" | "async" | "creatable",
   showError?: boolean,
   formatOption?: CommonSelectOption => Node,
+};
+
+const variants = {
+  STANDARD: "standard",
+  OUTLINED: "outlined",
+  FILLED: "filled",
+};
+
+const getInputBaseComponent = (variant: SelectVariant): Node<*> => {
+  if (variant === variants.FILLED) {
+    return FilledInput;
+  }
+  if (variant === variants.OUTLINED) {
+    return OutlinedInput;
+  }
+  return Input;
 };
 
 export const CommonSelectComponent = (props: Props) => {
@@ -52,10 +71,13 @@ export const CommonSelectComponent = (props: Props) => {
     label = "",
     placeholder = "",
     showError = false,
+    variant = variants.STANDARD,
     ...otherProps
   } = props;
   const { value } = otherProps;
   const [isInputFocused, setIsInputFocused] = useState(false);
+
+  const InputBaseComponent = getInputBaseComponent(variant);
 
   return (
     <div
@@ -68,12 +90,13 @@ export const CommonSelectComponent = (props: Props) => {
             data-testid="common-select-input-label"
             classes={{ formControl: classNames("common-select__input-label", classes.label) }}
             htmlFor={id}
-            shrink={isInputFocused || !isEmpty(value)}
+            shrink={isInputFocused || !isEmpty(value) || !isEmpty(placeholder)}
+            variant={variant}
           >
             {label}
           </InputLabel>
         )}
-        <Input
+        <InputBaseComponent
           inputComponent={CommonSelectContainer}
           disabled={isDisabled}
           error={!isDisabled && showError}
@@ -108,11 +131,12 @@ export const CommonSelectComponent = (props: Props) => {
           onFocus={setIsInputFocused.bind(this, true)}
           onBlur={setIsInputFocused.bind(this, false)}
           classes={{
-            root: classNames("common-select__input-root", classes.input),
+            root: classNames("common-select__input-root", classes.input, `common-select__input-${variant}`),
           }}
         />
         {helperText && (
           <FormHelperText
+            variant={variant}
             error={showError}
             data-testid={`${id ? `${id}-` : ""}select-helper-text`}
             classes={{

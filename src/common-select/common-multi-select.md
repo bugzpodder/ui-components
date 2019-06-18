@@ -117,6 +117,7 @@ const SelectExample = () => {
       <CommonMultiSelect
         id="countries-select"
         label="Countries"
+        variant="outlined"
         classes={{
           root: styles.commonSelect,
         }}

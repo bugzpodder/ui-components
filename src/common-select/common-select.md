@@ -112,6 +112,7 @@ const SelectExample = () => {
         classes={{
           root: styles.commonSelect,
         }}
+        variant="filled"
         isFullWidth
         helpertext="Choose a country"
         value={value}

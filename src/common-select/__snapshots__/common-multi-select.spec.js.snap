@@ -18,7 +18,7 @@ exports[`CommonMultiSelect label 1`] = `
         Countries
       </label>
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"
@@ -180,7 +180,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
     >
       
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
       >
         <div
           class="common-select__container"

@@ -39,6 +39,8 @@ const ExampleApp = wrapPickerUtilProvider(() => {
 </ExampleWrapper>;
 ```
 
+Old Picker:
+
 ```js
 import Typography from "@material-ui/core/Typography";
 import styles from "../test-utils/example-styles.module.scss";

@@ -24,6 +24,8 @@ const ExampleApp = wrapPickerUtilProvider(() => {
 </ExampleWrapper>;
 ```
 
+Old Picker:
+
 ```js
 import { wrapPickerUtilProvider } from "@grail/components";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";

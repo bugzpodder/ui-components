@@ -49,7 +49,6 @@ export const TimeInput = (props: Props) => {
         }}
         autoOk
         {...props}
-        onAccept={onChange}
         value={value || null}
         format={format}
       />

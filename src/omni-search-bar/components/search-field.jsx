@@ -4,9 +4,8 @@ import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import keycode from "keycode";
-import moment from "moment";
 import {
-  DATE_FORMAT, DATE_SEARCH_TYPES, buildDateRangeString, extractDateRange,
+  DATE_SEARCH_TYPES, buildDateRangeString, extractDateRange, extractValidDate,
 } from "@grail/lib";
 import { DateInput } from "../../date/date-input";
 
@@ -65,12 +64,16 @@ export const SearchField = (props: Props) => {
     onChange(id, buildDateRangeString({ startDate, endDate }));
   };
   const onChangeStartDate = (id, date) => {
-    date = date ? moment(date).format(DATE_FORMAT) : "";
-    onDateSearch(id, date, endDate);
+    const validDate = extractValidDate(date);
+    if (validDate) {
+      onDateSearch(id, validDate, endDate);
+    }
   };
   const onChangeEndDate = (id, date) => {
-    date = date ? moment(date).format(DATE_FORMAT) : "";
-    onDateSearch(id, startDate, date);
+    const validDate = extractValidDate(date);
+    if (validDate) {
+      onDateSearch(id, startDate, validDate);
+    }
   };
   return (
     <Grid className={styles.dateGrid}>

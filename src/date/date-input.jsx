@@ -1,5 +1,6 @@
 // @flow
 import React, { type ElementConfig } from "react";
+import classNames from "classnames";
 import styles from "./date-input.module.scss";
 import { DATE_FORMAT, DATE_INPUT_MASK } from "@grail/lib";
 import { DatePicker } from "material-ui-pickers";
@@ -26,7 +27,7 @@ type Props = {
 /** Provides component for common Date picker. */
 export const DateInput = (props: Props) => {
   const {
-    readOnly, showEmptyValue = false, value, useOldPicker, onChange, format = DATE_FORMAT,
+    readOnly, showEmptyValue = false, value, useOldPicker, onChange, format = DATE_FORMAT, className,
   } = props;
   if (readOnly) {
     return <ReadOnlyTextField showEmptyValue={showEmptyValue}>{formatDate(value, format)}</ReadOnlyTextField>;
@@ -36,39 +37,37 @@ export const DateInput = (props: Props) => {
   }
 
   return useOldPicker ? (
-    <div className={styles.datePicker}>
-      <DatePicker
-        keyboard
-        clearable
-        InputAdornmentProps={{ className: styles.adornmentWidth }}
-        KeyboardButtonProps={{ "data-testid": "date-picker-button" }}
-        data-testid="date-input"
-        DialogProps={{
-          "data-testid": "date-picker-dialog",
-        }}
-        autoOk
-        mask={DATE_INPUT_MASK}
-        {...props}
-        value={value || null}
-        format={format}
-      />
-    </div>
+    <DatePicker
+      keyboard
+      clearable
+      InputAdornmentProps={{ className: styles.adornmentWidth }}
+      KeyboardButtonProps={{ "data-testid": "date-picker-button" }}
+      data-testid="date-input"
+      DialogProps={{
+        "data-testid": "date-picker-dialog",
+      }}
+      autoOk
+      mask={DATE_INPUT_MASK}
+      {...props}
+      className={classNames(className, styles.textFieldWidth)}
+      value={value || null}
+      format={format}
+    />
   ) : (
-    <div className={styles.datePicker}>
-      <KeyboardDatePicker
-        clearable
-        InputAdornmentProps={{ className: styles.adornmentWidth }}
-        KeyboardButtonProps={{ "data-testid": "date-picker-button" }}
-        data-testid="date-input"
-        DialogProps={{
-          "data-testid": "date-picker-dialog",
-        }}
-        autoOk
-        {...props}
-        onAccept={onChange}
-        value={value || null}
-        format={format}
-      />
-    </div>
+    <KeyboardDatePicker
+      clearable
+      InputAdornmentProps={{ className: styles.adornmentWidth }}
+      KeyboardButtonProps={{ "data-testid": "date-picker-button" }}
+      data-testid="date-input"
+      DialogProps={{
+        "data-testid": "date-picker-dialog",
+      }}
+      autoOk
+      {...props}
+      className={classNames(className, styles.textFieldWidth)}
+      onAccept={onChange}
+      value={value || null}
+      format={format}
+    />
   );
 };

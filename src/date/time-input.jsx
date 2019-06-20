@@ -1,5 +1,6 @@
 // @flow
 import React, { type ElementConfig } from "react";
+import classNames from "classnames";
 import styles from "./time-input.module.scss";
 import { KeyboardTimePicker } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
@@ -28,7 +29,7 @@ type Props = {
 /** Provides component for common Time picker. */
 export const TimeInput = (props: Props) => {
   const {
-    readOnly, showEmptyValue = false, value, useOldPicker, onChange, format = TIME_FORMAT,
+    readOnly, showEmptyValue = false, value, useOldPicker, onChange, format = TIME_FORMAT, className,
   } = props;
   if (readOnly) {
     return <ReadOnlyTextField showEmptyValue={showEmptyValue}>{formatDate(value, format)}</ReadOnlyTextField>;
@@ -37,38 +38,36 @@ export const TimeInput = (props: Props) => {
     throw new Error("onChange must be defined for TimeInput");
   }
   return useOldPicker ? (
-    <div className={styles.timePicker}>
-      <TimePicker
-        keyboard
-        clearable
-        InputAdornmentProps={{ className: styles.adornmentWidth }}
-        KeyboardButtonProps={{ "data-testid": "time-picker-button" }}
-        data-testid="time-input"
-        DialogProps={{
-          "data-testid": "time-picker-dialog",
-        }}
-        autoOk
-        {...props}
-        value={value || null}
-        format={format}
-      />
-    </div>
+    <TimePicker
+      keyboard
+      clearable
+      InputAdornmentProps={{ className: styles.adornmentWidth }}
+      KeyboardButtonProps={{ "data-testid": "time-picker-button" }}
+      data-testid="time-input"
+      DialogProps={{
+        "data-testid": "time-picker-dialog",
+      }}
+      autoOk
+      {...props}
+      className={classNames(className, styles.textFieldWidth)}
+      value={value || null}
+      format={format}
+    />
   ) : (
-    <div className={styles.timePicker}>
-      <KeyboardTimePicker
-        clearable
-        InputAdornmentProps={{ className: styles.adornmentWidth }}
-        KeyboardButtonProps={{ "data-testid": "time-picker-button" }}
-        data-testid="time-input"
-        DialogProps={{
-          "data-testid": "time-picker-dialog",
-        }}
-        autoOk
-        {...props}
-        onAccept={onChange}
-        value={value || null}
-        format={format}
-      />
-    </div>
+    <KeyboardTimePicker
+      clearable
+      InputAdornmentProps={{ className: styles.adornmentWidth }}
+      KeyboardButtonProps={{ "data-testid": "time-picker-button" }}
+      data-testid="time-input"
+      DialogProps={{
+        "data-testid": "time-picker-dialog",
+      }}
+      autoOk
+      {...props}
+      className={classNames(className, styles.textFieldWidth)}
+      onAccept={onChange}
+      value={value || null}
+      format={format}
+    />
   );
 };

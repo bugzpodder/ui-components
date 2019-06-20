@@ -89,7 +89,7 @@ export const SearchField = (props: Props) => {
       <Typography className={styles.typography}>to</Typography>
       <DateInput
         id={`${searchKey}-to`}
-        className={styles.dateInput}
+        className={styles.input}
         value={endDate}
         onChange={onChangeEndDate.bind(this, searchKey)}
         onKeyDown={onEnter}

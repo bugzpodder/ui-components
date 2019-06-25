@@ -33,6 +33,7 @@ type Props = {
   onChange: Function,
   label?: string,
   variant?: SelectVariant,
+  margin?: SelectMargin,
   placeholder?: string,
   selectType?: "simple" | "async" | "creatable",
   showError?: boolean,
@@ -43,6 +44,12 @@ const variants = {
   STANDARD: "standard",
   OUTLINED: "outlined",
   FILLED: "filled",
+};
+
+const margins = {
+  NONE: "none",
+  DENSE: "dense",
+  NORMAL: "normal",
 };
 
 const getInputBaseComponent = (variant: SelectVariant): Node<*> => {
@@ -72,6 +79,7 @@ export const CommonSelectComponent = (props: Props) => {
     placeholder = "",
     showError = false,
     variant = variants.STANDARD,
+    margin = margins.NONE,
     ...otherProps
   } = props;
   const { value } = otherProps;
@@ -84,7 +92,10 @@ export const CommonSelectComponent = (props: Props) => {
       data-testid="common-select"
       className={classNames("common-select__root", classes.root)}
     >
-      <FormControl fullWidth={isFullWidth}>
+      <FormControl
+        fullWidth={isFullWidth}
+        margin={margin}
+      >
         {label && (
           <InputLabel
             data-testid="common-select-input-label"

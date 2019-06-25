@@ -8,7 +8,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 afterEach(cleanup);
 
 const TestMultiSelect = props => {
-  const { mockOnChange, label } = props;
+  const { mockOnChange, label, margin, variant } = props;
   const [values, setValues] = useState([
     { label: "Algeria", value: "ALGERIA" },
     { label: "Afghanistan", value: "AFGHANISTAN" },
@@ -24,6 +24,8 @@ const TestMultiSelect = props => {
         label={label}
         values={values}
         onChange={setChange}
+        margin={margin}
+        variant={variant}
       />
     </TestWrapper>
   );
@@ -44,4 +46,16 @@ test("CommonMultiSelect label", () => {
   const { container, getByTestId } = render(<TestMultiSelect label={label} />);
   expect(container).toMatchSnapshot();
   expect(getByTestId("common-select-input-label")).toHaveTextContent(label);
+});
+
+test("CommonMultiSelect variant", () => {
+  const { container } = render(<TestMultiSelect variant="filled" />);
+  // Check document.
+  expect(container).toMatchSnapshot();
+});
+
+test("CommonMultiSelect margin", () => {
+  const { container } = render(<TestMultiSelect margin="normal" />);
+  // Check document.
+  expect(container).toMatchSnapshot();
 });

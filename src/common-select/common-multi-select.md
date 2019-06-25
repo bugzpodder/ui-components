@@ -5,14 +5,13 @@
 ```js
 import { Fragment, useState } from "react";
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
-import styles from "../test-utils/example-styles.module.scss";
 import { CommonMultiSelect } from "./";
 
 const SelectExample = () => {
   const [values, setValues] = useState([]);
   return (
     <Fragment>
-      <CommonMultiSelect helpertext="Choose a country" values={values} options={COUNTRIES} onChange={setValues} />
+      <CommonMultiSelect helperText="Choose a country" values={values} options={COUNTRIES} onChange={setValues} />
       <ExampleBlock strongHeader="state " content={values} />
     </Fragment>
   );
@@ -28,7 +27,6 @@ const SelectExample = () => {
 ```js
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
 import { Fragment, useState } from "react";
-import styles from "../test-utils/example-styles.module.scss";
 import { CommonMultiSelect } from "./";
 
 const SelectExample = () => {
@@ -38,7 +36,7 @@ const SelectExample = () => {
     <Fragment>
       <CommonMultiSelect
         selectType="creatable"
-        helpertext="Create or choose"
+        helperText="Create or choose"
         createMessage={inputValue => `Invent a new country called "${inputValue}"`}
         options={COUNTRIES}
         values={values}
@@ -59,7 +57,6 @@ const SelectExample = () => {
 ```js
 import { Fragment, useEffect, useState } from "react";
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
-import styles from "../test-utils/example-styles.module.scss";
 import { CommonMultiSelect } from "./";
 
 const SelectExample = () => {
@@ -82,7 +79,7 @@ const SelectExample = () => {
     <Fragment>
       <CommonMultiSelect
         isFullWidth
-        helpertext="Choose a country"
+        helperText="Choose a country"
         selectType="async"
         values={values}
         initialOptions={COUNTRIES.slice(5, 10)}
@@ -122,7 +119,7 @@ const SelectExample = () => {
           root: styles.commonSelect,
         }}
         isFullWidth
-        helpertext="Choose a country"
+        helperText="Choose a country"
         values={values}
         options={COUNTRIES.map(country => ({
           ...country,

@@ -11,7 +11,7 @@ const SelectExample = () => {
   const [value, setValue] = useState({});
   return (
     <Fragment>
-      <CommonSelect helpertext="Choose a country" value={value} options={COUNTRIES} onChange={setValue} />
+      <CommonSelect helperText="Choose a country" value={value} options={COUNTRIES} onChange={setValue} />
       <ExampleBlock strongHeader="state " content={value} />
     </Fragment>
   );
@@ -36,7 +36,7 @@ const SelectExample = () => {
       <CommonSelect
         isFullWidth
         selectType="creatable"
-        helpertext="Create or choose"
+        helperText="Create or choose"
         createMessage={inputValue => `Invent a new country called "${inputValue}"`}
         options={COUNTRIES}
         value={value}
@@ -75,7 +75,7 @@ const SelectExample = () => {
     <Fragment>
       <CommonSelect
         isFullWidth
-        helpertext="Choose a country"
+        helperText="Choose a country"
         selectType="async"
         initialMessage="Think of a country between A and B..."
         value={value}
@@ -114,7 +114,7 @@ const SelectExample = () => {
         }}
         variant="filled"
         isFullWidth
-        helpertext="Choose a country"
+        helperText="Choose a country"
         value={value}
         options={COUNTRIES.map(country => ({
           ...country,

@@ -12,7 +12,7 @@ afterEach(cleanup);
 
 const TestCommonSelect = props => {
   const {
-    mockOnChange, "data-testid": dataTestId, classes, label,
+    mockOnChange, "data-testid": dataTestId, classes, label, margin, variant,
   } = props;
   const [value, setValue] = useState({});
   const setChange = value => {
@@ -37,6 +37,8 @@ const TestCommonSelect = props => {
           </div>
         )}
         onChange={setChange}
+        margin={margin}
+        variant={variant}
       />
     </TestWrapper>
   );
@@ -92,6 +94,18 @@ test("CommonSelect label", () => {
   // Check document.
   expect(container).toMatchSnapshot();
   expect(getByTestId("common-select-input-label")).toHaveTextContent(label);
+});
+
+test("CommonSelect variant", () => {
+  const { container } = render(<TestCommonSelect variant="filled" />);
+  // Check document.
+  expect(container).toMatchSnapshot();
+});
+
+test("CommonSelect margin", () => {
+  const { container } = render(<TestCommonSelect margin="normal" />);
+  // Check document.
+  expect(container).toMatchSnapshot();
 });
 
 test("test disabled CommonSelect", () => {

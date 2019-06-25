@@ -2,6 +2,7 @@
 1. Add back old date picker for backward compatibility.
 2. Support `variant` for `CommonSelect`/`CommonMultiSelect`.
 3. Allow styling of `DateInput`/`TimeInput` to be more customizable
+4. Support `margin` for `CommonSelect`/`CommonMultiSelect`.
 
 ## 1.0.0 - 2019-06-17
 

@@ -29,6 +29,8 @@ type CommonSelectProps = {
   label?: string,
   /** Variant styles for the select component - "standard", "filled", "outlined" */
   variant?: SelectVariant,
+  /** Margin types for the select component - "none", "dense", "normal". Default is "none" */
+  margin?: SelectMargin,
   /** Text displayed directly under the input */
   helperText?: string,
   /**

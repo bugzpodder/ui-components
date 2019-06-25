@@ -31,3 +31,4 @@ declare type Suggestion = {
 };
 
 declare type SelectVariant = "standard" | "filled" | "outlined";
+declare type SelectMargin = "none" | "dense" | "normal";

@@ -3,6 +3,7 @@ import React from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { LargeTableComponent } from "./components/large-table-component";
+import { LargeWideTableComponent } from "./components/large-wide-table-component";
 import { SpinnerOverlay } from "../spinner-overlay";
 
 type Props = {
@@ -13,7 +14,7 @@ type Props = {
   /**
    * Defines the table structure.
    *
-   * Must at least include a Cell or accessor key to identify which property in data to display
+   * Must at least include a Cell or accessor key to identify which property in data to display.
    */
   columns: Array<PagedTableColumn>,
   /**
@@ -38,15 +39,31 @@ type Props = {
    * Must change the state of selectedRows
    */
   onSelect?: (Array<any>) => any,
-  /** Provides the id's for the selected rows when onSelect is used */
+  /** Provides the ids for the selected rows when onSelect is used */
   selectedRows?: Array<any>,
   /** Enables row highlighting */
   onHighlightRow?: (?string | ?number) => any,
   /** Provides the id for the highlighted row when onHighlightRow is used */
   highlightedRowId?: ?string | ?number,
   enableSelectAll?: boolean,
-  /** Provides the rowHeight for each row of the table. Can take either a number or function. */
-  rowHeight?: number | (Object, number) => number,
+  /**
+   * Provides the rowHeight for each row of the table. Can take either a number
+   * or function. The function takes as parameters the data for the row and the
+   * index of the row.
+   */
+  rowHeight?: number | ((Object, number) => number),
+  /**
+   * Enables left-right scrolling rather than squeezing all columns into the
+   * viewable area. Defaults to false.
+   */
+  isWide?: boolean,
+  /**
+   * Only relevant if `isWide` is true. The number of columns that stay stuck to
+   * the left side when the table is scrolled to the right. Defaults to one. If
+   * the table is selectable, the checkbox column does not count towards this
+   * number.
+   */
+  numFrozenColumns?: number,
 };
 
 /** Provides a large simple table for displaying data, with the ability to opt into additional features. */
@@ -54,12 +71,14 @@ export const LargeSimpleTable = (props: Props) => {
   const {
     columns, classes = {}, data, isLoading = false,
   } = props;
+  const { isWide = false, ...otherProps } = props;
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");
   }
   return (
     <div className={classNames(styles.tableContainer, classes.tableContainer)}>
-      <LargeTableComponent {...props} />
+      {!isWide && <LargeTableComponent {...otherProps} />}
+      {isWide && <LargeWideTableComponent {...otherProps} />}
       {isLoading && <SpinnerOverlay className={styles.spinnerOverlay} />}
     </div>
   );

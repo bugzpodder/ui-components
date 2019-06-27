@@ -13,7 +13,7 @@ afterEach(cleanup);
  Passing Cases
  */
 
-test("render simple table", () => {
+test("render large simple table", () => {
   const { container } = render(
     <TestWrapper>
       <LargeSimpleTable
@@ -25,7 +25,7 @@ test("render simple table", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render simple table with set row height", () => {
+test("render large simple table with set row height", () => {
   const { container } = render(
     <TestWrapper>
       <LargeSimpleTable
@@ -40,7 +40,7 @@ test("render simple table with set row height", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render simple table with dynamic row height", () => {
+test("render large simple table with dynamic row height", () => {
   const mockRowHeight = jest.fn((item, index) => index * 50);
   const { container } = render(
     <TestWrapper>
@@ -57,7 +57,7 @@ test("render simple table with dynamic row height", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render simple table with no results", () => {
+test("render large simple table with no results", () => {
   const { container } = render(
     <TestWrapper>
       <LargeSimpleTable
@@ -82,7 +82,7 @@ test("render loading simple table", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render simple table with no results and is loading", () => {
+test("render large simple table with no results and is loading", () => {
   const { container } = render(
     <TestWrapper>
       <LargeSimpleTable
@@ -95,7 +95,7 @@ test("render simple table with no results and is loading", () => {
   expect(container).toMatchSnapshot();
 });
 
-test("render simple table with all items selected", () => {
+test("render large simple table with all items selected", () => {
   const mockSelect = jest.fn();
   const { container } = render(
     <TestWrapper>
@@ -117,6 +117,130 @@ test("render full simple table", () => {
   const { container } = render(
     <TestWrapper>
       <LargeSimpleTable
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        onSelect={mockSelect}
+        selectedRows={tableOptions.selectedRowIds}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render large wide simple table", () => {
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
+        columns={columns}
+        data={data}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render large wide simple table with set row height", () => {
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        rowHeight={75}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render large wide simple table with dynamic row height", () => {
+  const mockRowHeight = jest.fn((item, index) => index * 50);
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        rowHeight={mockRowHeight}
+      />
+    </TestWrapper>,
+  );
+  expect(mockRowHeight).toBeCalled();
+  expect(container).toMatchSnapshot();
+});
+
+test("render large wide simple table with no results", () => {
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
+        columns={columns}
+        data={[]}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render loading simple table", () => {
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
+        columns={columns}
+        data={data}
+        isLoading
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render large wide simple table with no results and is loading", () => {
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
+        columns={columns}
+        data={[]}
+        isLoading
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render large wide simple table with all items selected", () => {
+  const mockSelect = jest.fn();
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
+        idKey="columnOne"
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        onSelect={mockSelect}
+        selectedRows={[...tableOptions.selectedRowIds, "Second Datum"]}
+      />
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+});
+
+test("render full simple table", () => {
+  const mockSelect = jest.fn();
+  const { container } = render(
+    <TestWrapper>
+      <LargeSimpleTable
+        isWide
         idKey="columnOne"
         columns={columns}
         data={data}

@@ -29,6 +29,9 @@ declare type PagedTableColumn = {
   excludeFromExport?: boolean,
   // If true, this column will not be displayed in the table UI.
   excludeFromTable?: boolean,
+  // Only relevant for LargeSimpleTable's using the `isWide` prop; defines the
+  // width of the column in pixels. Defaults to 150px.
+  width?: number,
 } & $Shape<ExportableColumn>;
 
 declare type PagedTableClasses = {

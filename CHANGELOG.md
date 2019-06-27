@@ -1,8 +1,11 @@
 ## 1.1.0 - 2019-##-
+
 1. Add back old date picker for backward compatibility.
 2. Support `variant` for `CommonSelect`/`CommonMultiSelect`.
-3. Allow styling of `DateInput`/`TimeInput` to be more customizable
+3. Allow styling of `DateInput`/`TimeInput` to be more customizable.
 4. Support `margin` for `CommonSelect`/`CommonMultiSelect`.
+5. Add `isWide` prop to `LargeSimpleTable`, which allows columns to scroll horizontally rather than
+   squeezing all columns into the viewable area.
 
 ## 1.0.0 - 2019-06-17
 

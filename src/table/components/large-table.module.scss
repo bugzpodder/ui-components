@@ -1,7 +1,10 @@
 @import "../../styles/colors";
 @import "../highlighted-row";
 
-.table, .headerContainer {
+$transparent-white: rgba(255, 255, 255, 0);
+
+.table,
+.headerContainer {
   width: 100%;
   > div {
     outline: none;
@@ -13,7 +16,8 @@
     font-size: 0.75rem;
     font-weight: 500;
   }
-  .row, .headerRow {
+  .row,
+  .headerRow {
     display: flex;
     flex-direction: row;
     > div {
@@ -22,12 +26,16 @@
     border-bottom: 1px solid $grail-gray-light-color;
   }
 
-  .highlightedRow {
-    @include highlighted-row;
+  .highlightedRow,
+  .highlightedCell {
     background-color: rgba(0, 0, 0, 0.04);
+    &.highlightedRow {
+      @include highlighted-row;
+    }
   }
   .tableCell {
     padding: 0 4px;
+    align-items: center;
   }
   .headerCell {
     flex: 1 1 50px;
@@ -52,11 +60,72 @@ $scrollbar-width: 7px;
   }
   &::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: rgba(0,0,0,.25);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   }
 }
 
 .headerContainerPadding {
   padding-right: $scrollbar-width;
+}
+
+// CSS that is specific to the LargeWideTableComponent. The
+// LargeWideTableComponent uses react-virtualized's Grid components rather
+// than a Table component and thus involves significantly different CSS to
+// make it appear like a table.
+.gridRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  .frozenColumnsGridContainer,
+  .gridColumn {
+    :focus {
+      // Clears the ugly blue :focus ring when cells are clicked on.
+      outline: none;
+    }
+    .headerGrid,
+    .frozenColumnsGrid {
+      // The `!important` is unfortunately necessary to avoid a duplicate scrollbar appearing due to the `overflow-x`
+      // being set to `auto` by inline styling directly on the element that is automatically and unavoidably applied by
+      // react-virtualized's Grid component.
+      overflow: hidden !important;
+    }
+
+    .headerGrid,
+    .bodyGrid {
+      // Uses a combination of local and scroll background images to add inset shadow to right side if and only if there
+      // is more to be seen. Based on jsbin.com/atarOxU.
+      background-image: linear-gradient(to left, white, $transparent-white),
+        linear-gradient(to left, $box-shadow-color, $transparent-white);
+      background-position: 100% 0, 100% 0;
+      background-repeat: no-repeat;
+      background-size: 4em 100%, 1em 100%;
+      background-attachment: local, scroll;
+
+      // TODO(ecarrel): add drop shadow to the left side as well. This is non-trivial because there is no div that
+      //  begins at the point in between the frozen columns and the unfrozen ones.
+    }
+
+    &.frozenColumnsGridContainer {
+      flex: 0 0 75px;
+      z-index: 10;
+      background-color: white;
+      position: absolute;
+      left: 0;
+    }
+
+    &.gridColumn {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+    }
+
+    .isRightmostFrozenColumn {
+      border-right: 1px solid $grail-gray-light-color;
+    }
+
+    .isLeftmostUnfrozenColumn {
+      padding-left: 10px;
+    }
+  }
 }

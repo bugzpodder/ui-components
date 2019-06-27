@@ -71,6 +71,7 @@ module.exports = {
         "./src/avatar-icon/avatar-icon.jsx",
         "./src/common-select/common-select.jsx",
         "./src/common-select/common-multi-select.jsx",
+        "./src/common-suggest/common-suggest.jsx",
         "./src/export-button/export-button.jsx",
         "./src/notification-center/notification-center.jsx",
         "./src/navbar/navbar.jsx",

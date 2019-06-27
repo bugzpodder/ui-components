@@ -80,6 +80,7 @@ const SelectExample = () => {
   return (
     <Fragment>
       <CommonSelect
+        data-testid="async-country-chooser"
         isFullWidth
         helperText="Choose a country"
         selectType="async"

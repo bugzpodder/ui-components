@@ -11,7 +11,13 @@ const SelectExample = () => {
   const [values, setValues] = useState([]);
   return (
     <Fragment>
-      <CommonMultiSelect helperText="Choose a country" values={values} options={COUNTRIES} onChange={setValues} />
+      <CommonMultiSelect
+        data-testid="countries-chooser"
+        helperText="Choose a country"
+        values={values}
+        options={COUNTRIES}
+        onChange={setValues}
+      />
       <ExampleBlock strongHeader="state " content={values} />
     </Fragment>
   );

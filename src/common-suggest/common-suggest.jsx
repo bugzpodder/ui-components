@@ -28,7 +28,7 @@ type Props = {
   /** Called to set the new value */
   onChange: string => any,
   /** Called when user hits enter */
-  onEnter: () => any,
+  onEnter?: () => any,
 };
 
 /**
@@ -93,7 +93,7 @@ export const CommonSuggest = (props: Props) => {
           const onKeyDown = event => {
             if ((!items.length || !isOpen || highlightedIndex == null) && event.keyCode === keycode("Enter")) {
               closePopper();
-              onEnter();
+              onEnter && onEnter();
             } else {
               setIsPopperOpen(true);
               setIsManuallyOpened(false);

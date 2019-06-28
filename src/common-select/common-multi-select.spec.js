@@ -8,7 +8,9 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 afterEach(cleanup);
 
 const TestMultiSelect = props => {
-  const { mockOnChange, label, margin, variant } = props;
+  const {
+    mockOnChange, label, margin, variant,
+  } = props;
   const [values, setValues] = useState([
     { label: "Algeria", value: "ALGERIA" },
     { label: "Afghanistan", value: "AFGHANISTAN" },

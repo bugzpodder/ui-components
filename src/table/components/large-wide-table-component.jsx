@@ -279,7 +279,7 @@ export const LargeWideTableComponent = (props: Props) => {
                     // columns to fill it.
                     const nonFrozenColumnsWidth = columnWidths
                       .slice(numFrozenColumns)
-                      .reduce((sum, columnWidth) => sum + columnWidth);
+                      .reduce((sum, columnWidth) => sum + columnWidth, 0);
                     const availableWidth = width - frozenColumnsWidth - scrollbarSize;
                     if (nonFrozenColumnsWidth < availableWidth) {
                       const scaleFactor = availableWidth / nonFrozenColumnsWidth;

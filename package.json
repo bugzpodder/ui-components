@@ -11,7 +11,7 @@
     "flow": "flow",
     "lint": "kcd-scripts lint",
     "lint-fix": "yarn lint --fix",
-    "format": "prettier --write \"src/**/*.{js,jsx}\" \"cypress/**/*.js\" \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
+    "format": "prettier --write \"src/**/*.{js,jsx}\" \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
     "precommit": "kcd-scripts pre-commit",
     "start": "yarn styleguide",
@@ -19,9 +19,7 @@
     "styleguide:build": "styleguidist build",
     "test": "kcd-scripts test --watch",
     "test:staged": "kcd-scripts test --coverage && echo --findRelatedTests does not work properly with coverage",
-    "test-all": "kcd-scripts test --coverage",
-    "test-e2e": "cypress open",
-    "test-e2e:ci": "cypress run --config numTestsKeptInMemory=0"
+    "test-all": "kcd-scripts test --coverage"
   },
   "dependencies": {
     "@babel/runtime": "^7.4.5",
@@ -49,7 +47,6 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
-    "cypress": "^3.3.1",
     "flow-bin": "^0.101.0",
     "flow-copy-source": "^2.0.6",
     "fs-extra": "^8.0.1",

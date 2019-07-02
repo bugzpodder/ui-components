@@ -11,7 +11,13 @@ const SelectExample = () => {
   const [value, setValue] = useState({});
   return (
     <Fragment>
-      <CommonSelect helperText="Choose a country" value={value} options={COUNTRIES} onChange={setValue} />
+      <CommonSelect
+        data-testid="country-chooser"
+        helperText="Choose a country"
+        value={value}
+        options={COUNTRIES}
+        onChange={setValue}
+      />
       <ExampleBlock strongHeader="state " content={value} />
     </Fragment>
   );

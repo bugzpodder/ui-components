@@ -6,6 +6,7 @@
 4. Support `margin` for `CommonSelect`/`CommonMultiSelect`.
 5. Add `isWide` prop to `LargeSimpleTable`, which allows columns to scroll horizontally rather than
    squeezing all columns into the viewable area.
+6. Add `isIconButton` to `LinkButton`.
 
 ## 1.0.0 - 2019-06-17
 

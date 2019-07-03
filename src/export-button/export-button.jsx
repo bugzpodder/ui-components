@@ -100,7 +100,7 @@ export const ExportButton = (props: Props) => {
     {
       key: DATA_SOURCE.SELECTED_ROWS,
       isVisible: selectedRows != null,
-      OptionNode: (
+      optionNode: (
         <FormControlLabel
           control={<Radio />}
           label={`Selected Rows (${selectedRows ? selectedRows.length : ""})`}
@@ -119,7 +119,7 @@ export const ExportButton = (props: Props) => {
     {
       key: DATA_SOURCE.VISIBLE_ROWS,
       isVisible: visibleRows != null,
-      OptionNode: (
+      optionNode: (
         <FormControlLabel
           control={<Radio />}
           label={`Visible Rows (${visibleRows ? visibleRows.length : ""})`}
@@ -137,7 +137,7 @@ export const ExportButton = (props: Props) => {
     {
       key: DATA_SOURCE.BULK_ROWS,
       isVisible: fetchBulkExportRows != null,
-      OptionNode: (
+      optionNode: (
         <Fragment>
           <FormControlLabel
             control={<Radio />}
@@ -262,7 +262,9 @@ export const ExportButton = (props: Props) => {
           onChange={({ currentTarget: { value } }) => setDataSource(value)}
           value={dataSource}
         >
-          {visibleDataSourceOptions.map(({ OptionNode }) => OptionNode)}
+          {visibleDataSourceOptions.map(({ optionNode, key }) => (
+            <Fragment key={key}>{optionNode}</Fragment>
+          ))}
         </RadioGroup>
       ),
     });

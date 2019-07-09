@@ -290,6 +290,15 @@ exports[`test selecting an item on the timeline card 1`] = `
         data-testid="card-body"
       >
         <div
+          class="spinnerOverlay active"
+          data-is-active="true"
+          data-testid="spinner-overlay"
+        >
+          <div
+            class="loading"
+          />
+        </div>
+        <div
           class="timelineContent"
         >
           <div
@@ -634,6 +643,15 @@ exports[`test unselecting an item on the timeline card 1`] = `
         class="MuiCardContent-root"
         data-testid="card-body"
       >
+        <div
+          class="spinnerOverlay active"
+          data-is-active="true"
+          data-testid="spinner-overlay"
+        >
+          <div
+            class="loading"
+          />
+        </div>
         <div
           class="timelineContent"
         >

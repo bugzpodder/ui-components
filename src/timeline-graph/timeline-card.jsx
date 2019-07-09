@@ -4,6 +4,7 @@ import classNames from "classnames";
 import styles from "./timeline-graph.module.scss";
 import { CommonCard } from "../index";
 import { type CommonCardProps } from "../common-card/card";
+import { SpinnerOverlay } from "../spinner-overlay";
 import { TimelineGraphComponent } from "./components/timeline-graph-component";
 
 type Props = {
@@ -43,11 +44,15 @@ type Props = {
   isDayVisible?: boolean,
   /** The value of the currently selected item. Must be a unique date from the `rows` data objects. */
   selectedItem?: ?number,
+  /** If true, shows a spinner indicator over the content. */
+  isLoading?: boolean,
 };
 
 /** TimelineCard provides an interactive timeline component, wrapped inside of the CommonCard */
 export const TimelineCard = (props: Props) => {
-  const { classes = {}, commonCardProps, ...timelineProps } = props;
+  const {
+    classes = {}, commonCardProps, isLoading, ...timelineProps
+  } = props;
   const { commonCard = {} } = classes;
   return (
     // $FlowFixMe
@@ -59,6 +64,7 @@ export const TimelineCard = (props: Props) => {
         }}
         {...commonCardProps}
       >
+        <SpinnerOverlay isActive={isLoading} />
         {/* $FlowFixMe */}
         <TimelineGraphComponent
           classes={classes}

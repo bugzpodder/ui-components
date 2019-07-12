@@ -19,7 +19,7 @@ type Props = {
   isOpen: boolean,
   toggle: Function,
   domain: string,
-  externalDomains: Map<string, string>,
+  externalDomains?: Map<string, string>,
   sidebarContent: SidebarItem[],
   InternalLinkComponent?: React$ElementType,
   footer?: React$Node,
@@ -70,6 +70,7 @@ export const Sidebar = (props: Props) => {
     toggle,
     drawerVariant,
     classes = {},
+    externalDomains = new Map(),
   } = props;
 
   const matchedItem = useMemo(
@@ -128,7 +129,7 @@ export const Sidebar = (props: Props) => {
         </ListItem>
       );
     }
-    const domainString = props.externalDomains.get(itemDomain) || "";
+    const domainString = externalDomains.get(itemDomain) || "";
     return (
       <ListItem
         key={key}

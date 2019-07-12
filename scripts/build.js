@@ -12,8 +12,6 @@ async function copyFile(file) {
 async function createPackageFile() {
   const packageData = await fse.readFile(path.resolve(__dirname, "../package.json"), "utf8");
   const { name, version, dependencies } = JSON.parse(packageData);
-  // This is not published currently and needs to be removed from dependencies.
-  delete dependencies["@grail/lib"];
   const newPackageData = {
     name,
     version,

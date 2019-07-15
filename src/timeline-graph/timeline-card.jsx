@@ -51,7 +51,7 @@ type Props = {
 /** TimelineCard provides an interactive timeline component, wrapped inside of the CommonCard */
 export const TimelineCard = (props: Props) => {
   const {
-    classes = {}, commonCardProps, isLoading, ...timelineProps
+    classes = {}, commonCardProps, isLoading = false, ...timelineProps
   } = props;
   const { commonCard = {} } = classes;
   return (

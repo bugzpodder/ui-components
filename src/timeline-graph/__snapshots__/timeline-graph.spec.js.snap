@@ -290,8 +290,8 @@ exports[`test selecting an item on the timeline card 1`] = `
         data-testid="card-body"
       >
         <div
-          class="spinnerOverlay active"
-          data-is-active="true"
+          class="spinnerOverlay"
+          data-is-active="false"
           data-testid="spinner-overlay"
         >
           <div
@@ -644,8 +644,8 @@ exports[`test unselecting an item on the timeline card 1`] = `
         data-testid="card-body"
       >
         <div
-          class="spinnerOverlay active"
-          data-is-active="true"
+          class="spinnerOverlay"
+          data-is-active="false"
           data-testid="spinner-overlay"
         >
           <div

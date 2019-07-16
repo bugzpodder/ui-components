@@ -139,8 +139,8 @@ export const CommonSelectComponent = (props: Props) => {
               MultiValueRemove,
             },
           }}
-          onFocus={setIsInputFocused.bind(this, true)}
-          onBlur={setIsInputFocused.bind(this, false)}
+          onFocus={() => setIsInputFocused(true)}
+          onBlur={() => setIsInputFocused(false)}
           classes={{
             root: classNames("common-select__input-root", classes.input, `common-select__input-${variant}`),
           }}

@@ -27,7 +27,3 @@ const SuggestExample = () => {
   <SuggestExample />
 </ExampleWrapper>;
 ```
-
-```
-
-```

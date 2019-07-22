@@ -9,7 +9,8 @@
 6. Add `isIconButton` to `LinkButton`.
 7. Add `isLoading` to `TimelineCard`.
 8. Fix major bug with the aforementioned `isLoading` prop that broke all existing `TimelineCard`s.
-9. Make `Navbar` and `Sidebar`s `externalDomains` optional, defaulting to empty `Map`.
+9. Add `ExternalDomains` type as Map or Object type.
+10. Make `Navbar` and `Sidebar`s `externalDomains` optional, defaulting to dev mode Object.
 
 ## 1.0.0 - 2019-06-17
 

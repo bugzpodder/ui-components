@@ -26,7 +26,7 @@ type Props = {
   /** Defines domain in which links should be routed. */
   domain: string,
   /** Defines links to use for external domains. */
-  externalDomains?: Map<string, string>,
+  externalDomains?: ExternalDomains,
   /** Overrieds lib/constants with items to populate the sidebar. */
   sidebarContent?: SidebarItem[],
   /** Defines the footer of the sidebar. */

@@ -3,3 +3,5 @@
 import { type ContextRouter } from "react-router-dom";
 
 declare type NavProps = ContextRouter;
+
+declare type ExternalDomains = Map<string, string> | { string: string };

@@ -11,15 +11,15 @@ import classNames from "classnames";
 import pathToRegexp from "path-to-regexp";
 import styles from "./sidebar.module.scss";
 import { CollapsableListItem } from "./collapsable-list-item";
+import { DEV_SERVER_URLS, sidebarItems } from "@grail/lib";
 import { ExternalLink } from "../../link";
 import { getListItemDataTestId } from "../util";
-import { sidebarItems } from "@grail/lib";
 
 type Props = {
   isOpen: boolean,
   toggle: Function,
   domain: string,
-  externalDomains?: Map<string, string>,
+  externalDomains?: ExternalDomains,
   sidebarContent: SidebarItem[],
   InternalLinkComponent?: React$ElementType,
   footer?: React$Node,
@@ -70,7 +70,7 @@ export const Sidebar = (props: Props) => {
     toggle,
     drawerVariant,
     classes = {},
-    externalDomains = new Map(),
+    externalDomains = DEV_SERVER_URLS,
   } = props;
 
   const matchedItem = useMemo(
@@ -129,7 +129,7 @@ export const Sidebar = (props: Props) => {
         </ListItem>
       );
     }
-    const domainString = externalDomains.get(itemDomain) || "";
+    const domainString = (externalDomains instanceof Map ? externalDomains.get(itemDomain) : externalDomains[itemDomain]) || "";
     return (
       <ListItem
         key={key}

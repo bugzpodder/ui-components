@@ -1,6 +1,7 @@
 // @flow
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ClearIcon from "@material-ui/icons/Close";
+import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Downshift from "downshift";
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -29,6 +30,8 @@ type Props = {
   onChange: string => any,
   /** Called when user hits enter */
   onEnter?: () => any,
+  /** Additional actions at the bottom of the suggestion Popper */
+  actions?: React$Node,
 };
 
 /**
@@ -45,7 +48,7 @@ export const CommonSuggest = (props: Props) => {
   };
 
   const {
-    id, placeholder, suggestions, onChange, onEnter, value,
+    id, placeholder, suggestions, onChange, onEnter, value, actions,
   } = props;
   const valueElements = value.split(",").map(element => element.trim());
   let items = suggestions.map(value => ({ value }));
@@ -87,7 +90,11 @@ export const CommonSuggest = (props: Props) => {
               setIsPopperOpen(isPopperOpen => !isPopperOpen);
               setIsManuallyOpened(true);
             },
-            onBlur: closePopper,
+            onKeyDown: e => {
+              if (e.key === "Tab") {
+                closePopper();
+              }
+            },
             classes: { root: styles.commonSuggestButton },
           });
           const onKeyDown = event => {
@@ -106,7 +113,6 @@ export const CommonSuggest = (props: Props) => {
             InputProps: {
               "data-testid": "common-suggest-input-container",
               onKeyDown,
-              onBlur: closePopper,
               endAdornment: (
                 <InputAdornment position="end">
                   {value && (
@@ -141,43 +147,46 @@ export const CommonSuggest = (props: Props) => {
                 }}
                 {...otherInputProps}
               />
-              <Popper
-                id="common-suggest-popover"
-                data-testid="common-suggest-popper"
-                open={isOpen}
-                anchorEl={ref}
-                placement="top"
-                disablePortal
-                className={styles.commonSuggestPopper}
-              >
-                <Paper
-                  elevation={2}
-                  square
-                  data-testid="items"
+              <ClickAwayListener onClickAway={closePopper}>
+                <Popper
+                  id="common-suggest-popover"
+                  data-testid="common-suggest-popper"
+                  open={isOpen}
+                  anchorEl={ref}
+                  placement="top"
+                  disablePortal
+                  className={styles.commonSuggestPopper}
                 >
-                  {items.map((item, index) => {
-                    const itemProps = getItemProps({ key: index, index, item });
-                    return (
-                      <MenuItem
-                        {...itemProps}
-                        selected={index === highlightedIndex}
-                        component="div"
-                        className={styles.item}
+                  <Paper
+                    elevation={2}
+                    square
+                    data-testid="items"
+                  >
+                    {items.map((item, index) => {
+                      const itemProps = getItemProps({ key: index, index, item });
+                      return (
+                        <MenuItem
+                          {...itemProps}
+                          selected={index === highlightedIndex}
+                          component="div"
+                          className={styles.item}
+                        >
+                          {item.value}
+                        </MenuItem>
+                      );
+                    })}
+                    {!items.length && (
+                      <Typography
+                        variant="caption"
+                        className={styles.noMatches}
                       >
-                        {item.value}
-                      </MenuItem>
-                    );
-                  })}
-                  {!items.length && (
-                    <Typography
-                      variant="caption"
-                      className={styles.noMatches}
-                    >
-                      No matches
-                    </Typography>
-                  )}
-                </Paper>
-              </Popper>
+                        No matches
+                      </Typography>
+                    )}
+                    {actions}
+                  </Paper>
+                </Popper>
+              </ClickAwayListener>
             </div>
           );
         }}

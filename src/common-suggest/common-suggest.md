@@ -55,7 +55,7 @@ const SuggestExample = () => {
   return (
     <Fragment>
       <CommonSuggest
-        id="country-chooser"
+        id="country-chooser-with-actions"
         placeholder="Suggest a country"
         suggestions={showHidden ? COUNTRY_NAMES : COUNTRY_NAMES.slice(0, 4)}
         value={value}

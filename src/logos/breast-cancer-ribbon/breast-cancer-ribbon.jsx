@@ -9,7 +9,9 @@ export const BreastCancerRibbon = () => {
       width="35"
       height="35"
       viewBox="39.39 1.172 324.975 406.495"
+      role="img"
     >
+      <title>Breast Cancer Ribbon</title>
       <g
         fill="#f69"
         stroke="#fff"

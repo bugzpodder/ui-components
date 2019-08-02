@@ -39,6 +39,7 @@ type DropdownProps = {
 type NoOptionsMessageProps = {
   selectProps: AdditionalSelectProps,
   selectType: string,
+  getValue: Function,
 };
 
 export const DropdownIndicator = (props: DropdownProps) => {
@@ -54,17 +55,23 @@ export const NoOptionsMessage = (props: NoOptionsMessageProps) => {
   const {
     selectType,
     selectProps: { inputValue, initialMessage },
+    getValue,
   } = props;
-  let message = "No results found";
+  let noOptionsMessage = "No results found";
   if (!inputValue && selectType !== "simple") {
-    initialMessage ? (message = initialMessage) : (message = "Begin Typing...");
+    initialMessage ? (noOptionsMessage = initialMessage) : (noOptionsMessage = "Begin Typing...");
+  }
+
+  const matchedChips = getValue().filter(({ label, value }) => inputValue === label || inputValue === value);
+  if (inputValue && matchedChips.length > 0) {
+    noOptionsMessage = `"${inputValue}" has already been added`;
   }
   return (
     <MenuItem
       data-testid="no-options-message"
       selected={false}
     >
-      {message}
+      {noOptionsMessage}
     </MenuItem>
   );
 };

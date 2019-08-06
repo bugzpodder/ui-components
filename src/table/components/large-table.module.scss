@@ -1,5 +1,6 @@
-@import "../../styles/colors";
-@import "../highlighted-row";
+@import "../../styles/colors.scss";
+@import "../highlighted-row.scss";
+@import "../../styles/scrollbar.scss";
 
 $transparent-white: rgba(255, 255, 255, 0);
 
@@ -36,6 +37,8 @@ $transparent-white: rgba(255, 255, 255, 0);
   .tableCell {
     padding: 0 4px;
     align-items: center;
+    overflow-x: auto;
+    @include grail-scrollbar(5px);
   }
   .headerCell {
     flex: 1 1 50px;
@@ -50,19 +53,10 @@ $transparent-white: rgba(255, 255, 255, 0);
 
 // Always show scrollbar for LargeTable, on all OS's.
 $scrollbar-width: 7px;
-.table > div {
+.table [role=grid] {
   // Make scrollbar more obvious on tables, since users have a hard time seeing
   // overflowable content (especially on Mac)
-  &::-webkit-scrollbar {
-    -webkit-appearance: none;
-    height: $scrollbar-width;
-    width: $scrollbar-width;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-  }
+  @include grail-scrollbar($scrollbar-width);
 }
 
 .headerContainerPadding {

@@ -1,6 +1,7 @@
 @import "../styles/breakpoints.scss";
-@import "../styles/colors";
-@import "./highlighted-row";
+@import "../styles/colors.scss";
+@import "./highlighted-row.scss";
+@import "../styles/scrollbar.scss";
 
 %common-table-cell {
   padding: 4px;
@@ -60,21 +61,13 @@
   }
 }
 
+$scrollbar-width: 7px;
 .tableContainer {
   position: relative;
   overflow: auto;
   // Make scrollbar more obvious on tables, since users have a hard time seeing
   // overflowable content (especially on Mac)
-  &::-webkit-scrollbar {
-    -webkit-appearance: none;
-    height: 7px;
-    width: 7px;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.25);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-  }
+  @include grail-scrollbar($scrollbar-width);
   thead th {
     position: sticky;
     top: 0;

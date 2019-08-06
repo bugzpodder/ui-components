@@ -32,6 +32,9 @@ declare type PagedTableColumn = {
   // Only relevant for LargeSimpleTable's using the `isWide` prop; defines the
   // width of the column in pixels. Defaults to 150px.
   width?: number,
+  // If defined, this field is used instead of the "accessor" field to sort by.
+  // Typically useful when "accessor" is a function.
+  sortAccessor?: string,
 } & $Shape<ExportableColumn>;
 
 declare type PagedTableClasses = {

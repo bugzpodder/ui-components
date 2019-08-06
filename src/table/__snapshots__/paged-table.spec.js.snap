@@ -1294,26 +1294,7 @@ exports[`render paged table and test sorting 1`] = `
             <th
               class="MuiTableCell-root tableHeader MuiTableCell-head"
               scope="col"
-            >
-              <span
-                class="MuiButtonBase-root MuiTableSortLabel-root sort-"
-                data-testid="sort-"
-                role="button"
-                tabindex="0"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
-                  focusable="false"
-                  role="presentation"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
-                  />
-                </svg>
-              </span>
-            </th>
+            />
           </tr>
         </thead>
         <tbody

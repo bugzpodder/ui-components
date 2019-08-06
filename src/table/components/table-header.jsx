@@ -26,23 +26,17 @@ export const TableHeader = (props: Props) => {
     throw new Error("tableOptions prop requires a sortOptions parameter for sorting");
   }
   const sortFieldsById = mapBy(sortOptions, "id");
-  const handleClickSort = (event: SyntheticMouseEvent<HTMLButtonElement>, accessor) => {
-    if (!accessor) {
-      return;
-    }
+  const handleClickSort = (event: SyntheticMouseEvent<HTMLButtonElement>, fieldId) => {
     const { ctrlKey } = event;
-    if (typeof accessor === "function") {
-      return;
-    }
-    const fieldId = typeof accessor === "string" ? accessor : "";
     const currentSortField = sortFieldsById.get(fieldId) || {};
     const newSortField = {
       id: fieldId,
-      desc: currentSortField.id !== accessor || currentSortField.desc !== true,
+      desc: currentSortField.id !== fieldId || currentSortField.desc !== true,
     };
     const sortOptions = [];
     if (ctrlKey) {
-      // If the user holds ctrl while clicking on a header, multi-sort.
+      // If the user holds shift while clicking on a header, multi-sort.
+      // TODO(ecarrel): support macs.
       sortFieldsById.set(fieldId, newSortField);
       sortOptions.push(...sortFieldsById.values());
     } else {
@@ -55,12 +49,13 @@ export const TableHeader = (props: Props) => {
       <TableRow>
         {columns.map((column, index) => {
           const {
-            Header, accessor = "", headerClassName = "", isSingleIcon = false,
+            Header, accessor = "", headerClassName = "", isSingleIcon = false, sortAccessor,
           } = column;
           const fieldId = typeof accessor === "string" ? accessor : "";
-          const sortField = sortFieldsById.get(fieldId) || {};
+          const sortFieldId = sortAccessor || fieldId;
+          const sortField = sortFieldsById.get(sortFieldId) || {};
           const isCheckboxHeader = accessor === "COLUMN_SELECT";
-          const isSortable = onSort && column.sortable !== false;
+          const isSortable = onSort && sortFieldId.length > 0 && column.sortable !== false;
           const isSorted = onSort && !!sortField.id;
           const sortOrder = sortField.desc ? "desc" : "asc";
           const key = `${accessor.toString() || "table-head-key"}-${index}`;
@@ -68,11 +63,11 @@ export const TableHeader = (props: Props) => {
           if (isSortable && !isCheckboxHeader) {
             inner = (
               <TableSortLabel
-                className={`sort-${fieldId}`}
-                data-testid={`sort-${fieldId}`}
+                className={`sort-${sortFieldId}`}
+                data-testid={`sort-${sortFieldId}`}
                 active={isSorted}
                 direction={sortOrder}
-                onClick={event => handleClickSort(event, accessor)}
+                onClick={event => handleClickSort(event, sortFieldId)}
               >
                 {Header}
               </TableSortLabel>

@@ -13,6 +13,8 @@
 10. Make `Navbar` and `Sidebar`s `externalDomains` optional, defaulting to dev mode Object.
 11. Add `actions` to `CommonSuggest`.
 12. Add accessibility text to logos. Include terms of service for GRAIL logo.
+13. Add `sortAccessor` to `PagedTableColumn` which takes precedence over `accessor` to get passed to `onSort`.
+14. Columns on `PagedTable`s that are not sortable no longer are clickable.
 
 ## 1.0.0 - 2019-06-17
 

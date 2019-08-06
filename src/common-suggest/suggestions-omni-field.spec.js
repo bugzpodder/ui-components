@@ -17,6 +17,7 @@ test("render SuggestionsOmniField", () => {
         value=""
         onChange={() => {}}
         onEnter={() => {}}
+        loadSuggestions={() => {}}
       />
     </TestWrapper>,
   );

@@ -138,7 +138,7 @@ export const ExportButton = (props: Props) => {
       key: DATA_SOURCE.BULK_ROWS,
       isVisible: fetchBulkExportRows != null,
       optionNode: (
-        <Fragment>
+        <>
           <FormControlLabel
             control={<Radio />}
             // TODO(ecarrel): incorporate the expected length once there's
@@ -154,7 +154,7 @@ export const ExportButton = (props: Props) => {
               message="This action may be slow."
             />
           )}
-        </Fragment>
+        </>
       ),
       dataFetcher: async () => {
         if (fetchBulkExportRows == null) {
@@ -271,7 +271,7 @@ export const ExportButton = (props: Props) => {
   }
 
   return (
-    <Fragment>
+    <>
       <CommonDialog
         data-testid="export-modal"
         isVisible={isOpen}
@@ -300,6 +300,6 @@ export const ExportButton = (props: Props) => {
         <CloudDownloadIcon className="margin-right-5" />
         Export
       </Button>
-    </Fragment>
+    </>
   );
 };

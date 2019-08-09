@@ -12,6 +12,7 @@ export const generateReport = (
   const { fileMimeType = "text/csv" } = options;
   const blob = new Blob([output], { type: `${fileMimeType};charset=utf-8;` });
   try {
+    // $FlowFixMe
     saveAs(blob, fileName, true);
   } catch (error) {
     console.error("error saving blob", error);

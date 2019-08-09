@@ -106,6 +106,7 @@ export const CommonSuggest = (props: Props) => {
               setIsManuallyOpened(false);
             }
           };
+          // $FlowFixMe
           const { InputProps, ref, ...otherInputProps } = getInputProps({
             fullWidth: true,
             onChange: event => onChange(event.target.value),

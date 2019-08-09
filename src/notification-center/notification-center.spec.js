@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import React, { useState } from "react";
 import moment from "moment-timezone";
 import { NotificationCenter } from ".";

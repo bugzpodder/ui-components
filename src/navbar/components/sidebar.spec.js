@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { LIMS, sidebarItems } from "@grail/lib";
 import { Link, MemoryRouter } from "react-router-dom";

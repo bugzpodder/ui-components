@@ -1,7 +1,7 @@
 ### Example
 
 ```js
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { ExampleBlock, ExampleWrapper, EXAMPLE_TABLE_DATA } from "../test-utils";
 import Button from "@material-ui/core/Button";
 import styles from "../test-utils/example-styles.module.scss";
@@ -67,12 +67,12 @@ const TestPagedTable = () => {
   ];
   const pagedData = data.slice(tableOptions.offset, tableOptions.offset + tableOptions.count);
   const headerActions = (
-    <Fragment>
+    <>
       <Button>Second Action</Button>
       <Button variant="contained" color="primary">
         First Action
       </Button>
-    </Fragment>
+    </>
   );
   return (
     <div className={styles.pagedTable}>

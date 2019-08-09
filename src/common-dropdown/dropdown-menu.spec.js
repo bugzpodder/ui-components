@@ -1,9 +1,9 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import CloseIcon from "@material-ui/icons/Close";
 import DoneIcon from "@material-ui/icons/Done";
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import Typography from "@material-ui/core/Typography";
 import { CommonDropdownMenu } from ".";
 import { TestWrapper } from "../test-utils";
@@ -20,19 +20,19 @@ const TestCommonDropdownMenu = () => {
   const [approvalStatus, setApprovalStatus] = useState(REVIEW_STATES.PENDING);
 
   const buttonContent = (
-    <Fragment>
+    <>
       <ArrowDropDownIcon />
       Select Option
-    </Fragment>
+    </>
   );
 
   const menuItems = [
     {
       content: (
-        <Fragment>
+        <>
           Approve
           <DoneIcon className="margin-left-10" />
-        </Fragment>
+        </>
       ),
       onClick: () => {
         setApprovalStatus(REVIEW_STATES.APPROVED);
@@ -40,10 +40,10 @@ const TestCommonDropdownMenu = () => {
     },
     {
       content: (
-        <Fragment>
+        <>
           Deny
           <CloseIcon className="margin-left-10" />
-        </Fragment>
+        </>
       ),
       onClick: () => {
         setApprovalStatus(REVIEW_STATES.DENIED);

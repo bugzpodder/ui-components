@@ -30,87 +30,83 @@ exports[`render common tabbed page 1`] = `
           data-testid="common-tabbed-page-tabs"
         >
           <div
-            class="MuiTabs-flexContainer tabs"
+            class="PrivateTabScrollButton-root-69 MuiTabs-scrollButtons scrollButton"
+          />
+          <div
+            class="MuiTabs-scrollable"
+            style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
+          />
+          <div
+            class="MuiTabs-scroller MuiTabs-scrollable"
+            style="margin-bottom: 0px;"
           >
             <div
-              class="PrivateTabScrollButton-root-67 MuiTabs-scrollButtons scrollButton"
-            />
-            <div
-              class="MuiTabs-scrollable"
-              style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
-            />
-            <div
-              class="MuiTabs-scroller MuiTabs-scrollable"
+              class="MuiTabs-flexContainer tabs"
               role="tablist"
-              style="margin-bottom: 0px;"
             >
-              <div
-                class="MuiTabs-flexContainer tabs"
+              <button
+                aria-selected="true"
+                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary Mui-selected"
+                data-testid="tab-one"
+                id="tab-one"
+                role="tab"
+                tabindex="0"
+                type="button"
               >
-                <button
-                  aria-selected="true"
-                  class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary Mui-selected"
-                  data-testid="tab-one"
-                  id="tab-one"
-                  role="tab"
-                  tabindex="0"
-                  type="button"
+                <span
+                  class="MuiTab-wrapper"
                 >
-                  <span
-                    class="MuiTab-wrapper"
-                  >
-                    Tab One
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-                <button
-                  aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
-                  data-testid="tab-two"
-                  id="tab-two"
-                  role="tab"
-                  tabindex="0"
-                  type="button"
+                  Tab One
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
+                data-testid="tab-two"
+                id="tab-two"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiTab-wrapper"
                 >
-                  <span
-                    class="MuiTab-wrapper"
-                  >
-                    Tab Two
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-                <button
-                  aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
-                  data-testid="tab-three"
-                  id="tab-three"
-                  role="tab"
-                  tabindex="0"
-                  type="button"
+                  Tab Two
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
+                data-testid="tab-three"
+                id="tab-three"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiTab-wrapper"
                 >
-                  <span
-                    class="MuiTab-wrapper"
-                  >
-                    Tab Three
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </div>
-              <span
-                class="PrivateTabIndicator-root-81 PrivateTabIndicator-colorPrimary-82 MuiTabs-indicator"
-                style="left: 0px; width: 0px;"
-              />
+                  Tab Three
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
             </div>
-            <div
-              class="PrivateTabScrollButton-root-67 MuiTabs-scrollButtons scrollButton"
+            <span
+              class="PrivateTabIndicator-root-84 PrivateTabIndicator-colorPrimary-85 MuiTabs-indicator"
+              style="left: 0px; width: 0px;"
             />
           </div>
+          <div
+            class="PrivateTabScrollButton-root-69 MuiTabs-scrollButtons scrollButton"
+          />
         </div>
       </div>
       <div
@@ -154,10 +150,6 @@ exports[`render common tabbed page 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
                 d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
               />
             </svg>
@@ -195,10 +187,6 @@ exports[`render common tabbed page 1`] = `
                 role="presentation"
                 viewBox="0 0 24 24"
               >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
                 <path
                   d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
                 />

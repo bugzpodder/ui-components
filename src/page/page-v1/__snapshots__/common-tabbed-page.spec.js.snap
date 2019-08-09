@@ -55,7 +55,7 @@ exports[`render common tabbed page 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-102 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-103 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -64,7 +64,7 @@ exports[`render common tabbed page 1`] = `
                       class="MuiSwitch-thumb"
                     />
                     <input
-                      class="PrivateSwitchBase-input-105 MuiSwitch-input"
+                      class="PrivateSwitchBase-input-106 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
@@ -90,76 +90,72 @@ exports[`render common tabbed page 1`] = `
         data-testid="card-tabs"
       >
         <div
-          class="MuiTabs-flexContainer"
+          class="MuiTabs-scroller MuiTabs-fixed"
+          style="overflow: hidden;"
         >
           <div
-            class="MuiTabs-scroller MuiTabs-fixed"
+            class="MuiTabs-flexContainer"
             role="tablist"
-            style="overflow: hidden;"
           >
-            <div
-              class="MuiTabs-flexContainer"
+            <button
+              aria-selected="true"
+              class="MuiButtonBase-root MuiTab-root test-tab-root tab tabbed-page-tab MuiTab-textColorPrimary Mui-selected"
+              data-testid="tab-one"
+              id="tab-one"
+              role="tab"
+              tabindex="0"
+              type="button"
             >
-              <button
-                aria-selected="true"
-                class="MuiButtonBase-root MuiTab-root test-tab-root tab tabbed-page-tab MuiTab-textColorPrimary Mui-selected"
-                data-testid="tab-one"
-                id="tab-one"
-                role="tab"
-                tabindex="0"
-                type="button"
+              <span
+                class="MuiTab-wrapper"
               >
-                <span
-                  class="MuiTab-wrapper"
-                >
-                  Tab One
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
-                data-testid="tab-two"
-                id="tab-two"
-                role="tab"
-                tabindex="0"
-                type="button"
+                Tab One
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              aria-selected="false"
+              class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
+              data-testid="tab-two"
+              id="tab-two"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiTab-wrapper"
               >
-                <span
-                  class="MuiTab-wrapper"
-                >
-                  Tab Two
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-              <button
-                aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
-                data-testid="tab-three"
-                id="tab-three"
-                role="tab"
-                tabindex="0"
-                type="button"
+                Tab Two
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+            <button
+              aria-selected="false"
+              class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
+              data-testid="tab-three"
+              id="tab-three"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiTab-wrapper"
               >
-                <span
-                  class="MuiTab-wrapper"
-                >
-                  Tab Three
-                </span>
-                <span
-                  class="MuiTouchRipple-root"
-                />
-              </button>
-            </div>
-            <span
-              class="PrivateTabIndicator-root-134 PrivateTabIndicator-colorPrimary-135 MuiTabs-indicator"
-              style="left: 0px; width: 0px;"
-            />
+                Tab Three
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
           </div>
+          <span
+            class="PrivateTabIndicator-root-137 PrivateTabIndicator-colorPrimary-138 MuiTabs-indicator"
+            style="left: 0px; width: 0px;"
+          />
         </div>
       </div>
     </div>
@@ -197,10 +193,6 @@ exports[`render common tabbed page 1`] = `
                     role="presentation"
                     viewBox="0 0 24 24"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
                     />

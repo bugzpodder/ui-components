@@ -3,7 +3,7 @@
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 
 type Props = {
   /** The id of the dropdown portion of the menu, used for accessibility */
@@ -32,7 +32,7 @@ export const CommonDropdownMenu = (props: Props) => {
   };
 
   return (
-    <Fragment>
+    <>
       <Button
         aria-haspopup
         aria-owns={anchorEl && dropdownId}
@@ -74,6 +74,6 @@ export const CommonDropdownMenu = (props: Props) => {
             );
           })}
       </Menu>
-    </Fragment>
+    </>
   );
 };

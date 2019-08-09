@@ -4,13 +4,13 @@
 
 ```js
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { CommonSelect } from "./";
 
 const SelectExample = () => {
   const [value, setValue] = useState({});
   return (
-    <Fragment>
+    <>
       <CommonSelect
         data-testid="country-chooser"
         helperText="Choose a country"
@@ -19,7 +19,7 @@ const SelectExample = () => {
         onChange={setValue}
       />
       <ExampleBlock strongHeader="state " content={value} />
-    </Fragment>
+    </>
   );
 };
 
@@ -32,13 +32,13 @@ const SelectExample = () => {
 
 ```js
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { CommonSelect } from "./";
 
 const SelectExample = () => {
   const [value, setValue] = useState({});
   return (
-    <Fragment>
+    <>
       <CommonSelect
         isFullWidth
         selectType="creatable"
@@ -49,7 +49,7 @@ const SelectExample = () => {
         onChange={setValue}
       />
       <ExampleBlock strongHeader="state " content={value} />
-    </Fragment>
+    </>
   );
 };
 
@@ -62,7 +62,7 @@ const SelectExample = () => {
 
 ```js
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { CommonSelect } from "./";
 
 const SelectExample = () => {
@@ -78,7 +78,7 @@ const SelectExample = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <CommonSelect
         data-testid="async-country-chooser"
         isFullWidth
@@ -91,7 +91,7 @@ const SelectExample = () => {
         onChange={setValue}
       />
       <ExampleBlock strongHeader="state " content={value} />
-    </Fragment>
+    </>
   );
 };
 

@@ -5,7 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import React, { Fragment, forwardRef, useState } from "react";
+import React, { forwardRef, useState } from "react";
 import classNames from "classnames";
 import styles from "../common-page-v2.module.scss";
 import { LinkButton } from "../../../link";
@@ -85,7 +85,7 @@ export const HeaderActions = forwardRef<Props, any>((props: Props, ref: any) => 
           {mappedPrimaryActions}
         </div>
       )}
-      <Fragment>
+      <>
         <IconButton
           aria-describedby={id}
           data-testid="common-page-secondary-actions-button"
@@ -125,7 +125,7 @@ export const HeaderActions = forwardRef<Props, any>((props: Props, ref: any) => 
         >
           {mappedSecondaryActions}
         </Menu>
-      </Fragment>
+      </>
     </div>
   );
 });

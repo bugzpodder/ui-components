@@ -4,13 +4,13 @@
 
 ```js
 import { ExampleBlock, ExampleWrapper, COUNTRY_NAMES } from "../test-utils";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { CommonSuggest } from "./";
 
 const SuggestExample = () => {
   const [value, setValue] = useState("");
   return (
-    <Fragment>
+    <>
       <CommonSuggest
         id="country-chooser"
         placeholder="Suggest a country"
@@ -19,7 +19,7 @@ const SuggestExample = () => {
         onChange={setValue}
       />
       <ExampleBlock strongHeader="state " content={value} />
-    </Fragment>
+    </>
   );
 };
 
@@ -32,7 +32,7 @@ const SuggestExample = () => {
 
 ```js
 import { ExampleBlock, ExampleWrapper, COUNTRY_NAMES } from "../test-utils";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { CommonSuggest } from "./";
 import Typography from "@material-ui/core/Typography";
 
@@ -53,7 +53,7 @@ const SuggestExample = () => {
   ];
 
   return (
-    <Fragment>
+    <>
       <CommonSuggest
         id="country-chooser-with-actions"
         placeholder="Suggest a country"
@@ -66,7 +66,7 @@ const SuggestExample = () => {
         actions={!showHidden && actions}
       />
       <ExampleBlock strongHeader="state " content={value} />
-    </Fragment>
+    </>
   );
 };
 

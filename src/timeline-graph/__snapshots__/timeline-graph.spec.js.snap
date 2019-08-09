@@ -113,10 +113,6 @@ exports[`render simple timeline graph 1`] = `
                         <path
                           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
                         />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
                       </svg>
                     </span>
                   </button>
@@ -256,10 +252,6 @@ exports[`render simple timeline graph with time 1`] = `
                       >
                         <path
                           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
-                        />
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
                         />
                       </svg>
                     </span>
@@ -406,10 +398,6 @@ exports[`test selecting an item on the timeline card 1`] = `
                             <path
                               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
                             />
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
-                            />
                           </svg>
                         </span>
                       </button>
@@ -448,56 +436,52 @@ exports[`test tabbed timeline cartd 1`] = `
             data-testid="card-tabs"
           >
             <div
-              class="MuiTabs-flexContainer tabsContainer"
+              class="MuiTabs-scroller MuiTabs-fixed"
+              style="overflow: hidden;"
             >
               <div
-                class="MuiTabs-scroller MuiTabs-fixed"
+                class="MuiTabs-flexContainer tabsContainer"
                 role="tablist"
-                style="overflow: hidden;"
               >
-                <div
-                  class="MuiTabs-flexContainer tabsContainer"
+                <button
+                  aria-selected="true"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected MuiTab-fullWidth"
+                  data-testid="timeline-tab-tabOne"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
                 >
-                  <button
-                    aria-selected="true"
-                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected MuiTab-fullWidth"
-                    data-testid="timeline-tab-tabOne"
-                    role="tab"
-                    tabindex="0"
-                    type="button"
+                  <span
+                    class="MuiTab-wrapper"
                   >
-                    <span
-                      class="MuiTab-wrapper"
-                    >
-                      Tab One
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                  <button
-                    aria-selected="false"
-                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth"
-                    data-testid="timeline-tab-tabTwo"
-                    role="tab"
-                    tabindex="0"
-                    type="button"
+                    Tab One
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
+                  aria-selected="false"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth"
+                  data-testid="timeline-tab-tabTwo"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiTab-wrapper"
                   >
-                    <span
-                      class="MuiTab-wrapper"
-                    >
-                      Tab Two
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-                <span
-                  class="PrivateTabIndicator-root-414 PrivateTabIndicator-colorPrimary-415 MuiTabs-indicator"
-                  style="left: 0px; width: 0px;"
-                />
+                    Tab Two
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
               </div>
+              <span
+                class="PrivateTabIndicator-root-416 PrivateTabIndicator-colorPrimary-417 MuiTabs-indicator"
+                style="left: 0px; width: 0px;"
+              />
             </div>
           </div>
         </div>
@@ -608,10 +592,6 @@ exports[`test tabbed timeline cartd 1`] = `
                           >
                             <path
                               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
-                            />
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
                             />
                           </svg>
                         </span>
@@ -769,10 +749,6 @@ exports[`test unselecting an item on the timeline card 1`] = `
                           >
                             <path
                               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
-                            />
-                            <path
-                              d="M0 0h24v24H0z"
-                              fill="none"
                             />
                           </svg>
                         </span>

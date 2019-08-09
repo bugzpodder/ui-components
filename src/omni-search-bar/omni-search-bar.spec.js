@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import MomentUtils from "@date-io/moment";
 import React from "react";
 import keycode from "keycode";

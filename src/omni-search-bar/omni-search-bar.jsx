@@ -1,5 +1,5 @@
 // @flow
-import React, { Fragment } from "react";
+import React from "react";
 import isEqual from "lodash/isEqual";
 import styles from "./omni.module.scss";
 import {
@@ -265,7 +265,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
     const { searchDefs, children } = this.props;
     const { isOpen } = this.state;
     return (
-      <Fragment>
+      <>
         {isOpen && (
           <div
             id={`${OMNI_KEY}-clickaway`}
@@ -301,7 +301,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
             </OmniDialog>
           )}
         </div>
-      </Fragment>
+      </>
     );
   };
 }

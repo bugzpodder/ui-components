@@ -61,7 +61,7 @@ exports[`renders common page 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-95 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-96 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -70,7 +70,7 @@ exports[`renders common page 1`] = `
                       class="MuiSwitch-thumb"
                     />
                     <input
-                      class="PrivateSwitchBase-input-98 MuiSwitch-input"
+                      class="PrivateSwitchBase-input-99 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
@@ -107,10 +107,6 @@ exports[`renders common page 1`] = `
               role="presentation"
               viewBox="0 0 24 24"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
               <path
                 d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
               />

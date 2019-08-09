@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { LIMS } from "@grail/lib";

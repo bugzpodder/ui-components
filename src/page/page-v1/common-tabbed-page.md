@@ -3,12 +3,12 @@
 ```js
 import { Alert, CommonTabbedPage } from "@grail/components";
 import { ExampleBlock, ExampleWrapper } from "../test-utils";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 
 const ExampleTabbedCard = () => {
   const [activeTab, setActiveTab] = useState("one");
   return (
-    <Fragment>
+    <>
       <CommonTabbedPage
         title="Example Tabbed Page"
         subtitle="This is a subtitle"
@@ -49,7 +49,7 @@ const ExampleTabbedCard = () => {
         ]}
       />
       <ExampleBlock strongHeader="state " content={activeTab} />
-    </Fragment>
+    </>
   );
 };
 
@@ -64,34 +64,34 @@ matches the `key` given in the object in `menuContents`. However, it
 uses CSS anchors and these do not work on styleguidist.
 
 ```js
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { Alert, CommonSwitch, CommonTabbedPage } from "@grail/components";
 import { ExampleBlock, ExampleWrapper } from "../../test-utils";
 
 const TabOneComponent = () => {
   return (
-    <Fragment>
+    <>
       <Alert color="success" message="Tab One Element A!" id="elementA" />
       <Alert color="success" message="Tab One Element B!" id="elementB" />
       <Alert color="success" message="Tab One Element C!" id="elementC" />
-    </Fragment>
+    </>
   );
 };
 
 const TabTwoComponent = () => {
   return (
-    <Fragment>
+    <>
       <Alert color="warning" message="Tab Two Element I!" id="elementI" />
       <Alert color="warning" message="Tab Two Element II!" id="elementII" />
       <Alert color="warning" message="Tab Two Element III!" id="elementIII" />
-    </Fragment>
+    </>
   );
 };
 
 const ExampleTabbedCard = () => {
   const [activeTab, setActiveTab] = useState("one");
   return (
-    <Fragment>
+    <>
       <CommonTabbedPage
         title="Example With Menu"
         subtitle="Another subtitle"
@@ -151,7 +151,7 @@ const ExampleTabbedCard = () => {
         ]}
       />
       <ExampleBlock strongHeader="state " content={activeTab} />
-    </Fragment>
+    </>
   );
 };
 

@@ -4,7 +4,7 @@ import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import Notifications from "@material-ui/icons/Notifications";
 import Popover from "@material-ui/core/Popover";
-import React, { Fragment, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Typography from "@material-ui/core/Typography";
 import styles from "./notification.module.scss";
 import { NotificationCard } from "./components/notification-card";
@@ -50,7 +50,7 @@ export const NotificationCenter = (props: Props) => {
   } = props;
 
   return (
-    <Fragment>
+    <>
       <IconButton
         data-testid="notifications-button"
         disableRipple
@@ -104,6 +104,6 @@ export const NotificationCenter = (props: Props) => {
           ))}
         </List>
       </Popover>
-    </Fragment>
+    </>
   );
 };

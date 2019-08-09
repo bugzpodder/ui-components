@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { CommonPageV2 } from "./common-page-v2";
 import { CommonSwitch } from "../../index";

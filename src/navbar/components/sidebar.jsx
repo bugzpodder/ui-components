@@ -129,7 +129,8 @@ export const Sidebar = (props: Props) => {
         </ListItem>
       );
     }
-    const domainString = (externalDomains instanceof Map ? externalDomains.get(itemDomain) : externalDomains[itemDomain]) || "";
+    const domainString =
+      (externalDomains instanceof Map ? externalDomains.get(itemDomain) : externalDomains[itemDomain]) || "";
     return (
       <ListItem
         key={key}
@@ -168,7 +169,8 @@ export const Sidebar = (props: Props) => {
           headerText={item.name}
         >
           {/* $FlowFixMe item is SidebarItemParent if item.children is defined. */
-          item.children.map((childItem, childIndex) => getLink(childItem, index * 1000 + childIndex, true))}
+          item.children.map((childItem, childIndex) => getLink(childItem, index * 1000 + childIndex, true))
+}
         </CollapsableListItem>
       );
     }

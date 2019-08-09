@@ -15,7 +15,7 @@ exports[`render error common switch 1`] = `
         >
           <span
             aria-disabled="false"
-            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-152 MuiSwitch-switchBase MuiSwitch-colorSecondary error PrivateSwitchBase-checked-153 Mui-checked error"
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-155 MuiSwitch-switchBase MuiSwitch-colorSecondary error PrivateSwitchBase-checked-156 Mui-checked error"
           >
             <span
               class="MuiIconButton-label"
@@ -25,7 +25,7 @@ exports[`render error common switch 1`] = `
               />
               <input
                 checked=""
-                class="PrivateSwitchBase-input-155 MuiSwitch-input"
+                class="PrivateSwitchBase-input-158 MuiSwitch-input"
                 id=""
                 type="checkbox"
                 value=""
@@ -61,7 +61,7 @@ exports[`render primary common switch 1`] = `
         >
           <span
             aria-disabled="false"
-            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-18 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiSwitch-switchBase MuiSwitch-colorPrimary"
           >
             <span
               class="MuiIconButton-label"
@@ -70,7 +70,7 @@ exports[`render primary common switch 1`] = `
                 class="MuiSwitch-thumb"
               />
               <input
-                class="PrivateSwitchBase-input-21 MuiSwitch-input"
+                class="PrivateSwitchBase-input-22 MuiSwitch-input"
                 id=""
                 type="checkbox"
                 value="test"

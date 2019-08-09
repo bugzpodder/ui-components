@@ -8,7 +8,9 @@
 export const readFileAsText = (file: File, maxBytes?: number = 128 * 1024): Promise<string> => {
   return new Promise((resolve, reject) => {
     const fileReader = new FileReader();
+    // $FlowFixMe
     fileReader.onload = ({ currentTarget: { result } }) => resolve(result);
+    // $FlowFixMe
     fileReader.onerror = ({ currentTarget: { error } }) => reject(error);
     if (file.size > maxBytes) {
       return reject(

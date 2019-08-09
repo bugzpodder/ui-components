@@ -77,10 +77,6 @@ exports[`CommonSelect label 1`] = `
                     <path
                       d="M7 14l5-5 5 5z"
                     />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
                   </svg>
                 </div>
               </div>
@@ -5316,10 +5312,6 @@ exports[`CommonSelect margin 1`] = `
                   >
                     <path
                       d="M7 14l5-5 5 5z"
-                    />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
                     />
                   </svg>
                 </div>
@@ -10557,10 +10549,6 @@ exports[`CommonSelect variant 1`] = `
                     <path
                       d="M7 14l5-5 5 5z"
                     />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
                   </svg>
                 </div>
               </div>
@@ -15796,10 +15784,6 @@ exports[`async CommonSelect with initial and no options messages 1`] = `
                     <path
                       d="M7 14l5-5 5 5z"
                     />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
                   </svg>
                 </div>
               </div>
@@ -15902,10 +15886,6 @@ exports[`render and test CommonSelect 1`] = `
                   >
                     <path
                       d="M7 14l5-5 5 5z"
-                    />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
                     />
                   </svg>
                 </div>
@@ -21142,10 +21122,6 @@ exports[`render creatable CommonSelect 1`] = `
                     <path
                       d="M7 14l5-5 5 5z"
                     />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
                   </svg>
                 </div>
               </div>
@@ -21260,10 +21236,6 @@ exports[`test disabled CommonSelect 1`] = `
                   >
                     <path
                       d="M7 10l5 5 5-5z"
-                    />
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
                     />
                   </svg>
                 </div>

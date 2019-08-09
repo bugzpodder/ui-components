@@ -2,7 +2,7 @@
 
 ```js
 import { ALPHABET_ANIMALS_DATA, ExampleWrapper } from "../test-utils";
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import cloneDeep from "lodash/cloneDeep";
 import { SelectionGrid } from "./";
 

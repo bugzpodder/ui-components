@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { ExampleBlock } from "./example-block";
 import { TestWrapper } from "./test-wrapper";

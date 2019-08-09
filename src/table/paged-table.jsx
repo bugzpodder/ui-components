@@ -1,5 +1,5 @@
 // @flow
-import React, { Fragment } from "react";
+import React from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { CommonCard } from "../common-card";
@@ -128,13 +128,13 @@ export const PagedTable = (props: PagedTableProps) => {
   const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
   const hasHeaderActions = Array.isArray(headerActions) ? headerActions.length > 0 : !!headerActions;
   return (
-    <Fragment>
+    <>
       <CommonCard
         title={cardTitle}
         subheader={subheader}
         headerActions={
           (includeExportButton || hasHeaderActions) && (
-            <Fragment>
+            <>
               {includeExportButton && (
                 <ExportButton
                   columns={columns}
@@ -154,7 +154,7 @@ export const PagedTable = (props: PagedTableProps) => {
                 />
               )}
               {hasHeaderActions && headerActions}
-            </Fragment>
+            </>
           )
         }
         footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
@@ -179,6 +179,6 @@ export const PagedTable = (props: PagedTableProps) => {
         <TableComponent {...tableProps} />
       </CommonCard>
       {isLoading && <SpinnerOverlay className={styles.spinnerOverlay} />}
-    </Fragment>
+    </>
   );
 };

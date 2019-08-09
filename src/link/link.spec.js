@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { ExternalLink } from "./external-link";
 import { ExternalLinkButton } from "./external-link-button";

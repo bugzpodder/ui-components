@@ -1,5 +1,5 @@
 // @flow
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
 import { ALPHABET_ANIMALS_DATA, TestWrapper } from "../test-utils";

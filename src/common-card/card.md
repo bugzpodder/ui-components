@@ -2,7 +2,6 @@
 
 ```js
 import { ExampleWrapper } from "../test-utils";
-import { Fragment } from "react";
 import Button from "@material-ui/core/Button";
 import { CommonCard } from "./";
 <ExampleWrapper>
@@ -14,12 +13,12 @@ import { CommonCard } from "./";
       body: "content-container",
     }}
     headerActions={
-      <Fragment>
+      <>
         <Button>First</Button>
         <Button color="primary" variant="contained">
           Second
         </Button>
-      </Fragment>
+      </>
     }
     footerActions={<Button>OK</Button>}
   >

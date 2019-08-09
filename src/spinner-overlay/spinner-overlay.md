@@ -3,7 +3,6 @@
 **NOTE**: `SpinnerOverlay` container must specify a non static position, e.g. `position: relative;`.
 
 ```js
-import { Fragment } from "react";
 import Button from "@material-ui/core/Button";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";
@@ -32,7 +31,6 @@ const SpinnerOverlayExample = () => (
 ```
 
 ```js
-import { Fragment } from "react";
 import Button from "@material-ui/core/Button";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";

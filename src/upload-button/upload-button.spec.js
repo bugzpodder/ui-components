@@ -3,7 +3,7 @@ import React from "react";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 import { UploadButton } from ".";
 
 afterEach(cleanup);

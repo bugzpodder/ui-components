@@ -2,7 +2,7 @@
 import AppBar from "@material-ui/core/AppBar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import React, { Fragment } from "react";
+import React from "react";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
@@ -70,7 +70,7 @@ export const BaseNavbar = (props: Props) => {
   const isLims = domain === LIMS;
   const isOctober = moment().month() === 9;
   return (
-    <Fragment>
+    <>
       <AppBar
         data-testid="navbar"
         position="sticky"
@@ -130,6 +130,6 @@ export const BaseNavbar = (props: Props) => {
         domain={domain}
         {...otherProps}
       />
-    </Fragment>
+    </>
   );
 };

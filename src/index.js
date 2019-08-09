@@ -6,6 +6,7 @@ export { AvatarIcon } from "./avatar-icon";
 export { CommonCard } from "./common-card";
 export { BreastCancerRibbon, GrailLogo } from "./logos";
 export { CommonDialog, CommonMultiPageDialog } from "./common-dialog";
+export { CommonDropdownMenu } from "./common-dropdown";
 export { CommonPanel } from "./common-panel";
 export { CommonMultiSelect, CommonSelect } from "./common-select";
 export { CommonSuggest, SuggestionsOmniField } from "./common-suggest";

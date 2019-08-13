@@ -18,13 +18,19 @@ $transparent-white: rgba(255, 255, 255, 0);
     font-weight: 500;
   }
   .row,
-  .headerRow {
+  .headerRow,
+  .largeWideTableCell {
     display: flex;
     flex-direction: row;
     > div {
       margin: auto 0;
     }
     border-bottom: 1px solid $grail-gray-light-color;
+  }
+  .row {
+    // FIXME (jsingh) width 100% !important overrides react-virtualized table inline width style.
+    // Check and remove as needed.
+    width: 100% !important;
   }
 
   .highlightedRow,
@@ -53,7 +59,7 @@ $transparent-white: rgba(255, 255, 255, 0);
 
 // Always show scrollbar for LargeTable, on all OS's.
 $scrollbar-width: 7px;
-.table [role=grid] {
+.table [role=grid], [role=grid] > div {
   // Make scrollbar more obvious on tables, since users have a hard time seeing
   // overflowable content (especially on Mac)
   @include grail-scrollbar($scrollbar-width);

@@ -70,7 +70,8 @@ export const LargeTableComponent = (props: Props) => {
                 }
                 return rowHeight || 50;
               }}
-              width={width || 100}
+              // FIXME (jsingh): Table props.width doesn't seem to work correctly. Overwriting with scss.
+              width={width}
               disableHeader
               className={classNames(styles.table, classes.table)}
               rowClassName={({ index }) => {

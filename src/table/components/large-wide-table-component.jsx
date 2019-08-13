@@ -118,7 +118,7 @@ export const LargeWideTableComponent = (props: Props) => {
         key={itemKey}
         data-cell-id={itemKey}
         style={style}
-        className={classNames(columnClassName, styles.tableCellOrCheckboxColumn, styles.row, rowClassName, {
+        className={classNames(columnClassName, styles.tableCellOrCheckboxColumn, styles.largeWideTableCell, rowClassName, {
           [styles.tableCell]: !isCheckboxColumn,
           [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
           [styles.highlightedCell]: rowIsHighlighted,
@@ -307,7 +307,7 @@ export const LargeWideTableComponent = (props: Props) => {
                             columnWidth={columnWidthProducer}
                             estimatedColumnSize={defaultColumnSize}
                             width={width - scrollbarSize}
-                            height={rowHeight}
+                            height={firstRowHeight}
                             rowHeight={rowHeightFunction}
                             cellRenderer={cellData => {
                               const { columnIndex } = cellData;

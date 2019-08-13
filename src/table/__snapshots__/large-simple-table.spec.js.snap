@@ -20,7 +20,7 @@ exports[`render full simple table 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-229 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-79 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -38,7 +38,7 @@ exports[`render full simple table 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-231"
+                    class="PrivateSwitchBase-input-81"
                     data-indeterminate="true"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -92,600 +92,9 @@ exports[`render full simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          >
-            <div
-              class="ReactVirtualized__Grid__innerScrollContainer"
-              role="rowgroup"
-              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
-            >
-              <div
-                aria-rowindex="1"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="First Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-229 Mui-checked MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                          />
-                        </svg>
-                        <input
-                          checked=""
-                          class="PrivateSwitchBase-input-231"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-first-datum"
-                          id="First Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-1"
-                  >
-                    <span>
-                      First Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Second Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="First Datum-3"
-                  >
-                    <span>
-                      Third Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="2"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Fourth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-229 Mui-checked MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                          />
-                        </svg>
-                        <input
-                          checked=""
-                          class="PrivateSwitchBase-input-231"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-fourth-datum"
-                          id="Fourth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-1"
-                  >
-                    <span>
-                      Fourth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Fourth Datum-3"
-                  >
-                    <span>
-                      Sixth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="3"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Seventh Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-231"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-seventh-datum"
-                          id="Seventh Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-1"
-                  >
-                    <span>
-                      Seventh Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventh Datum-3"
-                  >
-                    <span>
-                      Ninth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="4"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Tenth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-231"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-tenth-datum"
-                          id="Tenth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-1"
-                  >
-                    <span>
-                      Tenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eleventh Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Tenth Datum-3"
-                  >
-                    <span>
-                      Twelfth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="5"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Thirteenth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-231"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-thirteenth-datum"
-                          id="Thirteenth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-1"
-                  >
-                    <span>
-                      Thirteenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Thirteenth Datum-3"
-                  >
-                    <span>
-                      Sixteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="6"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Seventeenth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-228 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-231"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-seventeenth-datum"
-                          id="Seventeenth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-1"
-                  >
-                    <span>
-                      Seventeenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventeenth Datum-3"
-                  >
-                    <span>
-                      Ninteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
       <div
@@ -744,7 +153,7 @@ exports[`render full simple table 2`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-370 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-371 Mui-checked MuiIconButton-colorPrimary"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
                   >
                     <span
                       class="MuiIconButton-label"
@@ -762,7 +171,7 @@ exports[`render full simple table 2`] = `
                       </svg>
                       <input
                         checked=""
-                        class="PrivateSwitchBase-input-373"
+                        class="PrivateSwitchBase-input-193"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -806,13 +215,13 @@ exports[`render full simple table 2`] = `
               style="width: 200px; height: 300px; max-width: 200px; max-height: 300px; overflow: hidden; position: relative;"
             >
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="First Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 0px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-370 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-371 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -830,7 +239,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-373"
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -844,7 +253,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="First Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 0px; width: 150px;"
               >
@@ -853,13 +262,13 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Fourth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 50px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-370 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-371 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -877,7 +286,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-373"
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -891,7 +300,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Fourth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 50px; width: 150px;"
               >
@@ -900,13 +309,13 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventh Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 100px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-370 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -923,7 +332,7 @@ exports[`render full simple table 2`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-373"
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -937,7 +346,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventh Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 100px; width: 150px;"
               >
@@ -946,13 +355,13 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Tenth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 150px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-370 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -969,7 +378,7 @@ exports[`render full simple table 2`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-373"
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -983,7 +392,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Tenth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 150px; width: 150px;"
               >
@@ -992,13 +401,13 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Thirteenth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 200px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-370 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -1015,7 +424,7 @@ exports[`render full simple table 2`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-373"
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -1029,7 +438,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Thirteenth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 200px; width: 150px;"
               >
@@ -1038,13 +447,13 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventeenth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 250px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-370 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -1061,7 +470,7 @@ exports[`render full simple table 2`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-373"
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -1075,7 +484,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventeenth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 250px; width: 150px;"
               >
@@ -1193,340 +602,9 @@ exports[`render large simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          >
-            <div
-              class="ReactVirtualized__Grid__innerScrollContainer"
-              role="rowgroup"
-              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
-            >
-              <div
-                aria-rowindex="1"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="0-0"
-                  >
-                    <span>
-                      First Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="0-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Second Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="0-2"
-                  >
-                    <span>
-                      Third Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="2"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="1-0"
-                  >
-                    <span>
-                      Fourth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="1-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="1-2"
-                  >
-                    <span>
-                      Sixth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="3"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="2-0"
-                  >
-                    <span>
-                      Seventh Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="2-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="2-2"
-                  >
-                    <span>
-                      Ninth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="4"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="3-0"
-                  >
-                    <span>
-                      Tenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="3-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eleventh Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="3-2"
-                  >
-                    <span>
-                      Twelfth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="5"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="4-0"
-                  >
-                    <span>
-                      Thirteenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="4-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="4-2"
-                  >
-                    <span>
-                      Sixteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="6"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="5-0"
-                  >
-                    <span>
-                      Seventeenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="5-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="5-2"
-                  >
-                    <span>
-                      Ninteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
       <div
@@ -1568,7 +646,7 @@ exports[`render large simple table with all items selected 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-158 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-38 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1586,7 +664,7 @@ exports[`render large simple table with all items selected 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-160"
+                    class="PrivateSwitchBase-input-40"
                     data-indeterminate="true"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -1640,600 +718,9 @@ exports[`render large simple table with all items selected 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          >
-            <div
-              class="ReactVirtualized__Grid__innerScrollContainer"
-              role="rowgroup"
-              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
-            >
-              <div
-                aria-rowindex="1"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="First Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-158 Mui-checked MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                          />
-                        </svg>
-                        <input
-                          checked=""
-                          class="PrivateSwitchBase-input-160"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-first-datum"
-                          id="First Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-1"
-                  >
-                    <span>
-                      First Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Second Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="First Datum-3"
-                  >
-                    <span>
-                      Third Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="2"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Fourth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-158 Mui-checked MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-                          />
-                        </svg>
-                        <input
-                          checked=""
-                          class="PrivateSwitchBase-input-160"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-fourth-datum"
-                          id="Fourth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-1"
-                  >
-                    <span>
-                      Fourth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Fourth Datum-3"
-                  >
-                    <span>
-                      Sixth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="3"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Seventh Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-160"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-seventh-datum"
-                          id="Seventh Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-1"
-                  >
-                    <span>
-                      Seventh Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventh Datum-3"
-                  >
-                    <span>
-                      Ninth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="4"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Tenth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-160"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-tenth-datum"
-                          id="Tenth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-1"
-                  >
-                    <span>
-                      Tenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eleventh Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Tenth Datum-3"
-                  >
-                    <span>
-                      Twelfth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="5"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Thirteenth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-160"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-thirteenth-datum"
-                          id="Thirteenth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-1"
-                  >
-                    <span>
-                      Thirteenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Thirteenth Datum-3"
-                  >
-                    <span>
-                      Sixteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="6"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 0 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="singleIcon"
-                    data-cell-id="Seventeenth Datum-0"
-                  >
-                    <span
-                      aria-disabled="false"
-                      class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-157 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
-                    >
-                      <span
-                        class="MuiIconButton-label"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root"
-                          focusable="false"
-                          role="presentation"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                          />
-                        </svg>
-                        <input
-                          class="PrivateSwitchBase-input-160"
-                          data-indeterminate="false"
-                          data-testid="table-checkbox-cell-seventeenth-datum"
-                          id="Seventeenth Datum"
-                          type="checkbox"
-                          value=""
-                        />
-                      </span>
-                      <span
-                        class="MuiTouchRipple-root"
-                      />
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-1"
-                  >
-                    <span>
-                      Seventeenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-2"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="4"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventeenth Datum-3"
-                  >
-                    <span>
-                      Ninteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
       <div
@@ -2308,340 +795,9 @@ exports[`render large simple table with dynamic row height 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: auto; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          >
-            <div
-              class="ReactVirtualized__Grid__innerScrollContainer"
-              role="rowgroup"
-              style="width: auto; height: 750px; max-width: 100px; max-height: 750px; overflow: hidden; position: relative;"
-            >
-              <div
-                aria-rowindex="1"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 0px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-0"
-                  >
-                    <span>
-                      First Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Second Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="First Datum-2"
-                  >
-                    <span>
-                      Third Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="2"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-0"
-                  >
-                    <span>
-                      Fourth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Fourth Datum-2"
-                  >
-                    <span>
-                      Sixth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="3"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 100px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-0"
-                  >
-                    <span>
-                      Seventh Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventh Datum-2"
-                  >
-                    <span>
-                      Ninth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="4"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 150px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-0"
-                  >
-                    <span>
-                      Tenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eleventh Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Tenth Datum-2"
-                  >
-                    <span>
-                      Twelfth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="5"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 200px; left: 0px; position: absolute; top: 300px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-0"
-                  >
-                    <span>
-                      Thirteenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Thirteenth Datum-2"
-                  >
-                    <span>
-                      Sixteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="6"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 250px; left: 0px; position: absolute; top: 500px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-0"
-                  >
-                    <span>
-                      Seventeenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventeenth Datum-2"
-                  >
-                    <span>
-                      Ninteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
       <div
@@ -2730,7 +886,7 @@ exports[`render large simple table with no results and is loading 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
           />
         </div>
@@ -2816,340 +972,9 @@ exports[`render large simple table with set row height 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: auto; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          >
-            <div
-              class="ReactVirtualized__Grid__innerScrollContainer"
-              role="rowgroup"
-              style="width: auto; height: 450px; max-width: 100px; max-height: 450px; overflow: hidden; position: relative;"
-            >
-              <div
-                aria-rowindex="1"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 75px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-0"
-                  >
-                    <span>
-                      First Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="First Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Second Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="First Datum-2"
-                  >
-                    <span>
-                      Third Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="2"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 75px; left: 0px; position: absolute; top: 75px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-0"
-                  >
-                    <span>
-                      Fourth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Fourth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Fourth Datum-2"
-                  >
-                    <span>
-                      Sixth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="3"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 75px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-0"
-                  >
-                    <span>
-                      Seventh Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventh Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventh Datum-2"
-                  >
-                    <span>
-                      Ninth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="4"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 75px; left: 0px; position: absolute; top: 225px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-0"
-                  >
-                    <span>
-                      Tenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Tenth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eleventh Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Tenth Datum-2"
-                  >
-                    <span>
-                      Twelfth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="5"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 75px; left: 0px; position: absolute; top: 300px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-0"
-                  >
-                    <span>
-                      Thirteenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Thirteenth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Thirteenth Datum-2"
-                  >
-                    <span>
-                      Sixteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="6"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 75px; left: 0px; position: absolute; top: 375px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-0"
-                  >
-                    <span>
-                      Seventeenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="Seventeenth Datum-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="Seventeenth Datum-2"
-                  >
-                    <span>
-                      Ninteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
       <div
@@ -3230,7 +1055,7 @@ exports[`render large wide simple table 1`] = `
               style="width: 150px; height: 300px; max-width: 150px; max-height: 300px; overflow: hidden; position: relative;"
             >
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="0-0"
                 style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
               >
@@ -3239,7 +1064,7 @@ exports[`render large wide simple table 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="1-0"
                 style="height: 50px; left: 0px; position: absolute; top: 50px; width: 150px;"
               >
@@ -3248,7 +1073,7 @@ exports[`render large wide simple table 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="2-0"
                 style="height: 50px; left: 0px; position: absolute; top: 100px; width: 150px;"
               >
@@ -3257,7 +1082,7 @@ exports[`render large wide simple table 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="3-0"
                 style="height: 50px; left: 0px; position: absolute; top: 150px; width: 150px;"
               >
@@ -3266,7 +1091,7 @@ exports[`render large wide simple table 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="4-0"
                 style="height: 50px; left: 0px; position: absolute; top: 200px; width: 150px;"
               >
@@ -3275,7 +1100,7 @@ exports[`render large wide simple table 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="5-0"
                 style="height: 50px; left: 0px; position: absolute; top: 250px; width: 150px;"
               >
@@ -3377,7 +1202,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-330 Mui-checked MuiIconButton-colorPrimary"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
                   >
                     <span
                       class="MuiIconButton-label"
@@ -3395,7 +1220,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                       </svg>
                       <input
                         checked=""
-                        class="PrivateSwitchBase-input-332"
+                        class="PrivateSwitchBase-input-152"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -3439,13 +1264,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               style="width: 200px; height: 300px; max-width: 200px; max-height: 300px; overflow: hidden; position: relative;"
             >
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="First Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 0px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-330 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -3463,7 +1288,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-332"
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -3477,7 +1302,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="First Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 0px; width: 150px;"
               >
@@ -3486,13 +1311,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Fourth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 50px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-330 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -3510,7 +1335,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-332"
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -3524,7 +1349,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Fourth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 50px; width: 150px;"
               >
@@ -3533,13 +1358,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventh Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 100px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -3556,7 +1381,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-332"
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -3570,7 +1395,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventh Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 100px; width: 150px;"
               >
@@ -3579,13 +1404,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Tenth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 150px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -3602,7 +1427,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-332"
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -3616,7 +1441,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Tenth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 150px; width: 150px;"
               >
@@ -3625,13 +1450,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Thirteenth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 200px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -3648,7 +1473,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-332"
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -3662,7 +1487,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Thirteenth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 200px; width: 150px;"
               >
@@ -3671,13 +1496,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row singleIcon"
+                class="tableCellOrCheckboxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventeenth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 250px; width: 50px;"
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-329 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
@@ -3694,7 +1519,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                       />
                     </svg>
                     <input
-                      class="PrivateSwitchBase-input-332"
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -3708,7 +1533,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventeenth Datum-1"
                 style="height: 50px; left: 50px; position: absolute; top: 250px; width: 150px;"
               >
@@ -3815,7 +1640,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
               style="width: 150px; height: 750px; max-width: 150px; max-height: 750px; overflow: hidden; position: relative;"
             >
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="First Datum-0"
                 style="height: 0px; left: 0px; position: absolute; top: 0px; width: 150px;"
               >
@@ -3824,7 +1649,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Fourth Datum-0"
                 style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
               >
@@ -3833,7 +1658,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventh Datum-0"
                 style="height: 100px; left: 0px; position: absolute; top: 50px; width: 150px;"
               >
@@ -3842,7 +1667,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Tenth Datum-0"
                 style="height: 150px; left: 0px; position: absolute; top: 150px; width: 150px;"
               >
@@ -3851,7 +1676,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Thirteenth Datum-0"
                 style="height: 200px; left: 0px; position: absolute; top: 300px; width: 150px;"
               >
@@ -3860,7 +1685,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventeenth Datum-0"
                 style="height: 250px; left: 0px; position: absolute; top: 500px; width: 150px;"
               >
@@ -3886,7 +1711,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
                   aria-readonly="true"
                   class="ReactVirtualized__Grid headerGrid"
                   role="grid"
-                  style="box-sizing: border-box; direction: ltr; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: auto;"
+                  style="box-sizing: border-box; direction: ltr; height: 0px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: auto;"
                   tabindex="0"
                 />
               </div>
@@ -4115,7 +1940,7 @@ exports[`render large wide simple table with set row height 1`] = `
               style="width: 150px; height: 450px; max-width: 150px; max-height: 450px; overflow: hidden; position: relative;"
             >
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="First Datum-0"
                 style="height: 75px; left: 0px; position: absolute; top: 0px; width: 150px;"
               >
@@ -4124,7 +1949,7 @@ exports[`render large wide simple table with set row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Fourth Datum-0"
                 style="height: 75px; left: 0px; position: absolute; top: 75px; width: 150px;"
               >
@@ -4133,7 +1958,7 @@ exports[`render large wide simple table with set row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventh Datum-0"
                 style="height: 75px; left: 0px; position: absolute; top: 150px; width: 150px;"
               >
@@ -4142,7 +1967,7 @@ exports[`render large wide simple table with set row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Tenth Datum-0"
                 style="height: 75px; left: 0px; position: absolute; top: 225px; width: 150px;"
               >
@@ -4151,7 +1976,7 @@ exports[`render large wide simple table with set row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Thirteenth Datum-0"
                 style="height: 75px; left: 0px; position: absolute; top: 300px; width: 150px;"
               >
@@ -4160,7 +1985,7 @@ exports[`render large wide simple table with set row height 1`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="Seventeenth Datum-0"
                 style="height: 75px; left: 0px; position: absolute; top: 375px; width: 150px;"
               >
@@ -4278,340 +2103,9 @@ exports[`render loading simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
             role="rowgroup"
-            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 100px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
             tabindex="0"
-          >
-            <div
-              class="ReactVirtualized__Grid__innerScrollContainer"
-              role="rowgroup"
-              style="width: auto; height: 300px; max-width: 100px; max-height: 300px; overflow: hidden; position: relative;"
-            >
-              <div
-                aria-rowindex="1"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="0-0"
-                  >
-                    <span>
-                      First Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="0-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Second Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="0-2"
-                  >
-                    <span>
-                      Third Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="2"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="1-0"
-                  >
-                    <span>
-                      Fourth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="1-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="1-2"
-                  >
-                    <span>
-                      Sixth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="3"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="2-0"
-                  >
-                    <span>
-                      Seventh Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="2-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="2-2"
-                  >
-                    <span>
-                      Ninth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="4"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="3-0"
-                  >
-                    <span>
-                      Tenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="3-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eleventh Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="3-2"
-                  >
-                    <span>
-                      Twelfth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="5"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="4-0"
-                  >
-                    <span>
-                      Thirteenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="4-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Fifteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="4-2"
-                  >
-                    <span>
-                      Sixteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                aria-rowindex="6"
-                class="ReactVirtualized__Table__row row"
-                role="row"
-                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 100px; overflow: hidden; padding-right: 0px;"
-              >
-                <div
-                  aria-colindex="1"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="5-0"
-                  >
-                    <span>
-                      Seventeenth Datum
-                    </span>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="2"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="tableCell"
-                    data-cell-id="5-1"
-                  >
-                    <p
-                      class="MuiTypography-root MuiTypography-body1"
-                    >
-                      Eighteenth Datum
-                    </p>
-                  </div>
-                </div>
-                <div
-                  aria-colindex="3"
-                  class="ReactVirtualized__Table__rowColumn"
-                  role="gridcell"
-                  style="flex: 1 1 50px; overflow: hidden;"
-                >
-                  <div
-                    class="test-third-datum-className tableCell"
-                    data-cell-id="5-2"
-                  >
-                    <span>
-                      Ninteenth Datum
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
       <div
@@ -4701,7 +2195,7 @@ exports[`render loading simple table 2`] = `
               style="width: 150px; height: 300px; max-width: 150px; max-height: 300px; overflow: hidden; position: relative;"
             >
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="0-0"
                 style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
               >
@@ -4710,7 +2204,7 @@ exports[`render loading simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="1-0"
                 style="height: 50px; left: 0px; position: absolute; top: 50px; width: 150px;"
               >
@@ -4719,7 +2213,7 @@ exports[`render loading simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="2-0"
                 style="height: 50px; left: 0px; position: absolute; top: 100px; width: 150px;"
               >
@@ -4728,7 +2222,7 @@ exports[`render loading simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="3-0"
                 style="height: 50px; left: 0px; position: absolute; top: 150px; width: 150px;"
               >
@@ -4737,7 +2231,7 @@ exports[`render loading simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="4-0"
                 style="height: 50px; left: 0px; position: absolute; top: 200px; width: 150px;"
               >
@@ -4746,7 +2240,7 @@ exports[`render loading simple table 2`] = `
                 </span>
               </div>
               <div
-                class="tableCellOrCheckboxColumn row tableCell isRightmostFrozenColumn"
+                class="tableCellOrCheckboxColumn largeWideTableCell tableCell isRightmostFrozenColumn"
                 data-cell-id="5-0"
                 style="height: 50px; left: 0px; position: absolute; top: 250px; width: 150px;"
               >

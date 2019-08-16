@@ -123,15 +123,15 @@ exports[`renders common page 1`] = `
       data-testid="common-page-content"
     >
       Some content here.
+    </div>
+    <div
+      class="spinnerOverlay"
+      data-is-active="false"
+      data-testid="spinner-overlay"
+    >
       <div
-        class="spinnerOverlay"
-        data-is-active="false"
-        data-testid="spinner-overlay"
-      >
-        <div
-          class="loading"
-        />
-      </div>
+        class="loading"
+      />
     </div>
   </div>
 </div>

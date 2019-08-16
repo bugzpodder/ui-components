@@ -2,6 +2,7 @@
 @import "./constants";
 
 .pageContainer {
+  position: relative;
   .stickyHeader {
     position: sticky;
     z-index: 20;

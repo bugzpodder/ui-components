@@ -38,7 +38,7 @@ export type PagedTableProps = {
    * The key from `data` that should be used as the accessor to identify each unique row (returned by `onSelect`).
    */
   idKey?: string | number,
-  /** Provides a spinner when `isLoading` is true */
+  /** Displays a spinner when `isLoading` is true */
   isLoading?: boolean,
   /** Includes an export button which allows users to download the contents of
    * the table in various formats. Defaults to true. */

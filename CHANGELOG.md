@@ -18,6 +18,7 @@
 15. Columns on `PagedTable`s that are not sortable no longer are clickable.
 16. Add `CommonDropdownMenu` component.
 17. Upgrade packages.
+18. Add `isLoading` to `CommonPage`, and Loading Spinner when true.
 
 ## 1.0.0 - 2019-06-17
 

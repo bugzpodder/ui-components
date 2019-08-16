@@ -8,6 +8,7 @@ import styles from "./common-page.module.scss";
 import { LinkButton } from "../../link";
 import { SideMenu } from "./components/side-menu";
 import { SideMenuButton } from "./components/side-menu-button";
+import { SpinnerOverlay } from "../../spinner-overlay";
 
 type Props = {
   /** Provides the page's Title */
@@ -42,6 +43,8 @@ type Props = {
   subheader?: Node,
   /** Takes a `node` to show on the page */
   children?: Node,
+  /** Displays a spinner when `isLoading` is true */
+  isLoading?: boolean,
   /** Defines the list of items in the menu. The menu is hidden by default but can be revealed by clicking a hamburger
    *  button to the left of the page. Clicking on each item will scroll to the element with an id matching the key.
    *  If empty, no hamburger icon will appear. */
@@ -69,11 +72,12 @@ export const CommonPage = (props: Props) => {
     subheader,
     children,
     menuContents = [],
+    isLoading,
     ...cardProps
   } = props;
   const mappedHeaderActions = headerActions.map((action, index) => {
     const {
-      Component, content = "", id, color = "primary", componentProps = {}, ...otherProps
+      Component, content = "", id, color = "primary", componentProps = {}, disabled, ...otherProps
     } = action;
     const ComponentToUse = Component || (componentProps.href != null || otherProps.href != null ? LinkButton : Button);
     return (
@@ -82,6 +86,7 @@ export const CommonPage = (props: Props) => {
         id={id}
         data-testid={id}
         color={color}
+        disabled={disabled || isLoading}
         {...componentProps}
         {...otherProps}
       >
@@ -150,6 +155,7 @@ export const CommonPage = (props: Props) => {
           {children}
         </div>
       </div>
+      {isLoading && <SpinnerOverlay className={styles.spinnerOverlay} />}
     </div>
   );
 };

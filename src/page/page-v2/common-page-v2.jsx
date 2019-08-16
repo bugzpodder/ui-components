@@ -142,9 +142,9 @@ export const CommonPageV2 = (props: Props) => {
           className={classNames(styles.content, classes.content)}
         >
           {children}
-          <SpinnerOverlay isActive={isLoading} />
         </div>
       )}
+      <SpinnerOverlay isActive={isLoading} />
     </div>
   );
 };

@@ -16,7 +16,7 @@ export const TablePager = (props: Props) => {
   }
   const { offset, count } = tableOptions;
   // const invalidPaginationParameters = typeof count !== "number" || typeof offset !== "number";
-  const invalidPaginationParameters = count === null || count === undefined || offset === null || offset === undefined;
+  const invalidPaginationParameters = count == null || offset == null;
   if (invalidPaginationParameters) {
     throw new Error("count or offset or both are either not valid or non existent");
   }

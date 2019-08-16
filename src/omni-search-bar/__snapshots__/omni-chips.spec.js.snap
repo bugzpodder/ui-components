@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OmniSearchBar deletes 1`] = `
+exports[`OmniChips deletes 1`] = `
 <div>
   <div
     class="omniChips"
@@ -130,7 +130,7 @@ exports[`OmniSearchBar deletes 1`] = `
 </div>
 `;
 
-exports[`OmniSearchBar deletes 2`] = `
+exports[`OmniChips deletes 2`] = `
 <div>
   <div
     class="omniChips"
@@ -260,7 +260,7 @@ exports[`OmniSearchBar deletes 2`] = `
 </div>
 `;
 
-exports[`OmniSearchBar renders 1`] = `
+exports[`OmniChips renders 1`] = `
 <div>
   <div
     class="omniChips"

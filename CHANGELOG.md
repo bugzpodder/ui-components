@@ -21,6 +21,7 @@
 18. Add `isLoading` to `CommonPage`, and Loading Spinner when true.
 19. Moved `GrailLogo` and `backgroundImage` (used for `SignInPage`) to new package `@grail/common-private`.
     When upgrading, you will need to specify `logo` and `backgroundImage` to `NavBar` and `SignInPage` as appropriate.
+20. Send `{ isUserSearchAction: true }` when a user changes a value in `OmniSearchBar`.
 
 ## 1.0.0 - 2019-06-17
 

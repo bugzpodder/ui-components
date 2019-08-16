@@ -26,7 +26,7 @@ const searchOptions = [
   },
 ];
 
-describe("OmniSearchBar", () => {
+describe("OmniChips", () => {
   it("renders", () => {
     const { container } = render(
       <TestWrapper>

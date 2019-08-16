@@ -49,11 +49,15 @@ const searchDefs = [
 ];
 
 const ExampleApp = wrapPickerUtilProvider(() => {
-  const [searchOptions, setSearchOptions] = useState([]);
+  const [searchOptions, setSearchOptions] = useState({ searchOptions: [] });
 
   return (
     <div>
-      <OmniSearchBar searchDefs={searchDefs} setSearchOptions={setSearchOptions}>
+      <OmniSearchBar
+        searchDefs={searchDefs}
+        setSearchOptions={setSearchOptions}
+        getInitialValues={() => new Map().set(1, "B0420")}
+      >
         Children here appear in the dropdown
       </OmniSearchBar>
       <ExampleBlock strongHeader="State" content={searchOptions} />

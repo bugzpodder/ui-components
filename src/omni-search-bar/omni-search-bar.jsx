@@ -20,7 +20,7 @@ type Props = {
   /** Defines the search parameters. */
   searchDefs: OmniSearchDefs,
   /** Handles a request to search. */
-  setSearchOptions: ({ searchOptions: SearchOptionsV2 }) => any,
+  setSearchOptions: OmniQueryOptionsV2 => any,
   /** Handles a request to update search options but not perform the search. */
   updateSearchOptions: ({ searchOptions: SearchOptionsV2 }) => any,
   /** getInitialValues gets values to default to for omni-search. */
@@ -43,6 +43,20 @@ type State = {
 /**
  * Provides a search input that maps to provided search options and
  * populates a dropdown with fields to the individual options.
+ *
+ * OmniSearchBar initializes based on several sources, with an order of precedence:
+ * 1. URL query parameters
+ * 2. Local storage
+ * 3. Response from `props.getInitialValues()`
+ *
+ * After initialization, this component then calls `setSearchOptions`, which should
+ * trigger the caller's search. This includes an extra option `isUserSearchAction: false`
+ *
+ * Subsequently, a user may change the search contents. There are a few ways that a user can
+ * update search:
+ * 1. Enter into the bar or the popup form
+ * 2. Trigger an `OmniSearchCommand` (typically via closing an `OmniChip`)
+ * Both of these will trigger a call to `setSearchOptions` with `isUserSearchAction: true`
  */
 export class OmniSearchBar extends React.Component<Props, State> {
   state: State = {
@@ -82,6 +96,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
     }
     let shouldSearch = false;
     let shouldUpdateBrowserHistory = false;
+    let isUserSearchAction = false;
     const isNewPath = prevLocation.pathname !== location.pathname;
     if (isNewPath) {
       this.lastSearchedValues = null;
@@ -101,9 +116,10 @@ export class OmniSearchBar extends React.Component<Props, State> {
       setOmniSearchCommands && setOmniSearchCommands([]);
       shouldSearch = true;
       shouldUpdateBrowserHistory = true;
+      isUserSearchAction = true;
     }
     if (shouldSearch) {
-      this.onSearch(shouldUpdateBrowserHistory);
+      this.onSearch({ shouldUpdateBrowserHistory, isUserSearchAction });
     }
   };
 
@@ -221,14 +237,19 @@ export class OmniSearchBar extends React.Component<Props, State> {
     });
   };
 
-  onSearch = (shouldUpdateBrowserHistory: boolean = false) => {
+  onSearch = (options: Object = {}) => {
+    const { shouldUpdateBrowserHistory = false, isUserSearchAction = false } = options;
     this.setState({ isOpen: false });
     const { searchValues } = this.state;
     if (isEqual(searchValues, this.lastSearchedValues)) {
       return;
     }
     this.lastSearchedValues = searchValues;
-    this.props.setSearchOptions({ searchOptions: getSearchOptions(this.props.searchDefs, searchValues) });
+    const newSearchOptions: OmniQueryOptionsV2 = {
+      searchOptions: getSearchOptions(this.props.searchDefs, searchValues),
+      isUserSearchAction,
+    };
+    this.props.setSearchOptions(newSearchOptions);
     this.updateOmniUrl(shouldUpdateBrowserHistory);
   };
 
@@ -278,7 +299,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
             omniText={this.state.omniText}
             onChange={this.onChange.bind(this)}
             onSearch={() => {
-              this.onSearch(true);
+              this.onSearch({ shouldUpdateBrowserHistory: true, isUserSearchAction: true });
             }}
             onClear={this.handleClear}
             error={this.state.error}
@@ -291,7 +312,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
               searchDefs={searchDefs}
               searchValues={this.state.searchValues}
               onSearch={() => {
-                this.onSearch(true);
+                this.onSearch({ shouldUpdateBrowserHistory: true, isUserSearchAction: true });
               }}
               onChange={this.onChange.bind(this)}
               onClear={this.handleClear}

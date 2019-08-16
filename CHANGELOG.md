@@ -17,6 +17,7 @@
 14. Add `sortAccessor` to `PagedTableColumn` which takes precedence over `accessor` to get passed to `onSort`.
 15. Columns on `PagedTable`s that are not sortable no longer are clickable.
 16. Add `CommonDropdownMenu` component.
+17. Upgrade packages.
 
 ## 1.0.0 - 2019-06-17
 

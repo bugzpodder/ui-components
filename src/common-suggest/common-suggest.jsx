@@ -178,6 +178,7 @@ export const CommonSuggest = (props: Props) => {
                     })}
                     {!items.length && (
                       <Typography
+                        key="no-matches"
                         variant="caption"
                         className={styles.noMatches}
                       >

@@ -4,7 +4,7 @@ import type { PagedTableProps } from "./table";
 export { Alert } from "./alert";
 export { AvatarIcon } from "./avatar-icon";
 export { CommonCard } from "./common-card";
-export { BreastCancerRibbon, GrailLogo } from "./logos";
+export { BreastCancerRibbon } from "./logos";
 export { CommonDialog, CommonMultiPageDialog } from "./common-dialog";
 export { CommonDropdownMenu } from "./common-dropdown";
 export { CommonPanel } from "./common-panel";

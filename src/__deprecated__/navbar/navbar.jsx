@@ -15,6 +15,14 @@ type Props = {
   center?: React$Node,
   /** Defines the content aligned right in the navbar to the right of menu button. */
   right?: React$Node,
+  /**
+    The logo.
+    Suggestion:
+    `import { GrailLogo } from "@grail/common-private";`
+    and set `logo` prop:
+    `logo={<GrailLogo />}`
+  */
+  logo: Node<>,
   /** Defines domain in which links should be routed. */
   domain: string,
   /** Defines links to use for external domains. */

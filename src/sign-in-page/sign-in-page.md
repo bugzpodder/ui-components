@@ -4,6 +4,8 @@
 import { ExampleWrapper } from "../test-utils";
 import styles from "../test-utils/example-styles.module.scss";
 import { SignInPage } from "./";
+import backgroundImage from "./spec-background.png";
+
 <ExampleWrapper>
   <div
     style={{
@@ -12,7 +14,10 @@ import { SignInPage } from "./";
       height: "500px",
     }}
   >
-    <SignInPage />
+    <SignInPage
+      logo={<h2>Import `GrailLogo` from `@grail/common-private` Package</h2>}
+      backgroundImage={backgroundImage}
+    />
   </div>
 </ExampleWrapper>;
 ```

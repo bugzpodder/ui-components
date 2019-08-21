@@ -29,6 +29,7 @@ const TestNavbar = props => {
           left={wrapText("left")}
           center={wrapText("center")}
           right={wrapText("right")}
+          logo={<div data-testid="navbar-spec-logo">Logo</div>}
           sidebarFooter={wrapText("sidebarFooter")}
           externalDomains={TEST_EXTERNAL_DOMAINS}
         />
@@ -64,7 +65,7 @@ test("render default Sidebar", () => {
   expect(getByTestId("navbar-sidebar")).toHaveTextContent("sidebarFooter");
 
   // Test default logos.
-  expect(getByTestId("grail-logo")).toBeInTheDocument();
+  expect(getByTestId("navbar-spec-logo")).toBeInTheDocument();
   expect(queryByTestId("breast-cancer-ribbon")).not.toBeInTheDocument();
 
   // Test production navbar (no DEV warning).

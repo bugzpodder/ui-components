@@ -1,7 +1,7 @@
 // @flow
 
 declare type ClickableItem = {
-  content: Node<*>,
+  content?: Node<*>,
   onClick?: Function,
   [string]: any,
 };

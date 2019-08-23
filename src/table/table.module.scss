@@ -30,12 +30,14 @@
       height: 50px;
       margin-top: 5px;
 
-      .tablePager {
+      .tablePager,
+      .tableSummary {
         width: 100%;
       }
     }
 
-    .selectRowCount {
+    .selectRowCount,
+    .tableSummary {
       font-size: 0.75rem;
     }
   }

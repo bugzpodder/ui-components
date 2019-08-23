@@ -256,6 +256,18 @@ exports[`render basic paged table 1`] = `
         </tbody>
       </table>
     </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -514,6 +526,18 @@ exports[`render loading paged table 1`] = `
         </tbody>
       </table>
     </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
   </div>
   <div
     class="spinnerOverlay active"
@@ -608,7 +632,7 @@ exports[`render paged table and test pagination 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1417 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-1418 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1463 MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-indeterminate indeterminate PrivateSwitchBase-checked-1464 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -626,7 +650,7 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1420"
+                    class="PrivateSwitchBase-input-1466"
                     data-indeterminate="true"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -669,7 +693,7 @@ exports[`render paged table and test pagination 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1417 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1418 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1463 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1464 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -687,7 +711,7 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1420"
+                    class="PrivateSwitchBase-input-1466"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
@@ -733,7 +757,7 @@ exports[`render paged table and test pagination 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1417 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1418 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1463 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1464 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -751,7 +775,7 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1420"
+                    class="PrivateSwitchBase-input-1466"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
@@ -797,7 +821,7 @@ exports[`render paged table and test pagination 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1417 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1463 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -814,7 +838,7 @@ exports[`render paged table and test pagination 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1420"
+                    class="PrivateSwitchBase-input-1466"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
@@ -860,7 +884,7 @@ exports[`render paged table and test pagination 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1417 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1463 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -877,7 +901,7 @@ exports[`render paged table and test pagination 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1420"
+                    class="PrivateSwitchBase-input-1466"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
@@ -923,7 +947,7 @@ exports[`render paged table and test pagination 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1417 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1463 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -940,7 +964,7 @@ exports[`render paged table and test pagination 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1420"
+                    class="PrivateSwitchBase-input-1466"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
@@ -986,7 +1010,7 @@ exports[`render paged table and test pagination 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1417 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1463 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1003,7 +1027,7 @@ exports[`render paged table and test pagination 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1420"
+                    class="PrivateSwitchBase-input-1466"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
@@ -1444,6 +1468,18 @@ exports[`render paged table and test sorting 1`] = `
         </tbody>
       </table>
     </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -1524,7 +1560,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1171 MuiCheckbox-root MuiCheckbox-colorPrimary active indeterminate PrivateSwitchBase-checked-1172 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1183 MuiCheckbox-root MuiCheckbox-colorPrimary active indeterminate PrivateSwitchBase-checked-1184 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1542,7 +1578,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1174"
+                    class="PrivateSwitchBase-input-1186"
                     data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -1585,7 +1621,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1171 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1172 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1183 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1184 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1603,7 +1639,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1174"
+                    class="PrivateSwitchBase-input-1186"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
@@ -1649,7 +1685,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1171 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1172 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1183 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1184 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1667,7 +1703,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1174"
+                    class="PrivateSwitchBase-input-1186"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
@@ -1713,7 +1749,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1171 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1172 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1183 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1184 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1731,7 +1767,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1174"
+                    class="PrivateSwitchBase-input-1186"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
@@ -1777,7 +1813,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1171 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1172 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1183 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1184 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1795,7 +1831,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1174"
+                    class="PrivateSwitchBase-input-1186"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
@@ -1841,7 +1877,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1171 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1172 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1183 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1184 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1859,7 +1895,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1174"
+                    class="PrivateSwitchBase-input-1186"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
@@ -1905,7 +1941,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1171 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1172 Mui-checked MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1183 MuiCheckbox-root MuiCheckbox-colorPrimary active PrivateSwitchBase-checked-1184 Mui-checked MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -1923,7 +1959,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                   <input
                     checked=""
-                    class="PrivateSwitchBase-input-1174"
+                    class="PrivateSwitchBase-input-1186"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
@@ -1962,6 +1998,18 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
         </tbody>
       </table>
     </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -1993,7 +2041,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1248 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1262 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2010,7 +2058,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1251"
+                    class="PrivateSwitchBase-input-1265"
                     data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -2053,7 +2101,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1248 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1262 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2070,7 +2118,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1251"
+                    class="PrivateSwitchBase-input-1265"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-0"
                     id="0"
@@ -2116,7 +2164,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1248 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1262 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2133,7 +2181,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1251"
+                    class="PrivateSwitchBase-input-1265"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-1"
                     id="1"
@@ -2179,7 +2227,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1248 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1262 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2196,7 +2244,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1251"
+                    class="PrivateSwitchBase-input-1265"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-2"
                     id="2"
@@ -2242,7 +2290,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1248 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1262 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2259,7 +2307,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1251"
+                    class="PrivateSwitchBase-input-1265"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-3"
                     id="3"
@@ -2305,7 +2353,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1248 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1262 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2322,7 +2370,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1251"
+                    class="PrivateSwitchBase-input-1265"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-4"
                     id="4"
@@ -2368,7 +2416,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1248 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1262 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2385,7 +2433,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1251"
+                    class="PrivateSwitchBase-input-1265"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-5"
                     id="5"
@@ -2423,6 +2471,18 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
           </tr>
         </tbody>
       </table>
+    </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
     </div>
   </div>
 </div>
@@ -2502,7 +2562,7 @@ exports[`render paged table with no initially selected items, then select items 
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1014 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1024 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2519,7 +2579,7 @@ exports[`render paged table with no initially selected items, then select items 
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1017"
+                    class="PrivateSwitchBase-input-1027"
                     data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -2562,7 +2622,7 @@ exports[`render paged table with no initially selected items, then select items 
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1014 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1024 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2579,7 +2639,7 @@ exports[`render paged table with no initially selected items, then select items 
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1017"
+                    class="PrivateSwitchBase-input-1027"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
@@ -2625,7 +2685,7 @@ exports[`render paged table with no initially selected items, then select items 
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1014 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1024 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2642,7 +2702,7 @@ exports[`render paged table with no initially selected items, then select items 
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1017"
+                    class="PrivateSwitchBase-input-1027"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
@@ -2688,7 +2748,7 @@ exports[`render paged table with no initially selected items, then select items 
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1014 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1024 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2705,7 +2765,7 @@ exports[`render paged table with no initially selected items, then select items 
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1017"
+                    class="PrivateSwitchBase-input-1027"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
@@ -2751,7 +2811,7 @@ exports[`render paged table with no initially selected items, then select items 
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1014 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1024 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2768,7 +2828,7 @@ exports[`render paged table with no initially selected items, then select items 
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1017"
+                    class="PrivateSwitchBase-input-1027"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
@@ -2814,7 +2874,7 @@ exports[`render paged table with no initially selected items, then select items 
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1014 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1024 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2831,7 +2891,7 @@ exports[`render paged table with no initially selected items, then select items 
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1017"
+                    class="PrivateSwitchBase-input-1027"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
@@ -2877,7 +2937,7 @@ exports[`render paged table with no initially selected items, then select items 
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1014 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1024 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
                 <span
                   class="MuiIconButton-label"
@@ -2894,7 +2954,7 @@ exports[`render paged table with no initially selected items, then select items 
                     />
                   </svg>
                   <input
-                    class="PrivateSwitchBase-input-1017"
+                    class="PrivateSwitchBase-input-1027"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
@@ -2932,6 +2992,18 @@ exports[`render paged table with no initially selected items, then select items 
           </tr>
         </tbody>
       </table>
+    </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
     </div>
   </div>
 </div>
@@ -3041,6 +3113,18 @@ exports[`render paged table with no results 1`] = `
         </tbody>
       </table>
     </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        0
+         records
+      </p>
+    </div>
   </div>
 </div>
 `;
@@ -3144,6 +3228,18 @@ exports[`render paged table with no results and is loading 1`] = `
           </tr>
         </tbody>
       </table>
+    </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        0
+         records
+      </p>
     </div>
   </div>
   <div
@@ -3259,6 +3355,18 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
           </tr>
         </tbody>
       </table>
+    </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        0
+         records
+      </p>
     </div>
   </div>
 </div>

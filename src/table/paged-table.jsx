@@ -7,6 +7,7 @@ import { ExportButton } from "../export-button/export-button";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
 import { TablePager } from "./components/table-pager";
+import { TableSummary } from "./components/table-summary";
 import { getRowId } from "./utilities/row-utils";
 
 export type PagedTableProps = {
@@ -157,7 +158,7 @@ export const PagedTable = (props: PagedTableProps) => {
             </>
           )
         }
-        footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : null}
+        footerActions={onPageChange ? <TablePager paginationProps={paginationProps} /> : <TableSummary data={data} />}
         data-testid="paged-table"
         classes={{
           root: classNames(styles.pagedTableCardRoot, classes.root, {

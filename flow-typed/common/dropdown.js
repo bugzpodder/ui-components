@@ -1,7 +1,9 @@
 // @flow
 
-declare type DropdownMenuItem = {
-  content: Node,
-  isEnabled?: boolean,
+declare type ClickableItem = {
+  content: Node<*>,
   onClick?: Function,
+  [string]: any,
 };
+
+declare type DropdownMenuItem = ClickableItem;

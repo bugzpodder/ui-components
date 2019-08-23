@@ -23,6 +23,9 @@
     When upgrading, you will need to specify `logo` and `backgroundImage` to `NavBar` and `SignInPage` as appropriate.
 20. Send `{ isUserSearchAction: true }` when a user changes a value in `OmniSearchBar`.
 21. Add static footer to `PagedTable` for non-paginated tables, showing number of records.
+22. Add secondary actions button to `CommonCard`.
+23. Add some flexibility to `CommonDropdownMenu`, namely the ability to define anchor and transform origins and styling
+    parameters.
 
 ## 1.0.0 - 2019-06-17
 

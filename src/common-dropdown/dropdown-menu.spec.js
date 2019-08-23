@@ -69,8 +69,9 @@ const TestCommonDropdownMenu = () => {
 };
 
 test("render CommonDropdownMenu", async () => {
-  const { getByTestId } = render(<TestCommonDropdownMenu />);
+  const { container, getByTestId } = render(<TestCommonDropdownMenu />);
   expect(getByTestId("dropdown-button")).toHaveTextContent("Select Option");
+  expect(container).toMatchSnapshot();
 });
 
 test("CommonDropdownMenu actions", async () => {

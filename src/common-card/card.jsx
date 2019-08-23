@@ -7,6 +7,7 @@ import React, { type ElementConfig, type Node } from "react";
 import classNames from "classnames";
 import styles from "./common-card.module.scss";
 import { MAIN_CARD_ELEVATION } from "@grail/lib";
+import { SecondaryActionsMenuButton } from "../dev";
 
 export type CommonCardProps = {
   /** The content provide to the card's body */
@@ -42,7 +43,6 @@ export type CommonCardProps = {
    *  - `footerActions` (applied to footerActions container)
    */
   classes?: CommonCardClasses,
-
   /** Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive. */
   elevation?: number,
 } & ElementConfig<typeof Card>;
@@ -57,6 +57,7 @@ export const CommonCard = (props: CommonCardProps) => {
     children,
     footerActions = null,
     headerActions = null,
+    secondaryActions = null,
     subheader = "",
     avatar = null,
     title = "",
@@ -71,7 +72,7 @@ export const CommonCard = (props: CommonCardProps) => {
       elevation={elevation}
       {...cardProps}
     >
-      {(title || subheader || headerActions) && (
+      {(title || subheader || headerActions || secondaryActions) && (
         <CardHeader
           data-testid="card-header"
           title={title}
@@ -89,7 +90,15 @@ export const CommonCard = (props: CommonCardProps) => {
             subheader: classes.subheader,
           }}
           avatar={avatar}
-          action={headerActions}
+          action={(
+            <>
+              {headerActions}
+              <SecondaryActionsMenuButton
+                id="common-card"
+                secondaryActions={secondaryActions}
+              />
+            </>
+)}
         />
       )}
       <CardContent

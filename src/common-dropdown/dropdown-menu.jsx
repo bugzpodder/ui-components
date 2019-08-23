@@ -1,6 +1,7 @@
 // @flow
 // import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import React, { useState } from "react";
@@ -20,40 +21,72 @@ type Props = {
    *
    */
   menuItems: Array<DropdownMenuItem>,
+  /** Determines if the dropdown button is disabled */
+  isDisabled?: boolean,
+  /** Defaults to false. When true, the underlying component of the button is an IconButton, rather than a Button. */
+  isIconButton?: boolean,
+  /** classes object for the Button component */
+  buttonClasses?: Object,
+  /** classes object for the Menu component */
+  menuClasses?: Object,
+  /** The anchor point on the button where the menu will attach to. Uses GRAIL's default "left bottom" */
+  anchorOrigin?: Object,
+  /** The point on the menu that will attach to the anchor origin. Uses Material-UI's default to "top left" */
+  transformOrigin?: Object,
 };
 
 export const CommonDropdownMenu = (props: Props) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
-  const { buttonContent, dropdownId, menuItems } = props;
+  const {
+    buttonContent,
+    dropdownId,
+    menuItems,
+    isIconButton,
+    isDisabled,
+    buttonClasses,
+    menuClasses,
+    anchorOrigin,
+    transformOrigin,
+  } = props;
 
   const handleClose = () => {
     setIsOpen(false);
   };
 
+  if (!menuItems || !menuItems.length) {
+    return null;
+  }
+
+  const menuAnchor = anchorOrigin || { horizontal: "left", vertical: "bottom" };
+  const ButtonComponent = isIconButton ? IconButton : Button;
   return (
     <>
-      <Button
+      <ButtonComponent
         aria-haspopup
         aria-owns={anchorEl && dropdownId}
         onClick={event => {
           setAnchorEl(event.currentTarget);
           setIsOpen(true);
         }}
+        classes={buttonClasses}
         data-testid="dropdown-button"
+        disabled={isDisabled}
       >
         {buttonContent}
-      </Button>
+      </ButtonComponent>
       <Menu
         id={dropdownId}
         anchorEl={anchorEl}
-        anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
+        anchorOrigin={menuAnchor}
+        transformOrigin={transformOrigin}
         getContentAnchorEl={null}
         open={isOpen}
         onClose={() => {
           handleClose();
           setAnchorEl(null);
         }}
+        classes={menuClasses}
       >
         {menuItems &&
           menuItems.map(({ content, onClick, isEnabled = true }, index) => {

@@ -14,6 +14,13 @@ const TestCommonCard = props => {
     <TestWrapper>
       <CommonCard
         headerActions={[<Button key="0">Test Header Action Button</Button>]}
+        secondaryActions={[
+          {
+            id: "test",
+            content: "Test",
+            onClick: jest.fn(result => result),
+          },
+        ]}
         title="Test Card"
         footerActions={<span>test</span>}
         classes={classes}

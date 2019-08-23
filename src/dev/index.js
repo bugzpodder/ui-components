@@ -1,2 +1,2 @@
 // @flow
-export { FavoriteIconButton } from "./icon-buttons";
+export { FavoriteIconButton, SecondaryActionsMenuButton } from "./icon-buttons";

@@ -133,9 +133,9 @@ exports[`render common tabbed page 1`] = `
           </button>
         </div>
         <button
-          aria-describedby="test"
+          aria-haspopup="true"
           class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton"
-          data-testid="common-page-secondary-actions-button"
+          data-testid="dropdown-button"
           tabindex="0"
           type="button"
         >

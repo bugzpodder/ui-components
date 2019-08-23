@@ -20,6 +20,20 @@ import { CommonCard } from "./";
         </Button>
       </>
     }
+    secondaryActions={[
+      {
+        id: "secondary-one",
+        color: "primary",
+        onClick: () => console.log("one"),
+        content: "Secondary One",
+      },
+      {
+        id: "secondary-two",
+        color: "primary",
+        onClick: () => console.log("two"),
+        content: "Secondary Two",
+      },
+    ]}
     footerActions={<Button>OK</Button>}
   >
     Your Card's content goes here, ideally in a Grid for easier styling

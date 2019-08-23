@@ -45,13 +45,10 @@ declare type MenuItem = {
 };
 
 declare type HeaderAction = {
-  content?: Node<*>,
   id: string,
   color?: Color,
   href?: string,
-  onClick?: Function,
-  [string]: any,
-};
+} & ClickableItem;
 
 declare type PageConfigV2 = {
   key: string,

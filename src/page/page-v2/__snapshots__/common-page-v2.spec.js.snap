@@ -91,9 +91,9 @@ exports[`renders common page 1`] = `
           </div>
         </div>
         <button
-          aria-describedby="test"
+          aria-haspopup="true"
           class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton"
-          data-testid="common-page-secondary-actions-button"
+          data-testid="dropdown-button"
           tabindex="0"
           type="button"
         >

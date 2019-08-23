@@ -1,14 +1,11 @@
 // @flow
 
 import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef } from "react";
 import classNames from "classnames";
 import styles from "../common-page-v2.module.scss";
 import { LinkButton } from "../../../link";
+import { SecondaryActionsMenuButton } from "../../../dev";
 
 type Props = {
   primaryActions?: Array<HeaderAction>,
@@ -18,8 +15,6 @@ type Props = {
 
 export const HeaderActions = forwardRef<Props, any>((props: Props, ref: any) => {
   const { primaryActions = [], secondaryActions = [], classes = {} } = props;
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
   if (primaryActions.length === 0 && secondaryActions.length === 0) {
     return (
       <div
@@ -55,22 +50,7 @@ export const HeaderActions = forwardRef<Props, any>((props: Props, ref: any) => 
       </ComponentToUse>
     );
   });
-
-  const mappedSecondaryActions = secondaryActions.map((action, index) => {
-    const { content = "", id, ...otherProps } = action;
-    return (
-      <MenuItem
-        key={`header-action-${index}`}
-        id={id}
-        data-testid={id}
-        {...otherProps}
-      >
-        {content}
-      </MenuItem>
-    );
-  });
-  const hasSecondaryActions = mappedSecondaryActions.length > 0;
-  const id = "test";
+  const hasSecondaryActions = secondaryActions.length > 0;
   return (
     <div
       ref={ref}
@@ -85,47 +65,18 @@ export const HeaderActions = forwardRef<Props, any>((props: Props, ref: any) => 
           {mappedPrimaryActions}
         </div>
       )}
-      <>
-        <IconButton
-          aria-describedby={id}
-          data-testid="common-page-secondary-actions-button"
-          disabled={!hasSecondaryActions}
-          classes={{
-            root: styles.secondaryActionsButton,
-            label: classNames({ [styles.disabled]: !hasSecondaryActions }),
-          }}
-          onClick={event => {
-            setAnchorEl(event.currentTarget);
-            setMenuIsOpen(true);
-          }}
-        >
-          <MoreVertIcon />
-        </IconButton>
-        <Menu
-          id={id}
-          data-testid="common-page-secondary-actions"
-          classes={{
-            paper: classNames(styles.secondaryActions, classes.secondaryActions),
-          }}
-          anchorEl={anchorEl}
-          getContentAnchorEl={null}
-          open={menuIsOpen}
-          onClose={() => {
-            setMenuIsOpen(false);
-            setAnchorEl(null);
-          }}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "right",
-          }}
-          transformOrigin={{
-            vertical: "top",
-            horizontal: "right",
-          }}
-        >
-          {mappedSecondaryActions}
-        </Menu>
-      </>
+      <SecondaryActionsMenuButton
+        id="common-page"
+        secondaryActions={secondaryActions}
+        buttonClasses={{
+          root: styles.secondaryActionsButton,
+          label: classNames({ [styles.disabled]: !hasSecondaryActions }),
+        }}
+        menuClasses={{
+          paper: classNames(styles.secondaryActions, classes.secondaryActions),
+        }}
+        isDisabled={!hasSecondaryActions}
+      />
     </div>
   );
 });

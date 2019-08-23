@@ -49,8 +49,8 @@ test("renders common page", () => {
   );
   expect(container).toMatchSnapshot();
   expect(queryByTestId("secondary-action")).not.toBeInTheDocument();
-  fireEvent.click(getByTestId("common-page-secondary-actions-button"));
-  expect(getByTestId("secondary-action")).toBeInTheDocument();
+  fireEvent.click(getByTestId("dropdown-button"));
+  expect(getByTestId("dropdown-item-0")).toBeInTheDocument();
 });
 
 test("common page classes", () => {

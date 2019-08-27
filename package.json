@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/node": "^7.5.5",
-    "@grail/eslint-config-grail": ">=0.0.0",
+    "@grailbio/eslint-config-grail": "^1.0.2",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^9.1.0",
     "babel-core": "^7.0.0-bridge.0",

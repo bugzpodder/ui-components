@@ -7,9 +7,9 @@ module.exports = {
     node: true,
   },
   extends: [
-    "@grail/eslint-config-grail/src/front-end",
-    "@grail/eslint-config-grail/src/flow",
-    "@grail/eslint-config-grail/src/cypress",
+    "@grailbio/eslint-config-grail/src/front-end",
+    "@grailbio/eslint-config-grail/src/flow",
+    "@grailbio/eslint-config-grail/src/cypress",
   ],
   plugins: ["cypress", "flowtype", "import", "react", "filenames"],
   rules: {

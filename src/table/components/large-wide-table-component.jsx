@@ -118,7 +118,7 @@ export const LargeWideTableComponent = (props: Props) => {
         key={itemKey}
         data-cell-id={itemKey}
         style={style}
-        className={classNames(columnClassName, styles.tableCellOrCheckboxColumn, styles.largeWideTableCell, rowClassName, {
+        className={classNames(columnClassName, styles.largeWideTableCell, rowClassName, {
           [styles.tableCell]: !isCheckboxColumn,
           [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
           [styles.highlightedCell]: rowIsHighlighted,

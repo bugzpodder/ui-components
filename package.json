@@ -91,6 +91,6 @@
     }
   },
   "main": "dist/index.js",
-  "private": true,
+  "private": false,
   "sideEffects": false
 }

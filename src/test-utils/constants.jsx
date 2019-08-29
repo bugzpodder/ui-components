@@ -1,6 +1,5 @@
 // @flow
 import React from "react";
-import { EDC, PIPELINE } from "@grail/lib";
 
 export const COUNTRY_NAMES = [
   "Afghanistan",
@@ -343,4 +342,6 @@ export const ALPHABET_ANIMALS_DATA: Array<Array<?string>> = [
   ["yak", "zebra", null, null, null, null],
 ];
 
-export const TEST_EXTERNAL_DOMAINS: Map<string, string> = new Map().set(EDC, "edc.com").set(PIPELINE, "pipeline.com");
+export const TEST_EXTERNAL_DOMAINS: Map<string, string> = new Map()
+  .set("EDC", "edc.com")
+  .set("pipeline", "pipeline.com");

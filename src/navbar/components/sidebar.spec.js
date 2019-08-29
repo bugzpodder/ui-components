@@ -1,7 +1,6 @@
 // @flow
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
-import { LIMS, sidebarItems } from "@grail/lib";
 import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../../test-utils";
@@ -9,6 +8,24 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "../util";
 
 afterEach(cleanup);
+
+const testSidebarItems = [
+  {
+    name: "Metrics",
+    children: [
+      {
+        name: "Dashboards",
+        domain: "EXTERNAL",
+        path: "https://path-to-dashboard",
+      },
+      {
+        name: "Reports",
+        domain: "INTERNAL",
+        path: "/path-to-reports",
+      },
+    ],
+  },
+];
 
 const TestSidebar = props => {
   const { mockToggle, drawerVariant } = props;
@@ -18,7 +35,8 @@ const TestSidebar = props => {
         <Sidebar
           isOpen
           toggle={mockToggle}
-          domain={LIMS}
+          sidebarContent={testSidebarItems}
+          domain="LIMS"
           currentPath="/automation/program-runs"
           InternalLinkComponent={Link}
           drawerVariant={drawerVariant}
@@ -43,8 +61,8 @@ test("render temporary Sidebar", () => {
   expect(getByTestId("collapse-all-sidebar-items")).toBeInTheDocument();
   expect(getByTestId("navbar-sidebar-footer")).toHaveTextContent("Footer");
 
-  // Verify default sidebarItems are displayed in the sidebar.
-  sidebarItems.forEach(item => {
+  // Verify testSidebarItems are displayed in the sidebar.
+  testSidebarItems.forEach(item => {
     const parent = getListItemDataTestId(item.name);
     expect(getByTestId(parent)).toBeInTheDocument();
 

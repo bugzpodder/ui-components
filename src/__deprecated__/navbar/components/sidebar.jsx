@@ -13,7 +13,6 @@ import styles from "./sidebar.module.scss";
 import { CollapsableListItem } from "./collapsable-list-item";
 import { ExternalLink } from "../../../link";
 import { getListItemDataTestId } from "../util";
-import { sidebarItems } from "@grail/lib";
 
 type Props = {
   isOpen: boolean,
@@ -62,14 +61,7 @@ const reducer = (state, action: Object) => {
 
 export const Sidebar = (props: Props) => {
   const {
-    sidebarContent = sidebarItems,
-    domain,
-    currentPath,
-    footer,
-    isOpen,
-    toggle,
-    drawerVariant,
-    classes = {},
+    sidebarContent = [], domain, currentPath, footer, isOpen, toggle, drawerVariant, classes = {},
   } = props;
 
   const matchedItem = useMemo(

@@ -2,7 +2,6 @@
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import { LIMS } from "@grail/lib";
 import { MemoryRouter } from "react-router-dom";
 import { NavbarV2 } from "./navbar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../test-utils";
@@ -10,6 +9,8 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "./util";
 
 afterEach(cleanup);
+
+const LIMS = "lims";
 
 const wrapText = text => {
   return <Typography>{text}</Typography>;

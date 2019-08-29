@@ -11,7 +11,6 @@ import classNames from "classnames";
 import pathToRegexp from "path-to-regexp";
 import styles from "./sidebar.module.scss";
 import { CollapsableListItem } from "./collapsable-list-item";
-import { DEV_SERVER_URLS, sidebarItems } from "@grail/lib";
 import { ExternalLink } from "../../link";
 import { getListItemDataTestId } from "../util";
 
@@ -62,7 +61,7 @@ const reducer = (state, action: Object) => {
 
 export const Sidebar = (props: Props) => {
   const {
-    sidebarContent = sidebarItems,
+    sidebarContent = [],
     domain,
     currentPath,
     footer,
@@ -70,7 +69,7 @@ export const Sidebar = (props: Props) => {
     toggle,
     drawerVariant,
     classes = {},
-    externalDomains = DEV_SERVER_URLS,
+    externalDomains = {},
   } = props;
 
   const matchedItem = useMemo(

@@ -6,10 +6,7 @@ import React from "react";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
-import moment from "moment";
 import styles from "./base-navbar.module.scss";
-import { BreastCancerRibbon } from "../../../logos";
-import { LIMS } from "@grail/lib";
 import { Sidebar } from "./sidebar";
 
 type Props = {
@@ -79,8 +76,6 @@ export const BaseNavbar = (props: Props) => {
     ...otherProps
   } = props;
   const { classes = {} } = props;
-  const isLims = domain === LIMS;
-  const isOctober = moment().month() === 9;
   return (
     <>
       <AppBar
@@ -135,7 +130,6 @@ export const BaseNavbar = (props: Props) => {
             data-testid="navbar-right"
             className={styles.right}
           >
-            {isLims && isOctober && <BreastCancerRibbon />}
             <div className={styles.brand}>{logo && logo}</div>
             {right}
           </div>

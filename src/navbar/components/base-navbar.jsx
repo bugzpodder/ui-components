@@ -9,7 +9,6 @@ import classNames from "classnames";
 import moment from "moment";
 import styles from "./base-navbar.module.scss";
 import { BreastCancerRibbon } from "../../logos";
-import { LIMS } from "@grail/lib";
 import { Sidebar } from "./sidebar";
 
 type Props = {
@@ -76,7 +75,7 @@ export const BaseNavbar = (props: Props) => {
     ...otherProps
   } = props;
   const { classes = {} } = props;
-  const isLims = domain === LIMS;
+  const isLims = domain === "lims";
   const isOctober = moment().month() === 9;
   return (
     <>

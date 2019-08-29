@@ -26,6 +26,7 @@
 22. Add secondary actions button to `CommonCard`.
 23. Add some flexibility to `CommonDropdownMenu`, namely the ability to define anchor and transform origins and styling
     parameters.
+24. Add `isLoading` to `CommonSelect` and `CommonMultiSelect`, which adds an indefinite loading bar beneath the select when true.
 
 ## 1.0.0 - 2019-06-17
 

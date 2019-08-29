@@ -5,6 +5,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import Input from "@material-ui/core/Input";
 import InputLabel from "@material-ui/core/InputLabel";
+import LinearProgress from "@material-ui/core/LinearProgress";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 import React, { useState } from "react";
 import classNames from "classnames";
@@ -37,6 +38,7 @@ type Props = {
   placeholder?: string,
   selectType?: "simple" | "async" | "creatable",
   showError?: boolean,
+  isLoading?: boolean,
   formatOption?: CommonSelectOption => Node,
 };
 
@@ -80,12 +82,20 @@ export const CommonSelectComponent = (props: Props) => {
     showError = false,
     variant = variants.STANDARD,
     margin = margins.NONE,
+    isLoading = false,
     ...otherProps
   } = props;
   const { value } = otherProps;
   const [isInputFocused, setIsInputFocused] = useState(false);
 
   const InputBaseComponent = getInputBaseComponent(variant);
+
+  const ariaAttributes = isLoading
+    ? {
+      "aria-describedby": `${id}-linear-progress`,
+      "aria-busy": true,
+    }
+    : {};
 
   return (
     <div
@@ -144,7 +154,9 @@ export const CommonSelectComponent = (props: Props) => {
           classes={{
             root: classNames("common-select__input-root", classes.input, `common-select__input-${variant}`),
           }}
+          {...ariaAttributes}
         />
+        {isLoading && <LinearProgress id={`${id}-linear-progress`} />}
         {helperText && (
           <FormHelperText
             variant={variant}

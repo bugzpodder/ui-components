@@ -47,6 +47,8 @@ type CommonMultiSelectProps = {
   initialMessage?: string,
   /** Disables the select from being used */
   isDisabled?: boolean,
+  /** Renders a LinearProgress bar beneath the common select input */
+  isLoading?: boolean,
   /** The text displayed in the input before the user begins typing */
   placeholder?: string,
   /**

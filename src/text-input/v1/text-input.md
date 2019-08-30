@@ -5,15 +5,16 @@ All the props of `TextField` are included for `TextInput`.
 ### Example
 
 ```js
-import styles from "../test-utils/example-styles.module.scss";
-import { ExampleWrapper } from "../test-utils";
+import styles from "../../test-utils/example-styles.module.scss";
+import { ExampleWrapper } from "../../test-utils";
 import { useState } from "react";
-import { TextInput } from "./";
+import { TextInput } from "./text-input";
 
 const TextInputExample = () => {
   const [one, setOne] = useState("");
   const [two, setTwo] = useState("");
   const [three, setThree] = useState("");
+  const [four, setFour] = useState("");
 
   const handleFirst = event => {
     setOne(event.currentTarget.value);

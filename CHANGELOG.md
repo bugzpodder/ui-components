@@ -28,6 +28,7 @@
     parameters.
 24. Add `isLoading` to `CommonSelect` and `CommonMultiSelect`, which adds an indefinite loading bar beneath the select when true.
 25. Remove default sidebar content and external domains. Should specify explicit content, such as from `@grail/common-private`.
+26. Add `TextInputV2` component.
 
 ## 1.0.0 - 2019-06-17
 

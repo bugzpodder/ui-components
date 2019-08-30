@@ -34,6 +34,23 @@ Discuss questions, feature requests, or bug reports on the `#ui-eng` slack chann
 
 Add/maintain new components to `$GRAIL/ui/components/src/dev` until they are thoroughly tested and approved
 for production.
+Update `styleguide.config.js` to add the V2 component.
+Update `$GRAIL/ui/lims/client/cypress/integration/styleguide` to add the new component.
+
+#### **Building V2 Components**
+
+To add a V2 version of an existing component, separate the V1 and V2 files into their own folder.
+e.g.
+```
+src/
+  some-component/
+    index.js /* export v1 and v2 components. */
+    v1/
+      /* the V1 component jsx, CSS, unit test files. */
+    v2/
+      /* the V2 component jsx, CSS, unit test files. */
+```
+Follow the guidelines for building new components for building V2 component.
 
 #### **Production Component Approval Criteria**
 

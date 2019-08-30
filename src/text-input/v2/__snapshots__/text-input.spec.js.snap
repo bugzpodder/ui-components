@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render text field wrapper 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
+    data-testid="text-input"
+  >
+    <div
+      class="MuiInputBase-root MuiFilledInput-root root MuiFilledInput-underline MuiInputBase-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiFilledInput-input"
+        id="operator"
+        placeholder="Test Placeholder"
+        type="text"
+        value="test value"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render text field wrapper with label, helperText, and readonly 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
+    data-testid="readonly-text-input"
+  >
+    <label
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled Mui-disabled Mui-disabled MuiFormLabel-filled"
+      data-shrink="true"
+      for="operator"
+    >
+      test label
+    </label>
+    <div
+      class="MuiInputBase-root MuiFilledInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl"
+    >
+      <input
+        aria-describedby="operator-helper-text"
+        aria-invalid="false"
+        class="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled disabled"
+        disabled=""
+        id="operator"
+        readonly=""
+        type="text"
+        value="test value"
+      />
+    </div>
+    <p
+      class="MuiFormHelperText-root MuiFormHelperText-contained Mui-disabled MuiFormHelperText-filled"
+      id="operator-helper-text"
+    >
+      test helper text
+    </p>
+  </div>
+</div>
+`;
+
+exports[`render text field wrapper with readonly as true show default value 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
+    data-testid="readonly-text-input"
+  >
+    <div
+      class="MuiInputBase-root MuiFilledInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled disabled"
+        disabled=""
+        id="operator"
+        readonly=""
+        type="text"
+        value="-"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`text field wrapper with readonly as true shows custom default value 1`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
+    data-testid="readonly-text-input"
+  >
+    <div
+      class="MuiInputBase-root MuiFilledInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled disabled"
+        disabled=""
+        id="operator"
+        readonly=""
+        type="text"
+        value="blahhh"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`text field wrapper with readonly as true shows custom default value 2`] = `
+<div>
+  <div
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
+    data-testid="readonly-text-input"
+  >
+    <div
+      class="MuiInputBase-root MuiFilledInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiFilledInput-input Mui-disabled Mui-disabled disabled"
+        disabled=""
+        id="operator"
+        readonly=""
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

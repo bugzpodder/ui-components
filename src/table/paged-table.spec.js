@@ -179,6 +179,7 @@ test("render paged table and test pagination", () => {
     </TestWrapper>,
   );
   expect(getByTestId("card-header")).toHaveTextContent("Test Table (2 Selected)");
+  expect(getByTestId("card-footer-actions")).toHaveTextContent("Rows per page:5Showing 1 to 5 of 100");
   fireEvent.click(getByTestId("next-page"));
   expect(mockPagination.mock.results[0].value).toEqual({ offset: 5, count: 5 });
   // TODO(nsawas): TypeError: _this.inputRef.focus is not a function

@@ -14,7 +14,7 @@ export const TablePager = (props: Props) => {
   if (!tableOptions) {
     throw new Error("tableOptions prop with count and offset must be included for pagination");
   }
-  const { offset, count } = tableOptions;
+  const { offset, count, resultCount } = tableOptions;
   // const invalidPaginationParameters = typeof count !== "number" || typeof offset !== "number";
   const invalidPaginationParameters = count == null || offset == null;
   if (invalidPaginationParameters) {
@@ -43,8 +43,8 @@ export const TablePager = (props: Props) => {
     <TablePagination
       component="div"
       className={`table-pager ${styles.tablePager}`}
-      count={totalCount}
-      labelDisplayedRows={({ from, to }) => `Showing ${from} to ${to}`}
+      count={resultCount || totalCount}
+      labelDisplayedRows={({ from, to }) => `Showing ${from} to ${to}${resultCount ? ` of ${resultCount}` : ""}`}
       rowsPerPage={count}
       page={page}
       onChangePage={onChangePage}

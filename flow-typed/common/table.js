@@ -3,4 +3,7 @@ declare type SimpleTableOptions = {
   sortOptions: SortOptions,
 };
 
-declare type PagedTableOptions = SimpleTableOptions & PaginationOptions;
+declare type PagedTableOptions = SimpleTableOptions &
+  PaginationOptions & {
+    resultCount: number,
+  };

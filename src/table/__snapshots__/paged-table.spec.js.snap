@@ -1116,7 +1116,7 @@ exports[`render paged table and test pagination 1`] = `
           <span
             class="MuiTypography-root MuiTablePagination-caption MuiTypography-caption MuiTypography-colorInherit"
           >
-            Showing 1 to 5
+            Showing 1 to 5 of 100
           </span>
           <div
             class="MuiTablePagination-actions"

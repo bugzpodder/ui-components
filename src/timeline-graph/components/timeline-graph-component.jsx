@@ -7,7 +7,7 @@ import classNames from "classnames";
 import moment from "moment";
 import styles from "../timeline-graph.module.scss";
 import { AvatarIcon } from "../../index";
-import { INNER_CARD_ELEVATION, MAIN_CARD_ELEVATION } from "@grail/lib";
+import { INNER_CARD_ELEVATION, MAIN_CARD_ELEVATION } from "@grailbio/lib";
 
 type Props = {
   rows: Array<TimelineGraphRow>,

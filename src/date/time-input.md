@@ -1,12 +1,12 @@
 ### Example
 
-##### NOTE: To use this component across any app, the app must be wrapped in the `wrapPickerUtilProvider` function imported from `@grail/components`;
+##### NOTE: To use this component across any app, the app must be wrapped in the `wrapPickerUtilProvider` function imported from `@grailbio/components`;
 
 ```js
 import Typography from "@material-ui/core/Typography";
 import styles from "../test-utils/example-styles.module.scss";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
-import { wrapPickerUtilProvider } from "@grail/components";
+import { wrapPickerUtilProvider } from "@grailbio/components";
 import { useState } from "react";
 import { TimeInput } from "./";
 
@@ -39,7 +39,7 @@ Old Picker:
 import Typography from "@material-ui/core/Typography";
 import styles from "../test-utils/example-styles.module.scss";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
-import { wrapPickerUtilProvider } from "@grail/components";
+import { wrapPickerUtilProvider } from "@grailbio/components";
 import { useState } from "react";
 import { TimeInput } from "./";
 

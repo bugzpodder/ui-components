@@ -13,7 +13,7 @@ import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import keycode from "keycode";
-import { unquoteString, valueToSuggestions } from "@grail/lib";
+import { unquoteString, valueToSuggestions } from "@grailbio/lib";
 
 import styles from "./common-suggest.module.scss";
 

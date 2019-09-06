@@ -4,10 +4,14 @@ React components built using [Material-UI](https://material-ui.com/getting-start
 
 ## Contributing
 
-This project is open sourced. All content must be non-proprietary. For example:
+This is an open source package. Initial approval by SMEs in https://phabricator.grailbio.com/T26323
+
+All content must be non-proprietary. For example:
 
 - Do not include GRAIL assets, like GRAIL Logo, or commercially sourced images.
 - Do not include content that has trade secrets or anything that should remain internal to GRAIL.
+
+Also, all content must be compatible with the contents of the Apache 2.0 license, as defined in `LICENSE` file.
 
 For common private GRAIL code, use `@grail/common-private` or other internal locations.
 
@@ -34,14 +38,16 @@ Recommend turning on 2FA.
 To publish:
 
 - Bump the package version following semantic versioning guidelines (https://semver.org/)
+- `yarn version --patch --no-git-tag-version`
 - For non-patch release, update `CHANGELOG.md` version.
 - `npm publish --access public`
   - Optionally, you can pass in 2FA code using `--otp ######`
 
-#### **Installation**
+#### **Installation and Usage**
 
 - `yarn add react`
 - `yarn add @material-ui/core @material-ui/icons @material-ui/styles`
+- If using NPM packages: `yarn add @grailbio/lib @grailbio/components`
 - To use the `DateInput` and `DateTimeInput` components:
   - Wrap your application in the `wrapPickerUtilProvider` component.
 
@@ -58,8 +64,8 @@ yarn styleguide
 
 #### **Using Released Components**
 
-- `import { COMPONENT } from "@grail/components";`
-- See `@grail/lib` for GRAIL utilities and constants. e.g. `import { UTILITY } from "@grail/lib";`
+- `import { COMPONENT } from "@grailbio/components";`
+- See `@grailbio/lib` for GRAIL utilities and constants. e.g. `import { UTILITY } from "@grailbio/lib";`
 
 #### **Using Dev Components**
 

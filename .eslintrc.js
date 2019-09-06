@@ -26,7 +26,7 @@ module.exports = {
             message: 'Please import material-ui components directly, eg: import Card from "@material-ui/core/Card".',
           },
         ],
-        patterns: ["@grail/lib/src/*", "@grail/components/src/*"],
+        patterns: ["@grailbio/lib/src/*", "@grailbio/components/src/*"],
       },
     ],
 

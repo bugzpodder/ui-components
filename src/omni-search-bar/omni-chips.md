@@ -11,7 +11,7 @@ import {
   LIKE_TEXT_SEARCH_TYPE,
   OMNI_KEY,
   SET_OMNI_FIELD_COMMAND,
-} from "@grail/lib";
+} from "@grailbio/lib";
 
 const initialSearchOptions = [
   {

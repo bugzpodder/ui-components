@@ -1,7 +1,7 @@
 ### Example
 
 ```js
-import { Alert, CommonTabbedPage } from "@grail/components";
+import { Alert, CommonTabbedPage } from "@grailbio/components";
 import { ExampleBlock, ExampleWrapper } from "../test-utils";
 import { useState } from "react";
 
@@ -65,7 +65,7 @@ uses CSS anchors and these do not work on styleguidist.
 
 ```js
 import { useState } from "react";
-import { Alert, CommonSwitch, CommonTabbedPage } from "@grail/components";
+import { Alert, CommonSwitch, CommonTabbedPage } from "@grailbio/components";
 import { ExampleBlock, ExampleWrapper } from "../../test-utils";
 
 const TabOneComponent = () => {

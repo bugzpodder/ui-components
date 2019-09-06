@@ -1,5 +1,5 @@
 // @flow
-import { type ExportableColumn } from "@grail/lib";
+import { type ExportableColumn } from "@grailbio/lib";
 import { type Node } from "react";
 
 declare type Sorting = {

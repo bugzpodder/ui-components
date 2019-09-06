@@ -17,6 +17,7 @@ module.exports = Object.assign(jestConfig, {
   },
   moduleNameMapper: {
     "^@grail/(.*)$": "<rootDir>/../$1/src",
+    "^@grailbio/(.*)$": "<rootDir>/../$1/src",
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
   },
   testPathIgnorePatterns: ["/node_modules/", "/cypress/"],

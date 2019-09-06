@@ -2,7 +2,7 @@
 
 ```js
 import { ExampleWrapper } from "../../test-utils";
-import { ReadOnlyTextField } from "@grail/components";
+import { ReadOnlyTextField } from "@grailbio/components";
 import { CommonPageV2 } from "./common-page-v2";
 
 const ExampleCommonPage = () => {
@@ -36,7 +36,7 @@ const ExampleCommonPage = () => {
 
 ```js
 import { ExampleWrapper } from "../../test-utils";
-import { ReadOnlyTextField, Alert } from "@grail/components";
+import { ReadOnlyTextField, Alert } from "@grailbio/components";
 import { CommonPageV2 } from "./common-page-v2";
 
 const ExampleCommonPage = () => {

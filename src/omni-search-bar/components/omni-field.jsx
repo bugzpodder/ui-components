@@ -9,7 +9,7 @@ import TextField from "@material-ui/core/TextField";
 import classNames from "classnames";
 import keycode from "keycode";
 import styles from "../omni.module.scss";
-import { OMNI_KEY } from "@grail/lib";
+import { OMNI_KEY } from "@grailbio/lib";
 
 export const OMNI_INPUT_FIELD_ID = `${OMNI_KEY}-input-field-id`;
 

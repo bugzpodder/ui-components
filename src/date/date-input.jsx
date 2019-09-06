@@ -2,7 +2,7 @@
 import React, { type ElementConfig } from "react";
 import classNames from "classnames";
 import styles from "./date-input.module.scss";
-import { DATE_FORMAT, DATE_INPUT_MASK } from "@grail/lib";
+import { DATE_FORMAT, DATE_INPUT_MASK } from "@grailbio/lib";
 import { DatePicker } from "material-ui-pickers";
 import { KeyboardDatePicker } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";

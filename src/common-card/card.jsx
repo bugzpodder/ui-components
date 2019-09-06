@@ -6,7 +6,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import React, { type ElementConfig, type Node } from "react";
 import classNames from "classnames";
 import styles from "./common-card.module.scss";
-import { MAIN_CARD_ELEVATION } from "@grail/lib";
+import { MAIN_CARD_ELEVATION } from "@grailbio/lib";
 import { SecondaryActionsMenuButton } from "../dev";
 
 export type CommonCardProps = {

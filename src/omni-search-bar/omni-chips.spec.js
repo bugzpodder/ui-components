@@ -1,7 +1,7 @@
 // @flow
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
-import { LIKE_TEXT_SEARCH_TYPE, OMNI_KEY, SET_OMNI_FIELD_COMMAND } from "@grail/lib";
+import { LIKE_TEXT_SEARCH_TYPE, OMNI_KEY, SET_OMNI_FIELD_COMMAND } from "@grailbio/lib";
 import { OmniChips } from "./omni-chips";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";

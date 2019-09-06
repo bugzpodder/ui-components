@@ -3,7 +3,7 @@
 ```js
 import { useState } from "react";
 import { ExampleWrapper } from "../../test-utils";
-import { ReadOnlyTextField, Alert } from "@grail/components";
+import { ReadOnlyTextField, Alert } from "@grailbio/components";
 import { CommonTabbedPageV2 } from "./common-tabbed-page-v2";
 
 const ExampleCommonPage = () => {

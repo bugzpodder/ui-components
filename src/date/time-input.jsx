@@ -4,7 +4,7 @@ import classNames from "classnames";
 import styles from "./time-input.module.scss";
 import { KeyboardTimePicker } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
-import { TIME_FORMAT } from "@grail/lib";
+import { TIME_FORMAT } from "@grailbio/lib";
 import { TimePicker } from "material-ui-pickers";
 import { formatDate } from "./components/formatted-date-time";
 

@@ -2,7 +2,7 @@
 
 ```js
 import Button from "@material-ui/core/Button";
-import { Alert } from "@grail/components";
+import { Alert } from "@grailbio/components";
 import styles from "../test-utils/example-styles.module.scss";
 import { StyleWrapper } from "./";
 

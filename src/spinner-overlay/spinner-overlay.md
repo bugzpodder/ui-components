@@ -6,7 +6,7 @@
 import Button from "@material-ui/core/Button";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";
-import { CommonCard } from "@grail/components";
+import { CommonCard } from "@grailbio/components";
 
 const SpinnerOverlayExample = () => (
   <div className={styles.spinnerContainer}>
@@ -34,7 +34,7 @@ const SpinnerOverlayExample = () => (
 import Button from "@material-ui/core/Button";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";
-import { CommonCard } from "@grail/components";
+import { CommonCard } from "@grailbio/components";
 
 const SpinnerOverlayExample = () => (
   <div className={styles.spinnerContainer}>

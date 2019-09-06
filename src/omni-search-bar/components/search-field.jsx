@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import keycode from "keycode";
 import {
   DATE_SEARCH_TYPES, buildDateRangeString, extractDateRange, extractValidDate,
-} from "@grail/lib";
+} from "@grailbio/lib";
 import { DateInput } from "../../date/date-input";
 
 import styles from "../omni.module.scss";

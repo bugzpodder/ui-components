@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import React, { type Node } from "react";
 import styles from "../omni.module.scss";
 import { CommonDialog } from "../../common-dialog";
-import { OMNI_TEXT_SEARCH_TYPE } from "@grail/lib";
+import { OMNI_TEXT_SEARCH_TYPE } from "@grailbio/lib";
 import { SearchField } from "./search-field";
 import { TwoColumnRow } from "../../two-column-grid";
 

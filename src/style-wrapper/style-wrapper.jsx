@@ -5,7 +5,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core/styles";
 import {
   grailGrayLighter, grailPurpleDark, grailPurpleMed, grailRed, grailTan, white,
-} from "@grail/lib";
+} from "@grailbio/lib";
 
 type Props = {
   children: Node,

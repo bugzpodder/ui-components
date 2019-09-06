@@ -7,7 +7,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import moment from "moment";
 import styles from "../notification.module.scss";
-import { DATE_TIME_FORMAT } from "@grail/lib";
+import { DATE_TIME_FORMAT } from "@grailbio/lib";
 import { NotificationTypeIcon } from "./notification-type-icon";
 
 type Props = {

@@ -13,7 +13,7 @@ import moment from "moment";
 import styles from "./export-button.module.scss";
 import { Alert } from "../alert";
 import { CommonDialog } from "../common-dialog";
-import { DATE_TIME_FORMAT } from "@grail/lib";
+import { DATE_TIME_FORMAT } from "@grailbio/lib";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TwoColumnGrid } from "../two-column-grid";
 import { generateReport } from "./utils/export-utils";

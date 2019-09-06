@@ -1,6 +1,6 @@
 // @flow
 import React from "react";
-import { DATE_FORMAT } from "@grail/lib";
+import { DATE_FORMAT } from "@grailbio/lib";
 import { FormattedDateTime } from "./components/formatted-date-time";
 
 export type Props = {

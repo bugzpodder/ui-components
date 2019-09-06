@@ -3,7 +3,7 @@ import "@testing-library/jest-dom/extend-expect";
 import MomentUtils from "@date-io/moment";
 import React from "react";
 import keycode from "keycode";
-import { DATETIME_SEARCH_TYPE, DATE_SEARCH_TYPE, LIKE_TEXT_SEARCH_TYPE } from "@grail/lib";
+import { DATETIME_SEARCH_TYPE, DATE_SEARCH_TYPE, LIKE_TEXT_SEARCH_TYPE } from "@grailbio/lib";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import { OmniSearchBar } from ".";
 import { TestWrapper } from "../test-utils";

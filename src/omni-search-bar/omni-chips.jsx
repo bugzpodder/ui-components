@@ -2,7 +2,7 @@
 import Chip from "@material-ui/core/Chip";
 import React from "react";
 import styles from "./omni.module.scss";
-import { OMNI_KEY, SET_OMNI_FIELD_COMMAND } from "@grail/lib";
+import { OMNI_KEY, SET_OMNI_FIELD_COMMAND } from "@grailbio/lib";
 
 type Props = {
   /** Search Options. */

@@ -2,7 +2,7 @@
 
 ```js
 import { ExampleWrapper } from "../test-utils";
-import { ReadOnlyTextField, CommonPage } from "@grail/components";
+import { ReadOnlyTextField, CommonPage } from "@grailbio/components";
 
 const ExampleCommonPage = () => {
   return (
@@ -39,7 +39,7 @@ matches the `key` given in the object in `menuContents`. However, it
 uses CSS anchors and these do not work on styleguidist.
 
 ```js
-import { Alert, CommonSwitch, CommonPage } from "@grail/components";
+import { Alert, CommonSwitch, CommonPage } from "@grailbio/components";
 import { ExampleWrapper } from "../test-utils";
 
 const ExampleCommonPage = () => {

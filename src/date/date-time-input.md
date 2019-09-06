@@ -1,9 +1,9 @@
 ### Example
 
-##### NOTE: To use this component across any app, the app must be wrapped in the `wrapPickerUtilProvider` function imported from `@grail/components`;
+##### NOTE: To use this component across any app, the app must be wrapped in the `wrapPickerUtilProvider` function imported from `@grailbio/components`;
 
 ```js
-import { wrapPickerUtilProvider } from "@grail/components";
+import { wrapPickerUtilProvider } from "@grailbio/components";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
 import { useState } from "react";
 import { DateTimeInput } from "./";
@@ -27,7 +27,7 @@ const ExampleApp = wrapPickerUtilProvider(() => {
 Old Picker:
 
 ```js
-import { wrapPickerUtilProvider } from "@grail/components";
+import { wrapPickerUtilProvider } from "@grailbio/components";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
 import { useState } from "react";
 import { DateTimeInput } from "./";

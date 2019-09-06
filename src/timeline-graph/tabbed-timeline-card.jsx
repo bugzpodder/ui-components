@@ -9,7 +9,7 @@ import styles from "./timeline-graph.module.scss";
 import { CommonCard } from "../index";
 import { type CommonCardProps } from "../common-card/card";
 import { TimelineGraphComponent } from "./components/timeline-graph-component";
-import { sentenceCase } from "@grail/lib";
+import { sentenceCase } from "@grailbio/lib";
 
 type Props = {
   /**

@@ -1,6 +1,6 @@
 // @flow
 import React, { type ElementConfig } from "react";
-import { DATE_TIME_FORMAT, DATE_TIME_INPUT_MASK } from "@grail/lib";
+import { DATE_TIME_FORMAT, DATE_TIME_INPUT_MASK } from "@grailbio/lib";
 import { DateTimePicker } from "material-ui-pickers";
 import { KeyboardDateTimePicker } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";

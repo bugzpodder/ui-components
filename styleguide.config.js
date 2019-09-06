@@ -151,8 +151,8 @@ module.exports = {
     },
     resolve: {
       alias: {
-        "@grail/components": path.resolve(__dirname, "src"),
-        "@grail/lib": path.resolve(__dirname, "../lib/src"),
+        "@grailbio/components": path.resolve(__dirname, "src"),
+        "@grailbio/lib": path.resolve(__dirname, "../lib/src"),
       },
     },
   },

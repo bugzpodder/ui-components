@@ -12,7 +12,7 @@ import {
   getSearchValuesFromOmniText,
   localStorage,
   updateQuery,
-} from "@grail/lib";
+} from "@grailbio/lib";
 import { OMNI_INPUT_FIELD_ID, OmniField } from "./components/omni-field";
 import { OmniDialog } from "./components/omni-dialog";
 

@@ -6,7 +6,7 @@ import TableRow from "@material-ui/core/TableRow";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import classNames from "classnames";
 import styles from "../table.module.scss";
-import { mapBy } from "@grail/lib";
+import { mapBy } from "@grailbio/lib";
 
 type Props = {
   columns: Array<PagedTableColumn>,

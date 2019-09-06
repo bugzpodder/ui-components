@@ -1,6 +1,6 @@
 // @flow
 import { generateColHeaders, generateRowHeaders, validateGridData } from "./grid-utils";
-import { upperAlphaChars } from "@grail/lib";
+import { upperAlphaChars } from "@grailbio/lib";
 
 describe("validateGridData", () => {
   const testGridData = [["alligator", "bat", "cat", "dog"], ["elephant", "fox", null, null]];

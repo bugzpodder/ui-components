@@ -1,6 +1,6 @@
 // @flow
 import { saveAs } from "file-saver";
-import { toDelimitedReport } from "@grail/lib";
+import { toDelimitedReport } from "@grailbio/lib";
 
 export const generateReport = (
   fileName: string,

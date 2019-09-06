@@ -1,11 +1,11 @@
 // @flow
-import { generateFilledArray, getColHeader, getRowHeader } from "@grail/lib";
+import { generateFilledArray, getColHeader, getRowHeader } from "@grailbio/lib";
 
 export const validateGridData = (numRows: number, numCols: number, gridData: Array<Array<any>>) => {
   if (numRows !== gridData.length) {
     throw new Error(`Number of rows in gridData (${gridData.length}) does not match numRows (${numRows})`);
   }
-  gridData.forEach((gridRow) => {
+  gridData.forEach(gridRow => {
     if (gridRow.length !== numCols) {
       throw new Error(`Number of columns in gridData (${gridRow.length}) does not match numCols (${numCols})`);
     }

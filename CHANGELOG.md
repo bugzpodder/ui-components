@@ -29,7 +29,8 @@
 24. Add `isLoading` to `CommonSelect` and `CommonMultiSelect`, which adds an indefinite loading bar beneath the select when true.
 25. Remove default sidebar content and external domains. Should specify explicit content, such as from `@grail/common-private`.
 26. Add `TextInputV2` component.
-27. Add `resultCount` parameter to `tableOptions` prop for `PagedTable`. This allows the display of the total number of results in table if it is known.
+27. Add `totalCount` parameter to `tableOptions` prop for `PagedTable`. This allows the display of the total number of results in table if it is known.
+28. Fix bug related to table pagination. For example when showing element 61 to 70 and user changes count per row to 25 per page, we now will show elements 51 to 75.
 
 ## 1.0.0 - 2019-06-17
 

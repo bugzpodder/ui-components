@@ -5,5 +5,5 @@ declare type SimpleTableOptions = {
 
 declare type PagedTableOptions = SimpleTableOptions &
   PaginationOptions & {
-    resultCount?: number,
+    totalCount?: number,
   };

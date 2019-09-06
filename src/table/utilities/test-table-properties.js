@@ -77,7 +77,7 @@ export const allSelectedRows = [
 ];
 
 export const tableOptions: ApiQueryOptions = {
-  resultCount: 100,
+  totalCount: 100,
   offset: 0,
   count: 5,
   searchOptions: [],

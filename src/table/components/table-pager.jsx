@@ -32,7 +32,9 @@ export const TablePager = (props: Props) => {
   };
 
   const onChangeRowsPerPage = (event: SyntheticInputEvent<>) => {
-    return setPage({ offset, count: Math.max(1, Number(event.target.value)) });
+    const newCount = Math.max(1, Number(event.target.value));
+    const newOffset = Math.floor(offset / newCount) * newCount;
+    return setPage({ offset: newOffset, count: newCount });
   };
 
   const setPage = ({ offset, count }: { offset: number, count: number }) => {

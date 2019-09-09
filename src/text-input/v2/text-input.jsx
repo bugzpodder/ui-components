@@ -39,6 +39,8 @@ export const TextInputV2 = (props: Props) => {
     disabled,
     placeholder,
     "data-testid": dataTestId,
+    onFocus,
+    onBlur,
     ...otherProps
   } = props;
   const [isInputFocused, setIsInputFocused] = useState(false);
@@ -64,8 +66,14 @@ export const TextInputV2 = (props: Props) => {
         },
         disableUnderline: readOnly,
         readOnly,
-        onFocus: () => setIsInputFocused(true),
-        onBlur: () => setIsInputFocused(false),
+        onFocus: event => {
+          onFocus && onFocus(event);
+          setIsInputFocused(true);
+        },
+        onBlur: event => {
+          onBlur && onBlur(event);
+          setIsInputFocused(false);
+        },
       }}
       InputLabelProps={{
         shrink: readOnly || !isEmptyValue(value) || isInputFocused,

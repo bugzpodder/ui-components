@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import { TestWrapper } from "../../test-utils";
-import { cleanup, render } from "@testing-library/react";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 import "@testing-library/jest-dom/extend-expect";
 import { TextInputV2 } from "./text-input";
@@ -100,7 +100,29 @@ test("text field wrapper with readonly as true shows custom default value", asyn
     </TestWrapper>,
   );
   // This will error out if test value doesn't show up.
-  expect(getByDisplayValue("")).toBeDisabled();
+  expect(getByDisplayValue(testValue)).toBeDisabled();
   expect(() => getByDisplayValue("this won't show")).toThrow();
+  expect(container).toMatchSnapshot();
+});
+
+test("passed down onBlur and onFocus are called", async () => {
+  const testValue = "hi";
+  const mockBlur = jest.fn(() => {});
+  const mockFocus = jest.fn(() => {});
+  const { container, getByDisplayValue } = render(
+    <TestWrapper>
+      <TextInputV2
+        id="operator"
+        onChange={() => {}}
+        onBlur={mockBlur}
+        onFocus={mockFocus}
+        value={testValue}
+      />
+    </TestWrapper>,
+  );
+  fireEvent.focus(getByDisplayValue(testValue));
+  expect(mockFocus.mock.calls.length).toBe(1);
+  fireEvent.blur(getByDisplayValue(testValue));
+  expect(mockBlur.mock.calls.length).toBe(1);
   expect(container).toMatchSnapshot();
 });

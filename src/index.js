@@ -38,7 +38,7 @@ export { SignInPage } from "./sign-in-page";
 export { SpinnerOverlay } from "./spinner-overlay";
 export { StyleWrapper } from "./style-wrapper";
 export { TabbedTimelineCard, TimelineGraph, TimelineCard } from "./timeline-graph";
-export { TextInput } from "./text-input";
+export { TextInput, TextInputV2 } from "./text-input";
 export { TwoColumnGrid, TwoColumnRow } from "./two-column-grid";
 export { UploadButton } from "./upload-button";
 export { SelectionGrid } from "./selection-grid";

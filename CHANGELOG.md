@@ -33,6 +33,7 @@
 28. Fix bug related to table pagination. For example when showing element 61 to 70 and user changes count per row to 25 per page, we now will show elements 51 to 75.
 29. Rename package to `@grailbio/components`, publish to github and npm.
 30. Fix bug to pass down onFocus and onBlur props in `TextInputV2` component.
+31. Update /dist folder to fix import errors.
 
 ## 1.0.0 - 2019-06-17
 

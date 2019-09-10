@@ -1,6 +1,6 @@
 {
   "name": "@grailbio/components",
-  "version": "1.1.13",
+  "version": "1.1.15",
   "homepage": "https://github.com/grailbio/ui-components",
   "scripts": {
     "build": "NODE_ENV=production yarn build:src && yarn build:flow && babel-node ./scripts/build.js",
@@ -15,6 +15,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\" \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
     "precommit": "kcd-scripts pre-commit",
+    "prepublish": "yarn build",
     "start": "yarn styleguide",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
@@ -93,5 +94,8 @@
   },
   "main": "dist/index.js",
   "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false
 }

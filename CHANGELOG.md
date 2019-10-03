@@ -34,6 +34,7 @@
 29. Rename package to `@grailbio/components`, publish to github and npm.
 30. Fix bug to pass down onFocus and onBlur props in `TextInputV2` component.
 31. Update /dist folder to fix import errors.
+32. Allow rows to be inverted in SelectionGrid.
 
 ## 1.0.0 - 2019-06-17
 

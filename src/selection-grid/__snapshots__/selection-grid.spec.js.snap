@@ -924,3 +924,928 @@ exports[`render selection grid and select a cell 1`] = `
   </div>
 </div>
 `;
+
+exports[`render selection grid and select a cell on an inverted grid 1`] = `
+<div>
+  <div
+    class="grid"
+    data-testid="selection-grid"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      />
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        1
+      </div>
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        2
+      </div>
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        3
+      </div>
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        4
+      </div>
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        5
+      </div>
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        6
+      </div>
+    </div>
+    <div
+      class="row"
+      data-testid="selection-grid-row-4"
+    >
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        E
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-24"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-24"
+        >
+          <div>
+            <div>
+              Row index: 
+              4
+            </div>
+            <div>
+              Col index: 
+              0
+            </div>
+            <div>
+              Cell index: 
+              24
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              yak
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-25"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-25"
+        >
+          <div>
+            <div>
+              Row index: 
+              4
+            </div>
+            <div>
+              Col index: 
+              1
+            </div>
+            <div>
+              Cell index: 
+              25
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              zebra
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable isEmpty"
+        data-testid="grid-cell-26"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-26"
+        />
+      </div>
+      <div
+        class="cell isEmpty"
+        data-testid="grid-cell-27"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-27"
+        />
+      </div>
+      <div
+        class="cell isSelectable isEmpty"
+        data-testid="grid-cell-28"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-28"
+        />
+      </div>
+      <div
+        class="cell isEmpty"
+        data-testid="grid-cell-29"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-29"
+        />
+      </div>
+    </div>
+    <div
+      class="row"
+      data-testid="selection-grid-row-3"
+    >
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        D
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-18"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-18"
+        >
+          <div>
+            <div>
+              Row index: 
+              3
+            </div>
+            <div>
+              Col index: 
+              0
+            </div>
+            <div>
+              Cell index: 
+              18
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              seal
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-19"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-19"
+        >
+          <div>
+            <div>
+              Row index: 
+              3
+            </div>
+            <div>
+              Col index: 
+              1
+            </div>
+            <div>
+              Cell index: 
+              19
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              tiger
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-20"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-20"
+        >
+          <div>
+            <div>
+              Row index: 
+              3
+            </div>
+            <div>
+              Col index: 
+              2
+            </div>
+            <div>
+              Cell index: 
+              20
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              umbrella bird
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-21"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-21"
+        >
+          <div>
+            <div>
+              Row index: 
+              3
+            </div>
+            <div>
+              Col index: 
+              3
+            </div>
+            <div>
+              Cell index: 
+              21
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              vulture
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-22"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-22"
+        >
+          <div>
+            <div>
+              Row index: 
+              3
+            </div>
+            <div>
+              Col index: 
+              4
+            </div>
+            <div>
+              Cell index: 
+              22
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              whale
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-23"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-23"
+        >
+          <div>
+            <div>
+              Row index: 
+              3
+            </div>
+            <div>
+              Col index: 
+              5
+            </div>
+            <div>
+              Cell index: 
+              23
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              x-ray tetra
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+      data-testid="selection-grid-row-2"
+    >
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        C
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-12"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-12"
+        >
+          <div>
+            <div>
+              Row index: 
+              2
+            </div>
+            <div>
+              Col index: 
+              0
+            </div>
+            <div>
+              Cell index: 
+              12
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              monkey
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-13"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-13"
+        >
+          <div>
+            <div>
+              Row index: 
+              2
+            </div>
+            <div>
+              Col index: 
+              1
+            </div>
+            <div>
+              Cell index: 
+              13
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              narwhal
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-14"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-14"
+        >
+          <div>
+            <div>
+              Row index: 
+              2
+            </div>
+            <div>
+              Col index: 
+              2
+            </div>
+            <div>
+              Cell index: 
+              14
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              octopus
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-15"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-15"
+        >
+          <div>
+            <div>
+              Row index: 
+              2
+            </div>
+            <div>
+              Col index: 
+              3
+            </div>
+            <div>
+              Cell index: 
+              15
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              penguin
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-16"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-16"
+        >
+          <div>
+            <div>
+              Row index: 
+              2
+            </div>
+            <div>
+              Col index: 
+              4
+            </div>
+            <div>
+              Cell index: 
+              16
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              quail
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-17"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-17"
+        >
+          <div>
+            <div>
+              Row index: 
+              2
+            </div>
+            <div>
+              Col index: 
+              5
+            </div>
+            <div>
+              Cell index: 
+              17
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              raccoon
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+      data-testid="selection-grid-row-1"
+    >
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        B
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-6"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-6"
+        >
+          <div>
+            <div>
+              Row index: 
+              1
+            </div>
+            <div>
+              Col index: 
+              0
+            </div>
+            <div>
+              Cell index: 
+              6
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              goat
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-7"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-7"
+        >
+          <div>
+            <div>
+              Row index: 
+              1
+            </div>
+            <div>
+              Col index: 
+              1
+            </div>
+            <div>
+              Cell index: 
+              7
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              horse
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-8"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-8"
+        >
+          <div>
+            <div>
+              Row index: 
+              1
+            </div>
+            <div>
+              Col index: 
+              2
+            </div>
+            <div>
+              Cell index: 
+              8
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              iguana
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-9"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-9"
+        >
+          <div>
+            <div>
+              Row index: 
+              1
+            </div>
+            <div>
+              Col index: 
+              3
+            </div>
+            <div>
+              Cell index: 
+              9
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              jaguar
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-10"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-10"
+        >
+          <div>
+            <div>
+              Row index: 
+              1
+            </div>
+            <div>
+              Col index: 
+              4
+            </div>
+            <div>
+              Cell index: 
+              10
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              kangaroo
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-11"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-11"
+        >
+          <div>
+            <div>
+              Row index: 
+              1
+            </div>
+            <div>
+              Col index: 
+              5
+            </div>
+            <div>
+              Cell index: 
+              11
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              lion
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+      data-testid="selection-grid-row-0"
+    >
+      <div
+        class="header"
+        data-testid="selection-grid-header"
+      >
+        A
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-0"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-0"
+        >
+          <div>
+            <div>
+              Row index: 
+              0
+            </div>
+            <div>
+              Col index: 
+              0
+            </div>
+            <div>
+              Cell index: 
+              0
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              alligator
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-1"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-1"
+        >
+          <div>
+            <div>
+              Row index: 
+              0
+            </div>
+            <div>
+              Col index: 
+              1
+            </div>
+            <div>
+              Cell index: 
+              1
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              bat
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-2"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-2"
+        >
+          <div>
+            <div>
+              Row index: 
+              0
+            </div>
+            <div>
+              Col index: 
+              2
+            </div>
+            <div>
+              Cell index: 
+              2
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              cat
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-3"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-3"
+        >
+          <div>
+            <div>
+              Row index: 
+              0
+            </div>
+            <div>
+              Col index: 
+              3
+            </div>
+            <div>
+              Cell index: 
+              3
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              dog
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell isSelectable"
+        data-testid="grid-cell-4"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-4"
+        >
+          <div>
+            <div>
+              Row index: 
+              0
+            </div>
+            <div>
+              Col index: 
+              4
+            </div>
+            <div>
+              Cell index: 
+              4
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              elephant
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="cell"
+        data-testid="grid-cell-5"
+      >
+        <div
+          class="cellContent"
+          data-testid="selection-grid-cell-5"
+        >
+          <div>
+            <div>
+              Row index: 
+              0
+            </div>
+            <div>
+              Col index: 
+              5
+            </div>
+            <div>
+              Cell index: 
+              5
+            </div>
+            <div>
+              isCellSelectable: 
+            </div>
+            <div>
+              fox
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

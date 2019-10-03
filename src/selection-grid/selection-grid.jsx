@@ -50,6 +50,9 @@ type Props = {
 
   /** Should return true if cell is empty. By default, it'll check if the instance at the position is null. */
   isCellEmpty?: GridCellInfo => boolean,
+
+  /** Invert rows showing from largest row to smallest */
+  invertRows?: boolean,
 };
 
 export const SelectionGrid = (props: Props) => {
@@ -64,6 +67,7 @@ export const SelectionGrid = (props: Props) => {
     cellRenderer,
     isCellSelectable = ({ instance }) => instance != null,
     isCellEmpty = ({ instance }) => instance == null,
+    invertRows,
   } = props;
 
   try {
@@ -87,6 +91,43 @@ export const SelectionGrid = (props: Props) => {
     }
   });
 
+  const rows = gridData.map((row, rowIndex) => {
+    let rowClass = classes.row;
+    if (typeof classes.row === "function") {
+      rowClass = classes.row(rowIndex);
+    }
+    return (
+      <div
+        data-testid={`selection-grid-row-${rowIndex}`}
+        className={classNames(styles.row, rowClass)}
+        key={rowIndex}
+      >
+        {showHeader && <GridHeader classes={classes}>{rowHeaders[rowIndex]}</GridHeader>}
+        {row.map((instance, colIndex) => {
+          const cellIndex = rowIndex * numCols + colIndex;
+          const gridCellInfo = {
+            rowIndex,
+            colIndex,
+            cellIndex,
+            instance,
+          };
+          return (
+            <GridCell
+              key={cellIndex}
+              gridCellInfo={gridCellInfo}
+              classes={classes}
+              isSelectable={!!onSelect && isCellSelectable(gridCellInfo)}
+              isSelected={selectedIndices.has(cellIndex)}
+              isEmpty={isCellEmpty(gridCellInfo)}
+              onSelect={onSelect}
+              cellRenderer={cellRenderer}
+            />
+          );
+        })}
+      </div>
+    );
+  });
+
   return (
     <div
       data-testid="selection-grid"
@@ -107,42 +148,7 @@ export const SelectionGrid = (props: Props) => {
           })}
         </div>
       )}
-      {gridData.map((row, rowIndex) => {
-        let rowClass = classes.row;
-        if (typeof classes.row === "function") {
-          rowClass = classes.row(rowIndex);
-        }
-        return (
-          <div
-            data-testid={`selection-grid-row-${rowIndex}`}
-            className={classNames(styles.row, rowClass)}
-            key={rowIndex}
-          >
-            {showHeader && <GridHeader classes={classes}>{rowHeaders[rowIndex]}</GridHeader>}
-            {row.map((instance, colIndex) => {
-              const cellIndex = rowIndex * numCols + colIndex;
-              const gridCellInfo = {
-                rowIndex,
-                colIndex,
-                cellIndex,
-                instance,
-              };
-              return (
-                <GridCell
-                  key={cellIndex}
-                  gridCellInfo={gridCellInfo}
-                  classes={classes}
-                  isSelectable={!!onSelect && isCellSelectable(gridCellInfo)}
-                  isSelected={selectedIndices.has(cellIndex)}
-                  isEmpty={isCellEmpty(gridCellInfo)}
-                  onSelect={onSelect}
-                  cellRenderer={cellRenderer}
-                />
-              );
-            })}
-          </div>
-        );
-      })}
+      {invertRows ? rows.reverse() : rows}
     </div>
   );
 };

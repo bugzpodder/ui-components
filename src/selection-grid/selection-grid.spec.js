@@ -12,6 +12,7 @@ const TestSelectionGrid = props => {
   const {
     mockOnSelect,
     classes,
+    invertRows,
     numRows = ALPHABET_ANIMALS_DATA.length,
     numCols = ALPHABET_ANIMALS_DATA[0].length,
   } = props;
@@ -52,6 +53,7 @@ const TestSelectionGrid = props => {
         isCellSelectable={isCellSelectable}
         onSelect={onSelect}
         classes={classes}
+        invertRows={invertRows}
       />
     </TestWrapper>
   );
@@ -60,6 +62,28 @@ const TestSelectionGrid = props => {
 test("render selection grid and select a cell", () => {
   const mockOnSelect = jest.fn(result => result);
   const { container, getByTestId } = render(<TestSelectionGrid mockOnSelect={mockOnSelect} />);
+  expect(container).toMatchSnapshot();
+
+  // Test selection.
+  const expectedResult = {
+    rowIndex: 0,
+    colIndex: 2,
+    cellIndex: 2,
+    instance: "cat",
+  };
+  expect(getByTestId("grid-cell-2")).not.toHaveClass("isSelected");
+  fireEvent.click(getByTestId("grid-cell-2"));
+  expect(mockOnSelect).toHaveBeenCalled();
+  expect(mockOnSelect.mock.results[0].value).toEqual(expectedResult);
+  expect(getByTestId("grid-cell-2")).toHaveClass("isSelected");
+});
+
+test("render selection grid and select a cell on an inverted grid", () => {
+  const mockOnSelect = jest.fn(result => result);
+  const { container, getByTestId } = render(<TestSelectionGrid
+    mockOnSelect={mockOnSelect}
+    invertRows
+  />);
   expect(container).toMatchSnapshot();
 
   // Test selection.

@@ -36,6 +36,7 @@
 31. Update /dist folder to fix import errors.
 32. Allow rows to be inverted in SelectionGrid.
 33. Add ability to disable tabs on CommonTabbedPageV2.
+34. Fix bug where observer call exceeding limit in CommonTabbedPageV2.
 
 ## 1.0.0 - 2019-06-17
 

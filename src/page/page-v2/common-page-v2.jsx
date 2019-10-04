@@ -82,7 +82,14 @@ export const CommonPageV2 = (props: Props) => {
       if (!currentRef) {
         return;
       }
-      const observer = new window.ResizeObserver(entries => setContentRect(entries[0].contentRect));
+      const observer = new window.ResizeObserver(entries => {
+        // We need to disconnect the observer and call observe upon requesting the animation
+        // frame to prevent exceeding the call limit of ResizeObserver.
+        // This is a known issue with the ResizeObserver: https://github.com/WICG/ResizeObserver/issues/38.
+        observer.disconnect(currentRef);
+        setContentRect(entries[0].contentRect);
+        requestAnimationFrame(() => observer.observe(currentRef));
+      });
       observer.observe(currentRef);
       return () => observer.disconnect(currentRef);
     }, [currentRef]);

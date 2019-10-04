@@ -67,7 +67,13 @@ test("render default Sidebar", () => {
 
   // Test default logos.
   expect(getByTestId("navbar-spec-logo")).toBeInTheDocument();
-  expect(queryByTestId("breast-cancer-ribbon")).not.toBeInTheDocument();
+  const date = new Date();
+  const month = date.getMonth();
+  // TODO(nsawas): Fix date for tests when refactoring component unit tests, so that this check doesn't need to
+  // exist and snapshots dont need to be regenerated around October.
+  if (month !== 9) {
+    expect(queryByTestId("breast-cancer-ribbon")).not.toBeInTheDocument();
+  }
 
   // Test production navbar (no DEV warning).
   rerender(<TestNavbar isProduction />);

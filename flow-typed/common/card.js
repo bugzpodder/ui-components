@@ -59,6 +59,7 @@ declare type PageConfigV2 = {
   className?: string,
   tabClasses?: Object,
   isVisible?: boolean,
+  isDisabled?: boolean,
 };
 
 declare type CommonPageV2Classes = {

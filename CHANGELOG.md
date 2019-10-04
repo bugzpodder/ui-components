@@ -35,6 +35,7 @@
 30. Fix bug to pass down onFocus and onBlur props in `TextInputV2` component.
 31. Update /dist folder to fix import errors.
 32. Allow rows to be inverted in SelectionGrid.
+33. Add ability to disable tabs on CommonTabbedPageV2.
 
 ## 1.0.0 - 2019-06-17
 

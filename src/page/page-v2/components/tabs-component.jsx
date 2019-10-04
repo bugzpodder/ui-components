@@ -35,7 +35,7 @@ export const TabsComponent = (props: Props) => {
     >
       {pageConfigs.map(tab => {
         const {
-          key, label, id, tabClasses = {},
+          key, label, id, tabClasses = {}, isDisabled,
         } = tab;
         return (
           <Tab
@@ -49,6 +49,7 @@ export const TabsComponent = (props: Props) => {
               ...tabClasses,
               root: classNames(classes.tab, styles.tab, "tabbed-page-tab"),
             }}
+            disabled={isDisabled}
             {...tabProps}
           />
         );

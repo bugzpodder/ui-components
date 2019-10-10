@@ -54,7 +54,7 @@ export const CommonDropdownMenu = (props: Props) => {
     setIsOpen(false);
   };
 
-  if (!menuItems || !menuItems.length) {
+  if (!menuItems) {
     return null;
   }
 

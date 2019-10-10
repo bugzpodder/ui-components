@@ -126,7 +126,12 @@ export const PagedTable = (props: PagedTableProps) => {
     tableOptions,
   };
   const numberSelected = (selectedRows && selectedRows.length) || 0;
-  const cardTitle = `${title}${numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}`;
+  const cardTitle = (
+    <>
+      {title}
+      {numberSelected > 0 ? ` (${numberSelected} Selected)` : ""}
+    </>
+  );
   const hasHeaderActions = Array.isArray(headerActions) ? headerActions.length > 0 : !!headerActions;
   return (
     <>

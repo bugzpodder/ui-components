@@ -94,7 +94,7 @@
           white-space: nowrap;
         }
 
-        .primaryAction + .primaryAction {
+        > * + * {
           margin-left: 5px;
         }
       }

@@ -134,13 +134,14 @@ exports[`render common tabbed page 1`] = `
         </div>
         <button
           aria-haspopup="true"
-          class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton"
+          class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton Mui-disabled Mui-disabled"
           data-testid="dropdown-button"
-          tabindex="0"
+          disabled=""
+          tabindex="-1"
           type="button"
         >
           <span
-            class="MuiIconButton-label"
+            class="MuiIconButton-label disabled"
           >
             <svg
               aria-hidden="true"
@@ -154,9 +155,6 @@ exports[`render common tabbed page 1`] = `
               />
             </svg>
           </span>
-          <span
-            class="MuiTouchRipple-root"
-          />
         </button>
       </div>
     </div>

@@ -45,7 +45,7 @@ declare type MenuItem = {
 };
 
 declare type HeaderAction = {
-  id: string,
+  id?: string,
   color?: Color,
   href?: string,
 } & ClickableItem;

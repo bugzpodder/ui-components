@@ -16,46 +16,56 @@ exports[`render ExternalLink 1`] = `
 
 exports[`render ExternalLink 2`] = `
 <div>
-  <a
-    aria-disabled="false"
-    class="MuiButtonBase-root MuiButton-root test MuiButton-text"
-    data-testid="external-link-button"
-    href="https://www.grail.com"
-    rel="noopener noreferrer"
-    tabindex="0"
-    target="_blank"
+  <div
+    class="button"
   >
-    <span
-      class="MuiButton-label"
+    <a
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiButton-root test link MuiButton-text"
+      data-testid="external-link-button"
+      href="https://www.grail.com"
+      rel="noopener noreferrer"
+      role="button"
+      tabindex="0"
+      target="_blank"
     >
-      GRAIL
-    </span>
-    <span
-      class="MuiTouchRipple-root"
-    />
-  </a>
+      <span
+        class="MuiButton-label"
+      >
+        GRAIL
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </a>
+  </div>
 </div>
 `;
 
 exports[`render ExternalLink 3`] = `
 <div>
-  <a
-    aria-disabled="false"
-    class="MuiButtonBase-root MuiButton-root test MuiButton-text"
-    data-testid="external-link-button"
-    href="https://www.grail.com"
-    rel="noopener noreferrer"
-    tabindex="0"
-    target="_blank"
+  <div
+    class="button"
   >
-    <span
-      class="MuiButton-label"
+    <a
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiButton-root test link MuiButton-text"
+      data-testid="external-link-button"
+      href="https://www.grail.com"
+      rel="noopener noreferrer"
+      role="button"
+      tabindex="0"
+      target="_blank"
     >
-      GRAIL
-    </span>
-    <span
-      class="MuiTouchRipple-root"
-    />
-  </a>
+      <span
+        class="MuiButton-label"
+      >
+        GRAIL
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </a>
+  </div>
 </div>
 `;

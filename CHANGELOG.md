@@ -37,6 +37,9 @@
 32. Allow rows to be inverted in SelectionGrid.
 33. Add ability to disable tabs on CommonTabbedPageV2.
 34. Fix bug where observer call exceeding limit in CommonTabbedPageV2.
+35. Fix ExportButton to take a className.
+36. Fix ExternalLinkButton styling not to highlight like a link
+37. Fix CommonPageV2 where secondary actions were not rendering in disabled state.
 
 ## 1.0.0 - 2019-06-17
 

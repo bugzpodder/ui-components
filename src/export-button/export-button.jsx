@@ -34,6 +34,8 @@ type Props = {
   filenamePrefix?: string,
   /* Props applied to the button component */
   buttonProps?: Object,
+  /* Classname applied to the button */
+  className?: string,
 };
 
 const DATA_SOURCE = {
@@ -68,7 +70,13 @@ export const pagedTableColumnsToExportableColumnsIfNecessary = (
 
 export const ExportButton = (props: Props) => {
   const {
-    columns, visibleRows, filenamePrefix = "export", fetchBulkExportRows, selectedRows, buttonProps,
+    columns,
+    visibleRows,
+    filenamePrefix = "export",
+    fetchBulkExportRows,
+    selectedRows,
+    buttonProps,
+    className,
   } = props;
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -294,6 +302,7 @@ export const ExportButton = (props: Props) => {
       </CommonDialog>
       <Button
         data-testid="export-button"
+        className={className}
         {...buttonProps}
         onClick={() => setIsOpen(true)}
       >

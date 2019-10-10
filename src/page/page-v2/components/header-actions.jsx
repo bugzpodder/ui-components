@@ -50,7 +50,7 @@ export const HeaderActions = forwardRef<Props, any>((props: Props, ref: any) => 
       </ComponentToUse>
     );
   });
-  const hasSecondaryActions = secondaryActions.length > 0;
+  const hasSecondaryActions = secondaryActions.some(action => action.content);
   return (
     <div
       ref={ref}

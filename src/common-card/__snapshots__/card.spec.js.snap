@@ -28,7 +28,7 @@ exports[`common card classes and margin 1`] = `
         class="MuiCardHeader-action headerActions"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
           tabindex="0"
           type="button"
         >

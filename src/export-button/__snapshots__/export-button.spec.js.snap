@@ -3,7 +3,7 @@
 exports[`render export table button 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
@@ -34,7 +34,7 @@ exports[`render export table button 1`] = `
 exports[`render export table button and click modal options 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
@@ -65,7 +65,7 @@ exports[`render export table button and click modal options 1`] = `
 exports[`render export table button as part of a paged table with fetchBulkExportRows 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
@@ -96,7 +96,7 @@ exports[`render export table button as part of a paged table with fetchBulkExpor
 exports[`render export table button as part of a paged table with selectable rows 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
@@ -127,7 +127,7 @@ exports[`render export table button as part of a paged table with selectable row
 exports[`render export table button as part of a paged table without selectable rows or fetchBulkExportRows 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"

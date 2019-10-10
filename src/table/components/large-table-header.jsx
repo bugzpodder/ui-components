@@ -31,7 +31,7 @@ export const LargeTableHeader = (props: Props) => {
                 [styles.tableHeader]: !isCheckboxColumn,
               })}
             >
-              {<div className={styles.headerText}>{Header}</div>}
+              <div className={styles.headerText}>{Header}</div>
             </div>
           );
         })}

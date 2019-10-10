@@ -55,19 +55,19 @@ exports[`render common tabbed page 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-103 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-114 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
-                    <span
-                      class="MuiSwitch-thumb"
-                    />
                     <input
-                      class="PrivateSwitchBase-input-106 MuiSwitch-input"
+                      class="PrivateSwitchBase-input-117 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
+                    />
+                    <span
+                      class="MuiSwitch-thumb"
                     />
                   </span>
                 </span>
@@ -153,7 +153,7 @@ exports[`render common tabbed page 1`] = `
             </button>
           </div>
           <span
-            class="PrivateTabIndicator-root-137 PrivateTabIndicator-colorPrimary-138 MuiTabs-indicator"
+            class="PrivateTabIndicator-root-148 PrivateTabIndicator-colorPrimary-149 MuiTabs-indicator"
             style="left: 0px; width: 0px;"
           />
         </div>

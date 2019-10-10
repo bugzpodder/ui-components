@@ -118,7 +118,7 @@ exports[`render common tabbed page 1`] = `
           data-testid="common-page-primary-actions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root primaryAction MuiButton-contained MuiButton-containedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary primaryAction"
             tabindex="0"
             type="button"
           >

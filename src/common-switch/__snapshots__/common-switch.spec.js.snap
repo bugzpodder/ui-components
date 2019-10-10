@@ -20,15 +20,15 @@ exports[`render error common switch 1`] = `
             <span
               class="MuiIconButton-label"
             >
-              <span
-                class="MuiSwitch-thumb"
-              />
               <input
                 checked=""
                 class="PrivateSwitchBase-input-158 MuiSwitch-input"
                 id=""
                 type="checkbox"
                 value=""
+              />
+              <span
+                class="MuiSwitch-thumb"
               />
             </span>
           </span>
@@ -66,14 +66,14 @@ exports[`render primary common switch 1`] = `
             <span
               class="MuiIconButton-label"
             >
-              <span
-                class="MuiSwitch-thumb"
-              />
               <input
                 class="PrivateSwitchBase-input-22 MuiSwitch-input"
                 id=""
                 type="checkbox"
                 value="test"
+              />
+              <span
+                class="MuiSwitch-thumb"
               />
             </span>
           </span>

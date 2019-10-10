@@ -3,7 +3,7 @@
 exports[`render style wrapper 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root-18 MuiButton-root-1 MuiButton-text-3 MuiButton-textPrimary-4"
+    class="MuiButtonBase-root-29 MuiButton-root-1 MuiButton-text-3 MuiButton-textPrimary-4"
     tabindex="0"
     type="button"
   >
@@ -13,11 +13,11 @@ exports[`render style wrapper 1`] = `
       Primary
     </span>
     <span
-      class="MuiTouchRipple-root-21"
+      class="MuiTouchRipple-root-32"
     />
   </button>
   <button
-    class="MuiButtonBase-root-18 MuiButton-root-1 MuiButton-contained-9 MuiButton-containedSecondary-11"
+    class="MuiButtonBase-root-29 MuiButton-root-1 MuiButton-contained-9 MuiButton-containedSecondary-11"
     tabindex="0"
     type="button"
   >
@@ -27,7 +27,7 @@ exports[`render style wrapper 1`] = `
       Secondary
     </span>
     <span
-      class="MuiTouchRipple-root-21"
+      class="MuiTouchRipple-root-32"
     />
   </button>
 </div>

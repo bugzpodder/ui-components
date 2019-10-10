@@ -157,7 +157,7 @@ export const LargeWideTableComponent = (props: Props) => {
           [styles.isLeftmostUnfrozenColumn]: isLeftmostUnfrozenColumn,
         })}
       >
-        {<div className={styles.headerText}>{Header}</div>}
+        <div className={styles.headerText}>{Header}</div>
       </div>
     );
   };

@@ -36,7 +36,7 @@ exports[`renders common page 1`] = `
           data-testid="common-page-primary-actions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root primaryAction MuiButton-contained MuiButton-containedPrimary"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary primaryAction"
             tabindex="0"
             type="button"
           >
@@ -61,19 +61,19 @@ exports[`renders common page 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-96 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-107 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
-                    <span
-                      class="MuiSwitch-thumb"
-                    />
                     <input
-                      class="PrivateSwitchBase-input-99 MuiSwitch-input"
+                      class="PrivateSwitchBase-input-110 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
+                    />
+                    <span
+                      class="MuiSwitch-thumb"
                     />
                   </span>
                 </span>

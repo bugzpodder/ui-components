@@ -74,7 +74,7 @@ exports[`render upload button with default text and default props for uploading 
   </label>
   <label
     aria-disabled="false"
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
     role="button"
     tabindex="0"
   >

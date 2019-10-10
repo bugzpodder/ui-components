@@ -20,7 +20,7 @@ exports[`render selector 1`] = `
         class="sign-in"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
           data-testid="sign-in-button"
           tabindex="0"
           type="button"
@@ -60,7 +60,7 @@ exports[`render selector with child 1`] = `
         class="sign-in"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
           data-testid="sign-in-button"
           tabindex="0"
           type="button"

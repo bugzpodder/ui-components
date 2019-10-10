@@ -21,7 +21,7 @@ exports[`render ExternalLink 2`] = `
   >
     <a
       aria-disabled="false"
-      class="MuiButtonBase-root MuiButton-root test link MuiButton-text"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text test link"
       data-testid="external-link-button"
       href="https://www.grail.com"
       rel="noopener noreferrer"
@@ -49,7 +49,7 @@ exports[`render ExternalLink 3`] = `
   >
     <a
       aria-disabled="false"
-      class="MuiButtonBase-root MuiButton-root test link MuiButton-text"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text test link"
       data-testid="external-link-button"
       href="https://www.grail.com"
       rel="noopener noreferrer"

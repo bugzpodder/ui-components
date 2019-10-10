@@ -59,6 +59,7 @@ type State = {
  * Both of these will trigger a call to `setSearchOptions` with `isUserSearchAction: true`
  */
 export class OmniSearchBar extends React.Component<Props, State> {
+  // eslint-disable-next-line   react/state-in-constructor
   state: State = {
     isOpen: false,
     omniText: "",

@@ -88,7 +88,7 @@ exports[`CommonMultiSelect label 1`] = `
                   </span>
                 </div>
                 <div
-                  class="css-1g6gooi"
+                  class="css-w8afj7-Input"
                 >
                   <div
                     class="common-select__input"
@@ -113,7 +113,7 @@ exports[`CommonMultiSelect label 1`] = `
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1wy0on6"
+                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
               >
                 <svg
                   aria-hidden="true"
@@ -234,7 +234,7 @@ exports[`CommonMultiSelect margin 1`] = `
                   </span>
                 </div>
                 <div
-                  class="css-1g6gooi"
+                  class="css-w8afj7-Input"
                 >
                   <div
                     class="common-select__input"
@@ -259,7 +259,7 @@ exports[`CommonMultiSelect margin 1`] = `
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1wy0on6"
+                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
               >
                 <svg
                   aria-hidden="true"
@@ -380,7 +380,7 @@ exports[`CommonMultiSelect variant 1`] = `
                   </span>
                 </div>
                 <div
-                  class="css-1g6gooi"
+                  class="css-w8afj7-Input"
                 >
                   <div
                     class="common-select__input"
@@ -405,7 +405,7 @@ exports[`CommonMultiSelect variant 1`] = `
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1wy0on6"
+                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
               >
                 <svg
                   aria-hidden="true"
@@ -526,7 +526,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                   </span>
                 </div>
                 <div
-                  class="css-1g6gooi"
+                  class="css-w8afj7-Input"
                 >
                   <div
                     class="common-select__input"
@@ -551,7 +551,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1wy0on6"
+                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
               >
                 <svg
                   aria-hidden="true"

@@ -3,7 +3,7 @@
 exports[`render export table button 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-text"
+    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"

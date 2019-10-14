@@ -1,10 +1,12 @@
 // @flow
-import React from "react";
+import React, { useState } from "react";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableRow from "@material-ui/core/TableRow";
 import classNames from "classnames";
+import keyBy from "lodash/keyBy";
+import mapValues from "lodash/mapValues";
 import styles from "../table.module.scss";
 import { PagedTableRow } from "./table-row";
 import { TableHeader } from "./table-header";
@@ -25,6 +27,7 @@ type Props = {
   tableOptions?: SimpleTableOptions,
   enableSelectAll: boolean,
   shadeOnHover: boolean,
+  hasColumnVisibilityChooser?: boolean,
 };
 
 export const TableComponent = (props: Props) => {
@@ -42,6 +45,7 @@ export const TableComponent = (props: Props) => {
     tableOptions,
     enableSelectAll,
     shadeOnHover,
+    hasColumnVisibilityChooser = false,
     ...tableProps
   } = props;
   const sortingProps = { onSort, tableOptions };
@@ -59,8 +63,28 @@ export const TableComponent = (props: Props) => {
     onHighlightRow,
     highlightedRowId,
   };
-  let tableColumns = onSelect ? [getCheckboxColumn(selectionProps), ...columns] : columns;
-  tableColumns = tableColumns.filter(column => !column.excludeFromTable);
+  const availableColumns = columns.filter(column => column.excludeFromTable !== true);
+  let tableColumns = availableColumns.map((column, index) => ({
+    ...column,
+    index,
+  }));
+  const [columnVisibility, setColumnVisibility] = useState<{ [number]: boolean }>(
+    // This simply constructs a map from the column index to a boolean
+    // representing whether or not the column is visible.
+    mapValues(
+      keyBy(tableColumns, column => column.index),
+      // TODO(ecarrel): maybe retrieve visibility values from localstorage once
+      //  they are stored there.
+      column => column.showByDefault !== false,
+    ),
+  );
+  tableColumns = tableColumns.map(column => ({
+    ...column,
+    isVisible: !hasColumnVisibilityChooser || columnVisibility[column.index],
+  }));
+  if (onSelect) {
+    tableColumns = [getCheckboxColumn(selectionProps), ...tableColumns];
+  }
   const hasHeaders = tableColumns.find(column => column.Header);
   return (
     <Table
@@ -76,6 +100,9 @@ export const TableComponent = (props: Props) => {
           // $FlowFixMe undefined props are incompatible with flow definitions.
           sortingProps={sortingProps}
           enableSelectAll={enableSelectAll}
+          hasColumnVisibilityChooser={hasColumnVisibilityChooser}
+          columnVisibility={columnVisibility}
+          setColumnVisibility={setColumnVisibility}
         />
       )}
       <TableBody>
@@ -92,6 +119,7 @@ export const TableComponent = (props: Props) => {
                 rowIndex={index}
                 shadeOnHover={shadeOnHover}
                 className={classes.rows || ""}
+                hasColumnVisibilityChooser={hasColumnVisibilityChooser}
               />
             );
           })}

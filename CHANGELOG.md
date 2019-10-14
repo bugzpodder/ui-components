@@ -43,6 +43,8 @@
 38. Add optional `href` prop to actions in `CommonDropdownMenu`.
 39. Make title larger in `CommonPageV2`.
 40. Support `isVisible` parameter on page configs in `CommonTabbedPageV2`.
+41. Add `hasColumnVisibilityChooser` prop to `SimpleTable` and `PagedTable` which, if enabled, allows user to select
+    which columns should be shown/hidden.
 
 ## 1.0.0 - 2019-06-17
 

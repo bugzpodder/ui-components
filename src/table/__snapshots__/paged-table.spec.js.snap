@@ -2025,6 +2025,929 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
 </div>
 `;
 
+exports[`render paged table with column visibility chooser 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation6 MuiCard-root pagedTableCardRoot card MuiPaper-rounded"
+    data-testid="paged-table"
+  >
+    <div
+      class="MuiCardHeader-root"
+      data-testid="card-header"
+    >
+      <div
+        class="MuiCardHeader-content"
+      >
+        <span
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
+          data-testid="card-title"
+        >
+          
+          
+        </span>
+        <span
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="MuiCardHeader-action headerActions"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="MuiTableHead-root TableHeader"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="MuiTableCell-root tableHeader MuiTableCell-head"
+              scope="col"
+            />
+            <th
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-head"
+              scope="col"
+            >
+              <button
+                class="MuiButtonBase-root MuiIconButton-root"
+                data-testid="column-visibility-chooser-button"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="0"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="0-1"
+            >
+              Second Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-third-datum-className MuiTableCell-body"
+              data-cell-id="0-2"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="1"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="1-1"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-sixth-datum-className MuiTableCell-body"
+              data-cell-id="1-2"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="2"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="2-1"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-ninth-datum-className MuiTableCell-body"
+              data-cell-id="2-2"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="3"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="3-1"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-twelfth-datum-className MuiTableCell-body"
+              data-cell-id="3-2"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="4"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="4-1"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-sixteenth-datum-className MuiTableCell-body"
+              data-cell-id="4-2"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="5"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="5-1"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-ninteenth-datum-className MuiTableCell-body"
+              data-cell-id="5-2"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with column visibility chooser 2`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="MuiPaper-root MuiPaper-elevation6 MuiCard-root pagedTableCardRoot card MuiPaper-rounded"
+    data-testid="paged-table"
+  >
+    <div
+      class="MuiCardHeader-root"
+      data-testid="card-header"
+    >
+      <div
+        class="MuiCardHeader-content"
+      >
+        <span
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
+          data-testid="card-title"
+        >
+          
+          
+        </span>
+        <span
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="MuiCardHeader-action headerActions"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="MuiTableHead-root TableHeader"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root tableHeader columnTwo-header MuiTableCell-head"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="MuiTableCell-root tableHeader MuiTableCell-head"
+              scope="col"
+            />
+            <th
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-head"
+              scope="col"
+            >
+              <button
+                class="MuiButtonBase-root MuiIconButton-root"
+                data-testid="column-visibility-chooser-button"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="0"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="0-1"
+            >
+              Second Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-third-datum-className MuiTableCell-body"
+              data-cell-id="0-2"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="1"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="1-1"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-sixth-datum-className MuiTableCell-body"
+              data-cell-id="1-2"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="2"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="2-1"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-ninth-datum-className MuiTableCell-body"
+              data-cell-id="2-2"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="3"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="3-1"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-twelfth-datum-className MuiTableCell-body"
+              data-cell-id="3-2"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="4"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="4-1"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-sixteenth-datum-className MuiTableCell-body"
+              data-cell-id="4-2"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="5"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="5-1"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-ninteenth-datum-className MuiTableCell-body"
+              data-cell-id="5-2"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with column visibility chooser 3`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation6 MuiCard-root pagedTableCardRoot card MuiPaper-rounded"
+    data-testid="paged-table"
+  >
+    <div
+      class="MuiCardHeader-root"
+      data-testid="card-header"
+    >
+      <div
+        class="MuiCardHeader-content"
+      >
+        <span
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
+          data-testid="card-title"
+        >
+          
+          
+        </span>
+        <span
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="MuiCardHeader-action headerActions"
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="MuiTable-root table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="MuiTableHead-root TableHeader"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
+          >
+            <th
+              class="MuiTableCell-root tableHeader columnOne-header MuiTableCell-head"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="MuiTableCell-root tableHeader MuiTableCell-head"
+              scope="col"
+            />
+            <th
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-head"
+              scope="col"
+            >
+              <button
+                class="MuiButtonBase-root MuiIconButton-root"
+                data-testid="column-visibility-chooser-button"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="0"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-third-datum-className MuiTableCell-body"
+              data-cell-id="0-1"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="1"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-sixth-datum-className MuiTableCell-body"
+              data-cell-id="1-1"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="2"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-ninth-datum-className MuiTableCell-body"
+              data-cell-id="2-1"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="3"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-twelfth-datum-className MuiTableCell-body"
+              data-cell-id="3-1"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="4"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-sixteenth-datum-className MuiTableCell-body"
+              data-cell-id="4-1"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+          <tr
+            class="MuiTableRow-root tableRow"
+            data-testid="5"
+          >
+            <td
+              class="MuiTableCell-root tableCell MuiTableCell-body"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root tableCell test-ninteenth-datum-className MuiTableCell-body"
+              data-cell-id="5-1"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+            <td
+              class="MuiTableCell-root singleIcon iconInHeaderOnly MuiTableCell-body"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="MuiTypography-root tableSummary MuiTypography-body1"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`render paged table with default ids, and test row highlighting 1`] = `
 <div>
   <div

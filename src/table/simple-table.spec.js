@@ -4,7 +4,9 @@ import React from "react";
 import mockConsole from "jest-mock-console";
 import { SimpleTable } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "@testing-library/react";
+import {
+  cleanup, fireEvent, render, wait, waitForElementToBeRemoved,
+} from "@testing-library/react";
 import {
   columns, data, invalidColumns, tableOptions,
 } from "./utilities/test-table-properties";
@@ -96,6 +98,39 @@ test("render full simple table", () => {
       />
     </TestWrapper>,
   );
+  expect(container).toMatchSnapshot();
+});
+
+test("render simple table with column visibility chooser", async () => {
+  const {
+    container, getByTestId, queryByTestId, queryByText,
+  } = render(
+    <TestWrapper>
+      <SimpleTable
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        hasColumnVisibilityChooser
+      />
+    </TestWrapper>,
+  );
+  expect(queryByText("Second Datum")).toBeVisible();
+  expect(queryByTestId("column-visibility-chooser-popover")).not.toBeInTheDocument();
+  expect(container).toMatchSnapshot();
+  fireEvent.click(getByTestId("column-visibility-chooser-button"));
+  expect(getByTestId("column-visibility-chooser-popover")).toBeVisible();
+  expect(container).toMatchSnapshot();
+  expect(getByTestId("column-visibility-chooser-popover-apply-button")).toBeDisabled();
+  expect(getByTestId("column-item-checkbox-1")).toHaveAttribute("checked", "");
+  fireEvent.click(getByTestId("column-item-checkbox-1"));
+  await wait(() => {
+    expect(getByTestId("column-visibility-chooser-popover-apply-button")).not.toBeDisabled();
+  });
+  // Since we haven't clicked "Apply" yet, expect data to still be visible.
+  expect(queryByText("Second Datum")).toBeVisible();
+  fireEvent.click(getByTestId("column-visibility-chooser-popover-apply-button"));
+  await waitForElementToBeRemoved(() => queryByTestId("column-visibility-chooser-popover"));
+  expect(queryByText("Second Datum")).not.toBeInTheDocument();
   expect(container).toMatchSnapshot();
 });
 

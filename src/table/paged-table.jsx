@@ -91,6 +91,8 @@ export type PagedTableProps = {
   isFullBleed?: boolean,
   /** Displays rows as shade when hovered over. Can only be used with onHighlightRow */
   shadeOnHover?: boolean,
+  /** Allows user to show/hide columns. */
+  hasColumnVisibilityChooser?: boolean,
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */

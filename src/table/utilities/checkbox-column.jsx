@@ -61,5 +61,7 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
         />
       );
     },
+    isVisible: true,
+    index: -1,
   };
 };

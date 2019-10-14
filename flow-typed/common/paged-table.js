@@ -17,6 +17,11 @@ declare type PagedTableCell = {
   value: any,
 };
 
+declare type InternalPagedTableColumn = {
+  index: number,
+  isVisible: boolean,
+} & PagedTableColumn;
+
 declare type PagedTableColumn = {
   Header?: Node<*>,
   sortable?: boolean,
@@ -35,6 +40,14 @@ declare type PagedTableColumn = {
   // If defined, this field is used instead of the "accessor" field to sort by.
   // Typically useful when "accessor" is a function.
   sortAccessor?: string,
+  // Defines whether or not the column should be shown or hidden by default. If
+  // hidden by default, it can be enabled using the column chooser. This prop
+  // has no effect if hasColumnVisibilityChooser is false. Defaults to true.
+  showByDefault?: boolean,
+  // If true, this column cannot be hidden via the column visibility chooser.
+  // This prop has no effect if hasColumnVisibilityChooser is false. Defaults to
+  // false.
+  isRequired?: boolean,
 } & $Shape<ExportableColumn>;
 
 declare type PagedTableClasses = {

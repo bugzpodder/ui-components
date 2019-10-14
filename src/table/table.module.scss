@@ -98,6 +98,9 @@ $scrollbar-width: 7px;
   .singleIcon {
     padding: 0;
     width: 80px;
+    &.iconInHeaderOnly {
+      width: 60px;
+    }
     @include media-breakpoint-up(md) {
       padding: 0 10px 0 8px;
     }

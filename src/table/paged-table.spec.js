@@ -13,7 +13,9 @@ import {
   invalidTableOptions,
   tableOptions,
 } from "./utilities/test-table-properties";
-import { cleanup, fireEvent, render } from "@testing-library/react";
+import {
+  cleanup, fireEvent, render, wait, waitForElementToBeRemoved,
+} from "@testing-library/react";
 
 afterEach(cleanup);
 
@@ -202,6 +204,39 @@ test("render paged table and test sorting", () => {
   );
   fireEvent.click(getByTestId("sort-columnOne"));
   expect(mockSort.mock.results[0].value).toEqual({ sortOptions: [{ id: "columnOne", desc: true }] });
+  expect(container).toMatchSnapshot();
+});
+
+test("render paged table with column visibility chooser", async () => {
+  const {
+    container, getByTestId, queryByTestId, queryByText,
+  } = render(
+    <TestWrapper>
+      <PagedTable
+        columns={columns}
+        data={data}
+        tableOptions={tableOptions}
+        hasColumnVisibilityChooser
+      />
+    </TestWrapper>,
+  );
+  expect(queryByText("Second Datum")).toBeVisible();
+  expect(queryByTestId("column-visibility-chooser-popover")).not.toBeInTheDocument();
+  expect(container).toMatchSnapshot();
+  fireEvent.click(getByTestId("column-visibility-chooser-button"));
+  expect(getByTestId("column-visibility-chooser-popover")).toBeVisible();
+  expect(container).toMatchSnapshot();
+  expect(getByTestId("column-visibility-chooser-popover-apply-button")).toBeDisabled();
+  expect(getByTestId("column-item-checkbox-1")).toHaveAttribute("checked", "");
+  fireEvent.click(getByTestId("column-item-checkbox-1"));
+  await wait(() => {
+    expect(getByTestId("column-visibility-chooser-popover-apply-button")).not.toBeDisabled();
+  });
+  // Since we haven't clicked "Apply" yet, expect data to still be visible.
+  expect(queryByText("Second Datum")).toBeVisible();
+  fireEvent.click(getByTestId("column-visibility-chooser-popover-apply-button"));
+  await waitForElementToBeRemoved(() => queryByTestId("column-visibility-chooser-popover"));
+  expect(queryByText("Second Datum")).not.toBeInTheDocument();
   expect(container).toMatchSnapshot();
 });
 

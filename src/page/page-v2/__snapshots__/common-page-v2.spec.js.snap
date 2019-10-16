@@ -15,7 +15,7 @@ exports[`renders common page 1`] = `
         data-testid="common-page-title-container"
       >
         <h6
-          class="MuiTypography-root title MuiTypography-subtitle1 MuiTypography-noWrap"
+          class="MuiTypography-root title MuiTypography-h6 MuiTypography-noWrap"
           data-testid="common-page-title"
         >
           Test Card

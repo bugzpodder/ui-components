@@ -5,6 +5,8 @@ import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import React, { useState } from "react";
+import styles from "./dropdown-menu.module.scss";
+import { Link } from "react-router-dom";
 
 type Props = {
   /** The id of the dropdown portion of the menu, used for accessibility */
@@ -13,7 +15,7 @@ type Props = {
   buttonContent: Node,
   /** An array of DropdownMenuItems to render in the dropdown. Options include:
    *
-   *  - `textContent`: The text to display in the menu item.
+   *  - `content`: The text to display in the menu item.
    *
    *  - `isEnabled`: Optional. Whether the MenuItem is disabled (i.e. not clickable).
    *
@@ -89,8 +91,10 @@ export const CommonDropdownMenu = (props: Props) => {
         classes={menuClasses}
       >
         {menuItems &&
-          menuItems.map(({ content, onClick, isEnabled = true }, index) => {
-            return (
+          menuItems.map(({
+            content, onClick, isEnabled = true, href,
+          }, index) => {
+            const menuItem = (
               <MenuItem
                 onClick={(e: MouseEvent) => {
                   if (!isEnabled) {
@@ -105,6 +109,17 @@ export const CommonDropdownMenu = (props: Props) => {
                 {content}
               </MenuItem>
             );
+            if (href) {
+              return (
+                <Link
+                  to={href}
+                  className={styles.link}
+                >
+                  {menuItem}
+                </Link>
+              );
+            }
+            return menuItem;
           })}
       </Menu>
     </>

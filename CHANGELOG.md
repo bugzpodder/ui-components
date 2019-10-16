@@ -34,12 +34,14 @@
 29. Rename package to `@grailbio/components`, publish to github and npm.
 30. Fix bug to pass down onFocus and onBlur props in `TextInputV2` component.
 31. Update /dist folder to fix import errors.
-32. Allow rows to be inverted in SelectionGrid.
-33. Add ability to disable tabs on CommonTabbedPageV2.
-34. Fix bug where observer call exceeding limit in CommonTabbedPageV2.
-35. Fix ExportButton to take a className.
-36. Fix ExternalLinkButton styling not to highlight like a link
-37. Fix CommonPageV2 where secondary actions were not rendering in disabled state.
+32. Allow rows to be inverted in `SelectionGrid`.
+33. Add ability to disable tabs on `CommonTabbedPageV2`.
+34. Fix bug where observer call exceeding limit in `CommonTabbedPageV2`.
+35. Fix `ExportButton` to take a className.
+36. Fix `ExternalLinkButton` styling not to highlight like a link
+37. Fix `CommonPageV2` where secondary actions were not rendering in disabled state.
+38. Add optional `href` prop to actions in `CommonDropdownMenu`.
+39. Make title larger in `CommonPageV2`.
 
 ## 1.0.0 - 2019-06-17
 

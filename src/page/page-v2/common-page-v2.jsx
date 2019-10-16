@@ -48,7 +48,7 @@ type Props = {
   /** Primary actions to display on the header */
   primaryActions?: Array<HeaderAction>,
   /** Secondary actions to display in the secondary actions menu */
-  secondaryActions?: Array<HeaderAction>,
+  secondaryActions?: Array<DropdownMenuItem>,
 };
 
 /**

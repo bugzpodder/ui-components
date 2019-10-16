@@ -31,7 +31,7 @@ export const TitleComponent = forwardRef<Props, any>((props: Props, ref: any) =>
         <Typography
           noWrap
           data-testid="common-page-title"
-          variant="subtitle1"
+          variant="h6"
           className={classNames(styles.title, classes.title)}
         >
           {title}

@@ -42,6 +42,7 @@
 37. Fix `CommonPageV2` where secondary actions were not rendering in disabled state.
 38. Add optional `href` prop to actions in `CommonDropdownMenu`.
 39. Make title larger in `CommonPageV2`.
+40. Support `isVisible` parameter on page configs in `CommonTabbedPageV2`.
 
 ## 1.0.0 - 2019-06-17
 

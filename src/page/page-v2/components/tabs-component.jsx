@@ -33,27 +33,29 @@ export const TabsComponent = (props: Props) => {
         scrollButtons: styles.scrollButton,
       }}
     >
-      {pageConfigs.map(tab => {
-        const {
-          key, label, id, tabClasses = {}, isDisabled,
-        } = tab;
-        return (
-          <Tab
-            wrapped={!wrapTabLabels}
-            key={key}
-            value={key}
-            label={label}
-            id={id}
-            data-testid={id}
-            classes={{
-              ...tabClasses,
-              root: classNames(classes.tab, styles.tab, "tabbed-page-tab"),
-            }}
-            disabled={isDisabled}
-            {...tabProps}
-          />
-        );
-      })}
+      {pageConfigs
+        .filter(({ isVisible = true }) => isVisible)
+        .map(tab => {
+          const {
+            key, label, id, tabClasses = {}, isDisabled,
+          } = tab;
+          return (
+            <Tab
+              wrapped={!wrapTabLabels}
+              key={key}
+              value={key}
+              label={label}
+              id={id}
+              data-testid={id}
+              classes={{
+                ...tabClasses,
+                root: classNames(classes.tab, styles.tab, "tabbed-page-tab"),
+              }}
+              disabled={isDisabled}
+              {...tabProps}
+            />
+          );
+        })}
     </Tabs>
   );
 };

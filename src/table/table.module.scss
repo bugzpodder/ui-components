@@ -67,7 +67,8 @@
 $scrollbar-width: 7px;
 .tableContainer {
   position: relative;
-  overflow: auto;
+  height: 300px;
+  overflow: hidden;
   // Make scrollbar more obvious on tables, since users have a hard time seeing
   // overflowable content (especially on Mac)
   @include grail-scrollbar($scrollbar-width);
@@ -119,6 +120,10 @@ $scrollbar-width: 7px;
     max-width: 200px;
     word-wrap: break-word;
   }
+}
+.autosizeHeight {
+  height: 100%;
+  max-height: unset;
 }
 .spinnerOverlay {
   z-index: 2;

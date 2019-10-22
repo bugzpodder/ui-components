@@ -24,6 +24,7 @@ type Props = {
   enableSelectAll: boolean,
   rowHeight?: number | ((Object, number) => number),
   numFrozenColumns?: number,
+  height?: number,
 };
 
 export const LargeWideTableComponent = (props: Props) => {
@@ -42,6 +43,7 @@ export const LargeWideTableComponent = (props: Props) => {
     tableOptions,
     enableSelectAll = true,
     rowHeight = 50,
+    height = 300,
   } = props;
   let { numFrozenColumns = 1 } = props;
   if (!isLoading && data.length === 0) {
@@ -56,7 +58,6 @@ export const LargeWideTableComponent = (props: Props) => {
     highlightedRowId,
   };
   const defaultColumnSize = 150;
-  const height = 300;
   const overscanColumnCount = 1;
   const overscanRowCount = 1;
   const rowCount = data.length;

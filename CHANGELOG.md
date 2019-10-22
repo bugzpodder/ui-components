@@ -46,6 +46,7 @@
 41. Add `hasColumnVisibilityChooser` prop to `SimpleTable` and `PagedTable` which, if enabled, allows user to select
     which columns should be shown/hidden.
 42. Make LargeSimpleTable sortable.
+43. Add `autosizeHeight` prop to `LargeSimpleTable`.
 
 ## 1.0.0 - 2019-06-17
 

@@ -2,6 +2,7 @@
 import React from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
+import { AutoSizer } from "react-virtualized";
 import { LargeTableComponent } from "./components/large-table-component";
 import { LargeWideTableComponent } from "./components/large-wide-table-component";
 import { SpinnerOverlay } from "../spinner-overlay";
@@ -72,21 +73,42 @@ type Props = {
    * number.
    */
   numFrozenColumns?: number,
+  /**
+   * If true, autosize the table to fill the entire height of the parent. Defaults to false.
+   */
+  autosizeHeight?: boolean,
 };
 
 /** Provides a large simple table for displaying data, with the ability to opt into additional features. */
 export const LargeSimpleTable = (props: Props) => {
   const {
-    columns, classes = {}, data, isLoading = false,
+    columns, classes = {}, data, isLoading = false, autosizeHeight = false,
   } = props;
   const { isWide = false, ...otherProps } = props;
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");
   }
+  const TableComponent = isWide ? LargeWideTableComponent : LargeTableComponent;
   return (
-    <div className={classNames(styles.tableContainer, classes.tableContainer)}>
-      {!isWide && <LargeTableComponent {...otherProps} />}
-      {isWide && <LargeWideTableComponent {...otherProps} />}
+    <div
+      className={classNames(styles.tableContainer, classes.tableContainer, {
+        [styles.autosizeHeight]: autosizeHeight,
+      })}
+    >
+      {autosizeHeight ? (
+        <AutoSizer disableWidth>
+          {({ height }) => {
+            return (
+              <TableComponent
+                height={height}
+                {...otherProps}
+              />
+            );
+          }}
+        </AutoSizer>
+      ) : (
+        <TableComponent {...otherProps} />
+      )}
       {isLoading && <SpinnerOverlay className={styles.spinnerOverlay} />}
     </div>
   );

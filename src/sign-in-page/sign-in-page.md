@@ -17,6 +17,7 @@ import backgroundImage from "./spec-background.png";
     <SignInPage
       logo={<h2>Import `GrailLogo` from `@grail/common-private` Package</h2>}
       backgroundImage={backgroundImage}
+      subheader={"Non-default message"}
     />
   </div>
 </ExampleWrapper>;

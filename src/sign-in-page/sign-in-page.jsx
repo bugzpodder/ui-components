@@ -25,11 +25,14 @@ type Props = {
   backgroundImage?: string,
   /** Optional inner content shown under `Sign In` button */
   children?: Node<>,
+  /** Optional string to override default typography subheader */
+  subheader?: string,
 };
 
+const DEFAULT_SUBHEADER = "Detect cancer early, when it can be cured.";
 export const SignInPage = (props: Props) => {
   const {
-    logo, onSignIn, backgroundImage, children,
+    logo, onSignIn, backgroundImage, subheader = DEFAULT_SUBHEADER, children,
   } = props;
   return (
     <div className={styles.signInPage}>
@@ -41,7 +44,7 @@ export const SignInPage = (props: Props) => {
       />
       <div className={styles.contents}>
         {logo}
-        <Typography className={styles.mission}>Detect cancer early, when it can be cured.</Typography>
+        <Typography className={styles.mission}>{subheader}</Typography>
         <div className="sign-in">
           <Button
             data-testid="sign-in-button"

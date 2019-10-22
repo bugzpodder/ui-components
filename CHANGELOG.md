@@ -47,6 +47,7 @@
     which columns should be shown/hidden.
 42. Make LargeSimpleTable sortable.
 43. Add `autosizeHeight` prop to `LargeSimpleTable`.
+44. Add optional `subheader` prop to SignInPage.
 
 ## 1.0.0 - 2019-06-17
 

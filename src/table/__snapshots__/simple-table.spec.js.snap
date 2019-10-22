@@ -1390,7 +1390,7 @@ exports[`render simple table with column visibility chooser 1`] = `
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"
+                    d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                   />
                 </svg>
               </span>
@@ -1645,7 +1645,7 @@ exports[`render simple table with column visibility chooser 2`] = `
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"
+                    d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                   />
                 </svg>
               </span>
@@ -1892,7 +1892,7 @@ exports[`render simple table with column visibility chooser 3`] = `
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"
+                    d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                   />
                 </svg>
               </span>

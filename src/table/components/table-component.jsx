@@ -21,7 +21,7 @@ type Props = {
   classes?: PagedTableClasses,
   idKey?: string | number,
   onSelect?: (Array<any>) => any,
-  onSort?: SortOption => any,
+  onSort?: ({ sortOptions: SortOptions }) => any,
   onHighlightRow?: (?number | ?string) => any,
   highlightedRowId?: ?number | ?string,
   tableOptions?: SimpleTableOptions,

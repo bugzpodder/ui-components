@@ -76,8 +76,8 @@ declare type PaginationProps = {
 };
 
 declare type SortingProps = {
-  onSort: ({ sortOptions: SortOptions }) => any,
-  tableOptions: PagedTableOptions,
+  onSort?: ({ sortOptions: SortOptions }) => any,
+  tableOptions?: SimpleTableOptions,
 };
 
 declare type HighlightRowProps = {

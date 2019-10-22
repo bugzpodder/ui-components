@@ -17,8 +17,10 @@ type Props = {
   classes?: PagedTableClasses,
   idKey?: string | number,
   onSelect?: (Array<any>) => any,
+  onSort?: ({ sortOptions: SortOptions }) => any,
   onHighlightRow?: (?number | ?string) => any,
   highlightedRowId?: ?number | ?string,
+  tableOptions?: SimpleTableOptions,
   enableSelectAll: boolean,
   rowHeight?: number | ((Object, number) => number),
 };
@@ -32,8 +34,10 @@ export const LargeTableComponent = (props: Props) => {
     idKey,
     isLoading,
     onSelect,
+    onSort,
     selectedRows,
     onHighlightRow,
+    tableOptions,
     highlightedRowId,
     enableSelectAll = true,
     rowHeight,
@@ -41,6 +45,7 @@ export const LargeTableComponent = (props: Props) => {
   if (!isLoading && data.length === 0) {
     return <Typography>No data</Typography>;
   }
+  const sortingProps = { onSort, tableOptions };
   const selectionProps = {
     data,
     idKey,
@@ -54,6 +59,7 @@ export const LargeTableComponent = (props: Props) => {
     <div>
       <LargeTableHeader
         tableColumns={tableColumns}
+        sortingProps={sortingProps}
         enableSelectAll={enableSelectAll}
       />
       <AutoSizer disableHeight>

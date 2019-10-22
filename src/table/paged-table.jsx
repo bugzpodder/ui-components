@@ -79,7 +79,7 @@ export type PagedTableProps = {
    *
    * Must change the state of `tableOptions {sortOptions: Array<{id: string, desc: boolean}>`
    */
-  onSort?: Object => any,
+  onSort?: ({ sortOptions: SortOptions }) => any,
   /** Enables the "select all" checkbox if specified (default: true). */
   enableSelectAll?: boolean,
   /** Props for the CommonCard component */

@@ -45,6 +45,14 @@ type Props = {
   onHighlightRow?: (?string | ?number) => any,
   /** Provides the id for the highlighted row when onHighlightRow is used */
   highlightedRowId?: ?string | ?number,
+  /** Parameters for onSort (see documentation for function) */
+  tableOptions?: SimpleTableOptions,
+  /**
+   * Enables sorting.
+   *
+   * Must change the state of `tableOptions {sortOptions: Array<{id: string, desc: boolean}>`
+   */
+  onSort?: ({ sortOptions: SortOptions }) => any,
   enableSelectAll?: boolean,
   /**
    * Provides the rowHeight for each row of the table. Can take either a number

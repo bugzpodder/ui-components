@@ -51,7 +51,7 @@ type Props = {
    *
    * Must change the state of `tableOptions {sortOptions: Array<{id: string, desc: boolean}>`
    */
-  onSort?: Object => any,
+  onSort?: ({ sortOptions: SortOptions }) => any,
   /** Enables the "select all" checkbox if specified (default: true). */
   enableSelectAll?: boolean,
   /** Displays rows as shade when hovered over. Can only be used with onHighlightRow */

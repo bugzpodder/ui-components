@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./large-table.module.scss";
 import { AutoSizer, Grid, ScrollSync } from "react-virtualized";
+import { InnerTableHeader } from "./inner-table-header";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId } from "../utilities/row-utils";
 
@@ -16,8 +17,10 @@ type Props = {
   classes?: PagedTableClasses,
   idKey?: string | number,
   onSelect?: (Array<any>) => any,
+  onSort?: ({ sortOptions: SortOptions }) => any,
   onHighlightRow?: (?number | ?string) => any,
   highlightedRowId?: ?number | ?string,
+  tableOptions?: SimpleTableOptions,
   enableSelectAll: boolean,
   rowHeight?: number | ((Object, number) => number),
   numFrozenColumns?: number,
@@ -32,9 +35,11 @@ export const LargeWideTableComponent = (props: Props) => {
     idKey,
     isLoading,
     onSelect,
+    onSort,
     selectedRows,
     onHighlightRow,
     highlightedRowId,
+    tableOptions,
     enableSelectAll = true,
     rowHeight = 50,
   } = props;
@@ -56,6 +61,7 @@ export const LargeWideTableComponent = (props: Props) => {
   const overscanRowCount = 1;
   const rowCount = data.length;
   const scrollbarSize = 20;
+  const sortingProps = { onSort, tableOptions };
 
   // Add a checkbox column if it exists.
   const tableColumns = onSelect
@@ -136,13 +142,27 @@ export const LargeWideTableComponent = (props: Props) => {
   const renderHeader = ({ columnIndex, style }) => {
     const tableColumn = tableColumns[columnIndex];
     const {
-      Header, accessor = "", headerClassName, isSingleIcon,
+      Header, accessor = "", headerClassName, isSingleIcon, sortAccessor,
     } = tableColumn;
     const isCheckboxColumn = accessor === "COLUMN_SELECT";
     if (isCheckboxColumn && !enableSelectAll) {
       return null;
     }
     const fieldId = typeof accessor === "string" ? accessor : "";
+    const sortFieldId = sortAccessor || fieldId;
+    const isSortable = onSort && sortFieldId.length > 0 && tableColumn.sortable !== false;
+    let inner = Header;
+    if (isSortable && !isCheckboxColumn) {
+      inner = (
+        <InnerTableHeader
+          sortFieldId={sortAccessor || fieldId}
+          sortingProps={sortingProps}
+        >
+          {Header}
+        </InnerTableHeader>
+      );
+    }
+
     const isRightmostFrozenColumn = columnIndex === numFrozenColumns - 1;
     const isLeftmostUnfrozenColumn = columnIndex === numFrozenColumns;
     return (
@@ -157,7 +177,7 @@ export const LargeWideTableComponent = (props: Props) => {
           [styles.isLeftmostUnfrozenColumn]: isLeftmostUnfrozenColumn,
         })}
       >
-        <div className={styles.headerText}>{Header}</div>
+        <div className={styles.headerText}>{inner}</div>
       </div>
     );
   };

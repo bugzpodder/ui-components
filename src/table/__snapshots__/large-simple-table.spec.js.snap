@@ -206,7 +206,7 @@ exports[`render full simple table 2`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid frozenColumnsGrid"
             role="grid"
-            style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           >
             <div
@@ -522,7 +522,7 @@ exports[`render full simple table 2`] = `
                   aria-readonly="true"
                   class="ReactVirtualized__Grid bodyGrid"
                   role="grid"
-                  style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
                   tabindex="0"
                 />
               </div>
@@ -1046,7 +1046,7 @@ exports[`render large wide simple table 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid frozenColumnsGrid"
             role="grid"
-            style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           >
             <div
@@ -1138,7 +1138,7 @@ exports[`render large wide simple table 1`] = `
                   aria-readonly="true"
                   class="ReactVirtualized__Grid bodyGrid"
                   role="grid"
-                  style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
                   tabindex="0"
                 />
               </div>
@@ -1255,7 +1255,7 @@ exports[`render large wide simple table with all items selected 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid frozenColumnsGrid"
             role="grid"
-            style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           >
             <div
@@ -1571,7 +1571,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                   aria-readonly="true"
                   class="ReactVirtualized__Grid bodyGrid"
                   role="grid"
-                  style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
                   tabindex="0"
                 />
               </div>
@@ -1814,7 +1814,7 @@ exports[`render large wide simple table with no results and is loading 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid frozenColumnsGrid"
             role="grid"
-            style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
             tabindex="0"
           />
         </div>
@@ -1845,7 +1845,7 @@ exports[`render large wide simple table with no results and is loading 1`] = `
                   aria-readonly="true"
                   class="ReactVirtualized__Grid bodyGrid"
                   role="grid"
-                  style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
                   tabindex="0"
                 />
               </div>
@@ -1931,7 +1931,7 @@ exports[`render large wide simple table with set row height 1`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid frozenColumnsGrid"
             role="grid"
-            style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 205px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           >
             <div
@@ -2023,7 +2023,7 @@ exports[`render large wide simple table with set row height 1`] = `
                   aria-readonly="true"
                   class="ReactVirtualized__Grid bodyGrid"
                   role="grid"
-                  style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  style="box-sizing: border-box; direction: ltr; height: 205px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
                   tabindex="0"
                 />
               </div>
@@ -2186,7 +2186,7 @@ exports[`render loading simple table 2`] = `
             aria-readonly="true"
             class="ReactVirtualized__Grid frozenColumnsGrid"
             role="grid"
-            style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
             tabindex="0"
           >
             <div
@@ -2278,7 +2278,7 @@ exports[`render loading simple table 2`] = `
                   aria-readonly="true"
                   class="ReactVirtualized__Grid bodyGrid"
                   role="grid"
-                  style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
                   tabindex="0"
                 />
               </div>

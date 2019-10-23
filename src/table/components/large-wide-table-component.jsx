@@ -284,7 +284,7 @@ export const LargeWideTableComponent = (props: Props) => {
                   columnWidth={columnWidthProducer}
                   estimatedColumnSize={defaultColumnSize}
                   width={frozenColumnsWidth}
-                  height={height - scrollbarSize}
+                  height={height - scrollbarSize - firstRowHeight}
                   rowHeight={rowHeightFunction}
                   cellRenderer={renderCell}
                   className={styles.frozenColumnsGrid}
@@ -357,7 +357,7 @@ export const LargeWideTableComponent = (props: Props) => {
                             columnWidth={columnWidthProducer}
                             estimatedColumnSize={defaultColumnSize}
                             width={width - scrollbarSize}
-                            height={height - scrollbarSize}
+                            height={height - scrollbarSize - firstRowHeight}
                             rowHeight={rowHeightFunction}
                             cellRenderer={cellData => {
                               const { columnIndex } = cellData;

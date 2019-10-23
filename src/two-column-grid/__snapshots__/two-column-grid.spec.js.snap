@@ -4,17 +4,17 @@ exports[`render two column grid 1`] = `
 <div>
   <div>
     <div
-      class="MuiGrid-root MuiGrid-container"
+      class=""
     >
       <div
-        class="MuiGrid-root gridItem MuiGrid-container MuiGrid-spacing-xs-10 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        class="gridItem"
       >
         <div
-          class="MuiGrid-root column labelColumn MuiGrid-item MuiGrid-grid-xs-2"
+          class="column labelColumn"
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root rowLabel MuiTypography-body1"
+            class="rowLabel"
             data-testid="test-label-1-label"
             style="text-align: right;"
           >
@@ -22,7 +22,7 @@ exports[`render two column grid 1`] = `
           </p>
         </div>
         <div
-          class="MuiGrid-root column MuiGrid-item MuiGrid-grid-xs-10"
+          class="column"
           data-testid="two-column-row-value"
         >
           <div
@@ -35,10 +35,10 @@ exports[`render two column grid 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root gridItem MuiGrid-container MuiGrid-spacing-xs-10 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        class="gridItem"
       >
         <div
-          class="MuiGrid-root column labelColumn MuiGrid-item MuiGrid-grid-xs-2"
+          class="column labelColumn"
           data-testid="two-column-row-label"
         >
           <div
@@ -50,7 +50,7 @@ exports[`render two column grid 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root column MuiGrid-item MuiGrid-grid-xs-10"
+          class="column"
           data-testid="two-column-row-value"
         >
           <div
@@ -71,17 +71,17 @@ exports[`render two column grid 2`] = `
 <div>
   <div>
     <div
-      class="MuiGrid-root MuiGrid-container"
+      class=""
     >
       <div
-        class="MuiGrid-root gridItem MuiGrid-container MuiGrid-spacing-xs-10 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        class="gridItem"
       >
         <div
-          class="MuiGrid-root column labelColumn MuiGrid-item MuiGrid-grid-xs-2"
+          class="column labelColumn"
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root rowLabel MuiTypography-body1"
+            class="rowLabel"
             data-testid="test-label-1-label"
             style="text-align: right;"
           >
@@ -89,7 +89,7 @@ exports[`render two column grid 2`] = `
           </p>
         </div>
         <div
-          class="MuiGrid-root column MuiGrid-item MuiGrid-grid-xs-10"
+          class="column"
           data-testid="two-column-row-value"
         >
           <div
@@ -102,10 +102,10 @@ exports[`render two column grid 2`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root gridItem MuiGrid-container MuiGrid-spacing-xs-10 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        class="gridItem"
       >
         <div
-          class="MuiGrid-root column labelColumn MuiGrid-item MuiGrid-grid-xs-2"
+          class="column labelColumn"
           data-testid="two-column-row-label"
         >
           <div
@@ -117,7 +117,7 @@ exports[`render two column grid 2`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root column MuiGrid-item MuiGrid-grid-xs-10"
+          class="column"
           data-testid="two-column-row-value"
         >
           <div
@@ -138,17 +138,17 @@ exports[`render two column grid 3`] = `
 <div>
   <div>
     <div
-      class="MuiGrid-root MuiGrid-container"
+      class=""
     >
       <div
-        class="MuiGrid-root gridItem MuiGrid-container MuiGrid-spacing-xs-10 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        class="gridItem"
       >
         <div
-          class="MuiGrid-root column labelColumn MuiGrid-item MuiGrid-grid-xs-2"
+          class="column labelColumn"
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root rowLabel MuiTypography-body1"
+            class="rowLabel"
             data-testid="test-label-1-label"
             style="text-align: left;"
           >
@@ -156,7 +156,7 @@ exports[`render two column grid 3`] = `
           </p>
         </div>
         <div
-          class="MuiGrid-root column MuiGrid-item MuiGrid-grid-xs-10"
+          class="column"
           data-testid="two-column-row-value"
         >
           <div
@@ -169,10 +169,10 @@ exports[`render two column grid 3`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root gridItem MuiGrid-container MuiGrid-spacing-xs-10 MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"
+        class="gridItem"
       >
         <div
-          class="MuiGrid-root column labelColumn MuiGrid-item MuiGrid-grid-xs-2"
+          class="column labelColumn"
           data-testid="two-column-row-label"
         >
           <div
@@ -184,7 +184,7 @@ exports[`render two column grid 3`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root column MuiGrid-item MuiGrid-grid-xs-10"
+          class="column"
           data-testid="two-column-row-value"
         >
           <div

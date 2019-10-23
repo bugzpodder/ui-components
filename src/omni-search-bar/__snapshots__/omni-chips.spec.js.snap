@@ -8,19 +8,19 @@ exports[`OmniChips deletes 1`] = `
   >
     <div
       aria-label="omni"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
+      class="chip"
       data-testid="omni-0"
       role="button"
       tabindex="0"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         test
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        class=""
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -32,19 +32,19 @@ exports[`OmniChips deletes 1`] = `
     </div>
     <div
       aria-label="omni"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
+      class="chip"
       data-testid="omni-1"
       role="button"
       tabindex="0"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Test 2
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        class=""
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -56,19 +56,19 @@ exports[`OmniChips deletes 1`] = `
     </div>
     <div
       aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
+      class="chip"
       data-testid="Search Field-0"
       role="button"
       tabindex="0"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Search Field: test
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        class=""
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -80,19 +80,19 @@ exports[`OmniChips deletes 1`] = `
     </div>
     <div
       aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
+      class="chip"
       data-testid="Search Field-1"
       role="button"
       tabindex="0"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Search Field: test 2
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        class=""
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -104,149 +104,19 @@ exports[`OmniChips deletes 1`] = `
     </div>
     <div
       aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
+      class="chip"
       data-testid="Search Field-2"
       role="button"
       tabindex="0"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Search Field: test 3
       </span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`OmniChips deletes 2`] = `
-<div>
-  <div
-    class="omniChips"
-    data-testid="omni-chips-container"
-  >
-    <div
-      aria-label="omni"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
-      data-testid="omni-0"
-      role="button"
-      tabindex="0"
-    >
-      <span
-        class="MuiChip-label"
-      >
-        test
-      </span>
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-        />
-      </svg>
-    </div>
-    <div
-      aria-label="omni"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
-      data-testid="omni-1"
-      role="button"
-      tabindex="0"
-    >
-      <span
-        class="MuiChip-label"
-      >
-        Test 2
-      </span>
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-        />
-      </svg>
-    </div>
-    <div
-      aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
-      data-testid="Search Field-0"
-      role="button"
-      tabindex="0"
-    >
-      <span
-        class="MuiChip-label"
-      >
-        Search Field: test
-      </span>
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-        />
-      </svg>
-    </div>
-    <div
-      aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
-      data-testid="Search Field-1"
-      role="button"
-      tabindex="0"
-    >
-      <span
-        class="MuiChip-label"
-      >
-        Search Field: test 2
-      </span>
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
-        />
-      </svg>
-    </div>
-    <div
-      aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary MuiChip-deletableColorPrimary MuiChip-deletable"
-      data-testid="Search Field-2"
-      role="button"
-      tabindex="0"
-    >
-      <span
-        class="MuiChip-label"
-      >
-        Search Field: test 3
-      </span>
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiChip-deleteIcon MuiChip-deleteIconColorPrimary"
+        class=""
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -268,55 +138,55 @@ exports[`OmniChips renders 1`] = `
   >
     <div
       aria-label="omni"
-      class="MuiChip-root chip MuiChip-colorPrimary"
+      class="chip"
       data-testid="omni-0"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         test
       </span>
     </div>
     <div
       aria-label="omni"
-      class="MuiChip-root chip MuiChip-colorPrimary"
+      class="chip"
       data-testid="omni-1"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Test 2
       </span>
     </div>
     <div
       aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary"
+      class="chip"
       data-testid="Search Field-0"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Search Field: test
       </span>
     </div>
     <div
       aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary"
+      class="chip"
       data-testid="Search Field-1"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Search Field: test 2
       </span>
     </div>
     <div
       aria-label="Search Field"
-      class="MuiChip-root chip MuiChip-colorPrimary"
+      class="chip"
       data-testid="Search Field-2"
     >
       <span
-        class="MuiChip-label"
+        class=""
       >
         Search Field: test 3
       </span>

@@ -4,17 +4,15 @@ exports[`render upload button with default text 1`] = `
 <div>
   <label
     aria-disabled="false"
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+    class=""
     data-testid="upload-button"
     role="button"
     tabindex="0"
   >
-    <span
-      class="MuiButton-label"
-    >
+    <span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root cloudUploadIcon"
+        class="cloudUploadIcon"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -31,7 +29,7 @@ exports[`render upload button with default text 1`] = `
       />
     </span>
     <span
-      class="MuiTouchRipple-root"
+      class=""
     />
   </label>
 </div>
@@ -41,17 +39,15 @@ exports[`render upload button with default text and default props for uploading 
 <div>
   <label
     aria-disabled="false"
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+    class=""
     data-testid="upload-button"
     role="button"
     tabindex="0"
   >
-    <span
-      class="MuiButton-label"
-    >
+    <span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root cloudUploadIcon"
+        class="cloudUploadIcon"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -69,21 +65,19 @@ exports[`render upload button with default text and default props for uploading 
       />
     </span>
     <span
-      class="MuiTouchRipple-root"
+      class=""
     />
   </label>
   <label
     aria-disabled="false"
-    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
+    class=""
     role="button"
     tabindex="0"
   >
-    <span
-      class="MuiButton-label"
-    >
+    <span>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root cloudUploadIcon"
+        class="cloudUploadIcon"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -101,7 +95,7 @@ exports[`render upload button with default text and default props for uploading 
       />
     </span>
     <span
-      class="MuiTouchRipple-root"
+      class=""
     />
   </label>
 </div>

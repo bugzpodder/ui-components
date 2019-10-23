@@ -3,15 +3,15 @@
 exports[`render text field wrapper 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root"
+    class=""
     data-testid="text-field"
   >
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+      class=""
     >
       <input
         aria-invalid="false"
-        class="MuiInputBase-input MuiInput-input"
+        class=""
         id="operator"
         placeholder="Test Placeholder"
         type="text"

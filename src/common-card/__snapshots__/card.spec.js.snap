@@ -3,57 +3,51 @@
 exports[`common card classes and margin 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation6 MuiCard-root test-root card withMargin MuiPaper-rounded"
+    class="test-root card withMargin"
     data-testid="card"
   >
     <div
-      class="MuiCardHeader-root test-header"
+      class="test-header"
       data-testid="card-header"
     >
-      <div
-        class="MuiCardHeader-content"
-      >
+      <div>
         <span
-          class="MuiTypography-root MuiCardHeader-title card-title test-title MuiTypography-h5 MuiTypography-displayBlock"
+          class="card-title test-title"
           data-testid="card-title"
         >
           Test Card
         </span>
         <span
-          class="MuiTypography-root MuiCardHeader-subheader test-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          class="test-subheader"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="MuiCardHeader-action headerActions"
+        class="headerActions"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-text"
+          class=""
           tabindex="0"
           type="button"
         >
-          <span
-            class="MuiButton-label"
-          >
+          <span>
             Test Header Action Button
           </span>
           <span
-            class="MuiTouchRipple-root"
+            class=""
           />
         </button>
         <button
           aria-haspopup="true"
-          class="MuiButtonBase-root MuiIconButton-root"
+          class=""
           data-testid="dropdown-button"
           tabindex="0"
           type="button"
         >
-          <span
-            class="MuiIconButton-label"
-          >
+          <span>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class=""
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -64,19 +58,19 @@ exports[`common card classes and margin 1`] = `
             </svg>
           </span>
           <span
-            class="MuiTouchRipple-root"
+            class=""
           />
         </button>
       </div>
     </div>
     <div
-      class="MuiCardContent-root test-body"
+      class="test-body"
       data-testid="card-body"
     >
       This is a test
     </div>
     <div
-      class="MuiCardActions-root test-footer MuiCardActions-spacing footerActions"
+      class="test-footer footerActions"
       data-testid="card-footer-actions"
     >
       <span>

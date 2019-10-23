@@ -7,10 +7,10 @@ exports[`CommonMultiSelect label 1`] = `
     data-testid="common-select"
   >
     <div
-      class="MuiFormControl-root"
+      class=""
     >
       <label
-        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl common-select__input-label MuiInputLabel-animated MuiInputLabel-shrink"
+        class="common-select__input-label"
         data-shrink="true"
         data-testid="common-select-input-label"
         for=""
@@ -18,13 +18,13 @@ exports[`CommonMultiSelect label 1`] = `
         Countries
       </label>
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="common-select__input-root common-select__input-standard"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="MuiInputBase-input MuiInput-input css-2b097c-container"
+            class=" css-2b097c-container"
             id=""
           >
             <div
@@ -34,12 +34,12 @@ exports[`CommonMultiSelect label 1`] = `
                 class="common-select__value-container common-select__value-container--is-multi common-select__value-container--has-value css-1hwfws3"
               >
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -48,7 +48,7 @@ exports[`CommonMultiSelect label 1`] = `
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-ALGERIA"
                       focusable="false"
                       role="presentation"
@@ -61,12 +61,12 @@ exports[`CommonMultiSelect label 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -75,7 +75,7 @@ exports[`CommonMultiSelect label 1`] = `
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-AFGHANISTAN"
                       focusable="false"
                       role="presentation"
@@ -88,7 +88,7 @@ exports[`CommonMultiSelect label 1`] = `
                   </span>
                 </div>
                 <div
-                  class="css-w8afj7-Input"
+                  class="css-1g6gooi"
                 >
                   <div
                     class="common-select__input"
@@ -113,11 +113,11 @@ exports[`CommonMultiSelect label 1`] = `
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
+                class="common-select__indicators css-1wy0on6"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root common-select__clear-icon"
+                  class="common-select__clear-icon"
                   data-testid="clear-icon"
                   focusable="false"
                   role="presentation"
@@ -132,7 +132,7 @@ exports[`CommonMultiSelect label 1`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root"
+                    class=""
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -160,17 +160,17 @@ exports[`CommonMultiSelect margin 1`] = `
     data-testid="common-select"
   >
     <div
-      class="MuiFormControl-root MuiFormControl-marginNormal"
+      class=""
     >
       
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="common-select__input-root common-select__input-standard"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="MuiInputBase-input MuiInput-input css-2b097c-container"
+            class=" css-2b097c-container"
             id=""
           >
             <div
@@ -180,12 +180,12 @@ exports[`CommonMultiSelect margin 1`] = `
                 class="common-select__value-container common-select__value-container--is-multi common-select__value-container--has-value css-1hwfws3"
               >
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -194,7 +194,7 @@ exports[`CommonMultiSelect margin 1`] = `
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-ALGERIA"
                       focusable="false"
                       role="presentation"
@@ -207,12 +207,12 @@ exports[`CommonMultiSelect margin 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -221,7 +221,7 @@ exports[`CommonMultiSelect margin 1`] = `
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-AFGHANISTAN"
                       focusable="false"
                       role="presentation"
@@ -234,7 +234,7 @@ exports[`CommonMultiSelect margin 1`] = `
                   </span>
                 </div>
                 <div
-                  class="css-w8afj7-Input"
+                  class="css-1g6gooi"
                 >
                   <div
                     class="common-select__input"
@@ -259,11 +259,11 @@ exports[`CommonMultiSelect margin 1`] = `
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
+                class="common-select__indicators css-1wy0on6"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root common-select__clear-icon"
+                  class="common-select__clear-icon"
                   data-testid="clear-icon"
                   focusable="false"
                   role="presentation"
@@ -278,7 +278,7 @@ exports[`CommonMultiSelect margin 1`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root"
+                    class=""
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -306,17 +306,17 @@ exports[`CommonMultiSelect variant 1`] = `
     data-testid="common-select"
   >
     <div
-      class="MuiFormControl-root"
+      class=""
     >
       
       <div
-        class="MuiInputBase-root MuiFilledInput-root common-select__input-root common-select__input-filled MuiFilledInput-underline MuiInputBase-formControl"
+        class="common-select__input-root common-select__input-filled"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="MuiInputBase-input MuiFilledInput-input css-2b097c-container"
+            class=" css-2b097c-container"
             id=""
           >
             <div
@@ -326,12 +326,12 @@ exports[`CommonMultiSelect variant 1`] = `
                 class="common-select__value-container common-select__value-container--is-multi common-select__value-container--has-value css-1hwfws3"
               >
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -340,7 +340,7 @@ exports[`CommonMultiSelect variant 1`] = `
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-ALGERIA"
                       focusable="false"
                       role="presentation"
@@ -353,12 +353,12 @@ exports[`CommonMultiSelect variant 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -367,7 +367,7 @@ exports[`CommonMultiSelect variant 1`] = `
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-AFGHANISTAN"
                       focusable="false"
                       role="presentation"
@@ -380,7 +380,7 @@ exports[`CommonMultiSelect variant 1`] = `
                   </span>
                 </div>
                 <div
-                  class="css-w8afj7-Input"
+                  class="css-1g6gooi"
                 >
                   <div
                     class="common-select__input"
@@ -405,11 +405,11 @@ exports[`CommonMultiSelect variant 1`] = `
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
+                class="common-select__indicators css-1wy0on6"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root common-select__clear-icon"
+                  class="common-select__clear-icon"
                   data-testid="clear-icon"
                   focusable="false"
                   role="presentation"
@@ -424,7 +424,7 @@ exports[`CommonMultiSelect variant 1`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root"
+                    class=""
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -452,17 +452,17 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
     data-testid="common-select"
   >
     <div
-      class="MuiFormControl-root"
+      class=""
     >
       
       <div
-        class="MuiInputBase-root MuiInput-root common-select__input-root common-select__input-standard MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        class="common-select__input-root common-select__input-standard"
       >
         <div
           class="common-select__container"
         >
           <div
-            class="MuiInputBase-input MuiInput-input css-2b097c-container"
+            class=" css-2b097c-container"
             id=""
           >
             <div
@@ -472,12 +472,12 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                 class="common-select__value-container common-select__value-container--is-multi common-select__value-container--has-value css-1hwfws3"
               >
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -486,7 +486,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-ALGERIA"
                       focusable="false"
                       role="presentation"
@@ -499,12 +499,12 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root common-select__chip-root"
+                  class="common-select__chip-root"
                   data-testid="multi-value-chip"
                   tabindex="-1"
                 >
                   <span
-                    class="MuiChip-label common-select__chip-label"
+                    class="common-select__chip-label"
                   >
                     <div
                       class="css-12jo7m5 common-select__multi-value__label"
@@ -513,7 +513,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                     </div>
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root css-1alnv5e common-select__multi-value__remove"
+                      class="css-1alnv5e common-select__multi-value__remove"
                       data-testid="remove-AFGHANISTAN"
                       focusable="false"
                       role="presentation"
@@ -526,7 +526,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                   </span>
                 </div>
                 <div
-                  class="css-w8afj7-Input"
+                  class="css-1g6gooi"
                 >
                   <div
                     class="common-select__input"
@@ -551,11 +551,11 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                 </div>
               </div>
               <div
-                class="common-select__indicators css-1g48xl4-IndicatorsContainer"
+                class="common-select__indicators css-1wy0on6"
               >
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root common-select__clear-icon"
+                  class="common-select__clear-icon"
                   data-testid="clear-icon"
                   focusable="false"
                   role="presentation"
@@ -570,7 +570,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root"
+                    class=""
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"

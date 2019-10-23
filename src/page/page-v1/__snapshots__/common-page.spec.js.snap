@@ -7,79 +7,70 @@ exports[`renders common page 1`] = `
     data-testid="common-page"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation1 MuiCard-root stickyHeader pageHeader MuiPaper-rounded"
+      class="stickyHeader pageHeader"
       data-testid="common-page-header"
       value="one"
     >
       <div
-        class="MuiCardHeader-root cardHeader"
+        class="cardHeader"
       >
-        <div
-          class="MuiCardHeader-content"
-        >
+        <div>
           <span
-            class="MuiTypography-root MuiCardHeader-title header-title MuiTypography-h5 MuiTypography-displayBlock"
+            class="header-title"
             data-testid="common-page-title"
           >
             Test Card
           </span>
           <span
-            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+            class=""
             data-testid="common-page-subtitle"
           >
             This is a subtitle
           </span>
         </div>
         <div
-          class="MuiCardHeader-action headerActions"
+          class="headerActions"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+            class=""
             tabindex="0"
             type="button"
           >
-            <span
-              class="MuiButton-label"
-            >
+            <span>
               Test Action
             </span>
             <span
-              class="MuiTouchRipple-root"
+              class=""
             />
           </button>
           <div
             class="commonSwitch"
           >
             <label
-              class="MuiFormControlLabel-root controlLabel"
+              class="controlLabel"
             >
               <span
-                class="MuiSwitch-root"
+                class=""
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-126 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class=""
                 >
-                  <span
-                    class="MuiIconButton-label"
-                  >
+                  <span>
+                    <span />
                     <input
-                      class="PrivateSwitchBase-input-129 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
                     />
-                    <span
-                      class="MuiSwitch-thumb"
-                    />
                   </span>
                 </span>
                 <span
-                  class="MuiSwitch-track"
+                  class=""
                 />
               </span>
               <span
-                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+                class=""
               >
                 CUSTOM ACTION
               </span>
@@ -93,19 +84,19 @@ exports[`renders common page 1`] = `
         data-testid="alert"
       >
         <div
-          class="MuiTypography-root MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root success alert-success MuiTypography-body2"
+          class="success alert-success"
           data-testid="content"
           role="alertdialog"
         >
           <div
-            class="MuiSnackbarContent-message"
+            class=""
           >
             <span
               data-testid="success-alert-message"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root alertIcon"
+                class="alertIcon"
                 data-testid="success-alert-icon"
                 focusable="false"
                 role="presentation"

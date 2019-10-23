@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`render avatar with children 1`] = `
+<div>
+  <div
+    class="avatarIconContainer"
+    data-testid="avatar-icon"
+  >
+    <button
+      class=""
+      data-testid="avatar-icon-button"
+      disabled=""
+      id="avatar-icon-button"
+      tabindex="-1"
+      type="button"
+    >
+      <span>
+        <div
+          class=""
+          data-testid="avatar-icon-avatar"
+        >
+          N
+        </div>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`render avatar with menu 1`] = `
 <div
   aria-hidden="true"
@@ -9,18 +36,16 @@ exports[`render avatar with menu 1`] = `
     data-testid="avatar-icon"
   >
     <button
-      class="MuiButtonBase-root MuiIconButton-root test-button MuiIconButton-colorInherit"
+      class="test-button"
       data-testid="avatar-icon-button"
       id="avatar-icon-button"
       tabindex="0"
       type="button"
     >
-      <span
-        class="MuiIconButton-label"
-      >
+      <span>
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root test-avatar"
+          class="test-avatar"
           data-testid="avatar-icon-avatar"
           focusable="false"
           role="presentation"
@@ -38,19 +63,19 @@ exports[`render avatar with menu 1`] = `
     data-testid="alert"
   >
     <div
-      class="MuiTypography-root MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error MuiTypography-body2"
+      class="error alert-error"
       data-testid="content"
       role="alertdialog"
     >
       <div
-        class="MuiSnackbarContent-message"
+        class=""
       >
         <span
           data-testid="error-alert-message"
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root alertIcon"
+            class="alertIcon"
             data-testid="error-alert-icon"
             focusable="false"
             role="presentation"

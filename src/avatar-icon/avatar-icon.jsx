@@ -33,14 +33,45 @@ type Props = {
   isMenuOpen?: boolean,
   /** Array of objects containing keys that are valid Material-UI `MenuItem` props */
   menuItems?: Array<Object>,
+  /** Children passed to the AvatarIcon component. Can be used to implement custom icons or letters in the Avatar */
+  children?: Node<*>,
+};
+
+const AvatarComponent = (props) => {
+  const { pictureUrl, children, classes = {} } = props;
+  if (pictureUrl) {
+    return (
+      <Avatar
+        data-testid="avatar-icon-avatar"
+        src={pictureUrl}
+        className={classes.avatar}
+      />
+    );
+  } if (children) {
+    return (
+      <Avatar
+        data-testid="avatar-icon-avatar"
+        className={classes.avatar}
+      >
+        {children}
+      </Avatar>
+    );
+  }
+  return (
+    <AccountCircle
+      data-testid="avatar-icon-avatar"
+      className={classes.avatar}
+    />
+  );
 };
 
 export const AvatarIcon = (props: Props) => {
   const avatarRef = useRef(null);
 
   const {
-    id = "", classes = {}, onClick, pictureUrl, isMenuOpen = false, menuItems = [], ...buttonProps
+    id = "", classes = {}, onClick, pictureUrl, isMenuOpen = false, children, menuItems = [], ...buttonProps
   } = props;
+
   return (
     <div
       data-testid="avatar-icon"
@@ -59,18 +90,7 @@ export const AvatarIcon = (props: Props) => {
         color="inherit"
         {...buttonProps}
       >
-        {pictureUrl ? (
-          <Avatar
-            data-testid="avatar-icon-avatar"
-            src={pictureUrl}
-            className={classes.avatar}
-          />
-        ) : (
-          <AccountCircle
-            data-testid="avatar-icon-avatar"
-            className={classes.avatar}
-          />
-        )}
+        <AvatarComponent {...props} />
       </IconButton>
       {menuItems.length > 0 && (
         <Menu

@@ -56,6 +56,18 @@ const AvatarExample = () => {
         isMenuOpen={isSergeyOpen}
         onClick={setIsSergeyOpen}
       />
+      <Typography className={styles.inLine} variant="h6">
+        With Children
+      </Typography>
+      <AvatarIcon
+        className={styles.inLine}
+        menuItems={menuItems}
+        isMenuOpen={isSergeyOpen}
+        onClick={setIsSergeyOpen}
+      >
+        G
+      </AvatarIcon>
+
 
       <Typography className={styles.inLine} variant="h6">
         No Menu

@@ -9,19 +9,19 @@ exports[`render simple timeline graph 1`] = `
       class="timelineContent"
     >
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        class=""
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="smallDate"
             data-testid="timeline-year-0"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="timelineDate"
             data-testid="timeline-date-0"
           >
             20 Apr
@@ -34,7 +34,7 @@ exports[`render simple timeline graph 1`] = `
             class="notch"
           />
           <div
-            class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+            class="timelinePaper"
             data-testid="timeline-item-0"
             id="0"
           >
@@ -49,19 +49,19 @@ exports[`render simple timeline graph 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        class="lastItem"
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="smallDate"
             data-testid="timeline-year-1"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="timelineDate"
             data-testid="timeline-date-1"
           >
             20 Apr
@@ -74,7 +74,7 @@ exports[`render simple timeline graph 1`] = `
             class="notch"
           />
           <div
-            class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+            class="timelinePaper"
             data-testid="timeline-item-1"
             id="1"
           >
@@ -92,19 +92,17 @@ exports[`render simple timeline graph 1`] = `
                   data-testid="avatar-icon"
                 >
                   <button
-                    class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
+                    class="userButton"
                     data-testid="timeline-avatar"
                     disabled=""
                     id="timeline-avatar"
                     tabindex="-1"
                     type="button"
                   >
-                    <span
-                      class="MuiIconButton-label"
-                    >
+                    <span>
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root userAvatar"
+                        class="userAvatar"
                         data-testid="avatar-icon-avatar"
                         focusable="false"
                         role="presentation"
@@ -137,25 +135,25 @@ exports[`render simple timeline graph with time 1`] = `
       class="timelineContent"
     >
       <div
-        class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        class=""
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="smallDate"
             data-testid="timeline-year-0"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="timelineDate"
             data-testid="timeline-date-0"
           >
             20 Apr
           </p>
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="smallDate"
             data-testid="timeline-time-0"
           >
             16:20
@@ -168,7 +166,7 @@ exports[`render simple timeline graph with time 1`] = `
             class="notch"
           />
           <div
-            class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+            class="timelinePaper"
             data-testid="timeline-item-0"
             id="0"
           >
@@ -183,25 +181,25 @@ exports[`render simple timeline graph with time 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        class="lastItem"
       >
         <div
           class="timelineDateContainer"
         >
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="smallDate"
             data-testid="timeline-year-1"
           >
             2018
           </p>
           <p
-            class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="timelineDate"
             data-testid="timeline-date-1"
           >
             20 Apr
           </p>
           <p
-            class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+            class="smallDate"
             data-testid="timeline-time-1"
           >
             16:20
@@ -214,7 +212,7 @@ exports[`render simple timeline graph with time 1`] = `
             class="notch"
           />
           <div
-            class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+            class="timelinePaper"
             data-testid="timeline-item-1"
             id="1"
           >
@@ -232,19 +230,17 @@ exports[`render simple timeline graph with time 1`] = `
                   data-testid="avatar-icon"
                 >
                   <button
-                    class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
+                    class="userButton"
                     data-testid="timeline-avatar"
                     disabled=""
                     id="timeline-avatar"
                     tabindex="-1"
                     type="button"
                   >
-                    <span
-                      class="MuiIconButton-label"
-                    >
+                    <span>
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root userAvatar"
+                        class="userAvatar"
                         data-testid="avatar-icon-avatar"
                         focusable="false"
                         role="presentation"
@@ -274,11 +270,11 @@ exports[`test selecting an item on the timeline card 1`] = `
     class="timelineContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiCard-root timelineCard card MuiPaper-rounded"
+      class="timelineCard card"
       data-testid="card"
     >
       <div
-        class="MuiCardContent-root"
+        class=""
         data-testid="card-body"
       >
         <div
@@ -294,19 +290,19 @@ exports[`test selecting an item on the timeline card 1`] = `
           class="timelineContent"
         >
           <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class=""
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="smallDate"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="timelineDate"
                 data-testid="timeline-date-0"
               >
                 20 Apr
@@ -319,7 +315,7 @@ exports[`test selecting an item on the timeline card 1`] = `
                 class="notch"
               />
               <div
-                class="MuiPaper-root timelinePaperButton MuiPaper-elevation6 MuiPaper-rounded"
+                class="timelinePaperButton"
                 data-testid="timeline-item-0"
                 id="0"
               >
@@ -334,19 +330,19 @@ exports[`test selecting an item on the timeline card 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class="lastItem"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="smallDate"
                 data-testid="timeline-year-1"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="timelineDate"
                 data-testid="timeline-date-1"
               >
                 20 Apr
@@ -359,7 +355,7 @@ exports[`test selecting an item on the timeline card 1`] = `
                 class="notch"
               />
               <div
-                class="MuiPaper-root timelinePaperButton MuiPaper-elevation6 MuiPaper-rounded"
+                class="timelinePaperButton"
                 data-testid="timeline-item-1"
                 id="1"
               >
@@ -377,19 +373,17 @@ exports[`test selecting an item on the timeline card 1`] = `
                       data-testid="avatar-icon"
                     >
                       <button
-                        class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
+                        class="userButton"
                         data-testid="timeline-avatar"
                         disabled=""
                         id="timeline-avatar"
                         tabindex="-1"
                         type="button"
                       >
-                        <span
-                          class="MuiIconButton-label"
-                        >
+                        <span>
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root userAvatar"
+                            class="userAvatar"
                             data-testid="avatar-icon-avatar"
                             focusable="false"
                             role="presentation"
@@ -421,65 +415,61 @@ exports[`test tabbed timeline cartd 1`] = `
     class="timelineContainer"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiCard-root timelineCard card MuiPaper-rounded"
+      class="timelineCard card"
       data-testid="card"
     >
       <div
-        class="MuiCardContent-root timelineCardBody"
+        class="timelineCardBody"
         data-testid="card-body"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation1 MuiCard-root tabsWrapper"
+          class="tabsWrapper"
         >
           <div
-            class="MuiTabs-root tabs"
+            class="tabs"
             data-testid="card-tabs"
           >
             <div
-              class="MuiTabs-scroller MuiTabs-fixed"
+              class=""
               style="overflow: hidden;"
             >
               <div
-                class="MuiTabs-flexContainer tabsContainer"
+                class="tabsContainer"
                 role="tablist"
               >
                 <button
                   aria-selected="true"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected MuiTab-fullWidth"
+                  class=""
                   data-testid="timeline-tab-tabOne"
                   role="tab"
                   tabindex="0"
                   type="button"
                 >
-                  <span
-                    class="MuiTab-wrapper"
-                  >
+                  <span>
                     Tab One
                   </span>
                   <span
-                    class="MuiTouchRipple-root"
+                    class=""
                   />
                 </button>
                 <button
                   aria-selected="false"
-                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth"
+                  class=""
                   data-testid="timeline-tab-tabTwo"
                   role="tab"
                   tabindex="0"
                   type="button"
                 >
-                  <span
-                    class="MuiTab-wrapper"
-                  >
+                  <span>
                     Tab Two
                   </span>
                   <span
-                    class="MuiTouchRipple-root"
+                    class=""
                   />
                 </button>
               </div>
               <span
-                class="PrivateTabIndicator-root-416 PrivateTabIndicator-colorPrimary-417 MuiTabs-indicator"
+                class=""
                 style="left: 0px; width: 0px;"
               />
             </div>
@@ -489,19 +479,19 @@ exports[`test tabbed timeline cartd 1`] = `
           class="timelineContent"
         >
           <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class=""
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="smallDate"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="timelineDate"
                 data-testid="timeline-date-0"
               >
                 20 Apr
@@ -514,7 +504,7 @@ exports[`test tabbed timeline cartd 1`] = `
                 class="notch"
               />
               <div
-                class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+                class="timelinePaper"
                 data-testid="timeline-item-0"
                 id="0"
               >
@@ -529,19 +519,19 @@ exports[`test tabbed timeline cartd 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class="lastItem"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="smallDate"
                 data-testid="timeline-year-1"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="timelineDate"
                 data-testid="timeline-date-1"
               >
                 20 Apr
@@ -554,7 +544,7 @@ exports[`test tabbed timeline cartd 1`] = `
                 class="notch"
               />
               <div
-                class="MuiPaper-root timelinePaper MuiPaper-elevation6 MuiPaper-rounded"
+                class="timelinePaper"
                 data-testid="timeline-item-1"
                 id="1"
               >
@@ -572,19 +562,17 @@ exports[`test tabbed timeline cartd 1`] = `
                       data-testid="avatar-icon"
                     >
                       <button
-                        class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
+                        class="userButton"
                         data-testid="timeline-avatar"
                         disabled=""
                         id="timeline-avatar"
                         tabindex="-1"
                         type="button"
                       >
-                        <span
-                          class="MuiIconButton-label"
-                        >
+                        <span>
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root userAvatar"
+                            class="userAvatar"
                             data-testid="avatar-icon-avatar"
                             focusable="false"
                             role="presentation"
@@ -616,11 +604,11 @@ exports[`test unselecting an item on the timeline card 1`] = `
     class="timelineContainer naji"
   >
     <div
-      class="MuiPaper-root MuiPaper-elevation6 MuiCard-root timelineCard card MuiPaper-rounded"
+      class="timelineCard card"
       data-testid="card"
     >
       <div
-        class="MuiCardContent-root"
+        class=""
         data-testid="card-body"
       >
         <div
@@ -636,19 +624,19 @@ exports[`test unselecting an item on the timeline card 1`] = `
           class="timelineContent"
         >
           <div
-            class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class=""
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="smallDate"
                 data-testid="timeline-year-0"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="timelineDate"
                 data-testid="timeline-date-0"
               >
                 20 Apr
@@ -666,7 +654,7 @@ exports[`test unselecting an item on the timeline card 1`] = `
                 class="notch selected"
               />
               <div
-                class="MuiPaper-root timelinePaperButton timelinePaperSelected MuiPaper-elevation4 MuiPaper-rounded"
+                class="timelinePaperButton timelinePaperSelected"
                 data-testid="timeline-item-0"
                 id="0"
               >
@@ -681,19 +669,19 @@ exports[`test unselecting an item on the timeline card 1`] = `
             </div>
           </div>
           <div
-            class="MuiGrid-root lastItem MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            class="lastItem"
           >
             <div
               class="timelineDateContainer"
             >
               <p
-                class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="smallDate"
                 data-testid="timeline-year-1"
               >
                 2018
               </p>
               <p
-                class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
+                class="timelineDate"
                 data-testid="timeline-date-1"
               >
                 20 Apr
@@ -711,7 +699,7 @@ exports[`test unselecting an item on the timeline card 1`] = `
                 class="notch"
               />
               <div
-                class="MuiPaper-root timelinePaperButton MuiPaper-elevation6 MuiPaper-rounded"
+                class="timelinePaperButton"
                 data-testid="timeline-item-1"
                 id="1"
               >
@@ -729,19 +717,17 @@ exports[`test unselecting an item on the timeline card 1`] = `
                       data-testid="avatar-icon"
                     >
                       <button
-                        class="MuiButtonBase-root MuiIconButton-root userButton MuiIconButton-colorInherit Mui-disabled Mui-disabled"
+                        class="userButton"
                         data-testid="timeline-avatar"
                         disabled=""
                         id="timeline-avatar"
                         tabindex="-1"
                         type="button"
                       >
-                        <span
-                          class="MuiIconButton-label"
-                        >
+                        <span>
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root userAvatar"
+                            class="userAvatar"
                             data-testid="avatar-icon-avatar"
                             focusable="false"
                             role="presentation"

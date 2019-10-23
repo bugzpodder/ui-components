@@ -8,7 +8,7 @@ exports[`render validated readonly text field 1`] = `
   >
     <span
       aria-hidden="true"
-      class="material-icons MuiIcon-root icon"
+      class="material-icons icon"
       data-testid="icon"
     >
       done

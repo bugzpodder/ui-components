@@ -3,31 +3,27 @@
 exports[`render style wrapper 1`] = `
 <div>
   <button
-    class="MuiButtonBase-root-29 MuiButton-root-1 MuiButton-text-3 MuiButton-textPrimary-4"
+    class=""
     tabindex="0"
     type="button"
   >
-    <span
-      class="MuiButton-label-2"
-    >
+    <span>
       Primary
     </span>
     <span
-      class="MuiTouchRipple-root-32"
+      class=""
     />
   </button>
   <button
-    class="MuiButtonBase-root-29 MuiButton-root-1 MuiButton-contained-9 MuiButton-containedSecondary-11"
+    class=""
     tabindex="0"
     type="button"
   >
-    <span
-      class="MuiButton-label-2"
-    >
+    <span>
       Secondary
     </span>
     <span
-      class="MuiTouchRipple-root-32"
+      class=""
     />
   </button>
 </div>

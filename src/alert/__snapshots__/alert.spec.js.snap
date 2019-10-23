@@ -7,19 +7,19 @@ exports[`default alert pane is error 1`] = `
     data-testid="alert"
   >
     <div
-      class="MuiTypography-root MuiPaper-root MuiPaper-elevation6 MuiSnackbarContent-root error alert-error MuiTypography-body2"
+      class="error alert-error"
       data-testid="content"
       role="alertdialog"
     >
       <div
-        class="MuiSnackbarContent-message"
+        class=""
       >
         <span
           data-testid="error-alert-message"
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root alertIcon"
+            class="alertIcon"
             data-testid="error-alert-icon"
             focusable="false"
             role="presentation"

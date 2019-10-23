@@ -52,3 +52,15 @@ test("render avatar with menu", () => {
   expect(getByTestId("avatar-icon-avatar")).toHaveClass("test-avatar");
   expect(getByTestId("avatar-icon-button-avatar-menu")).toHaveClass("test-menu");
 });
+
+test("render avatar with children", () => {
+  const { container, getByTestId } = render(
+    <TestWrapper>
+      <AvatarIcon id="avatar-icon-button">
+        N
+      </AvatarIcon>
+    </TestWrapper>,
+  );
+  expect(container).toMatchSnapshot();
+  expect(getByTestId("avatar-icon-avatar")).toHaveTextContent("N");
+});

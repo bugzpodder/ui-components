@@ -8,18 +8,16 @@ exports[`render LinkButton 1`] = `
     href="/some-page"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+      class=""
       data-testid="button"
       tabindex="0"
       type="button"
     >
-      <span
-        class="MuiButton-label"
-      >
+      <span>
         This link probably goes nowhere
       </span>
       <span
-        class="MuiTouchRipple-root"
+        class=""
       />
     </button>
   </a>

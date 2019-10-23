@@ -15,27 +15,27 @@ exports[`render SuggestionsOmniField 1`] = `
       <div
         aria-autocomplete="list"
         aria-labelledby="common-suggest-label"
-        class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+        class=""
       >
         <div
-          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+          class=""
           data-testid="common-suggest-input-container"
         >
           <input
             aria-invalid="false"
             autocomplete="off"
-            class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
+            class=""
             type="text"
             value=""
           />
           <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+            class=""
           >
             
             <button
               aria-haspopup="true"
               aria-label="open menu"
-              class="MuiButtonBase-root MuiIconButton-root commonSuggestButton MuiIconButton-colorInherit"
+              class="commonSuggestButton"
               data-testid="toggle-suggestions"
               data-toggle="true"
               id="-toggle-suggestions"
@@ -45,12 +45,10 @@ exports[`render SuggestionsOmniField 1`] = `
               title="Show suggestions"
               type="button"
             >
-              <span
-                class="MuiIconButton-label"
-              >
+              <span>
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root"
+                  class=""
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"

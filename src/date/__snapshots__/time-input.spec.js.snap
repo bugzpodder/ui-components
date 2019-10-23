@@ -14,34 +14,32 @@ exports[`render readOnly TimeInput 1`] = `
 exports[`render time input 1`] = `
 <div>
   <div
-    class="MuiFormControl-root MuiTextField-root textFieldWidth"
+    class="textFieldWidth"
     data-testid="time-input"
   >
     <div
-      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+      class=""
     >
       <input
         aria-invalid="false"
-        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
+        class=""
         placeholder="Test Time Input"
         type="text"
         value="04:20 PM"
       />
       <div
-        class="MuiInputAdornment-root adornmentWidth MuiInputAdornment-positionEnd"
+        class="adornmentWidth"
       >
         <button
-          class="MuiButtonBase-root MuiIconButton-root"
+          class=""
           data-testid="time-picker-button"
           tabindex="0"
           type="button"
         >
-          <span
-            class="MuiIconButton-label"
-          >
+          <span>
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root"
+              class=""
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -56,7 +54,7 @@ exports[`render time input 1`] = `
             </svg>
           </span>
           <span
-            class="MuiTouchRipple-root"
+            class=""
           />
         </button>
       </div>

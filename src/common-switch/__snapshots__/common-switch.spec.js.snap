@@ -18,13 +18,13 @@ exports[`render error common switch 1`] = `
             class="error error"
           >
             <span>
-              <span />
               <input
                 checked=""
                 id=""
                 type="checkbox"
                 value=""
               />
+              <span />
             </span>
           </span>
           <span
@@ -59,12 +59,12 @@ exports[`render primary common switch 1`] = `
             class=""
           >
             <span>
-              <span />
               <input
                 id=""
                 type="checkbox"
                 value="test"
               />
+              <span />
             </span>
           </span>
           <span

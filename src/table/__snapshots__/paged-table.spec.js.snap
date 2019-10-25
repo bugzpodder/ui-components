@@ -628,6 +628,13 @@ exports[`render paged table and test pagination 1`] = `
                 class="indeterminate"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -639,13 +646,6 @@ exports[`render paged table and test pagination 1`] = `
                       d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="true"
-                    data-testid="table-checkbox-header"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -686,6 +686,14 @@ exports[`render paged table and test pagination 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-first-datum"
+                    id="First Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -697,14 +705,6 @@ exports[`render paged table and test pagination 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-first-datum"
-                    id="First Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -747,6 +747,14 @@ exports[`render paged table and test pagination 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-fourth-datum"
+                    id="Fourth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -758,14 +766,6 @@ exports[`render paged table and test pagination 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-fourth-datum"
-                    id="Fourth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -808,6 +808,13 @@ exports[`render paged table and test pagination 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventh-datum"
+                    id="Seventh Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -819,13 +826,6 @@ exports[`render paged table and test pagination 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-seventh-datum"
-                    id="Seventh Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -868,6 +868,13 @@ exports[`render paged table and test pagination 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-tenth-datum"
+                    id="Tenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -879,13 +886,6 @@ exports[`render paged table and test pagination 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-tenth-datum"
-                    id="Tenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -928,6 +928,13 @@ exports[`render paged table and test pagination 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-thirteenth-datum"
+                    id="Thirteenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -939,13 +946,6 @@ exports[`render paged table and test pagination 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-thirteenth-datum"
-                    id="Thirteenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -988,6 +988,13 @@ exports[`render paged table and test pagination 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventeenth-datum"
+                    id="Seventeenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -999,13 +1006,6 @@ exports[`render paged table and test pagination 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-seventeenth-datum"
-                    id="Seventeenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1049,11 +1049,11 @@ exports[`render paged table and test pagination 1`] = `
           class=""
         >
           <div />
-          <span
+          <p
             class=""
           >
             Rows per page:
-          </span>
+          </p>
           <div
             class="select-row-count selectRowCount"
             data-testid="rows-per-page"
@@ -1083,11 +1083,11 @@ exports[`render paged table and test pagination 1`] = `
               />
             </svg>
           </div>
-          <span
+          <p
             class=""
           >
             Showing 1 to 5 of 100
-          </span>
+          </p>
           <div>
             <button
               class="previous-page"
@@ -1213,6 +1213,7 @@ exports[`render paged table and test sorting 1`] = `
               scope="col"
             >
               <span
+                aria-disabled="false"
                 class="sort-columnOne"
                 data-testid="sort-columnOne"
                 role="button"
@@ -1237,6 +1238,7 @@ exports[`render paged table and test sorting 1`] = `
               scope="col"
             >
               <span
+                aria-disabled="false"
                 class="sort-columnTwo"
                 data-testid="sort-columnTwo"
                 role="button"
@@ -1522,6 +1524,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                 class="active indeterminate"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -1533,13 +1542,6 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-header"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1580,6 +1582,14 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-first-datum"
+                    id="First Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -1591,14 +1601,6 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-first-datum"
-                    id="First Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1641,6 +1643,14 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-fourth-datum"
+                    id="Fourth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -1652,14 +1662,6 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-fourth-datum"
-                    id="Fourth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1702,6 +1704,14 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventh-datum"
+                    id="Seventh Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -1713,14 +1723,6 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-seventh-datum"
-                    id="Seventh Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1763,6 +1765,14 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-tenth-datum"
+                    id="Tenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -1774,14 +1784,6 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-tenth-datum"
-                    id="Tenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1824,6 +1826,14 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-thirteenth-datum"
+                    id="Thirteenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -1835,14 +1845,6 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-thirteenth-datum"
-                    id="Thirteenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1885,6 +1887,14 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                 class="active"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventeenth-datum"
+                    id="Seventeenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -1896,14 +1906,6 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                       d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-seventeenth-datum"
-                    id="Seventeenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -2908,6 +2910,12 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -2919,12 +2927,6 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-header"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -2965,6 +2967,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-0"
+                    id="0"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -2976,13 +2985,6 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-0"
-                    id="0"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3025,6 +3027,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-1"
+                    id="1"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3036,13 +3045,6 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-1"
-                    id="1"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3085,6 +3087,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-2"
+                    id="2"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3096,13 +3105,6 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-2"
-                    id="2"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3145,6 +3147,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-3"
+                    id="3"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3156,13 +3165,6 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-3"
-                    id="3"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3205,6 +3207,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-4"
+                    id="4"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3216,13 +3225,6 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-4"
-                    id="4"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3265,6 +3267,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-5"
+                    id="5"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3276,13 +3285,6 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-5"
-                    id="5"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3407,6 +3409,12 @@ exports[`render paged table with no initially selected items, then select items 
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3418,12 +3426,6 @@ exports[`render paged table with no initially selected items, then select items 
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-header"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3464,6 +3466,13 @@ exports[`render paged table with no initially selected items, then select items 
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-first-datum"
+                    id="First Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3475,13 +3484,6 @@ exports[`render paged table with no initially selected items, then select items 
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-first-datum"
-                    id="First Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3524,6 +3526,13 @@ exports[`render paged table with no initially selected items, then select items 
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-fourth-datum"
+                    id="Fourth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3535,13 +3544,6 @@ exports[`render paged table with no initially selected items, then select items 
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-fourth-datum"
-                    id="Fourth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3584,6 +3586,13 @@ exports[`render paged table with no initially selected items, then select items 
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventh-datum"
+                    id="Seventh Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3595,13 +3604,6 @@ exports[`render paged table with no initially selected items, then select items 
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-seventh-datum"
-                    id="Seventh Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3644,6 +3646,13 @@ exports[`render paged table with no initially selected items, then select items 
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-tenth-datum"
+                    id="Tenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3655,13 +3664,6 @@ exports[`render paged table with no initially selected items, then select items 
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-tenth-datum"
-                    id="Tenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3704,6 +3706,13 @@ exports[`render paged table with no initially selected items, then select items 
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-thirteenth-datum"
+                    id="Thirteenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3715,13 +3724,6 @@ exports[`render paged table with no initially selected items, then select items 
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-thirteenth-datum"
-                    id="Thirteenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -3764,6 +3766,13 @@ exports[`render paged table with no initially selected items, then select items 
                 class=""
               >
                 <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventeenth-datum"
+                    id="Seventeenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -3775,13 +3784,6 @@ exports[`render paged table with no initially selected items, then select items 
                       d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                     />
                   </svg>
-                  <input
-                    data-indeterminate="false"
-                    data-testid="table-checkbox-cell-seventeenth-datum"
-                    id="Seventeenth Datum"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""

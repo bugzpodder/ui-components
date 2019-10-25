@@ -37,7 +37,7 @@ type Props = {
   children?: Node<*>,
 };
 
-const AvatarComponent = (props) => {
+const AvatarComponent = props => {
   const { pictureUrl, children, classes = {} } = props;
   if (pictureUrl) {
     return (
@@ -47,7 +47,8 @@ const AvatarComponent = (props) => {
         className={classes.avatar}
       />
     );
-  } if (children) {
+  }
+  if (children) {
     return (
       <Avatar
         data-testid="avatar-icon-avatar"
@@ -69,7 +70,7 @@ export const AvatarIcon = (props: Props) => {
   const avatarRef = useRef(null);
 
   const {
-    id = "", classes = {}, onClick, pictureUrl, isMenuOpen = false, children, menuItems = [], ...buttonProps
+    id = "", classes = {}, onClick, pictureUrl, isMenuOpen = false, menuItems = [], ...buttonProps
   } = props;
 
   return (

@@ -11,16 +11,8 @@ module.exports = {
       content: "README.md",
     },
     {
-      name: "Getting Started on Lib",
-      content: "../lib/README.md",
-    },
-    {
       name: "Changelog for Components",
       content: "CHANGELOG.md",
-    },
-    {
-      name: "Changelog for Lib",
-      content: "../lib/CHANGELOG.md",
     },
     {
       name: "Wrappers",
@@ -90,7 +82,6 @@ module.exports = {
       ],
     },
   ],
-  require: [path.join(__dirname, "..", "lims/client/public/material/material.css")],
   usageMode: "expand",
   exampleMode: "expand",
   skipComponentsWithoutExample: true,
@@ -152,7 +143,6 @@ module.exports = {
     resolve: {
       alias: {
         "@grailbio/components": path.resolve(__dirname, "src"),
-        "@grailbio/lib": path.resolve(__dirname, "../lib/src"),
       },
     },
   },

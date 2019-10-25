@@ -57,12 +57,12 @@ exports[`renders common page 1`] = `
                   class=""
                 >
                   <span>
-                    <span />
                     <input
                       id=""
                       type="checkbox"
                       value=""
                     />
+                    <span />
                   </span>
                 </span>
                 <span

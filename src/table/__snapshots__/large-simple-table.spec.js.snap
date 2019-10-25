@@ -23,6 +23,13 @@ exports[`render full simple table 1`] = `
                 class="indeterminate"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -34,13 +41,6 @@ exports[`render full simple table 1`] = `
                       d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="true"
-                    data-testid="table-checkbox-header"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -153,6 +153,13 @@ exports[`render full simple table 2`] = `
                     class="indeterminate"
                   >
                     <span>
+                      <input
+                        checked=""
+                        data-indeterminate="true"
+                        data-testid="table-checkbox-header"
+                        type="checkbox"
+                        value=""
+                      />
                       <svg
                         aria-hidden="true"
                         class=""
@@ -164,13 +171,6 @@ exports[`render full simple table 2`] = `
                           d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
                         />
                       </svg>
-                      <input
-                        checked=""
-                        data-indeterminate="true"
-                        data-testid="table-checkbox-header"
-                        type="checkbox"
-                        value=""
-                      />
                     </span>
                     <span
                       class=""
@@ -218,6 +218,14 @@ exports[`render full simple table 2`] = `
                   class="active"
                 >
                   <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-first-datum"
+                      id="First Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -229,14 +237,6 @@ exports[`render full simple table 2`] = `
                         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                       />
                     </svg>
-                    <input
-                      checked=""
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-first-datum"
-                      id="First Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -262,6 +262,14 @@ exports[`render full simple table 2`] = `
                   class="active"
                 >
                   <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-fourth-datum"
+                      id="Fourth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -273,14 +281,6 @@ exports[`render full simple table 2`] = `
                         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                       />
                     </svg>
-                    <input
-                      checked=""
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-fourth-datum"
-                      id="Fourth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -306,6 +306,13 @@ exports[`render full simple table 2`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventh-datum"
+                      id="Seventh Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -317,13 +324,6 @@ exports[`render full simple table 2`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-seventh-datum"
-                      id="Seventh Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -349,6 +349,13 @@ exports[`render full simple table 2`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-tenth-datum"
+                      id="Tenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -360,13 +367,6 @@ exports[`render full simple table 2`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-tenth-datum"
-                      id="Tenth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -392,6 +392,13 @@ exports[`render full simple table 2`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-thirteenth-datum"
+                      id="Thirteenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -403,13 +410,6 @@ exports[`render full simple table 2`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-thirteenth-datum"
-                      id="Thirteenth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -435,6 +435,13 @@ exports[`render full simple table 2`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventeenth-datum"
+                      id="Seventeenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -446,13 +453,6 @@ exports[`render full simple table 2`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-seventeenth-datum"
-                      id="Seventeenth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -625,6 +625,13 @@ exports[`render large simple table with all items selected 1`] = `
                 class="indeterminate"
               >
                 <span>
+                  <input
+                    checked=""
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
                   <svg
                     aria-hidden="true"
                     class=""
@@ -636,13 +643,6 @@ exports[`render large simple table with all items selected 1`] = `
                       d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
                     />
                   </svg>
-                  <input
-                    checked=""
-                    data-indeterminate="true"
-                    data-testid="table-checkbox-header"
-                    type="checkbox"
-                    value=""
-                  />
                 </span>
                 <span
                   class=""
@@ -1178,6 +1178,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                     class="indeterminate"
                   >
                     <span>
+                      <input
+                        checked=""
+                        data-indeterminate="true"
+                        data-testid="table-checkbox-header"
+                        type="checkbox"
+                        value=""
+                      />
                       <svg
                         aria-hidden="true"
                         class=""
@@ -1189,13 +1196,6 @@ exports[`render large wide simple table with all items selected 1`] = `
                           d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
                         />
                       </svg>
-                      <input
-                        checked=""
-                        data-indeterminate="true"
-                        data-testid="table-checkbox-header"
-                        type="checkbox"
-                        value=""
-                      />
                     </span>
                     <span
                       class=""
@@ -1243,6 +1243,14 @@ exports[`render large wide simple table with all items selected 1`] = `
                   class="active"
                 >
                   <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-first-datum"
+                      id="First Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -1254,14 +1262,6 @@ exports[`render large wide simple table with all items selected 1`] = `
                         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                       />
                     </svg>
-                    <input
-                      checked=""
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-first-datum"
-                      id="First Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -1287,6 +1287,14 @@ exports[`render large wide simple table with all items selected 1`] = `
                   class="active"
                 >
                   <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-fourth-datum"
+                      id="Fourth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -1298,14 +1306,6 @@ exports[`render large wide simple table with all items selected 1`] = `
                         d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                       />
                     </svg>
-                    <input
-                      checked=""
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-fourth-datum"
-                      id="Fourth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -1331,6 +1331,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventh-datum"
+                      id="Seventh Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -1342,13 +1349,6 @@ exports[`render large wide simple table with all items selected 1`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-seventh-datum"
-                      id="Seventh Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -1374,6 +1374,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-tenth-datum"
+                      id="Tenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -1385,13 +1392,6 @@ exports[`render large wide simple table with all items selected 1`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-tenth-datum"
-                      id="Tenth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -1417,6 +1417,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-thirteenth-datum"
+                      id="Thirteenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -1428,13 +1435,6 @@ exports[`render large wide simple table with all items selected 1`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-thirteenth-datum"
-                      id="Thirteenth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""
@@ -1460,6 +1460,13 @@ exports[`render large wide simple table with all items selected 1`] = `
                   class=""
                 >
                   <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventeenth-datum"
+                      id="Seventeenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
                     <svg
                       aria-hidden="true"
                       class=""
@@ -1471,13 +1478,6 @@ exports[`render large wide simple table with all items selected 1`] = `
                         d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
                       />
                     </svg>
-                    <input
-                      data-indeterminate="false"
-                      data-testid="table-checkbox-cell-seventeenth-datum"
-                      id="Seventeenth Datum"
-                      type="checkbox"
-                      value=""
-                    />
                   </span>
                   <span
                     class=""

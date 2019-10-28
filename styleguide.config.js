@@ -16,7 +16,10 @@ module.exports = {
     },
     {
       name: "Wrappers",
-      components: () => ["./src/style-wrapper/style-wrapper.jsx", "./src/date-input/picker-util-provider-hoc.jsx"],
+      components: () => [
+        "./src/style-wrapper/style-wrapper.jsx",
+        "./src/date-input/picker-util-provider-hoc.jsx",
+      ],
     },
     {
       name: "Text & Inputs",
@@ -115,20 +118,30 @@ module.exports = {
         },
         {
           test: /\.css$/,
-          loader: [require.resolve("style-loader"), require.resolve("css-loader")],
+          loader: [
+            require.resolve("style-loader"),
+            require.resolve("css-loader"),
+          ],
         },
         {
           test: /\.module\.scss$/,
           loader: [
             require.resolve("style-loader"),
-            { loader: require.resolve("css-loader"), options: { modules: true } },
+            {
+              loader: require.resolve("css-loader"),
+              options: { modules: true },
+            },
             require.resolve("sass-loader"),
           ],
         },
         {
           test: /\.scss$/,
           exclude: /\.module\.scss$/,
-          loader: [require.resolve("style-loader"), require.resolve("css-loader"), require.resolve("sass-loader")],
+          loader: [
+            require.resolve("style-loader"),
+            require.resolve("css-loader"),
+            require.resolve("sass-loader"),
+          ],
         },
         {
           test: /\.(woff2|gif|jpg|png|svg)$/,

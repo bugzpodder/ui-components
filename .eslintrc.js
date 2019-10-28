@@ -19,11 +19,13 @@ module.exports = {
         paths: [
           {
             name: "lodash",
-            message: 'Please import lodash functions directly, eg: import isEmpty from "lodash/isEmpty".',
+            message:
+              'Please import lodash functions directly, eg: import isEmpty from "lodash/isEmpty".',
           },
           {
             name: "@material-ui/core",
-            message: 'Please import material-ui components directly, eg: import Card from "@material-ui/core/Card".',
+            message:
+              'Please import material-ui components directly, eg: import Card from "@material-ui/core/Card".',
           },
         ],
         patterns: ["@grailbio/lib/src/*", "@grailbio/components/src/*"],

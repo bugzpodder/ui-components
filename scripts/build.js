@@ -13,7 +13,10 @@ async function copyFile(file) {
 }
 
 async function createPackageFile() {
-  const packageData = await fse.readFile(path.resolve(__dirname, "../package.json"), "utf8");
+  const packageData = await fse.readFile(
+    path.resolve(__dirname, "../package.json"),
+    "utf8",
+  );
   const { name, version, dependencies } = JSON.parse(packageData);
   const newPackageData = {
     name,
@@ -23,7 +26,11 @@ async function createPackageFile() {
     private: true,
   };
   const buildPath = path.resolve(__dirname, "../dist/package.json");
-  await fse.writeFile(buildPath, JSON.stringify(newPackageData, null, 2), "utf8");
+  await fse.writeFile(
+    buildPath,
+    JSON.stringify(newPackageData, null, 2),
+    "utf8",
+  );
   return newPackageData;
 }
 

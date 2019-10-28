@@ -1,18 +1,25 @@
 // @flow
 import * as utilActions from "../utils";
 
-const pagedTableBaseTableSelector = "[data-testid='paged-table'] > [data-testid='card-body'] > table";
+const pagedTableBaseTableSelector =
+  "[data-testid='paged-table'] > [data-testid='card-body'] > table";
 
 export const getPagedTable = options => {
   return cy.get(pagedTableBaseTableSelector, options);
 };
 
 export const getFieldsInTable = (columnSelector, options) => {
-  return cy.get(`${pagedTableBaseTableSelector} > tbody > tr ${columnSelector}`, options);
+  return cy.get(
+    `${pagedTableBaseTableSelector} > tbody > tr ${columnSelector}`,
+    options,
+  );
 };
 
 export const getFieldAtRowAndCol = (rowNumber, colNumber, options) => {
-  return cy.get(`${pagedTableBaseTableSelector} > tbody > tr [data-cell-id='${rowNumber}-${colNumber}'`, options);
+  return cy.get(
+    `${pagedTableBaseTableSelector} > tbody > tr [data-cell-id='${rowNumber}-${colNumber}'`,
+    options,
+  );
 };
 
 export const getFirstFieldInTable = (columnSelector, options) => {
@@ -20,11 +27,16 @@ export const getFirstFieldInTable = (columnSelector, options) => {
 };
 
 export const getFirstTextContentInTable = columnSelector => {
-  return getFirstFieldInTable(columnSelector).then(element => utilActions.getTextFromElement(element));
+  return getFirstFieldInTable(columnSelector).then(element =>
+    utilActions.getTextFromElement(element),
+  );
 };
 
 export const checkFirstBoxInTable = options => {
-  return getFirstFieldInTable("td[data-cell-id$='-0'] input[type='checkbox']", options).click();
+  return getFirstFieldInTable(
+    "td[data-cell-id$='-0'] input[type='checkbox']",
+    options,
+  ).click();
 };
 
 export const checkPagedTableHeader = headerNames => {

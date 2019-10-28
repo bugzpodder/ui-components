@@ -1,7 +1,9 @@
 // @flow
 export const setRowsPerPage = (rowsPerPage = 10) => {
   cy.get("[data-testid=rows-per-page]").click();
-  cy.get(`#menu- [role=listbox] [role=option][data-value=${rowsPerPage}]`).click();
+  cy.get(
+    `#menu- [role=listbox] [role=option][data-value=${rowsPerPage}]`,
+  ).click();
 };
 
 export const sortWords = () => {
@@ -26,14 +28,25 @@ export const testSelectOne = shouldStatement => {
   cy.get("span[data-testid='paged-table-checkbox-cell']")
     .first()
     .should(shouldStatement, "active");
-  cy.get("span[data-testid='paged-table-checkbox-header']").should(shouldStatement, "indeterminate");
-  cy.get("span[data-testid='paged-table-checkbox-header']").should("not.have.class", "active");
+  cy.get("span[data-testid='paged-table-checkbox-header']").should(
+    shouldStatement,
+    "indeterminate",
+  );
+  cy.get("span[data-testid='paged-table-checkbox-header']").should(
+    "not.have.class",
+    "active",
+  );
 };
 
 export const testSelectAll = shouldStatement => {
   cy.get("span[data-testid='paged-table-checkbox-header']").click();
-  cy.get("span[data-testid='paged-table-checkbox-header']").should(shouldStatement, "active");
-  cy.get("span[data-testid='paged-table-checkbox-cell']").each(item => cy.wrap(item).should(shouldStatement, "active"));
+  cy.get("span[data-testid='paged-table-checkbox-header']").should(
+    shouldStatement,
+    "active",
+  );
+  cy.get("span[data-testid='paged-table-checkbox-cell']").each(item =>
+    cy.wrap(item).should(shouldStatement, "active"),
+  );
 };
 
 export const checkFirstWord = word => {

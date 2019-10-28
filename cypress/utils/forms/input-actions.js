@@ -1,7 +1,9 @@
 // @flow
 export const enterText = (selector, value, options = {}) => {
   if (typeof value !== "string") {
-    throw Error(`enterText expected param 'value' to be a string, got ${typeof value}`);
+    throw Error(
+      `enterText expected param 'value' to be a string, got ${typeof value}`,
+    );
   }
   const { force } = options;
   cy.get(selector)

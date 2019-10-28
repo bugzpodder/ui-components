@@ -14,7 +14,7 @@
     "flow": "flow",
     "lint": "kcd-scripts lint --ext .js --ext .jsx",
     "lint-fix": "yarn lint --fix",
-    "format": "prettier --write \"src/**/*.{js,jsx}\" \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
+    "format": "prettier --write \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
     "precommit": "kcd-scripts pre-commit",
     "prepublish": "yarn build",
@@ -94,7 +94,6 @@
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
-      "prettier --write",
       "kcd-scripts lint --rule flowtype/require-valid-file-annotation:2 --rule react-hooks/exhaustive-deps:0 --fix",
       "git add"
     ],

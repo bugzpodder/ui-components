@@ -7,11 +7,13 @@ module.exports = {
     node: true,
   },
   extends: [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
     "@grailbio/eslint-config-grail/src/front-end",
-    "@grailbio/eslint-config-grail/src/flow",
     "@grailbio/eslint-config-grail/src/cypress",
   ],
-  plugins: ["cypress", "flowtype", "import", "react", "filenames"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["cypress", "import", "react", "filenames", "@typescript-eslint"],
   rules: {
     "no-restricted-imports": [
       "error",
@@ -32,8 +34,14 @@ module.exports = {
       },
     ],
 
-    "function-paren-newline": 0,
-    "no-return-await": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      { devDependencies: ["src/**/*.spec.ts", "src/**/*.spec.tsx"] },
+    ],
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+
     "react/destructuring-assignment": 0,
     "react/no-array-index-key": 0,
     "react/require-default-props": 0,
@@ -47,11 +55,6 @@ module.exports = {
     "react/jsx-one-expression-per-line": 0,
     "react/sort-comp": 0,
 
-    "arrow-body-style": 0,
-    "no-use-before-define": 0,
     "consistent-return": 0,
-    "arrow-parens": 0,
-    "implicit-arrow-linebreak": 0,
-    "operator-linebreak": 0,
   },
 };

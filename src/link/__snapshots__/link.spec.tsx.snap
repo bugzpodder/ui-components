@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render ExternalLink 1`] = `
+<div>
+  <a
+    data-testid="external-link"
+    href="https://www.grail.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    GRAIL
+  </a>
+</div>
+`;
+
+exports[`render ExternalLink 2`] = `
+<div>
+  <div
+    class="button"
+  >
+    <a
+      aria-disabled="false"
+      class="test link"
+      data-testid="external-link-button"
+      href="https://www.grail.com"
+      rel="noopener noreferrer"
+      role="button"
+      tabindex="0"
+      target="_blank"
+    >
+      <span>
+        GRAIL
+      </span>
+      <span
+        class=""
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`render ExternalLink 3`] = `
+<div>
+  <div
+    class="button"
+  >
+    <a
+      aria-disabled="false"
+      class="test link"
+      data-testid="external-link-button"
+      href="https://www.grail.com"
+      rel="noopener noreferrer"
+      role="button"
+      tabindex="0"
+      target="_blank"
+    >
+      <span>
+        GRAIL
+      </span>
+      <span
+        class=""
+      />
+    </a>
+  </div>
+</div>
+`;

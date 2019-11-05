@@ -1,0 +1,4181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render basic paged table 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          Test Table
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="0"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="0-1"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="0-2"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="1"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="1-1"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="1-2"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="2"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="2-1"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="2-2"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="3"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="3-1"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="3-2"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="4"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="4-1"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="4-2"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="5"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="5-1"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="5-2"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render loading paged table 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="0"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="0-1"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="0-2"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="1"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="1-1"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="1-2"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="2"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="2-1"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="2-2"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="3"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="3-1"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="3-2"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="4"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="4-1"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="4-2"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="5"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="5-1"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="5-2"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+  <div
+    class="spinnerOverlay active"
+    data-is-active="true"
+    data-testid="spinner-overlay"
+  >
+    <div
+      class="loading"
+    />
+  </div>
+</div>
+`;
+
+exports[`render paged table and test pagination 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          Test Table
+           (2 Selected)
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+        <p
+          class=""
+        >
+          Test Header Action
+        </p>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader COLUMN_SELECT-header singleIcon"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="indeterminate"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </th>
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="First Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="First Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-first-datum"
+                    id="First Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-1"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-2"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="First Datum-3"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Fourth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Fourth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-fourth-datum"
+                    id="Fourth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-1"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-2"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="Fourth Datum-3"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Seventh Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Seventh Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventh-datum"
+                    id="Seventh Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-1"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-2"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="Seventh Datum-3"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Tenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Tenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-tenth-datum"
+                    id="Tenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-1"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-2"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="Tenth Datum-3"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Thirteenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Thirteenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-thirteenth-datum"
+                    id="Thirteenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-1"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-2"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="Thirteenth Datum-3"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Seventeenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Seventeenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventeenth-datum"
+                    id="Seventeenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-1"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-2"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="Seventeenth Datum-3"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter tableFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <div
+        class="table-pager tablePager"
+      >
+        <div
+          class=""
+        >
+          <div />
+          <p
+            class=""
+          >
+            Rows per page:
+          </p>
+          <div
+            class="select-row-count selectRowCount"
+            data-testid="rows-per-page"
+          >
+            <div
+              aria-haspopup="listbox"
+              class=""
+              role="button"
+              tabindex="0"
+            >
+              5
+            </div>
+            <input
+              id="rows-per-page"
+              type="hidden"
+              value="5"
+            />
+            <svg
+              aria-hidden="true"
+              class=""
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+          <p
+            class=""
+          >
+            Showing 1 to 5 of 100
+          </p>
+          <div>
+            <button
+              class="previous-page"
+              data-testid="previous-page"
+              disabled=""
+              tabindex="-1"
+              type="button"
+            >
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class=""
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <button
+              class="next-page"
+              data-testid="next-page"
+              tabindex="0"
+              type="button"
+            >
+              <span>
+                <svg
+                  aria-hidden="true"
+                  class=""
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                  />
+                </svg>
+              </span>
+              <span
+                class=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table and test sorting 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="sort-columnOne"
+                data-testid="sort-columnOne"
+                role="button"
+                tabindex="0"
+              >
+                Column One
+                <svg
+                  aria-hidden="true"
+                  class=""
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="sort-columnTwo"
+                data-testid="sort-columnTwo"
+                role="button"
+                tabindex="0"
+              >
+                Column Two
+                <svg
+                  aria-hidden="true"
+                  class=""
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="First Datum"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-1"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="First Datum-2"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Fourth Datum"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-1"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="Fourth Datum-2"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Seventh Datum"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-1"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="Seventh Datum-2"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Tenth Datum"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-1"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="Tenth Datum-2"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Thirteenth Datum"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-1"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="Thirteenth Datum-2"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Seventeenth Datum"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-1"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="Seventeenth Datum-2"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with all items selected, then unselect items 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+           (6 Selected)
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader COLUMN_SELECT-header singleIcon"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class="active indeterminate"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </th>
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="test-row-classname tableRow"
+            data-testid="First Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="First Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-first-datum"
+                    id="First Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-1"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-2"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="First Datum-3"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="test-row-classname tableRow"
+            data-testid="Fourth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Fourth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-fourth-datum"
+                    id="Fourth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-1"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-2"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="Fourth Datum-3"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="test-row-classname tableRow"
+            data-testid="Seventh Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Seventh Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventh-datum"
+                    id="Seventh Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-1"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-2"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="Seventh Datum-3"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="test-row-classname tableRow"
+            data-testid="Tenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Tenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-tenth-datum"
+                    id="Tenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-1"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-2"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="Tenth Datum-3"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="test-row-classname tableRow"
+            data-testid="Thirteenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Thirteenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-thirteenth-datum"
+                    id="Thirteenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-1"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-2"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="Thirteenth Datum-3"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="test-row-classname tableRow"
+            data-testid="Seventeenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Seventeenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class="active"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventeenth-datum"
+                    id="Seventeenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-1"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-2"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="Seventeenth Datum-3"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with column visibility chooser 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+            <th
+              class="singleIcon iconInHeaderOnly"
+              scope="col"
+            >
+              <button
+                class=""
+                data-testid="column-visibility-chooser-button"
+                tabindex="0"
+                type="button"
+              >
+                <span>
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="0"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="0-1"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="0-2"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="1"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="1-1"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="1-2"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="2"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="2-1"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="2-2"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="3"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="3-1"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="3-2"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="4"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="4-1"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="4-2"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="5"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="5-1"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="5-2"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with column visibility chooser 2`] = `
+<div
+  aria-hidden="true"
+>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+            <th
+              class="singleIcon iconInHeaderOnly"
+              scope="col"
+            >
+              <button
+                class=""
+                data-testid="column-visibility-chooser-button"
+                tabindex="0"
+                type="button"
+              >
+                <span>
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="0"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="0-1"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="0-2"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="1"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="1-1"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="1-2"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="2"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="2-1"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="2-2"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="3"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="3-1"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="3-2"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="4"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="4-1"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="4-2"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="5"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="5-1"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="5-2"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with column visibility chooser 3`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+            <th
+              class="singleIcon iconInHeaderOnly"
+              scope="col"
+            >
+              <button
+                class=""
+                data-testid="column-visibility-chooser-button"
+                tabindex="0"
+                type="button"
+              >
+                <span>
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="0"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="0-0"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="0-1"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="1"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="1-0"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="1-1"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="2"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="2-0"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="2-1"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="3"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="3-0"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="3-1"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="4"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="4-0"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="4-1"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="5"
+          >
+            <td
+              class="tableCell"
+              data-cell-id="5-0"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="5-1"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+            <td
+              class="singleIcon iconInHeaderOnly"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with default ids, and test row highlighting 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      />
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader COLUMN_SELECT-header singleIcon"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </th>
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="0"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="0-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-0"
+                    id="0"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="0-1"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="0-2"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="0-3"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="1"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="1-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-1"
+                    id="1"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="1-1"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="1-2"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="1-3"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="2"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="2-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-2"
+                    id="2"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="2-1"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="2-2"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="2-3"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="3"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="3-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-3"
+                    id="3"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="3-1"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="3-2"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="3-3"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="4"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="4-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-4"
+                    id="4"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="4-1"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="4-2"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="4-3"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="5"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="5-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-5"
+                    id="5"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="5-1"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="5-2"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="5-3"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with no initially selected items, then select items 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader COLUMN_SELECT-header singleIcon"
+              scope="col"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </th>
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class="tableRow"
+            data-testid="First Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="First Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-first-datum"
+                    id="First Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-1"
+            >
+              <span>
+                First Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="First Datum-2"
+            >
+              Second Datum
+            </td>
+            <td
+              class="tableCell test-third-datum-className"
+              data-cell-id="First Datum-3"
+            >
+              <span>
+                Third Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Fourth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Fourth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-fourth-datum"
+                    id="Fourth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-1"
+            >
+              <span>
+                Fourth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Fourth Datum-2"
+            >
+              Fifth Datum
+            </td>
+            <td
+              class="tableCell test-sixth-datum-className"
+              data-cell-id="Fourth Datum-3"
+            >
+              <span>
+                Sixth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Seventh Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Seventh Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventh-datum"
+                    id="Seventh Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-1"
+            >
+              <span>
+                Seventh Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventh Datum-2"
+            >
+              Eighth Datum
+            </td>
+            <td
+              class="tableCell test-ninth-datum-className"
+              data-cell-id="Seventh Datum-3"
+            >
+              <span>
+                Ninth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Tenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Tenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-tenth-datum"
+                    id="Tenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-1"
+            >
+              <span>
+                Tenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Tenth Datum-2"
+            >
+              Eleventh Datum
+            </td>
+            <td
+              class="tableCell test-twelfth-datum-className"
+              data-cell-id="Tenth Datum-3"
+            >
+              <span>
+                Twelfth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Thirteenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Thirteenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-thirteenth-datum"
+                    id="Thirteenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-1"
+            >
+              <span>
+                Thirteenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Thirteenth Datum-2"
+            >
+              Fifteenth Datum
+            </td>
+            <td
+              class="tableCell test-sixteenth-datum-className"
+              data-cell-id="Thirteenth Datum-3"
+            >
+              <span>
+                Sixteenth Datum
+              </span>
+            </td>
+          </tr>
+          <tr
+            class="tableRow"
+            data-testid="Seventeenth Datum"
+          >
+            <td
+              class="tableCell singleIcon"
+              data-cell-id="Seventeenth Datum-0"
+            >
+              <span
+                aria-disabled="false"
+                class=""
+              >
+                <span>
+                  <input
+                    data-indeterminate="false"
+                    data-testid="table-checkbox-cell-seventeenth-datum"
+                    id="Seventeenth Datum"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-1"
+            >
+              <span>
+                Seventeenth Datum
+              </span>
+            </td>
+            <td
+              class="tableCell"
+              data-cell-id="Seventeenth Datum-2"
+            >
+              Eighteenth Datum
+            </td>
+            <td
+              class="tableCell test-ninteenth-datum-className"
+              data-cell-id="Seventeenth Datum-3"
+            >
+              <span>
+                Ninteenth Datum
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        6
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with no results 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          4
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class=""
+          >
+            <td
+              class="no-results noResults"
+              colspan="3"
+            >
+              0 Results
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        0
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render paged table with no results and is loading 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody hasTableMargin tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class=""
+          >
+            <td
+              class="no-results noResults"
+              colspan="3"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        0
+         records
+      </p>
+    </div>
+  </div>
+  <div
+    class="spinnerOverlay active"
+    data-is-active="true"
+    data-testid="spinner-overlay"
+  >
+    <div
+      class="loading"
+    />
+  </div>
+</div>
+`;
+
+exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
+<div>
+  <div
+    class="pagedTableCardRoot fullBleedPagedTableCardRoot card"
+    data-testid="paged-table"
+  >
+    <div
+      class=""
+      data-testid="card-header"
+    >
+      <div>
+        <span
+          class="card-title"
+          data-testid="card-title"
+        >
+          
+        </span>
+        <span
+          class=""
+          data-testid="card-subheader"
+        />
+      </div>
+      <div
+        class="headerActions"
+      >
+        <button
+          class=""
+          data-testid="export-button"
+          tabindex="0"
+          type="button"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="margin-right-5"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"
+              />
+            </svg>
+            Export
+          </span>
+          <span
+            class=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="pagedTableCardBody tableContainer"
+      data-testid="card-body"
+    >
+      <table
+        class="table"
+        data-testid="table"
+        tabindex="0"
+      >
+        <thead
+          class="TableHeader"
+        >
+          <tr
+            class=""
+          >
+            <th
+              class="tableHeader columnOne-header"
+              scope="col"
+            >
+              Column One
+            </th>
+            <th
+              class="tableHeader columnTwo-header"
+              scope="col"
+            >
+              Column Two
+            </th>
+            <th
+              class="tableHeader"
+              scope="col"
+            />
+          </tr>
+        </thead>
+        <tbody
+          class=""
+        >
+          <tr
+            class=""
+          >
+            <td
+              class="no-results noResults"
+              colspan="3"
+            >
+              0 Results
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="pagedTableCardFooter footerActions"
+      data-testid="card-footer-actions"
+    >
+      <p
+        class="tableSummary"
+      >
+        Showing 
+        0
+         records
+      </p>
+    </div>
+  </div>
+</div>
+`;

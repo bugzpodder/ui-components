@@ -3,29 +3,28 @@
   "version": "1.1.22",
   "homepage": "https://github.com/grailbio/ui-components",
   "scripts": {
-    "build": "NODE_ENV=production yarn build:src && yarn build:flow && babel-node ./scripts/build.js",
-    "build:flow": "flow-copy-source src dist",
-    "build:src": "kcd-scripts build",
+    "build": "NODE_ENV=production yarn build:src",
+    "build:src": "tsdx build",
     "build:client": "NODE_ENV=production yarn build:src",
     "start:client": "NODE_ENV=development yarn build:src --watch",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cover": "open coverage/lcov-report/index.html",
-    "flow": "flow",
-    "lint": "kcd-scripts lint --ext .js --ext .jsx",
+    "flow": "true",
+    "lint": "yarn tsc --skipLibCheck && tsdx lint src",
     "lint-fix": "yarn lint --fix",
-    "format": "prettier --write \"*.js\" \"scripts/**/*.js\" && yarn lint-fix",
+    "format": "prettier --write \"*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
-    "precommit": "kcd-scripts pre-commit",
+    "precommit": "lint-staged",
     "prepublish": "yarn build",
     "start": "yarn styleguide",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "test": "kcd-scripts test --watch",
+    "test": "tsdx test --watch",
     "test-e2e": "start-server-and-test styleguide 6060 cy:open",
     "test-e2e:ci": "start-server-and-test styleguide 6060 cy:run",
-    "test:staged": "kcd-scripts test --coverage && echo --findRelatedTests does not work properly with coverage",
-    "test-all": "kcd-scripts test --coverage"
+    "test:staged": "tsdx test --coverage && echo --findRelatedTests does not work properly with coverage",
+    "test-all": "tsdx test --coverage"
   },
   "husky": {
     "hooks": {
@@ -33,14 +32,14 @@
     }
   },
   "dependencies": {
-    "@babel/runtime": "^7.6.3",
     "@date-io/core": "^1.3.11",
     "@date-io/moment": "^1.3.11",
     "@material-ui/pickers": "^3.2.7",
     "classnames": "^2.2.6",
-    "dom-helpers": "^5.1.2",
-    "downshift": "^3.3.5",
+    "dom-helpers": "^5.1.3",
+    "downshift": "^3.4.1",
     "file-saver": "^2.0.2",
+    "istanbul-reports": "^2.2.6",
     "keycode": "^2.2.0",
     "lodash": "^4.17.15",
     "material-ui-pickers": "^2.2.4",
@@ -48,38 +47,45 @@
     "path-to-regexp": "^3.1.0",
     "react-select": "^3.0.8",
     "react-virtualized": "^9.21.1",
-    "sass": "^1.23.1"
+    "sass": "^1.23.3"
   },
   "devDependencies": {
-    "@babel/node": "^7.6.3",
     "@cypress/webpack-preprocessor": "^4.1.0",
     "@grailbio/eslint-config-grail": "^1.0.2",
     "@grailbio/lib": "^1.1.12",
-    "@material-ui/core": "^4.5.1",
+    "@material-ui/core": "4.5.1",
     "@material-ui/icons": "^4.5.1",
-    "@material-ui/styles": "^4.5.0",
-    "@testing-library/jest-dom": "^4.1.2",
-    "@testing-library/react": "^9.3.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-loader": "^8.0.6",
+    "@material-ui/styles": "^4.6.0",
+    "@testing-library/jest-dom": "^4.2.3",
+    "@testing-library/react": "^9.3.2",
+    "@types/jest": "^24.0.22",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/react-select": "^3.0.8",
     "css-loader": "^3.2.0",
-    "cypress": "^3.5.0",
-    "flow-bin": "^0.110.1",
-    "flow-copy-source": "^2.0.8",
+    "cssnano": "^4.1.10",
+    "cypress": "^3.6.0",
     "fs-extra": "^8.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest-mock-console": "^1.0.0",
-    "kcd-scripts": "^1.9.0",
+    "lint-staged": "7.3.0",
     "moment-timezone": "^0.5.27",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-simple-vars": "^5.0.2",
     "prettier": "^1.18.2",
     "react": "^16.11.0",
+    "react-docgen-typescript": "^1.15.1",
     "react-dom": "^16.11.0",
     "react-jss": "^10.0.0",
     "react-router-dom": "^5.1.2",
-    "react-styleguidist": "^9.2.0",
+    "react-styleguidist": "9.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
     "sass-loader": "^8.0.0",
     "start-server-and-test": "^1.10.6",
     "style-loader": "^1.0.0",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.2.1",
+    "tsdx": "^0.11.0",
     "url-loader": "^2.2.0",
     "webpack": "4.41.0"
   },
@@ -93,16 +99,29 @@
     "react-router-dom": "^4.3.1 || ^5.0.0"
   },
   "lint-staged": {
-    "*.+(js|jsx|ts|tsx)": [
-      "kcd-scripts lint --rule flowtype/require-valid-file-annotation:2 --rule react-hooks/exhaustive-deps:0 --fix",
+    "*.+!(spec).(ts|tsx)": [
+      "eslint --plugin tsc --rule 'tsc/config: [2, {configFile: \"./tsconfig.json\"}]' --rule react-hooks/exhaustive-deps:0 --fix",
       "git add"
     ],
-    "*.+(json|yml|yaml|css|less|scss|md|graphql|mdx)": [
+    "*.+spec.(ts|tsx)": [
+      "eslint --rule react-hooks/exhaustive-deps:0 --fix",
+      "git add"
+    ],
+    "*.+(js|jsx|json|yml|yaml|css|less|scss|md|graphql|mdx)": [
       "prettier --write",
       "git add"
     ]
   },
   "main": "dist/index.js",
+  "module": "dist/common-private.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "page/page-v1/constants.scss",
+    "page/page-v2/constants.scss",
+    "src/styles",
+    "src/common-select/common-select.scss"
+  ],
   "private": false,
   "publishConfig": {
     "access": "public"

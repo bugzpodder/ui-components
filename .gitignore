@@ -2,6 +2,10 @@ coverage/
 cypress.env.json
 cypress/screenshots/
 cypress/videos/
-dist/
+dist/**/*.js
+dist/**/*.js.map
+grailbio-components-*.tgz
 styleguide/
 node_modules/
+.rts2_cache_cjs/
+.rts2_cache_esm/

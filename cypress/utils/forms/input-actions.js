@@ -1,4 +1,3 @@
-// @flow
 export const enterText = (selector, value, options = {}) => {
   if (typeof value !== "string") {
     throw Error(

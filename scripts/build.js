@@ -1,4 +1,3 @@
-// @flow
 import cp from "child_process";
 import path from "path";
 import util from "util";

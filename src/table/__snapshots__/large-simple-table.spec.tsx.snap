@@ -1,0 +1,2190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render full simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell COLUMN_SELECT-header singleIcon"
+          >
+            <div
+              class="headerText"
+            >
+              <span
+                aria-disabled="false"
+                class="indeterminate"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </div>
+          </div>
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="4"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render full simple table 2`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div
+      class="table"
+    >
+      <div
+        class="gridRow"
+      >
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid headerGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 200px; height: 50px; max-width: 200px; max-height: 50px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="headerCell headerRow COLUMN_SELECT-header singleIcon"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 50px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  <span
+                    aria-disabled="false"
+                    class="indeterminate"
+                  >
+                    <span>
+                      <input
+                        checked=""
+                        data-indeterminate="true"
+                        data-testid="table-checkbox-header"
+                        type="checkbox"
+                        value=""
+                      />
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class=""
+                    />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="headerCell headerRow columnOne-header tableHeader isRightmostFrozenColumn"
+                style="height: 50px; left: 50px; position: absolute; top: 0px; width: 150px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  Column One
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 50px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid frozenColumnsGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 200px; height: 300px; max-width: 200px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="First Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class="active"
+                >
+                  <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-first-datum"
+                      id="First Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="First Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 0px; width: 150px;"
+              >
+                <span>
+                  First Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Fourth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class="active"
+                >
+                  <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-fourth-datum"
+                      id="Fourth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Fourth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 50px; width: 150px;"
+              >
+                <span>
+                  Fourth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Seventh Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventh-datum"
+                      id="Seventh Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventh Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 100px; width: 150px;"
+              >
+                <span>
+                  Seventh Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Tenth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-tenth-datum"
+                      id="Tenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Tenth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 150px; width: 150px;"
+              >
+                <span>
+                  Tenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Thirteenth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-thirteenth-datum"
+                      id="Thirteenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Thirteenth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 200px; width: 150px;"
+              >
+                <span>
+                  Thirteenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Seventeenth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventeenth-datum"
+                      id="Seventeenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventeenth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 250px; width: 150px;"
+              >
+                <span>
+                  Seventeenth Datum
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gridColumn"
+        >
+          <div
+            style="overflow: visible; width: 0px;"
+          >
+            <div>
+              <div
+                style="height: 50px; width: -20px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid headerGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                style="height: 300px; width: 0px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid bodyGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large simple table with all items selected 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell COLUMN_SELECT-header singleIcon"
+          >
+            <div
+              class="headerText"
+            >
+              <span
+                aria-disabled="false"
+                class="indeterminate"
+              >
+                <span>
+                  <input
+                    checked=""
+                    data-indeterminate="true"
+                    data-testid="table-checkbox-header"
+                    type="checkbox"
+                    value=""
+                  />
+                  <svg
+                    aria-hidden="true"
+                    class=""
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class=""
+                />
+              </span>
+            </div>
+          </div>
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="4"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large simple table with no results 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <p
+      class=""
+    >
+      No data
+    </p>
+  </div>
+</div>
+`;
+
+exports[`render large simple table with no results and is loading 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="0"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+    <div
+      class="spinnerOverlay active"
+      data-is-active="true"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large simple table with set row height 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large wide simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div
+      class="table"
+    >
+      <div
+        class="gridRow"
+      >
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid headerGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 50px; max-width: 150px; max-height: 50px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="headerCell headerRow columnOne-header tableHeader isRightmostFrozenColumn"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  Column One
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 50px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid frozenColumnsGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 300px; max-width: 150px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="0-0"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <span>
+                  First Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="1-0"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 150px;"
+              >
+                <span>
+                  Fourth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="2-0"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 150px;"
+              >
+                <span>
+                  Seventh Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="3-0"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 150px;"
+              >
+                <span>
+                  Tenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="4-0"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 150px;"
+              >
+                <span>
+                  Thirteenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="5-0"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 150px;"
+              >
+                <span>
+                  Seventeenth Datum
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gridColumn"
+        >
+          <div
+            style="overflow: visible; width: 0px;"
+          >
+            <div>
+              <div
+                style="height: 50px; width: -20px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid headerGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                style="height: 300px; width: 0px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid bodyGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large wide simple table with all items selected 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div
+      class="table"
+    >
+      <div
+        class="gridRow"
+      >
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid headerGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 200px; height: 50px; max-width: 200px; max-height: 50px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="headerCell headerRow COLUMN_SELECT-header singleIcon"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 50px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  <span
+                    aria-disabled="false"
+                    class="indeterminate"
+                  >
+                    <span>
+                      <input
+                        checked=""
+                        data-indeterminate="true"
+                        data-testid="table-checkbox-header"
+                        type="checkbox"
+                        value=""
+                      />
+                      <svg
+                        aria-hidden="true"
+                        class=""
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class=""
+                    />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="headerCell headerRow columnOne-header tableHeader isRightmostFrozenColumn"
+                style="height: 50px; left: 50px; position: absolute; top: 0px; width: 150px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  Column One
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 50px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid frozenColumnsGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 200px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 200px; height: 300px; max-width: 200px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="First Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class="active"
+                >
+                  <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-first-datum"
+                      id="First Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="First Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 0px; width: 150px;"
+              >
+                <span>
+                  First Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Fourth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class="active"
+                >
+                  <span>
+                    <input
+                      checked=""
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-fourth-datum"
+                      id="Fourth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Fourth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 50px; width: 150px;"
+              >
+                <span>
+                  Fourth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Seventh Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventh-datum"
+                      id="Seventh Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventh Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 100px; width: 150px;"
+              >
+                <span>
+                  Seventh Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Tenth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-tenth-datum"
+                      id="Tenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Tenth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 150px; width: 150px;"
+              >
+                <span>
+                  Tenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Thirteenth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-thirteenth-datum"
+                      id="Thirteenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Thirteenth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 200px; width: 150px;"
+              >
+                <span>
+                  Thirteenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell singleIcon"
+                data-cell-id="Seventeenth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 50px;"
+              >
+                <span
+                  aria-disabled="false"
+                  class=""
+                >
+                  <span>
+                    <input
+                      data-indeterminate="false"
+                      data-testid="table-checkbox-cell-seventeenth-datum"
+                      id="Seventeenth Datum"
+                      type="checkbox"
+                      value=""
+                    />
+                    <svg
+                      aria-hidden="true"
+                      class=""
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class=""
+                  />
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventeenth Datum-1"
+                style="height: 50px; left: 50px; position: absolute; top: 250px; width: 150px;"
+              >
+                <span>
+                  Seventeenth Datum
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gridColumn"
+        >
+          <div
+            style="overflow: visible; width: 0px;"
+          >
+            <div>
+              <div
+                style="height: 50px; width: -20px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid headerGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                style="height: 300px; width: 0px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid bodyGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large wide simple table with dynamic row height 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div
+      class="table"
+    >
+      <div
+        class="gridRow"
+      >
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid headerGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 0px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          />
+        </div>
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid frozenColumnsGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 750px; max-width: 150px; max-height: 750px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="First Datum-0"
+                style="height: 0px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <span>
+                  First Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Fourth Datum-0"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <span>
+                  Fourth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventh Datum-0"
+                style="height: 100px; left: 0px; position: absolute; top: 50px; width: 150px;"
+              >
+                <span>
+                  Seventh Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Tenth Datum-0"
+                style="height: 150px; left: 0px; position: absolute; top: 150px; width: 150px;"
+              >
+                <span>
+                  Tenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Thirteenth Datum-0"
+                style="height: 200px; left: 0px; position: absolute; top: 300px; width: 150px;"
+              >
+                <span>
+                  Thirteenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventeenth Datum-0"
+                style="height: 250px; left: 0px; position: absolute; top: 500px; width: 150px;"
+              >
+                <span>
+                  Seventeenth Datum
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gridColumn"
+        >
+          <div
+            style="overflow: visible; width: 0px;"
+          >
+            <div>
+              <div
+                style="height: 0px; width: -20px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid headerGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 0px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: auto;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                style="height: 300px; width: 0px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid bodyGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 280px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large wide simple table with no results 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <p
+      class=""
+    >
+      No data
+    </p>
+  </div>
+</div>
+`;
+
+exports[`render large wide simple table with no results and is loading 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div
+      class="table"
+    >
+      <div
+        class="gridRow"
+      >
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid headerGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 50px; max-width: 150px; max-height: 50px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="headerCell headerRow columnOne-header tableHeader isRightmostFrozenColumn"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  Column One
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 50px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid frozenColumnsGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          />
+        </div>
+        <div
+          class="gridColumn"
+        >
+          <div
+            style="overflow: visible; width: 0px;"
+          >
+            <div>
+              <div
+                style="height: 50px; width: -20px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid headerGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                style="height: 300px; width: 0px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid bodyGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="spinnerOverlay active"
+      data-is-active="true"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render large wide simple table with set row height 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div
+      class="table"
+    >
+      <div
+        class="gridRow"
+      >
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid headerGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 75px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 75px; max-width: 150px; max-height: 75px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="headerCell headerRow columnOne-header tableHeader isRightmostFrozenColumn"
+                style="height: 75px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  Column One
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 75px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid frozenColumnsGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 205px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 450px; max-width: 150px; max-height: 450px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="First Datum-0"
+                style="height: 75px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <span>
+                  First Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Fourth Datum-0"
+                style="height: 75px; left: 0px; position: absolute; top: 75px; width: 150px;"
+              >
+                <span>
+                  Fourth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventh Datum-0"
+                style="height: 75px; left: 0px; position: absolute; top: 150px; width: 150px;"
+              >
+                <span>
+                  Seventh Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Tenth Datum-0"
+                style="height: 75px; left: 0px; position: absolute; top: 225px; width: 150px;"
+              >
+                <span>
+                  Tenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Thirteenth Datum-0"
+                style="height: 75px; left: 0px; position: absolute; top: 300px; width: 150px;"
+              >
+                <span>
+                  Thirteenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="Seventeenth Datum-0"
+                style="height: 75px; left: 0px; position: absolute; top: 375px; width: 150px;"
+              >
+                <span>
+                  Seventeenth Datum
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gridColumn"
+        >
+          <div
+            style="overflow: visible; width: 0px;"
+          >
+            <div>
+              <div
+                style="height: 75px; width: -20px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid headerGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 75px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                style="height: 300px; width: 0px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid bodyGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 205px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render loading simple table 1`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div>
+      <div
+        class="headerContainer headerContainerPadding"
+      >
+        <div
+          class="headerRow"
+        >
+          <div
+            class="headerCell columnOne-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column One
+            </div>
+          </div>
+          <div
+            class="headerCell columnTwo-header tableHeader"
+          >
+            <div
+              class="headerText"
+            >
+              Column Two
+            </div>
+          </div>
+          <div
+            class="headerCell tableHeader"
+          >
+            <div
+              class="headerText"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="overflow: visible; width: 0px;"
+      >
+        <div
+          aria-colcount="3"
+          aria-rowcount="6"
+          class="ReactVirtualized__Table table"
+          role="grid"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid ReactVirtualized__Table__Grid"
+            role="rowgroup"
+            style="box-sizing: border-box; direction: ltr; height: 300px; position: relative; width: 0px; will-change: transform; overflow-x: hidden; overflow-y: hidden; overflow: hidden scroll;"
+            tabindex="0"
+          />
+        </div>
+      </div>
+      <div
+        class="resize-triggers"
+      >
+        <div
+          class="expand-trigger"
+        >
+          <div
+            style="width: 1px; height: 1px;"
+          />
+        </div>
+        <div
+          class="contract-trigger"
+        />
+      </div>
+    </div>
+    <div
+      class="spinnerOverlay active"
+      data-is-active="true"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render loading simple table 2`] = `
+<div>
+  <div
+    class="tableContainer"
+  >
+    <div
+      class="table"
+    >
+      <div
+        class="gridRow"
+      >
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 0px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid headerGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 50px; max-width: 150px; max-height: 50px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="headerCell headerRow columnOne-header tableHeader isRightmostFrozenColumn"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <div
+                  class="headerText"
+                >
+                  Column One
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="frozenColumnsGridContainer"
+          style="top: 50px;"
+        >
+          <div
+            aria-label="grid"
+            aria-readonly="true"
+            class="ReactVirtualized__Grid frozenColumnsGrid"
+            role="grid"
+            style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: 150px; will-change: transform; overflow-x: hidden; overflow-y: auto;"
+            tabindex="0"
+          >
+            <div
+              class="ReactVirtualized__Grid__innerScrollContainer"
+              role="rowgroup"
+              style="width: 150px; height: 300px; max-width: 150px; max-height: 300px; overflow: hidden; position: relative;"
+            >
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="0-0"
+                style="height: 50px; left: 0px; position: absolute; top: 0px; width: 150px;"
+              >
+                <span>
+                  First Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="1-0"
+                style="height: 50px; left: 0px; position: absolute; top: 50px; width: 150px;"
+              >
+                <span>
+                  Fourth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="2-0"
+                style="height: 50px; left: 0px; position: absolute; top: 100px; width: 150px;"
+              >
+                <span>
+                  Seventh Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="3-0"
+                style="height: 50px; left: 0px; position: absolute; top: 150px; width: 150px;"
+              >
+                <span>
+                  Tenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="4-0"
+                style="height: 50px; left: 0px; position: absolute; top: 200px; width: 150px;"
+              >
+                <span>
+                  Thirteenth Datum
+                </span>
+              </div>
+              <div
+                class="largeWideTableCell tableCell isRightmostFrozenColumn"
+                data-cell-id="5-0"
+                style="height: 50px; left: 0px; position: absolute; top: 250px; width: 150px;"
+              >
+                <span>
+                  Seventeenth Datum
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="gridColumn"
+        >
+          <div
+            style="overflow: visible; width: 0px;"
+          >
+            <div>
+              <div
+                style="height: 50px; width: -20px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid headerGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 50px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+              <div
+                style="height: 300px; width: 0px;"
+              >
+                <div
+                  aria-label="grid"
+                  aria-readonly="true"
+                  class="ReactVirtualized__Grid bodyGrid"
+                  role="grid"
+                  style="box-sizing: border-box; direction: ltr; height: 230px; position: relative; width: -20px; will-change: transform; overflow-x: auto; overflow-y: hidden;"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="resize-triggers"
+          >
+            <div
+              class="expand-trigger"
+            >
+              <div
+                style="width: 1px; height: 1px;"
+              />
+            </div>
+            <div
+              class="contract-trigger"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="spinnerOverlay active"
+      data-is-active="true"
+      data-testid="spinner-overlay"
+    >
+      <div
+        class="loading"
+      />
+    </div>
+  </div>
+</div>
+`;

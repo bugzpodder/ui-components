@@ -1,4 +1,3 @@
-// @flow
 import * as utilActions from "../utils";
 
 const pagedTableBaseTableSelector =

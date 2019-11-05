@@ -1,4 +1,3 @@
-// @flow
 export const getCommonSelectValueContainer = selector => {
   return cy.get(
     `.common-select__root ${selector} .common-select__value-container`,

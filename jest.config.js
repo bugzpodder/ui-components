@@ -1,26 +1,29 @@
-// @flow
-const jestConfig = require("kcd-scripts/config").jest;
-
-module.exports = Object.assign(jestConfig, {
-  testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+module.exports = {
   collectCoverageFrom: [
-    "src/**/*.{js,jsx}",
-    "!src/**/index.js",
-    "!src/dev/**/*.{js,jsx}",
-    "!src/__deprecated__/**/*.{js,jsx}",
-    "!src/utils/*.{js,jsx}",
+    "src/**/*.{ts,tsx}",
+    "!src/**/index.ts",
+    "!src/dev/**/*.{ts,tsx}",
+    "!src/__deprecated__/**/*.{ts,tsx}",
+    "!src/utils/*.{ts,tsx}",
   ],
   coverageThreshold: {
-    "src/**/*.{js,jsx}": {
+    "src/**/*.{ts,tsx}": {
       lines: 25,
     },
   },
   moduleNameMapper: {
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
   },
-  testPathIgnorePatterns: ["/node_modules/", "/cypress/"],
+  testPathIgnorePatterns: ["/node_modules/", "/dist", "/cypress/"],
   transform: {
-    ".jsx?$": "babel-jest",
+    ".tsx?$": "ts-jest",
   },
   setupFilesAfterEnv: ["jest-mock-console/dist/setupTestFramework.js"],
-});
+  globals: {
+    "ts-jest": {
+      diagnostics: {
+        ignoreCodes: [2345, 2739, 2740, 2741, 2769],
+      },
+    },
+  },
+};

@@ -8,7 +8,6 @@ filegroup(
             "node_modules/**",
             "dist/**",
             "cypress/**",
-            "flow-typed/**",
             "coverage/**",
         ],
     ),

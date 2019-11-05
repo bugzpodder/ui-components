@@ -1,4 +1,3 @@
-// @flow
 import * as inputActions from "./input-actions";
 
 export const getCommonSuggestInputSelector = testId => {

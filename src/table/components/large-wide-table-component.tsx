@@ -7,7 +7,7 @@ import { AutoSizer, Grid, ScrollSync } from "react-virtualized";
 import { InnerTableHeader } from "./inner-table-header";
 import { PagedTableClasses, PagedTableColumn } from "../../types/paged-table";
 import { SimpleTableOptions } from "../../types/table";
-import { SortOption } from "../../types/api";
+import { SortOption } from "@grailbio/lib";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId } from "../utilities/row-utils";
 
@@ -104,15 +104,17 @@ export const LargeWideTableComponent: React.FC<Props> = props => {
     }
     let inner = null;
     if (Cell) {
-      inner = Cell({
-        instance: rowData,
-        original: rowData,
-        value,
-        accessor,
-        rowId,
-        rowIndex,
-        label: Header || "",
-      });
+      inner = (
+        <Cell
+          instance={rowData}
+          original={rowData}
+          value={value}
+          accessor={accessor}
+          rowId={rowId}
+          rowIndex={rowIndex}
+          label={Header || ""}
+        />
+      );
     } else {
       inner = <Typography>{value}</Typography>;
     }

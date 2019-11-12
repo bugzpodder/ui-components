@@ -4,7 +4,7 @@ import classNames from "classnames";
 import styles from "./table.module.scss";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { SimpleTableOptions } from "../types/table";
-import { SortOption } from "../types/api";
+import { SortOption } from "@grailbio/lib";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
 

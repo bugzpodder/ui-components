@@ -7,7 +7,7 @@ import { LargeTableComponent } from "./components/large-table-component";
 import { LargeWideTableComponent } from "./components/large-wide-table-component";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { SimpleTableOptions } from "../types/table";
-import { SortOption } from "../types/api";
+import { SortOption } from "@grailbio/lib";
 import { SpinnerOverlay } from "../spinner-overlay";
 
 type Props = {

@@ -1,6 +1,6 @@
 import React, { ComponentType, ReactNode } from "react";
 import { BaseNavbarClasses } from "../../types/base-navbar";
-import { SidebarItem } from "../../types/nav";
+import { SidebarItem } from "@grailbio/lib";
 declare type Props = {
     isOpen: boolean;
     toggle: () => void;

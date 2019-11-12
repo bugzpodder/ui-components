@@ -1,5 +1,5 @@
 import React from "react";
-import { SearchFieldProps } from "../types/api";
+import { SearchFieldProps } from "@grailbio/lib";
 declare type Props = {
     suggestions: string[];
     loadSuggestions: () => void;

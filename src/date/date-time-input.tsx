@@ -59,6 +59,7 @@ export const DateTimeInput: React.FC<Props> = props => {
         "data-testid": "date-time-picker-dialog",
       }}
       autoOk
+      // @ts-ignore string | (string | RegExp)[] is not assignable to type.
       mask={DATE_TIME_INPUT_MASK}
       {...props}
       value={value || null}

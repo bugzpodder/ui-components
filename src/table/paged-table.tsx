@@ -5,7 +5,7 @@ import { CommonCard } from "../common-card";
 import { ExportButton } from "../export-button/export-button";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { PagedTableOptions } from "../types/table";
-import { SortOption } from "../types/api";
+import { SortOption } from "@grailbio/lib";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TableComponent } from "./components/table-component";
 import { TablePager } from "./components/table-pager";

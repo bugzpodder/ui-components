@@ -11,7 +11,7 @@ import styles from "../table.module.scss";
 import { PagedTableClasses, PagedTableColumn } from "../../types/paged-table";
 import { PagedTableRow } from "./table-row";
 import { SimpleTableOptions } from "../../types/table";
-import { SortOption } from "../../types/api";
+import { SortOption } from "@grailbio/lib";
 import { TableHeader } from "./table-header";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId, handleKeyboardHighlight } from "../utilities/row-utils";
@@ -68,26 +68,25 @@ export const TableComponent: React.FC<Props> = props => {
     onHighlightRow,
     highlightedRowId,
   };
-  const availableColumns = columns.filter(
-    column => column.excludeFromTable !== true,
-  );
-  let tableColumns = availableColumns.map((column, index) => ({
-    ...column,
-    index,
-  }));
+  const availableColumns = columns
+    .filter(column => column.excludeFromTable !== true)
+    .map((column, index) => ({
+      ...column,
+      index,
+    }));
   const [columnVisibility, setColumnVisibility] = useState<{
     [x0: number]: boolean;
   }>(
     // This simply constructs a map from the column index to a boolean
     // representing whether or not the column is visible.
     mapValues(
-      keyBy(tableColumns, column => column.index),
+      keyBy(availableColumns, column => column.index),
       // TODO(ecarrel): maybe retrieve visibility values from localstorage once
       //  they are stored there.
       column => column.showByDefault !== false,
     ),
   );
-  tableColumns = tableColumns.map(column => ({
+  let tableColumns = availableColumns.map(column => ({
     ...column,
     isVisible: !hasColumnVisibilityChooser || columnVisibility[column.index],
   }));

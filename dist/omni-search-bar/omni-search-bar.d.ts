@@ -1,17 +1,17 @@
 import React, { ReactNode } from "react";
-import { OmniQueryOptionsV2, OmniSearchCommand, OmniSearchDef, OmniSearchDefs, OmniSearchValues, SearchOptionsV2 } from "../types/api";
+import { OmniQueryOptionsV2, OmniSearchCommand, OmniSearchDef, OmniSearchValues, SearchOptionV2 } from "@grailbio/lib";
 import { RouteComponentProps } from "react-router-dom";
 declare type Props = {
     /** Defines the search parameters. */
-    searchDefs: OmniSearchDefs;
+    searchDefs: OmniSearchDef[];
     /** Handles a request to search. */
     setSearchOptions: (x0: OmniQueryOptionsV2) => any;
     /** Handles a request to update search options but not perform the search. */
     updateSearchOptions: (x0: {
-        searchOptions: SearchOptionsV2;
+        searchOptions: SearchOptionV2[];
     }) => any;
     /** getInitialValues gets values to default to for omni-search. */
-    getInitialValues?: (searchDefs: OmniSearchDefs) => OmniSearchValues;
+    getInitialValues?: (searchDefs: OmniSearchDef[]) => OmniSearchValues;
     /** Takes a `node` to include in the omni dropdown after the search fields */
     children?: ReactNode;
     /** Omni search change command queue */

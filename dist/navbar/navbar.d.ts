@@ -1,5 +1,5 @@
 import React, { ComponentType, ReactNode } from "react";
-import { SidebarItem } from "../types/nav";
+import { SidebarItem } from "@grailbio/lib";
 declare type Props = {
     /** Determines whether to put warning banner above the navigation bar. */
     isProduction?: boolean;

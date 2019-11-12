@@ -2,7 +2,7 @@ import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { Link, MemoryRouter } from "react-router-dom";
 import { Sidebar } from "./sidebar";
-import { SidebarItem } from "../../types/nav";
+import { SidebarItem } from "@grailbio/lib";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "../util";

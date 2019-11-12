@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import { ApiQueryOptions } from "../../types/api";
+import { ApiQueryOptions } from "@grailbio/lib";
 export declare const data: {
     columnOne: string;
     columnTwo: string;

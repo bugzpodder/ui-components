@@ -1,8 +1,8 @@
 import React from "react";
-import { OmniSearchCommand, SearchOptionsV2 } from "../types/api";
+import { OmniSearchCommand, SearchOptionV2 } from "@grailbio/lib";
 declare type Props = {
     /** Search Options. */
-    searchOptions: SearchOptionsV2;
+    searchOptions: SearchOptionV2[];
     /** Function to set searchOptions */
     addOmniSearchCommand?: (x0: OmniSearchCommand) => any;
 };

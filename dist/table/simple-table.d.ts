@@ -1,7 +1,7 @@
 import React from "react";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { SimpleTableOptions } from "../types/table";
-import { SortOption } from "../types/api";
+import { SortOption } from "@grailbio/lib";
 declare type Props = {
     /** Provides the information you wish to display */
     data: Array<{

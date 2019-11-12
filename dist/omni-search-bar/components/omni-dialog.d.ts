@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import { OmniSearchDefs, OmniSearchValues } from "../../types/api";
+import { OmniSearchDef, OmniSearchValues } from "@grailbio/lib";
 declare type Props = {
-    searchDefs: OmniSearchDefs;
+    searchDefs: OmniSearchDef[];
     searchValues: OmniSearchValues;
     onChange: (x0: string, x1: string) => any;
     onClear: () => any;

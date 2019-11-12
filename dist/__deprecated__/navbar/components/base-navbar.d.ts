@@ -1,6 +1,6 @@
 import React, { ComponentType, MouseEvent, ReactNode } from "react";
 import { BaseNavbarClasses } from "../../../types/base-navbar";
-import { SidebarItem } from "../../../types/nav";
+import { SidebarItem } from "@grailbio/lib";
 declare type Props = {
     /** Determines whether to put warning banner above the navigation bar. */
     isProduction?: boolean;

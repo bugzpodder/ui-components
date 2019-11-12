@@ -6,7 +6,12 @@ import styles from "./omni.module.scss";
 import {
   OMNI_ERROR,
   OMNI_KEY,
+  OmniQueryOptionsV2,
+  OmniSearchCommand,
+  OmniSearchDef,
+  OmniSearchValues,
   SET_OMNI_FIELD_COMMAND,
+  SearchOptionV2,
   getOmniTextFromSearchValues,
   getQuery,
   getSearchOptions,
@@ -17,25 +22,17 @@ import {
 
 import { OMNI_INPUT_FIELD_ID, OmniField } from "./components/omni-field";
 import { OmniDialog } from "./components/omni-dialog";
-import {
-  OmniQueryOptionsV2,
-  OmniSearchCommand,
-  OmniSearchDef,
-  OmniSearchDefs,
-  OmniSearchValues,
-  SearchOptionsV2,
-} from "../types/api";
 import { RouteComponentProps } from "react-router-dom";
 
 type Props = {
   /** Defines the search parameters. */
-  searchDefs: OmniSearchDefs;
+  searchDefs: OmniSearchDef[];
   /** Handles a request to search. */
   setSearchOptions: (x0: OmniQueryOptionsV2) => any;
   /** Handles a request to update search options but not perform the search. */
-  updateSearchOptions: (x0: { searchOptions: SearchOptionsV2 }) => any;
+  updateSearchOptions: (x0: { searchOptions: SearchOptionV2[] }) => any;
   /** getInitialValues gets values to default to for omni-search. */
-  getInitialValues?: (searchDefs: OmniSearchDefs) => OmniSearchValues;
+  getInitialValues?: (searchDefs: OmniSearchDef[]) => OmniSearchValues;
   /** Takes a `node` to include in the omni dropdown after the search fields */
   children?: ReactNode;
   /** Omni search change command queue */
@@ -154,7 +151,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 
   getValuesFromLocalStorage = (
     pathname: string,
-    searchDefs: OmniSearchDefs,
+    searchDefs: OmniSearchDef[],
   ) => {
     const storageValues: Map<number, string> = new Map();
     if (!pathname) {
@@ -173,7 +170,7 @@ export class OmniSearchBar extends React.Component<Props, State> {
 
   setValuesToLocalStorage = (
     pathname: string,
-    searchDefs: OmniSearchDefs,
+    searchDefs: OmniSearchDef[],
     searchValues: OmniSearchValues,
   ) => {
     if (!pathname) {

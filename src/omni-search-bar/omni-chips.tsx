@@ -2,12 +2,16 @@ import Chip from "@material-ui/core/Chip";
 
 import React from "react";
 import styles from "./omni.module.scss";
-import { OMNI_KEY, SET_OMNI_FIELD_COMMAND } from "@grailbio/lib";
-import { OmniSearchCommand, SearchOptionsV2 } from "../types/api";
+import {
+  OMNI_KEY,
+  OmniSearchCommand,
+  SET_OMNI_FIELD_COMMAND,
+  SearchOptionV2,
+} from "@grailbio/lib";
 
 type Props = {
   /** Search Options. */
-  searchOptions: SearchOptionsV2;
+  searchOptions: SearchOptionV2[];
   /** Function to set searchOptions */
   addOmniSearchCommand?: (x0: OmniSearchCommand) => any;
 };

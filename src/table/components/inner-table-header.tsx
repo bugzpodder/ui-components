@@ -1,9 +1,8 @@
 import React, { MouseEvent, ReactNode } from "react";
 
 import TableSortLabel from "@material-ui/core/TableSortLabel";
-import { SortOption } from "../../types/api";
+import { SortOption, mapBy } from "@grailbio/lib";
 import { SortingProps } from "../../types/paged-table";
-import { mapBy } from "@grailbio/lib";
 
 type Props = {
   sortingProps: SortingProps;
@@ -25,7 +24,7 @@ export const InnerTableHeader: React.FC<Props> = props => {
       "tableOptions prop requires a sortOptions parameter for sorting",
     );
   }
-  const sortFieldsById = mapBy<SortOption>(sortOptions, "id");
+  const sortFieldsById = mapBy(sortOptions, "id");
   const handleClickSort = (event: MouseEvent<HTMLElement>, fieldId) => {
     const { ctrlKey } = event;
     const currentSortField = sortFieldsById.get(fieldId) || {};

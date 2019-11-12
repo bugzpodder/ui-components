@@ -1,8 +1,6 @@
-// @flow
-import { ExportableColumn } from "@grailbio/lib";
+import { ComponentType, ReactNode } from "react";
+import { ExportableColumn, SortOption } from "@grailbio/lib";
 import { PagedTableOptions, SimpleTableOptions } from "./table";
-import { ReactNode } from "react";
-import { SortOption } from "./api";
 
 export type Sorting = {
   id: string;
@@ -27,7 +25,7 @@ export type InternalPagedTableColumn = PagedTableColumn & {
 export type PagedTableColumn = ExportableColumn & {
   Header?: ReactNode;
   sortable?: boolean;
-  Cell?: ReactNode;
+  Cell?: ComponentType<any>;
   headerClassName?: string;
   className?: string | Function;
   isSingleIcon?: boolean;

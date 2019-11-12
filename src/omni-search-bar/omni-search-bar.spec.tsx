@@ -6,16 +6,17 @@ import {
   DATETIME_SEARCH_TYPE,
   DATE_SEARCH_TYPE,
   LIKE_TEXT_SEARCH_TYPE,
+  OmniSearchDef,
 } from "@grailbio/lib";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import { OmniSearchBar } from ".";
-import { OmniSearchDefs } from "../types/api";
+
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const searchDefs: OmniSearchDefs = [
+const searchDefs: OmniSearchDef[] = [
   {
     name: "Part Number",
     type: LIKE_TEXT_SEARCH_TYPE,

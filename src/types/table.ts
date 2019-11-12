@@ -1,4 +1,4 @@
-import { PaginationOptions, SortOption } from "./api";
+import { PaginationOptions, SortOption } from "@grailbio/lib";
 
 export type SimpleTableOptions = {
   sortOptions: SortOption[];

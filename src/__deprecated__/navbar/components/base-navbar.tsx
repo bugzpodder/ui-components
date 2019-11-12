@@ -9,7 +9,7 @@ import styles from "./base-navbar.module.scss";
 
 import { BaseNavbarClasses } from "../../../types/base-navbar";
 import { Sidebar } from "./sidebar";
-import { SidebarItem } from "../../../types/nav";
+import { SidebarItem } from "@grailbio/lib";
 
 type Props = {
   /** Determines whether to put warning banner above the navigation bar. */

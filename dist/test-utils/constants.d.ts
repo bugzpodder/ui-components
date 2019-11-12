@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare const COUNTRY_NAMES: string[];
 export declare const COUNTRIES: Array<{
     label: string;

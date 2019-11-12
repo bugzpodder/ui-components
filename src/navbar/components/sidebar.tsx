@@ -19,7 +19,7 @@ import styles from "./sidebar.module.scss";
 import { BaseNavbarClasses } from "../../types/base-navbar";
 import { CollapsableListItem } from "./collapsable-list-item";
 import { ExternalLink } from "../../link";
-import { SidebarItem } from "../../types/nav";
+import { SidebarItem } from "@grailbio/lib";
 import { getListItemDataTestId } from "../util";
 
 type Props = {

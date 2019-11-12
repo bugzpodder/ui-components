@@ -74,15 +74,17 @@ export const PagedTableRow: React.FC<Props> = props => {
               value = accessor(instance);
             }
             if (Cell) {
-              inner = Cell({
-                instance,
-                original: instance,
-                value,
-                accessor,
-                rowId,
-                rowIndex,
-                label: Header || "",
-              });
+              inner = (
+                <Cell
+                  instance={instance}
+                  original={instance}
+                  value={value}
+                  accessor={accessor}
+                  rowId={rowId}
+                  rowIndex={rowIndex}
+                  label={Header || ""}
+                />
+              );
             } else if (accessor) {
               inner = value;
             } else {

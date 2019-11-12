@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import { CommonSuggest } from "./common-suggest";
-import { SearchFieldProps } from "../types/api";
+import { SearchFieldProps } from "@grailbio/lib";
 
 type Props = {
   suggestions: string[];

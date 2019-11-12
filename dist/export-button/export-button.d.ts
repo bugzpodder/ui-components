@@ -1,5 +1,5 @@
 import React from "react";
-import { ExportableColumn } from "../types/global";
+import { ExportableColumn } from "@grailbio/lib";
 import { PagedTableColumn } from "../types/paged-table";
 declare type Props = {
     columns: Array<ExportableColumn | PagedTableColumn>;

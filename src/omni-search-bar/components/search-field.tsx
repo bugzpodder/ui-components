@@ -7,6 +7,7 @@ import keycode from "keycode";
 
 import {
   DATE_SEARCH_TYPES,
+  SearchFieldProps,
   buildDateRangeString,
   extractDateRange,
   extractValidDate,
@@ -14,7 +15,6 @@ import {
 
 import styles from "../omni.module.scss";
 import { DateInput } from "../../date/date-input";
-import { SearchFieldProps } from "../../types/api";
 
 type Props = {
   placeholder: string;

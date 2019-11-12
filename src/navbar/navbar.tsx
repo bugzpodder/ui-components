@@ -1,7 +1,7 @@
 import React, { ComponentType, ReactNode, useState } from "react";
 
 import { BaseNavbar } from "./components/base-navbar";
-import { SidebarItem } from "../types/nav";
+import { SidebarItem } from "@grailbio/lib";
 
 type Props = {
   /** Determines whether to put warning banner above the navigation bar. */

@@ -4,13 +4,16 @@ import React, { ReactNode } from "react";
 import styles from "../omni.module.scss";
 import { CommonDialog } from "../../common-dialog";
 import { GridRow } from "../../types/grid";
-import { OMNI_TEXT_SEARCH_TYPE } from "@grailbio/lib";
-import { OmniSearchDefs, OmniSearchValues } from "../../types/api";
+import {
+  OMNI_TEXT_SEARCH_TYPE,
+  OmniSearchDef,
+  OmniSearchValues,
+} from "@grailbio/lib";
 import { SearchField } from "./search-field";
 import { TwoColumnRow } from "../../two-column-grid";
 
 type Props = {
-  searchDefs: OmniSearchDefs;
+  searchDefs: OmniSearchDef[];
   searchValues: OmniSearchValues;
   onChange: (x0: string, x1: string) => any;
   onClear: () => any;

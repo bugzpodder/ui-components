@@ -1,9 +1,15 @@
 import Checkbox from "@material-ui/core/Checkbox/Checkbox";
 import React from "react";
 import classNames from "classnames";
-import { PagedTableCell, SelectionProps } from "../../types/paged-table";
+import {
+  InternalPagedTableColumn,
+  PagedTableCell,
+  SelectionProps,
+} from "../../types/paged-table";
 
-export const getCheckboxColumn = (selectionProps: SelectionProps) => {
+export const getCheckboxColumn = (
+  selectionProps: SelectionProps,
+): InternalPagedTableColumn => {
   const { data, selectedRows, idKey, onSelect } = selectionProps;
   if (selectedRows === undefined || selectedRows === null) {
     throw new Error("selectedRows is missing from props");
@@ -62,7 +68,7 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
           id={String(rowId)}
           className={classNames({ active: selectedRows.includes(rowId) })}
           inputProps={{
-            // @ts-ignore: data-testid is nnt assignable.
+            // @ts-ignore: data-testid is not assignable.
             "data-testid": `table-checkbox-cell-${testId}`,
           }}
           color="primary"
@@ -73,5 +79,7 @@ export const getCheckboxColumn = (selectionProps: SelectionProps) => {
     },
     isVisible: true,
     index: -1,
+    exportHeaderName: "",
+    exportAccessor: "",
   };
 };

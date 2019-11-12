@@ -1,6 +1,9 @@
-import { ExportableColumn, ReportOptions } from "../../types/global";
+import {
+  ExportableColumn,
+  ReportOptions,
+  toDelimitedReport,
+} from "@grailbio/lib";
 import { saveAs } from "file-saver";
-import { toDelimitedReport } from "@grailbio/lib";
 
 export const generateReport = (
   fileName: string,

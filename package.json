@@ -16,7 +16,6 @@
     "format": "prettier --write \"*.js\" && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",
     "precommit": "lint-staged",
-    "prepublish": "yarn build",
     "start": "yarn styleguide",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",

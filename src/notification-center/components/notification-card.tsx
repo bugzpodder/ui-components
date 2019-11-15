@@ -23,11 +23,11 @@ export const NotificationCard: React.FC<Props> = props => {
   return (
     <Card
       data-testid={`notification-${time}`}
-      className="margin-left-10 margin-right-10 margin-bottom-10"
+      className={styles.notificationCard}
     >
       <CardContent
         classes={{
-          root: styles.notificationContainer,
+          root: styles.notificationCardContent,
         }}
       >
         <NotificationTypeIcon type={type} />

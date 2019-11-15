@@ -11,7 +11,7 @@ exports[`render export table button 1`] = `
     <span>
       <svg
         aria-hidden="true"
-        class="margin-right-5"
+        class="exportButton"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"

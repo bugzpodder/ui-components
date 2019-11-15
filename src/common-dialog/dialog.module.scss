@@ -29,6 +29,10 @@ body .commonDialog {
       width: 100%;
       .left,
       .right {
+        .backIcon {
+          margin-right: 5px;
+        }
+
         flex: 1 1 auto;
         button {
           + button {

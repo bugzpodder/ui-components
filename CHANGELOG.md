@@ -49,6 +49,7 @@
 43. Add `autosizeHeight` prop to `LargeSimpleTable`.
 44. Add optional `subheader` prop to SignInPage.
 45. `AvatarIcon` now accepts `children`.
+46. Fix margins on `ExportButton`, `NotificationCard`, and the "back" button in `CommonDialog`s.
 
 ## 1.0.0 - 2019-06-17
 

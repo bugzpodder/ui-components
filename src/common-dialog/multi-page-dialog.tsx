@@ -122,7 +122,7 @@ export const CommonMultiPageDialog: React.FC<Props> = props => {
                 disabled={pageIndex === 0}
                 onClick={setPage.bind(null, pageIndex - 1)}
               >
-                <ArrowBackIcon className="margin-right-5" /> Back
+                <ArrowBackIcon className={styles.backIcon} /> Back
               </Button>
             )}
             {leftActionButtons}

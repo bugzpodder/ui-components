@@ -343,7 +343,7 @@ export const ExportButton: React.FC<Props> = props => {
         {...buttonProps}
         onClick={() => setIsOpen(true)}
       >
-        <CloudDownloadIcon className="margin-right-5" />
+        <CloudDownloadIcon className={styles.exportButton} />
         Export
       </Button>
     </>

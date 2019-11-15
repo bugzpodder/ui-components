@@ -1,22 +1,27 @@
 @import "../styles/colors";
 
-.notificationContainer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.notificationCard {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 
-  .notificationClose {
-    padding: 2px;
-    width: fit-content;
-    position: absolute;
-    right: 18px;
+  .notificationCardContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
-    @media screen and (max-width: 800px) {
-      right: 12px;
+    .notificationClose {
+      padding: 2px;
+      width: fit-content;
+      position: absolute;
+      right: 18px;
+
+      @media screen and (max-width: 800px) {
+        right: 12px;
+      }
     }
   }
 }
-
 
 .notificationCenterPopover {
   max-height: 40vh;

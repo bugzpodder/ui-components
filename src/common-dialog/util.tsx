@@ -1,6 +1,7 @@
 import Button from "@material-ui/core/Button";
 import Icon from "@material-ui/core/Icon";
 import React, { MouseEvent } from "react";
+import styles from "./util.module.scss";
 
 export type CommonDialogAction = {
   name: string;
@@ -48,7 +49,7 @@ export const actionToButton = (action: CommonDialogAction) => {
       variant={isEnabled ? variant : "text"}
       {...buttonProps}
     >
-      {icon && <Icon className="margin-right-5">{icon}</Icon>}
+      {icon && <Icon className={styles.icon}>{icon}</Icon>}
       {name}
     </Button>
   );

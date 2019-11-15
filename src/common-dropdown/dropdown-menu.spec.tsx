@@ -30,7 +30,7 @@ const TestCommonDropdownMenu = () => {
       content: (
         <>
           Approve
-          <DoneIcon className="margin-left-10" />
+          <DoneIcon />
         </>
       ),
       onClick: () => {
@@ -41,7 +41,7 @@ const TestCommonDropdownMenu = () => {
       content: (
         <>
           Deny
-          <CloseIcon className="margin-left-10" />
+          <CloseIcon />
         </>
       ),
       onClick: () => {

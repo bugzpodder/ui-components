@@ -35,7 +35,7 @@ exports[`render basic paged table 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -303,7 +303,7 @@ exports[`render loading paged table 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -581,7 +581,7 @@ exports[`render paged table and test pagination 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -1174,7 +1174,7 @@ exports[`render paged table and test sorting 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -1480,7 +1480,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -1985,7 +1985,7 @@ exports[`render paged table with column visibility chooser 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -2301,7 +2301,7 @@ exports[`render paged table with column visibility chooser 2`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -2615,7 +2615,7 @@ exports[`render paged table with column visibility chooser 3`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -3360,7 +3360,7 @@ exports[`render paged table with no initially selected items, then select items 
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -3859,7 +3859,7 @@ exports[`render paged table with no results 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -3975,7 +3975,7 @@ exports[`render paged table with no results and is loading 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -4098,7 +4098,7 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
           <span>
             <svg
               aria-hidden="true"
-              class="margin-right-5"
+              class="exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"

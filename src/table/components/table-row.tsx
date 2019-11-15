@@ -74,17 +74,18 @@ export const PagedTableRow: React.FC<Props> = props => {
               value = accessor(instance);
             }
             if (Cell) {
-              inner = (
-                <Cell
-                  instance={instance}
-                  original={instance}
-                  value={value}
-                  accessor={accessor}
-                  rowId={rowId}
-                  rowIndex={rowIndex}
-                  label={Header || ""}
-                />
-              );
+              // N.B. The Cell is instantiated as a pure function instead of a React element.
+              // This makes the Cell able to flexibly render any elements (like inputs) without changes
+              // to their internal state causing rerenders of the entire table.
+              inner = Cell({
+                instance,
+                original: instance,
+                value,
+                accessor,
+                rowId,
+                rowIndex,
+                label: Header || "",
+              });
             } else if (accessor) {
               inner = value;
             } else {

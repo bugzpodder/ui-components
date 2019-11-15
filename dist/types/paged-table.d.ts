@@ -1,4 +1,4 @@
-import { ComponentType, ReactNode } from "react";
+import { ReactNode } from "react";
 import { ExportableColumn, SortOption } from "@grailbio/lib";
 import { PagedTableOptions, SimpleTableOptions } from "./table";
 export declare type Sorting = {
@@ -21,7 +21,7 @@ export declare type InternalPagedTableColumn = PagedTableColumn & {
 export declare type PagedTableColumn = ExportableColumn & {
     Header?: ReactNode;
     sortable?: boolean;
-    Cell?: ComponentType<any>;
+    Cell?: React.FC<any>;
     headerClassName?: string;
     className?: string | Function;
     isSingleIcon?: boolean;

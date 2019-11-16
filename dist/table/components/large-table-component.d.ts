@@ -6,19 +6,21 @@ declare type Props = {
     id?: string;
     columns: PagedTableColumn[];
     data: Array<Record<string, any>>;
-    isLoading: boolean;
-    selectedRows: Array<number | string>;
+    isLoading?: boolean;
+    selectedRows?: Array<number | string>;
     classes?: PagedTableClasses;
     idKey?: string | number;
     onSelect?: (x0: any[]) => any;
     onSort?: (x0: {
         sortOptions: SortOption[];
     }) => any;
-    onHighlightRow?: (x0?: number | string | null) => any;
-    highlightedRowId?: number | string | null;
+    onHighlightRow?: (x0: number | string) => any;
+    highlightedRowId?: number | string;
     tableOptions?: SimpleTableOptions;
-    enableSelectAll: boolean;
+    enableSelectAll?: boolean;
     rowHeight?: number | ((x0: Record<string, any>, x1: number) => number);
+    numFrozenColumns?: number;
+    height?: number;
 };
 export declare const LargeTableComponent: React.FC<Props>;
 export {};

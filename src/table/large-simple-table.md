@@ -1,7 +1,12 @@
 ### Example
 
 ```js
-import { ExampleBlock, ExampleWrapper, LARGE_EXAMPLE_TABLE_DATA, EXTRA_LARGE_EXAMPLE_TABLE_DATA } from "../test-utils";
+import {
+  ExampleBlock,
+  ExampleWrapper,
+  LARGE_EXAMPLE_TABLE_DATA,
+  EXTRA_LARGE_EXAMPLE_TABLE_DATA,
+} from "../test-utils";
 import Typography from "@material-ui/core/Typography";
 import { useState } from "react";
 import { LargeSimpleTable } from "./";
@@ -85,38 +90,6 @@ const TestLargeSimpleTable = () => {
   ];
   return (
     <div>
-      <h3>Without isWide prop</h3>
-      <h4>Data count: {LARGE_EXAMPLE_TABLE_DATA.length}</h4>
-      <LargeSimpleTable
-        // required
-        data={LARGE_EXAMPLE_TABLE_DATA}
-        columns={columns}
-        // optional
-        tableOptions={tableOptions}
-        classes={{
-          root: "table-root",
-          rows: (datum, index) => `${datum.word}-${index}-example`,
-        }}
-        onSelect={handleSelection}
-        selectedRows={tableOptions.selectedRowIds}
-        highlightedRowId={tableOptions.highlightedRowId}
-        onHighlightRow={handleHighlight}
-      />
-      <h4>Data count: {EXTRA_LARGE_EXAMPLE_TABLE_DATA.length}</h4>
-      <LargeSimpleTable
-        // required
-        data={EXTRA_LARGE_EXAMPLE_TABLE_DATA}
-        columns={columns}
-        // optional
-        tableOptions={tableOptions}
-        classes={{
-          root: "table-root",
-          rows: (datum, index) => `${datum.word}-${index}-example`,
-        }}
-        highlightedRowId={tableOptions.highlightedRowId}
-        onHighlightRow={handleHighlight}
-      />
-      <h3>With isWide prop</h3>
       <h4>Data count: {LARGE_EXAMPLE_TABLE_DATA.length}</h4>
       <LargeSimpleTable
         // required
@@ -141,7 +114,6 @@ const TestLargeSimpleTable = () => {
         data={EXTRA_LARGE_EXAMPLE_TABLE_DATA}
         columns={wideTableColumns}
         // optional
-        isWide
         tableOptions={tableOptions}
         classes={{
           root: "table-root",
@@ -149,7 +121,6 @@ const TestLargeSimpleTable = () => {
         }}
         highlightedRowId={tableOptions.highlightedRowId}
         onHighlightRow={handleHighlight}
-        numFrozenColumns={2}
       />
       <ExampleBlock strongHeader="Table Options " content={tableOptions} />
     </div>
@@ -162,12 +133,15 @@ const TestLargeSimpleTable = () => {
 ```
 
 ```js
-import { EXAMPLE_TABLE_DATA, ExampleBlock, ExampleWrapper } from "../test-utils";
+import {
+  EXAMPLE_TABLE_DATA,
+  ExampleBlock,
+  ExampleWrapper,
+} from "../test-utils";
 import { useState } from "react";
 import { SimpleTable } from "./";
 
 const TestSimpleTable = props => {
-  const { isWide } = props;
   const [tableOptions, setTableOptions] = useState({
     sortOptions: [{ id: "name", desc: false }],
     selectedRowIds: [],
@@ -236,7 +210,6 @@ const TestSimpleTable = props => {
         shadeOnHover
         highlightedRowId={tableOptions.highlightedRowId}
         onHighlightRow={handleHighlight}
-        isWide={isWide}
       />
       <ExampleBlock strongHeader="Table Options " content={tableOptions} />
     </div>
@@ -246,7 +219,5 @@ const TestSimpleTable = props => {
 <ExampleWrapper>
   <h4>Large Simple Table With Sorting:</h4>
   <TestSimpleTable />
-  <h4>Wide Large Simple Table With Sorting:</h4>
-  <TestSimpleTable isWide />
 </ExampleWrapper>;
 ```

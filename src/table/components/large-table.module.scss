@@ -87,10 +87,13 @@ $scrollbar-width: 7px;
     }
     .headerGrid,
     .frozenColumnsGrid {
-      // The `!important` is unfortunately necessary to avoid a duplicate scrollbar appearing due to the `overflow-x`
-      // being set to `auto` by inline styling directly on the element that is automatically and unavoidably applied by
-      // react-virtualized's Grid component.
-      overflow: hidden !important;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .headerGrid::-webkit-scrollbar,
+    .frozenColumnsGrid::-webkit-scrollbar {
+      display: none;
     }
 
     .headerGrid,

@@ -1,13 +1,17 @@
 ### Example
 
 ```js
-import { EXAMPLE_TABLE_DATA, ExampleBlock, ExampleWrapper } from "../test-utils";
+import {
+  EXAMPLE_TABLE_DATA,
+  ExampleBlock,
+  ExampleWrapper,
+} from "../test-utils";
 import { useState } from "react";
 import { SimpleTable } from "./";
 
 const TestSimpleTable = () => {
   const [tableOptions, setTableOptions] = useState({
-    sortOptions: [{ id: "name", desc: false }],
+    sortOptions: [{ id: "word", desc: false }],
     selectedRowIds: [],
     highlightedRowId: null,
   });
@@ -74,6 +78,7 @@ const TestSimpleTable = () => {
         shadeOnHover
         highlightedRowId={tableOptions.highlightedRowId}
         onHighlightRow={handleHighlight}
+        idKey="word"
       />
       <ExampleBlock strongHeader="Table Options " content={tableOptions} />
     </div>

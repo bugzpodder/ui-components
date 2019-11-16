@@ -1,10 +1,9 @@
 import React from "react";
 
+import AutoSizer from "react-virtualized-auto-sizer";
 import classNames from "classnames";
 import styles from "./table.module.scss";
-import { AutoSizer } from "react-virtualized";
 import { LargeTableComponent } from "./components/large-table-component";
-import { LargeWideTableComponent } from "./components/large-wide-table-component";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { SimpleTableOptions } from "../types/table";
 import { SortOption } from "@grailbio/lib";
@@ -100,11 +99,15 @@ export const LargeSimpleTable: React.FC<Props> = props => {
     isLoading = false,
     autosizeHeight = false,
   } = props;
-  const { isWide = false, ...otherProps } = props;
+  const {
+    isWide = false,
+    numFrozenColumns = isWide ? 1 : 0,
+    ...otherProps
+  } = props;
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");
   }
-  const TableComponent = isWide ? LargeWideTableComponent : LargeTableComponent;
+
   return (
     <div
       className={classNames(styles.tableContainer, classes.tableContainer, {
@@ -115,12 +118,22 @@ export const LargeSimpleTable: React.FC<Props> = props => {
         <AutoSizer disableWidth>
           {({ height }) => {
             // @ts-ignore height does not exist.
-            return <TableComponent height={height} {...otherProps} />;
+            return (
+              <LargeTableComponent
+                height={height}
+                numFrozenColumns={numFrozenColumns}
+                isLoading={isLoading}
+                {...otherProps}
+              />
+            );
           }}
         </AutoSizer>
       ) : (
         // @ts-ignore some props are required.
-        <TableComponent {...otherProps} />
+        <LargeTableComponent
+          numFrozenColumns={numFrozenColumns}
+          {...otherProps}
+        />
       )}
       {isLoading && <SpinnerOverlay className={styles.spinnerOverlay} />}
     </div>

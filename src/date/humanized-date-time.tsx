@@ -1,8 +1,9 @@
 import React from "react";
 import classNames from "classnames";
-import moment from "moment";
+import formatDistance from "date-fns/formatDistance";
 import styles from "./humanized-date-time.module.scss";
 import { DateTimeValue } from "./date-time-value";
+import { parseDate } from "@grailbio/lib";
 
 export type HumanizedDateTimeClasses = {
   dateTime?: string;
@@ -28,7 +29,7 @@ export type Props = {
  * value and now. */
 export const HumanizedDateTime: React.FC<Props> = props => {
   const { classes = {}, id, ...otherProps } = props;
-
+  const date = parseDate(props.value);
   return (
     <div data-testid="humanized-date-time" id={id}>
       <DateTimeValue className={classes.dateTime} {...otherProps} />
@@ -36,7 +37,7 @@ export const HumanizedDateTime: React.FC<Props> = props => {
         data-testid="humanized"
         className={classNames(styles.humanized, classes.humanizedText)}
       >
-        {moment(props.value).fromNow()}
+        {date ? formatDistance(date, new Date()) : "-"}
       </div>
     </div>
   );

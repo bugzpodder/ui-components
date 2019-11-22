@@ -1,15 +1,24 @@
 import "@testing-library/jest-dom/extend-expect";
+import MockDate from "mockdate";
 import React from "react";
 import { DateTimeValue, DateValue, HumanizedDateTime } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "@testing-library/react";
+import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 
-afterEach(cleanup);
+afterEach(() => {
+  cleanup();
+  MockDate.reset();
+});
+
+const DateValueContainer = wrapPickerUtilProvider(DateValue);
+const DateTimeValueContainer = wrapPickerUtilProvider(DateTimeValue);
+const HumanizedDateTimeContainer = wrapPickerUtilProvider(HumanizedDateTime);
 
 test("render DateTimeValue", async () => {
   const { container, getByTestId, rerender } = render(
     <TestWrapper>
-      <DateTimeValue value="2017-03-13" />
+      <DateTimeValueContainer value="2017-03-13" />
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
@@ -18,7 +27,7 @@ test("render DateTimeValue", async () => {
   );
   rerender(
     <TestWrapper>
-      <DateTimeValue />
+      <DateTimeValueContainer />
     </TestWrapper>,
   );
   expect(getByTestId("date-time-value")).not.toBeEmpty();
@@ -28,14 +37,14 @@ test("render DateTimeValue", async () => {
 test("render DateTimeValue", async () => {
   const { container, getByTestId, rerender } = render(
     <TestWrapper>
-      <DateValue value="2017-03-13" />
+      <DateValueContainer value="2017-03-13" />
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
   expect(getByTestId("date-value")).toHaveTextContent("2017-03-13");
   rerender(
     <TestWrapper>
-      <DateValue />
+      <DateValueContainer />
     </TestWrapper>,
   );
   expect(getByTestId("date-value")).not.toBeEmpty();
@@ -43,20 +52,14 @@ test("render DateTimeValue", async () => {
 });
 
 test("render HumanizedDateTime", async () => {
-  Date.now = jest.fn(() => new Date("2019-04-20")) as any;
-  const { rerender, container, getByTestId } = render(
+  MockDate.set(new Date("2019-04-21"));
+
+  const { container, getByTestId } = render(
     <TestWrapper>
-      <HumanizedDateTime value="2018-04-20" />
+      <HumanizedDateTimeContainer value="2018-04-20" />
     </TestWrapper>,
   );
   expect(getByTestId("date-time-value")).toHaveTextContent("2018-04-20");
-  expect(getByTestId("humanized")).toHaveTextContent("a year ago");
-  rerender(
-    <TestWrapper>
-      <HumanizedDateTime />
-    </TestWrapper>,
-  );
+  expect(getByTestId("humanized")).toHaveTextContent("about 1 year");
   expect(container).toMatchSnapshot();
-  expect(getByTestId("date-time-value")).toHaveTextContent("-");
-  expect(getByTestId("humanized")).toHaveTextContent("a few seconds ago");
 });

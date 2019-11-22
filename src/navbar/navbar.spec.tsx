@@ -1,4 +1,5 @@
 import "@testing-library/jest-dom/extend-expect";
+import MockDate from "mockdate";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { MemoryRouter } from "react-router-dom";
@@ -7,7 +8,10 @@ import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "./util";
 
-afterEach(cleanup);
+afterEach(() => {
+  cleanup();
+  MockDate.reset();
+});
 
 const LIMS = "lims";
 
@@ -106,8 +110,7 @@ test("custom Sidebar", () => {
 });
 
 test("navbar with breast cancer logo", () => {
-  const constantDate = new Date("2017-10-01T04:20:00");
-  Date.now = jest.fn(() => constantDate) as any;
+  MockDate.set(new Date("2017-10-01T04:20:00"));
   const { getByTestId, container } = render(<TestNavbar />);
   expect(container).toMatchSnapshot();
   expect(getByTestId("breast-cancer-ribbon")).toBeInTheDocument();

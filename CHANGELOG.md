@@ -50,6 +50,7 @@
 44. Add optional `subheader` prop to SignInPage.
 45. `AvatarIcon` now accepts `children`.
 46. Fix margins on `ExportButton`, `NotificationCard`, and the "back" button in `CommonDialog`s.
+47. Add support for date-fns library for Date/Time pickers.
 
 ## 1.0.0 - 2019-06-17
 

@@ -5,9 +5,9 @@ import Close from "@material-ui/icons/Close";
 import IconButton from "@material-ui/core/IconButton";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import moment from "moment";
+import format from "date-fns/format";
 import styles from "../notification.module.scss";
-import { DATE_TIME_FORMAT } from "@grailbio/lib";
+import { DATE_TIME_UNICODE_FORMAT } from "@grailbio/lib";
 import { NotificationTypeIcon } from "./notification-type-icon";
 
 type Props = {
@@ -46,7 +46,7 @@ export const NotificationCard: React.FC<Props> = props => {
 
         <Typography data-testid={`message-${time}`}>{message}</Typography>
         <Typography data-testid={`time-${time}`} variant="caption">
-          {moment(time).format(DATE_TIME_FORMAT)}
+          {format(new Date(time), DATE_TIME_UNICODE_FORMAT)}
         </Typography>
       </CardContent>
     </Card>

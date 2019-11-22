@@ -2,20 +2,22 @@
 
 ```js
 import { ExampleWrapper } from "../test-utils";
-import moment from "moment";
 import { DateValue } from "./";
+import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
+const DateValueContainer = wrapPickerUtilProvider(DateValue);
+
 <ExampleWrapper>
   <div>
-    <DateValue value="2019-03-12" />
+    <DateValueContainer value="2019-03-12" />
   </div>
   <div>
-    <DateValue value="2019-03-13T16:00Z" />
+    <DateValueContainer value="2019-03-13T16:00Z" />
   </div>
   <div>
-    <DateValue value={moment("2019-03-14")} />
+    <DateValueContainer value={new Date("2019-03-14")} />
   </div>
   <div>
-    <DateValue value={moment("2019-03-15T16:00Z")} />
+    <DateValueContainer value={new Date("2019-03-15T16:00Z")} />
   </div>
 </ExampleWrapper>;
 ```

@@ -1,6 +1,6 @@
 import React from "react";
-import { DATE_FORMAT } from "@grailbio/lib";
 import { FormattedDateTime } from "./components/formatted-date-time";
+import { useDateFormat } from "./picker-util-provider-hoc";
 
 export type Props = {
   /** id passed to span element wrapping date value */
@@ -15,7 +15,8 @@ export type Props = {
 
 /** DateValue formats a date value. */
 export const DateValue: React.FC<Props> = props => {
-  const { format = DATE_FORMAT } = props;
+  const { defaultDateFormat } = useDateFormat();
+  const { format = defaultDateFormat } = props;
 
   return (
     <FormattedDateTime data-testid="date-value" format={format} {...props} />

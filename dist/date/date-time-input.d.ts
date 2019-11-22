@@ -5,7 +5,7 @@ declare type Props = {
     readOnly?: boolean;
     /** Used for read only input field, see ReadOnlyTextField. */
     showEmptyValue?: boolean;
-    /** Determines value used for input, moment object */
+    /** Determines value used for input */
     input?: string;
     /** Remains above the input field upon choosing a value */
     label?: string;

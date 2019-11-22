@@ -16,7 +16,7 @@ type Props = {
    *
    * - message: the message to display
    *
-   * - time: a moment object displaying when the notification happened
+   * - time: a Date object displaying when the notification happened
    *
    * - type: `error`, `warning`, or `info`
    *

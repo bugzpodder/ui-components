@@ -1,6 +1,5 @@
 /* eslint-disable */
 import uuid from "uuid";
-import moment from "moment";
 
 export const getRandomCharacters = length => {
   return uuid
@@ -36,25 +35,4 @@ export const getActiveSpinner = () => {
 
 export const waitForProgressIndicator = () => {
   return getActiveSpinner().should("not.exist");
-};
-
-// civilDateToMoment converts the format that the test server passes for a
-// gt.CivilDate field into a moment() type, or null if the gt.CivilDate is is a
-// zero-date.
-export const civilDateToMoment = civilDate => {
-  if (civilDate == null || civilDate.date == null) {
-    return null;
-  }
-  const {
-    date: { day, month, year },
-  } = civilDate;
-  if (day === 0 && month === 0 && year === 0) {
-    return null;
-  }
-  // gt.CivilDate uses 1-based indexing for months, but moment.js uses 0-based indexing.
-  return moment({
-    day,
-    month: month - 1,
-    year,
-  });
 };

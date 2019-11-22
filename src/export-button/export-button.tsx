@@ -8,12 +8,12 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import React, { Fragment, useState } from "react";
 import TextField from "@material-ui/core/TextField";
+import format from "date-fns/format";
 import isString from "lodash/isString";
-import moment from "moment";
 import styles from "./export-button.module.scss";
 import { Alert } from "../alert";
 import { CommonDialog } from "../common-dialog";
-import { DATE_TIME_FORMAT, ExportableColumn } from "@grailbio/lib";
+import { DATE_TIME_UNICODE_FORMAT, ExportableColumn } from "@grailbio/lib";
 import { PagedTableColumn } from "../types/paged-table";
 import { SpinnerOverlay } from "../spinner-overlay";
 import { TwoColumnGrid } from "../two-column-grid";
@@ -99,11 +99,7 @@ export const ExportButton: React.FC<Props> = props => {
     filenamePrefix
       .toString()
       .concat(" ")
-      .concat(
-        moment()
-          .format(DATE_TIME_FORMAT)
-          .replace(/:/g, "-"),
-      ),
+      .concat(format(new Date(), DATE_TIME_UNICODE_FORMAT).replace(/:/g, "-")),
   );
 
   const delimiterMap = {

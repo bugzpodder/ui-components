@@ -2,21 +2,24 @@ import React from "react";
 
 import classNames from "classnames";
 import styles from "./date-input.module.scss";
-import { DATE_FORMAT, DATE_INPUT_MASK } from "@grailbio/lib";
+import { DATE_INPUT_MASK } from "@grailbio/lib";
 import { DatePicker } from "material-ui-pickers";
 import {
   KeyboardDatePicker,
   KeyboardDatePickerProps,
 } from "@material-ui/pickers";
 import { ReadOnlyTextField } from "../readonly-text-field";
-import { formatDate } from "./components/formatted-date-time";
+import {
+  useDateFormat,
+  useFormattedDateForDisplay,
+} from "./picker-util-provider-hoc";
 
 type Props = {
   /** When `true`, displays a read only input field using `ReadOnlyTextField` */
   readOnly?: boolean;
   /** Used for read only input field, see ReadOnlyTextField. */
   showEmptyValue?: boolean;
-  /** Determines value used for the input. Takes a `moment` object */
+  /** Determines value used for the input. */
   input?: string;
   /** Remains above the input field upon choosing a value */
   label?: string;
@@ -29,23 +32,28 @@ type Props = {
 
 /** Provides component for common Date picker. */
 export const DateInput: React.FC<Props> = props => {
+  const { defaultDateFormat } = useDateFormat();
   const {
     readOnly,
     showEmptyValue = false,
     value,
     useOldPicker,
     onChange,
-    format = DATE_FORMAT,
+    format = defaultDateFormat,
     className,
   } = props;
+
+  const formattedDate = useFormattedDateForDisplay(value, format);
+
   if (readOnly) {
     return (
       <ReadOnlyTextField showEmptyValue={showEmptyValue}>
-        {formatDate(value, format)}
+        {formattedDate || value}
       </ReadOnlyTextField>
     );
   }
-  if (!props.onChange) {
+
+  if (!onChange) {
     throw new Error("onChange must be defined for DateInput");
   }
 

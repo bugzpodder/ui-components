@@ -4,10 +4,14 @@ import Paper from "@material-ui/core/Paper";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
-import moment from "moment";
+import format from "date-fns/format";
 import styles from "../timeline-graph.module.scss";
 import { AvatarIcon } from "../../avatar-icon";
-import { INNER_CARD_ELEVATION, MAIN_CARD_ELEVATION } from "@grailbio/lib";
+import {
+  INNER_CARD_ELEVATION,
+  MAIN_CARD_ELEVATION,
+  parseDate,
+} from "@grailbio/lib";
 import { TimelineGraphClasses, TimelineGraphRow } from "../../types/timeline";
 
 type Props = {
@@ -31,7 +35,8 @@ export const TimelineGraphComponent: React.FC<Props> = props => {
     classes = {},
   } = props;
   const entries = rows.map((item, index) => {
-    const year = moment(item.date).format("YYYY");
+    const date = parseDate(item.date);
+    const year = format(date, "yyyy");
     const paperClass = onSelect
       ? styles.timelinePaperButton
       : styles.timelinePaper;
@@ -96,10 +101,10 @@ export const TimelineGraphComponent: React.FC<Props> = props => {
           >
             {// Since year is separate from month and day, we can not use ISO-8601 format or numeric date format.
             // These would be confusing to HK, etc.
-            moment(item.date).format("DD MMM")}
+            format(date, "dd MMM")}
             {isDayVisible && (
               <div data-testid={`timeline-day-${index}`}>
-                {moment(item.date).format("ddd")}
+                {format(date, "EEE")}
               </div>
             )}
           </Typography>
@@ -111,7 +116,7 @@ export const TimelineGraphComponent: React.FC<Props> = props => {
               data-testid={`timeline-time-${index}`}
               align="center"
             >
-              {`${moment(item.date).format("HH:mm")}`}
+              {`${format(date, "HH:mm")}`}
             </Typography>
           )}
         </div>

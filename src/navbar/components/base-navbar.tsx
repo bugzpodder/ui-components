@@ -6,7 +6,6 @@ import React, { ComponentType, ReactNode } from "react";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
-import moment from "moment";
 import styles from "./base-navbar.module.scss";
 import { BaseNavbarClasses } from "../../types/base-navbar";
 import { BreastCancerRibbon } from "../../logos";
@@ -78,7 +77,7 @@ export const BaseNavbar: React.FC<Props> = props => {
   } = props;
   const { classes = {} } = props;
   const isLims = domain === "lims";
-  const isOctober = moment().month() === 9;
+  const isOctober = new Date().getMonth() === 9;
   return (
     <>
       <AppBar

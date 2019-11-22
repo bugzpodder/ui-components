@@ -1,6 +1,5 @@
 import React from "react";
-
-import moment from "moment";
+import { useFormattedDateForDisplay } from "../picker-util-provider-hoc";
 
 type FormatProps = {
   format: string;
@@ -9,16 +8,12 @@ type FormatProps = {
   className?: string;
 };
 
-export const formatDate = (value: any, format: string) => {
-  return value ? moment(value).format(format) : "-";
-};
-
 export const FormattedDateTime: React.FC<FormatProps> = props => {
   const { id, value, format, className = "", ...otherProps } = props;
-
+  const formattedDate = useFormattedDateForDisplay(value, format);
   return (
     <span id={id} className={className} {...otherProps}>
-      {formatDate(value, format)}
+      {formattedDate || "-"}
     </span>
   );
 };

@@ -1,13 +1,11 @@
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import mockConsole from "jest-mock-console";
-import moment from "moment-timezone";
 import { TabbedTimelineCard, TimelineCard, TimelineGraph } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
-moment.tz.setDefault("America/Los_Angeles");
 const rows = [
   {
     date: "2018-04-20T16:20:00",

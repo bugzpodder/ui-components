@@ -9,14 +9,14 @@ import {
 import { ReadOnlyTextField } from "../readonly-text-field";
 import { TIME_FORMAT } from "@grailbio/lib";
 import { TimePicker } from "material-ui-pickers";
-import { formatDate } from "./components/formatted-date-time";
+import { useFormattedDateForDisplay } from "./picker-util-provider-hoc";
 
 type Props = {
   /** When `true`, displays a read only input field using `ReadOnlyTextField` */
   readOnly?: boolean;
   /** Used for read only input field, see ReadOnlyTextField. */
   showEmptyValue?: boolean;
-  /** Determines value used for the input. Takes a `moment` object */
+  /** Determines value used for the input. */
   input?: string;
   /** Remains above the input field upon choosing a value */
   label?: string;
@@ -40,16 +40,20 @@ export const TimeInput: React.FC<Props> = props => {
     format = TIME_FORMAT,
     className,
   } = props;
+
+  const formattedDate = useFormattedDateForDisplay(value, format);
+
   if (readOnly) {
     return (
       <ReadOnlyTextField showEmptyValue={showEmptyValue}>
-        {formatDate(value, format)}
+        {formattedDate || value}
       </ReadOnlyTextField>
     );
   }
-  if (!props.onChange) {
+  if (!onChange) {
     throw new Error("onChange must be defined for TimeInput");
   }
+
   return useOldPicker ? (
     // @ts-ignore TimePicker and KeyboardTimePicker has slighty different props.
     <TimePicker

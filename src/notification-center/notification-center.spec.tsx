@@ -1,12 +1,10 @@
 import "@testing-library/jest-dom/extend-expect";
 import React, { useState } from "react";
-import moment from "moment-timezone";
+import format from "date-fns/format";
 import { Notification } from "../types/notification";
 import { NotificationCenter } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
-
-moment.tz.setDefault("America/Los_Angeles");
 
 afterEach(cleanup);
 const testUtcTime = "2019-04-20T23:20:00+00:00";
@@ -66,7 +64,7 @@ test("render notification center", () => {
   expect(getByTestId(`notification-${testUtcTime}`)).toBeInTheDocument();
   expect(getByTestId("notification-type-error")).toBeInTheDocument();
   expect(getByTestId(`message-${testUtcTime}`)).toHaveTextContent("test");
-  const expectedTime = moment(testUtcTime).format("YYYY-MM-DD HH:mm:ss");
+  const expectedTime = format(new Date(testUtcTime), "yyyy-MM-dd HH:mm:ss");
   expect(getByTestId(`time-${testUtcTime}`)).toHaveTextContent(expectedTime);
 
   // Clear buttons.

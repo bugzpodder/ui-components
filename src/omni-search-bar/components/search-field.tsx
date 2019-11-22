@@ -10,7 +10,8 @@ import {
   SearchFieldProps,
   buildDateRangeString,
   extractDateRange,
-  extractValidDate,
+  formatDate,
+  parseDate,
 } from "@grailbio/lib";
 
 import styles from "../omni.module.scss";
@@ -72,23 +73,24 @@ export const SearchField: React.FC<Props> = props => {
     onChange(id, buildDateRangeString({ startDate, endDate }));
   };
   const onChangeStartDate = (id, date) => {
-    const validDate = extractValidDate(date);
+    const validDate = formatDate(date);
     if (validDate) {
       onDateSearch(id, validDate, endDate);
     }
   };
   const onChangeEndDate = (id, date) => {
-    const validDate = extractValidDate(date);
+    const validDate = formatDate(date);
     if (validDate) {
       onDateSearch(id, startDate, validDate);
     }
   };
+
   return (
     <Grid className={styles.dateGrid}>
       <DateInput
         id={`${searchKey}-from`}
         className={styles.input}
-        value={startDate}
+        value={parseDate(startDate)}
         onChange={onChangeStartDate.bind(this, searchKey)}
         onKeyDown={onEnter}
         InputProps={{ placeholder: "From date" }}
@@ -98,7 +100,7 @@ export const SearchField: React.FC<Props> = props => {
       <DateInput
         id={`${searchKey}-to`}
         className={styles.input}
-        value={endDate}
+        value={parseDate(endDate)}
         onChange={onChangeEndDate.bind(this, searchKey)}
         onKeyDown={onEnter}
         InputProps={{ placeholder: "To date" }}

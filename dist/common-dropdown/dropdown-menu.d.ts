@@ -1,6 +1,6 @@
-import { PopoverOrigin } from "@material-ui/core/Popover";
 import React, { ReactNode } from "react";
 import { ClickableItem } from "../types/dropdown";
+import { PopoverOrigin } from "@material-ui/core/Popover";
 export declare type DropdownMenuProps = {
     /** The id of the dropdown portion of the menu, used for accessibility */
     dropdownId: string;

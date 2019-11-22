@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { ClickableItem } from "../../types/dropdown";
 import { CommonTabbedPageV2Classes, HeaderAction, PageConfigV2 } from "../../types/card";
 declare type Props = {
     /**
@@ -46,7 +47,7 @@ declare type Props = {
     /** Primary actions to display on the header */
     primaryActions?: HeaderAction[];
     /** Secondary actions to display in the secondary actions menu */
-    secondaryActions?: HeaderAction[];
+    secondaryActions?: ClickableItem[];
     /** Props applied to the `Tabs` container */
     tabProps?: {
         [x: string]: any;

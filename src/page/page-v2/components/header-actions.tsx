@@ -1,15 +1,15 @@
 import Button from "@material-ui/core/Button";
-
 import React, { forwardRef } from "react";
 import classNames from "classnames";
 import styles from "../common-page-v2.module.scss";
+import { ClickableItem } from "../../../types/dropdown";
 import { CommonPageV2Classes, HeaderAction } from "../../../types/card";
 import { LinkButton } from "../../../link";
 import { SecondaryActionsMenuButton } from "../../../dev";
 
 type Props = {
   primaryActions?: HeaderAction[];
-  secondaryActions?: HeaderAction[];
+  secondaryActions?: ClickableItem[];
   classes?: CommonPageV2Classes;
 };
 

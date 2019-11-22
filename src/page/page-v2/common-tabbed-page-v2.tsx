@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-
+import { ClickableItem } from "../../types/dropdown";
 import { CommonPageV2 } from "./common-page-v2";
 import {
   CommonTabbedPageV2Classes,
@@ -54,7 +54,7 @@ type Props = {
   /** Primary actions to display on the header */
   primaryActions?: HeaderAction[];
   /** Secondary actions to display in the secondary actions menu */
-  secondaryActions?: HeaderAction[];
+  secondaryActions?: ClickableItem[];
   /** Props applied to the `Tabs` container */
   tabProps?: {
     [x: string]: any;

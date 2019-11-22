@@ -1,7 +1,4 @@
-// import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import Button, { ButtonProps } from "@material-ui/core/Button";
-import { PopoverOrigin } from "@material-ui/core/Popover";
-
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -9,6 +6,7 @@ import React, { ComponentType, MouseEvent, ReactNode, useState } from "react";
 import styles from "./dropdown-menu.module.scss";
 import { ClickableItem } from "../types/dropdown";
 import { Link } from "react-router-dom";
+import { PopoverOrigin } from "@material-ui/core/Popover";
 
 export type DropdownMenuProps = {
   /** The id of the dropdown portion of the menu, used for accessibility */
@@ -112,6 +110,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                   }}
                   key={`dropdown-item-${index}`}
                   data-testid={`dropdown-item-${index}`}
+                  disabled={!isEnabled}
                 >
                   {content}
                 </MenuItem>

@@ -2,6 +2,7 @@ module.exports = {
   collectCoverageFrom: [
     "src/**/*.{ts,tsx}",
     "!src/**/index.ts",
+    "!src/types/**/*.ts",
     "!src/dev/**/*.{ts,tsx}",
     "!src/__deprecated__/**/*.{ts,tsx}",
     "!src/utils/*.{ts,tsx}",

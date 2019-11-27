@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
 import AutoSizer from "react-virtualized-auto-sizer";
+import React, { useRef } from "react";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./large-table.module.scss";
@@ -10,6 +10,165 @@ import { SortOption } from "@grailbio/lib";
 import { VariableSizeGrid } from "react-window";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId } from "../utilities/row-utils";
+
+// TableCell is a react element for a cell in VirtualizedGrid.
+// For details see https://github.com/bvaughn/react-window/issues/302.
+const TableCell = ({
+  data: {
+    data,
+    onHighlightRow,
+    tableColumns,
+    idKey,
+    classes,
+    highlightedRowId,
+    numFrozenColumns,
+    isFrozen,
+  },
+  columnIndex,
+  rowIndex,
+  style,
+}) => {
+  if (!isFrozen && columnIndex < numFrozenColumns) {
+    return null;
+  }
+  const {
+    Cell,
+    Header,
+    accessor = "",
+    className = "",
+    isSingleIcon,
+  } = tableColumns[columnIndex];
+  const isCheckboxColumn = accessor === "COLUMN_SELECT";
+  const rowData = data[rowIndex];
+  const rowId = getRowId(idKey, rowData, rowIndex);
+  const itemKey = `${rowId}-${columnIndex}`;
+  let value = "";
+  if (typeof accessor === "string") {
+    value = rowData[accessor];
+  } else if (typeof accessor === "function") {
+    value = accessor(rowData);
+  }
+  let inner = null;
+  if (Cell) {
+    // N.B. The Cell is instantiated as a pure function instead of a React element.
+    // This makes the Cell able to flexibly render any elements (like inputs) without changes
+    // to their internal state causing rerenders of the entire table.
+    inner = Cell({
+      instance: rowData,
+      original: rowData,
+      value,
+      accessor,
+      rowId,
+      rowIndex,
+      label: Header || "",
+    });
+  } else {
+    inner = <Typography>{value}</Typography>;
+  }
+  let columnClassName = className;
+  if (typeof className === "function") {
+    columnClassName = className(value);
+  }
+  let rowClassName = classes.rows;
+  if (typeof rowClassName === "function") {
+    rowClassName = rowClassName(rowData, rowIndex);
+  }
+  const rowIsHighlighted = highlightedRowId === rowId;
+  const isRightmostFrozenColumn = columnIndex === numFrozenColumns - 1;
+  const isLeftmostUnfrozenColumn = columnIndex === numFrozenColumns;
+  return (
+    <div
+      key={itemKey}
+      data-cell-id={itemKey}
+      style={style}
+      className={classNames(
+        columnClassName,
+        styles.largeWideTableCell,
+        rowClassName,
+        {
+          [styles.tableCell]: !isCheckboxColumn,
+          [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
+          [styles.highlightedCell]: rowIsHighlighted,
+          [styles.highlightedRow]: rowIsHighlighted && isCheckboxColumn,
+          [styles.isRightmostFrozenColumn]: isRightmostFrozenColumn,
+          [styles.isLeftmostUnfrozenColumn]: isLeftmostUnfrozenColumn,
+        },
+      )}
+      onClick={onHighlightRow ? () => onHighlightRow(rowId) : undefined}
+    >
+      {inner}
+    </div>
+  );
+};
+
+// TableHeader is a react element for a header cell in VirtualizedGrid.
+// For details see https://github.com/bvaughn/react-window/issues/302.
+const TableHeader = ({
+  data: {
+    enableSelectAll,
+    onSort,
+    sortingProps,
+    tableColumns,
+    numFrozenColumns,
+    isFrozen,
+  },
+  columnIndex,
+  style,
+}) => {
+  if (!isFrozen && columnIndex < numFrozenColumns) {
+    return null;
+  }
+  const tableColumn = tableColumns[columnIndex];
+  const {
+    Header,
+    accessor = "",
+    headerClassName,
+    isSingleIcon,
+    sortAccessor,
+  } = tableColumn;
+  const isCheckboxColumn = accessor === "COLUMN_SELECT";
+  if (isCheckboxColumn && !enableSelectAll) {
+    return null;
+  }
+  const fieldId = typeof accessor === "string" ? accessor : "";
+  const sortFieldId = sortAccessor || fieldId;
+  const isSortable =
+    onSort && sortFieldId.length > 0 && tableColumn.sortable !== false;
+  let inner = Header;
+  if (isSortable && !isCheckboxColumn) {
+    inner = (
+      <InnerTableHeader
+        sortFieldId={sortAccessor || fieldId}
+        sortingProps={sortingProps}
+      >
+        {Header}
+      </InnerTableHeader>
+    );
+  }
+
+  const isRightmostFrozenColumn = columnIndex === numFrozenColumns - 1;
+  const isLeftmostUnfrozenColumn = columnIndex === numFrozenColumns;
+  return (
+    <div
+      key={columnIndex}
+      style={style}
+      className={classNames(
+        headerClassName,
+        styles.headerCell,
+        styles.headerRow,
+        {
+          [`${fieldId}-header`]: fieldId,
+          [styles.singleIcon]: isCheckboxColumn || isSingleIcon,
+          [styles.tableHeader]: !isCheckboxColumn,
+          [styles.isRightmostFrozenColumn]: isRightmostFrozenColumn,
+          [styles.isLeftmostUnfrozenColumn]: isLeftmostUnfrozenColumn,
+        },
+      )}
+    >
+      <div className={styles.headerText}>{inner}</div>
+    </div>
+  );
+};
 
 type Props = {
   id?: string;
@@ -137,130 +296,6 @@ export const LargeTableComponent: React.FC<Props> = props => {
   }
   const columnCount = tableColumns.length;
 
-  const renderCell = ({ columnIndex, rowIndex, style }) => {
-    const {
-      Cell,
-      Header,
-      accessor = "",
-      className = "",
-      isSingleIcon,
-    } = tableColumns[columnIndex];
-    const isCheckboxColumn = accessor === "COLUMN_SELECT";
-    const rowData = data[rowIndex];
-    const rowId = getRowId(idKey, rowData, rowIndex);
-    const itemKey = `${rowId}-${columnIndex}`;
-    let value = "";
-    if (typeof accessor === "string") {
-      value = rowData[accessor];
-    } else if (typeof accessor === "function") {
-      value = accessor(rowData);
-    }
-    let inner = null;
-    if (Cell) {
-      // N.B. The Cell is instantiated as a pure function instead of a React element.
-      // This makes the Cell able to flexibly render any elements (like inputs) without changes
-      // to their internal state causing rerenders of the entire table.
-      inner = Cell({
-        instance: rowData,
-        original: rowData,
-        value,
-        accessor,
-        rowId,
-        rowIndex,
-        label: Header || "",
-      });
-    } else {
-      inner = <Typography>{value}</Typography>;
-    }
-    let columnClassName = className;
-    if (typeof className === "function") {
-      columnClassName = className(value);
-    }
-    let rowClassName = classes.rows;
-    if (typeof rowClassName === "function") {
-      rowClassName = rowClassName(rowData, rowIndex);
-    }
-    const rowIsHighlighted = highlightedRowId === rowId;
-    const isRightmostFrozenColumn = columnIndex === numFrozenColumns - 1;
-    const isLeftmostUnfrozenColumn = columnIndex === numFrozenColumns;
-    return (
-      <div
-        key={itemKey}
-        data-cell-id={itemKey}
-        style={style}
-        className={classNames(
-          columnClassName,
-          styles.largeWideTableCell,
-          rowClassName,
-          {
-            [styles.tableCell]: !isCheckboxColumn,
-            [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
-            [styles.highlightedCell]: rowIsHighlighted,
-            [styles.highlightedRow]: rowIsHighlighted && isCheckboxColumn,
-            [styles.isRightmostFrozenColumn]: isRightmostFrozenColumn,
-            [styles.isLeftmostUnfrozenColumn]: isLeftmostUnfrozenColumn,
-          },
-        )}
-        onClick={onHighlightRow ? () => onHighlightRow(rowId) : undefined}
-      >
-        {inner}
-      </div>
-    );
-  };
-
-  const renderHeader = ({ columnIndex, style }) => {
-    const tableColumn = tableColumns[columnIndex];
-    const {
-      Header,
-      accessor = "",
-      headerClassName,
-      isSingleIcon,
-      sortAccessor,
-    } = tableColumn;
-    const isCheckboxColumn = accessor === "COLUMN_SELECT";
-    if (isCheckboxColumn && !enableSelectAll) {
-      return null;
-    }
-    const fieldId = typeof accessor === "string" ? accessor : "";
-    const sortFieldId = sortAccessor || fieldId;
-    const isSortable =
-      onSort && sortFieldId.length > 0 && tableColumn.sortable !== false;
-    let inner = Header;
-    if (isSortable && !isCheckboxColumn) {
-      inner = (
-        <InnerTableHeader
-          sortFieldId={sortAccessor || fieldId}
-          sortingProps={sortingProps}
-        >
-          {Header}
-        </InnerTableHeader>
-      );
-    }
-
-    const isRightmostFrozenColumn = columnIndex === numFrozenColumns - 1;
-    const isLeftmostUnfrozenColumn = columnIndex === numFrozenColumns;
-    return (
-      <div
-        key={columnIndex}
-        style={style}
-        className={classNames(
-          headerClassName,
-          styles.headerCell,
-          styles.headerRow,
-          {
-            [`${fieldId}-header`]: fieldId,
-            [styles.singleIcon]: isCheckboxColumn || isSingleIcon,
-            [styles.tableHeader]: !isCheckboxColumn,
-            [styles.isRightmostFrozenColumn]: isRightmostFrozenColumn,
-            [styles.isLeftmostUnfrozenColumn]: isLeftmostUnfrozenColumn,
-          },
-        )}
-      >
-        <div className={styles.headerText}>{inner}</div>
-      </div>
-    );
-  };
-
   const columnWidths = tableColumns.map(
     ({ width = defaultColumnSize }, columnIndex) => {
       // 10px of padding is added to the leftmost unfrozen column, encroaching on
@@ -324,6 +359,18 @@ export const LargeTableComponent: React.FC<Props> = props => {
   // Demo: http://bvaughn.github.io/react-virtualized/#/components/ScrollSync
   // Code: https://github.com/bvaughn/react-virtualized/blob/master/source/ScrollSync/ScrollSync.example.js
 
+  const itemData = {
+    enableSelectAll,
+    onSort,
+    sortingProps,
+    data,
+    onHighlightRow,
+    tableColumns,
+    idKey,
+    classes,
+    highlightedRowId,
+    numFrozenColumns,
+  };
   return (
     <div className={classNames(styles.table, classes.table)} id={id}>
       <div className={styles.gridRow}>
@@ -344,8 +391,9 @@ export const LargeTableComponent: React.FC<Props> = props => {
             className={styles.headerGrid}
             overscanColumnCount={overscanColumnCount}
             overscanRowCount={overscanRowCount}
+            itemData={{ isFrozen: true, ...itemData }}
           >
-            {renderHeader}
+            {TableHeader}
           </VariableSizeGrid>
         </div>
         <div
@@ -367,8 +415,9 @@ export const LargeTableComponent: React.FC<Props> = props => {
             overscanColumnCount={overscanColumnCount}
             overscanRowCount={overscanRowCount}
             onScroll={handleRowLabelScroll}
+            itemData={{ isFrozen: true, ...itemData }}
           >
-            {renderCell}
+            {TableCell}
           </VariableSizeGrid>
         </div>
         <div className={styles.gridColumn}>
@@ -412,14 +461,9 @@ export const LargeTableComponent: React.FC<Props> = props => {
                       overscanColumnCount={overscanColumnCount}
                       overscanRowCount={overscanRowCount}
                       onScroll={handleColumnLabelScroll}
+                      itemData={{ isFrozen: false, ...itemData }}
                     >
-                      {cellData => {
-                        const { columnIndex } = cellData;
-                        if (columnIndex < numFrozenColumns) {
-                          return null;
-                        }
-                        return renderHeader(cellData);
-                      }}
+                      {TableHeader}
                     </VariableSizeGrid>
                   </div>
                   <div
@@ -442,14 +486,9 @@ export const LargeTableComponent: React.FC<Props> = props => {
                       overscanRowCount={overscanRowCount}
                       className={styles.bodyGrid}
                       onScroll={handleGridScroll}
+                      itemData={{ isFrozen: false, ...itemData }}
                     >
-                      {cellData => {
-                        const { columnIndex } = cellData;
-                        if (columnIndex < numFrozenColumns) {
-                          return null;
-                        }
-                        return renderCell(cellData);
-                      }}
+                      {TableCell}
                     </VariableSizeGrid>
                   </div>
                 </div>

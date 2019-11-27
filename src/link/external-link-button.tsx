@@ -1,5 +1,4 @@
 import Button, { ButtonProps } from "@material-ui/core/Button";
-
 import React from "react";
 import classNames from "classnames";
 import styles from "./link-button.module.scss";

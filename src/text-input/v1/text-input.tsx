@@ -1,5 +1,4 @@
 import React, { ElementType } from "react";
-
 import TextField, { TextFieldProps } from "@material-ui/core/TextField";
 import { ReadOnlyTextField } from "../../readonly-text-field";
 

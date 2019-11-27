@@ -1,5 +1,4 @@
 import Button from "@material-ui/core/Button";
-
 import React, { ReactNode } from "react";
 import Typography from "@material-ui/core/Typography";
 import styles from "./sign-in-page.module.scss";

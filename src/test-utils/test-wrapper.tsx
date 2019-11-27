@@ -1,7 +1,5 @@
 import React, { ReactNode } from "react";
-
 import { StyleWrapper } from "../style-wrapper";
-
 import { StylesProvider, createGenerateClassName } from "@material-ui/styles";
 
 type Props = {

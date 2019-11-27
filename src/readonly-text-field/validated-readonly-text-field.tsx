@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-
 import classNames from "classnames";
 import styles from "./readonly-text-field.module.scss";
 import { ReadOnlyTextField } from "./readonly-text-field";

@@ -1,5 +1,4 @@
 import AccountCircle from "@material-ui/icons/AccountCircle";
-
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";

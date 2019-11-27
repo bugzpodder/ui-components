@@ -1,5 +1,4 @@
 import Grid from "@material-ui/core/Grid";
-
 import React, { ReactNode } from "react";
 import styles from "../omni.module.scss";
 import { CommonDialog } from "../../common-dialog";

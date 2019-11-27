@@ -1,5 +1,4 @@
 import React from "react";
-
 import classNames from "classnames";
 import styles from "./date-input.module.scss";
 import { DATE_INPUT_MASK } from "@grailbio/lib";

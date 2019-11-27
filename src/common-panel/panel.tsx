@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./panel.module.scss";

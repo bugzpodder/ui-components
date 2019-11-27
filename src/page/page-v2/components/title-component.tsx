@@ -1,5 +1,4 @@
 import React, { ReactNode, forwardRef } from "react";
-
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "../common-page-v2.module.scss";

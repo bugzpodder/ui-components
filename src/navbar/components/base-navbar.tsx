@@ -1,5 +1,4 @@
 import AppBar from "@material-ui/core/AppBar";
-
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { ComponentType, ReactNode } from "react";

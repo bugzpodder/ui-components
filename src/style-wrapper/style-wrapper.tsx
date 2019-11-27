@@ -1,9 +1,7 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
-
 import React, { ReactNode } from "react";
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core/styles";
-
 import {
   grailGrayLighter,
   grailPurpleDark,

@@ -1,8 +1,6 @@
 import React, { ReactNode } from "react";
-
 import isEqual from "lodash/isEqual";
 import styles from "./omni.module.scss";
-
 import {
   OMNI_ERROR,
   OMNI_KEY,
@@ -19,7 +17,6 @@ import {
   localStorage,
   updateQuery,
 } from "@grailbio/lib";
-
 import { OMNI_INPUT_FIELD_ID, OmniField } from "./components/omni-field";
 import { OmniDialog } from "./components/omni-dialog";
 import { RouteComponentProps } from "react-router-dom";

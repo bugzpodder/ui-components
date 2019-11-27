@@ -1,5 +1,4 @@
 import Button, { ButtonProps } from "@material-ui/core/Button";
-
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import React from "react";
 import styles from "./upload-button.module.scss";

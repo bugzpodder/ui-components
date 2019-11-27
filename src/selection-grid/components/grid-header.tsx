@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-
 import classNames from "classnames";
 import styles from "../selection-grid.module.scss";
 import { SelectionGridClasses } from "../../types/selection-grid";

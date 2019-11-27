@@ -1,5 +1,4 @@
 import React from "react";
-
 import { ExportButton } from "../../export-button";
 import { PagedTableColumn } from "../../types/paged-table";
 

@@ -1,5 +1,4 @@
 import React from "react";
-
 import TablePagination from "@material-ui/core/TablePagination";
 import styles from "../table.module.scss";
 import { PaginationProps } from "../../types/paged-table";

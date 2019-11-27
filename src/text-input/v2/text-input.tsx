@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import TextField, { TextFieldProps } from "@material-ui/core/TextField";
 import styles from "./text-input.module.scss";
 

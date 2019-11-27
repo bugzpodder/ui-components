@@ -1,5 +1,4 @@
 import React from "react";
-
 import AutoSizer from "react-virtualized-auto-sizer";
 import classNames from "classnames";
 import styles from "./table.module.scss";

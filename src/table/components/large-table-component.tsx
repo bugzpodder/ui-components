@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-
 import AutoSizer from "react-virtualized-auto-sizer";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";

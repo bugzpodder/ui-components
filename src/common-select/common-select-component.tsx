@@ -1,5 +1,4 @@
 import "./common-select.scss";
-
 import FilledInput from "@material-ui/core/FilledInput";
 import FormControl from "@material-ui/core/FormControl";
 import FormHelperText from "@material-ui/core/FormHelperText";
@@ -10,7 +9,6 @@ import OutlinedInput from "@material-ui/core/OutlinedInput";
 import React, { ComponentType, ReactNode, useState } from "react";
 import classNames from "classnames";
 import isEmpty from "lodash/isEmpty";
-
 import {
   ClearIndicator,
   CommonSelectContainer,

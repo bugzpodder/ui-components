@@ -1,5 +1,4 @@
 import React, { ComponentType, ReactNode, useState } from "react";
-
 import { BaseNavbar } from "./components/base-navbar";
 import { SidebarItem } from "@grailbio/lib";
 

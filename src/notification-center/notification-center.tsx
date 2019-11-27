@@ -1,5 +1,4 @@
 import Button from "@material-ui/core/Button";
-
 import IconButton from "@material-ui/core/IconButton";
 import List from "@material-ui/core/List";
 import Notifications from "@material-ui/icons/Notifications";

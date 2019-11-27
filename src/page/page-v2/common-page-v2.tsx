@@ -1,5 +1,4 @@
 import Paper from "@material-ui/core/Paper";
-
 import React, { ReactNode, useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 import styles from "./common-page-v2.module.scss";

@@ -1,5 +1,4 @@
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-
 import ClearIcon from "@material-ui/icons/Close";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Downshift from "downshift";
@@ -7,9 +6,7 @@ import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import MenuItem from "@material-ui/core/MenuItem";
 import Paper from "@material-ui/core/Paper";
-
 import Popper from "@material-ui/core/Popper";
-
 import React, { ReactNode, useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";

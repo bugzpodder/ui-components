@@ -10,7 +10,6 @@ import {
 } from "@grailbio/lib";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import { OmniSearchBar } from ".";
-
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 

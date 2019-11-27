@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import { CommonSuggest } from "./common-suggest";
 import { SearchFieldProps } from "@grailbio/lib";
 

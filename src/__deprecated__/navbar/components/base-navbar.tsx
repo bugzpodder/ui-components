@@ -6,7 +6,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./base-navbar.module.scss";
-
 import { BaseNavbarClasses } from "../../../types/base-navbar";
 import { Sidebar } from "./sidebar";
 import { SidebarItem } from "@grailbio/lib";

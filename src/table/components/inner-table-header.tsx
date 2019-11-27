@@ -1,5 +1,4 @@
 import React, { MouseEvent, ReactNode } from "react";
-
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import { SortOption, mapBy } from "@grailbio/lib";
 import { SortingProps } from "../../types/paged-table";

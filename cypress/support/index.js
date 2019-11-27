@@ -12,7 +12,6 @@
 // You can read more here:
 // https://on.cypress.io/configuration
 // ***********************************************************
-
 import "./common";
 
 // eslint-disable-next-line import/no-extraneous-dependencies

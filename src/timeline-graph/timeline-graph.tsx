@@ -1,5 +1,4 @@
 import React from "react";
-
 import classNames from "classnames";
 import styles from "./timeline-graph.module.scss";
 import { TimelineGraphClasses, TimelineGraphRow } from "../types/timeline";

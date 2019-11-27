@@ -1,5 +1,4 @@
 import React from "react";
-
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";

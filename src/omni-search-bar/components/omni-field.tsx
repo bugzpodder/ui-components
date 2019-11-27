@@ -1,5 +1,4 @@
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-
 import ClearIcon from "@material-ui/icons/Clear";
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";

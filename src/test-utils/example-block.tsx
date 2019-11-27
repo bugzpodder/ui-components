@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./example-block.module.scss";
 
 type Props = {

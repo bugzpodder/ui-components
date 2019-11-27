@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-
 import classNames from "classnames";
 import styles from "./common-tabbed-page.module.scss";
 import { CommonPage } from "./common-page";

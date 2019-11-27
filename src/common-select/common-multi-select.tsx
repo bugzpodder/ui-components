@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-
 import { CommonSelectClasses, CommonSelectOption } from "../types/select";
 import { CommonSelectComponent } from "./common-select-component";
 

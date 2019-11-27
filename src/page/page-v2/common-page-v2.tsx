@@ -8,6 +8,32 @@ import { HeaderActions } from "./components/header-actions";
 import { SpinnerOverlay } from "../../spinner-overlay";
 import { TitleComponent } from "./components/title-component";
 
+// useContentRect is a custom react hook that gets the rectangle of the ref provided. The function must start
+// with `use` in order to be considered a hook, and to use `useState` and `useEffect` internally.
+const useContentRect = ref => {
+  const currentRef = ref.current;
+  const [contentRect, setContentRect] = useState(
+    currentRef ? currentRef.getBoundingClientRect() : {},
+  );
+  useEffect(() => {
+    if (!currentRef) {
+      return () => {};
+    }
+    // @ts-ignore ResizeObserver does not exist on widow.
+    const observer = new window.ResizeObserver(entries => {
+      // We need to disconnect the observer and call observe upon requesting the animation
+      // frame to prevent exceeding the call limit of ResizeObserver.
+      // This is a known issue with the ResizeObserver: https://github.com/WICG/ResizeObserver/issues/38.
+      observer.disconnect(currentRef);
+      setContentRect(entries[0].contentRect);
+      requestAnimationFrame(() => observer.observe(currentRef));
+    });
+    observer.observe(currentRef);
+    return () => observer.disconnect(currentRef);
+  }, [currentRef]);
+  return contentRect;
+};
+
 type Props = {
   /** Page title */
   title?: ReactNode;
@@ -74,31 +100,6 @@ export const CommonPageV2: React.FC<Props> = props => {
   const titleRef = useRef(null);
   const headerActionsRef = useRef(null);
 
-  // useContentRect is a custom react hook that gets the rectangle of the ref provided. The function must start
-  // with `use` in order to be considered a hook, and to use `useState` and `useEffect` internally.
-  const useContentRect = ref => {
-    const currentRef = ref.current;
-    const [contentRect, setContentRect] = useState(
-      currentRef ? currentRef.getBoundingClientRect() : {},
-    );
-    useEffect(() => {
-      if (!currentRef) {
-        return () => {};
-      }
-      // @ts-ignore ResizeObserver does not exist on widow.
-      const observer = new window.ResizeObserver(entries => {
-        // We need to disconnect the observer and call observe upon requesting the animation
-        // frame to prevent exceeding the call limit of ResizeObserver.
-        // This is a known issue with the ResizeObserver: https://github.com/WICG/ResizeObserver/issues/38.
-        observer.disconnect(currentRef);
-        setContentRect(entries[0].contentRect);
-        requestAnimationFrame(() => observer.observe(currentRef));
-      });
-      observer.observe(currentRef);
-      return () => observer.disconnect(currentRef);
-    }, [currentRef]);
-    return contentRect;
-  };
   // By getting the rectangle of each edge (left/right) header item we can accurately find out which item is wider.
   // Then, a placeholder div of exactly that size is inserted on the inside of the shorter item in order to accurately
   // center the centerHeader div.

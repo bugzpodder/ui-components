@@ -4,7 +4,7 @@ declare type Props = {
     data: Array<{
         [x: string]: any;
     }>;
-    columns: PagedTableColumn[];
+    columns: PagedTableColumn<any>[];
     title: string;
 };
 export declare const ExportTableButton: React.FC<Props>;

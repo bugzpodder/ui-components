@@ -19,7 +19,7 @@ import { ParsableDate } from "@material-ui/pickers/constants/prop-types";
 export function wrapPickerUtilProvider<P>(
   WrappedComponent: ComponentType<P>,
   useOldPicker = false,
-  utils = MomentUtils,
+  utils: any = MomentUtils,
 ) {
   return (props: P) => {
     return useOldPicker ? (

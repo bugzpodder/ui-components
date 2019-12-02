@@ -16,7 +16,7 @@ import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId, handleKeyboardHighlight } from "../utilities/row-utils";
 
 type Props = {
-  columns: PagedTableColumn[];
+  columns: PagedTableColumn<any>[];
   data: Array<{
     [x: string]: any;
   }>;

@@ -1,5 +1,5 @@
-import React from "react";
 import AutoSizer from "react-virtualized-auto-sizer";
+import React from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { LargeTableComponent } from "./components/large-table-component";
@@ -20,7 +20,7 @@ type Props = {
    *
    * Must at least include a Cell or accessor key to identify which property in data to display.
    */
-  columns: PagedTableColumn[];
+  columns: PagedTableColumn<any>[];
   /**
    * Defaults to the row's `index`.
    *

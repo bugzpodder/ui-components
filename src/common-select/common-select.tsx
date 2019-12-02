@@ -53,6 +53,10 @@ type CommonSelectProps = {
   classes?: CommonSelectClasses;
   /** Provides an id to the component */
   id?: string;
+  /** Provides a name to the component */
+  name?: string;
+  /** Provides a class name to the component */
+  className?: string;
   /** The initial message to display when `selectType` is `async` and no initial options are provided */
   initialMessage?: string;
   /** When false, removes the button provided to clear the selected option in the input field */

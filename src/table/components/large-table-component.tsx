@@ -172,7 +172,7 @@ const TableHeader = ({
 
 type Props = {
   id?: string;
-  columns: PagedTableColumn[];
+  columns: PagedTableColumn<any>[];
   data: Array<Record<string, any>>;
   isLoading?: boolean;
   selectedRows?: Array<number | string>;

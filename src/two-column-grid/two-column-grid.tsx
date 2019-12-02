@@ -19,6 +19,10 @@ type Props = {
    *  - `value` (applied directly the the value element's wrapper)
    */
   rows: GridRow[];
+  /** Provides an id to the component */
+  id?: string;
+  /** Provides className to the component */
+  className?: string;
   /** If provided, displays bold, black-colored header text above the label and value columns */
   header?: GridRow;
   /** Takes in a number between 1-11 to determine spacing between columns */

@@ -6,7 +6,7 @@ type Props = {
   data: Array<{
     [x: string]: any;
   }>;
-  columns: PagedTableColumn[];
+  columns: PagedTableColumn<any>[];
   title: string;
 };
 

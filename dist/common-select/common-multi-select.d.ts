@@ -41,6 +41,8 @@ declare type CommonMultiSelectProps = {
     classes?: CommonSelectClasses;
     /** Provides an id to the component */
     id?: string;
+    /** Provides a name to the component */
+    name?: string;
     /** The initial message to display when `selectType` is `async` and no initial options are provided */
     initialMessage?: string;
     /** Disables the select from being used */

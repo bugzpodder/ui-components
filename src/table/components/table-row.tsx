@@ -60,7 +60,7 @@ export const PagedTableRow: React.FC<Props> = props => {
               accessor = "",
               className = "",
               isSingleIcon,
-            }: PagedTableColumn,
+            }: PagedTableColumn<any>,
             index,
           ) => {
             let inner = null;

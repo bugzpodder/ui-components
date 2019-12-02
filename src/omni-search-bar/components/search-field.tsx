@@ -3,6 +3,7 @@ import React from "react";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import keycode from "keycode";
+import styles from "../omni.module.scss";
 import {
   DATE_SEARCH_TYPES,
   SearchFieldProps,
@@ -11,7 +12,6 @@ import {
   formatDate,
   parseDate,
 } from "@grailbio/lib";
-import styles from "../omni.module.scss";
 import { DateInput } from "../../date/date-input";
 
 type Props = {

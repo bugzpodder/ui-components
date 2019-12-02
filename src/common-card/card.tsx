@@ -1,4 +1,4 @@
-import Card, { CardProps } from "@material-ui/core/Card";
+import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
@@ -47,7 +47,7 @@ export type CommonCardProps = {
   classes?: CommonCardClasses;
   /** Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive. */
   elevation?: number;
-} & CardProps;
+};
 
 /**
  * `CommonCard` provides a component to create basic Material-UI Cards.

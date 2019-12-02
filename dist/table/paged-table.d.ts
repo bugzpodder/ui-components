@@ -12,7 +12,7 @@ export declare type PagedTableProps = {
      *
      * Must at least include a Cell or accessor key to identify which property in data to display
      */
-    columns: PagedTableColumn[];
+    columns: PagedTableColumn<any>[];
     /**
      * Provides classNames to table sub-components. Options include:
      *

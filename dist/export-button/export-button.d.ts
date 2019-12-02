@@ -2,7 +2,7 @@ import React from "react";
 import { ExportableColumn } from "@grailbio/lib";
 import { PagedTableColumn } from "../types/paged-table";
 declare type Props = {
-    columns: Array<ExportableColumn | PagedTableColumn>;
+    columns: Array<ExportableColumn | PagedTableColumn<any>>;
     visibleRows?: Array<{
         [x: string]: any;
     }>;

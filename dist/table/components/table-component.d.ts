@@ -3,7 +3,7 @@ import { PagedTableClasses, PagedTableColumn } from "../../types/paged-table";
 import { SimpleTableOptions } from "../../types/table";
 import { SortOption } from "@grailbio/lib";
 declare type Props = {
-    columns: PagedTableColumn[];
+    columns: PagedTableColumn<any>[];
     data: Array<{
         [x: string]: any;
     }>;

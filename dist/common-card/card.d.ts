@@ -1,4 +1,3 @@
-import { CardProps } from "@material-ui/core/Card";
 import React, { ReactNode } from "react";
 import { CommonCardClasses, HeaderAction } from "../types/card";
 export declare type CommonCardProps = {
@@ -39,7 +38,7 @@ export declare type CommonCardProps = {
     classes?: CommonCardClasses;
     /** Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive. */
     elevation?: number;
-} & CardProps;
+};
 /**
  * `CommonCard` provides a component to create basic Material-UI Cards.
  * This was made in order to standardize how we implement cards across UIs.

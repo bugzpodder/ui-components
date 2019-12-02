@@ -1,8 +1,8 @@
+import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { TestWrapper } from "../../test-utils";
-import { cleanup, fireEvent, render } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
 import { TextInputV2 } from "./text-input";
+import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 

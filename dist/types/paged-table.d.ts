@@ -5,23 +5,23 @@ export declare type Sorting = {
     id: string;
     desc: boolean;
 };
-export declare type PagedTableCell = {
+export declare type PagedTableCell<T> = {
     accessor: string | Function;
     rowId: string | number;
     rowIndex: number;
-    instance: Record<string, any>;
-    label: string;
-    original: Record<string, any>;
+    instance: T;
+    label: ReactNode;
+    original: T;
     value: any;
 };
-export declare type InternalPagedTableColumn = PagedTableColumn & {
+export declare type InternalPagedTableColumn = PagedTableColumn<any> & {
     index: number;
     isVisible: boolean;
 };
-export declare type PagedTableColumn = Partial<ExportableColumn> & {
+export declare type PagedTableColumn<T> = Partial<ExportableColumn> & {
     Header?: ReactNode;
     sortable?: boolean;
-    Cell?: React.FC<any>;
+    Cell?: (obj: PagedTableCell<T>) => ReactNode;
     headerClassName?: string;
     className?: string | Function;
     isSingleIcon?: boolean;

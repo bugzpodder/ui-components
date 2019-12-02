@@ -14,7 +14,7 @@ declare type Props = {
      *
      * Must at least include a Cell or accessor key to identify which property in data to display.
      */
-    columns: PagedTableColumn[];
+    columns: PagedTableColumn<any>[];
     /**
      * Defaults to the row's `index`.
      *

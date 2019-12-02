@@ -20,7 +20,7 @@ import { generateReport } from "./utils/export-utils";
 
 type Props = {
   /* The column configurations in the downloaded file. */
-  columns: Array<ExportableColumn | PagedTableColumn>;
+  columns: Array<ExportableColumn | PagedTableColumn<any>>;
   /* The list of objects to be exported if "visible rows" is selected. */
   visibleRows?: Array<{
     [x: string]: any;
@@ -60,7 +60,7 @@ const DELIMITERS = {
 };
 
 const pagedTableColumnsToExportableColumnsIfNecessary = (
-  columns: PagedTableColumn[],
+  columns: PagedTableColumn<any>[],
 ): ExportableColumn[] => {
   return columns
     .filter(column => !column.excludeFromExport)

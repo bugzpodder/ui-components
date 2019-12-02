@@ -59,7 +59,7 @@ export const getCheckboxColumn = (
         onChange={selectAll}
       />
     ),
-    Cell: ({ rowId }: PagedTableCell) => {
+    Cell: ({ rowId }: PagedTableCell<any>) => {
       const testId = String(rowId)
         .toLowerCase()
         .replace(" ", "-");

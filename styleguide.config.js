@@ -83,6 +83,7 @@ module.exports = {
         "./src/timeline-graph/timeline-graph.tsx",
         "./src/timeline-graph/timeline-card.tsx",
         "./src/timeline-graph/tabbed-timeline-card.tsx",
+        "./src/pdf-viewer/pdf-viewer.tsx",
       ],
     },
   ],

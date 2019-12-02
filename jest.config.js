@@ -14,6 +14,7 @@ module.exports = {
   },
   moduleNameMapper: {
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
+    "\\.entry.js":"<rootDir>/__mocks__/pdfMock.js",
   },
   testPathIgnorePatterns: ["/node_modules/", "/dist", "/cypress/"],
   transform: {

@@ -1,6 +1,9 @@
 import React, { ReactNode } from "react";
 import { StyleWrapper } from "../style-wrapper";
-import { StylesProvider, createGenerateClassName } from "@material-ui/styles";
+import {
+  StylesProvider,
+  createGenerateClassName,
+} from "@material-ui/core/styles";
 
 type Props = {
   children: ReactNode;

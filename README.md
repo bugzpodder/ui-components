@@ -46,7 +46,7 @@ To publish:
 #### **Installation and Usage**
 
 - `yarn add react`
-- `yarn add @material-ui/core @material-ui/icons @material-ui/styles`
+- `yarn add @material-ui/core @material-ui/icons`
 - If using NPM packages: `yarn add @grailbio/lib @grailbio/components`
 - To use the `DateInput` and `DateTimeInput` components:
   - Wrap your application in the `wrapPickerUtilProvider` component.

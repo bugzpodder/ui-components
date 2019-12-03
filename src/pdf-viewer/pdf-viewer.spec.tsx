@@ -9,11 +9,11 @@ afterEach(cleanup);
 test("it renders pdf and gets a loading state", async () => {
   const { container } = render(
     <TestWrapper>
-      <PDFViewer 
+      <PDFViewer
         pdf="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
         width={500}
       />
-    </TestWrapper>
+    </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
 });

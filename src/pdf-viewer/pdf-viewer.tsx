@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Document, Page }  from 'react-pdf/dist/entry.webpack';
+// importing from /dist/entry.webpack due to https://github.com/mozilla/pdf.js/issues/7612
+import { Document, Page } from "react-pdf/dist/entry.webpack";
 import { PDFViewerClasses } from "../types/pdf-viewer";
 
 type Props = {

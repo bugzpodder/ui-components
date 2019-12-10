@@ -24,21 +24,29 @@ afterEach(cleanup);
  */
 
 test("render simple table", () => {
-  const { container } = render(
+  const { container, getByText } = render(
     <TestWrapper>
       <SimpleTable columns={columns} data={data} />
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
+  expect(getByText("Column One")).toHaveAttribute(
+    "style",
+    "padding-left: 20px;",
+  );
 });
 
 test("render simple table with no results", () => {
-  const { container } = render(
+  const { container, getByText } = render(
     <TestWrapper>
-      <SimpleTable columns={columns} data={[]} />
+      <SimpleTable paddingLeft={100} columns={columns} data={[]} />
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
+  expect(getByText("Column One")).toHaveAttribute(
+    "style",
+    "padding-left: 100px;",
+  );
 });
 
 test("render loading simple table", () => {
@@ -61,7 +69,7 @@ test("render simple table with no results and is loading", () => {
 
 test("render simple table with all items selected", () => {
   const mockSelect = jest.fn();
-  const { container } = render(
+  const { container, getByText } = render(
     <TestWrapper>
       <SimpleTable
         idKey="columnOne"
@@ -74,6 +82,7 @@ test("render simple table with all items selected", () => {
     </TestWrapper>,
   );
   expect(container).toMatchSnapshot();
+  expect(getByText("Column One")).not.toHaveAttribute("style");
 });
 
 test("render full simple table", () => {

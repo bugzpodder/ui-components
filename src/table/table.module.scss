@@ -56,11 +56,6 @@
     max-height: unset;
     margin: 0;
     flex: 1;
-
-    .tableHeader:first-child,
-    .tableCell:first-child {
-      padding-left: 16px;
-    }
   }
 }
 
@@ -106,8 +101,14 @@ $scrollbar-width: 7px;
     }
   }
 
-  .tableHeader {
-    @extend %common-table-cell;
+  .tableHead {
+    .tableHeader {
+      @extend %common-table-cell;
+
+      &.noWrap {
+        white-space: nowrap;
+      }
+    }
   }
 
   .tableRow {

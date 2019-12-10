@@ -55,7 +55,8 @@
     "react-pdf": "^4.1.0",
     "react-select": "^3.0.8",
     "react-virtualized-auto-sizer": "^1.0.2",
-    "react-window": "^1.8.5"
+    "react-window": "^1.8.5",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^4.1.0",

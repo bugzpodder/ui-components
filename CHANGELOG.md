@@ -51,7 +51,11 @@
 45. `AvatarIcon` now accepts `children`.
 46. Fix margins on `ExportButton`, `NotificationCard`, and the "back" button in `CommonDialog`s.
 47. Add support for date-fns library for Date/Time pickers.
-48. Add PDFViewer Component
+48. Add PDFViewer Component.
+49. Simple / Paged tables can force headers to inline as opposed to wrap text.
+50. Simple / Paged tables support adding padding-left to non-selectable tables.
+51. Simple / Paged tables have standardized header height.
+52. Add pollyfill to TabbedPageV2 for ResizeObserver.
 
 ## 1.0.0 - 2019-06-17
 

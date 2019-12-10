@@ -20,6 +20,8 @@ type Props = {
   className?: string | Function;
   selectionProps: SelectionProps;
   hasColumnVisibilityChooser: boolean;
+  canSelect: boolean;
+  paddingLeft: number;
 };
 
 export const PagedTableRow: React.FC<Props> = props => {
@@ -31,6 +33,8 @@ export const PagedTableRow: React.FC<Props> = props => {
     selectionProps,
     shadeOnHover,
     hasColumnVisibilityChooser,
+    canSelect,
+    paddingLeft,
   } = props;
   const { highlightedRowId, onHighlightRow } = selectionProps;
   let { className } = props;
@@ -51,70 +55,71 @@ export const PagedTableRow: React.FC<Props> = props => {
       selected={rowIsHighlighted}
       onClick={onHighlightRow ? () => onHighlightRow(rowId) : undefined}
     >
-      <>
-        {visibleColumns.map(
-          (
-            {
-              Cell,
-              Header,
-              accessor = "",
-              className = "",
-              isSingleIcon,
-            }: PagedTableColumn<any>,
-            index,
-          ) => {
-            let inner = null;
-            const itemKey = `${rowId}-${index}`;
-            let value = "";
-            if (typeof accessor === "string") {
-              value = instance[accessor];
-            }
-            if (typeof accessor === "function") {
-              value = accessor(instance);
-            }
-            if (Cell) {
-              // N.B. The Cell is instantiated as a pure function instead of a React element.
-              // This makes the Cell able to flexibly render any elements (like inputs) without changes
-              // to their internal state causing rerenders of the entire table.
-              inner = Cell({
-                instance,
-                original: instance,
-                value,
-                accessor,
-                rowId,
-                rowIndex,
-                label: Header || "",
-              });
-            } else if (accessor) {
-              inner = value;
-            } else {
-              throw new Error(
-                "row missing content declaration. Provide either Cell or accessor to columns object(s)",
-              );
-            }
-            if (typeof className === "function") {
-              className = className(value);
-            }
-            const isCheckboxColumn = accessor === "COLUMN_SELECT";
-            return (
-              <TableCell
-                key={itemKey}
-                data-cell-id={itemKey}
-                className={classNames(styles.tableCell, className, {
-                  [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
-                })}
-              >
-                {inner}
-              </TableCell>
+      {visibleColumns.map(
+        (
+          {
+            Cell,
+            Header,
+            accessor = "",
+            className = "",
+            isSingleIcon,
+          }: PagedTableColumn<any>,
+          index,
+        ) => {
+          let inner = null;
+          const itemKey = `${rowId}-${index}`;
+          let value = "";
+          if (typeof accessor === "string") {
+            value = instance[accessor];
+          }
+          if (typeof accessor === "function") {
+            value = accessor(instance);
+          }
+          if (Cell) {
+            // N.B. The Cell is instantiated as a pure function instead of a React element.
+            // This makes the Cell able to flexibly render any elements (like inputs) without changes
+            // to their internal state causing rerenders of the entire table.
+            inner = Cell({
+              instance,
+              original: instance,
+              value,
+              accessor,
+              rowId,
+              rowIndex,
+              label: Header || "",
+            });
+          } else if (accessor) {
+            inner = value;
+          } else {
+            throw new Error(
+              "row missing content declaration. Provide either Cell or accessor to columns object(s)",
             );
-          },
-        )}
-        {hasColumnVisibilityChooser && (
-          <TableCell
-            className={classNames(styles.singleIcon, styles.iconInHeaderOnly)}
-          />
-        )}
-      </>
+          }
+          if (typeof className === "function") {
+            className = className(value);
+          }
+          const isCheckboxColumn = accessor === "COLUMN_SELECT";
+          return (
+            <TableCell
+              key={itemKey}
+              data-cell-id={itemKey}
+              style={{
+                paddingLeft: !canSelect && index === 0 && `${paddingLeft}px`,
+              }}
+              className={classNames(styles.tableCell, className, {
+                [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
+              })}
+            >
+              {inner}
+            </TableCell>
+          );
+        },
+      )}
+      {hasColumnVisibilityChooser && (
+        <TableCell
+          className={classNames(styles.singleIcon, styles.iconInHeaderOnly)}
+        />
+      )}
     </TableRow>
   );
 };

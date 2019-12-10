@@ -33,6 +33,11 @@ const customTheme = createMuiTheme({
     },
   },
   overrides: {
+    MuiTableRow: {
+      head: {
+        height: "50px",
+      },
+    },
     MuiButton: {
       root: {
         // Set the default color.

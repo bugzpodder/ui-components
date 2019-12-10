@@ -15,6 +15,9 @@ type Props = {
   columns: InternalPagedTableColumn[];
   sortingProps: SortingProps;
   enableSelectAll: boolean;
+  wrapHeader: boolean;
+  paddingLeft: number;
+  canSelect: boolean;
   hasColumnVisibilityChooser: boolean;
   columnVisibility: {
     [x: number]: boolean;
@@ -30,69 +33,74 @@ export const TableHeader: React.FC<Props> = props => {
     hasColumnVisibilityChooser,
     columnVisibility,
     setColumnVisibility,
+    wrapHeader,
+    paddingLeft,
+    canSelect,
   } = props;
 
   const visibleColumns = columns.filter(column => column.isVisible);
   const { onSort } = sortingProps;
   return (
-    <TableHead className="TableHeader">
+    <TableHead className={classNames("TableHeader", styles.tableHead)}>
       <TableRow>
-        <>
-          {visibleColumns.map((column, index) => {
-            const {
-              Header,
-              accessor = "",
-              headerClassName = "",
-              isSingleIcon = false,
-              sortAccessor,
-            } = column;
-            const fieldId = typeof accessor === "string" ? accessor : "";
-            const sortFieldId = sortAccessor || fieldId;
-            const isCheckboxHeader = accessor === "COLUMN_SELECT";
-            const isSortable =
-              onSort && sortFieldId.length > 0 && column.sortable !== false;
+        {visibleColumns.map((column, index) => {
+          const {
+            Header,
+            accessor = "",
+            headerClassName = "",
+            isSingleIcon = false,
+            sortAccessor,
+          } = column;
+          const fieldId = typeof accessor === "string" ? accessor : "";
+          const sortFieldId = sortAccessor || fieldId;
+          const isCheckboxHeader = accessor === "COLUMN_SELECT";
+          const isSortable =
+            onSort && sortFieldId.length > 0 && column.sortable !== false;
 
-            let inner = Header;
-            if (isSortable && !isCheckboxHeader) {
-              inner = (
-                <InnerTableHeader
-                  sortFieldId={sortAccessor || fieldId}
-                  sortingProps={sortingProps}
-                >
-                  {Header || null}
-                </InnerTableHeader>
-              );
-            }
-            if (isCheckboxHeader && !enableSelectAll) {
-              return <TableCell />;
-            }
-            return (
-              <TableCell
-                key={index}
-                className={classNames(headerClassName, styles.tableHeader, {
-                  [`${fieldId}-header`]: fieldId,
-                  [styles.singleIcon]: isCheckboxHeader || isSingleIcon,
-                })}
+          let inner = Header;
+          if (isSortable && !isCheckboxHeader) {
+            inner = (
+              <InnerTableHeader
+                sortFieldId={sortAccessor || fieldId}
+                sortingProps={sortingProps}
               >
-                {inner}
-              </TableCell>
+                {Header || null}
+              </InnerTableHeader>
             );
-          })}
-          {hasColumnVisibilityChooser && (
+          }
+          if (isCheckboxHeader && !enableSelectAll) {
+            return <TableCell />;
+          }
+          return (
             <TableCell
-              key="column-visibility-chooser"
-              className={classNames(styles.singleIcon, styles.iconInHeaderOnly)}
+              key={index}
+              style={{
+                paddingLeft: !canSelect && index === 0 && `${paddingLeft}px`,
+              }}
+              className={classNames(headerClassName, styles.tableHeader, {
+                [`${fieldId}-header`]: fieldId,
+                [styles.singleIcon]: isCheckboxHeader || isSingleIcon,
+                [styles.noWrap]: !wrapHeader,
+              })}
             >
-              <ColumnVisibilityChooser
-                columns={columns.filter(
-                  column => column.accessor !== "COLUMN_SELECT",
-                )}
-                columnVisibility={columnVisibility}
-                setColumnVisibility={setColumnVisibility}
-              />
+              {inner}
             </TableCell>
-          )}
-        </>
+          );
+        })}
+        {hasColumnVisibilityChooser && (
+          <TableCell
+            key="column-visibility-chooser"
+            className={classNames(styles.singleIcon, styles.iconInHeaderOnly)}
+          >
+            <ColumnVisibilityChooser
+              columns={columns.filter(
+                column => column.accessor !== "COLUMN_SELECT",
+              )}
+              columnVisibility={columnVisibility}
+              setColumnVisibility={setColumnVisibility}
+            />
+          </TableCell>
+        )}
       </TableRow>
     </TableHead>
   );

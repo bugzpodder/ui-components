@@ -1,5 +1,12 @@
 import Paper from "@material-ui/core/Paper";
-import React, { ReactNode, useEffect, useRef, useState } from "react";
+import PollyfillObserver from "resize-observer-polyfill";
+import React, {
+  MutableRefObject,
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import classNames from "classnames";
 import styles from "./common-page-v2.module.scss";
 import { ClickableItem } from "../../types/dropdown";
@@ -10,26 +17,29 @@ import { TitleComponent } from "./components/title-component";
 
 // useContentRect is a custom react hook that gets the rectangle of the ref provided. The function must start
 // with `use` in order to be considered a hook, and to use `useState` and `useEffect` internally.
-const useContentRect = ref => {
+// @ts-ignore ResizeObserver does not exist on window.
+const WindowObserver = window.ResizeObserver || PollyfillObserver;
+const useContentRect = (
+  ref: MutableRefObject<HTMLDivElement> | MutableRefObject<null>,
+): ClientRect | Record<string, any> => {
   const currentRef = ref.current;
   const [contentRect, setContentRect] = useState(
     currentRef ? currentRef.getBoundingClientRect() : {},
   );
   useEffect(() => {
     if (!currentRef) {
-      return () => {};
+      return (): void => {};
     }
-    // @ts-ignore ResizeObserver does not exist on widow.
-    const observer = new window.ResizeObserver(entries => {
+    const observer = new WindowObserver(entries => {
       // We need to disconnect the observer and call observe upon requesting the animation
       // frame to prevent exceeding the call limit of ResizeObserver.
       // This is a known issue with the ResizeObserver: https://github.com/WICG/ResizeObserver/issues/38.
-      observer.disconnect(currentRef);
+      observer.disconnect();
       setContentRect(entries[0].contentRect);
       requestAnimationFrame(() => observer.observe(currentRef));
     });
     observer.observe(currentRef);
-    return () => observer.disconnect(currentRef);
+    return (): void => observer.disconnect();
   }, [currentRef]);
   return contentRect;
 };

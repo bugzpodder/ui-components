@@ -62,7 +62,7 @@ exports[`render basic paged table 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -70,6 +70,7 @@ exports[`render basic paged table 1`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>
@@ -95,6 +96,7 @@ exports[`render basic paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="0-0"
+              style="padding-left: 20px;"
             >
               <span>
                 First Datum
@@ -122,6 +124,7 @@ exports[`render basic paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="1-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Fourth Datum
@@ -149,6 +152,7 @@ exports[`render basic paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="2-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventh Datum
@@ -176,6 +180,7 @@ exports[`render basic paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="3-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Tenth Datum
@@ -203,6 +208,7 @@ exports[`render basic paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="4-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Thirteenth Datum
@@ -230,6 +236,7 @@ exports[`render basic paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="5-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventeenth Datum
@@ -330,7 +337,7 @@ exports[`render loading paged table 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -338,6 +345,7 @@ exports[`render loading paged table 1`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>
@@ -363,6 +371,7 @@ exports[`render loading paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="0-0"
+              style="padding-left: 20px;"
             >
               <span>
                 First Datum
@@ -390,6 +399,7 @@ exports[`render loading paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="1-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Fourth Datum
@@ -417,6 +427,7 @@ exports[`render loading paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="2-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventh Datum
@@ -444,6 +455,7 @@ exports[`render loading paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="3-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Tenth Datum
@@ -471,6 +483,7 @@ exports[`render loading paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="4-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Thirteenth Datum
@@ -498,6 +511,7 @@ exports[`render loading paged table 1`] = `
             <td
               class="tableCell"
               data-cell-id="5-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventeenth Datum
@@ -613,7 +627,7 @@ exports[`render paged table and test pagination 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -1201,7 +1215,7 @@ exports[`render paged table and test sorting 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -1209,6 +1223,7 @@ exports[`render paged table and test sorting 1`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               <span
                 aria-disabled="false"
@@ -1272,6 +1287,7 @@ exports[`render paged table and test sorting 1`] = `
             <td
               class="tableCell"
               data-cell-id="First Datum-0"
+              style="padding-left: 20px;"
             >
               <span>
                 First Datum
@@ -1299,6 +1315,7 @@ exports[`render paged table and test sorting 1`] = `
             <td
               class="tableCell"
               data-cell-id="Fourth Datum-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Fourth Datum
@@ -1326,6 +1343,7 @@ exports[`render paged table and test sorting 1`] = `
             <td
               class="tableCell"
               data-cell-id="Seventh Datum-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventh Datum
@@ -1353,6 +1371,7 @@ exports[`render paged table and test sorting 1`] = `
             <td
               class="tableCell"
               data-cell-id="Tenth Datum-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Tenth Datum
@@ -1380,6 +1399,7 @@ exports[`render paged table and test sorting 1`] = `
             <td
               class="tableCell"
               data-cell-id="Thirteenth Datum-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Thirteenth Datum
@@ -1407,6 +1427,7 @@ exports[`render paged table and test sorting 1`] = `
             <td
               class="tableCell"
               data-cell-id="Seventeenth Datum-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventeenth Datum
@@ -1507,7 +1528,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -2012,7 +2033,7 @@ exports[`render paged table with column visibility chooser 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -2020,6 +2041,7 @@ exports[`render paged table with column visibility chooser 1`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>
@@ -2073,6 +2095,7 @@ exports[`render paged table with column visibility chooser 1`] = `
             <td
               class="tableCell"
               data-cell-id="0-0"
+              style="padding-left: 20px;"
             >
               <span>
                 First Datum
@@ -2103,6 +2126,7 @@ exports[`render paged table with column visibility chooser 1`] = `
             <td
               class="tableCell"
               data-cell-id="1-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Fourth Datum
@@ -2133,6 +2157,7 @@ exports[`render paged table with column visibility chooser 1`] = `
             <td
               class="tableCell"
               data-cell-id="2-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventh Datum
@@ -2163,6 +2188,7 @@ exports[`render paged table with column visibility chooser 1`] = `
             <td
               class="tableCell"
               data-cell-id="3-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Tenth Datum
@@ -2193,6 +2219,7 @@ exports[`render paged table with column visibility chooser 1`] = `
             <td
               class="tableCell"
               data-cell-id="4-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Thirteenth Datum
@@ -2223,6 +2250,7 @@ exports[`render paged table with column visibility chooser 1`] = `
             <td
               class="tableCell"
               data-cell-id="5-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventeenth Datum
@@ -2328,7 +2356,7 @@ exports[`render paged table with column visibility chooser 2`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -2336,6 +2364,7 @@ exports[`render paged table with column visibility chooser 2`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>
@@ -2389,6 +2418,7 @@ exports[`render paged table with column visibility chooser 2`] = `
             <td
               class="tableCell"
               data-cell-id="0-0"
+              style="padding-left: 20px;"
             >
               <span>
                 First Datum
@@ -2419,6 +2449,7 @@ exports[`render paged table with column visibility chooser 2`] = `
             <td
               class="tableCell"
               data-cell-id="1-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Fourth Datum
@@ -2449,6 +2480,7 @@ exports[`render paged table with column visibility chooser 2`] = `
             <td
               class="tableCell"
               data-cell-id="2-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventh Datum
@@ -2479,6 +2511,7 @@ exports[`render paged table with column visibility chooser 2`] = `
             <td
               class="tableCell"
               data-cell-id="3-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Tenth Datum
@@ -2509,6 +2542,7 @@ exports[`render paged table with column visibility chooser 2`] = `
             <td
               class="tableCell"
               data-cell-id="4-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Thirteenth Datum
@@ -2539,6 +2573,7 @@ exports[`render paged table with column visibility chooser 2`] = `
             <td
               class="tableCell"
               data-cell-id="5-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventeenth Datum
@@ -2642,7 +2677,7 @@ exports[`render paged table with column visibility chooser 3`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -2650,6 +2685,7 @@ exports[`render paged table with column visibility chooser 3`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>
@@ -2697,6 +2733,7 @@ exports[`render paged table with column visibility chooser 3`] = `
             <td
               class="tableCell"
               data-cell-id="0-0"
+              style="padding-left: 20px;"
             >
               <span>
                 First Datum
@@ -2721,6 +2758,7 @@ exports[`render paged table with column visibility chooser 3`] = `
             <td
               class="tableCell"
               data-cell-id="1-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Fourth Datum
@@ -2745,6 +2783,7 @@ exports[`render paged table with column visibility chooser 3`] = `
             <td
               class="tableCell"
               data-cell-id="2-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventh Datum
@@ -2769,6 +2808,7 @@ exports[`render paged table with column visibility chooser 3`] = `
             <td
               class="tableCell"
               data-cell-id="3-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Tenth Datum
@@ -2793,6 +2833,7 @@ exports[`render paged table with column visibility chooser 3`] = `
             <td
               class="tableCell"
               data-cell-id="4-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Thirteenth Datum
@@ -2817,6 +2858,7 @@ exports[`render paged table with column visibility chooser 3`] = `
             <td
               class="tableCell"
               data-cell-id="5-0"
+              style="padding-left: 20px;"
             >
               <span>
                 Seventeenth Datum
@@ -2889,7 +2931,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -3387,7 +3429,7 @@ exports[`render paged table with no initially selected items, then select items 
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -3886,7 +3928,7 @@ exports[`render paged table with no results 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -3894,6 +3936,7 @@ exports[`render paged table with no results 1`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>
@@ -4002,7 +4045,7 @@ exports[`render paged table with no results and is loading 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -4010,6 +4053,7 @@ exports[`render paged table with no results and is loading 1`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>
@@ -4125,7 +4169,7 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
         tabindex="0"
       >
         <thead
-          class="TableHeader"
+          class="TableHeader tableHead"
         >
           <tr
             class=""
@@ -4133,6 +4177,7 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
             <th
               class="tableHeader columnOne-header"
               scope="col"
+              style="padding-left: 20px;"
             >
               Column One
             </th>

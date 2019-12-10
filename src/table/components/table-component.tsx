@@ -32,6 +32,8 @@ type Props = {
   enableSelectAll: boolean;
   shadeOnHover: boolean;
   hasColumnVisibilityChooser?: boolean;
+  wrapHeader?: boolean;
+  paddingLeft?: number;
 };
 
 export const TableComponent: React.FC<Props> = props => {
@@ -50,6 +52,8 @@ export const TableComponent: React.FC<Props> = props => {
     enableSelectAll,
     shadeOnHover,
     hasColumnVisibilityChooser = false,
+    wrapHeader = true,
+    paddingLeft = 20,
     ...tableProps
   } = props;
   const sortingProps = { onSort, tableOptions };
@@ -93,6 +97,7 @@ export const TableComponent: React.FC<Props> = props => {
     tableColumns = [getCheckboxColumn(selectionProps), ...tableColumns];
   }
   const hasHeaders = tableColumns.find(column => column.Header);
+  const canSelect = !!(onSelect && selectedRows);
   return (
     <Table
       tabIndex={0}
@@ -103,6 +108,9 @@ export const TableComponent: React.FC<Props> = props => {
     >
       {hasHeaders && (
         <TableHeader
+          canSelect={canSelect}
+          paddingLeft={paddingLeft}
+          wrapHeader={wrapHeader}
           columns={tableColumns}
           sortingProps={sortingProps}
           enableSelectAll={enableSelectAll}
@@ -117,7 +125,9 @@ export const TableComponent: React.FC<Props> = props => {
             const rowId = getRowId(idKey, instance, index);
             return (
               <PagedTableRow
+                paddingLeft={paddingLeft}
                 selectionProps={selectionProps}
+                canSelect={canSelect}
                 key={index}
                 instance={instance}
                 columns={tableColumns}

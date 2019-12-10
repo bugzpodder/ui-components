@@ -21,6 +21,8 @@ declare type Props = {
     textAlign?: string;
     /** When "text", changes the styling of the alert */
     variant?: string;
+    /** Provides the id of the component */
+    id?: string;
 };
 /**
  * `Alert is a styled alert pane for UI components`

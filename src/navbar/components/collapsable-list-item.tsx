@@ -4,7 +4,9 @@ import ExpandMore from "@material-ui/icons/ExpandMore";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
+import ListItemText, {
+  ListItemTextProps,
+} from "@material-ui/core/ListItemText";
 import React, { ReactElement, ReactNode, useEffect, useState } from "react";
 import { getListItemDataTestId } from "../util";
 
@@ -12,9 +14,7 @@ type Props = {
   /** Defines the text of the main item. */
   headerText: ReactNode;
   /** Defines props passed into main item's `ListItemText` component. */
-  headerTextProps?: {
-    [x: string]: any;
-  };
+  headerTextProps?: Partial<ListItemTextProps>;
   /** Defines props passed into main item's `ListItem` component. */
   headerItemProps?: {
     [x: string]: any;

@@ -39,7 +39,7 @@ module.exports = {
       { devDependencies: ["src/**/*.spec.ts", "src/**/*.spec.tsx"] },
     ],
     "@typescript-eslint/ban-ts-ignore": 0,
-
+    "@typescript-eslint/no-explicit-any": 0,
     "react/destructuring-assignment": 0,
     "react/no-array-index-key": 0,
     "react/require-default-props": 0,

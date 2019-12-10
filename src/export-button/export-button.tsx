@@ -1,4 +1,4 @@
-import Button from "@material-ui/core/Button";
+import Button, { ButtonProps } from "@material-ui/core/Button";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Input from "@material-ui/core/Input";
@@ -20,7 +20,7 @@ import { generateReport } from "./utils/export-utils";
 
 type Props = {
   /* The column configurations in the downloaded file. */
-  columns: Array<ExportableColumn | PagedTableColumn<any>>;
+  columns: Array<ExportableColumn<any> | PagedTableColumn<any>>;
   /* The list of objects to be exported if "visible rows" is selected. */
   visibleRows?: Array<{
     [x: string]: any;
@@ -41,9 +41,7 @@ type Props = {
    * "export". */
   filenamePrefix?: string;
   /* Props applied to the button component */
-  buttonProps?: {
-    [x: string]: any;
-  };
+  buttonProps?: Partial<ButtonProps>;
   /* Classname applied to the button */
   className?: string;
 };
@@ -61,7 +59,7 @@ const DELIMITERS = {
 
 const pagedTableColumnsToExportableColumnsIfNecessary = (
   columns: PagedTableColumn<any>[],
-): ExportableColumn[] => {
+): ExportableColumn<any>[] => {
   return columns
     .filter(column => !column.excludeFromExport)
     .map(({ accessor, Header, exportHeaderName, exportAccessor }, index) => {

@@ -8,5 +8,6 @@ export declare type CommonDialogAction = {
     variant?: "text" | "flat" | "outlined" | "contained" | "raised" | "fab" | "extendedFab";
     color?: "default" | "inherit" | "primary" | "secondary";
     isLeftButton?: boolean;
+    "data-testid"?: string;
 };
 export declare const actionToButton: (action: CommonDialogAction) => JSX.Element;

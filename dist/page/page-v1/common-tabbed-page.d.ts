@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { CommonTabbedPageClasses, HeaderAction, PageConfig } from "../../types/card";
+import { TabProps } from "@material-ui/core/Tab";
 declare type Props = {
     /**
      * The array of objects used to define the tabs displayed in the header, and their corresponding pages.
@@ -40,9 +41,7 @@ declare type Props = {
      */
     classes?: CommonTabbedPageClasses;
     /** Props applied to the `Tabs` container */
-    tabProps?: {
-        [x: string]: any;
-    };
+    tabProps?: Partial<TabProps>;
     /** Components to be shared between all pages */
     children?: ReactNode;
     /** Displays an uninteractive loading animation over the page content when true */

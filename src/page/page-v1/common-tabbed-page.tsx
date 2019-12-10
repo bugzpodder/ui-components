@@ -8,6 +8,7 @@ import {
   PageConfig,
 } from "../../types/card";
 import { SpinnerOverlay } from "../../spinner-overlay";
+import { TabProps } from "@material-ui/core/Tab";
 import { TabsComponent } from "./components/tabs-component";
 
 type Props = {
@@ -50,9 +51,7 @@ type Props = {
    */
   classes?: CommonTabbedPageClasses;
   /** Props applied to the `Tabs` container */
-  tabProps?: {
-    [x: string]: any;
-  };
+  tabProps?: Partial<TabProps>;
   /** Components to be shared between all pages */
   children?: ReactNode;
   /** Displays an uninteractive loading animation over the page content when true */

@@ -1,5 +1,6 @@
 import "./common-select.scss";
 import React, { ReactNode } from "react";
+import { CommonSelectContainer } from "./components";
 import { CommonSelectClasses, CommonSelectOption } from "../types/select";
 declare type Props = {
     value?: CommonSelectOption | CommonSelectOption[] | null;
@@ -24,6 +25,6 @@ declare type Props = {
     isMulti?: boolean;
     defaultOptions?: CommonSelectOption[];
     options?: CommonSelectOption[];
-};
+} & Partial<React.ComponentProps<typeof CommonSelectContainer>>;
 export declare const CommonSelectComponent: React.FC<Props>;
 export {};

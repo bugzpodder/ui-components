@@ -46,7 +46,7 @@ type Props = {
    */
   classes?: TimelineCardClasses;
   /** The object used to apply props to the CommonCard container */
-  commonCardProps?: CommonCardProps;
+  commonCardProps?: Partial<CommonCardProps>;
   /**
    * The function used to set the value of the `selectedItem`. Returns the unique date of the
    * timeline entry

@@ -1,11 +1,10 @@
+import { ListItemTextProps } from "@material-ui/core/ListItemText";
 import React, { ReactElement, ReactNode } from "react";
 declare type Props = {
     /** Defines the text of the main item. */
     headerText: ReactNode;
     /** Defines props passed into main item's `ListItemText` component. */
-    headerTextProps?: {
-        [x: string]: any;
-    };
+    headerTextProps?: Partial<ListItemTextProps>;
     /** Defines props passed into main item's `ListItem` component. */
     headerItemProps?: {
         [x: string]: any;

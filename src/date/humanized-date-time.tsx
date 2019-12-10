@@ -23,7 +23,7 @@ export type Props = {
    *  - `humanizedField` (applied to humanized text)
    */
   classes?: HumanizedDateTimeClasses;
-};
+} & React.ComponentProps<typeof DateTimeValue>;
 
 /** HumanizedDateTime formats a datetime value along with an expression describing the distance from the datetime
  * value and now. */

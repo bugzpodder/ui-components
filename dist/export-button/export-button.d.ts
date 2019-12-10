@@ -1,8 +1,9 @@
+import { ButtonProps } from "@material-ui/core/Button";
 import React from "react";
 import { ExportableColumn } from "@grailbio/lib";
 import { PagedTableColumn } from "../types/paged-table";
 declare type Props = {
-    columns: Array<ExportableColumn | PagedTableColumn<any>>;
+    columns: Array<ExportableColumn<any> | PagedTableColumn<any>>;
     visibleRows?: Array<{
         [x: string]: any;
     }>;
@@ -13,9 +14,7 @@ declare type Props = {
         [x: string]: any;
     }>>;
     filenamePrefix?: string;
-    buttonProps?: {
-        [x: string]: any;
-    };
+    buttonProps?: Partial<ButtonProps>;
     className?: string;
 };
 export declare const ExportButton: React.FC<Props>;

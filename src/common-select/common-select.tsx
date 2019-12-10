@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { FocusEvent, ReactNode } from "react";
 import isEmpty from "lodash/isEmpty";
 import isNil from "lodash/isNil";
 import isString from "lodash/isString";
@@ -87,6 +87,10 @@ type CommonSelectProps = {
    * Optional initial options for `async`
    */
   options?: CommonSelectOption[];
+  /**
+   * onBlur callback.
+   */
+  onBlur?: (event: FocusEvent) => void;
   /** The content to display in the option menu item. Allows for customization
    * of options to display information from the data object. When undefined
    * will default to the `label` provided in the options object.

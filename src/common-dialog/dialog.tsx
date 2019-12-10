@@ -10,8 +10,6 @@ import { CommonDialogAction, actionToButton } from "./util";
 import { CommonDialogClasses } from "../types/dialog";
 
 type Props = {
-  /** Provides an id to the component */
-  id?: string;
   /** Custom action Buttons */
   actions: CommonDialogAction[];
   /** The callback used to hide the modal */
@@ -22,6 +20,10 @@ type Props = {
   children: ReactNode;
   /** Gives a Title to the Dialog */
   title: ReactNode;
+  /** Provides an id to the component */
+  id?: string;
+  /** Provides a className to the component */
+  className?: string;
   /** The value of the "Close" button. Defaults to "Close" */
   closeButtonText?: string;
   /**

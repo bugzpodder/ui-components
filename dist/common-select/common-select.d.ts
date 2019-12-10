@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { FocusEvent, ReactNode } from "react";
 import { CommonSelectClasses, CommonSelectOption } from "../types/select";
 declare type CommonSelectProps = {
     /**
@@ -77,6 +77,10 @@ declare type CommonSelectProps = {
      * Optional initial options for `async`
      */
     options?: CommonSelectOption[];
+    /**
+     * onBlur callback.
+     */
+    onBlur?: (event: FocusEvent) => void;
     /** The content to display in the option menu item. Allows for customization
      * of options to display information from the data object. When undefined
      * will default to the `label` provided in the options object.

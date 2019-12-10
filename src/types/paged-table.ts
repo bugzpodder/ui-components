@@ -22,7 +22,7 @@ export type InternalPagedTableColumn = PagedTableColumn<any> & {
   isVisible: boolean;
 };
 
-export type PagedTableColumn<T> = Partial<ExportableColumn> & {
+export type PagedTableColumn<T> = Partial<ExportableColumn<T>> & {
   Header?: ReactNode;
   sortable?: boolean;
   Cell?: (obj: PagedTableCell<T>) => ReactNode;

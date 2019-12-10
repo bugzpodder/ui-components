@@ -9,7 +9,7 @@ type Props = {
   /** URL to link to. */
   href: string;
   /** Props to apply to the `Link` component. */
-  linkProps?: LinkProps;
+  linkProps?: Partial<LinkProps>;
   /** If true, uses `IconButton` component instead of `Button`. */
   isIconButton?: boolean;
 } & ButtonProps;

@@ -1,5 +1,6 @@
-import React, { ReactNode } from "react";
+import React, { ComponentProps, ReactNode } from "react";
 import { CommonSelectClasses, CommonSelectOption } from "../types/select";
+import { CommonSelectComponent } from "./common-select-component";
 declare type CommonMultiSelectProps = {
     /**
      * The function used to retrieve the values set by the select component.
@@ -81,6 +82,6 @@ declare type CommonMultiSelectProps = {
      * Each object must at least include a `label` and `value` key
      */
     loadOptions?: (x0: string) => Promise<any>;
-};
+} & Omit<ComponentProps<typeof CommonSelectComponent>, "defaultOptions" | "value" | "onChange">;
 export declare const CommonMultiSelect: React.FC<CommonMultiSelectProps>;
 export {};

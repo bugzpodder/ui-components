@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import { ClickableItem } from "../../types/dropdown";
 import { CommonTabbedPageV2Classes, HeaderAction, PageConfigV2 } from "../../types/card";
+import { TabProps } from "@material-ui/core/Tab";
 declare type Props = {
     /**
      * The array of objects used to define the tabs displayed in the header, and their corresponding pages.
@@ -49,9 +50,7 @@ declare type Props = {
     /** Secondary actions to display in the secondary actions menu */
     secondaryActions?: ClickableItem[];
     /** Props applied to the `Tabs` container */
-    tabProps?: {
-        [x: string]: any;
-    };
+    tabProps?: Partial<TabProps>;
     /** Displays an non-interactive loading animation over the page content when true */
     isLoading?: boolean;
     /** When `false`, tab labels will be set to in-line. Defaults to true */

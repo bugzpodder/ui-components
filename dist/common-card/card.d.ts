@@ -17,6 +17,10 @@ export declare type CommonCardProps = {
     subheader?: ReactNode;
     /** Provides built-in margins for the card */
     hasMargin?: boolean;
+    /** Provides id for the card */
+    id?: string;
+    /** Provides className for the card */
+    className?: string;
     /**
      * Provides classNames to the card and its sub-components. Options include:
      *  - `root`

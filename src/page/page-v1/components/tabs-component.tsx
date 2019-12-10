@@ -1,5 +1,5 @@
 import React from "react";
-import Tab from "@material-ui/core/Tab";
+import Tab, { TabProps } from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import classNames from "classnames";
 import styles from "../common-tabbed-page.module.scss";
@@ -9,9 +9,7 @@ type Props = {
   onChangeActiveTab: (x0: string) => any;
   activeTab: string | false;
   className?: string;
-  tabProps?: {
-    [x: string]: any;
-  };
+  tabProps?: Partial<TabProps>;
   pageConfigs: PageConfig[];
 };
 

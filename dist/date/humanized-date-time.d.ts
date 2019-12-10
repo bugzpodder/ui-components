@@ -1,4 +1,5 @@
 import React from "react";
+import { DateTimeValue } from "./date-time-value";
 export declare type HumanizedDateTimeClasses = {
     dateTime?: string;
     humanizedText?: string;
@@ -16,7 +17,7 @@ export declare type Props = {
      *  - `humanizedField` (applied to humanized text)
      */
     classes?: HumanizedDateTimeClasses;
-};
+} & React.ComponentProps<typeof DateTimeValue>;
 /** HumanizedDateTime formats a datetime value along with an expression describing the distance from the datetime
  * value and now. */
 export declare const HumanizedDateTime: React.FC<Props>;

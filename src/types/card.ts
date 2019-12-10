@@ -32,7 +32,7 @@ export type PageConfig = {
   key: string;
   label: ReactNode;
   Component: ComponentType<any>;
-  componentProps: Record<string, any>;
+  componentProps?: Record<string, any>;
   id?: string;
   className?: string;
   menuContents?: MenuItem[];
@@ -54,7 +54,7 @@ export type PageConfigV2 = {
   key: string;
   label: ReactNode;
   Component: ComponentType<any>;
-  componentProps: Record<string, any>;
+  componentProps?: Record<string, any>;
   id?: string;
   className?: string;
   tabClasses?: Record<string, any>;

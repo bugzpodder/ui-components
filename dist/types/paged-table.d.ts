@@ -18,7 +18,7 @@ export declare type InternalPagedTableColumn = PagedTableColumn<any> & {
     index: number;
     isVisible: boolean;
 };
-export declare type PagedTableColumn<T> = Partial<ExportableColumn> & {
+export declare type PagedTableColumn<T> = Partial<ExportableColumn<T>> & {
     Header?: ReactNode;
     sortable?: boolean;
     Cell?: (obj: PagedTableCell<T>) => ReactNode;

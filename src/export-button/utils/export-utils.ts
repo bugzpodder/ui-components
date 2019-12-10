@@ -7,7 +7,7 @@ import { saveAs } from "file-saver";
 
 export const generateReport = (
   fileName: string,
-  columns: ExportableColumn[],
+  columns: ExportableColumn<any>[],
   data: Array<{
     [x: string]: any;
   }>,

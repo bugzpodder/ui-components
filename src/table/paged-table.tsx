@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ComponentProps, ReactNode } from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { CommonCard } from "../common-card";
@@ -91,9 +91,7 @@ export type PagedTableProps = {
   /** Enables the "select all" checkbox if specified (default: true). */
   enableSelectAll?: boolean;
   /** Props for the CommonCard component */
-  cardProps?: {
-    [x: string]: any;
-  };
+  cardProps?: Partial<ComponentProps<typeof CommonCard>>;
   /** Add margins to card body */
   hasTableMargin?: boolean;
   /** If true, fill parent element with card and table (should specify parent height)
@@ -103,6 +101,8 @@ export type PagedTableProps = {
   shadeOnHover?: boolean;
   /** Allows user to show/hide columns. */
   hasColumnVisibilityChooser?: boolean;
+  /** Provides id for the table. */
+  id?: string;
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */

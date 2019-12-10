@@ -43,7 +43,7 @@ type Props = {
   isMulti?: boolean;
   defaultOptions?: CommonSelectOption[];
   options?: CommonSelectOption[];
-};
+} & Partial<React.ComponentProps<typeof CommonSelectContainer>>;
 
 const variants = {
   STANDARD: "standard",

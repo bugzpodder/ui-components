@@ -19,6 +19,7 @@ export type CommonDialogAction = {
     | "extendedFab";
   color?: "default" | "inherit" | "primary" | "secondary";
   isLeftButton?: boolean;
+  "data-testid"?: string;
 };
 
 export const actionToButton = (action: CommonDialogAction) => {

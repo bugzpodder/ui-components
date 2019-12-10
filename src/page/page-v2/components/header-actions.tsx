@@ -43,8 +43,8 @@ export const HeaderActions = forwardRef<any, Props>(
           id={id}
           data-testid={id}
           color={color}
-          {...otherProps}
           variant="contained"
+          {...otherProps}
           className={classNames(className, styles.primaryAction)}
         >
           {content}

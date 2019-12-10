@@ -1,13 +1,13 @@
 import React, { ReactNode } from "react";
+import { History, Location } from "history";
 import { OmniQueryOptionsV2, OmniSearchCommand, OmniSearchDef, OmniSearchValues, SearchOptionV2 } from "@grailbio/lib";
-import { RouteComponentProps } from "react-router-dom";
 declare type Props = {
     /** Defines the search parameters. */
     searchDefs: OmniSearchDef[];
     /** Handles a request to search. */
     setSearchOptions: (x0: OmniQueryOptionsV2) => any;
     /** Handles a request to update search options but not perform the search. */
-    updateSearchOptions: (x0: {
+    updateSearchOptions?: (x0: {
         searchOptions: SearchOptionV2[];
     }) => any;
     /** getInitialValues gets values to default to for omni-search. */
@@ -18,7 +18,11 @@ declare type Props = {
     omniSearchCommands?: OmniSearchCommand[];
     /** Function to set omni search change command queue */
     setOmniSearchCommands?: (x0: OmniSearchCommand[]) => any;
-} & RouteComponentProps<any>;
+    /** Location object */
+    location: Location;
+    /** History object */
+    history: History;
+};
 declare type State = {
     isOpen: boolean;
     omniText: string;

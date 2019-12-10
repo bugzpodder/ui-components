@@ -1,6 +1,8 @@
 import React, { ReactNode } from "react";
 import isEqual from "lodash/isEqual";
 import styles from "./omni.module.scss";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { History, Location } from "history";
 import {
   OMNI_ERROR,
   OMNI_KEY,
@@ -19,7 +21,6 @@ import {
 } from "@grailbio/lib";
 import { OMNI_INPUT_FIELD_ID, OmniField } from "./components/omni-field";
 import { OmniDialog } from "./components/omni-dialog";
-import { RouteComponentProps } from "react-router-dom";
 
 type Props = {
   /** Defines the search parameters. */
@@ -27,7 +28,7 @@ type Props = {
   /** Handles a request to search. */
   setSearchOptions: (x0: OmniQueryOptionsV2) => any;
   /** Handles a request to update search options but not perform the search. */
-  updateSearchOptions: (x0: { searchOptions: SearchOptionV2[] }) => any;
+  updateSearchOptions?: (x0: { searchOptions: SearchOptionV2[] }) => any;
   /** getInitialValues gets values to default to for omni-search. */
   getInitialValues?: (searchDefs: OmniSearchDef[]) => OmniSearchValues;
   /** Takes a `node` to include in the omni dropdown after the search fields */
@@ -36,7 +37,11 @@ type Props = {
   omniSearchCommands?: OmniSearchCommand[];
   /** Function to set omni search change command queue */
   setOmniSearchCommands?: (x0: OmniSearchCommand[]) => any;
-} & RouteComponentProps<any>;
+  /** Location object */
+  location: Location;
+  /** History object */
+  history: History;
+};
 
 type State = {
   isOpen: boolean;
@@ -300,9 +305,10 @@ export class OmniSearchBar extends React.Component<Props, State> {
   };
 
   updateOmniUrl = (shouldUpdateBrowserHistory = false) => {
+    const { location, history } = this.props;
     const { omniText } = this.state;
     updateQuery(
-      this.props,
+      { location, history },
       { [OMNI_KEY]: omniText },
       {
         shouldUpdateBrowserHistory,

@@ -30,6 +30,8 @@ type Props = {
   textAlign?: string;
   /** When "text", changes the styling of the alert */
   variant?: string;
+  /** Provides the id of the component */
+  id?: string;
 };
 
 const colorIcon = {

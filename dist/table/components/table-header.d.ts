@@ -4,6 +4,9 @@ declare type Props = {
     columns: InternalPagedTableColumn[];
     sortingProps: SortingProps;
     enableSelectAll: boolean;
+    wrapHeader: boolean;
+    paddingLeft: number;
+    canSelect: boolean;
     hasColumnVisibilityChooser: boolean;
     columnVisibility: {
         [x: number]: boolean;

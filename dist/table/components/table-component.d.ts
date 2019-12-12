@@ -21,6 +21,8 @@ declare type Props = {
     enableSelectAll: boolean;
     shadeOnHover: boolean;
     hasColumnVisibilityChooser?: boolean;
+    wrapHeader?: boolean;
+    paddingLeft?: number;
 };
 export declare const TableComponent: React.FC<Props>;
 export {};

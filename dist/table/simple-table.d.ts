@@ -61,6 +61,10 @@ declare type Props = {
     shadeOnHover?: boolean;
     /** Allows user to show/hide columns. */
     hasColumnVisibilityChooser?: boolean;
+    /** When false, turns off text wrapping for table headers */
+    wrapHeader?: boolean;
+    /** Add padding to the left of the table in pixels. This is most useful when the table is not selectable */
+    paddingLeft?: number;
 };
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
 export declare const SimpleTable: React.FC<Props>;

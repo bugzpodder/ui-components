@@ -117,7 +117,11 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
               );
               if (href) {
                 return (
-                  <Link to={href} className={styles.link}>
+                  <Link
+                    to={href}
+                    className={styles.link}
+                    key={`dropdown-item-${index}`}
+                  >
                     {menuItem}
                   </Link>
                 );

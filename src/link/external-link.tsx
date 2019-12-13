@@ -1,13 +1,10 @@
-import React, { ReactNode, forwardRef } from "react";
+import React, { forwardRef } from "react";
 
 type Props = {
-  /** Takes a node to include in the omni dropdown after the search fields */
-  children?: ReactNode;
-  /** The link */
-  href: string;
   /** data-testid for the component */
   "data-testid"?: string;
-};
+  /** className for the component */
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 /**
  *  ExternalLink opens in a new tab, while ensuring that the link protects from:

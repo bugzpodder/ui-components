@@ -17,11 +17,6 @@ export type PagedTableCell<T> = {
   value: any;
 };
 
-export type InternalPagedTableColumn = PagedTableColumn<any> & {
-  index: number;
-  isVisible: boolean;
-};
-
 export type PagedTableColumn<T> = Partial<ExportableColumn<T>> & {
   Header?: ReactNode;
   sortable?: boolean;
@@ -48,6 +43,11 @@ export type PagedTableColumn<T> = Partial<ExportableColumn<T>> & {
   // This prop has no effect if hasColumnVisibilityChooser is false. Defaults to
   // false.
   isRequired?: boolean;
+};
+
+export type InternalPagedTableColumn = PagedTableColumn<any> & {
+  index: number;
+  isVisible: boolean;
 };
 
 export type PagedTableClasses = {

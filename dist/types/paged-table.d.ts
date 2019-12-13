@@ -14,10 +14,6 @@ export declare type PagedTableCell<T> = {
     original: T;
     value: any;
 };
-export declare type InternalPagedTableColumn = PagedTableColumn<any> & {
-    index: number;
-    isVisible: boolean;
-};
 export declare type PagedTableColumn<T> = Partial<ExportableColumn<T>> & {
     Header?: ReactNode;
     sortable?: boolean;
@@ -32,6 +28,10 @@ export declare type PagedTableColumn<T> = Partial<ExportableColumn<T>> & {
     sortAccessor?: string;
     showByDefault?: boolean;
     isRequired?: boolean;
+};
+export declare type InternalPagedTableColumn = PagedTableColumn<any> & {
+    index: number;
+    isVisible: boolean;
 };
 export declare type PagedTableClasses = {
     root?: string;

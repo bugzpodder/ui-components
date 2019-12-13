@@ -84,6 +84,10 @@ type CommonMultiSelectProps = {
    * Each object must at least include a `label` and `value` key
    */
   loadOptions?: (x0: string) => Promise<any>;
+  /**
+   * Whether the new input is valid.
+   */
+  isValidNewOption?: (input: string) => boolean;
 } & Omit<
   ComponentProps<typeof CommonSelectComponent>,
   "defaultOptions" | "value" | "onChange"

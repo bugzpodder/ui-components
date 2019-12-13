@@ -28,6 +28,11 @@ export type CommonTabbedPageClasses = CommonPageClasses & {
   contentContainer?: string;
 };
 
+export type MenuItem = {
+  key: string;
+  label: ReactNode;
+};
+
 export type PageConfig = {
   key: string;
   label: ReactNode;
@@ -37,11 +42,6 @@ export type PageConfig = {
   className?: string;
   menuContents?: MenuItem[];
   tabClasses?: Record<string, any>;
-};
-
-export type MenuItem = {
-  key: string;
-  label: ReactNode;
 };
 
 export type HeaderAction = ClickableItem & {

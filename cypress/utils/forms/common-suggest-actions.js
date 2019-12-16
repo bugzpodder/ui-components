@@ -14,7 +14,7 @@ export const setCommonSuggestText = (testId, value) => {
 
 export const selectFirstSuggestionInCommonSuggest = (testId, value) => {
   setCommonSuggestText(testId, value);
-  cy.get("[data-testid=items] [role=option]")
+  cy.get(".MuiAutocomplete-listbox .MuiAutocomplete-option")
     .first()
     .click();
 };
@@ -25,18 +25,18 @@ export const selectFirstItemInCommonSuggest = testId => {
 
 export const selectLastItemInCommonSuggest = testId => {
   setCommonSuggestText(testId, "");
-  cy.get("[data-testid=items] [role=option]")
+  cy.get(".MuiAutocomplete-listbox .MuiAutocomplete-option")
     .last()
     .click();
 };
 
 export const selectItemFromCommonSuggest = (testId, value) => {
-  cy.get(
-    `[data-testid=common-suggest-input-container] [data-testid="${testId}"] + div > [data-testid="toggle-suggestions"]`,
-  ).click();
-  cy.get("[data-testid=common-suggest-popper]").within(() => {
-    cy.get("[data-testid=items] [role=option]")
+  cy.get(`[data-testid="${testId}"]`).click();
+  cy.get(".MuiAutocomplete-listbox").within(() => {
+    cy.get(".MuiAutocomplete-option")
       .contains(value)
-      .click();
+      .click({
+        force: true,
+      });
   });
 };

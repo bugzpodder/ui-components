@@ -14,6 +14,7 @@ const SelectExample = () => {
       <CommonSelect
         data-testid="country-chooser"
         helperText="Choose a country"
+        isFullWidth
         value={value}
         options={COUNTRIES}
         onChange={setValue}
@@ -43,7 +44,9 @@ const SelectExample = () => {
         isFullWidth
         selectType="creatable"
         helperText="Create or choose"
-        createMessage={inputValue => `Invent a new country called "${inputValue}"`}
+        createMessage={inputValue =>
+          `Invent a new country called "${inputValue}"`
+        }
         options={COUNTRIES}
         value={value}
         onChange={setValue}
@@ -71,7 +74,9 @@ const SelectExample = () => {
   const filterCountries = inputValue => {
     return new Promise(resolve => {
       const newCOUNTRIES = COUNTRIES.filter(country =>
-        country.label.toLowerCase().includes(inputValue.toLowerCase()),
+        inputValue
+          ? country.label.toLowerCase().includes(inputValue.toLowerCase())
+          : "",
       ).slice(0, 5);
       setTimeout(() => resolve(newCOUNTRIES), 500);
     });

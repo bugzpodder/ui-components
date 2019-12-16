@@ -162,7 +162,7 @@ exports[`render common tabbed page 1`] = `
             <div
               class="error alert-error"
               data-testid="alert-one"
-              role="alertdialog"
+              role="alert"
             >
               <div
                 class=""

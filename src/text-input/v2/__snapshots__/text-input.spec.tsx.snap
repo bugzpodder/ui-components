@@ -53,6 +53,7 @@ exports[`render text field wrapper with label, helperText, and readonly 1`] = `
       class=""
       data-shrink="true"
       for="operator"
+      id="operator-label"
     >
       test label
     </label>

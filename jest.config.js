@@ -14,13 +14,16 @@ module.exports = {
   },
   moduleNameMapper: {
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
-    "\\.entry.js":"<rootDir>/__mocks__/pdfMock.js",
+    "\\.entry.js": "<rootDir>/__mocks__/pdfMock.js",
   },
   testPathIgnorePatterns: ["/node_modules/", "/dist", "/cypress/"],
   transform: {
     ".tsx?$": "ts-jest",
   },
-  setupFilesAfterEnv: ["jest-mock-console/dist/setupTestFramework.js"],
+  setupFilesAfterEnv: [
+    "<rootDir>/setupTests.js",
+    "jest-mock-console/dist/setupTestFramework.js",
+  ],
   globals: {
     "ts-jest": {
       diagnostics: {

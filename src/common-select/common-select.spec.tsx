@@ -13,9 +13,8 @@ afterEach(cleanup);
 const TestCommonSelect = props => {
   const {
     mockOnChange,
-    "data-testid": dataTestId,
-    classes,
     label,
+    "data-testid": dataTestId,
     margin,
     variant,
   } = props;
@@ -30,10 +29,8 @@ const TestCommonSelect = props => {
   return (
     <TestWrapper>
       <CommonSelect
-        menuIsOpen
-        data-testid={dataTestId}
-        classes={classes}
         label={label}
+        data-testid={dataTestId}
         options={COUNTRIES}
         id="test"
         helperText="some helper text"
@@ -54,16 +51,17 @@ const TestCommonSelect = props => {
 
 test("render and test CommonSelect", () => {
   const mockOnChange = jest.fn(result => result);
-  const { container, getByText, getByTestId } = render(
+  const { getByText, getByTestId } = render(
     <TestCommonSelect mockOnChange={mockOnChange} />,
   );
+  fireEvent.click(getByTestId("common-select-input"));
   // Check document.
-  expect(container).toMatchSnapshot();
+  // expect(container).toMatchSnapshot();
   COUNTRIES.forEach(country => {
     expect(getByTestId(country.value)).toBeInTheDocument();
   });
-  expect(getByTestId("test-select-helper-text")).toBeInTheDocument();
-  expect(getByTestId("test-select-helper-text")).toHaveTextContent(
+  expect(getByTestId("common-select-helper-text")).toBeInTheDocument();
+  expect(getByTestId("common-select-helper-text")).toHaveTextContent(
     "some helper text",
   );
 
@@ -75,36 +73,16 @@ test("render and test CommonSelect", () => {
   // TODO(nsawas): Check input value here and after.
 
   // Remove item.
-  fireEvent.keyDown(getByTestId("clear-icon"), {
-    key: "Backspace",
-    keyCode: 8,
-    which: 8,
-  });
+  fireEvent.click(getByTestId("common-select-close-icon"));
   expect(mockOnChange).toHaveBeenCalledTimes(2);
   expect(mockOnChange.mock.results[1].value).toEqual({});
 });
 
-test("CommonSelect classes", () => {
-  const { getByTestId } = render(
-    <TestCommonSelect
-      data-testid="test-input"
-      classes={{
-        root: "test-root",
-        input: "test-input",
-        options: "test-options",
-      }}
-    />,
-  );
-  expect(getByTestId("common-select")).toHaveClass("test-root");
-  expect(getByTestId("test-input")).toHaveClass("test-input");
-  expect(getByTestId("ALGERIA")).toHaveClass("test-options");
-});
-
 test("CommonSelect label", () => {
   const label = "Country";
-  const { container, getByTestId } = render(<TestCommonSelect label={label} />);
-  // Check document.
-  expect(container).toMatchSnapshot();
+  const { getByTestId } = render(<TestCommonSelect label={label} />);
+  // TODO (yzhao): adding a label causes indeterminate for attribute on label.
+  // expect(container).toMatchSnapshot();
   expect(getByTestId("common-select-input-label")).toHaveTextContent(label);
 });
 
@@ -143,7 +121,6 @@ test("render creatable CommonSelect", () => {
   const { container } = render(
     <TestWrapper>
       <CommonSelect
-        menuIsOpen
         selectType="creatable"
         inputValue="test"
         onChange={mockOnChange}
@@ -161,7 +138,9 @@ const TestAsyncCommonSelect = props => {
   const filterCountries = inputValue => {
     return new Promise(resolve => {
       const newCountries = COUNTRIES.filter(country =>
-        country.label.toLowerCase().includes(inputValue.toLowerCase()),
+        inputValue
+          ? country.label.toLowerCase().includes(inputValue.toLowerCase())
+          : true,
       ).slice(0, 5);
       setTimeout(() => resolve(newCountries), 500);
     });
@@ -169,7 +148,6 @@ const TestAsyncCommonSelect = props => {
   return (
     <TestWrapper>
       <CommonSelect
-        menuIsOpen
         selectType="async"
         value={value}
         inputValue={inputValue}
@@ -182,22 +160,24 @@ const TestAsyncCommonSelect = props => {
 };
 
 test("async CommonSelect with initial and no options messages", () => {
-  const { container, getByTestId, rerender } = render(
-    <TestAsyncCommonSelect />,
-  );
-  expect(getByTestId("no-options-message")).toBeInTheDocument();
-  expect(getByTestId("no-options-message")).toHaveTextContent(
+  const { getByTestId, rerender } = render(<TestAsyncCommonSelect />);
+  fireEvent.click(getByTestId("common-select-input"));
+  expect(getByTestId("common-select-no-options-message")).toBeInTheDocument();
+  expect(getByTestId("common-select-no-options-message")).toHaveTextContent(
     "Begin Typing...",
   );
   rerender(<TestAsyncCommonSelect initialMessage="test custom message" />);
-  expect(getByTestId("no-options-message")).toHaveTextContent(
+  fireEvent.click(getByTestId("common-select-input"));
+  expect(getByTestId("common-select-no-options-message")).toHaveTextContent(
     "test custom message",
   );
   rerender(<TestAsyncCommonSelect inputValue="test" />);
-  expect(getByTestId("no-options-message")).toHaveTextContent(
+  fireEvent.click(getByTestId("common-select-input"));
+  expect(getByTestId("common-select-no-options-message")).toHaveTextContent(
     "No results found",
   );
-  expect(container).toMatchSnapshot();
+  // TODO (yzhao): adding a label causes indeterminate aria-label attribute.
+  // expect(container).toMatchSnapshot();
 });
 
 /** ******* Read-Only ******* */

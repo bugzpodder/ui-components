@@ -1,195 +1,166 @@
-import "./common-select.scss";
-import FilledInput from "@material-ui/core/FilledInput";
-import FormControl from "@material-ui/core/FormControl";
-import FormHelperText from "@material-ui/core/FormHelperText";
-import Input, { InputProps } from "@material-ui/core/Input";
-import InputLabel from "@material-ui/core/InputLabel";
-import LinearProgress from "@material-ui/core/LinearProgress";
-import OutlinedInput from "@material-ui/core/OutlinedInput";
-import React, { ComponentType, ReactNode, useState } from "react";
-import classNames from "classnames";
-import isEmpty from "lodash/isEmpty";
-import {
-  ClearIndicator,
-  CommonSelectContainer,
-  DropdownIndicator,
-  MultiValueContainer,
-  MultiValueRemove,
-  NoOptionsMessage,
-  Option,
-} from "./components";
-import { CommonSelectClasses, CommonSelectOption } from "../types/select";
+import Autocomplete from "@material-ui/lab/Autocomplete";
+import CloseIcon from "@material-ui/icons/Close";
+import React, { ComponentProps, ReactNode, useEffect, useState } from "react";
+import TextField from "@material-ui/core/TextField";
+import { CommonSelectOption } from "../types/select";
 
 type Props = {
+  /** The current value of common select, or an array of options for common multi-select */
   value?: CommonSelectOption | CommonSelectOption[] | null;
-  classes?: CommonSelectClasses;
+  /** Renders the input at its full width */
   isFullWidth?: boolean;
+  /** Renders the input at its full width */
   helperText?: string;
+  /** Provides an id to the component */
   id?: string;
+  /** Provides a name to the component */
+  name?: string;
+  /** Provides a data-testid to the component */
   "data-testid"?: string;
+  /** The initial message to display when no initial options are provided */
   initialMessage?: string;
+  /** When false, removes the button provided to clear the selected option in the input field */
   isClearable?: boolean;
+  /** Disables the select from being used */
   isDisabled?: boolean;
+  /** automatically opens menu */
   menuIsOpen?: boolean;
-  onChange: Function;
+  /** Called to set the new value */
+  onChange: (value: any) => void;
+  /** Label for the select. */
   label?: string;
+  /** Variant styles for the select component - "standard", "filled", "outlined" */
   variant?: "standard" | "filled" | "outlined";
+  /** Margin types for the select component - "none", "dense", "normal". Default is "none" */
   margin?: "none" | "dense" | "normal";
+  /** The text displayed in the input before the user begins typing */
   placeholder?: string;
+  /**
+   * default (`simple`): synchronous - user is forced to choose an option from the options
+   * (requires `options` prop).
+   *
+   * `creatable`: allows user to create new entries that are not in the options list (requires `options` prop).
+   *
+   * `async`: allows for asynchronous retrieval of options based on the user's input
+   *  (requires `loadOptions` prop).
+   */
   selectType?: "simple" | "async" | "creatable";
+  /** Displays the input in an error state */
   showError?: boolean;
+  /** Renders a LinearProgress bar beneath the common select input */
   isLoading?: boolean;
+  /** The content do display in the option menu item. Allows for customization of options to display
+   * information from the data object. When null will default to the `label` provided in the option object.
+   */
   formatOption?: (x0: CommonSelectOption) => ReactNode;
+  /** Provides the ability to support multiple selections */
   isMulti?: boolean;
-  defaultOptions?: CommonSelectOption[];
+  /** Options for the common select, or the initial options for async select */
   options?: CommonSelectOption[];
-} & Partial<React.ComponentProps<typeof CommonSelectContainer>>;
-
-const variants = {
-  STANDARD: "standard",
-  OUTLINED: "outlined",
-  FILLED: "filled",
-};
-
-const margins = {
-  NONE: "none",
-  DENSE: "dense",
-  NORMAL: "normal",
-};
-
-const getInputBaseComponent = (variant: string): ComponentType<InputProps> => {
-  if (variant === variants.FILLED) {
-    return FilledInput;
-  }
-  if (variant === variants.OUTLINED) {
-    return OutlinedInput;
-  }
-  return Input;
-};
+  /**
+   * The function used to retrieve options asynchronously based on the user's input.
+   *
+   * Each object must at least include a `label` and `value` key
+   */
+  loadOptions?: (x0: string) => Promise<any>;
+} & Omit<ComponentProps<typeof Autocomplete>, "onChange" | "renderInput">;
 
 export const CommonSelectComponent: React.FC<Props> = props => {
   const {
     onChange,
     formatOption,
     menuIsOpen,
-    classes = {},
+    selectType,
+    loadOptions,
+    isMulti,
+    options,
     isFullWidth = false,
     helperText = "",
     id = "",
+    name,
     "data-testid": dataTestId,
     initialMessage = "",
+    noOptionsText,
     isClearable = true,
     isDisabled = false,
     label = "",
     placeholder = "",
     showError = false,
-    variant = variants.STANDARD,
-    margin = margins.NONE,
+    variant,
+    margin,
     isLoading = false,
     ...otherProps
   } = props;
-  const { value } = otherProps;
-  const [isInputFocused, setIsInputFocused] = useState(false);
 
-  const InputBaseComponent = getInputBaseComponent(variant);
+  const [inputValue, setInputValue] = useState(otherProps.inputValue);
 
-  const ariaAttributes = isLoading
-    ? {
-        "aria-describedby": `${id}-linear-progress`,
-        "aria-busy": true,
-      }
-    : {};
+  useEffect(() => {
+    setInputValue(otherProps.inputValue);
+  }, [otherProps.inputValue]);
+  const [loadedOptions, setLoadedOptions] = useState(options || []);
+  useEffect(() => {
+    if (selectType === "async") {
+      loadOptions(inputValue).then(results => setLoadedOptions(results || []));
+    }
+  }, [loadOptions, selectType, inputValue]);
 
   return (
-    <div
-      data-testid="common-select"
-      className={classNames("common-select__root", classes.root)}
-    >
-      <FormControl
-        fullWidth={isFullWidth}
-        // @ts-ignore string is not assignable.
-        margin={margin}
-      >
-        {label && (
-          <InputLabel
-            data-testid="common-select-input-label"
-            classes={{
-              formControl: classNames(
-                "common-select__input-label",
-                classes.label,
-              ),
-            }}
-            htmlFor={id}
-            shrink={isInputFocused || !isEmpty(value) || !isEmpty(placeholder)}
-            // @ts-ignore no overload matches to this call.
-            variant={variant}
-          >
-            {label}
-          </InputLabel>
-        )}
-        <InputBaseComponent
-          inputComponent={CommonSelectContainer}
-          disabled={isDisabled}
-          error={!isDisabled && showError}
+    <Autocomplete
+      onChange={(_, value) => onChange(value)}
+      options={selectType === "async" ? loadedOptions : options}
+      renderOption={option => (
+        <div data-testid={option.value}>
+          {formatOption ? formatOption(option) : option.label}
+        </div>
+      )}
+      getOptionLabel={option => option.label}
+      disabled={isDisabled}
+      open={isDisabled ? false : menuIsOpen}
+      disableClearable={!isClearable}
+      onInputChange={(_, value) => setInputValue(value)}
+      loading={isLoading}
+      renderInput={params => (
+        // @ts-ignore variant cannot be assigned.
+        <TextField
+          {...params}
+          name={name}
           data-testid={dataTestId}
+          placeholder={inputValue ? placeholder : ""}
+          label={label}
+          InputLabelProps={{
+            ...params.InputLabelProps,
+            // @ts-ignore data-testid does not exist on props.
+            "data-testid": "common-select-input-label",
+          }}
+          fullWidth={isFullWidth}
+          variant={variant}
+          margin={margin}
+          helperText={helperText}
+          error={!isDisabled && showError}
+          id={id}
+          FormHelperTextProps={{
+            "data-testid": `common-select-helper-text`,
+          }}
           inputProps={{
-            ...otherProps,
-            id,
-            inputId: `${id && `${id}-`}select-input${
-              isDisabled ? "-disabled" : ""
-            }`,
-            initialMessage,
-            isDisabled,
-            placeholder,
-            menuIsOpen: isDisabled ? false : menuIsOpen,
-            classNamePrefix: "common-select",
-            isClearable,
-            onChange: value => onChange(value),
-            components: {
-              Option: selectProps => (
-                <Option
-                  {...selectProps}
-                  classes={classes}
-                  formatOption={formatOption}
-                />
-              ),
-              DropdownIndicator,
-              IndicatorSeparator: null,
-              ClearIndicator,
-              NoOptionsMessage,
-              MultiValueContainer,
-              MultiValueRemove,
-            },
+            ...params.inputProps,
+            "data-testid": "common-select-input",
+            id: `${id && `${id}-`}select-input${isDisabled ? "-disabled" : ""}`,
           }}
-          onFocus={() => setIsInputFocused(true)}
-          onBlur={() => setIsInputFocused(false)}
-          classes={{
-            root: classNames(
-              "common-select__input-root",
-              classes.input,
-              `common-select__input-${variant}`,
-            ),
-          }}
-          {...ariaAttributes}
         />
-        {isLoading && <LinearProgress id={`${id}-linear-progress`} />}
-        {helperText && (
-          <FormHelperText
-            // @ts-ignore: no overload matches to this call.
-            variant={variant}
-            error={showError}
-            data-testid={`${id ? `${id}-` : ""}select-helper-text`}
-            classes={{
-              root: classNames(
-                { [`${id}-helpertext`]: id },
-                "common-select__helpertext",
-              ),
-            }}
-          >
-            {helperText}
-          </FormHelperText>
-        )}
-      </FormControl>
-    </div>
+      )}
+      freeSolo={selectType === "creatable"}
+      multiple={isMulti}
+      noOptionsText={
+        <div data-testid="common-select-no-options-message">
+          {inputValue
+            ? noOptionsText || "No results found"
+            : initialMessage || "Begin Typing..."}
+        </div>
+      }
+      closeIcon={
+        <CloseIcon data-testid="common-select-close-icon" fontSize="small" />
+      }
+      {...otherProps}
+    />
   );
 };

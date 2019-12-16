@@ -8,13 +8,22 @@ type Props = {
 } & SearchFieldProps;
 
 export const SuggestionsOmniField: React.FC<Props> = props => {
-  const { searchValue, searchKey, onChange, onSearch, loadSuggestions } = props;
+  const {
+    searchValue,
+    searchKey,
+    onChange,
+    onSearch,
+    loadSuggestions,
+    placeholder,
+    suggestions,
+  } = props;
   useEffect(() => {
     loadSuggestions();
   }, [loadSuggestions]);
   return (
     <CommonSuggest
-      {...props}
+      suggestions={suggestions}
+      placeholder={placeholder}
       id={searchKey}
       value={searchValue || ""}
       onChange={selected => onChange(searchKey, selected)}

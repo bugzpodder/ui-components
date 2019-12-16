@@ -86,7 +86,7 @@ exports[`renders common page 1`] = `
         <div
           class="success alert-success"
           data-testid="content"
-          role="alertdialog"
+          role="alert"
         >
           <div
             class=""

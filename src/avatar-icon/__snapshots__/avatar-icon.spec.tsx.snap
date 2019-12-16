@@ -65,7 +65,7 @@ exports[`render avatar with menu 1`] = `
     <div
       class="error alert-error"
       data-testid="content"
-      role="alertdialog"
+      role="alert"
     >
       <div
         class=""

@@ -9,7 +9,7 @@ exports[`default alert pane is error 1`] = `
     <div
       class="error alert-error"
       data-testid="content"
-      role="alertdialog"
+      role="alert"
     >
       <div
         class=""

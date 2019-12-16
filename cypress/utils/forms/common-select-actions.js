@@ -1,36 +1,40 @@
+export const getCommonSelectContainer = selector => {
+  return cy.get(`${selector}`);
+};
+
 export const getCommonSelectValueContainer = selector => {
-  return cy.get(
-    `.common-select__root ${selector} .common-select__value-container`,
-  );
+  return cy.get(`${selector} [data-testid=common-select-input]`);
 };
 
 export const selectFirstItemInCommonSelect = selector => {
-  cy.get(`.common-select__root ${selector}`).click();
-  cy.get(`.common-select__root ${selector} .common-select__menu-item`)
+  cy.get(`${selector}`).click();
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
     .first()
-    .click();
+    .click({
+      force: true,
+    });
 };
 
 export const selectLastItemInCommonSelect = selector => {
-  cy.get(`.common-select__root ${selector}`).click();
-  cy.get(`.common-select__root ${selector} .common-select__menu-item`)
+  cy.get(`${selector}`).click();
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
     .last()
-    .click();
+    .click({
+      force: true,
+    });
 };
 
 export const selectItemFromCommonSelect = (selector, value) => {
-  cy.get(`.common-select__root ${selector}`).click();
-  cy.get(
-    `.common-select__root ${selector} .common-select__menu-item[data-testid='${value}']`,
-  ).click({
+  cy.get(`${selector}`).click();
+  cy.get(`.MuiAutocomplete-listbox [data-testid='${value}']`).click({
     force: true,
   });
 };
 
 export const selectItemFromCommonSelectUsingContent = (selector, content) => {
-  cy.get(`.common-select__container ${selector}`).click();
+  cy.get(`${selector}`).click();
   return cy
-    .get(".common-select__menu-item")
+    .get(".MuiAutocomplete-listbox .MuiAutocomplete-option")
     .contains(content)
     .click({
       force: true,
@@ -38,12 +42,11 @@ export const selectItemFromCommonSelectUsingContent = (selector, content) => {
 };
 
 export const selectFirstItemFromCommonTypeahead = (selector, searchValue) => {
-  cy.get(`.common-select__root ${selector}`).click();
-  cy.get(`.common-select__root ${selector} .common-select__input input`).type(
-    searchValue,
-    { force: true },
-  );
-  cy.get(`.common-select__root ${selector} .common-select__menu-item`)
+  cy.get(`${selector}`).click();
+  cy.get(`${selector} [data-testid=common-select-input]`).type(searchValue, {
+    force: true,
+  });
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
     .first()
     .click({
       force: true,
@@ -57,13 +60,13 @@ export const selectFirstItemFromFirstCommonTypeahead = (
   selector,
   searchValue,
 ) => {
-  cy.get(`.common-select__root ${selector}`)
+  cy.get(`${selector}`)
     .first()
     .click();
-  cy.get(`.common-select__root ${selector} .common-select__input input`)
-    .first()
-    .type(searchValue, { force: true });
-  cy.get(`.common-select__root ${selector} .common-select__menu-item`)
+  cy.get(`${selector} [data-testid="common-select-input"]`).type(searchValue, {
+    force: true,
+  });
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
     .first()
     .click({
       force: true,
@@ -71,9 +74,9 @@ export const selectFirstItemFromFirstCommonTypeahead = (
 };
 
 export const selectLastItemFromCommonSelect = selector => {
-  cy.get(`.common-select__root ${selector}`).click();
+  cy.get(`${selector}`).click();
   return cy
-    .get(`.common-select__root ${selector} .common-select__menu-item`)
+    .get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
     .last()
     .click({
       force: true,
@@ -81,8 +84,8 @@ export const selectLastItemFromCommonSelect = selector => {
 };
 
 export const verifySelectedItemInCommonSelect = (selector, expectedValue) => {
-  cy.get(`${selector} .common-select__single-value`).should(
-    "contain",
+  cy.get(`${selector} [data-testid=common-select-input]`).should(
+    "have.value",
     expectedValue,
   );
 };
@@ -91,21 +94,12 @@ export const verifySelectedItemsInCommonMultiSelect = (
   selector,
   expectedValues,
 ) => {
-  return cy
-    .get(`${selector} .common-select__multi-value__remove`)
-    .should($selectedValues => {
-      expect($selectedValues).to.have.length(expectedValues.length);
-      expectedValues.forEach((expectedValue, index) => {
-        expect($selectedValues.eq(index)).to.have.data(
-          "testid",
-          `remove-${expectedValue}`,
-        );
-      });
-    });
+  return cy.get(`${selector} .MuiChip-deleteIcon`).should($selectedValues => {
+    expect($selectedValues).to.have.length(expectedValues.length);
+  });
 };
 
 export const clearCommonSelect = selector => {
-  return cy
-    .get(`.common-select__root ${selector} [data-testid='clear-icon']`)
-    .click();
+  cy.get(`${selector}`).click();
+  return cy.get(`${selector} [data-testid='common-select-close-icon']`).click();
 };

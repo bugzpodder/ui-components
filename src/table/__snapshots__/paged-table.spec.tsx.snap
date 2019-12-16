@@ -1073,14 +1073,15 @@ exports[`render paged table and test pagination 1`] = `
           >
             <div
               aria-haspopup="listbox"
+              aria-labelledby=" rows-per-page"
               class=""
+              id="rows-per-page"
               role="button"
               tabindex="0"
             >
               5
             </div>
             <input
-              id="rows-per-page"
               type="hidden"
               value="5"
             />
@@ -1103,10 +1104,12 @@ exports[`render paged table and test pagination 1`] = `
           </p>
           <div>
             <button
+              aria-label="Previous page"
               class="previous-page"
               data-testid="previous-page"
               disabled=""
               tabindex="-1"
+              title="Previous page"
               type="button"
             >
               <span>
@@ -1124,9 +1127,11 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </button>
             <button
+              aria-label="Next page"
               class="next-page"
               data-testid="next-page"
               tabindex="0"
+              title="Next page"
               type="button"
             >
               <span>

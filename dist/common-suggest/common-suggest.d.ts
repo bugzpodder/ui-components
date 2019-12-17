@@ -15,6 +15,6 @@ declare type Props = {
     onEnter?: () => any;
     /** Additional actions at the bottom of the suggestion Popper */
     actions?: ReactNode;
-} & Omit<ComponentProps<typeof Autocomplete>, "renderInput">;
+} & Omit<ComponentProps<typeof Autocomplete>, "renderInput" | "onChange">;
 export declare const CommonSuggest: React.FC<Props>;
 export {};

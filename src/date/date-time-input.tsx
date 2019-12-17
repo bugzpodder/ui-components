@@ -5,6 +5,7 @@ import {
   KeyboardDateTimePicker,
   KeyboardDateTimePickerProps,
 } from "@material-ui/pickers";
+import { MaterialUiPickersDate } from "material-ui-pickers/typings/date";
 import { ReadOnlyTextField } from "../readonly-text-field";
 import {
   useDateFormat,
@@ -23,7 +24,9 @@ type Props = {
   /** String that specifies the format of the date field. Defaults to `YYYY-MM-DD HH:mm:ss`. */
   format?: string;
   useOldPicker?: boolean;
-} & KeyboardDateTimePickerProps;
+  /** Callback when the value changed.  Optional for readonly component. */
+  onChange?: (x0: MaterialUiPickersDate) => void;
+} & Omit<KeyboardDateTimePickerProps, "onChange">;
 
 export const DateTimeInput: React.FC<Props> = props => {
   const { defaultDateTimeFormat } = useDateFormat();

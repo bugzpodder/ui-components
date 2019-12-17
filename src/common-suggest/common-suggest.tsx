@@ -18,7 +18,7 @@ type Props = {
   onEnter?: () => any;
   /** Additional actions at the bottom of the suggestion Popper */
   actions?: ReactNode;
-} & Omit<ComponentProps<typeof Autocomplete>, "renderInput">;
+} & Omit<ComponentProps<typeof Autocomplete>, "renderInput" | "onChange">;
 
 const getListboxElement = footer => {
   return React.forwardRef<HTMLUListElement, React.HTMLAttributes<HTMLElement>>(

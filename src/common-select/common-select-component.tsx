@@ -115,7 +115,7 @@ export const CommonSelectComponent: React.FC<Props> = props => {
       )}
       getOptionLabel={option => option.label}
       disabled={isDisabled}
-      open={isDisabled ? false : menuIsOpen}
+      open={menuIsOpen}
       disableClearable={!isClearable}
       onInputChange={(_, value) => setInputValue(value)}
       loading={isLoading}

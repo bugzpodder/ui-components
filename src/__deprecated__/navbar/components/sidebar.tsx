@@ -14,13 +14,13 @@ import React, {
   useReducer,
 } from "react";
 import classNames from "classnames";
+import pathToRegexp from "path-to-regexp";
 import styles from "./sidebar.module.scss";
 import { BaseNavbarClasses } from "../../../types/base-navbar";
 import { CollapsableListItem } from "./collapsable-list-item";
 import { ExternalLink } from "../../../link";
 import { SidebarItem } from "@grailbio/lib";
 import { getListItemDataTestId } from "../util";
-import { pathToRegexp } from "path-to-regexp";
 
 type Props = {
   isOpen: boolean;

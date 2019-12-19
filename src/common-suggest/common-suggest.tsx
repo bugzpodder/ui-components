@@ -61,11 +61,14 @@ export const CommonSuggest: React.FC<Props> = props => {
     <Autocomplete
       freeSolo
       options={suggestions}
-      onInputChange={(_, inputValue) => {
-        // Bug in Autocomplete: onInputChange is called on initial render.
-        if (inputValue || !value) {
+      onInputChange={(_, inputValue, reason) => {
+        // Autocomplete's onInputChange is called on initially with reason === "reset".
+        if (reason === "input") {
           onChange(inputValue);
         }
+      }}
+      onChange={(_, value) => {
+        onChange(value);
       }}
       inputValue={value}
       ListboxComponent={Listbox}

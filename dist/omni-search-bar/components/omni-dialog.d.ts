@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { OmniSearchDef, OmniSearchValues } from "@grailbio/lib";
 declare type Props = {
     searchDefs: OmniSearchDef[];
@@ -7,7 +7,6 @@ declare type Props = {
     onClear: () => any;
     onSearch: () => void;
     setIsOpen: (x0: boolean) => any;
-    children?: ReactNode;
 };
 export declare const OmniDialog: React.FC<Props>;
 export {};

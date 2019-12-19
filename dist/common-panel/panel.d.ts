@@ -1,10 +1,8 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { CommonPanelClasses } from "../types/panel";
 declare type Props = {
     /** Title of the panel */
     title: string;
-    /** Body of the panel */
-    children: ReactNode;
     /** The object used to apply classes to the panel's subcomponents. Options include:
      *
      *  - root: the component's root element

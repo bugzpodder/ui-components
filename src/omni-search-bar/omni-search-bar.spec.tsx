@@ -125,7 +125,7 @@ describe("OmniSearchBar", () => {
     omniDialog = queryByTestId("omni-dialog");
     expect(omniDialog).toBeNull();
   });
-  it("closes omniDialog after pressing enter", () => {
+  it.skip("closes omniDialog after pressing enter", () => {
     const { getByTestId, queryByTestId, omniField } = renderWrapper();
     let omniDialog = queryByTestId("omni-dialog");
     expect(omniDialog).toBeNull();

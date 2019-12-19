@@ -1,5 +1,5 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
-import React, { ReactNode } from "react";
+import React from "react";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 import {
@@ -10,10 +10,6 @@ import {
   grailTan,
   white,
 } from "@grailbio/lib";
-
-type Props = {
-  children: ReactNode;
-};
 
 // See https://material-ui-next.com/customization/default-theme/
 const customTheme = createMuiTheme({
@@ -52,7 +48,7 @@ const customTheme = createMuiTheme({
   },
 });
 
-export const StyleWrapper: React.FC<Props> = props => {
+export const StyleWrapper: React.FC = props => {
   const { children } = props;
 
   return (

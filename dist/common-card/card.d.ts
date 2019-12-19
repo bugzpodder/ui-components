@@ -1,8 +1,6 @@
 import React, { ReactNode } from "react";
 import { CommonCardClasses, HeaderAction } from "../types/card";
 export declare type CommonCardProps = {
-    /** The content provide to the card's body */
-    children: ReactNode;
     /** Provides the card's Title */
     title?: ReactNode;
     /** An avatar for the card */

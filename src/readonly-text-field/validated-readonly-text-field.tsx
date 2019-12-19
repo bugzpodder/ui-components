@@ -1,11 +1,9 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import classNames from "classnames";
 import styles from "./readonly-text-field.module.scss";
 import { ReadOnlyTextField } from "./readonly-text-field";
 
 type Props = {
-  /** Value of the input field. */
-  children: ReactNode;
   /** if True, has a check font. */
   isValid: boolean;
   /** Id of the element. */

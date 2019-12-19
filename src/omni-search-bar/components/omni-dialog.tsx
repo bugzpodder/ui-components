@@ -1,5 +1,5 @@
 import Grid from "@material-ui/core/Grid";
-import React, { ReactNode } from "react";
+import React from "react";
 import styles from "../omni.module.scss";
 import { CommonDialog } from "../../common-dialog";
 import { GridRow } from "../../types/grid";
@@ -18,7 +18,6 @@ type Props = {
   onClear: () => any;
   onSearch: () => void;
   setIsOpen: (x0: boolean) => any;
-  children?: ReactNode;
 };
 
 export const OmniDialog: React.FC<Props> = props => {

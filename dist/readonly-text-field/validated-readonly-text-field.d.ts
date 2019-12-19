@@ -1,7 +1,5 @@
-import React, { ReactNode } from "react";
+import React from "react";
 declare type Props = {
-    /** Value of the input field. */
-    children: ReactNode;
     /** if True, has a check font. */
     isValid: boolean;
     /** Id of the element. */

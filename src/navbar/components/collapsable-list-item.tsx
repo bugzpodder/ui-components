@@ -21,8 +21,6 @@ type Props = {
   };
   /** Defines icon to be placed to the left of main item text. */
   headerIcon?: ReactElement;
-  /** Defines the items to be collapsed (wrapped in a `List` component). */
-  children: ReactNode;
   /** Overrides initial state (default: false) */
   isOpen?: boolean;
   /** Overrides the internal toggleList function */

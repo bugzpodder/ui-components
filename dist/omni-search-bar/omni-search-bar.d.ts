@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { History, Location } from "history";
 import { OmniQueryOptionsV2, OmniSearchCommand, OmniSearchDef, OmniSearchValues, SearchOptionV2 } from "@grailbio/lib";
 declare type Props = {
@@ -12,8 +12,6 @@ declare type Props = {
     }) => any;
     /** getInitialValues gets values to default to for omni-search. */
     getInitialValues?: (searchDefs: OmniSearchDef[]) => OmniSearchValues;
-    /** Takes a `node` to include in the omni dropdown after the search fields */
-    children?: ReactNode;
     /** Omni search change command queue */
     omniSearchCommands?: OmniSearchCommand[];
     /** Function to set omni search change command queue */
@@ -22,12 +20,6 @@ declare type Props = {
     location: Location;
     /** History object */
     history: History;
-};
-declare type State = {
-    isOpen: boolean;
-    omniText: string;
-    error: string;
-    searchValues: OmniSearchValues;
 };
 /**
  * Provides a search input that maps to provided search options and
@@ -47,25 +39,5 @@ declare type State = {
  * 2. Trigger an `OmniSearchCommand` (typically via closing an `OmniChip`)
  * Both of these will trigger a call to `setSearchOptions` with `isUserSearchAction: true`
  */
-export declare class OmniSearchBar extends React.Component<Props, State> {
-    state: State;
-    lastSearchedValues: OmniSearchValues | null;
-    componentDidMount: () => Promise<void>;
-    componentDidUpdate: (prevProps: Props) => Promise<void>;
-    getLocalStorageKey: (pathname: string, searchDef: OmniSearchDef) => string;
-    getValuesFromLocalStorage: (pathname: string, searchDefs: OmniSearchDef[]) => Map<number, string>;
-    setValuesToLocalStorage: (pathname: string, searchDefs: OmniSearchDef[], searchValues: Map<number, string>) => void;
-    mergeOmniWithLocalStorage: (omniText: string) => string;
-    mergeOmniWithInitialValues: (omniText: string) => string;
-    toggleOmniIsOpen: () => void;
-    setOmniIsOpen: (isOpen: boolean) => void;
-    updateOmniText: (omniText: string) => Promise<any>;
-    onSearch: (options?: {
-        [x: string]: any;
-    }) => void;
-    updateOmniUrl: (shouldUpdateBrowserHistory?: boolean) => void;
-    handleClear: () => Promise<void>;
-    onChange: (id: string, value: string) => Promise<any>;
-    render: () => JSX.Element;
-}
+export declare const OmniSearchBar: React.FC<Props>;
 export {};

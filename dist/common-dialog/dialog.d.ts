@@ -8,8 +8,6 @@ declare type Props = {
     hideModal: () => any;
     /** Is the modal visible */
     isVisible: boolean;
-    /** The Dialog's content */
-    children: ReactNode;
     /** Gives a Title to the Dialog */
     title: ReactNode;
     /** Provides an id to the component */

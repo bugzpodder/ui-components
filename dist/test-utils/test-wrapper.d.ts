@@ -1,6 +1,2 @@
-import React, { ReactNode } from "react";
-declare type Props = {
-    children: ReactNode;
-};
-export declare const TestWrapper: React.FC<Props>;
-export {};
+import React from "react";
+export declare const TestWrapper: React.FC;

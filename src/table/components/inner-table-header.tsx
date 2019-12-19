@@ -1,4 +1,4 @@
-import React, { MouseEvent, ReactNode } from "react";
+import React, { MouseEvent } from "react";
 import TableSortLabel from "@material-ui/core/TableSortLabel";
 import { SortOption, mapBy } from "@grailbio/lib";
 import { SortingProps } from "../../types/paged-table";
@@ -6,7 +6,6 @@ import { SortingProps } from "../../types/paged-table";
 type Props = {
   sortingProps: SortingProps;
   sortFieldId: string;
-  children: ReactNode;
 };
 
 export const InnerTableHeader: React.FC<Props> = props => {

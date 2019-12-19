@@ -10,8 +10,6 @@ import { MAIN_CARD_ELEVATION } from "@grailbio/lib";
 import { SecondaryActionsMenuButton } from "../dev";
 
 export type CommonCardProps = {
-  /** The content provide to the card's body */
-  children: ReactNode;
   /** Provides the card's Title */
   title?: ReactNode;
   /** An avatar for the card */

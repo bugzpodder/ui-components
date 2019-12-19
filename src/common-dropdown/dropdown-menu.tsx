@@ -98,7 +98,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
       >
         {menuItems &&
           menuItems.map(
-            ({ content, onClick, isEnabled = true, href }, index) => {
+            ({ content, onClick, isEnabled = true, href, "data-testid": dataTestId }, index) => {
               const menuItem = (
                 <MenuItem
                   onClick={(e: MouseEvent) => {
@@ -109,7 +109,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                     onClick && onClick(e);
                   }}
                   key={`dropdown-item-${index}`}
-                  data-testid={`dropdown-item-${index}`}
+                  data-testid={dataTestId ? dataTestId : `dropdown-item-${index}`}
                   disabled={!isEnabled}
                 >
                   {content}

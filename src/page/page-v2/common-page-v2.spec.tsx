@@ -49,7 +49,7 @@ test("renders common page", () => {
   expect(container).toMatchSnapshot();
   expect(queryByTestId("secondary-action")).not.toBeInTheDocument();
   fireEvent.click(getByTestId("dropdown-button"));
-  expect(getByTestId("dropdown-item-0")).toBeInTheDocument();
+  expect(getByTestId("secondary-action")).toBeInTheDocument();
 });
 
 test("common page classes", () => {

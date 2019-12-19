@@ -36,6 +36,7 @@ exports[`render SuggestionsOmniField 1`] = `
               <svg
                 aria-hidden="true"
                 class=""
+                data-testid="common-suggest-close-icon"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"

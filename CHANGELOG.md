@@ -1,6 +1,7 @@
 ## 2.0.0
 
 1. (BREAKING) Replace internal implementation of CommonSelect, CommonMultiSelect and CommonSuggest with Autocomplete. Upgrade dependency @material-ui/core >= 4.6.0.
+2. (BREAKING) wrapPickerUtilProvider calls must pass in a @date-io/moment or @date-io/date-fns utils.
 
 ## 1.1.0 - 2019-##-
 

@@ -1,4 +1,3 @@
-import MomentUtils from "@date-io/moment";
 import React, { ComponentType, useContext } from "react";
 import {
   DATE_FORMAT,
@@ -18,8 +17,8 @@ import { ParsableDate } from "@material-ui/pickers/constants/prop-types";
 
 export function wrapPickerUtilProvider<P>(
   WrappedComponent: ComponentType<P>,
+  utils,
   useOldPicker = false,
-  utils: any = MomentUtils,
 ) {
   return (props: P) => {
     return useOldPicker ? (

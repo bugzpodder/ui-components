@@ -1,10 +1,11 @@
 ### Example
 
 ```js
+import MomentUtils from "@date-io/moment";
 import { ExampleWrapper } from "../test-utils";
 import { DateValue } from "./";
 import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
-const DateValueContainer = wrapPickerUtilProvider(DateValue);
+const DateValueContainer = wrapPickerUtilProvider(DateValue, MomentUtils);
 
 <ExampleWrapper>
   <div>

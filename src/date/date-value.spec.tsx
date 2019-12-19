@@ -1,5 +1,7 @@
 import "@testing-library/jest-dom/extend-expect";
 import MockDate from "mockdate";
+import MomentUtils from "@date-io/moment";
+
 import React from "react";
 import { DateTimeValue, DateValue, HumanizedDateTime } from ".";
 import { TestWrapper } from "../test-utils";
@@ -11,9 +13,15 @@ afterEach(() => {
   MockDate.reset();
 });
 
-const DateValueContainer = wrapPickerUtilProvider(DateValue);
-const DateTimeValueContainer = wrapPickerUtilProvider(DateTimeValue);
-const HumanizedDateTimeContainer = wrapPickerUtilProvider(HumanizedDateTime);
+const DateValueContainer = wrapPickerUtilProvider(DateValue, MomentUtils);
+const DateTimeValueContainer = wrapPickerUtilProvider(
+  DateTimeValue,
+  MomentUtils,
+);
+const HumanizedDateTimeContainer = wrapPickerUtilProvider(
+  HumanizedDateTime,
+  MomentUtils,
+);
 
 test("render DateTimeValue", async () => {
   const { container, getByTestId, rerender } = render(

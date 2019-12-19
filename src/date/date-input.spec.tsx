@@ -1,4 +1,5 @@
 import "@testing-library/jest-dom/extend-expect";
+import MomentUtils from "@date-io/moment";
 import React from "react";
 import mockConsole from "jest-mock-console";
 import { DateInput } from ".";
@@ -8,7 +9,7 @@ import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 
 afterEach(cleanup);
 
-const DateInputContainer = wrapPickerUtilProvider(DateInput);
+const DateInputContainer = wrapPickerUtilProvider(DateInput, MomentUtils);
 const TestDateInput = props => {
   const { value, readOnly, placeholder, mockOnChange } = props;
   return (

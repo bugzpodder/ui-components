@@ -13,6 +13,7 @@ As an example, LIMS implementation wraps `OmniSearchBar` with redux to manage ap
 ### Example
 
 ```js
+import MomentUtils from "@date-io/moment";
 import { ExampleBlock, ExampleWrapper } from "../test-utils";
 import { wrapPickerUtilProvider } from "@grailbio/components";
 import { useState } from "react";
@@ -63,7 +64,7 @@ const ExampleApp = wrapPickerUtilProvider(() => {
       <ExampleBlock strongHeader="State" content={searchOptions} />
     </div>
   );
-});
+}, MomentUtils);
 
 <ExampleWrapper>
   <ExampleApp />

@@ -4,6 +4,7 @@ exports[`render CommonDropdownMenu 1`] = `
 <div>
   <button
     aria-haspopup="true"
+    aria-owns="review-actions-menu"
     class=""
     data-testid="dropdown-button"
     tabindex="0"

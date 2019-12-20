@@ -39,6 +39,7 @@ exports[`common card classes and margin 1`] = `
         </button>
         <button
           aria-haspopup="true"
+          aria-owns="common-card-secondary-actions"
           class=""
           data-testid="dropdown-button"
           tabindex="0"

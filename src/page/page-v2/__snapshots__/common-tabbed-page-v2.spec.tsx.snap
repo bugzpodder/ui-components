@@ -125,6 +125,7 @@ exports[`render common tabbed page 1`] = `
         </div>
         <button
           aria-haspopup="true"
+          aria-owns="common-page-secondary-actions"
           class="secondaryActionsButton"
           data-testid="dropdown-button"
           disabled=""

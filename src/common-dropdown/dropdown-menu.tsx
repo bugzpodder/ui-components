@@ -2,7 +2,13 @@ import Button, { ButtonProps } from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import React, { ComponentType, MouseEvent, ReactNode, useState } from "react";
+import React, {
+  ComponentType,
+  MouseEvent,
+  ReactNode,
+  useRef,
+  useState,
+} from "react";
 import styles from "./dropdown-menu.module.scss";
 import { ClickableItem } from "../types/dropdown";
 import { Link } from "react-router-dom";
@@ -42,7 +48,7 @@ export type DropdownMenuProps = {
 };
 
 export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
-  const [anchorEl, setAnchorEl] = useState(null);
+  const anchorRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const {
     buttonContent,
@@ -72,11 +78,9 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
     <>
       <ButtonComponent
         aria-haspopup
-        aria-owns={anchorEl && dropdownId}
-        onClick={event => {
-          setAnchorEl(event.currentTarget);
-          setIsOpen(true);
-        }}
+        aria-owns={dropdownId}
+        buttonRef={anchorRef}
+        onClick={() => setIsOpen(true)}
         classes={buttonClasses}
         data-testid="dropdown-button"
         disabled={isDisabled}
@@ -85,15 +89,12 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
       </ButtonComponent>
       <Menu
         id={dropdownId}
-        anchorEl={anchorEl}
+        anchorEl={anchorRef.current}
         anchorOrigin={menuAnchor}
         transformOrigin={transformOrigin}
         getContentAnchorEl={null}
         open={isOpen}
-        onClose={() => {
-          handleClose();
-          setAnchorEl(null);
-        }}
+        onClose={() => handleClose()}
         classes={menuClasses}
       >
         {menuItems &&
@@ -109,7 +110,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                     onClick && onClick(e);
                   }}
                   key={`dropdown-item-${index}`}
-                  data-testid={dataTestId ? dataTestId : `dropdown-item-${index}`}
+                  data-testid={dataTestId || `dropdown-item-${index}`}
                   disabled={!isEnabled}
                 >
                   {content}

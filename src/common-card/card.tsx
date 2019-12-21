@@ -49,6 +49,8 @@ export type CommonCardProps = {
   classes?: CommonCardClasses;
   /** Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive. */
   elevation?: number;
+  /** Optional data-testid to pass to the card. */
+  "data-testid"?: string;
 };
 
 /**
@@ -101,8 +103,9 @@ export const CommonCard: React.FC<CommonCardProps> = props => {
             <>
               {headerActions}
               <SecondaryActionsMenuButton
-                id="common-card"
+                id="common-card-secondary-actions"
                 secondaryActions={secondaryActions}
+                data-testid="common-card-secondary-actions"
               />
             </>
           }

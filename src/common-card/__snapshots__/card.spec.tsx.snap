@@ -41,7 +41,7 @@ exports[`common card classes and margin 1`] = `
           aria-haspopup="true"
           aria-owns="common-card-secondary-actions"
           class=""
-          data-testid="dropdown-button"
+          data-testid="common-card-secondary-actions"
           tabindex="0"
           type="button"
         >

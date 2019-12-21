@@ -45,6 +45,8 @@ export type DropdownMenuProps = {
   anchorOrigin?: PopoverOrigin;
   /** The point on the menu that will attach to the anchor origin. Uses Material-UI's default to "top left" */
   transformOrigin?: PopoverOrigin;
+  /** Optional data test ID attribute for the button. If not defined, defaults to "dropdown-button". */
+  "data-testid"?: string;
 };
 
 export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
@@ -60,6 +62,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
     menuClasses,
     anchorOrigin,
     transformOrigin,
+    "data-testid": dataTestId,
   } = props;
 
   const handleClose = () => {
@@ -82,7 +85,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
         buttonRef={anchorRef}
         onClick={() => setIsOpen(true)}
         classes={buttonClasses}
-        data-testid="dropdown-button"
+        data-testid={dataTestId || "dropdown-button"}
         disabled={isDisabled}
       >
         {buttonContent}
@@ -99,7 +102,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
       >
         {menuItems &&
           menuItems.map(
-            ({ content, onClick, isEnabled = true, href, "data-testid": dataTestId }, index) => {
+            ({ content, onClick, isEnabled = true, href, "data-testid": menuItemDataTestId }, index) => {
               const menuItem = (
                 <MenuItem
                   onClick={(e: MouseEvent) => {
@@ -110,7 +113,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                     onClick && onClick(e);
                   }}
                   key={`dropdown-item-${index}`}
-                  data-testid={dataTestId || `dropdown-item-${index}`}
+                  data-testid={menuItemDataTestId || `dropdown-item-${index}`}
                   disabled={!isEnabled}
                 >
                   {content}

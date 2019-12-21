@@ -1,7 +1,8 @@
-import React, { ComponentProps, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import classNames from "classnames";
 import styles from "./table.module.scss";
 import { CommonCard } from "../common-card";
+import { CommonCardProps } from "../common-card/card";
 import { ExportButton } from "../export-button/export-button";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { PagedTableOptions } from "../types/table";
@@ -91,7 +92,7 @@ export type PagedTableProps = {
   /** Enables the "select all" checkbox if specified (default: true). */
   enableSelectAll?: boolean;
   /** Props for the CommonCard component */
-  cardProps?: Partial<ComponentProps<typeof CommonCard>>;
+  cardProps?: Partial<CommonCardProps>;
   /** Add margins to card body */
   hasTableMargin?: boolean;
   /** If true, fill parent element with card and table (should specify parent height)

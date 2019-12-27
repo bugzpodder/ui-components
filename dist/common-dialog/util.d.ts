@@ -1,4 +1,4 @@
-import { MouseEvent } from "react";
+import React, { MouseEvent } from "react";
 export declare type CommonDialogAction = {
     name: string;
     callback: (event: MouseEvent<HTMLInputElement>) => void;
@@ -10,4 +10,4 @@ export declare type CommonDialogAction = {
     isLeftButton?: boolean;
     "data-testid"?: string;
 };
-export declare const actionToButton: (action: CommonDialogAction) => JSX.Element;
+export declare const actionToButton: (action: CommonDialogAction) => React.ReactElement<any, string | ((props: any) => React.ReactElement<any, string | any | (new (props: any) => React.Component<any, any, any>)>) | (new (props: any) => React.Component<any, any, any>)>;

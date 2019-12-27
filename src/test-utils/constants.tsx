@@ -260,10 +260,10 @@ export const COUNTRY_NAMES = [
   "Zimbabwe",
 ];
 
-export const COUNTRIES: Array<{
+export const COUNTRIES: {
   label: string;
   value: string;
-}> = COUNTRY_NAMES.map(name => ({ label: name })).map(suggestion => ({
+}[] = COUNTRY_NAMES.map(name => ({ label: name })).map(suggestion => ({
   label: suggestion.label,
   value: suggestion.label.toUpperCase().replace(" ", "_"),
 }));

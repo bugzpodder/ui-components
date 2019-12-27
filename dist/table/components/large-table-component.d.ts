@@ -5,7 +5,7 @@ import { SortOption } from "@grailbio/lib";
 declare type Props = {
     id?: string;
     columns: PagedTableColumn<any>[];
-    data: Array<Record<string, any>>;
+    data: Record<string, any>[];
     isLoading?: boolean;
     selectedRows?: Array<number | string>;
     classes?: PagedTableClasses;

@@ -32,13 +32,15 @@ export const SearchField: React.FC<Props> = props => {
     searchValues: __searchValues,
     ...otherProps
   } = props;
-  const onChangeComponent = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeComponent = (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ): void => {
     const {
       target: { id, value: text },
     } = event;
     onChange(id, text);
   };
-  const onEnter = event => {
+  const onEnter = (event: React.KeyboardEvent<HTMLInputElement>): void => {
     if (event.keyCode === keycode("Enter")) {
       event.preventDefault();
       onSearch();
@@ -66,16 +68,16 @@ export const SearchField: React.FC<Props> = props => {
     id: string,
     startDate?: string | null,
     endDate?: string | null,
-  ) => {
+  ): void => {
     onChange(id, buildDateRangeString({ startDate, endDate }));
   };
-  const onChangeStartDate = (id, date) => {
+  const onChangeStartDate = (id, date): void => {
     const validDate = formatDate(date);
     if (validDate) {
       onDateSearch(id, validDate, endDate);
     }
   };
-  const onChangeEndDate = (id, date) => {
+  const onChangeEndDate = (id, date): void => {
     const validDate = formatDate(date);
     if (validDate) {
       onDateSearch(id, startDate, validDate);

@@ -22,7 +22,9 @@ export type CommonDialogAction = {
   "data-testid"?: string;
 };
 
-export const actionToButton = (action: CommonDialogAction) => {
+export const actionToButton = (
+  action: CommonDialogAction,
+): React.ReactElement => {
   const {
     id,
     icon,

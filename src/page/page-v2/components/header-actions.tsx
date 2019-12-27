@@ -70,7 +70,7 @@ export const HeaderActions = forwardRef<any, Props>(
           </div>
         )}
         <SecondaryActionsMenuButton
-          id="common-page"
+          id="common-page-secondary-actions"
           secondaryActions={secondaryActions}
           buttonClasses={{
             root: styles.secondaryActionsButton,

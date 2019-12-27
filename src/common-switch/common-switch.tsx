@@ -53,7 +53,10 @@ export const CommonSwitch: React.FC<Props> = props => {
     ...controlProps
   } = props;
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>, checked: boolean) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement>,
+    checked: boolean,
+  ): void => {
     onChange(checked, e.currentTarget.value);
     if (isSelected === undefined || isSelected === null) {
       setIsChecked(checked);

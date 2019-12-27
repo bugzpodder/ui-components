@@ -3,7 +3,7 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import React, { ReactNode, useRef } from "react";
+import React, { useRef } from "react";
 import classNames from "classnames";
 import styles from "./avatar-icon.module.scss";
 
@@ -42,9 +42,7 @@ type AvatarIconProps = {
   /** Determines if the avatar menu is open */
   isMenuOpen?: boolean;
   /** Array of objects containing keys that are valid Material-UI `MenuItem` props */
-  menuItems?: Array<{
-    [x: string]: any;
-  }>;
+  menuItems?: Record<string, any>[];
 } & AvatarComponentProps;
 
 const AvatarComponent: React.FC<AvatarComponentProps> = props => {

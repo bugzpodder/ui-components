@@ -8,9 +8,7 @@ import { CommonTabbedPageV2Classes, PageConfigV2 } from "../../../types/card";
 type Props = {
   onChangeActiveTab: (x0: string) => any;
   activeTab: string | false;
-  tabProps: {
-    [x: string]: any;
-  };
+  tabProps: Record<string, any>;
   pageConfigs: PageConfigV2[];
   wrapTabLabels: boolean;
   classes: CommonTabbedPageV2Classes;

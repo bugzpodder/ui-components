@@ -6,13 +6,17 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestMultiSelect = props => {
+type Props = {
+  mockOnChange?: Function;
+} & Partial<React.ComponentProps<typeof CommonMultiSelect>>;
+
+const TestMultiSelect: React.FC<Props> = props => {
   const { mockOnChange, label, margin, variant } = props;
   const [values, setValues] = useState([
     { label: "Algeria", value: "ALGERIA" },
     { label: "Afghanistan", value: "AFGHANISTAN" },
   ]);
-  const setChange = values => {
+  const setChange = (values): void => {
     mockOnChange(values);
     setValues(values);
   };

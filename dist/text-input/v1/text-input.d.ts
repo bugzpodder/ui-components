@@ -6,9 +6,7 @@ declare type Props = {
     /** If readOnly is true, display this component rather than ReadOnlyTextField. */
     ReadOnlyComponent?: ElementType;
     /** props for the ReadOnlyComponent */
-    readOnlyComponentProps?: {
-        [x: string]: any;
-    };
+    readOnlyComponentProps?: Record<string, any>;
     /** Used for read only input field, see `ReadOnlyTextField`. */
     showEmptyValue?: boolean;
     /** Id of the element. */

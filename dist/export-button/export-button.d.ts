@@ -4,15 +4,9 @@ import { ExportableColumn } from "@grailbio/lib";
 import { PagedTableColumn } from "../types/paged-table";
 declare type Props = {
     columns: Array<ExportableColumn<any> | PagedTableColumn<any>>;
-    visibleRows?: Array<{
-        [x: string]: any;
-    }>;
-    selectedRows?: Array<{
-        [x: string]: any;
-    }>;
-    fetchBulkExportRows?: () => Promise<Array<{
-        [x: string]: any;
-    }>>;
+    visibleRows?: Record<string, any>[];
+    selectedRows?: Record<string, any>[];
+    fetchBulkExportRows?: () => Promise<Record<string, any>[]>;
     filenamePrefix?: string;
     buttonProps?: Partial<ButtonProps>;
     className?: string;

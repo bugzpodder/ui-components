@@ -39,11 +39,11 @@ const pageConfigs: PageConfig[] = [
   },
 ];
 
-const TestCommonTabbedPage = props => {
+const TestCommonTabbedPage: React.FC<any> = props => {
   const { mockOnChange, ...otherProps } = props;
 
   const [activeTab, setActiveTab] = useState("one");
-  const setChange = value => {
+  const setChange = (value): void => {
     mockOnChange(value);
     setActiveTab(value);
   };

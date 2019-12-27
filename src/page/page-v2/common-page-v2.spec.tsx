@@ -7,7 +7,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestCommonPage = props => {
+const TestCommonPage: React.FC<any> = props => {
   return (
     <TestWrapper>
       <CommonPageV2

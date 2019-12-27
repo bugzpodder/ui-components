@@ -9,7 +9,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 afterEach(cleanup);
 const testUtcTime = "2019-04-20T23:20:00+00:00";
 
-const TestNotificationCenter = props => {
+const TestNotificationCenter: React.FC<any> = props => {
   const { mockRemoveAllNotifications, mockRemoveNotification } = props;
   const [notifications] = useState<Notification[]>([
     {

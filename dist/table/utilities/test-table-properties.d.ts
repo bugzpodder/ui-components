@@ -19,9 +19,7 @@ export declare const columns: ({
     Cell?: undefined;
     className?: undefined;
 } | {
-    accessor: (instance: {
-        [x: string]: any;
-    }) => any;
+    accessor: (instance: Record<string, any>) => any;
     className: (value: string) => string;
     Cell: ({ value }: {
         value: string;

@@ -36,12 +36,12 @@ export const NotificationCenter: React.FC<Props> = props => {
   const anchorEl = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleClick = (event: MouseEvent<HTMLButtonElement>) => {
+  const handleClick = (event: MouseEvent<HTMLButtonElement>): void => {
     anchorEl.current = event.currentTarget;
     setIsVisible(isVisible => !isVisible);
   };
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setIsVisible(false);
   };
 

@@ -9,9 +9,7 @@ import { TableComponent } from "./components/table-component";
 
 type Props = {
   /** Provides the information you wish to display */
-  data: Array<{
-    [x: string]: any;
-  }>;
+  data: Record<string, any>[];
   /**
    * Defines the table structure.
    *

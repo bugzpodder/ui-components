@@ -22,20 +22,12 @@ type Props = {
   /* The column configurations in the downloaded file. */
   columns: Array<ExportableColumn<any> | PagedTableColumn<any>>;
   /* The list of objects to be exported if "visible rows" is selected. */
-  visibleRows?: Array<{
-    [x: string]: any;
-  }>;
+  visibleRows?: Record<string, any>[];
   /* The list of objects to be exported if "selected rows" is selected. */
-  selectedRows?: Array<{
-    [x: string]: any;
-  }>;
+  selectedRows?: Record<string, any>[];
   /* A function which takes no input and returns a promise to a list of the
    * data that will be exported if "bulk rows" is selected. */
-  fetchBulkExportRows?: () => Promise<
-    Array<{
-      [x: string]: any;
-    }>
-  >;
+  fetchBulkExportRows?: () => Promise<Record<string, any>[]>;
   /* A string which, along with the current timestamp, will be used as the
    * filename (i.e. "prefix 2019-04-20 04-20-00.csv"). Prefix defaults to
    * "export". */
@@ -186,7 +178,7 @@ export const ExportButton: React.FC<Props> = props => {
     },
   ];
 
-  const onSubmit = async () => {
+  const onSubmit = async (): Promise<void> => {
     setIsLoading(true);
     const dataSourceOption = dataSourceOptions.find(
       ({ key }) => key === dataSource,

@@ -6,7 +6,9 @@ import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestReadOnlyTextField = props => {
+const TestReadOnlyTextField: React.FC<React.ComponentProps<
+  typeof ReadOnlyTextField
+>> = props => {
   const { children, ...otherProps } = props;
   return (
     <TestWrapper>

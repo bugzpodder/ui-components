@@ -42,7 +42,7 @@ const searchDefs: OmniSearchDef[] = [
   },
 ];
 
-const renderWrapper = () => {
+const renderWrapper = (): any => {
   const onSearch = jest.fn();
   const props = render(
     <TestWrapper>

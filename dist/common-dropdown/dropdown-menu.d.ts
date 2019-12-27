@@ -21,16 +21,14 @@ export declare type DropdownMenuProps = {
     /** Defaults to false. When true, the underlying component of the button is an IconButton, rather than a Button. */
     isIconButton?: boolean;
     /** classes object for the Button component */
-    buttonClasses?: {
-        [x: string]: any;
-    };
+    buttonClasses?: Record<string, any>;
     /** classes object for the Menu component */
-    menuClasses?: {
-        [x: string]: any;
-    };
+    menuClasses?: Record<string, any>;
     /** The anchor point on the button where the menu will attach to. Uses GRAIL's default "left bottom" */
     anchorOrigin?: PopoverOrigin;
     /** The point on the menu that will attach to the anchor origin. Uses Material-UI's default to "top left" */
     transformOrigin?: PopoverOrigin;
+    /** Optional data test ID attribute for the button. If not defined, defaults to "dropdown-button". */
+    "data-testid"?: string;
 };
 export declare const CommonDropdownMenu: React.FC<DropdownMenuProps>;

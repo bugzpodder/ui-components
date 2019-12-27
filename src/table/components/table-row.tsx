@@ -11,9 +11,7 @@ import {
 
 type Props = {
   columns: InternalPagedTableColumn[];
-  instance: {
-    [x: string]: any;
-  };
+  instance: Record<string, any>;
   rowId: string | number;
   shadeOnHover: boolean;
   rowIndex: number;

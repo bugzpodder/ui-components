@@ -60,7 +60,7 @@ type Props = {
 export const CommonPage: React.FC<Props> = props => {
   const [sideMenuIsExpanded, setSideMenuIsExpanded] = useState(false);
 
-  const toggleSideMenu = () => {
+  const toggleSideMenu = (): void => {
     setSideMenuIsExpanded(sideMenuIsExpanded => !sideMenuIsExpanded);
   };
 

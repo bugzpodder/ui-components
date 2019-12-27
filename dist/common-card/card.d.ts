@@ -40,6 +40,8 @@ export declare type CommonCardProps = {
     classes?: CommonCardClasses;
     /** Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive. */
     elevation?: number;
+    /** Optional data-testid to pass to the card. */
+    "data-testid"?: string;
 };
 /**
  * `CommonCard` provides a component to create basic Material-UI Cards.

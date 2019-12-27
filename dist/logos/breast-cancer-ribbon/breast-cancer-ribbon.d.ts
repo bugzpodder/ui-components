@@ -1,1 +1,2 @@
-export declare const BreastCancerRibbon: () => JSX.Element;
+import React from "react";
+export declare const BreastCancerRibbon: React.FC;

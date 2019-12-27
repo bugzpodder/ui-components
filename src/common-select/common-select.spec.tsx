@@ -10,7 +10,7 @@ afterEach(cleanup);
 
 /** ******* Sync ******* */
 
-const TestCommonSelect = props => {
+const TestCommonSelect: React.FC<any> = props => {
   const {
     mockOnChange,
     label,
@@ -22,7 +22,7 @@ const TestCommonSelect = props => {
     label: null,
     value: null,
   });
-  const setChange = value => {
+  const setChange = (value): void => {
     mockOnChange(value);
     setValue(value);
   };
@@ -133,9 +133,9 @@ test("render creatable CommonSelect", () => {
 
 /** ******* Async ******* */
 
-const TestAsyncCommonSelect = props => {
+const TestAsyncCommonSelect: React.FC<any> = props => {
   const { value, inputValue, initialMessage } = props;
-  const filterCountries = inputValue => {
+  const filterCountries = (inputValue): Promise<any[]> => {
     return new Promise(resolve => {
       const newCountries = COUNTRIES.filter(country =>
         inputValue
@@ -182,7 +182,7 @@ test("async CommonSelect with initial and no options messages", () => {
 
 /** ******* Read-Only ******* */
 
-const TestReadOnlyCommonSelect = props => {
+const TestReadOnlyCommonSelect: React.FC<any> = props => {
   const { value, mockOnChange } = props;
   return (
     <TestWrapper>

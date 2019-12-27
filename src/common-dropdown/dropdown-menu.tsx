@@ -34,13 +34,9 @@ export type DropdownMenuProps = {
   /** Defaults to false. When true, the underlying component of the button is an IconButton, rather than a Button. */
   isIconButton?: boolean;
   /** classes object for the Button component */
-  buttonClasses?: {
-    [x: string]: any;
-  };
+  buttonClasses?: Record<string, any>;
   /** classes object for the Menu component */
-  menuClasses?: {
-    [x: string]: any;
-  };
+  menuClasses?: Record<string, any>;
   /** The anchor point on the button where the menu will attach to. Uses GRAIL's default "left bottom" */
   anchorOrigin?: PopoverOrigin;
   /** The point on the menu that will attach to the anchor origin. Uses Material-UI's default to "top left" */
@@ -65,7 +61,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
     "data-testid": dataTestId,
   } = props;
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setIsOpen(false);
   };
 
@@ -102,7 +98,16 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
       >
         {menuItems &&
           menuItems.map(
-            ({ content, onClick, isEnabled = true, href, "data-testid": menuItemDataTestId }, index) => {
+            (
+              {
+                content,
+                onClick,
+                isEnabled = true,
+                href,
+                "data-testid": menuItemDataTestId,
+              },
+              index,
+            ) => {
               const menuItem = (
                 <MenuItem
                   onClick={(e: MouseEvent) => {

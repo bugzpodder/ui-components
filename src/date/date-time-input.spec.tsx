@@ -13,7 +13,7 @@ const DateTimeInputContainer = wrapPickerUtilProvider(
   DateTimeInput,
   MomentUtils,
 );
-const TestDateTimeInput = props => {
+const TestDateTimeInput: React.FC<any> = props => {
   const { value, readOnly, placeholder, mockOnChange } = props;
   return (
     <TestWrapper>

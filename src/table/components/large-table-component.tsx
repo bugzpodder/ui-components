@@ -1,5 +1,5 @@
 import AutoSizer from "react-virtualized-auto-sizer";
-import React, { useRef } from "react";
+import React, { ReactElement, useRef } from "react";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./large-table.module.scss";
@@ -27,7 +27,7 @@ const TableCell = ({
   columnIndex,
   rowIndex,
   style,
-}) => {
+}): ReactElement => {
   if (!isFrozen && columnIndex < numFrozenColumns) {
     return null;
   }
@@ -114,7 +114,7 @@ const TableHeader = ({
   },
   columnIndex,
   style,
-}) => {
+}): ReactElement => {
   if (!isFrozen && columnIndex < numFrozenColumns) {
     return null;
   }
@@ -173,7 +173,7 @@ const TableHeader = ({
 type Props = {
   id?: string;
   columns: PagedTableColumn<any>[];
-  data: Array<Record<string, any>>;
+  data: Record<string, any>[];
   isLoading?: boolean;
   selectedRows?: Array<number | string>;
   classes?: PagedTableClasses;
@@ -220,7 +220,7 @@ export const LargeTableComponent: React.FC<Props> = props => {
     scrollUpdateWasRequested,
     scrollLeft,
     scrollTop,
-  }) => {
+  }): void => {
     // From the official docs:
     // > scrollUpdateWasRequested is a boolean.
     // > This value is true if the scroll was caused by scrollTo() or scrollToItem(),
@@ -242,7 +242,10 @@ export const LargeTableComponent: React.FC<Props> = props => {
     }
   };
 
-  const handleRowLabelScroll = ({ scrollUpdateWasRequested, scrollTop }) => {
+  const handleRowLabelScroll = ({
+    scrollUpdateWasRequested,
+    scrollTop,
+  }): void => {
     if (!scrollUpdateWasRequested && gridRef.current) {
       gridRef.current.scrollTo({
         scrollTop,
@@ -253,7 +256,7 @@ export const LargeTableComponent: React.FC<Props> = props => {
   const handleColumnLabelScroll = ({
     scrollUpdateWasRequested,
     scrollLeft,
-  }) => {
+  }): void => {
     if (!scrollUpdateWasRequested && gridRef.current) {
       gridRef.current.scrollTo({
         scrollLeft,
@@ -310,8 +313,8 @@ export const LargeTableComponent: React.FC<Props> = props => {
   // TODO(ecarrel): use recomputeGridSize to force a re-render if columnWidths
   //  change. Currently, that does not happen.
 
-  let columnWidthProducer = (index: number) => columnWidths[index];
-  const rowHeightFunction = (index: number) => {
+  let columnWidthProducer = (index: number): number => columnWidths[index];
+  const rowHeightFunction = (index: number): number => {
     if (typeof rowHeight === "function") {
       const rowData = index < data.length ? data[index] : {};
       return rowHeight(rowData, index);

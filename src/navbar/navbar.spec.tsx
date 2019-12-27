@@ -15,11 +15,11 @@ afterEach(() => {
 
 const LIMS = "lims";
 
-const wrapText = text => {
+const wrapText = (text: string): React.ReactElement => {
   return <Typography>{text}</Typography>;
 };
 
-const TestNavbar = props => {
+const TestNavbar: React.FC<any> = props => {
   const { isProduction, sidebarContent } = props;
   return (
     <TestWrapper>

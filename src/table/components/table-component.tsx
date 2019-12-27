@@ -17,9 +17,7 @@ import { getRowId, handleKeyboardHighlight } from "../utilities/row-utils";
 
 type Props = {
   columns: PagedTableColumn<any>[];
-  data: Array<{
-    [x: string]: any;
-  }>;
+  data: Record<string, any>[];
   isLoading: boolean;
   selectedRows: Array<number | string>;
   classes?: PagedTableClasses;

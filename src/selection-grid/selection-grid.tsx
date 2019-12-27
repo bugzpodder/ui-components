@@ -77,7 +77,10 @@ export const SelectionGrid: React.FC<Props> = props => {
 
   const colHeaders = generateColHeaders(numCols);
   const rowHeaders = generateRowHeaders(numRows);
-  const calculateCellIndex = ({ rowIndex, colIndex }: GridCellCoordinate) => {
+  const calculateCellIndex = ({
+    rowIndex,
+    colIndex,
+  }: GridCellCoordinate): number => {
     return rowIndex * numCols + colIndex;
   };
 

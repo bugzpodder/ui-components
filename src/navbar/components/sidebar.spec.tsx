@@ -27,7 +27,7 @@ const testSidebarItems: SidebarItem[] = [
   },
 ];
 
-const TestSidebar = props => {
+const TestSidebar: React.FC<any> = props => {
   const { mockToggle, drawerVariant } = props;
   return (
     <TestWrapper>

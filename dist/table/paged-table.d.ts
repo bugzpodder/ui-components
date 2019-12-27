@@ -1,13 +1,11 @@
-import React, { ComponentProps, ReactNode } from "react";
-import { CommonCard } from "../common-card";
+import React, { ReactNode } from "react";
+import { CommonCardProps } from "../common-card/card";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { PagedTableOptions } from "../types/table";
 import { SortOption } from "@grailbio/lib";
 export declare type PagedTableProps = {
     /** Provides the information you wish to display */
-    data: Array<{
-        [x: string]: any;
-    }>;
+    data: Record<string, any>[];
     /**
      * Defines the table structure.
      *
@@ -46,9 +44,7 @@ export declare type PagedTableProps = {
      * option does not appear and so users can only export the data present in
      * the table (which is limited by pagination). Has no effect if
      * `includeExportButton` is false. */
-    fetchBulkExportRows?: () => Promise<Array<{
-        [x: string]: any;
-    }>>;
+    fetchBulkExportRows?: () => Promise<Record<string, any>[]>;
     /** Enables checkbox selection. Must change the state of selectedRows */
     onSelect?: (x0: any[]) => any;
     /** Provides the id's for the selected rows when onSelect is used */
@@ -70,9 +66,7 @@ export declare type PagedTableProps = {
      *
      * Must change the state of `tableOptions {count: number, offset: number}`
      */
-    onPageChange?: (x0: {
-        [x: string]: any;
-    }) => any;
+    onPageChange?: (x0: Record<string, any>) => any;
     /**
      * Enables sorting.
      *
@@ -84,7 +78,7 @@ export declare type PagedTableProps = {
     /** Enables the "select all" checkbox if specified (default: true). */
     enableSelectAll?: boolean;
     /** Props for the CommonCard component */
-    cardProps?: Partial<ComponentProps<typeof CommonCard>>;
+    cardProps?: Partial<CommonCardProps>;
     /** Add margins to card body */
     hasTableMargin?: boolean;
     /** If true, fill parent element with card and table (should specify parent height)

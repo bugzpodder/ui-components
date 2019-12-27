@@ -12,8 +12,8 @@ const generateClassName = createGenerateClassName({
 });
 
 class MockResizeObserver {
-  observe = () => {};
-  disconnect = () => {};
+  observe = (): void => {};
+  disconnect = (): void => {};
 }
 
 (window as any).ResizeObserver = MockResizeObserver;

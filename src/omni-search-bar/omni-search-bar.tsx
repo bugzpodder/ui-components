@@ -22,7 +22,10 @@ import {
 import { OMNI_INPUT_FIELD_ID, OmniField } from "./components/omni-field";
 import { OmniDialog } from "./components/omni-dialog";
 
-const getLocalStorageKey = (pathname: string, searchDef: OmniSearchDef) => {
+const getLocalStorageKey = (
+  pathname: string,
+  searchDef: OmniSearchDef,
+): string => {
   const { name, localStorageKeySuffix } = searchDef;
   return localStorageKeySuffix != null
     ? `omni-${localStorageKeySuffix}`
@@ -33,7 +36,7 @@ const setValuesToLocalStorage = (
   pathname: string,
   searchDefs: OmniSearchDef[],
   searchValues: OmniSearchValues,
-) => {
+): void => {
   if (!pathname) {
     return;
   }
@@ -51,7 +54,7 @@ const setValuesToLocalStorage = (
 const getValuesFromLocalStorage = (
   pathname: string,
   searchDefs: OmniSearchDef[],
-) => {
+): Map<number, string> => {
   const storageValues: Map<number, string> = new Map();
   if (!pathname) {
     return storageValues;
@@ -293,7 +296,7 @@ export const OmniSearchBar: React.FC<Props> = props => {
   }, [normalizeOmniText, searchDefs, updateOmniText]);
 
   useEffect(() => {
-    const onOmniSearchCommandChange = async () => {
+    const onOmniSearchCommandChange = async (): Promise<void> => {
       if (omniSearchCommands && omniSearchCommands.length) {
         const promises = omniSearchCommands.map(
           async ({ command, omniFieldName, omniValues = [] }) => {
@@ -313,7 +316,7 @@ export const OmniSearchBar: React.FC<Props> = props => {
     onOmniSearchCommandChange();
   }, [omniSearchCommands, onChange, onSearch, setOmniSearchCommands]);
 
-  const handleClear = async () => {
+  const handleClear = async (): Promise<void> => {
     updateOmniText("");
     setSearchOptions({
       searchOptions: getSearchOptions(searchDefs, new Map()),

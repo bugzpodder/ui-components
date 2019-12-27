@@ -3,9 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import styles from "../table.module.scss";
 
 type Props = {
-  data: Array<{
-    [x: string]: any;
-  }>;
+  data: Record<string, any>[];
 };
 
 export const TableSummary: React.FC<Props> = props => {

@@ -33,7 +33,13 @@ export const TablePager: React.FC<Props> = props => {
   const fillsPage = rowCount >= count;
   const estimatedTotalCount = startingCount + rowCount + (fillsPage ? 1 : 0);
 
-  const setPage = ({ offset, count }: { offset: number; count: number }) => {
+  const setPage = ({
+    offset,
+    count,
+  }: {
+    offset: number;
+    count: number;
+  }): void => {
     onSelect && onSelect([]);
     onPageChange && onPageChange({ offset, count: count || 10 });
   };
@@ -41,12 +47,14 @@ export const TablePager: React.FC<Props> = props => {
   const onChangePage = (
     _: React.MouseEvent<HTMLInputElement> | null,
     page: number,
-  ) => {
+  ): void => {
     const newOffset = page * count;
     setPage({ offset: newOffset, count });
   };
 
-  const onChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeRowsPerPage = (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ): void => {
     const newCount = Math.max(1, Number(event.target.value));
     const newOffset = Math.floor(offset / newCount) * newCount;
     return setPage({ offset: newOffset, count: newCount });

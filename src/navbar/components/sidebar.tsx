@@ -7,6 +7,7 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import React, {
   ComponentType,
+  ReactElement,
   ReactNode,
   useEffect,
   useMemo,
@@ -39,12 +40,9 @@ const COLLAPSE_ALL = "COLLAPSE_ALL";
 const CLEAR = "CLEAR";
 const OPEN = "OPEN";
 
-const reducer = (
-  state,
-  action: {
-    [x: string]: any;
-  },
-) => {
+type State = { openItems: Set<number> };
+
+const reducer = (state: State, action: Record<string, any>): State => {
   const { type } = action;
   switch (type) {
     case TOGGLE: {
@@ -102,7 +100,9 @@ export const Sidebar: React.FC<Props> = props => {
     [currentPath, domain, sidebarContent],
   );
 
-  const [state, dispatch] = useReducer(reducer, { openItems: new Set() });
+  const [state, dispatch] = useReducer(reducer, {
+    openItems: new Set<number>(),
+  });
   useEffect(() => {
     dispatch({ type: CLEAR, matchedItem });
   }, [matchedItem]);
@@ -110,7 +110,11 @@ export const Sidebar: React.FC<Props> = props => {
     isOpen && dispatch({ type: OPEN, matchedItem });
   }, [isOpen, matchedItem]);
 
-  const getLink = (item: SidebarItem, key: number, nested = false) => {
+  const getLink = (
+    item: SidebarItem,
+    key: number,
+    nested = false,
+  ): ReactElement => {
     const { exact = false, domain: itemDomain, path, name } = item;
     const { currentPath, domain, InternalLinkComponent } = props;
     const isPipelineUi =
@@ -172,11 +176,11 @@ export const Sidebar: React.FC<Props> = props => {
     );
   };
 
-  const toggleCollapsableListItem = (index: number) => {
+  const toggleCollapsableListItem = (index: number): void => {
     dispatch({ type: TOGGLE, index, props });
   };
 
-  const renderItem = (item: SidebarItem, index: number) => {
+  const renderItem = (item: SidebarItem, index: number): ReactElement => {
     if (item.children !== undefined) {
       const isOpen = state.openItems.has(index);
       return (
@@ -195,7 +199,7 @@ export const Sidebar: React.FC<Props> = props => {
     return getLink(item, index);
   };
 
-  const collapseAll = () => {
+  const collapseAll = (): void => {
     dispatch({ type: COLLAPSE_ALL });
   };
 

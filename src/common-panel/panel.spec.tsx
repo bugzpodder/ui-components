@@ -6,7 +6,7 @@ import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestCommonPanel = props => {
+const TestCommonPanel: React.FC<any> = props => {
   const { color, classes } = props;
   return (
     <TestWrapper>

@@ -21,7 +21,10 @@ type Props = {
   actions?: ReactNode;
 } & Omit<ComponentProps<typeof Autocomplete>, "renderInput" | "onChange">;
 
-const getListboxElement = footer => {
+const getListboxElement = (
+  footer: ReactNode,
+): React.ForwardRefExoticComponent<React.HTMLAttributes<HTMLElement> &
+  React.RefAttributes<HTMLUListElement>> => {
   return React.forwardRef<HTMLUListElement, React.HTMLAttributes<HTMLElement>>(
     (props, ref) => {
       const { children, ...otherProps } = props;
@@ -51,7 +54,7 @@ export const CommonSuggest: React.FC<Props> = props => {
     return getListboxElement(actions);
   }, [actions]);
 
-  const onKeyDown = event => {
+  const onKeyDown = (event: React.KeyboardEvent): void => {
     if (event.keyCode === keycode("Enter")) {
       onEnter && onEnter();
     }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const BreastCancerRibbon = () => {
+export const BreastCancerRibbon: React.FC = () => {
   return (
     <svg
       data-testid="breast-cancer-ribbon"

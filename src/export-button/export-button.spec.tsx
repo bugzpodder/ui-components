@@ -54,7 +54,7 @@ const columns = [
   },
   {
     exportHeaderName: "Column 3",
-    exportAccessor: (instance: { [x: string]: any }) => instance.columnThree,
+    exportAccessor: (instance: Record<string, any>) => instance.columnThree,
   },
 ];
 

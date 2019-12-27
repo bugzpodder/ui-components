@@ -10,7 +10,7 @@ import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 afterEach(cleanup);
 
 const DateInputContainer = wrapPickerUtilProvider(DateInput, MomentUtils);
-const TestDateInput = props => {
+const TestDateInput: React.FC<any> = props => {
   const { value, readOnly, placeholder, mockOnChange } = props;
   return (
     <TestWrapper>

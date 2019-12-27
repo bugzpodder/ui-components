@@ -4,7 +4,7 @@ export const validateGridData = (
   numRows: number,
   numCols: number,
   gridData: any[][],
-) => {
+): boolean => {
   if (numRows !== gridData.length) {
     throw new Error(
       `Number of rows in gridData (${gridData.length}) does not match numRows (${numRows})`,
@@ -20,8 +20,8 @@ export const validateGridData = (
   return true;
 };
 
-export const generateColHeaders = (numCols: number) =>
+export const generateColHeaders = (numCols: number): string[] =>
   generateFilledArray(numCols, (_, index) => getColHeader(index));
 
-export const generateRowHeaders = (numRows: number) =>
+export const generateRowHeaders = (numRows: number): string[] =>
   generateFilledArray(numRows, (_, index) => getRowHeader(index));

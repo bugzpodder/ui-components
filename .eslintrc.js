@@ -49,10 +49,11 @@ module.exports = {
     "jsx-a11y/interactive-supports-focus": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "jsx-a11y/label-has-for": 0,
-
-    "react/jsx-one-expression-per-line": 0,
-    "react/sort-comp": 0,
-
     "consistent-return": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      { allowExpressions: true },
+    ],
   },
 };

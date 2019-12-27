@@ -51,7 +51,7 @@ export const columns = [
     isSortable: false,
   },
   {
-    accessor: (instance: { [x: string]: any }) => instance.columnThree,
+    accessor: (instance: Record<string, any>) => instance.columnThree,
     className: (value: string) =>
       `test-${value.toLowerCase().replace(" ", "-")}-className`,
     Cell: ({ value }: { value: string }) => {

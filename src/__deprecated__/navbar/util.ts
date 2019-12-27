@@ -1,4 +1,4 @@
-export const getListItemDataTestId = (name: any) => {
+export const getListItemDataTestId = (name: any): string => {
   const listItem = "list-item";
   if (typeof name === "number") {
     return `${listItem}-${name}`;

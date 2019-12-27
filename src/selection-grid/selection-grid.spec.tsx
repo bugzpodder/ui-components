@@ -7,7 +7,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestSelectionGrid = props => {
+const TestSelectionGrid: React.FC<any> = props => {
   const {
     mockOnSelect,
     classes,
@@ -16,9 +16,9 @@ const TestSelectionGrid = props => {
     numCols = ALPHABET_ANIMALS_DATA[0].length,
   } = props;
   const [selectedCoordinates, setSelectedCoordinates] = useState([]);
-  const isCellEmpty = ({ instance }) => instance == null;
-  const isCellSelectable = ({ cellIndex }) => cellIndex % 2 === 0;
-  const cellRenderer = gridCellInfo => {
+  const isCellEmpty = ({ instance }): boolean => instance == null;
+  const isCellSelectable = ({ cellIndex }): boolean => cellIndex % 2 === 0;
+  const cellRenderer = (gridCellInfo): React.ReactElement => {
     const { rowIndex, colIndex, cellIndex, instance: animal } = gridCellInfo;
     if (isCellEmpty(gridCellInfo)) {
       return null;
@@ -33,7 +33,7 @@ const TestSelectionGrid = props => {
       </div>
     );
   };
-  const onSelect = value => {
+  const onSelect = (value): void => {
     const { rowIndex, colIndex } = value;
     mockOnSelect(value);
     setSelectedCoordinates([{ rowIndex, colIndex }]);

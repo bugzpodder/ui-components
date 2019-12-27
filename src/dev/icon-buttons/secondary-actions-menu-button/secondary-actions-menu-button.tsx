@@ -17,7 +17,7 @@ export const SecondaryActionsMenuButton: React.FC<Props> = props => {
   return (
     <CommonDropdownMenu
       isIconButton
-      dropdownId={`${id ? `${id}-` : ""}secondary-actions`}
+      dropdownId={id || "secondary-actions"}
       menuItems={secondaryActions}
       buttonContent={<MoreVertIcon />}
       anchorOrigin={{

@@ -23,7 +23,7 @@ export const InnerTableHeader: React.FC<Props> = props => {
     );
   }
   const sortFieldsById = mapBy(sortOptions, "id");
-  const handleClickSort = (event: MouseEvent<HTMLElement>, fieldId) => {
+  const handleClickSort = (event: MouseEvent<HTMLElement>, fieldId): void => {
     const { ctrlKey } = event;
     const currentSortField = sortFieldsById.get(fieldId) || {};
     const newSortField = {

@@ -6,15 +6,15 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestMultiPageModal = props => {
+const TestMultiPageModal: React.FC<any> = props => {
   const { mockSetPage, mockHide } = props;
   const [pageIndex, setPageIndex] = useState(1);
   const [isVisible, setIsVisible] = useState(true);
-  const setPage = pageIndex => {
+  const setPage = (pageIndex): void => {
     mockSetPage(pageIndex);
     setPageIndex(pageIndex);
   };
-  const setHide = () => {
+  const setHide = (): void => {
     mockHide();
     setIsVisible(!isVisible);
   };

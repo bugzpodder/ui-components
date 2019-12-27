@@ -12,9 +12,7 @@ type Props = {
   /** id for the table element */
   id?: string;
   /** Provides the information you wish to display */
-  data: Array<{
-    [x: string]: any;
-  }>;
+  data: Record<string, any>[];
   /**
    * Defines the table structure.
    *
@@ -63,14 +61,7 @@ type Props = {
    * or function. The function takes as parameters the data for the row and the
    * index of the row.
    */
-  rowHeight?:
-    | number
-    | ((
-        x0: {
-          [x: string]: any;
-        },
-        x1: number,
-      ) => number);
+  rowHeight?: number | ((x0: Record<string, any>, x1: number) => number);
   /**
    * Enables left-right scrolling rather than squeezing all columns into the
    * viewable area. Defaults to false.

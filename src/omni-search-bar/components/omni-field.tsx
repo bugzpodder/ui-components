@@ -39,23 +39,23 @@ export const OmniField: React.FC<Props> = props => {
     setIsSelected(isOpen);
   }, [isOpen]);
 
-  const activateOmniField = () => {
+  const activateOmniField = (): void => {
     setIsSelected(true);
   };
 
-  const deactivateOmniField = () => {
+  const deactivateOmniField = (): void => {
     setIsSelected(false);
   };
 
-  const setOmniVisibility = (isVisible: boolean) => {
+  const setOmniVisibility = (isVisible: boolean): void => {
     setOmniIsOpen(isVisible);
   };
 
-  const toggleOmniVisibility = () => {
+  const toggleOmniVisibility = (): void => {
     setOmniIsOpen(!isOpen);
   };
 
-  const omniChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const omniChange = (event: ChangeEvent<HTMLInputElement>): void => {
     const {
       currentTarget: { id, value: text },
     } = event;

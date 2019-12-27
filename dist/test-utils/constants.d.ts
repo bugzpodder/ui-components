@@ -1,8 +1,8 @@
 export declare const COUNTRY_NAMES: string[];
-export declare const COUNTRIES: Array<{
+export declare const COUNTRIES: {
     label: string;
     value: string;
-}>;
+}[];
 export declare const GRAIL = "https://grail.com/wp-content/uploads/2016/12/cropped-final-favicon-32x32.png";
 export declare const EXAMPLE_TABLE_DATA: {
     word: string;

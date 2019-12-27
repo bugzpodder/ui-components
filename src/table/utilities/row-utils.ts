@@ -4,18 +4,16 @@ import { KeyboardEvent } from "react";
 
 export const getRowId = (
   idKey: string | number,
-  instance: {
-    [x: string]: any;
-  },
+  instance: Record<string, any>,
   index: number,
-) => {
+): string => {
   if (idKey) {
     return instance[idKey];
   }
   return `${index}`;
 };
 
-export const getIndexOffset = (event: KeyboardEvent<HTMLElement>) => {
+export const getIndexOffset = (event: KeyboardEvent<HTMLElement>): number => {
   switch (event.keyCode) {
     case keycode("up"):
       return -1;
@@ -29,7 +27,7 @@ export const getIndexOffset = (event: KeyboardEvent<HTMLElement>) => {
 export const handleKeyboardHighlight = (
   event: KeyboardEvent<HTMLElement>,
   props: HighlightRowProps,
-) => {
+): void => {
   const { data, idKey, onHighlightRow, highlightedRowId } = props;
   if (!onHighlightRow) {
     return;

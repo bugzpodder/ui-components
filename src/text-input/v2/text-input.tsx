@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import TextField, { TextFieldProps } from "@material-ui/core/TextField";
 import styles from "./text-input.module.scss";
 
-const isEmptyValue = value => value == null || value === "";
+const isEmptyValue = (value): boolean => value == null || value === "";
 
 const getDisplayValue = (
   value,
   readOnly: boolean,
   hasReadOnlyDefaultValue: boolean,
   readOnlyDefaultValue?: any,
-) => {
+): string => {
   const defaultValue = hasReadOnlyDefaultValue ? readOnlyDefaultValue : "-";
   return isEmptyValue(value) && readOnly ? defaultValue : value;
 };

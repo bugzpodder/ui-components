@@ -6,9 +6,7 @@ declare type Props = {
     /** Defines props passed into main item's `ListItemText` component. */
     headerTextProps?: Partial<ListItemTextProps>;
     /** Defines props passed into main item's `ListItem` component. */
-    headerItemProps?: {
-        [x: string]: any;
-    };
+    headerItemProps?: Record<string, any>;
     /** Defines icon to be placed to the left of main item text. */
     headerIcon?: ReactElement;
     /** Overrides initial state (default: false) */

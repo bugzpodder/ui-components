@@ -14,9 +14,7 @@ type Props = {
   /** Props to pass to the button component. */
   buttonProps?: ButtonProps;
   /** Props to pass to the input component. */
-  inputProps?: {
-    [x: string]: any;
-  };
+  inputProps?: Record<string, any>;
   /**
    * The function used to retrieve the files that have been uploaded.
    * Note that the input value is of type FileList, a type internal to JS. See

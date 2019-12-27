@@ -40,7 +40,7 @@ type Props = {
 export const Navbar: React.FC<Props> = props => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
+  const toggleSidebar = (): void => {
     setIsSidebarOpen(isSidebarOpen => !isSidebarOpen);
   };
 

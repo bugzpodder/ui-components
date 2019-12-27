@@ -6,7 +6,7 @@ import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestAlert = props => {
+const TestAlert: React.FC<any> = props => {
   const { classes } = props;
   return (
     <TestWrapper>

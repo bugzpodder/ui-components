@@ -22,7 +22,7 @@ export const getCheckboxColumn = (
     selectedRows.length === data.length && data.length !== 0;
   const someAreChecked = selectedRows.length > 0;
 
-  const selectAll = () => {
+  const selectAll = (): void => {
     const areAllSelected = ids.every(id => selectedRows.includes(id));
     if (areAllSelected) {
       onSelect && onSelect([]);
@@ -31,7 +31,7 @@ export const getCheckboxColumn = (
     onSelect && onSelect(ids);
   };
 
-  const selectItem = (rowId: number | string) => {
+  const selectItem = (rowId: number | string): void => {
     const newSelection = [];
     if (selectedRows.includes(rowId)) {
       newSelection.push(...selectedRows.filter(item => item !== rowId));

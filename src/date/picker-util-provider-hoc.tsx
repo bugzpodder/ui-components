@@ -5,6 +5,7 @@ import {
   DATE_TIME_UNICODE_FORMAT,
   DATE_UNICODE_FORMAT,
 } from "@grailbio/lib";
+import { IUtils } from "@date-io/core/IUtils";
 import {
   MuiPickersContext,
   MuiPickersUtilsProvider,
@@ -33,14 +34,17 @@ export function wrapPickerUtilProvider<P>(
   };
 }
 
-export const useMuiPickersContext = () => {
+export const useMuiPickersContext = (): IUtils<any> => {
   const utils = useContext(MuiPickersContext);
   const oldUtils = useContext(OldMuiPickersContext);
 
   return utils || oldUtils;
 };
 
-export const useDateFormat = () => {
+export const useDateFormat = (): {
+  defaultDateFormat: string;
+  defaultDateTimeFormat: string;
+} => {
   const dateUtils = useMuiPickersContext();
   if (
     dateUtils &&

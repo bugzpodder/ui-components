@@ -81,7 +81,7 @@ export const TabbedTimelineCard: React.FC<Props> = props => {
   };
   const rows = tabContent.content || [];
 
-  const getTabs = () => {
+  const getTabs = (): React.ReactElement => {
     if (!selectedTab) {
       return null;
     }

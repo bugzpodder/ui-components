@@ -35,7 +35,7 @@ export const CommonMultiSelect: React.FC<CommonMultiSelectProps> = props => {
     ...otherProps
   } = props;
 
-  const onValueChange = values => {
+  const onValueChange = (values): void => {
     if (!values || values.length === 0 || selectType !== "creatable") {
       onChange(values == null ? [] : values);
       return;

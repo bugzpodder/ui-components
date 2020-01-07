@@ -32,7 +32,7 @@ const getLocalStorageKey = (
     : `omni-${pathname}-${name}`;
 };
 
-const setValuesToLocalStorage = (
+export const setOmniSearchValuesToLocalStorage = (
   pathname: string,
   searchDefs: OmniSearchDef[],
   searchValues: OmniSearchValues,
@@ -51,7 +51,7 @@ const setValuesToLocalStorage = (
   });
 };
 
-const getValuesFromLocalStorage = (
+const getOmniSearchValuesFromLocalStorage = (
   pathname: string,
   searchDefs: OmniSearchDef[],
 ): Map<number, string> => {
@@ -77,8 +77,6 @@ type Props = {
   setSearchOptions: (x0: OmniQueryOptionsV2) => any;
   /** Handles a request to update search options but not perform the search. */
   updateSearchOptions?: (x0: { searchOptions: SearchOptionV2[] }) => any;
-  /** getInitialValues gets values to default to for omni-search. */
-  getInitialValues?: (searchDefs: OmniSearchDef[]) => OmniSearchValues;
   /** Omni search change command queue */
   omniSearchCommands?: OmniSearchCommand[];
   /** Function to set omni search change command queue */
@@ -113,7 +111,6 @@ export const OmniSearchBar: React.FC<Props> = props => {
     children,
     location,
     history,
-    getInitialValues,
     setSearchOptions,
     updateSearchOptions,
     omniSearchCommands,
@@ -131,7 +128,7 @@ export const OmniSearchBar: React.FC<Props> = props => {
     (omniText: string): string => {
       try {
         const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
-        const storageValues = getValuesFromLocalStorage(
+        const storageValues = getOmniSearchValuesFromLocalStorage(
           location ? location.pathname : "",
           searchDefs,
         );
@@ -153,46 +150,15 @@ export const OmniSearchBar: React.FC<Props> = props => {
     [location, searchDefs],
   );
 
-  const mergeOmniWithInitialValues = useCallback(
-    (omniText: string): string => {
-      if (!getInitialValues) {
-        return omniText;
-      }
-      try {
-        const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
-        const initialValues = getInitialValues(searchDefs);
-        initialValues.forEach((value, key) => {
-          if (!searchValues.has(key)) {
-            searchValues.set(key, value);
-          }
-        });
-        return getOmniTextFromSearchValues(searchDefs, searchValues);
-      } catch (error) {
-        if (error.name === OMNI_ERROR) {
-          return omniText;
-        }
-        console.error(error);
-        setError(error.message);
-        return "";
-      }
-    },
-    [getInitialValues, searchDefs],
-  );
-
   const normalizeOmniText = useCallback(() => {
     let omniText = getQuery({ location })[OMNI_KEY] || "";
 
     if (!omniText) {
       omniText = mergeOmniWithLocalStorage(omniText);
     }
-    if (getInitialValues) {
-      omniText = mergeOmniWithInitialValues(omniText);
-    }
     return omniText;
   }, [
-    getInitialValues,
     location,
-    mergeOmniWithInitialValues,
     mergeOmniWithLocalStorage,
   ]);
 
@@ -200,7 +166,7 @@ export const OmniSearchBar: React.FC<Props> = props => {
     (omniText: string) => {
       try {
         const searchValues = getSearchValuesFromOmniText(searchDefs, omniText);
-        setValuesToLocalStorage(
+        setOmniSearchValuesToLocalStorage(
           location ? location.pathname : "",
           searchDefs,
           searchValues,

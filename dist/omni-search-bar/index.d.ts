@@ -1,2 +1,2 @@
-export { OmniSearchBar } from "./omni-search-bar";
+export { OmniSearchBar, setOmniSearchValuesToLocalStorage } from "./omni-search-bar";
 export { OmniChips } from "./omni-chips";

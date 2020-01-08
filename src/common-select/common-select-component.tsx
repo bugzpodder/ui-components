@@ -3,6 +3,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import React, { ComponentProps, ReactNode, useEffect, useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { CommonSelectOption } from "../types/select";
+import styles from "./common-select.module.scss";
 
 type Props = {
   /** The current value of common select, or an array of options for common multi-select */
@@ -89,6 +90,7 @@ export const CommonSelectComponent: React.FC<Props> = props => {
     variant,
     margin,
     isLoading = false,
+    classes = {},
     ...otherProps
   } = props;
 
@@ -106,6 +108,8 @@ export const CommonSelectComponent: React.FC<Props> = props => {
 
   return (
     <Autocomplete
+      className={styles.autocomplete}
+      classes={{ input: styles.input, inputRoot: styles.inputRoot, ...classes }}
       onChange={(_, value) => onChange(value)}
       options={selectType === "async" ? loadedOptions : options}
       renderOption={option => (

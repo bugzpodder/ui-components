@@ -1,0 +1,10 @@
+// TODO(lkong): MUI Autocomplete has "width: 0" set, which shortens
+// the text field input. Overwrite it back to "width: auto" for now.
+// Issue: https://github.com/mui-org/material-ui/issues/19125
+.autocomplete {
+  .inputRoot {
+    & .input {
+      width: auto;
+    }
+  }
+}

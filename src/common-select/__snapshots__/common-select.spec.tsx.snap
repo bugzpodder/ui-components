@@ -4,7 +4,7 @@ exports[`CommonSelect margin 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class=""
+    class="autocomplete"
     role="combobox"
   >
     <div
@@ -12,7 +12,7 @@ exports[`CommonSelect margin 1`] = `
     >
       
       <div
-        class=""
+        class="inputRoot"
       >
         <input
           aria-autocomplete="list"
@@ -20,7 +20,7 @@ exports[`CommonSelect margin 1`] = `
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class=""
+          class="input"
           data-testid="common-select-input"
           id="test-select-input"
           placeholder=""
@@ -96,7 +96,7 @@ exports[`CommonSelect variant 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class=""
+    class="autocomplete"
     role="combobox"
   >
     <div
@@ -104,7 +104,7 @@ exports[`CommonSelect variant 1`] = `
     >
       
       <div
-        class=""
+        class="inputRoot"
       >
         <input
           aria-autocomplete="list"
@@ -112,7 +112,7 @@ exports[`CommonSelect variant 1`] = `
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class=""
+          class="input"
           data-testid="common-select-input"
           id="test-select-input"
           placeholder=""
@@ -188,7 +188,7 @@ exports[`render creatable CommonSelect 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class=""
+    class="autocomplete"
     role="combobox"
   >
     <div
@@ -196,14 +196,14 @@ exports[`render creatable CommonSelect 1`] = `
     >
       
       <div
-        class=""
+        class="inputRoot"
       >
         <input
           aria-autocomplete="list"
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class=""
+          class="input"
           data-testid="common-select-input"
           id="select-input"
           placeholder=""
@@ -260,7 +260,7 @@ exports[`test disabled CommonSelect 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class=""
+    class="autocomplete"
     role="combobox"
   >
     <div
@@ -268,14 +268,14 @@ exports[`test disabled CommonSelect 1`] = `
     >
       
       <div
-        class=""
+        class="inputRoot"
       >
         <input
           aria-autocomplete="list"
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class=""
+          class="input"
           data-testid="common-select-input"
           disabled=""
           id="select-input-disabled"

@@ -3,6 +3,8 @@
 1. (BREAKING) Replace internal implementation of CommonSelect, CommonMultiSelect and CommonSuggest with Autocomplete. Upgrade dependency @material-ui/core >= 4.6.0.
 2. (BREAKING) wrapPickerUtilProvider calls must pass in a @date-io/moment or @date-io/date-fns utils.
 3. (BREAKING) Deprecate `getInitialValues` and related functionality in `OmniSearchBar`.
+4. (BREAKING) Removed legacy value from OmniSearch search values.
+5. (BREAKING) Removed Deprecated ts types and Renamed V2 suffix from rest.
 
 ## 1.1.0 - 2019-##-
 

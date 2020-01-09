@@ -6,12 +6,12 @@ import { History, Location } from "history";
 import {
   OMNI_ERROR,
   OMNI_KEY,
-  OmniQueryOptionsV2,
+  OmniQueryOptions,
   OmniSearchCommand,
   OmniSearchDef,
   OmniSearchValues,
   SET_OMNI_FIELD_COMMAND,
-  SearchOptionV2,
+  SearchOption,
   getOmniTextFromSearchValues,
   getQuery,
   getSearchOptions,
@@ -74,9 +74,9 @@ type Props = {
   /** Defines the search parameters. */
   searchDefs: OmniSearchDef[];
   /** Handles a request to search. */
-  setSearchOptions: (x0: OmniQueryOptionsV2) => any;
+  setSearchOptions: (x0: OmniQueryOptions) => any;
   /** Handles a request to update search options but not perform the search. */
-  updateSearchOptions?: (x0: { searchOptions: SearchOptionV2[] }) => any;
+  updateSearchOptions?: (x0: { searchOptions: SearchOption[] }) => any;
   /** Omni search change command queue */
   omniSearchCommands?: OmniSearchCommand[];
   /** Function to set omni search change command queue */

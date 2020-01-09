@@ -5,12 +5,12 @@ import {
   OMNI_KEY,
   OmniSearchCommand,
   SET_OMNI_FIELD_COMMAND,
-  SearchOptionV2,
+  SearchOption,
 } from "@grailbio/lib";
 
 type Props = {
   /** Search Options. */
-  searchOptions: SearchOptionV2[];
+  searchOptions: SearchOption[];
   /** Function to set searchOptions */
   addOmniSearchCommand?: (x0: OmniSearchCommand) => any;
 };

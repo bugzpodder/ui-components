@@ -1,4 +1,3 @@
-export * from "./alert";
 export * from "./avatar-icon";
 export * from "./common-card";
 export { BreastCancerRibbon } from "./logos";
@@ -11,7 +10,6 @@ export * from "./common-switch";
 export * from "./page";
 export * from "./date";
 export * from "./link";
-export { Navbar } from "./__deprecated__/navbar";
 export * from "./navbar";
 export * from "./notification-center";
 export * from "./pdf-viewer";

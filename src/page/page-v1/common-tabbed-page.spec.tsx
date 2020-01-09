@@ -1,7 +1,8 @@
 import "@testing-library/jest-dom/extend-expect";
 import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
-import { Alert, CommonSwitch } from "../..";
+import { Alert } from "@material-ui/lab";
+import { CommonSwitch } from "../..";
 import { CommonTabbedPage } from "./common-tabbed-page";
 import { PageConfig } from "../../types/card";
 import { TestWrapper } from "../../test-utils";
@@ -17,7 +18,7 @@ const pageConfigs: PageConfig[] = [
     Component: Alert,
     componentProps: {
       "data-testid": "alert-one",
-      message: "Tab One!",
+      children: "Tab One!",
     },
     tabClasses: {
       root: "test-tab-root",
@@ -30,7 +31,7 @@ const pageConfigs: PageConfig[] = [
     Component: Alert,
     componentProps: {
       "data-testid": "alert-two",
-      message: "Tab Two!",
+      children: "Tab Two!",
     },
   },
   {

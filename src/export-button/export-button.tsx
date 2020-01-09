@@ -10,7 +10,7 @@ import TextField from "@material-ui/core/TextField";
 import format from "date-fns/format";
 import isString from "lodash/isString";
 import styles from "./export-button.module.scss";
-import { Alert } from "../alert";
+import { Alert } from "@material-ui/lab";
 import { CommonDialog } from "../common-dialog";
 import { DATE_TIME_UNICODE_FORMAT, ExportableColumn } from "@grailbio/lib";
 import { PagedTableColumn } from "../types/paged-table";
@@ -159,11 +159,9 @@ export const ExportButton: React.FC<Props> = props => {
             value={DATA_SOURCE.BULK_ROWS}
           />
           {dataSource === DATA_SOURCE.BULK_ROWS && (
-            <Alert
-              className={styles.warning}
-              color="warning"
-              message="This action may be slow."
-            />
+            <Alert className={styles.warning} severity="warning">
+              This action may be slow.
+            </Alert>
           )}
         </>
       ),

@@ -1,7 +1,8 @@
 ### Example
 
 ```js
-import { Alert, CommonTabbedPage } from "@grailbio/components";
+import { Alert } from "@material-ui/lab";
+import { CommonTabbedPage } from "@grailbio/components";
 import { ExampleBlock, ExampleWrapper } from "../test-utils";
 import { useState } from "react";
 
@@ -65,15 +66,22 @@ uses CSS anchors and these do not work on styleguidist.
 
 ```js
 import { useState } from "react";
-import { Alert, CommonSwitch, CommonTabbedPage } from "@grailbio/components";
+import { CommonSwitch, CommonTabbedPage } from "@grailbio/components";
 import { ExampleBlock, ExampleWrapper } from "../../test-utils";
+import { Alert } from "@material-ui/lab";
 
 const TabOneComponent = () => {
   return (
     <>
-      <Alert color="success" message="Tab One Element A!" id="elementA" />
-      <Alert color="success" message="Tab One Element B!" id="elementB" />
-      <Alert color="success" message="Tab One Element C!" id="elementC" />
+      <Alert severity="success" id="elementA">
+        Tab One Element A!
+      </Alert>
+      <Alert severity="success" id="elementB">
+        Tab One Element B!
+      </Alert>
+      <Alert severity="success" id="elementC">
+        Tab One Element C!
+      </Alert>
     </>
   );
 };
@@ -81,9 +89,15 @@ const TabOneComponent = () => {
 const TabTwoComponent = () => {
   return (
     <>
-      <Alert color="warning" message="Tab Two Element I!" id="elementI" />
-      <Alert color="warning" message="Tab Two Element II!" id="elementII" />
-      <Alert color="warning" message="Tab Two Element III!" id="elementIII" />
+      <Alert severity="warning" id="elementI">
+        Tab Two Element I!
+      </Alert>
+      <Alert severity="warning" id="elementII">
+        Tab Two Element II!
+      </Alert>
+      <Alert severity="warning" id="elementIII">
+        Tab Two Element III!
+      </Alert>
     </>
   );
 };

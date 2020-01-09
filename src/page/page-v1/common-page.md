@@ -23,7 +23,9 @@ const ExampleCommonPage = () => {
         },
       ]}
     >
-      <ReadOnlyTextField>Any content can go inside of CommonPage</ReadOnlyTextField>
+      <ReadOnlyTextField>
+        Any content can go inside of CommonPage
+      </ReadOnlyTextField>
     </CommonPage>
   );
 };
@@ -39,8 +41,9 @@ matches the `key` given in the object in `menuContents`. However, it
 uses CSS anchors and these do not work on styleguidist.
 
 ```js
-import { Alert, CommonSwitch, CommonPage } from "@grailbio/components";
+import { CommonSwitch, CommonPage } from "@grailbio/components";
 import { ExampleWrapper } from "../test-utils";
+import { Alert } from "@material-ui/lab";
 
 const ExampleCommonPage = () => {
   return (
@@ -73,9 +76,15 @@ const ExampleCommonPage = () => {
       ]}
     >
       <div>
-        <Alert color="success" message="Element A!" id="elementA" />
-        <Alert color="success" message="Element B!" id="elementB" />
-        <Alert color="success" message="Element C!" id="elementC" />
+        <Alert serverity="success" id="elementA">
+          Element A!
+        </Alert>
+        <Alert severity="success" id="elementB">
+          Element B!
+        </Alert>
+        <Alert severity="success" id="elementC">
+          Element C!
+        </Alert>
       </div>
     </CommonPage>
   );

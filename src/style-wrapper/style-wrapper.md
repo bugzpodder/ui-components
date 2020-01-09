@@ -2,7 +2,7 @@
 
 ```js
 import Button from "@material-ui/core/Button";
-import { Alert } from "@grailbio/components";
+import { Alert } from "@material-ui/lab";
 import styles from "../test-utils/example-styles.module.scss";
 import { StyleWrapper } from "./";
 
@@ -18,10 +18,18 @@ const ExampleApp = () => (
       <Button className={styles.spacing} variant="contained" color="default">
         Default
       </Button>
-      <Alert className={styles.spacing} color="success" message="Success!" />
-      <Alert className={styles.spacing} color="info" message="Info!" />
-      <Alert className={styles.spacing} color="warning" message="Warning!" />
-      <Alert className={styles.spacing} color="error" message="Error!" />
+      <Alert className={styles.spacing} severity="success">
+        Success!
+      </Alert>
+      <Alert className={styles.spacing} severity="info">
+        Info!
+      </Alert>
+      <Alert className={styles.spacing} severity="warning">
+        Warning!
+      </Alert>
+      <Alert className={styles.spacing} severity="error">
+        Error!
+      </Alert>
     </div>
   </StyleWrapper>
 );

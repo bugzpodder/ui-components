@@ -3,7 +3,7 @@ import MockDate from "mockdate";
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { MemoryRouter } from "react-router-dom";
-import { NavbarV2 } from "./navbar";
+import { Navbar } from "./navbar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "./util";
@@ -24,7 +24,7 @@ const TestNavbar: React.FC<any> = props => {
   return (
     <TestWrapper>
       <MemoryRouter>
-        <NavbarV2
+        <Navbar
           sidebarContent={sidebarContent}
           isProduction={isProduction}
           domain={LIMS}

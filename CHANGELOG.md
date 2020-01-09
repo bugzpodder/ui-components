@@ -4,7 +4,10 @@
 2. (BREAKING) wrapPickerUtilProvider calls must pass in a @date-io/moment or @date-io/date-fns utils.
 3. (BREAKING) Deprecate `getInitialValues` and related functionality in `OmniSearchBar`.
 4. (BREAKING) Removed legacy value from OmniSearch search values.
-5. (BREAKING) Removed Deprecated ts types and Renamed V2 suffix from rest.
+5. (BREAKING) Deprecated ExportTableButton.
+6. (BREAKING) Deprecated Alert. Use Alert from `@material-ui/lab` instead.
+7. (BREAKING) Removed deprecated className prop from CommonCard.
+8. (BREAKING) Remove deprecated Navbar and renamed NavbarV2 to Navbar.
 
 ## 1.1.0 - 2019-##-
 

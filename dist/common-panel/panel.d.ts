@@ -12,8 +12,6 @@ declare type Props = {
      *  - body: the component's content wrapper
      */
     classes?: CommonPanelClasses;
-    /** DEPRECATED: DO NOT USE */
-    className?: string;
     /** Determines the color of the panel header. Options include:
      *
      * - default: colorless,

@@ -32,5 +32,5 @@ declare type Props = {
     /** Defines the pathname. */
     currentPath: string;
 };
-export declare const NavbarV2: React.FC<Props>;
+export declare const Navbar: React.FC<Props>;
 export {};

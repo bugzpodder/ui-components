@@ -1,9 +1,11 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
 import React from "react";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-
 import {
+  grailBlue,
+  grailGold,
   grailGrayLighter,
+  grailGreen,
   grailPurpleDark,
   grailPurpleMed,
   grailRed,
@@ -26,6 +28,15 @@ const customTheme = createMuiTheme({
     error: {
       main: grailRed,
       contrastText: grailGrayLighter,
+    },
+    success: {
+      main: grailGreen,
+    },
+    info: {
+      main: grailBlue,
+    },
+    warning: {
+      main: grailGold,
     },
   },
   overrides: {

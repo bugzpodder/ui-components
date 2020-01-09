@@ -16,8 +16,6 @@ type Props = {
    *  - body: the component's content wrapper
    */
   classes?: CommonPanelClasses;
-  /** DEPRECATED: DO NOT USE */
-  className?: string;
   /** Determines the color of the panel header. Options include:
    *
    * - default: colorless,
@@ -38,13 +36,12 @@ export const CommonPanel: React.FC<Props> = props => {
     color = "default",
     children,
     variant = "subtitle1",
-    className = "",
     ...panelProps
   } = props;
   return (
     <div
       data-testid="panel"
-      className={classNames({ [styles.panel]: true }, className, classes.root)}
+      className={classNames({ [styles.panel]: true }, classes.root)}
       {...panelProps}
     >
       <div

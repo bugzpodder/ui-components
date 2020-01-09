@@ -1,7 +1,8 @@
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
-import { Alert, CommonSwitch } from "../..";
+import { Alert } from "@material-ui/lab";
 import { CommonPage } from "./common-page";
+import { CommonSwitch } from "../..";
 import { TestWrapper } from "../../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
@@ -12,7 +13,7 @@ const TestCommonPage: React.FC<any> = props => {
     <TestWrapper>
       <CommonPage
         {...props}
-        subheader={<Alert message="Some alert message" color="success" />}
+        subheader={<Alert severity="success">Some alert message</Alert>}
         value="one"
       >
         Some content here.

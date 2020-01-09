@@ -1,15 +1,15 @@
 import React from "react";
 import { History, Location } from "history";
-import { OmniQueryOptionsV2, OmniSearchCommand, OmniSearchDef, SearchOptionV2 } from "@grailbio/lib";
+import { OmniQueryOptions, OmniSearchCommand, OmniSearchDef, SearchOption } from "@grailbio/lib";
 export declare const setOmniSearchValuesToLocalStorage: (pathname: string, searchDefs: OmniSearchDef[], searchValues: Map<number, string>) => void;
 declare type Props = {
     /** Defines the search parameters. */
     searchDefs: OmniSearchDef[];
     /** Handles a request to search. */
-    setSearchOptions: (x0: OmniQueryOptionsV2) => any;
+    setSearchOptions: (x0: OmniQueryOptions) => any;
     /** Handles a request to update search options but not perform the search. */
     updateSearchOptions?: (x0: {
-        searchOptions: SearchOptionV2[];
+        searchOptions: SearchOption[];
     }) => any;
     /** Omni search change command queue */
     omniSearchCommands?: OmniSearchCommand[];

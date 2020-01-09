@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
-import { Alert } from "..";
+import { Alert } from "@material-ui/lab";
 import { AvatarIcon } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
@@ -30,7 +30,7 @@ test("render avatar with menu", () => {
           menu: "test-menu",
         }}
       />
-      <Alert message="test" />
+      <Alert>test</Alert>
     </TestWrapper>,
   );
 

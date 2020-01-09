@@ -24,7 +24,9 @@ const ExampleCommonPage = () => {
         },
       ]}
     >
-      <ReadOnlyTextField>Any content can go inside of CommonPage</ReadOnlyTextField>
+      <ReadOnlyTextField>
+        Any content can go inside of CommonPage
+      </ReadOnlyTextField>
     </CommonPageV2>
   );
 };
@@ -50,9 +52,15 @@ const ExampleCommonPage = () => {
           onClick: () => console.debug("Button One was clicked."),
         },
       ]}
-      specialActions={<Alert color="warning" variant="text" message="Watch out!!!" />}
+      specialActions={
+        <Alert severity="warning" variant="text">
+          Watch out!!!
+        </Alert>
+      }
     >
-      <ReadOnlyTextField>Any content can go inside of CommonPage</ReadOnlyTextField>
+      <ReadOnlyTextField>
+        Any content can go inside of CommonPage
+      </ReadOnlyTextField>
     </CommonPageV2>
   );
 };

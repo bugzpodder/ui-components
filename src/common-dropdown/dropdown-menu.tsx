@@ -11,6 +11,7 @@ import React, {
 } from "react";
 import styles from "./dropdown-menu.module.scss";
 import { ClickableItem } from "../types/dropdown";
+import { ExternalLink } from "../link";
 import { Link } from "react-router-dom";
 import { PopoverOrigin } from "@material-ui/core/Popover";
 
@@ -105,6 +106,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                 isEnabled = true,
                 href,
                 "data-testid": menuItemDataTestId,
+                isExternal = false,
               },
               index,
             ) => {
@@ -125,6 +127,17 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                 </MenuItem>
               );
               if (href) {
+                if (isExternal) {
+                  return (
+                    <ExternalLink
+                      href={href}
+                      className={styles.link}
+                      key={`dropdown-item-${index}`}
+                    >
+                      {menuItem}
+                    </ExternalLink>
+                  );
+                }
                 return (
                   <Link
                     to={href}

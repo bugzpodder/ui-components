@@ -75,7 +75,7 @@ exports[`render full simple table 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="First Datum-0"
           >
             <span
@@ -136,7 +136,7 @@ exports[`render full simple table 1`] = `
           data-testid="Fourth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Fourth Datum-0"
           >
             <span
@@ -197,7 +197,7 @@ exports[`render full simple table 1`] = `
           data-testid="Seventh Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventh Datum-0"
           >
             <span
@@ -257,7 +257,7 @@ exports[`render full simple table 1`] = `
           data-testid="Tenth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Tenth Datum-0"
           >
             <span
@@ -317,7 +317,7 @@ exports[`render full simple table 1`] = `
           data-testid="Thirteenth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
@@ -377,7 +377,7 @@ exports[`render full simple table 1`] = `
           data-testid="Seventeenth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventeenth Datum-0"
           >
             <span
@@ -457,7 +457,6 @@ exports[`render loading simple table 1`] = `
           <th
             class="tableHeader columnOne-header"
             scope="col"
-            style="padding-left: 20px;"
           >
             Column One
           </th>
@@ -483,7 +482,6 @@ exports[`render loading simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="0-0"
-            style="padding-left: 20px;"
           >
             <span>
               First Datum
@@ -511,7 +509,6 @@ exports[`render loading simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="1-0"
-            style="padding-left: 20px;"
           >
             <span>
               Fourth Datum
@@ -539,7 +536,6 @@ exports[`render loading simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="2-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventh Datum
@@ -567,7 +563,6 @@ exports[`render loading simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="3-0"
-            style="padding-left: 20px;"
           >
             <span>
               Tenth Datum
@@ -595,7 +590,6 @@ exports[`render loading simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="4-0"
-            style="padding-left: 20px;"
           >
             <span>
               Thirteenth Datum
@@ -623,7 +617,6 @@ exports[`render loading simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="5-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventeenth Datum
@@ -678,7 +671,6 @@ exports[`render simple table 1`] = `
           <th
             class="tableHeader columnOne-header"
             scope="col"
-            style="padding-left: 20px;"
           >
             Column One
           </th>
@@ -704,7 +696,6 @@ exports[`render simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="0-0"
-            style="padding-left: 20px;"
           >
             <span>
               First Datum
@@ -732,7 +723,6 @@ exports[`render simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="1-0"
-            style="padding-left: 20px;"
           >
             <span>
               Fourth Datum
@@ -760,7 +750,6 @@ exports[`render simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="2-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventh Datum
@@ -788,7 +777,6 @@ exports[`render simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="3-0"
-            style="padding-left: 20px;"
           >
             <span>
               Tenth Datum
@@ -816,7 +804,6 @@ exports[`render simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="4-0"
-            style="padding-left: 20px;"
           >
             <span>
               Thirteenth Datum
@@ -844,7 +831,6 @@ exports[`render simple table 1`] = `
           <td
             class="tableCell"
             data-cell-id="5-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventeenth Datum
@@ -946,7 +932,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="First Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="First Datum-0"
           >
             <span
@@ -1007,7 +993,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Fourth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Fourth Datum-0"
           >
             <span
@@ -1068,7 +1054,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Seventh Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventh Datum-0"
           >
             <span
@@ -1128,7 +1114,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Tenth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Tenth Datum-0"
           >
             <span
@@ -1188,7 +1174,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Thirteenth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
@@ -1248,7 +1234,7 @@ exports[`render simple table with all items selected 1`] = `
           data-testid="Seventeenth Datum"
         >
           <td
-            class="tableCell singleIcon"
+            class="tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventeenth Datum-0"
           >
             <span
@@ -1328,7 +1314,6 @@ exports[`render simple table with column visibility chooser 1`] = `
           <th
             class="tableHeader columnOne-header"
             scope="col"
-            style="padding-left: 20px;"
           >
             Column One
           </th>
@@ -1382,7 +1367,6 @@ exports[`render simple table with column visibility chooser 1`] = `
           <td
             class="tableCell"
             data-cell-id="0-0"
-            style="padding-left: 20px;"
           >
             <span>
               First Datum
@@ -1413,7 +1397,6 @@ exports[`render simple table with column visibility chooser 1`] = `
           <td
             class="tableCell"
             data-cell-id="1-0"
-            style="padding-left: 20px;"
           >
             <span>
               Fourth Datum
@@ -1444,7 +1427,6 @@ exports[`render simple table with column visibility chooser 1`] = `
           <td
             class="tableCell"
             data-cell-id="2-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventh Datum
@@ -1475,7 +1457,6 @@ exports[`render simple table with column visibility chooser 1`] = `
           <td
             class="tableCell"
             data-cell-id="3-0"
-            style="padding-left: 20px;"
           >
             <span>
               Tenth Datum
@@ -1506,7 +1487,6 @@ exports[`render simple table with column visibility chooser 1`] = `
           <td
             class="tableCell"
             data-cell-id="4-0"
-            style="padding-left: 20px;"
           >
             <span>
               Thirteenth Datum
@@ -1537,7 +1517,6 @@ exports[`render simple table with column visibility chooser 1`] = `
           <td
             class="tableCell"
             data-cell-id="5-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventeenth Datum
@@ -1588,7 +1567,6 @@ exports[`render simple table with column visibility chooser 2`] = `
           <th
             class="tableHeader columnOne-header"
             scope="col"
-            style="padding-left: 20px;"
           >
             Column One
           </th>
@@ -1642,7 +1620,6 @@ exports[`render simple table with column visibility chooser 2`] = `
           <td
             class="tableCell"
             data-cell-id="0-0"
-            style="padding-left: 20px;"
           >
             <span>
               First Datum
@@ -1673,7 +1650,6 @@ exports[`render simple table with column visibility chooser 2`] = `
           <td
             class="tableCell"
             data-cell-id="1-0"
-            style="padding-left: 20px;"
           >
             <span>
               Fourth Datum
@@ -1704,7 +1680,6 @@ exports[`render simple table with column visibility chooser 2`] = `
           <td
             class="tableCell"
             data-cell-id="2-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventh Datum
@@ -1735,7 +1710,6 @@ exports[`render simple table with column visibility chooser 2`] = `
           <td
             class="tableCell"
             data-cell-id="3-0"
-            style="padding-left: 20px;"
           >
             <span>
               Tenth Datum
@@ -1766,7 +1740,6 @@ exports[`render simple table with column visibility chooser 2`] = `
           <td
             class="tableCell"
             data-cell-id="4-0"
-            style="padding-left: 20px;"
           >
             <span>
               Thirteenth Datum
@@ -1797,7 +1770,6 @@ exports[`render simple table with column visibility chooser 2`] = `
           <td
             class="tableCell"
             data-cell-id="5-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventeenth Datum
@@ -1846,7 +1818,6 @@ exports[`render simple table with column visibility chooser 3`] = `
           <th
             class="tableHeader columnOne-header"
             scope="col"
-            style="padding-left: 20px;"
           >
             Column One
           </th>
@@ -1894,7 +1865,6 @@ exports[`render simple table with column visibility chooser 3`] = `
           <td
             class="tableCell"
             data-cell-id="0-0"
-            style="padding-left: 20px;"
           >
             <span>
               First Datum
@@ -1919,7 +1889,6 @@ exports[`render simple table with column visibility chooser 3`] = `
           <td
             class="tableCell"
             data-cell-id="1-0"
-            style="padding-left: 20px;"
           >
             <span>
               Fourth Datum
@@ -1944,7 +1913,6 @@ exports[`render simple table with column visibility chooser 3`] = `
           <td
             class="tableCell"
             data-cell-id="2-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventh Datum
@@ -1969,7 +1937,6 @@ exports[`render simple table with column visibility chooser 3`] = `
           <td
             class="tableCell"
             data-cell-id="3-0"
-            style="padding-left: 20px;"
           >
             <span>
               Tenth Datum
@@ -1994,7 +1961,6 @@ exports[`render simple table with column visibility chooser 3`] = `
           <td
             class="tableCell"
             data-cell-id="4-0"
-            style="padding-left: 20px;"
           >
             <span>
               Thirteenth Datum
@@ -2019,7 +1985,6 @@ exports[`render simple table with column visibility chooser 3`] = `
           <td
             class="tableCell"
             data-cell-id="5-0"
-            style="padding-left: 20px;"
           >
             <span>
               Seventeenth Datum
@@ -2062,7 +2027,6 @@ exports[`render simple table with no results 1`] = `
           <th
             class="tableHeader columnOne-header"
             scope="col"
-            style="padding-left: 100px;"
           >
             Column One
           </th>
@@ -2116,7 +2080,6 @@ exports[`render simple table with no results and is loading 1`] = `
           <th
             class="tableHeader columnOne-header"
             scope="col"
-            style="padding-left: 20px;"
           >
             Column One
           </th>

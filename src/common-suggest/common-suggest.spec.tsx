@@ -6,7 +6,7 @@ import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-// TODO(jsingh): Add more test coverage.
+// TODO(nsawas): Add more test coverage.
 test("render CommonSuggest", () => {
   const { container } = render(
     <TestWrapper>

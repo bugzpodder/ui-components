@@ -74,7 +74,7 @@ exports[`render full simple table 1`] = `
               style="height: 300px; width: 50px;"
             >
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="First Datum-0"
                 style="position: absolute; left: 0px; top: 0px; height: 50px; width: 50px;"
               >
@@ -109,7 +109,7 @@ exports[`render full simple table 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Fourth Datum-0"
                 style="position: absolute; left: 0px; top: 50px; height: 50px; width: 50px;"
               >
@@ -144,7 +144,7 @@ exports[`render full simple table 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Seventh Datum-0"
                 style="position: absolute; left: 0px; top: 100px; height: 50px; width: 50px;"
               >
@@ -178,7 +178,7 @@ exports[`render full simple table 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Tenth Datum-0"
                 style="position: absolute; left: 0px; top: 150px; height: 50px; width: 50px;"
               >
@@ -212,7 +212,7 @@ exports[`render full simple table 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Thirteenth Datum-0"
                 style="position: absolute; left: 0px; top: 200px; height: 50px; width: 50px;"
               >
@@ -246,7 +246,7 @@ exports[`render full simple table 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Seventeenth Datum-0"
                 style="position: absolute; left: 0px; top: 250px; height: 50px; width: 50px;"
               >
@@ -393,7 +393,7 @@ exports[`render full simple table 2`] = `
               style="height: 300px; width: 200px;"
             >
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="First Datum-0"
                 style="position: absolute; left: 0px; top: 0px; height: 50px; width: 50px;"
               >
@@ -437,7 +437,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Fourth Datum-0"
                 style="position: absolute; left: 0px; top: 50px; height: 50px; width: 50px;"
               >
@@ -481,7 +481,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventh Datum-0"
                 style="position: absolute; left: 0px; top: 100px; height: 50px; width: 50px;"
               >
@@ -524,7 +524,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Tenth Datum-0"
                 style="position: absolute; left: 0px; top: 150px; height: 50px; width: 50px;"
               >
@@ -567,7 +567,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Thirteenth Datum-0"
                 style="position: absolute; left: 0px; top: 200px; height: 50px; width: 50px;"
               >
@@ -610,7 +610,7 @@ exports[`render full simple table 2`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventeenth Datum-0"
                 style="position: absolute; left: 0px; top: 250px; height: 50px; width: 50px;"
               >
@@ -820,7 +820,7 @@ exports[`render large simple table with all items selected 1`] = `
               style="height: 300px; width: 50px;"
             >
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="First Datum-0"
                 style="position: absolute; left: 0px; top: 0px; height: 50px; width: 50px;"
               >
@@ -855,7 +855,7 @@ exports[`render large simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Fourth Datum-0"
                 style="position: absolute; left: 0px; top: 50px; height: 50px; width: 50px;"
               >
@@ -890,7 +890,7 @@ exports[`render large simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Seventh Datum-0"
                 style="position: absolute; left: 0px; top: 100px; height: 50px; width: 50px;"
               >
@@ -924,7 +924,7 @@ exports[`render large simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Tenth Datum-0"
                 style="position: absolute; left: 0px; top: 150px; height: 50px; width: 50px;"
               >
@@ -958,7 +958,7 @@ exports[`render large simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Thirteenth Datum-0"
                 style="position: absolute; left: 0px; top: 200px; height: 50px; width: 50px;"
               >
@@ -992,7 +992,7 @@ exports[`render large simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon isRightmostFrozenColumn"
+                class="checkBoxColumn largeWideTableCell singleIcon isRightmostFrozenColumn"
                 data-cell-id="Seventeenth Datum-0"
                 style="position: absolute; left: 0px; top: 250px; height: 50px; width: 50px;"
               >
@@ -1420,7 +1420,7 @@ exports[`render large wide simple table with all items selected 1`] = `
               style="height: 300px; width: 200px;"
             >
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="First Datum-0"
                 style="position: absolute; left: 0px; top: 0px; height: 50px; width: 50px;"
               >
@@ -1464,7 +1464,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Fourth Datum-0"
                 style="position: absolute; left: 0px; top: 50px; height: 50px; width: 50px;"
               >
@@ -1508,7 +1508,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventh Datum-0"
                 style="position: absolute; left: 0px; top: 100px; height: 50px; width: 50px;"
               >
@@ -1551,7 +1551,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Tenth Datum-0"
                 style="position: absolute; left: 0px; top: 150px; height: 50px; width: 50px;"
               >
@@ -1594,7 +1594,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Thirteenth Datum-0"
                 style="position: absolute; left: 0px; top: 200px; height: 50px; width: 50px;"
               >
@@ -1637,7 +1637,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                 </span>
               </div>
               <div
-                class="largeWideTableCell singleIcon"
+                class="checkBoxColumn largeWideTableCell singleIcon"
                 data-cell-id="Seventeenth Datum-0"
                 style="position: absolute; left: 0px; top: 250px; height: 50px; width: 50px;"
               >

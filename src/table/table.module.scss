@@ -3,10 +3,13 @@
 @import "./highlighted-row.scss";
 @import "../styles/scrollbar.scss";
 
-%common-table-cell {
-  padding: 4px;
-  @include media-breakpoint-up(xl) {
-    padding: 4px 48px 4px 24px;
+@mixin single-icon-styling {
+  &.singleIcon {
+    padding: 0;
+    width: 80px;
+    &.iconInHeaderOnly {
+      width: 60px;
+    }
   }
 }
 
@@ -90,21 +93,21 @@ $scrollbar-width: 7px;
     padding: 50px;
     text-align: center;
   }
-  .singleIcon {
-    padding: 0;
-    width: 80px;
-    &.iconInHeaderOnly {
-      width: 60px;
-    }
-    @include media-breakpoint-up(md) {
-      padding: 0 10px 0 8px;
-    }
-  }
+  
 
   .tableHead {
     .tableHeader {
-      @extend %common-table-cell;
+      @include single-icon-styling;
+      
+      &.checkBoxColumn {
+        padding-top: 0;
+        padding-bottom: 0;
 
+        .checkBox {
+          visibility: hidden;
+        }
+      }
+      
       &.noWrap {
         white-space: nowrap;
       }
@@ -113,12 +116,21 @@ $scrollbar-width: 7px;
 
   .tableRow {
     height: 48px;
-  }
+    
+    .checkBoxColumn {
+      padding-top: 0;
+      padding-bottom: 0;
 
-  .tableCell {
-    @extend %common-table-cell;
-    max-width: 200px;
-    word-wrap: break-word;
+      .checkBox {
+        visibility: hidden;
+      }
+    }
+
+    .tableCell {
+      max-width: 200px;
+      word-wrap: break-word;
+      @include single-icon-styling;
+    }
   }
 }
 .autosizeHeight {

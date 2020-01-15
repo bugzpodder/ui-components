@@ -20,7 +20,7 @@ declare type Props = {
     shadeOnHover: boolean;
     hasColumnVisibilityChooser?: boolean;
     wrapHeader?: boolean;
-    paddingLeft?: number;
+    adjustWithSelectableTable?: boolean;
 };
 export declare const TableComponent: React.FC<Props>;
 export {};

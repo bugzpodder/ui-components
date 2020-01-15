@@ -9,8 +9,7 @@ declare type Props = {
     className?: string | Function;
     selectionProps: SelectionProps;
     hasColumnVisibilityChooser: boolean;
-    canSelect: boolean;
-    paddingLeft: number;
+    adjustWithSelectableTable: boolean;
 };
 export declare const PagedTableRow: React.FC<Props>;
 export {};

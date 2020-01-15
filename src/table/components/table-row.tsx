@@ -18,8 +18,7 @@ type Props = {
   className?: string | Function;
   selectionProps: SelectionProps;
   hasColumnVisibilityChooser: boolean;
-  canSelect: boolean;
-  paddingLeft: number;
+  adjustWithSelectableTable: boolean;
 };
 
 export const PagedTableRow: React.FC<Props> = props => {
@@ -31,8 +30,6 @@ export const PagedTableRow: React.FC<Props> = props => {
     selectionProps,
     shadeOnHover,
     hasColumnVisibilityChooser,
-    canSelect,
-    paddingLeft,
   } = props;
   const { highlightedRowId, onHighlightRow } = selectionProps;
   let { className } = props;
@@ -101,9 +98,6 @@ export const PagedTableRow: React.FC<Props> = props => {
             <TableCell
               key={itemKey}
               data-cell-id={itemKey}
-              style={{
-                paddingLeft: !canSelect && index === 0 && `${paddingLeft}px`,
-              }}
               className={classNames(styles.tableCell, className, {
                 [styles.singleIcon]: isSingleIcon || isCheckboxColumn,
               })}

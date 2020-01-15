@@ -64,9 +64,11 @@
 47. Add support for date-fns library for Date/Time pickers.
 48. Add PDFViewer Component.
 49. Simple / Paged tables can force headers to inline as opposed to wrap text.
-50. Simple / Paged tables support adding padding-left to non-selectable tables.
-51. Simple / Paged tables have standardized header height.
-52. Add pollyfill to TabbedPageV2 for ResizeObserver.
+50. Simple / Paged tables have standardized header height.
+51. Add pollyfill to TabbedPageV2 for ResizeObserver.
+52. Standardize table header height.
+53. Fix selection logic to uncheck all checkboxes when checkbox header is indeterminate.
+54. Tables now support `adjustToSelectableTable`, which will align non-selectable table's first row to where it would be if there were a checkbox column to its left.
 
 ## 1.0.0 - 2019-06-17
 

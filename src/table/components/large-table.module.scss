@@ -29,7 +29,7 @@ $transparent-white: rgba(255, 255, 255, 0);
     border-bottom: 1px solid $grail-gray-light-color;
   }
   .row {
-    // FIXME (jsingh) width 100% !important overrides react-virtualized table inline width style.
+    // FIXME (nsawas) width 100% !important overrides react-virtualized table inline width style.
     // Check and remove as needed.
     width: 100% !important;
   }

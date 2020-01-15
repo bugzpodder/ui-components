@@ -31,7 +31,7 @@ type Props = {
   shadeOnHover: boolean;
   hasColumnVisibilityChooser?: boolean;
   wrapHeader?: boolean;
-  paddingLeft?: number;
+  adjustWithSelectableTable?: boolean;
 };
 
 export const TableComponent: React.FC<Props> = props => {
@@ -51,7 +51,7 @@ export const TableComponent: React.FC<Props> = props => {
     shadeOnHover,
     hasColumnVisibilityChooser = false,
     wrapHeader = true,
-    paddingLeft = 20,
+    adjustWithSelectableTable = false,
     ...tableProps
   } = props;
   const sortingProps = { onSort, tableOptions };
@@ -91,11 +91,15 @@ export const TableComponent: React.FC<Props> = props => {
     ...column,
     isVisible: !hasColumnVisibilityChooser || columnVisibility[column.index],
   }));
-  if (onSelect) {
-    tableColumns = [getCheckboxColumn(selectionProps), ...tableColumns];
+  const canSelect = !!(onSelect && selectedRows);
+  const shouldAdjustTable = !canSelect && adjustWithSelectableTable;
+  if (onSelect || shouldAdjustTable) {
+    tableColumns = [
+      getCheckboxColumn(selectionProps, shouldAdjustTable),
+      ...tableColumns,
+    ];
   }
   const hasHeaders = tableColumns.find(column => column.Header);
-  const canSelect = !!(onSelect && selectedRows);
   return (
     <Table
       tabIndex={0}
@@ -106,8 +110,7 @@ export const TableComponent: React.FC<Props> = props => {
     >
       {hasHeaders && (
         <TableHeader
-          canSelect={canSelect}
-          paddingLeft={paddingLeft}
+          adjustWithSelectableTable={adjustWithSelectableTable}
           wrapHeader={wrapHeader}
           columns={tableColumns}
           sortingProps={sortingProps}
@@ -123,9 +126,8 @@ export const TableComponent: React.FC<Props> = props => {
             const rowId = getRowId(idKey, instance, index);
             return (
               <PagedTableRow
-                paddingLeft={paddingLeft}
+                adjustWithSelectableTable={adjustWithSelectableTable}
                 selectionProps={selectionProps}
-                canSelect={canSelect}
                 key={index}
                 instance={instance}
                 columns={tableColumns}

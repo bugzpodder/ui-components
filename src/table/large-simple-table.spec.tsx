@@ -36,7 +36,7 @@ test("render large simple table with set row height", () => {
   expect(container).toMatchSnapshot();
 });
 
-// FIXME(jsingh): It seems like the table contents are not rendered initially.
+// FIXME(nsawas): It seems like the table contents are not rendered initially.
 // This test fails due to not calling `mockRowHeight`, since there are no rows
 // To begin with. `react-virtualized` is a bit of a problem. Need to revisit.
 test.skip("render large simple table with dynamic row height", () => {

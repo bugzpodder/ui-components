@@ -41,7 +41,7 @@ test("render time input", () => {
     />,
   );
   expect(container).toMatchSnapshot();
-  // FIXME(jsingh): fix this test.
+  // FIXME(nsawas): fix this test.
   // The input element doesn't seem to get the value attribute correctly any more. The snapshot has empty string.
   // The UI still works as expected.
   // expect(getByPlaceholderText("Test Time Input")).toHaveAttribute("value", "2016-03-07");

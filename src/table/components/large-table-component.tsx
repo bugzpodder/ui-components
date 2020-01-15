@@ -187,6 +187,7 @@ type Props = {
   rowHeight?: number | ((x0: Record<string, any>, x1: number) => number);
   numFrozenColumns?: number;
   height?: number;
+  adjustWithSelectableTable?: boolean;
 };
 
 export const LargeTableComponent: React.FC<Props> = props => {
@@ -206,6 +207,7 @@ export const LargeTableComponent: React.FC<Props> = props => {
     enableSelectAll = true,
     rowHeight = 50,
     height = 300,
+    adjustWithSelectableTable = false,
   } = props;
   let { numFrozenColumns = 1 } = props;
 
@@ -281,13 +283,15 @@ export const LargeTableComponent: React.FC<Props> = props => {
   const rowCount = data.length;
   const scrollbarSize = 20;
   const sortingProps = { onSort, tableOptions };
+  const canSelect = !!(onSelect && selectedRows);
+  const shouldAdjustTable = !canSelect && adjustWithSelectableTable;
 
   // Add a checkbox column if it exists.
   const tableColumns = onSelect
     ? [
         {
           width: 50,
-          ...getCheckboxColumn(selectionProps),
+          ...getCheckboxColumn(selectionProps, shouldAdjustTable ),
         },
         ...columns,
       ]

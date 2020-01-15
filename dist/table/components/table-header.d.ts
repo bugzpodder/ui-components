@@ -5,8 +5,6 @@ declare type Props = {
     sortingProps: SortingProps;
     enableSelectAll: boolean;
     wrapHeader: boolean;
-    paddingLeft: number;
-    canSelect: boolean;
     hasColumnVisibilityChooser: boolean;
     columnVisibility: {
         [x: number]: boolean;
@@ -14,6 +12,7 @@ declare type Props = {
     setColumnVisibility: (x0: {
         [x: number]: boolean;
     }) => any;
+    adjustWithSelectableTable: boolean;
 };
 export declare const TableHeader: React.FC<Props>;
 export {};

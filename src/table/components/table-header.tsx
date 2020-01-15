@@ -16,13 +16,12 @@ type Props = {
   sortingProps: SortingProps;
   enableSelectAll: boolean;
   wrapHeader: boolean;
-  paddingLeft: number;
-  canSelect: boolean;
   hasColumnVisibilityChooser: boolean;
   columnVisibility: {
     [x: number]: boolean;
   };
   setColumnVisibility: (x0: { [x: number]: boolean }) => any;
+  adjustWithSelectableTable: boolean;
 };
 
 export const TableHeader: React.FC<Props> = props => {
@@ -34,8 +33,6 @@ export const TableHeader: React.FC<Props> = props => {
     columnVisibility,
     setColumnVisibility,
     wrapHeader,
-    paddingLeft,
-    canSelect,
   } = props;
 
   const visibleColumns = columns.filter(column => column.isVisible);
@@ -74,9 +71,6 @@ export const TableHeader: React.FC<Props> = props => {
           return (
             <TableCell
               key={index}
-              style={{
-                paddingLeft: !canSelect && index === 0 && `${paddingLeft}px`,
-              }}
               className={classNames(headerClassName, styles.tableHeader, {
                 [`${fieldId}-header`]: fieldId,
                 [styles.singleIcon]: isCheckboxHeader || isSingleIcon,

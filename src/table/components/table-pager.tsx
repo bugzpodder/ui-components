@@ -91,7 +91,7 @@ export const TablePager: React.FC<Props> = props => {
   );
 };
 
-// TODO(jsingh/nsawas) - need a better way to enable/disable pagination. Don't know length of results.
+// TODO(nsawas) - need a better way to enable/disable pagination. Don't know length of results.
 // total count is faked, since *usually* we pass in `data` representing a single page
 // need to give a longer number to enable pagination
 // checking % count only works if data represents a window (extra keys may be present but not visible)

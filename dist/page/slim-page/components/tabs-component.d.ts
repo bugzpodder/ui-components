@@ -1,12 +1,12 @@
 import React from "react";
-import { CommonTabbedPageV2Classes, PageConfigV2 } from "../../../types/card";
+import { SlimTabbedPageClasses, SlimPageConfig } from "../../../types/card";
 declare type Props = {
     onChangeActiveTab: (x0: string) => any;
     activeTab: string | false;
     tabProps: Record<string, any>;
-    pageConfigs: PageConfigV2[];
+    pageConfigs: SlimPageConfig[];
     wrapTabLabels: boolean;
-    classes: CommonTabbedPageV2Classes;
+    classes: SlimTabbedPageClasses;
 };
 export declare const TabsComponent: React.FC<Props>;
 export {};

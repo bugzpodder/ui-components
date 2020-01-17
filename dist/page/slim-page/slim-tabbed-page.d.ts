@@ -1,13 +1,13 @@
 import React, { ReactNode } from "react";
 import { ClickableItem } from "../../types/dropdown";
-import { CommonTabbedPageV2Classes, HeaderAction, PageConfigV2 } from "../../types/card";
+import { SlimTabbedPageClasses, HeaderAction, SlimPageConfig } from "../../types/card";
 import { TabProps } from "@material-ui/core/Tab";
 declare type Props = {
     /**
      * The array of objects used to define the tabs displayed in the header, and their corresponding pages.
      * The `key` property is used to determine which tab is selected.
      */
-    pageConfigs: PageConfigV2[];
+    pageConfigs: SlimPageConfig[];
     /** Takes the handler used to switch between tabs, based on the tab's value */
     onChangeActiveTab: (x0: string) => any;
     /** The value of the tab header. Used to define which tab is open */
@@ -42,7 +42,7 @@ declare type Props = {
      *
      *  - `content` - (applied to the container around the content)
      */
-    classes?: CommonTabbedPageV2Classes;
+    classes?: SlimTabbedPageClasses;
     /** Takes a `node` to show on the page */
     children?: ReactNode;
     /** Primary actions to display on the header */
@@ -57,10 +57,10 @@ declare type Props = {
     wrapTabLabels?: boolean;
 };
 /**
- * `CommonTabbedPage` provides a component for a page with a flush card header,
+ * `SlimTabbedPage` provides a component for a page with a flush card header,
  * a tab bar, and an optional side menu. Note: if you are using this component
  * in a new environment, we recommend building a new child component for your
  * environment; take a look at the `TabbedLimsPage` component as an example.
  */
-export declare const CommonTabbedPageV2: React.FC<Props>;
+export declare const SlimTabbedPage: React.FC<Props>;
 export {};

@@ -3,12 +3,12 @@
 ```js
 import { ExampleWrapper } from "../../test-utils";
 import { ReadOnlyTextField } from "@grailbio/components";
-import { CommonPageV2 } from "./common-page-v2";
+import { SlimPage } from "./slim-page";
 
-const ExampleCommonPage = () => {
+const ExampleSlimPage = () => {
   return (
-    <CommonPageV2
-      title="Example Common Page"
+    <SlimPage
+      title="Example Slim Page"
       subtitle="This is a subtitle"
       primaryActions={[
         {
@@ -27,24 +27,24 @@ const ExampleCommonPage = () => {
       <ReadOnlyTextField>
         Any content can go inside of CommonPage
       </ReadOnlyTextField>
-    </CommonPageV2>
+    </SlimPage>
   );
 };
 
 <ExampleWrapper>
-  <ExampleCommonPage />
+  <ExampleSlimPage />
 </ExampleWrapper>;
 ```
 
 ```js
 import { ExampleWrapper } from "../../test-utils";
 import { ReadOnlyTextField, Alert } from "@grailbio/components";
-import { CommonPageV2 } from "./common-page-v2";
+import { SlimPage } from "./slim-page";
 
-const ExampleCommonPage = () => {
+const ExampleSlimPage = () => {
   return (
-    <CommonPageV2
-      title="Example Common Page"
+    <SlimPage
+      title="Example Slim Page"
       subtitle="This is a subtitle"
       primaryActions={[
         {
@@ -61,11 +61,11 @@ const ExampleCommonPage = () => {
       <ReadOnlyTextField>
         Any content can go inside of CommonPage
       </ReadOnlyTextField>
-    </CommonPageV2>
+    </SlimPage>
   );
 };
 
 <ExampleWrapper>
-  <ExampleCommonPage />
+  <ExampleSlimPage />
 </ExampleWrapper>;
 ```

@@ -63,7 +63,8 @@ export const getCheckboxColumn = (
     idKey ? instance[idKey] : `${index}`,
   );
   // FIXME (nsawas): allAreSelected will only work as expected if API is retrieving data using count parameter.
-  const allAreSelected = ids.every(id => selectedRows.includes(id));
+  const allAreSelected =
+    data.length > 0 && ids.every(id => selectedRows.includes(id));
   const someAreSelected = selectedRows.length > 0 && !allAreSelected;
 
   const selectAll = (): void => {

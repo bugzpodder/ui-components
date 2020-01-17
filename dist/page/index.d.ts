@@ -1,4 +1,4 @@
-export { CommonTabbedPage } from "./page-v1/common-tabbed-page";
-export { CommonPage } from "./page-v1/common-page";
-export { CommonTabbedPageV2 } from "./page-v2/common-tabbed-page-v2";
-export { CommonPageV2 } from "./page-v2/common-page-v2";
+export { CommonTabbedPage } from "./common-page/common-tabbed-page";
+export { CommonPage } from "./common-page/common-page";
+export { SlimTabbedPage } from "./slim-page/slim-tabbed-page";
+export { SlimPage } from "./slim-page/slim-page";

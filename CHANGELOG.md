@@ -8,6 +8,7 @@
 6. (BREAKING) Deprecated Alert. Use Alert from `@material-ui/lab` instead.
 7. (BREAKING) Removed deprecated className prop from CommonCard.
 8. (BREAKING) Remove deprecated Navbar and renamed NavbarV2 to Navbar.
+9. (BREAKING) Rename CommonPageV2 to SlimPage. Rename CommonTabbedPageV2 to SlimTabbedPage.
 
 ## 1.1.0 - 2019-##-
 

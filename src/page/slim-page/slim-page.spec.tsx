@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
-import { CommonPageV2 } from "./common-page-v2";
+import { SlimPage } from "./slim-page";
 import { CommonSwitch } from "../../common-switch";
 import { TestWrapper } from "../../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
@@ -10,7 +10,7 @@ afterEach(cleanup);
 const TestCommonPage: React.FC<any> = props => {
   return (
     <TestWrapper>
-      <CommonPageV2
+      <SlimPage
         title="Test Card"
         subtitle="This is a subtitle"
         primaryActions={[
@@ -26,7 +26,7 @@ const TestCommonPage: React.FC<any> = props => {
         {...props}
       >
         Some content here.
-      </CommonPageV2>
+      </SlimPage>
     </TestWrapper>
   );
 };

@@ -21,6 +21,7 @@ declare type Props = {
     rowHeight?: number | ((x0: Record<string, any>, x1: number) => number);
     numFrozenColumns?: number;
     height?: number;
+    adjustWithSelectableTable?: boolean;
 };
 export declare const LargeTableComponent: React.FC<Props>;
 export {};

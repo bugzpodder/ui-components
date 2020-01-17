@@ -113,7 +113,7 @@
   "files": [
     "dist",
     "page/page-v1/constants.scss",
-    "page/page-v2/constants.scss",
+    "page/slim-page/constants.scss",
     "src/styles",
     "src/common-select/common-select.scss"
   ],

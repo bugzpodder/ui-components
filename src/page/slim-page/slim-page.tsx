@@ -8,9 +8,9 @@ import React, {
   useState,
 } from "react";
 import classNames from "classnames";
-import styles from "./common-page-v2.module.scss";
+import styles from "./slim-page.module.scss";
 import { ClickableItem } from "../../types/dropdown";
-import { CommonPageV2Classes, HeaderAction } from "../../types/card";
+import { SlimPageClasses, HeaderAction } from "../../types/card";
 import { HeaderActions } from "./components/header-actions";
 import { SpinnerOverlay } from "../../spinner-overlay";
 import { TitleComponent } from "./components/title-component";
@@ -73,7 +73,7 @@ type Props = {
    *
    *  - `content` - (applied to the container around the content)
    */
-  classes?: CommonPageV2Classes;
+  classes?: SlimPageClasses;
   /** `Node` displayed in the center of the header. For example, page tabs. */
   centerHeader?: ReactNode;
   /** Takes a `node` to show on the page */
@@ -87,12 +87,12 @@ type Props = {
 };
 
 /**
- * `CommonPageV2` provides a component for a page with a flush card header.
+ * `SlimPage` provides a component for a page with a flush card header.
  * Note: if you are using this component
  * in a new environment, we recommend building a new child component for your
  * environment; take a look at the `LimsPageV2` component as an example.
  */
-export const CommonPageV2: React.FC<Props> = props => {
+export const SlimPage: React.FC<Props> = props => {
   const {
     classes = {},
     subtitle = "",

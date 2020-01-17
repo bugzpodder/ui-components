@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
 import { Alert } from "@material-ui/lab";
 import { CommonSwitch } from "../..";
-import { CommonTabbedPageV2 } from "./common-tabbed-page-v2";
+import { SlimTabbedPage } from "./slim-tabbed-page";
 import { PageConfig } from "../../types/card";
 import { TestWrapper } from "../../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
@@ -51,7 +51,7 @@ const TestCommonTabbedPage: React.FC<any> = props => {
 
   return (
     <TestWrapper>
-      <CommonTabbedPageV2
+      <SlimTabbedPage
         title="Test Card"
         activeTab={activeTab}
         pageConfigs={pageConfigs}
@@ -73,7 +73,7 @@ const TestCommonTabbedPage: React.FC<any> = props => {
         onChangeActiveTab={setChange}
       >
         <div data-testid="test">Test</div>
-      </CommonTabbedPageV2>
+      </SlimTabbedPage>
     </TestWrapper>
   );
 };
@@ -128,7 +128,7 @@ test("require pageConfigs is defined", () => {
   expect(() =>
     render(
       <TestWrapper>
-        <CommonTabbedPageV2 />
+        <SlimTabbedPage />
       </TestWrapper>,
     ),
   ).toThrowError();

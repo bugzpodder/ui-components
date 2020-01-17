@@ -2,16 +2,16 @@ import React from "react";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import classNames from "classnames";
-import styles from "../common-page-v2.module.scss";
-import { CommonTabbedPageV2Classes, PageConfigV2 } from "../../../types/card";
+import styles from "../slim-page.module.scss";
+import { SlimTabbedPageClasses, SlimPageConfig } from "../../../types/card";
 
 type Props = {
   onChangeActiveTab: (x0: string) => any;
   activeTab: string | false;
   tabProps: Record<string, any>;
-  pageConfigs: PageConfigV2[];
+  pageConfigs: SlimPageConfig[];
   wrapTabLabels: boolean;
-  classes: CommonTabbedPageV2Classes;
+  classes: SlimTabbedPageClasses;
 };
 
 export const TabsComponent: React.FC<Props> = props => {

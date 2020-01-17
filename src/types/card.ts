@@ -50,7 +50,7 @@ export type HeaderAction = ClickableItem & {
   href?: string;
 };
 
-export type PageConfigV2 = {
+export type SlimPageConfig = {
   key: string;
   label: ReactNode;
   Component: ComponentType<any>;
@@ -62,7 +62,7 @@ export type PageConfigV2 = {
   isDisabled?: boolean;
 };
 
-export type CommonPageV2Classes = {
+export type SlimPageClasses = {
   root?: string;
   centerHeader?: string;
   header?: string;
@@ -75,7 +75,7 @@ export type CommonPageV2Classes = {
   content?: string;
 };
 
-export type CommonTabbedPageV2Classes = CommonPageV2Classes & {
+export type SlimTabbedPageClasses = SlimPageClasses & {
   tabs?: string;
   tab?: string;
 };

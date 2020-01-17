@@ -1,13 +1,13 @@
 import React, { ReactNode, forwardRef } from "react";
 import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
-import styles from "../common-page-v2.module.scss";
-import { CommonPageV2Classes } from "../../../types/card";
+import styles from "../slim-page.module.scss";
+import { SlimPageClasses } from "../../../types/card";
 
 type Props = {
   title?: ReactNode;
   subtitle?: ReactNode;
-  classes?: CommonPageV2Classes;
+  classes?: SlimPageClasses;
 };
 
 export const TitleComponent = forwardRef<any, Props>(

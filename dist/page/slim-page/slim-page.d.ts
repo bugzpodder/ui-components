@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { ClickableItem } from "../../types/dropdown";
-import { CommonPageV2Classes, HeaderAction } from "../../types/card";
+import { SlimPageClasses, HeaderAction } from "../../types/card";
 declare type Props = {
     /** Page title */
     title?: ReactNode;
@@ -30,7 +30,7 @@ declare type Props = {
      *
      *  - `content` - (applied to the container around the content)
      */
-    classes?: CommonPageV2Classes;
+    classes?: SlimPageClasses;
     /** `Node` displayed in the center of the header. For example, page tabs. */
     centerHeader?: ReactNode;
     /** Takes a `node` to show on the page */
@@ -43,10 +43,10 @@ declare type Props = {
     secondaryActions?: ClickableItem[];
 };
 /**
- * `CommonPageV2` provides a component for a page with a flush card header.
+ * `SlimPage` provides a component for a page with a flush card header.
  * Note: if you are using this component
  * in a new environment, we recommend building a new child component for your
  * environment; take a look at the `LimsPageV2` component as an example.
  */
-export declare const CommonPageV2: React.FC<Props>;
+export declare const SlimPage: React.FC<Props>;
 export {};

@@ -4,12 +4,12 @@
 import { useState } from "react";
 import { ExampleWrapper } from "../../test-utils";
 import { ReadOnlyTextField, Alert } from "@grailbio/components";
-import { CommonTabbedPageV2 } from "./common-tabbed-page-v2";
+import { SlimTabbedPage } from "./slim-tabbed-page";
 
 const ExampleCommonPage = () => {
   const [activeTab, setActiveTab] = useState("one");
   return (
-    <CommonTabbedPageV2
+    <SlimTabbedPage
       title="Example Common Page"
       subtitle="This is a subtitle"
       activeTab={activeTab}
@@ -49,7 +49,7 @@ const ExampleCommonPage = () => {
       ]}
     >
       <ReadOnlyTextField>Any content can go inside of CommonPage</ReadOnlyTextField>
-    </CommonTabbedPageV2>
+    </SlimTabbedPage>
   );
 };
 

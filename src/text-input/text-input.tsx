@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ElementType, useState } from "react";
 import TextField, { TextFieldProps } from "@material-ui/core/TextField";
 import styles from "./text-input.module.scss";
 
@@ -19,18 +19,22 @@ type Props = {
   readOnly?: boolean;
   /** Custom readOnly default value. Default to "-". It could be set explicitly to empty value, e.g. "". */
   readOnlyDefaultValue?: any;
+  /** If readOnly is true, display this component rather than the default Material-UI TextField. */
+  ReadOnlyComponent?: ElementType;
+  /** props passed in to the ReadOnlyComponent */
+  readOnlyComponentProps?: Record<string, any>;
   /** ID of the element. */
   id?: string;
   /** Classes to pass to the element. */
   className?: string;
   /** Data test id */
   "data-testid"?: string;
+  /** The displayed style of the TextInput component. Defaults to "filled" */
+  variant?: "filled" | "standard" | "outlined";
 } & TextFieldProps;
 
-/** TextInputV2 is a wrapper around the filled variant of Material UI's
-TextField that accepts "readOnly" as a property.
-*/
-export const TextInputV2: React.FC<Props> = props => {
+/** TextInput is a wrapper around Material UI's TextField component. */
+export const TextInput: React.FC<Props> = props => {
   const {
     id,
     className,
@@ -42,6 +46,9 @@ export const TextInputV2: React.FC<Props> = props => {
     "data-testid": dataTestId,
     onFocus,
     onBlur,
+    variant,
+    ReadOnlyComponent,
+    readOnlyComponentProps = {},
     ...otherProps
   } = props;
   const [isInputFocused, setIsInputFocused] = useState(false);
@@ -53,6 +60,17 @@ export const TextInputV2: React.FC<Props> = props => {
     hasReadOnlyDefaultValue,
     readOnlyDefaultValue,
   );
+  if (readOnly && ReadOnlyComponent) {
+    return (
+      <ReadOnlyComponent
+        id={id}
+        className={className}
+        {...readOnlyComponentProps}
+      >
+        {props.value}
+      </ReadOnlyComponent>
+    );
+  }
 
   return (
     // @ts-ignore: disableUnderline not found on type
@@ -61,7 +79,7 @@ export const TextInputV2: React.FC<Props> = props => {
       id={id}
       className={className}
       margin="normal"
-      variant="filled"
+      variant={variant}
       value={displayValue}
       disabled={readOnly || disabled}
       placeholder={

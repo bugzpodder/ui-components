@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom/extend-expect";
 import React from "react";
-import { TestWrapper } from "../../test-utils";
-import { TextInputV2 } from "./text-input";
+import { TestWrapper } from "../test-utils";
+import { TextInput } from "./text-input";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
@@ -11,7 +11,7 @@ test("render text field wrapper", async () => {
   const testPlaceholder = "Test Placeholder";
   const { container, getByPlaceholderText } = render(
     <TestWrapper>
-      <TextInputV2
+      <TextInput
         placeholder={testPlaceholder}
         id="operator"
         onChange={() => {}}
@@ -32,7 +32,7 @@ test("render text field wrapper with label, helperText, and readonly", async () 
   const testHelperText = "test helper text";
   const { container, getByTestId, getByDisplayValue } = render(
     <TestWrapper>
-      <TextInputV2
+      <TextInput
         label={testLabel}
         id="operator"
         readOnly
@@ -53,7 +53,7 @@ test("render text field wrapper with readonly as true show default value", async
   const testValue = "";
   const { container, getByDisplayValue } = render(
     <TestWrapper>
-      <TextInputV2
+      <TextInput
         id="operator"
         onChange={() => {}}
         value={testValue}
@@ -71,7 +71,7 @@ test("text field wrapper with readonly as true shows custom default value", asyn
   const readOnlyDefaultValue = "blahhh";
   const { container, getByDisplayValue } = render(
     <TestWrapper>
-      <TextInputV2
+      <TextInput
         id="operator"
         onChange={() => {}}
         value={testValue}
@@ -90,7 +90,7 @@ test("text field wrapper with readonly as true shows custom default value", asyn
   const readOnlyDefaultValue = "";
   const { container, getByDisplayValue } = render(
     <TestWrapper>
-      <TextInputV2
+      <TextInput
         id="operator"
         onChange={() => {}}
         value={testValue}
@@ -112,7 +112,7 @@ test("passed down onBlur and onFocus are called", async () => {
   const mockFocus = jest.fn(() => {});
   const { container, getByDisplayValue } = render(
     <TestWrapper>
-      <TextInputV2
+      <TextInput
         id="operator"
         onChange={() => {}}
         onBlur={mockBlur}

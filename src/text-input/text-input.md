@@ -1,16 +1,12 @@
-### Props
-
-All the props of `TextInput` are included for `TextInputV2`.
-
 ### Example
 
 ```js
-import styles from "../../test-utils/example-styles.module.scss";
-import { ExampleWrapper } from "../../test-utils";
+import styles from "../test-utils/example-styles.module.scss";
+import { ExampleWrapper } from "../test-utils";
 import { useState } from "react";
-import { TextInputV2 } from "./text-input";
+import { TextInput } from "./text-input";
 
-const TextInputV2Example = () => {
+const TextInputExample = () => {
   const [one, setOne] = useState("");
   const [two, setTwo] = useState("");
   const [three, setThree] = useState("");
@@ -34,14 +30,16 @@ const TextInputV2Example = () => {
 
   return (
     <div className={styles.container}>
-      <TextInputV2
+      <TextInput
+        variant="filled"
         label="some label"
         placeholder="Filled Text Input"
         value={one}
         onChange={handleFirst}
         className={styles.spacing}
       />
-      <TextInputV2
+      <TextInput
+        variant="filled"
         label="some label"
         placeholder="Filled Text Input"
         helperText="some helper text"
@@ -49,14 +47,16 @@ const TextInputV2Example = () => {
         onChange={handleSecond}
         className={styles.spacing}
       />
-      <TextInputV2
+      <TextInput
+        variant="filled"
         label="some disabled input"
         placeholder="Disabled"
         helperText="some helper text"
         disabled={true}
         className={styles.spacing}
       />
-      <TextInputV2
+      <TextInput
+        variant="filled"
         placeholder="Uh oh"
         helperText="an error"
         error={true}
@@ -65,7 +65,7 @@ const TextInputV2Example = () => {
         className={styles.spacing}
       />
       <br />
-      <TextInputV2
+      <TextInput
         label="some label"
         readOnly={true}
         placeholder="Placeholder text, won't show"
@@ -73,7 +73,7 @@ const TextInputV2Example = () => {
         data-testid="fourth-text-input"
         className={styles.spacing}
       />
-      <TextInputV2
+      <TextInput
         label="some label"
         readOnly={true}
         placeholder="Placeholder text, won't show"
@@ -81,7 +81,7 @@ const TextInputV2Example = () => {
         value=""
         className={styles.spacing}
       />
-      <TextInputV2
+      <TextInput
         label="some label"
         readOnly={true}
         readOnlyDefaultValue="custom default value"
@@ -89,7 +89,7 @@ const TextInputV2Example = () => {
         value=""
         className={styles.spacing}
       />
-      <TextInputV2
+      <TextInput
         label="some label"
         readOnly={true}
         readOnlyDefaultValue=""
@@ -103,6 +103,6 @@ const TextInputV2Example = () => {
 };
 
 <ExampleWrapper>
-  <TextInputV2Example />
+  <TextInputExample />
 </ExampleWrapper>;
 ```

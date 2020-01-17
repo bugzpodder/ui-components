@@ -1,14 +1,16 @@
 ## 2.0.0
 
-1. (BREAKING) Replace internal implementation of CommonSelect, CommonMultiSelect and CommonSuggest with Autocomplete. Upgrade dependency @material-ui/core >= 4.6.0.
-2. (BREAKING) wrapPickerUtilProvider calls must pass in a @date-io/moment or @date-io/date-fns utils.
-3. (BREAKING) Deprecate `getInitialValues` and related functionality in `OmniSearchBar`.
-4. (BREAKING) Removed legacy value from OmniSearch search values.
-5. (BREAKING) Deprecated ExportTableButton.
-6. (BREAKING) Deprecated Alert. Use Alert from `@material-ui/lab` instead.
-7. (BREAKING) Removed deprecated className prop from CommonCard.
-8. (BREAKING) Remove deprecated Navbar and renamed NavbarV2 to Navbar.
-9. (BREAKING) Rename CommonPageV2 to SlimPage. Rename CommonTabbedPageV2 to SlimTabbedPage.
+1.  (BREAKING) Replace internal implementation of CommonSelect, CommonMultiSelect and CommonSuggest with Autocomplete. Upgrade dependency @material-ui/core >= 4.6.0.
+2.  (BREAKING) wrapPickerUtilProvider calls must pass in a @date-io/moment or @date-io/date-fns utils.
+3.  (BREAKING) Deprecate `getInitialValues` and related functionality in `OmniSearchBar`.
+4.  (BREAKING) Removed legacy value from OmniSearch search values.
+5.  (BREAKING) Deprecated ExportTableButton.
+6.  (BREAKING) Deprecated Alert. Use Alert from `@material-ui/lab` instead.
+7.  (BREAKING) Removed deprecated className prop from CommonCard.
+8.  (BREAKING) Remove deprecated Navbar and renamed NavbarV2 to Navbar.
+9.  (BREAKING) Rename CommonPageV2 to SlimPage. Rename CommonTabbedPageV2 to SlimTabbedPage.
+10. (BREAKING) TextInputV2 default variant is reverted to material-ui default "standard". "filled" variants must be defined explicitly.
+11. (BREAKING) TextInput is deprecated. TextInputV2 renamed to TextInput. readyOnly prop for original TextInput now renders the Material-UI TextField in readOnly mode, as opposed to ReadOnlyTextField.
 
 ## 1.1.0 - 2019-##-
 
@@ -70,6 +72,7 @@
 52. Standardize table header height.
 53. Fix selection logic to uncheck all checkboxes when checkbox header is indeterminate.
 54. Tables now support `adjustToSelectableTable`, which will align non-selectable table's first row to where it would be if there were a checkbox column to its left.
+55. Deprecate TextInput. Rename TextInputV2 to TextInput.
 
 ## 1.0.0 - 2019-06-17
 

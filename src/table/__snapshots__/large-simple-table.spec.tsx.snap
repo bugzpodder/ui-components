@@ -31,11 +31,14 @@ exports[`render full simple table 1`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="indeterminate"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-79 Mui-checked MuiIconButton-colorPrimary"
                   >
-                    <span>
+                    <span
+                      class="MuiIconButton-label"
+                    >
                       <input
                         checked=""
+                        class="PrivateSwitchBase-input-81"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -43,7 +46,7 @@ exports[`render full simple table 1`] = `
                       />
                       <svg
                         aria-hidden="true"
-                        class=""
+                        class="MuiSvgIcon-root"
                         focusable="false"
                         role="presentation"
                         viewBox="0 0 24 24"
@@ -54,7 +57,7 @@ exports[`render full simple table 1`] = `
                       </svg>
                     </span>
                     <span
-                      class=""
+                      class="MuiTouchRipple-root"
                     />
                   </span>
                 </div>
@@ -80,11 +83,14 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-79 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-81"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -93,7 +99,7 @@ exports[`render full simple table 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -104,7 +110,7 @@ exports[`render full simple table 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -115,11 +121,14 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-79 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-81"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -128,7 +137,7 @@ exports[`render full simple table 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -139,7 +148,7 @@ exports[`render full simple table 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -150,10 +159,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-81"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -162,7 +174,7 @@ exports[`render full simple table 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -173,7 +185,7 @@ exports[`render full simple table 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -184,10 +196,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-81"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -196,7 +211,7 @@ exports[`render full simple table 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -207,7 +222,7 @@ exports[`render full simple table 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -218,10 +233,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-81"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -230,7 +248,7 @@ exports[`render full simple table 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -241,7 +259,7 @@ exports[`render full simple table 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -252,10 +270,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-81"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -264,7 +285,7 @@ exports[`render full simple table 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -275,7 +296,7 @@ exports[`render full simple table 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -340,11 +361,14 @@ exports[`render full simple table 2`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="indeterminate"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
                   >
-                    <span>
+                    <span
+                      class="MuiIconButton-label"
+                    >
                       <input
                         checked=""
+                        class="PrivateSwitchBase-input-193"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -352,7 +376,7 @@ exports[`render full simple table 2`] = `
                       />
                       <svg
                         aria-hidden="true"
-                        class=""
+                        class="MuiSvgIcon-root"
                         focusable="false"
                         role="presentation"
                         viewBox="0 0 24 24"
@@ -363,7 +387,7 @@ exports[`render full simple table 2`] = `
                       </svg>
                     </span>
                     <span
-                      class=""
+                      class="MuiTouchRipple-root"
                     />
                   </span>
                 </div>
@@ -399,11 +423,14 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -412,7 +439,7 @@ exports[`render full simple table 2`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -423,7 +450,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -443,11 +470,14 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -456,7 +486,7 @@ exports[`render full simple table 2`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -467,7 +497,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -487,10 +517,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -499,7 +532,7 @@ exports[`render full simple table 2`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -510,7 +543,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -530,10 +563,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -542,7 +578,7 @@ exports[`render full simple table 2`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -553,7 +589,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -573,10 +609,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -585,7 +624,7 @@ exports[`render full simple table 2`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -596,7 +635,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -616,10 +655,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-193"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -628,7 +670,7 @@ exports[`render full simple table 2`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -639,7 +681,7 @@ exports[`render full simple table 2`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -777,11 +819,14 @@ exports[`render large simple table with all items selected 1`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="indeterminate"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-38 Mui-checked MuiIconButton-colorPrimary"
                   >
-                    <span>
+                    <span
+                      class="MuiIconButton-label"
+                    >
                       <input
                         checked=""
+                        class="PrivateSwitchBase-input-40"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -789,7 +834,7 @@ exports[`render large simple table with all items selected 1`] = `
                       />
                       <svg
                         aria-hidden="true"
-                        class=""
+                        class="MuiSvgIcon-root"
                         focusable="false"
                         role="presentation"
                         viewBox="0 0 24 24"
@@ -800,7 +845,7 @@ exports[`render large simple table with all items selected 1`] = `
                       </svg>
                     </span>
                     <span
-                      class=""
+                      class="MuiTouchRipple-root"
                     />
                   </span>
                 </div>
@@ -826,11 +871,14 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-38 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-40"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -839,7 +887,7 @@ exports[`render large simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -850,7 +898,7 @@ exports[`render large simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -861,11 +909,14 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-38 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-40"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -874,7 +925,7 @@ exports[`render large simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -885,7 +936,7 @@ exports[`render large simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -896,10 +947,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-40"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -908,7 +962,7 @@ exports[`render large simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -919,7 +973,7 @@ exports[`render large simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -930,10 +984,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-40"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -942,7 +999,7 @@ exports[`render large simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -953,7 +1010,7 @@ exports[`render large simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -964,10 +1021,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-40"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -976,7 +1036,7 @@ exports[`render large simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -987,7 +1047,7 @@ exports[`render large simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -998,10 +1058,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-40"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -1010,7 +1073,7 @@ exports[`render large simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1021,7 +1084,7 @@ exports[`render large simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -1061,7 +1124,7 @@ exports[`render large simple table with no results 1`] = `
     class="tableContainer"
   >
     <p
-      class=""
+      class="MuiTypography-root MuiTypography-body1"
     >
       No data
     </p>
@@ -1367,11 +1430,14 @@ exports[`render large wide simple table with all items selected 1`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="indeterminate"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
                   >
-                    <span>
+                    <span
+                      class="MuiIconButton-label"
+                    >
                       <input
                         checked=""
+                        class="PrivateSwitchBase-input-152"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -1379,7 +1445,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                       />
                       <svg
                         aria-hidden="true"
-                        class=""
+                        class="MuiSvgIcon-root"
                         focusable="false"
                         role="presentation"
                         viewBox="0 0 24 24"
@@ -1390,7 +1456,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                       </svg>
                     </span>
                     <span
-                      class=""
+                      class="MuiTouchRipple-root"
                     />
                   </span>
                 </div>
@@ -1426,11 +1492,14 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -1439,7 +1508,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1450,7 +1519,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -1470,11 +1539,14 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="active"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
                       checked=""
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -1483,7 +1555,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1494,7 +1566,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -1514,10 +1586,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -1526,7 +1601,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1537,7 +1612,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -1557,10 +1632,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -1569,7 +1647,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1580,7 +1658,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -1600,10 +1678,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -1612,7 +1693,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1623,7 +1704,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -1643,10 +1724,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-152"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -1655,7 +1739,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class=""
+                      class="MuiSvgIcon-root"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -1666,7 +1750,7 @@ exports[`render large wide simple table with all items selected 1`] = `
                     </svg>
                   </span>
                   <span
-                    class=""
+                    class="MuiTouchRipple-root"
                   />
                 </span>
               </div>
@@ -1836,7 +1920,7 @@ exports[`render large wide simple table with no results 1`] = `
     class="tableContainer"
   >
     <p
-      class=""
+      class="MuiTypography-root MuiTypography-body1"
     >
       No data
     </p>

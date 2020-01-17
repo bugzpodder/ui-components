@@ -3,15 +3,15 @@
 exports[`passed down onBlur and onFocus are called 1`] = `
 <div>
   <div
-    class=""
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     data-testid="text-input"
   >
     <div
-      class="root"
+      class="MuiInputBase-root MuiInput-root root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
     >
       <input
         aria-invalid="false"
-        class=""
+        class="MuiInputBase-input MuiInput-input"
         id="operator"
         type="text"
         value="hi"
@@ -24,15 +24,15 @@ exports[`passed down onBlur and onFocus are called 1`] = `
 exports[`render text field wrapper 1`] = `
 <div>
   <div
-    class=""
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     data-testid="text-input"
   >
     <div
-      class="root"
+      class="MuiInputBase-root MuiInput-root root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
     >
       <input
         aria-invalid="false"
-        class=""
+        class="MuiInputBase-input MuiInput-input"
         id="operator"
         placeholder="Test Placeholder"
         type="text"
@@ -46,11 +46,11 @@ exports[`render text field wrapper 1`] = `
 exports[`render text field wrapper with label, helperText, and readonly 1`] = `
 <div>
   <div
-    class=""
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     data-testid="readonly-text-input"
   >
     <label
-      class=""
+      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink Mui-disabled Mui-disabled MuiFormLabel-filled"
       data-shrink="true"
       for="operator"
       id="operator-label"
@@ -58,12 +58,12 @@ exports[`render text field wrapper with label, helperText, and readonly 1`] = `
       test label
     </label>
     <div
-      class="root disabled"
+      class="MuiInputBase-root MuiInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl MuiInput-formControl"
     >
       <input
         aria-describedby="operator-helper-text"
         aria-invalid="false"
-        class="disabled"
+        class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled disabled"
         disabled=""
         id="operator"
         readonly=""
@@ -72,7 +72,7 @@ exports[`render text field wrapper with label, helperText, and readonly 1`] = `
       />
     </div>
     <p
-      class=""
+      class="MuiFormHelperText-root Mui-disabled MuiFormHelperText-filled"
       id="operator-helper-text"
     >
       test helper text
@@ -84,15 +84,15 @@ exports[`render text field wrapper with label, helperText, and readonly 1`] = `
 exports[`render text field wrapper with readonly as true show default value 1`] = `
 <div>
   <div
-    class=""
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     data-testid="readonly-text-input"
   >
     <div
-      class="root disabled"
+      class="MuiInputBase-root MuiInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl MuiInput-formControl"
     >
       <input
         aria-invalid="false"
-        class="disabled"
+        class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled disabled"
         disabled=""
         id="operator"
         readonly=""
@@ -107,15 +107,15 @@ exports[`render text field wrapper with readonly as true show default value 1`] 
 exports[`text field wrapper with readonly as true shows custom default value 1`] = `
 <div>
   <div
-    class=""
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     data-testid="readonly-text-input"
   >
     <div
-      class="root disabled"
+      class="MuiInputBase-root MuiInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl MuiInput-formControl"
     >
       <input
         aria-invalid="false"
-        class="disabled"
+        class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled disabled"
         disabled=""
         id="operator"
         readonly=""
@@ -130,15 +130,15 @@ exports[`text field wrapper with readonly as true shows custom default value 1`]
 exports[`text field wrapper with readonly as true shows custom default value 2`] = `
 <div>
   <div
-    class=""
+    class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     data-testid="readonly-text-input"
   >
     <div
-      class="root disabled"
+      class="MuiInputBase-root MuiInput-root root Mui-disabled Mui-disabled disabled MuiInputBase-formControl MuiInput-formControl"
     >
       <input
         aria-invalid="false"
-        class="disabled"
+        class="MuiInputBase-input MuiInput-input Mui-disabled Mui-disabled disabled"
         disabled=""
         id="operator"
         readonly=""

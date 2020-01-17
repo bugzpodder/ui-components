@@ -3,15 +3,17 @@
 exports[`render notification center 1`] = `
 <div>
   <button
-    class=""
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
     data-testid="notifications-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiIconButton-label"
+    >
       <svg
         aria-hidden="true"
-        class=""
+        class="MuiSvgIcon-root"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -30,15 +32,17 @@ exports[`render notification center 2`] = `
   aria-hidden="true"
 >
   <button
-    class=""
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
     data-testid="notifications-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiIconButton-label"
+    >
       <svg
         aria-hidden="true"
-        class=""
+        class="MuiSvgIcon-root"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"

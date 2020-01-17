@@ -11,7 +11,7 @@ exports[`CommonPanel classes 1`] = `
       data-testid="panel-title"
     >
       <h6
-        class=""
+        class="MuiTypography-root MuiTypography-subtitle1"
       >
         panel title
       </h6>

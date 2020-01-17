@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { SuggestionsOmniField } from "./suggestions-omni-field";
 import { TestWrapper } from "../test-utils";

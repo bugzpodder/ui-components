@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { ExportButton } from "./export-button";
 import { TestWrapper } from "../test-utils";

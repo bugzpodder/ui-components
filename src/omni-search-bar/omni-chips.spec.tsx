@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { LIKE_TEXT_SEARCH_TYPE, OMNI_KEY } from "@grailbio/lib";
 import { OmniChips } from "./omni-chips";

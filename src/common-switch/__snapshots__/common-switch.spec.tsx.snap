@@ -7,32 +7,37 @@ exports[`render error common switch 1`] = `
       class="commonSwitch"
     >
       <label
-        class="controlLabel"
+        class="MuiFormControlLabel-root controlLabel"
         data-testid="common-switch"
       >
         <span
-          class=""
+          class="MuiSwitch-root"
         >
           <span
             aria-disabled="false"
-            class="error error"
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-155 MuiSwitch-switchBase MuiSwitch-colorSecondary error PrivateSwitchBase-checked-156 Mui-checked error"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <input
                 checked=""
+                class="PrivateSwitchBase-input-158 MuiSwitch-input"
                 id=""
                 type="checkbox"
                 value=""
               />
-              <span />
+              <span
+                class="MuiSwitch-thumb"
+              />
             </span>
           </span>
           <span
-            class="errorBar"
+            class="MuiSwitch-track errorBar"
           />
         </span>
         <span
-          class="error"
+          class="MuiTypography-root MuiFormControlLabel-label error MuiTypography-body1"
         />
       </label>
       
@@ -48,37 +53,42 @@ exports[`render primary common switch 1`] = `
       class="commonSwitch"
     >
       <label
-        class="controlLabel"
+        class="MuiFormControlLabel-root controlLabel"
         data-testid="common-switch"
       >
         <span
-          class=""
+          class="MuiSwitch-root"
         >
           <span
             aria-disabled="false"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-19 MuiSwitch-switchBase MuiSwitch-colorPrimary"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <input
+                class="PrivateSwitchBase-input-22 MuiSwitch-input"
                 id=""
                 type="checkbox"
                 value="test"
               />
-              <span />
+              <span
+                class="MuiSwitch-thumb"
+              />
             </span>
           </span>
           <span
-            class=""
+            class="MuiSwitch-track"
           />
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
         >
           Primary
         </span>
       </label>
       <p
-        class="switchHelperText"
+        class="MuiFormHelperText-root switchHelperText"
       >
         test switch
       </p>

@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import React from "react";
 import { LinkButton } from "./link-button";
 import { MemoryRouter } from "react-router-dom";

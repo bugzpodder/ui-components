@@ -4,14 +4,14 @@ exports[`render SuggestionsOmniField 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class=""
+    class="MuiAutocomplete-root"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
     >
       <div
-        class=""
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiAutocomplete-inputRoot MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
         data-testid="common-suggest-input-container"
       >
         <input
@@ -19,24 +19,27 @@ exports[`render SuggestionsOmniField 1`] = `
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class=""
+          class="MuiInputBase-input MuiInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd"
           spellcheck="false"
           type="text"
           value=""
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Clear"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator"
             tabindex="-1"
             title="Clear"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
-                data-testid="common-suggest-close-icon"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -47,7 +50,7 @@ exports[`render SuggestionsOmniField 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>

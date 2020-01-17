@@ -3,39 +3,43 @@
 exports[`render basic paged table 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           Test Table
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -47,53 +51,53 @@ exports[`render basic paged table 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-0"
             >
               <span>
@@ -101,13 +105,13 @@ exports[`render basic paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-1"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="0-2"
             >
               <span>
@@ -116,11 +120,11 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-0"
             >
               <span>
@@ -128,13 +132,13 @@ exports[`render basic paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-1"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="1-2"
             >
               <span>
@@ -143,11 +147,11 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-0"
             >
               <span>
@@ -155,13 +159,13 @@ exports[`render basic paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-1"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="2-2"
             >
               <span>
@@ -170,11 +174,11 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-0"
             >
               <span>
@@ -182,13 +186,13 @@ exports[`render basic paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-1"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="3-2"
             >
               <span>
@@ -197,11 +201,11 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-0"
             >
               <span>
@@ -209,13 +213,13 @@ exports[`render basic paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-1"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="4-2"
             >
               <span>
@@ -224,11 +228,11 @@ exports[`render basic paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-0"
             >
               <span>
@@ -236,13 +240,13 @@ exports[`render basic paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-1"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="5-2"
             >
               <span>
@@ -254,11 +258,11 @@ exports[`render basic paged table 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -272,38 +276,42 @@ exports[`render basic paged table 1`] = `
 exports[`render loading paged table 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -315,53 +323,53 @@ exports[`render loading paged table 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-0"
             >
               <span>
@@ -369,13 +377,13 @@ exports[`render loading paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-1"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="0-2"
             >
               <span>
@@ -384,11 +392,11 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-0"
             >
               <span>
@@ -396,13 +404,13 @@ exports[`render loading paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-1"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="1-2"
             >
               <span>
@@ -411,11 +419,11 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-0"
             >
               <span>
@@ -423,13 +431,13 @@ exports[`render loading paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-1"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="2-2"
             >
               <span>
@@ -438,11 +446,11 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-0"
             >
               <span>
@@ -450,13 +458,13 @@ exports[`render loading paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-1"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="3-2"
             >
               <span>
@@ -465,11 +473,11 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-0"
             >
               <span>
@@ -477,13 +485,13 @@ exports[`render loading paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-1"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="4-2"
             >
               <span>
@@ -492,11 +500,11 @@ exports[`render loading paged table 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-0"
             >
               <span>
@@ -504,13 +512,13 @@ exports[`render loading paged table 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-1"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="5-2"
             >
               <span>
@@ -522,11 +530,11 @@ exports[`render loading paged table 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -549,39 +557,43 @@ exports[`render loading paged table 1`] = `
 exports[`render paged table and test pagination 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           Test Table
            (2 Selected)
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -593,42 +605,45 @@ exports[`render paged table and test pagination 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           Test Header Action
         </p>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class="indeterminate"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1596 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-1597 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1599"
                     data-indeterminate="true"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -636,7 +651,7 @@ exports[`render paged table and test pagination 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -647,46 +662,49 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </th>
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="First Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="First Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1596 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1597 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1599"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
@@ -695,7 +713,7 @@ exports[`render paged table and test pagination 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -706,12 +724,12 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-1"
             >
               <span>
@@ -719,13 +737,13 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-2"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="First Datum-3"
             >
               <span>
@@ -734,20 +752,23 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Fourth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Fourth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1596 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1597 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1599"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
@@ -756,7 +777,7 @@ exports[`render paged table and test pagination 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -767,12 +788,12 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-1"
             >
               <span>
@@ -780,13 +801,13 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-2"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="Fourth Datum-3"
             >
               <span>
@@ -795,19 +816,22 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventh Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Seventh Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1596 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1599"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
@@ -816,7 +840,7 @@ exports[`render paged table and test pagination 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -827,12 +851,12 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-1"
             >
               <span>
@@ -840,13 +864,13 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-2"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="Seventh Datum-3"
             >
               <span>
@@ -855,19 +879,22 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Tenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Tenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1596 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1599"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
@@ -876,7 +903,7 @@ exports[`render paged table and test pagination 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -887,12 +914,12 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-1"
             >
               <span>
@@ -900,13 +927,13 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-2"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="Tenth Datum-3"
             >
               <span>
@@ -915,19 +942,22 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Thirteenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1596 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1599"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
@@ -936,7 +966,7 @@ exports[`render paged table and test pagination 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -947,12 +977,12 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-1"
             >
               <span>
@@ -960,13 +990,13 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-2"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="Thirteenth Datum-3"
             >
               <span>
@@ -975,19 +1005,22 @@ exports[`render paged table and test pagination 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventeenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Seventeenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1596 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1599"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
@@ -996,7 +1029,7 @@ exports[`render paged table and test pagination 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1007,12 +1040,12 @@ exports[`render paged table and test pagination 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-1"
             >
               <span>
@@ -1020,13 +1053,13 @@ exports[`render paged table and test pagination 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-2"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="Seventeenth Datum-3"
             >
               <span>
@@ -1038,29 +1071,31 @@ exports[`render paged table and test pagination 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter tableFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter tableFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <div
-        class="table-pager tablePager"
+        class="MuiTablePagination-root table-pager tablePager"
       >
         <div
-          class=""
+          class="MuiToolbar-root MuiToolbar-regular MuiTablePagination-toolbar MuiToolbar-gutters"
         >
-          <div />
+          <div
+            class="MuiTablePagination-spacer"
+          />
           <p
-            class=""
+            class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
           >
             Rows per page:
           </p>
           <div
-            class="select-row-count selectRowCount"
+            class="MuiInputBase-root select-row-count selectRowCount"
             data-testid="rows-per-page"
           >
             <div
               aria-haspopup="listbox"
               aria-labelledby=" rows-per-page"
-              class=""
+              class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
               id="rows-per-page"
               role="button"
               tabindex="0"
@@ -1073,7 +1108,7 @@ exports[`render paged table and test pagination 1`] = `
             />
             <svg
               aria-hidden="true"
-              class=""
+              class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -1084,24 +1119,28 @@ exports[`render paged table and test pagination 1`] = `
             </svg>
           </div>
           <p
-            class=""
+            class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
           >
             Showing 1 to 5 of 100
           </p>
-          <div>
+          <div
+            class="MuiTablePagination-actions"
+          >
             <button
               aria-label="Previous page"
-              class="previous-page"
+              class="MuiButtonBase-root MuiIconButton-root previous-page MuiIconButton-colorInherit Mui-disabled Mui-disabled"
               data-testid="previous-page"
               disabled=""
               tabindex="-1"
               title="Previous page"
               type="button"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1114,16 +1153,18 @@ exports[`render paged table and test pagination 1`] = `
             </button>
             <button
               aria-label="Next page"
-              class="next-page"
+              class="MuiButtonBase-root MuiIconButton-root next-page MuiIconButton-colorInherit"
               data-testid="next-page"
               tabindex="0"
               title="Next page"
               type="button"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1134,7 +1175,7 @@ exports[`render paged table and test pagination 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </button>
           </div>
@@ -1148,38 +1189,42 @@ exports[`render paged table and test pagination 1`] = `
 exports[`render paged table and test sorting 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -1191,33 +1236,33 @@ exports[`render paged table and test sorting 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class="sort-columnOne"
+                class="MuiButtonBase-root MuiTableSortLabel-root sort-columnOne MuiTableSortLabel-active"
                 data-testid="sort-columnOne"
                 role="button"
                 tabindex="0"
@@ -1225,7 +1270,7 @@ exports[`render paged table and test sorting 1`] = `
                 Column One
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1237,12 +1282,12 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class="sort-columnTwo"
+                class="MuiButtonBase-root MuiTableSortLabel-root sort-columnTwo"
                 data-testid="sort-columnTwo"
                 role="button"
                 tabindex="0"
@@ -1250,7 +1295,7 @@ exports[`render paged table and test sorting 1`] = `
                 Column Two
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1262,20 +1307,20 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="First Datum"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-0"
             >
               <span>
@@ -1283,13 +1328,13 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-1"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="First Datum-2"
             >
               <span>
@@ -1298,11 +1343,11 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Fourth Datum"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-0"
             >
               <span>
@@ -1310,13 +1355,13 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-1"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="Fourth Datum-2"
             >
               <span>
@@ -1325,11 +1370,11 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventh Datum"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-0"
             >
               <span>
@@ -1337,13 +1382,13 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-1"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="Seventh Datum-2"
             >
               <span>
@@ -1352,11 +1397,11 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Tenth Datum"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-0"
             >
               <span>
@@ -1364,13 +1409,13 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-1"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="Tenth Datum-2"
             >
               <span>
@@ -1379,11 +1424,11 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-0"
             >
               <span>
@@ -1391,13 +1436,13 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-1"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="Thirteenth Datum-2"
             >
               <span>
@@ -1406,11 +1451,11 @@ exports[`render paged table and test sorting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventeenth Datum"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-0"
             >
               <span>
@@ -1418,13 +1463,13 @@ exports[`render paged table and test sorting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-1"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="Seventeenth Datum-2"
             >
               <span>
@@ -1436,11 +1481,11 @@ exports[`render paged table and test sorting 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -1454,38 +1499,42 @@ exports[`render paged table and test sorting 1`] = `
 exports[`render paged table with all items selected, then unselect items 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
            (6 Selected)
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -1497,37 +1546,40 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1292 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1293 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1295"
                     data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -1535,7 +1587,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1546,46 +1598,49 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </th>
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="test-row-classname tableRow"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="First Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="First Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1292 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1293 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1295"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
@@ -1594,7 +1649,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1605,12 +1660,12 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-1"
             >
               <span>
@@ -1618,13 +1673,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-2"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="First Datum-3"
             >
               <span>
@@ -1633,20 +1688,23 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="test-row-classname tableRow"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Fourth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Fourth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1292 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1293 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1295"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
@@ -1655,7 +1713,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1666,12 +1724,12 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-1"
             >
               <span>
@@ -1679,13 +1737,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-2"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="Fourth Datum-3"
             >
               <span>
@@ -1694,20 +1752,23 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="test-row-classname tableRow"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Seventh Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Seventh Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1292 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1293 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1295"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
@@ -1716,7 +1777,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1727,12 +1788,12 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-1"
             >
               <span>
@@ -1740,13 +1801,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-2"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="Seventh Datum-3"
             >
               <span>
@@ -1755,20 +1816,23 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="test-row-classname tableRow"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Tenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Tenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1292 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1293 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1295"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
@@ -1777,7 +1841,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1788,12 +1852,12 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-1"
             >
               <span>
@@ -1801,13 +1865,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-2"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="Tenth Datum-3"
             >
               <span>
@@ -1816,20 +1880,23 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="test-row-classname tableRow"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Thirteenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1292 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1293 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1295"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
@@ -1838,7 +1905,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1849,12 +1916,12 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-1"
             >
               <span>
@@ -1862,13 +1929,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-2"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="Thirteenth Datum-3"
             >
               <span>
@@ -1877,20 +1944,23 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
             </td>
           </tr>
           <tr
-            class="test-row-classname tableRow"
+            class="MuiTableRow-root test-row-classname tableRow"
             data-testid="Seventeenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Seventeenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class="active"
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1292 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-1293 Mui-checked MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
                     checked=""
+                    class="PrivateSwitchBase-input-1295"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
@@ -1899,7 +1969,7 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -1910,12 +1980,12 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-1"
             >
               <span>
@@ -1923,13 +1993,13 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-2"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="Seventeenth Datum-3"
             >
               <span>
@@ -1941,11 +2011,11 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -1959,38 +2029,42 @@ exports[`render paged table with all items selected, then unselect items 1`] = `
 exports[`render paged table with column visibility chooser 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -2002,56 +2076,58 @@ exports[`render paged table with column visibility chooser 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
             <th
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-head singleIcon iconInHeaderOnly"
               scope="col"
             >
               <button
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root"
                 data-testid="column-visibility-chooser-button"
                 tabindex="0"
                 type="button"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -2062,21 +2138,21 @@ exports[`render paged table with column visibility chooser 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </button>
             </th>
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-0"
             >
               <span>
@@ -2084,13 +2160,13 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-1"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="0-2"
             >
               <span>
@@ -2098,15 +2174,15 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-0"
             >
               <span>
@@ -2114,13 +2190,13 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-1"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="1-2"
             >
               <span>
@@ -2128,15 +2204,15 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-0"
             >
               <span>
@@ -2144,13 +2220,13 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-1"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="2-2"
             >
               <span>
@@ -2158,15 +2234,15 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-0"
             >
               <span>
@@ -2174,13 +2250,13 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-1"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="3-2"
             >
               <span>
@@ -2188,15 +2264,15 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-0"
             >
               <span>
@@ -2204,13 +2280,13 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-1"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="4-2"
             >
               <span>
@@ -2218,15 +2294,15 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-0"
             >
               <span>
@@ -2234,13 +2310,13 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-1"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="5-2"
             >
               <span>
@@ -2248,18 +2324,18 @@ exports[`render paged table with column visibility chooser 1`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
         </tbody>
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -2275,38 +2351,42 @@ exports[`render paged table with column visibility chooser 2`] = `
   aria-hidden="true"
 >
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -2318,56 +2398,58 @@ exports[`render paged table with column visibility chooser 2`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
             <th
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-head singleIcon iconInHeaderOnly"
               scope="col"
             >
               <button
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root"
                 data-testid="column-visibility-chooser-button"
                 tabindex="0"
                 type="button"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -2378,21 +2460,21 @@ exports[`render paged table with column visibility chooser 2`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </button>
             </th>
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-0"
             >
               <span>
@@ -2400,13 +2482,13 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-1"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="0-2"
             >
               <span>
@@ -2414,15 +2496,15 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-0"
             >
               <span>
@@ -2430,13 +2512,13 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-1"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="1-2"
             >
               <span>
@@ -2444,15 +2526,15 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-0"
             >
               <span>
@@ -2460,13 +2542,13 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-1"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="2-2"
             >
               <span>
@@ -2474,15 +2556,15 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-0"
             >
               <span>
@@ -2490,13 +2572,13 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-1"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="3-2"
             >
               <span>
@@ -2504,15 +2586,15 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-0"
             >
               <span>
@@ -2520,13 +2602,13 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-1"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="4-2"
             >
               <span>
@@ -2534,15 +2616,15 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-0"
             >
               <span>
@@ -2550,13 +2632,13 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-1"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="5-2"
             >
               <span>
@@ -2564,18 +2646,18 @@ exports[`render paged table with column visibility chooser 2`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
         </tbody>
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -2589,38 +2671,42 @@ exports[`render paged table with column visibility chooser 2`] = `
 exports[`render paged table with column visibility chooser 3`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -2632,50 +2718,52 @@ exports[`render paged table with column visibility chooser 3`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
             <th
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-head singleIcon iconInHeaderOnly"
               scope="col"
             >
               <button
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root"
                 data-testid="column-visibility-chooser-button"
                 tabindex="0"
                 type="button"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -2686,21 +2774,21 @@ exports[`render paged table with column visibility chooser 3`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </button>
             </th>
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-0"
             >
               <span>
@@ -2708,7 +2796,7 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="0-1"
             >
               <span>
@@ -2716,15 +2804,15 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-0"
             >
               <span>
@@ -2732,7 +2820,7 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="1-1"
             >
               <span>
@@ -2740,15 +2828,15 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-0"
             >
               <span>
@@ -2756,7 +2844,7 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="2-1"
             >
               <span>
@@ -2764,15 +2852,15 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-0"
             >
               <span>
@@ -2780,7 +2868,7 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="3-1"
             >
               <span>
@@ -2788,15 +2876,15 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-0"
             >
               <span>
@@ -2804,7 +2892,7 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="4-1"
             >
               <span>
@@ -2812,15 +2900,15 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-0"
             >
               <span>
@@ -2828,7 +2916,7 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="5-1"
             >
               <span>
@@ -2836,18 +2924,18 @@ exports[`render paged table with column visibility chooser 3`] = `
               </span>
             </td>
             <td
-              class="singleIcon iconInHeaderOnly"
+              class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
             />
           </tr>
         </tbody>
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -2861,54 +2949,59 @@ exports[`render paged table with column visibility chooser 3`] = `
 exports[`render paged table with default ids, and test row highlighting 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       />
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1410 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1413"
                     data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -2916,7 +3009,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -2927,45 +3020,48 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </th>
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="0"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="0-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1410 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1413"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-0"
                     id="0"
@@ -2974,7 +3070,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -2985,12 +3081,12 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-1"
             >
               <span>
@@ -2998,13 +3094,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="0-2"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="0-3"
             >
               <span>
@@ -3013,19 +3109,22 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="1"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="1-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1410 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1413"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-1"
                     id="1"
@@ -3034,7 +3133,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3045,12 +3144,12 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-1"
             >
               <span>
@@ -3058,13 +3157,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="1-2"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="1-3"
             >
               <span>
@@ -3073,19 +3172,22 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="2"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="2-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1410 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1413"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-2"
                     id="2"
@@ -3094,7 +3196,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3105,12 +3207,12 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-1"
             >
               <span>
@@ -3118,13 +3220,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="2-2"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="2-3"
             >
               <span>
@@ -3133,19 +3235,22 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="3"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="3-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1410 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1413"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-3"
                     id="3"
@@ -3154,7 +3259,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3165,12 +3270,12 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-1"
             >
               <span>
@@ -3178,13 +3283,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="3-2"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="3-3"
             >
               <span>
@@ -3193,19 +3298,22 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="4"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="4-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1410 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1413"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-4"
                     id="4"
@@ -3214,7 +3322,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3225,12 +3333,12 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-1"
             >
               <span>
@@ -3238,13 +3346,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="4-2"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="4-3"
             >
               <span>
@@ -3253,19 +3361,22 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="5"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="5-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1410 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1413"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-5"
                     id="5"
@@ -3274,7 +3385,7 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3285,12 +3396,12 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-1"
             >
               <span>
@@ -3298,13 +3409,13 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="5-2"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="5-3"
             >
               <span>
@@ -3316,11 +3427,11 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -3334,38 +3445,42 @@ exports[`render paged table with default ids, and test row highlighting 1`] = `
 exports[`render paged table with no initially selected items, then select items 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -3377,36 +3492,39 @@ exports[`render paged table with no initially selected items, then select items 
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader COLUMN_SELECT-header singleIcon"
+              class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
               scope="col"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1118 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1121"
                     data-indeterminate="false"
                     data-testid="table-checkbox-header"
                     type="checkbox"
@@ -3414,7 +3532,7 @@ exports[`render paged table with no initially selected items, then select items 
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3425,45 +3543,48 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </th>
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="First Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="First Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1118 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1121"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-first-datum"
                     id="First Datum"
@@ -3472,7 +3593,7 @@ exports[`render paged table with no initially selected items, then select items 
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3483,12 +3604,12 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-1"
             >
               <span>
@@ -3496,13 +3617,13 @@ exports[`render paged table with no initially selected items, then select items 
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="First Datum-2"
             >
               Second Datum
             </td>
             <td
-              class="tableCell test-third-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
               data-cell-id="First Datum-3"
             >
               <span>
@@ -3511,19 +3632,22 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Fourth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Fourth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1118 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1121"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-fourth-datum"
                     id="Fourth Datum"
@@ -3532,7 +3656,7 @@ exports[`render paged table with no initially selected items, then select items 
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3543,12 +3667,12 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-1"
             >
               <span>
@@ -3556,13 +3680,13 @@ exports[`render paged table with no initially selected items, then select items 
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Fourth Datum-2"
             >
               Fifth Datum
             </td>
             <td
-              class="tableCell test-sixth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
               data-cell-id="Fourth Datum-3"
             >
               <span>
@@ -3571,19 +3695,22 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventh Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Seventh Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1118 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1121"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventh-datum"
                     id="Seventh Datum"
@@ -3592,7 +3719,7 @@ exports[`render paged table with no initially selected items, then select items 
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3603,12 +3730,12 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-1"
             >
               <span>
@@ -3616,13 +3743,13 @@ exports[`render paged table with no initially selected items, then select items 
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventh Datum-2"
             >
               Eighth Datum
             </td>
             <td
-              class="tableCell test-ninth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
               data-cell-id="Seventh Datum-3"
             >
               <span>
@@ -3631,19 +3758,22 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Tenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Tenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1118 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1121"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-tenth-datum"
                     id="Tenth Datum"
@@ -3652,7 +3782,7 @@ exports[`render paged table with no initially selected items, then select items 
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3663,12 +3793,12 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-1"
             >
               <span>
@@ -3676,13 +3806,13 @@ exports[`render paged table with no initially selected items, then select items 
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Tenth Datum-2"
             >
               Eleventh Datum
             </td>
             <td
-              class="tableCell test-twelfth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
               data-cell-id="Tenth Datum-3"
             >
               <span>
@@ -3691,19 +3821,22 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Thirteenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Thirteenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1118 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1121"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-thirteenth-datum"
                     id="Thirteenth Datum"
@@ -3712,7 +3845,7 @@ exports[`render paged table with no initially selected items, then select items 
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3723,12 +3856,12 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-1"
             >
               <span>
@@ -3736,13 +3869,13 @@ exports[`render paged table with no initially selected items, then select items 
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Thirteenth Datum-2"
             >
               Fifteenth Datum
             </td>
             <td
-              class="tableCell test-sixteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
               data-cell-id="Thirteenth Datum-3"
             >
               <span>
@@ -3751,19 +3884,22 @@ exports[`render paged table with no initially selected items, then select items 
             </td>
           </tr>
           <tr
-            class="tableRow"
+            class="MuiTableRow-root tableRow"
             data-testid="Seventeenth Datum"
           >
             <td
-              class="tableCell checkBoxColumn singleIcon"
+              class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
               data-cell-id="Seventeenth Datum-0"
             >
               <span
                 aria-disabled="false"
-                class=""
+                class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1118 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
               >
-                <span>
+                <span
+                  class="MuiIconButton-label"
+                >
                   <input
+                    class="PrivateSwitchBase-input-1121"
                     data-indeterminate="false"
                     data-testid="table-checkbox-cell-seventeenth-datum"
                     id="Seventeenth Datum"
@@ -3772,7 +3908,7 @@ exports[`render paged table with no initially selected items, then select items 
                   />
                   <svg
                     aria-hidden="true"
-                    class=""
+                    class="MuiSvgIcon-root"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -3783,12 +3919,12 @@ exports[`render paged table with no initially selected items, then select items 
                   </svg>
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-1"
             >
               <span>
@@ -3796,13 +3932,13 @@ exports[`render paged table with no initially selected items, then select items 
               </span>
             </td>
             <td
-              class="tableCell"
+              class="MuiTableCell-root MuiTableCell-body tableCell"
               data-cell-id="Seventeenth Datum-2"
             >
               Eighteenth Datum
             </td>
             <td
-              class="tableCell test-ninteenth-datum-className"
+              class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
               data-cell-id="Seventeenth Datum-3"
             >
               <span>
@@ -3814,11 +3950,11 @@ exports[`render paged table with no initially selected items, then select items 
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         6
@@ -3832,39 +3968,43 @@ exports[`render paged table with no initially selected items, then select items 
 exports[`render paged table with no results 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           4
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -3876,52 +4016,52 @@ exports[`render paged table with no results 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class=""
+            class="MuiTableRow-root"
           >
             <td
-              class="no-results noResults"
+              class="MuiTableCell-root MuiTableCell-body no-results noResults"
               colspan="3"
             >
               0 Results
@@ -3931,11 +4071,11 @@ exports[`render paged table with no results 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         0
@@ -3949,38 +4089,42 @@ exports[`render paged table with no results 1`] = `
 exports[`render paged table with no results and is loading 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot card MuiPaper-elevation6 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -3992,52 +4136,52 @@ exports[`render paged table with no results and is loading 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody hasTableMargin tableContainer"
+      class="MuiCardContent-root pagedTableCardBody hasTableMargin tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class=""
+            class="MuiTableRow-root"
           >
             <td
-              class="no-results noResults"
+              class="MuiTableCell-root MuiTableCell-body no-results noResults"
               colspan="3"
             />
           </tr>
@@ -4045,11 +4189,11 @@ exports[`render paged table with no results and is loading 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         0
@@ -4072,38 +4216,42 @@ exports[`render paged table with no results and is loading 1`] = `
 exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
 <div>
   <div
-    class="pagedTableCardRoot fullBleedPagedTableCardRoot card"
+    class="MuiPaper-root MuiCard-root pagedTableCardRoot fullBleedPagedTableCardRoot card MuiPaper-elevation0 MuiPaper-rounded"
     data-testid="paged-table"
   >
     <div
-      class=""
+      class="MuiCardHeader-root"
       data-testid="card-header"
     >
-      <div>
+      <div
+        class="MuiCardHeader-content"
+      >
         <span
-          class="card-title"
+          class="MuiTypography-root MuiCardHeader-title card-title MuiTypography-h5 MuiTypography-displayBlock"
           data-testid="card-title"
         >
           
         </span>
         <span
-          class=""
+          class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body1 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
           data-testid="card-subheader"
         />
       </div>
       <div
-        class="headerActions"
+        class="MuiCardHeader-action headerActions"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-text"
           data-testid="export-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             <svg
               aria-hidden="true"
-              class="exportButton"
+              class="MuiSvgIcon-root exportButton"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -4115,52 +4263,52 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
             Export
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
     </div>
     <div
-      class="pagedTableCardBody tableContainer"
+      class="MuiCardContent-root pagedTableCardBody tableContainer"
       data-testid="card-body"
     >
       <table
-        class="table"
+        class="MuiTable-root table"
         data-testid="table"
         tabindex="0"
       >
         <thead
-          class="TableHeader tableHead"
+          class="MuiTableHead-root TableHeader tableHead"
         >
           <tr
-            class=""
+            class="MuiTableRow-root MuiTableRow-head"
           >
             <th
-              class="tableHeader columnOne-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
               scope="col"
             >
               Column One
             </th>
             <th
-              class="tableHeader columnTwo-header"
+              class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
               scope="col"
             >
               Column Two
             </th>
             <th
-              class="tableHeader"
+              class="MuiTableCell-root MuiTableCell-head tableHeader"
               scope="col"
             />
           </tr>
         </thead>
         <tbody
-          class=""
+          class="MuiTableBody-root"
         >
           <tr
-            class=""
+            class="MuiTableRow-root"
           >
             <td
-              class="no-results noResults"
+              class="MuiTableCell-root MuiTableCell-body no-results noResults"
               colspan="3"
             >
               0 Results
@@ -4170,11 +4318,11 @@ exports[`render paged table with no results and isFullBleed, noMargin 1`] = `
       </table>
     </div>
     <div
-      class="pagedTableCardFooter footerActions"
+      class="MuiCardActions-root pagedTableCardFooter MuiCardActions-spacing footerActions"
       data-testid="card-footer-actions"
     >
       <p
-        class="tableSummary"
+        class="MuiTypography-root tableSummary MuiTypography-body1"
       >
         Showing 
         0

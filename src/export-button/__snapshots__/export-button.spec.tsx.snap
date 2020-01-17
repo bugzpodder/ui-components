@@ -3,15 +3,17 @@
 exports[`render export table button 1`] = `
 <div>
   <button
-    class=""
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiButton-label"
+    >
       <svg
         aria-hidden="true"
-        class="exportButton"
+        class="MuiSvgIcon-root exportButton"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -23,7 +25,7 @@ exports[`render export table button 1`] = `
       Export
     </span>
     <span
-      class=""
+      class="MuiTouchRipple-root"
     />
   </button>
 </div>
@@ -32,15 +34,17 @@ exports[`render export table button 1`] = `
 exports[`render export table button and click modal options 1`] = `
 <div>
   <button
-    class=""
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiButton-label"
+    >
       <svg
         aria-hidden="true"
-        class="exportButton"
+        class="MuiSvgIcon-root exportButton"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -52,7 +56,7 @@ exports[`render export table button and click modal options 1`] = `
       Export
     </span>
     <span
-      class=""
+      class="MuiTouchRipple-root"
     />
   </button>
 </div>
@@ -61,15 +65,17 @@ exports[`render export table button and click modal options 1`] = `
 exports[`render export table button as part of a paged table with fetchBulkExportRows 1`] = `
 <div>
   <button
-    class=""
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiButton-label"
+    >
       <svg
         aria-hidden="true"
-        class="exportButton"
+        class="MuiSvgIcon-root exportButton"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -81,7 +87,7 @@ exports[`render export table button as part of a paged table with fetchBulkExpor
       Export
     </span>
     <span
-      class=""
+      class="MuiTouchRipple-root"
     />
   </button>
 </div>
@@ -90,15 +96,17 @@ exports[`render export table button as part of a paged table with fetchBulkExpor
 exports[`render export table button as part of a paged table with selectable rows 1`] = `
 <div>
   <button
-    class=""
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiButton-label"
+    >
       <svg
         aria-hidden="true"
-        class="exportButton"
+        class="MuiSvgIcon-root exportButton"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -110,7 +118,7 @@ exports[`render export table button as part of a paged table with selectable row
       Export
     </span>
     <span
-      class=""
+      class="MuiTouchRipple-root"
     />
   </button>
 </div>
@@ -119,15 +127,17 @@ exports[`render export table button as part of a paged table with selectable row
 exports[`render export table button as part of a paged table without selectable rows or fetchBulkExportRows 1`] = `
 <div>
   <button
-    class=""
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
     data-testid="export-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiButton-label"
+    >
       <svg
         aria-hidden="true"
-        class="exportButton"
+        class="MuiSvgIcon-root exportButton"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -139,7 +149,7 @@ exports[`render export table button as part of a paged table without selectable 
       Export
     </span>
     <span
-      class=""
+      class="MuiTouchRipple-root"
     />
   </button>
 </div>

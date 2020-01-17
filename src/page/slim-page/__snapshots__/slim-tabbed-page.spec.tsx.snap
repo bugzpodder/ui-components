@@ -7,7 +7,7 @@ exports[`render common tabbed page 1`] = `
     data-testid="common-page"
   >
     <div
-      class="stickyHeader pageHeader"
+      class="MuiPaper-root stickyHeader pageHeader MuiPaper-elevation1"
       data-testid="common-page-header"
     >
       <div
@@ -15,7 +15,7 @@ exports[`render common tabbed page 1`] = `
         data-testid="common-page-title-container"
       >
         <h6
-          class="title"
+          class="MuiTypography-root title MuiTypography-h6 MuiTypography-noWrap"
           data-testid="common-page-title"
         >
           Test Card
@@ -26,79 +26,86 @@ exports[`render common tabbed page 1`] = `
         class="centerHeader"
       >
         <div
-          class="tabsContainer"
+          class="MuiTabs-root tabsContainer"
           data-testid="common-tabbed-page-tabs"
         >
           <div
-            class="scrollButton"
+            class="PrivateTabScrollButton-root-70 MuiTabs-scrollButtons scrollButton"
           />
           <div
+            class="MuiTabs-scrollable"
             style="width: 99px; height: 99px; position: absolute; top: -9999px; overflow: scroll;"
           />
           <div
-            class=""
+            class="MuiTabs-scroller MuiTabs-scrollable"
             style="margin-bottom: 0px;"
           >
             <div
-              class="tabs"
+              class="MuiTabs-flexContainer tabs"
               role="tablist"
             >
               <button
                 aria-selected="true"
-                class="tab tabbed-page-tab"
+                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary Mui-selected"
                 data-testid="tab-one"
                 id="tab-one"
                 role="tab"
                 tabindex="0"
                 type="button"
               >
-                <span>
+                <span
+                  class="MuiTab-wrapper"
+                >
                   Tab One
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </button>
               <button
                 aria-selected="false"
-                class="tab tabbed-page-tab"
+                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
                 data-testid="tab-two"
                 id="tab-two"
                 role="tab"
                 tabindex="0"
                 type="button"
               >
-                <span>
+                <span
+                  class="MuiTab-wrapper"
+                >
                   Tab Two
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </button>
               <button
                 aria-selected="false"
-                class="tab tabbed-page-tab"
+                class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
                 data-testid="tab-three"
                 id="tab-three"
                 role="tab"
                 tabindex="0"
                 type="button"
               >
-                <span>
+                <span
+                  class="MuiTab-wrapper"
+                >
                   Tab Three
                 </span>
                 <span
-                  class=""
+                  class="MuiTouchRipple-root"
                 />
               </button>
             </div>
             <span
-              class=""
+              class="PrivateTabIndicator-root-85 PrivateTabIndicator-colorPrimary-86 MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
           <div
-            class="scrollButton"
+            class="PrivateTabScrollButton-root-70 MuiTabs-scrollButtons scrollButton"
           />
         </div>
       </div>
@@ -111,33 +118,35 @@ exports[`render common tabbed page 1`] = `
           data-testid="common-page-primary-actions"
         >
           <button
-            class="primaryAction"
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained primaryAction MuiButton-containedPrimary"
             tabindex="0"
             type="button"
           >
-            <span>
+            <span
+              class="MuiButton-label"
+            >
               Test Action
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>
         <button
           aria-haspopup="true"
           aria-owns="common-page-secondary-actions"
-          class="secondaryActionsButton"
+          class="MuiButtonBase-root MuiIconButton-root secondaryActionsButton Mui-disabled Mui-disabled"
           data-testid="dropdown-button"
           disabled=""
           tabindex="-1"
           type="button"
         >
           <span
-            class="disabled"
+            class="MuiIconButton-label disabled"
           >
             <svg
               aria-hidden="true"
-              class=""
+              class="MuiSvgIcon-root"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -155,14 +164,16 @@ exports[`render common tabbed page 1`] = `
       data-testid="common-page-content"
     >
       <div
-        class=""
+        class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess MuiPaper-elevation0"
         data-testid="alert-one"
         role="alert"
       >
-        <div>
+        <div
+          class="MuiAlert-icon"
+        >
           <svg
             aria-hidden="true"
-            class=""
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -172,7 +183,9 @@ exports[`render common tabbed page 1`] = `
             />
           </svg>
         </div>
-        <div>
+        <div
+          class="MuiAlert-message"
+        >
           Tab One!
         </div>
       </div>

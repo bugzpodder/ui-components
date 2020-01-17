@@ -21,7 +21,7 @@ module.exports = {
     ".tsx?$": "ts-jest",
   },
   setupFilesAfterEnv: [
-    "<rootDir>/setupTests.js",
+    "<rootDir>/setupTests.ts",
     "jest-mock-console/dist/setupTestFramework.js",
   ],
   globals: {

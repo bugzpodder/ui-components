@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import MockDate from "mockdate";
 import React from "react";
 import Typography from "@material-ui/core/Typography";

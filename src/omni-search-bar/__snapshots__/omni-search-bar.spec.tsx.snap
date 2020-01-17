@@ -9,26 +9,28 @@ exports[`OmniSearchBar renders properly 1`] = `
       class="omniField"
     >
       <div
-        class="placeholder text field"
+        class="MuiFormControl-root MuiTextField-root placeholder text field MuiFormControl-fullWidth"
       >
         <div
-          class=""
+          class="MuiInputBase-root MuiInput-root MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"
         >
           <div
-            class=""
+            class="MuiInputAdornment-root MuiInputAdornment-positionStart"
           >
             <button
               aria-label="Clear entered search values"
-              class="iconButton text"
+              class="MuiButtonBase-root MuiIconButton-root iconButton text MuiIconButton-colorInherit"
               id="omni-input-field-id-search"
               tabindex="0"
               title="Search"
               type="button"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -42,28 +44,30 @@ exports[`OmniSearchBar renders properly 1`] = `
           </div>
           <input
             aria-invalid="false"
-            class=""
+            class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
             id="omni-input-field-id"
             placeholder="Search here or use dropdown"
             type="text"
             value=""
           />
           <div
-            class=""
+            class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
           >
             <button
               aria-label="Expand search options"
-              class="iconButton text"
+              class="MuiButtonBase-root MuiIconButton-root iconButton text MuiIconButton-colorInherit"
               data-testid="search-options-expander"
               id="omni-input-field-id-menu"
               tabindex="0"
               title="Search options"
               type="button"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"

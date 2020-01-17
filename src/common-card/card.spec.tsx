@@ -1,4 +1,4 @@
-import "@testing-library/jest-dom/extend-expect";
+
 import Button from "@material-ui/core/Button";
 import React from "react";
 import { CommonCard } from ".";

@@ -6,27 +6,30 @@ exports[`render full simple table 1`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader COLUMN_SELECT-header singleIcon"
+            class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="indeterminate"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-173 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-174 Mui-checked MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
                   checked=""
+                  class="PrivateSwitchBase-input-176"
                   data-indeterminate="true"
                   data-testid="table-checkbox-header"
                   type="checkbox"
@@ -34,7 +37,7 @@ exports[`render full simple table 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -45,46 +48,49 @@ exports[`render full simple table 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </th>
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="First Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="First Datum-0"
           >
             <span
               aria-disabled="false"
-              class="active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-173 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-174 Mui-checked MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
                   checked=""
+                  class="PrivateSwitchBase-input-176"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
@@ -93,7 +99,7 @@ exports[`render full simple table 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -104,12 +110,12 @@ exports[`render full simple table 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="First Datum-1"
           >
             <span>
@@ -117,13 +123,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="First Datum-2"
           >
             Second Datum
           </td>
           <td
-            class="tableCell test-third-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
             data-cell-id="First Datum-3"
           >
             <span>
@@ -132,20 +138,23 @@ exports[`render full simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Fourth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Fourth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-173 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-174 Mui-checked MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
                   checked=""
+                  class="PrivateSwitchBase-input-176"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-fourth-datum"
                   id="Fourth Datum"
@@ -154,7 +163,7 @@ exports[`render full simple table 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -165,12 +174,12 @@ exports[`render full simple table 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Fourth Datum-1"
           >
             <span>
@@ -178,13 +187,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Fourth Datum-2"
           >
             Fifth Datum
           </td>
           <td
-            class="tableCell test-sixth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
             data-cell-id="Fourth Datum-3"
           >
             <span>
@@ -193,19 +202,22 @@ exports[`render full simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Seventh Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventh Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-173 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-176"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventh-datum"
                   id="Seventh Datum"
@@ -214,7 +226,7 @@ exports[`render full simple table 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -225,12 +237,12 @@ exports[`render full simple table 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventh Datum-1"
           >
             <span>
@@ -238,13 +250,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventh Datum-2"
           >
             Eighth Datum
           </td>
           <td
-            class="tableCell test-ninth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
             data-cell-id="Seventh Datum-3"
           >
             <span>
@@ -253,19 +265,22 @@ exports[`render full simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Tenth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Tenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-173 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-176"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-tenth-datum"
                   id="Tenth Datum"
@@ -274,7 +289,7 @@ exports[`render full simple table 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -285,12 +300,12 @@ exports[`render full simple table 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Tenth Datum-1"
           >
             <span>
@@ -298,13 +313,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Tenth Datum-2"
           >
             Eleventh Datum
           </td>
           <td
-            class="tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
             data-cell-id="Tenth Datum-3"
           >
             <span>
@@ -313,19 +328,22 @@ exports[`render full simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Thirteenth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-173 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-176"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-thirteenth-datum"
                   id="Thirteenth Datum"
@@ -334,7 +352,7 @@ exports[`render full simple table 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -345,12 +363,12 @@ exports[`render full simple table 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Thirteenth Datum-1"
           >
             <span>
@@ -358,13 +376,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Thirteenth Datum-2"
           >
             Fifteenth Datum
           </td>
           <td
-            class="tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
             data-cell-id="Thirteenth Datum-3"
           >
             <span>
@@ -373,19 +391,22 @@ exports[`render full simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Seventeenth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventeenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-173 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-176"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventeenth-datum"
                   id="Seventeenth Datum"
@@ -394,7 +415,7 @@ exports[`render full simple table 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -405,12 +426,12 @@ exports[`render full simple table 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventeenth Datum-1"
           >
             <span>
@@ -418,13 +439,13 @@ exports[`render full simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventeenth Datum-2"
           >
             Eighteenth Datum
           </td>
           <td
-            class="tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
             data-cell-id="Seventeenth Datum-3"
           >
             <span>
@@ -444,43 +465,43 @@ exports[`render loading simple table 1`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="0"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-0"
           >
             <span>
@@ -488,13 +509,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-1"
           >
             Second Datum
           </td>
           <td
-            class="tableCell test-third-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
             data-cell-id="0-2"
           >
             <span>
@@ -503,11 +524,11 @@ exports[`render loading simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="1"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-0"
           >
             <span>
@@ -515,13 +536,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-1"
           >
             Fifth Datum
           </td>
           <td
-            class="tableCell test-sixth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
             data-cell-id="1-2"
           >
             <span>
@@ -530,11 +551,11 @@ exports[`render loading simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="2"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-0"
           >
             <span>
@@ -542,13 +563,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-1"
           >
             Eighth Datum
           </td>
           <td
-            class="tableCell test-ninth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
             data-cell-id="2-2"
           >
             <span>
@@ -557,11 +578,11 @@ exports[`render loading simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="3"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-0"
           >
             <span>
@@ -569,13 +590,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-1"
           >
             Eleventh Datum
           </td>
           <td
-            class="tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
             data-cell-id="3-2"
           >
             <span>
@@ -584,11 +605,11 @@ exports[`render loading simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="4"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-0"
           >
             <span>
@@ -596,13 +617,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-1"
           >
             Fifteenth Datum
           </td>
           <td
-            class="tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
             data-cell-id="4-2"
           >
             <span>
@@ -611,11 +632,11 @@ exports[`render loading simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="5"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-0"
           >
             <span>
@@ -623,13 +644,13 @@ exports[`render loading simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-1"
           >
             Eighteenth Datum
           </td>
           <td
-            class="tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
             data-cell-id="5-2"
           >
             <span>
@@ -658,43 +679,43 @@ exports[`render simple table 1`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="0"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-0"
           >
             <span>
@@ -702,13 +723,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-1"
           >
             Second Datum
           </td>
           <td
-            class="tableCell test-third-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
             data-cell-id="0-2"
           >
             <span>
@@ -717,11 +738,11 @@ exports[`render simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="1"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-0"
           >
             <span>
@@ -729,13 +750,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-1"
           >
             Fifth Datum
           </td>
           <td
-            class="tableCell test-sixth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
             data-cell-id="1-2"
           >
             <span>
@@ -744,11 +765,11 @@ exports[`render simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="2"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-0"
           >
             <span>
@@ -756,13 +777,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-1"
           >
             Eighth Datum
           </td>
           <td
-            class="tableCell test-ninth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
             data-cell-id="2-2"
           >
             <span>
@@ -771,11 +792,11 @@ exports[`render simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="3"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-0"
           >
             <span>
@@ -783,13 +804,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-1"
           >
             Eleventh Datum
           </td>
           <td
-            class="tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
             data-cell-id="3-2"
           >
             <span>
@@ -798,11 +819,11 @@ exports[`render simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="4"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-0"
           >
             <span>
@@ -810,13 +831,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-1"
           >
             Fifteenth Datum
           </td>
           <td
-            class="tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
             data-cell-id="4-2"
           >
             <span>
@@ -825,11 +846,11 @@ exports[`render simple table 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="5"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-0"
           >
             <span>
@@ -837,13 +858,13 @@ exports[`render simple table 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-1"
           >
             Eighteenth Datum
           </td>
           <td
-            class="tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
             data-cell-id="5-2"
           >
             <span>
@@ -863,27 +884,30 @@ exports[`render simple table with all items selected 1`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader COLUMN_SELECT-header singleIcon"
+            class="MuiTableCell-root MuiTableCell-head tableHeader COLUMN_SELECT-header singleIcon"
             scope="col"
           >
             <span
               aria-disabled="false"
-              class="indeterminate"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-112 Mui-checked MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
                   checked=""
+                  class="PrivateSwitchBase-input-114"
                   data-indeterminate="true"
                   data-testid="table-checkbox-header"
                   type="checkbox"
@@ -891,7 +915,7 @@ exports[`render simple table with all items selected 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -902,46 +926,49 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </th>
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="First Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="First Datum-0"
           >
             <span
               aria-disabled="false"
-              class="active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-112 Mui-checked MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
                   checked=""
+                  class="PrivateSwitchBase-input-114"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-first-datum"
                   id="First Datum"
@@ -950,7 +977,7 @@ exports[`render simple table with all items selected 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -961,12 +988,12 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="First Datum-1"
           >
             <span>
@@ -974,13 +1001,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="First Datum-2"
           >
             Second Datum
           </td>
           <td
-            class="tableCell test-third-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
             data-cell-id="First Datum-3"
           >
             <span>
@@ -989,20 +1016,23 @@ exports[`render simple table with all items selected 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Fourth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Fourth Datum-0"
           >
             <span
               aria-disabled="false"
-              class="active"
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-112 Mui-checked MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
                   checked=""
+                  class="PrivateSwitchBase-input-114"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-fourth-datum"
                   id="Fourth Datum"
@@ -1011,7 +1041,7 @@ exports[`render simple table with all items selected 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1022,12 +1052,12 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Fourth Datum-1"
           >
             <span>
@@ -1035,13 +1065,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Fourth Datum-2"
           >
             Fifth Datum
           </td>
           <td
-            class="tableCell test-sixth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
             data-cell-id="Fourth Datum-3"
           >
             <span>
@@ -1050,19 +1080,22 @@ exports[`render simple table with all items selected 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Seventh Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventh Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-114"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventh-datum"
                   id="Seventh Datum"
@@ -1071,7 +1104,7 @@ exports[`render simple table with all items selected 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1082,12 +1115,12 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventh Datum-1"
           >
             <span>
@@ -1095,13 +1128,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventh Datum-2"
           >
             Eighth Datum
           </td>
           <td
-            class="tableCell test-ninth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
             data-cell-id="Seventh Datum-3"
           >
             <span>
@@ -1110,19 +1143,22 @@ exports[`render simple table with all items selected 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Tenth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Tenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-114"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-tenth-datum"
                   id="Tenth Datum"
@@ -1131,7 +1167,7 @@ exports[`render simple table with all items selected 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1142,12 +1178,12 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Tenth Datum-1"
           >
             <span>
@@ -1155,13 +1191,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Tenth Datum-2"
           >
             Eleventh Datum
           </td>
           <td
-            class="tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
             data-cell-id="Tenth Datum-3"
           >
             <span>
@@ -1170,19 +1206,22 @@ exports[`render simple table with all items selected 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Thirteenth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Thirteenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-114"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-thirteenth-datum"
                   id="Thirteenth Datum"
@@ -1191,7 +1230,7 @@ exports[`render simple table with all items selected 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1202,12 +1241,12 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Thirteenth Datum-1"
           >
             <span>
@@ -1215,13 +1254,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Thirteenth Datum-2"
           >
             Fifteenth Datum
           </td>
           <td
-            class="tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
             data-cell-id="Thirteenth Datum-3"
           >
             <span>
@@ -1230,19 +1269,22 @@ exports[`render simple table with all items selected 1`] = `
           </td>
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="Seventeenth Datum"
         >
           <td
-            class="tableCell checkBoxColumn singleIcon"
+            class="MuiTableCell-root MuiTableCell-body tableCell checkBoxColumn singleIcon"
             data-cell-id="Seventeenth Datum-0"
           >
             <span
               aria-disabled="false"
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <input
+                  class="PrivateSwitchBase-input-114"
                   data-indeterminate="false"
                   data-testid="table-checkbox-cell-seventeenth-datum"
                   id="Seventeenth Datum"
@@ -1251,7 +1293,7 @@ exports[`render simple table with all items selected 1`] = `
                 />
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1262,12 +1304,12 @@ exports[`render simple table with all items selected 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventeenth Datum-1"
           >
             <span>
@@ -1275,13 +1317,13 @@ exports[`render simple table with all items selected 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="Seventeenth Datum-2"
           >
             Eighteenth Datum
           </td>
           <td
-            class="tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
             data-cell-id="Seventeenth Datum-3"
           >
             <span>
@@ -1301,46 +1343,48 @@ exports[`render simple table with column visibility chooser 1`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
           <th
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-head singleIcon iconInHeaderOnly"
             scope="col"
           >
             <button
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root"
               data-testid="column-visibility-chooser-button"
               tabindex="0"
               type="button"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1351,21 +1395,21 @@ exports[`render simple table with column visibility chooser 1`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </button>
           </th>
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="0"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-0"
           >
             <span>
@@ -1373,13 +1417,13 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-1"
           >
             Second Datum
           </td>
           <td
-            class="tableCell test-third-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
             data-cell-id="0-2"
           >
             <span>
@@ -1387,15 +1431,15 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="1"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-0"
           >
             <span>
@@ -1403,13 +1447,13 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-1"
           >
             Fifth Datum
           </td>
           <td
-            class="tableCell test-sixth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
             data-cell-id="1-2"
           >
             <span>
@@ -1417,15 +1461,15 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="2"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-0"
           >
             <span>
@@ -1433,13 +1477,13 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-1"
           >
             Eighth Datum
           </td>
           <td
-            class="tableCell test-ninth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
             data-cell-id="2-2"
           >
             <span>
@@ -1447,15 +1491,15 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="3"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-0"
           >
             <span>
@@ -1463,13 +1507,13 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-1"
           >
             Eleventh Datum
           </td>
           <td
-            class="tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
             data-cell-id="3-2"
           >
             <span>
@@ -1477,15 +1521,15 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="4"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-0"
           >
             <span>
@@ -1493,13 +1537,13 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-1"
           >
             Fifteenth Datum
           </td>
           <td
-            class="tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
             data-cell-id="4-2"
           >
             <span>
@@ -1507,15 +1551,15 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="5"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-0"
           >
             <span>
@@ -1523,13 +1567,13 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-1"
           >
             Eighteenth Datum
           </td>
           <td
-            class="tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
             data-cell-id="5-2"
           >
             <span>
@@ -1537,7 +1581,7 @@ exports[`render simple table with column visibility chooser 1`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
       </tbody>
@@ -1554,46 +1598,48 @@ exports[`render simple table with column visibility chooser 2`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
           <th
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-head singleIcon iconInHeaderOnly"
             scope="col"
           >
             <button
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root"
               data-testid="column-visibility-chooser-button"
               tabindex="0"
               type="button"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1604,21 +1650,21 @@ exports[`render simple table with column visibility chooser 2`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </button>
           </th>
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="0"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-0"
           >
             <span>
@@ -1626,13 +1672,13 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-1"
           >
             Second Datum
           </td>
           <td
-            class="tableCell test-third-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
             data-cell-id="0-2"
           >
             <span>
@@ -1640,15 +1686,15 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="1"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-0"
           >
             <span>
@@ -1656,13 +1702,13 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-1"
           >
             Fifth Datum
           </td>
           <td
-            class="tableCell test-sixth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
             data-cell-id="1-2"
           >
             <span>
@@ -1670,15 +1716,15 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="2"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-0"
           >
             <span>
@@ -1686,13 +1732,13 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-1"
           >
             Eighth Datum
           </td>
           <td
-            class="tableCell test-ninth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
             data-cell-id="2-2"
           >
             <span>
@@ -1700,15 +1746,15 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="3"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-0"
           >
             <span>
@@ -1716,13 +1762,13 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-1"
           >
             Eleventh Datum
           </td>
           <td
-            class="tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
             data-cell-id="3-2"
           >
             <span>
@@ -1730,15 +1776,15 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="4"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-0"
           >
             <span>
@@ -1746,13 +1792,13 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-1"
           >
             Fifteenth Datum
           </td>
           <td
-            class="tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
             data-cell-id="4-2"
           >
             <span>
@@ -1760,15 +1806,15 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="5"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-0"
           >
             <span>
@@ -1776,13 +1822,13 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-1"
           >
             Eighteenth Datum
           </td>
           <td
-            class="tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
             data-cell-id="5-2"
           >
             <span>
@@ -1790,7 +1836,7 @@ exports[`render simple table with column visibility chooser 2`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
       </tbody>
@@ -1805,40 +1851,42 @@ exports[`render simple table with column visibility chooser 3`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
           <th
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-head singleIcon iconInHeaderOnly"
             scope="col"
           >
             <button
-              class=""
+              class="MuiButtonBase-root MuiIconButton-root"
               data-testid="column-visibility-chooser-button"
               tabindex="0"
               type="button"
             >
-              <span>
+              <span
+                class="MuiIconButton-label"
+              >
                 <svg
                   aria-hidden="true"
-                  class=""
+                  class="MuiSvgIcon-root"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1849,21 +1897,21 @@ exports[`render simple table with column visibility chooser 3`] = `
                 </svg>
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </button>
           </th>
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="0"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="0-0"
           >
             <span>
@@ -1871,7 +1919,7 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="tableCell test-third-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-third-datum-className"
             data-cell-id="0-1"
           >
             <span>
@@ -1879,15 +1927,15 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="1"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="1-0"
           >
             <span>
@@ -1895,7 +1943,7 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="tableCell test-sixth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixth-datum-className"
             data-cell-id="1-1"
           >
             <span>
@@ -1903,15 +1951,15 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="2"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="2-0"
           >
             <span>
@@ -1919,7 +1967,7 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="tableCell test-ninth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninth-datum-className"
             data-cell-id="2-1"
           >
             <span>
@@ -1927,15 +1975,15 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="3"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="3-0"
           >
             <span>
@@ -1943,7 +1991,7 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="tableCell test-twelfth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-twelfth-datum-className"
             data-cell-id="3-1"
           >
             <span>
@@ -1951,15 +1999,15 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="4"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="4-0"
           >
             <span>
@@ -1967,7 +2015,7 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="tableCell test-sixteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-sixteenth-datum-className"
             data-cell-id="4-1"
           >
             <span>
@@ -1975,15 +2023,15 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
         <tr
-          class="tableRow"
+          class="MuiTableRow-root tableRow"
           data-testid="5"
         >
           <td
-            class="tableCell"
+            class="MuiTableCell-root MuiTableCell-body tableCell"
             data-cell-id="5-0"
           >
             <span>
@@ -1991,7 +2039,7 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="tableCell test-ninteenth-datum-className"
+            class="MuiTableCell-root MuiTableCell-body tableCell test-ninteenth-datum-className"
             data-cell-id="5-1"
           >
             <span>
@@ -1999,7 +2047,7 @@ exports[`render simple table with column visibility chooser 3`] = `
             </span>
           </td>
           <td
-            class="singleIcon iconInHeaderOnly"
+            class="MuiTableCell-root MuiTableCell-body singleIcon iconInHeaderOnly"
           />
         </tr>
       </tbody>
@@ -2014,42 +2062,42 @@ exports[`render simple table with no results 1`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class=""
+          class="MuiTableRow-root"
         >
           <td
-            class="no-results noResults"
+            class="MuiTableCell-root MuiTableCell-body no-results noResults"
             colspan="3"
           >
             0 Results
@@ -2067,42 +2115,42 @@ exports[`render simple table with no results and is loading 1`] = `
     class="tableContainer"
   >
     <table
-      class="table"
+      class="MuiTable-root table"
       data-testid="table"
       tabindex="0"
     >
       <thead
-        class="TableHeader tableHead"
+        class="MuiTableHead-root TableHeader tableHead"
       >
         <tr
-          class=""
+          class="MuiTableRow-root MuiTableRow-head"
         >
           <th
-            class="tableHeader columnOne-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnOne-header"
             scope="col"
           >
             Column One
           </th>
           <th
-            class="tableHeader columnTwo-header"
+            class="MuiTableCell-root MuiTableCell-head tableHeader columnTwo-header"
             scope="col"
           >
             Column Two
           </th>
           <th
-            class="tableHeader"
+            class="MuiTableCell-root MuiTableCell-head tableHeader"
             scope="col"
           />
         </tr>
       </thead>
       <tbody
-        class=""
+        class="MuiTableBody-root"
       >
         <tr
-          class=""
+          class="MuiTableRow-root"
         >
           <td
-            class="no-results noResults"
+            class="MuiTableCell-root MuiTableCell-body no-results noResults"
             colspan="3"
           />
         </tr>

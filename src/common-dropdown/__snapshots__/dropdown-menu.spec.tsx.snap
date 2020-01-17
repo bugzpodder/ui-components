@@ -5,15 +5,17 @@ exports[`render CommonDropdownMenu 1`] = `
   <button
     aria-haspopup="true"
     aria-owns="review-actions-menu"
-    class=""
+    class="MuiButtonBase-root MuiButton-root MuiButton-text"
     data-testid="dropdown-button"
     tabindex="0"
     type="button"
   >
-    <span>
+    <span
+      class="MuiButton-label"
+    >
       <svg
         aria-hidden="true"
-        class=""
+        class="MuiSvgIcon-root"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -25,11 +27,11 @@ exports[`render CommonDropdownMenu 1`] = `
       Select Option
     </span>
     <span
-      class=""
+      class="MuiTouchRipple-root"
     />
   </button>
   <p
-    class=""
+    class="MuiTypography-root MuiTypography-body2"
     data-testid="test-text"
   >
     This proposal is pending approval.

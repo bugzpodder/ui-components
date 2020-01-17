@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import React, { useState } from "react";
 import { CommonMultiPageDialog } from ".";
 import { TestWrapper } from "../test-utils";

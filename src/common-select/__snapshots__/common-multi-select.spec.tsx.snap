@@ -4,30 +4,30 @@ exports[`CommonMultiSelect margin 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="autocomplete"
+    class="MuiAutocomplete-root autocomplete"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     >
       
       <div
-        class="inputRoot"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiAutocomplete-inputRoot inputRoot MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"
       >
         <div
-          class=""
+          class="MuiChip-root MuiAutocomplete-tag MuiChip-deletable"
           data-tag-index="0"
           role="button"
           tabindex="-1"
         >
           <span
-            class=""
+            class="MuiChip-label"
           >
             Algeria
           </span>
           <svg
             aria-hidden="true"
-            class=""
+            class="MuiSvgIcon-root MuiChip-deleteIcon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -38,19 +38,19 @@ exports[`CommonMultiSelect margin 1`] = `
           </svg>
         </div>
         <div
-          class=""
+          class="MuiChip-root MuiAutocomplete-tag MuiChip-deletable"
           data-tag-index="1"
           role="button"
           tabindex="-1"
         >
           <span
-            class=""
+            class="MuiChip-label"
           >
             Afghanistan
           </span>
           <svg
             aria-hidden="true"
-            class=""
+            class="MuiSvgIcon-root MuiChip-deleteIcon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -65,7 +65,7 @@ exports[`CommonMultiSelect margin 1`] = `
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class="input"
+          class="MuiInputBase-input MuiInput-input MuiAutocomplete-input input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
           data-testid="common-select-input"
           id="select-input"
           placeholder=""
@@ -73,18 +73,22 @@ exports[`CommonMultiSelect margin 1`] = `
           type="text"
           value=""
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Clear"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
             tabindex="-1"
             title="Clear"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
                 data-testid="common-select-close-icon"
                 focusable="false"
                 role="presentation"
@@ -96,20 +100,22 @@ exports[`CommonMultiSelect margin 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
           <button
             aria-label="Open"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -120,7 +126,7 @@ exports[`CommonMultiSelect margin 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>
@@ -135,30 +141,30 @@ exports[`CommonMultiSelect variant 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="autocomplete"
+    class="MuiAutocomplete-root autocomplete"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root"
     >
       
       <div
-        class="inputRoot"
+        class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiAutocomplete-inputRoot inputRoot MuiInputBase-formControl MuiInputBase-adornedStart MuiFilledInput-adornedStart MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
       >
         <div
-          class=""
+          class="MuiChip-root MuiAutocomplete-tag MuiChip-deletable"
           data-tag-index="0"
           role="button"
           tabindex="-1"
         >
           <span
-            class=""
+            class="MuiChip-label"
           >
             Algeria
           </span>
           <svg
             aria-hidden="true"
-            class=""
+            class="MuiSvgIcon-root MuiChip-deleteIcon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -169,19 +175,19 @@ exports[`CommonMultiSelect variant 1`] = `
           </svg>
         </div>
         <div
-          class=""
+          class="MuiChip-root MuiAutocomplete-tag MuiChip-deletable"
           data-tag-index="1"
           role="button"
           tabindex="-1"
         >
           <span
-            class=""
+            class="MuiChip-label"
           >
             Afghanistan
           </span>
           <svg
             aria-hidden="true"
-            class=""
+            class="MuiSvgIcon-root MuiChip-deleteIcon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -196,7 +202,7 @@ exports[`CommonMultiSelect variant 1`] = `
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class="input"
+          class="MuiInputBase-input MuiFilledInput-input MuiAutocomplete-input input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedStart MuiFilledInput-inputAdornedStart MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
           data-testid="common-select-input"
           id="select-input"
           placeholder=""
@@ -204,18 +210,22 @@ exports[`CommonMultiSelect variant 1`] = `
           type="text"
           value=""
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Clear"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
             tabindex="-1"
             title="Clear"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
                 data-testid="common-select-close-icon"
                 focusable="false"
                 role="presentation"
@@ -227,20 +237,22 @@ exports[`CommonMultiSelect variant 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
           <button
             aria-label="Open"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -251,7 +263,7 @@ exports[`CommonMultiSelect variant 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>
@@ -266,30 +278,30 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
 <div>
   <div
     aria-expanded="false"
-    class="autocomplete"
+    class="MuiAutocomplete-root autocomplete"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root"
     >
       
       <div
-        class="inputRoot"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiAutocomplete-inputRoot inputRoot MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedStart MuiInputBase-adornedEnd"
       >
         <div
-          class=""
+          class="MuiChip-root MuiAutocomplete-tag MuiChip-deletable"
           data-tag-index="0"
           role="button"
           tabindex="-1"
         >
           <span
-            class=""
+            class="MuiChip-label"
           >
             Algeria
           </span>
           <svg
             aria-hidden="true"
-            class=""
+            class="MuiSvgIcon-root MuiChip-deleteIcon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -300,19 +312,19 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
           </svg>
         </div>
         <div
-          class=""
+          class="MuiChip-root MuiAutocomplete-tag MuiChip-deletable"
           data-tag-index="1"
           role="button"
           tabindex="-1"
         >
           <span
-            class=""
+            class="MuiChip-label"
           >
             Afghanistan
           </span>
           <svg
             aria-hidden="true"
-            class=""
+            class="MuiSvgIcon-root MuiChip-deleteIcon"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -327,7 +339,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class="input"
+          class="MuiInputBase-input MuiInput-input MuiAutocomplete-input input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd"
           data-testid="common-select-input"
           id="select-input"
           placeholder=""
@@ -335,18 +347,22 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
           type="text"
           value=""
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Clear"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
             tabindex="-1"
             title="Clear"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
                 data-testid="common-select-close-icon"
                 focusable="false"
                 role="presentation"
@@ -358,20 +374,22 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
           <button
             aria-label="Open"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -382,7 +400,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>

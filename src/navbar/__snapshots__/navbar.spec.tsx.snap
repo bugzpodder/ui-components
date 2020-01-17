@@ -3,17 +3,17 @@
 exports[`navbar with breast cancer logo 1`] = `
 <div>
   <header
-    class="appBar lims-navbar"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary MuiPaper-elevation4"
     data-testid="navbar"
   >
     <h6
-      class="nonProductionWarning"
+      class="MuiTypography-root nonProductionWarning MuiTypography-h6"
       data-testid="non-production-warning"
     >
       THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
     </h6>
     <div
-      class="toolbar"
+      class="MuiToolbar-root MuiToolbar-regular toolbar"
     >
       <div
         class="left"
@@ -21,16 +21,18 @@ exports[`navbar with breast cancer logo 1`] = `
       >
         <button
           aria-label="Menu"
-          class=""
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
           data-testid="main-nav-button"
           id="main-nav-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiIconButton-label"
+          >
             <svg
               aria-hidden="true"
-              class=""
+              class="MuiSvgIcon-root"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -41,16 +43,16 @@ exports[`navbar with breast cancer logo 1`] = `
             </svg>
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           breadcrumbs
         </p>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           left
         </p>
@@ -60,7 +62,7 @@ exports[`navbar with breast cancer logo 1`] = `
         data-testid="navbar-center"
       >
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           center
         </p>
@@ -108,7 +110,7 @@ exports[`navbar with breast cancer logo 1`] = `
           </div>
         </div>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           right
         </p>
@@ -121,17 +123,17 @@ exports[`navbar with breast cancer logo 1`] = `
 exports[`render default Sidebar 1`] = `
 <div>
   <header
-    class="appBar lims-navbar"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary MuiPaper-elevation4"
     data-testid="navbar"
   >
     <h6
-      class="nonProductionWarning"
+      class="MuiTypography-root nonProductionWarning MuiTypography-h6"
       data-testid="non-production-warning"
     >
       THIS IS A STAGING SERVER. DO NOT ENTER REAL DATA.
     </h6>
     <div
-      class="toolbar"
+      class="MuiToolbar-root MuiToolbar-regular toolbar"
     >
       <div
         class="left"
@@ -139,16 +141,18 @@ exports[`render default Sidebar 1`] = `
       >
         <button
           aria-label="Menu"
-          class=""
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
           data-testid="main-nav-button"
           id="main-nav-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiIconButton-label"
+          >
             <svg
               aria-hidden="true"
-              class=""
+              class="MuiSvgIcon-root"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -159,16 +163,16 @@ exports[`render default Sidebar 1`] = `
             </svg>
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           breadcrumbs
         </p>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           left
         </p>
@@ -178,7 +182,7 @@ exports[`render default Sidebar 1`] = `
         data-testid="navbar-center"
       >
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           center
         </p>
@@ -197,7 +201,7 @@ exports[`render default Sidebar 1`] = `
           </div>
         </div>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           right
         </p>
@@ -212,11 +216,11 @@ exports[`render default Sidebar 2`] = `
   aria-hidden="true"
 >
   <header
-    class="appBar lims-navbar"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary MuiPaper-elevation4"
     data-testid="navbar"
   >
     <div
-      class="toolbar"
+      class="MuiToolbar-root MuiToolbar-regular toolbar"
     >
       <div
         class="left"
@@ -224,16 +228,18 @@ exports[`render default Sidebar 2`] = `
       >
         <button
           aria-label="Menu"
-          class=""
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
           data-testid="main-nav-button"
           id="main-nav-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiIconButton-label"
+          >
             <svg
               aria-hidden="true"
-              class=""
+              class="MuiSvgIcon-root"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -244,16 +250,16 @@ exports[`render default Sidebar 2`] = `
             </svg>
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           breadcrumbs
         </p>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           left
         </p>
@@ -263,7 +269,7 @@ exports[`render default Sidebar 2`] = `
         data-testid="navbar-center"
       >
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           center
         </p>
@@ -282,7 +288,7 @@ exports[`render default Sidebar 2`] = `
           </div>
         </div>
         <p
-          class=""
+          class="MuiTypography-root MuiTypography-body1"
         >
           right
         </p>

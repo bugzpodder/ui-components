@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import CloseIcon from "@material-ui/icons/Close";
 import DoneIcon from "@material-ui/icons/Done";

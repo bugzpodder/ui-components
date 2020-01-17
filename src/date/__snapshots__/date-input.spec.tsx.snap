@@ -3,32 +3,34 @@
 exports[`render date time input 1`] = `
 <div>
   <div
-    class="textFieldWidth"
+    class="MuiFormControl-root MuiTextField-root textFieldWidth"
     data-testid="date-input"
   >
     <div
-      class=""
+      class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
     >
       <input
         aria-invalid="false"
-        class=""
+        class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
         placeholder="Test Date Input"
         type="text"
         value="2016-03-07"
       />
       <div
-        class="adornmentWidth"
+        class="MuiInputAdornment-root adornmentWidth MuiInputAdornment-positionEnd"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiIconButton-root"
           data-testid="date-picker-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiIconButton-label"
+          >
             <svg
               aria-hidden="true"
-              class=""
+              class="MuiSvgIcon-root"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -43,7 +45,7 @@ exports[`render date time input 1`] = `
             </svg>
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>

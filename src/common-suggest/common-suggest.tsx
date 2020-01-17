@@ -1,5 +1,4 @@
 import Autocomplete from "@material-ui/lab/Autocomplete";
-import CloseIcon from "@material-ui/icons/Close";
 import React, { ComponentProps, ReactNode, useMemo } from "react";
 import TextField from "@material-ui/core/TextField";
 import keycode from "keycode";
@@ -71,7 +70,7 @@ export const CommonSuggest: React.FC<Props> = props => {
         }
       }}
       onChange={(_, value) => {
-        onChange(value);
+        value ? onChange(value) : onChange("");
       }}
       inputValue={value}
       ListboxComponent={Listbox}
@@ -94,16 +93,6 @@ export const CommonSuggest: React.FC<Props> = props => {
           }}
         />
       )}
-      closeIcon={
-        <CloseIcon
-          onClick={() => {
-            // Bug in Autocomplete: onInputChange isn't called on clear.
-            onChange("");
-          }}
-          data-testid="common-suggest-close-icon"
-          fontSize="small"
-        />
-      }
       {...otherProps}
     />
   );

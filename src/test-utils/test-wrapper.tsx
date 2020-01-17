@@ -5,23 +5,13 @@ import {
   createGenerateClassName,
 } from "@material-ui/core/styles";
 
-// TODO(nsawas): Figure out why this new method of disabling global styles
-// isnt exactly working. For now we disable all styles with `disableGeneration` prop below.
-const generateClassName = createGenerateClassName({
-  disableGlobal: true,
-});
-
-class MockResizeObserver {
-  observe = (): void => {};
-  disconnect = (): void => {};
-}
-
-(window as any).ResizeObserver = MockResizeObserver;
+// TODO(nsawas): Adjust once this issue is fixed https://github.com/mui-org/material-ui/issues/14357.
+const generateClassName = createGenerateClassName({});
 
 export const TestWrapper: React.FC = props => {
   const { children } = props;
   return (
-    <StylesProvider disableGeneration generateClassName={generateClassName}>
+    <StylesProvider generateClassName={generateClassName}>
       <StyleWrapper>{children}</StyleWrapper>
     </StylesProvider>
   );

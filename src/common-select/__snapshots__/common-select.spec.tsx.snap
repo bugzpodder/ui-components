@@ -4,15 +4,15 @@ exports[`CommonSelect margin 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="autocomplete"
+    class="MuiAutocomplete-root autocomplete"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
     >
       
       <div
-        class="inputRoot"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiAutocomplete-inputRoot inputRoot MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       >
         <input
           aria-autocomplete="list"
@@ -20,7 +20,7 @@ exports[`CommonSelect margin 1`] = `
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class="input"
+          class="MuiInputBase-input MuiInput-input MuiAutocomplete-input input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd"
           data-testid="common-select-input"
           id="test-select-input"
           placeholder=""
@@ -28,18 +28,22 @@ exports[`CommonSelect margin 1`] = `
           type="text"
           value=""
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Clear"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator"
             tabindex="-1"
             title="Clear"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
                 data-testid="common-select-close-icon"
                 focusable="false"
                 role="presentation"
@@ -51,20 +55,22 @@ exports[`CommonSelect margin 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
           <button
             aria-label="Open"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -75,13 +81,13 @@ exports[`CommonSelect margin 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>
       </div>
       <p
-        class=""
+        class="MuiFormHelperText-root"
         data-testid="common-select-helper-text"
         id="test-helper-text"
       >
@@ -96,15 +102,15 @@ exports[`CommonSelect variant 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="autocomplete"
+    class="MuiAutocomplete-root autocomplete"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root"
     >
       
       <div
-        class="inputRoot"
+        class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiAutocomplete-inputRoot inputRoot MuiInputBase-formControl MuiInputBase-adornedEnd MuiFilledInput-adornedEnd"
       >
         <input
           aria-autocomplete="list"
@@ -112,7 +118,7 @@ exports[`CommonSelect variant 1`] = `
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class="input"
+          class="MuiInputBase-input MuiFilledInput-input MuiAutocomplete-input input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiFilledInput-inputAdornedEnd"
           data-testid="common-select-input"
           id="test-select-input"
           placeholder=""
@@ -120,18 +126,22 @@ exports[`CommonSelect variant 1`] = `
           type="text"
           value=""
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Clear"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator"
             tabindex="-1"
             title="Clear"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
                 data-testid="common-select-close-icon"
                 focusable="false"
                 role="presentation"
@@ -143,20 +153,22 @@ exports[`CommonSelect variant 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
           <button
             aria-label="Open"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
             tabindex="-1"
             title="Open"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -167,13 +179,13 @@ exports[`CommonSelect variant 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>
       </div>
       <p
-        class=""
+        class="MuiFormHelperText-root MuiFormHelperText-contained"
         data-testid="common-select-helper-text"
         id="test-helper-text"
       >
@@ -188,22 +200,22 @@ exports[`render creatable CommonSelect 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="autocomplete"
+    class="MuiAutocomplete-root autocomplete"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root"
     >
       
       <div
-        class="inputRoot"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiAutocomplete-inputRoot inputRoot MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       >
         <input
           aria-autocomplete="list"
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class="input"
+          class="MuiInputBase-input MuiInput-input MuiAutocomplete-input input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd"
           data-testid="common-select-input"
           id="select-input"
           placeholder=""
@@ -211,18 +223,22 @@ exports[`render creatable CommonSelect 1`] = `
           type="text"
           value="test"
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Clear"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
             tabindex="-1"
             title="Clear"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
                 data-testid="common-select-close-icon"
                 focusable="false"
                 role="presentation"
@@ -234,7 +250,7 @@ exports[`render creatable CommonSelect 1`] = `
               </svg>
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
         </div>
@@ -260,22 +276,22 @@ exports[`test disabled CommonSelect 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="autocomplete"
+    class="MuiAutocomplete-root autocomplete"
     role="combobox"
   >
     <div
-      class=""
+      class="MuiFormControl-root MuiTextField-root"
     >
       
       <div
-        class="inputRoot"
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiAutocomplete-inputRoot inputRoot Mui-disabled Mui-disabled MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
       >
         <input
           aria-autocomplete="list"
           aria-invalid="false"
           autocapitalize="none"
           autocomplete="off"
-          class="input"
+          class="MuiInputBase-input MuiInput-input MuiAutocomplete-input input MuiAutocomplete-inputFocused Mui-disabled Mui-disabled MuiInputBase-inputAdornedEnd"
           data-testid="common-select-input"
           disabled=""
           id="select-input-disabled"
@@ -284,19 +300,23 @@ exports[`test disabled CommonSelect 1`] = `
           type="text"
           value=""
         />
-        <div>
+        <div
+          class="MuiAutocomplete-endAdornment"
+        >
           <button
             aria-label="Open"
-            class=""
+            class="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator Mui-disabled Mui-disabled"
             disabled=""
             tabindex="-1"
             title="Open"
             type="button"
           >
-            <span>
+            <span
+              class="MuiIconButton-label"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -310,7 +330,7 @@ exports[`test disabled CommonSelect 1`] = `
         </div>
       </div>
       <p
-        class=""
+        class="MuiFormHelperText-root Mui-disabled"
         data-testid="common-select-helper-text"
       >
         disabled

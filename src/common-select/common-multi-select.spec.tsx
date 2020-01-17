@@ -1,4 +1,3 @@
-import "@testing-library/jest-dom/extend-expect";
 import React, { useState } from "react";
 import { COUNTRIES, TestWrapper } from "../test-utils";
 import { CommonMultiSelect } from ".";

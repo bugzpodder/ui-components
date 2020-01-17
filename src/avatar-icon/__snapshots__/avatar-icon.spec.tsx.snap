@@ -7,16 +7,18 @@ exports[`render avatar with children 1`] = `
     data-testid="avatar-icon"
   >
     <button
-      class=""
+      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit Mui-disabled Mui-disabled"
       data-testid="avatar-icon-button"
       disabled=""
       id="avatar-icon-button"
       tabindex="-1"
       type="button"
     >
-      <span>
+      <span
+        class="MuiIconButton-label"
+      >
         <div
-          class=""
+          class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
           data-testid="avatar-icon-avatar"
         >
           N
@@ -36,16 +38,18 @@ exports[`render avatar with menu 1`] = `
     data-testid="avatar-icon"
   >
     <button
-      class="test-button"
+      class="MuiButtonBase-root MuiIconButton-root test-button MuiIconButton-colorInherit"
       data-testid="avatar-icon-button"
       id="avatar-icon-button"
       tabindex="0"
       type="button"
     >
-      <span>
+      <span
+        class="MuiIconButton-label"
+      >
         <svg
           aria-hidden="true"
-          class="test-avatar"
+          class="MuiSvgIcon-root test-avatar"
           data-testid="avatar-icon-avatar"
           focusable="false"
           role="presentation"
@@ -59,13 +63,15 @@ exports[`render avatar with menu 1`] = `
     </button>
   </div>
   <div
-    class=""
+    class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess MuiPaper-elevation0"
     role="alert"
   >
-    <div>
+    <div
+      class="MuiAlert-icon"
+    >
       <svg
         aria-hidden="true"
-        class=""
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -75,7 +81,9 @@ exports[`render avatar with menu 1`] = `
         />
       </svg>
     </div>
-    <div>
+    <div
+      class="MuiAlert-message"
+    >
       test
     </div>
   </div>

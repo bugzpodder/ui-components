@@ -12,7 +12,7 @@ exports[`render selector 1`] = `
       class="contents"
     >
       <p
-        class="mission"
+        class="MuiTypography-root mission MuiTypography-body1"
       >
         Detect cancer early, when it can be cured.
       </p>
@@ -20,16 +20,18 @@ exports[`render selector 1`] = `
         class="sign-in"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
           data-testid="sign-in-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             Sign In
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>
@@ -50,7 +52,7 @@ exports[`render selector with child 1`] = `
       class="contents"
     >
       <p
-        class="mission"
+        class="MuiTypography-root mission MuiTypography-body1"
       >
         Detect cancer early, when it can be cured.
       </p>
@@ -58,16 +60,18 @@ exports[`render selector with child 1`] = `
         class="sign-in"
       >
         <button
-          class=""
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge"
           data-testid="sign-in-button"
           tabindex="0"
           type="button"
         >
-          <span>
+          <span
+            class="MuiButton-label"
+          >
             Sign In
           </span>
           <span
-            class=""
+            class="MuiTouchRipple-root"
           />
         </button>
       </div>

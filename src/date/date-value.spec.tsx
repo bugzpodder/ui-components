@@ -1,7 +1,5 @@
-import "@testing-library/jest-dom/extend-expect";
 import MockDate from "mockdate";
 import MomentUtils from "@date-io/moment";
-
 import React from "react";
 import { DateTimeValue, DateValue, HumanizedDateTime } from ".";
 import { TestWrapper } from "../test-utils";

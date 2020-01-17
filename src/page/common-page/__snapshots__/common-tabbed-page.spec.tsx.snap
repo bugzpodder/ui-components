@@ -7,67 +7,76 @@ exports[`render common tabbed page 1`] = `
     data-testid="common-page"
   >
     <div
-      class="stickyHeader pageHeader"
+      class="MuiPaper-root MuiCard-root stickyHeader pageHeader MuiPaper-elevation1 MuiPaper-rounded"
       data-testid="common-page-header"
     >
       <div
-        class="cardHeader"
+        class="MuiCardHeader-root cardHeader"
       >
-        <div>
+        <div
+          class="MuiCardHeader-content"
+        >
           <span
-            class="header-title"
+            class="MuiTypography-root MuiCardHeader-title header-title MuiTypography-h5 MuiTypography-displayBlock"
             data-testid="common-page-title"
           >
             Test Card
           </span>
           <span
-            class=""
+            class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
             data-testid="common-page-subtitle"
           />
         </div>
         <div
-          class="headerActions"
+          class="MuiCardHeader-action headerActions"
         >
           <button
-            class=""
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
             tabindex="0"
             type="button"
           >
-            <span>
+            <span
+              class="MuiButton-label"
+            >
               Test Action
             </span>
             <span
-              class=""
+              class="MuiTouchRipple-root"
             />
           </button>
           <div
             class="commonSwitch"
           >
             <label
-              class="controlLabel"
+              class="MuiFormControlLabel-root controlLabel"
             >
               <span
-                class=""
+                class="MuiSwitch-root"
               >
                 <span
                   aria-disabled="false"
-                  class=""
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-116 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
-                  <span>
+                  <span
+                    class="MuiIconButton-label"
+                  >
                     <input
+                      class="PrivateSwitchBase-input-119 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""
                     />
-                    <span />
+                    <span
+                      class="MuiSwitch-thumb"
+                    />
                   </span>
                 </span>
                 <span
-                  class=""
+                  class="MuiSwitch-track"
                 />
               </span>
               <span
-                class=""
+                class="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
               >
                 CUSTOM ACTION
               </span>
@@ -77,68 +86,74 @@ exports[`render common tabbed page 1`] = `
         </div>
       </div>
       <div
-        class="tabs"
+        class="MuiTabs-root tabs"
         data-testid="card-tabs"
       >
         <div
-          class=""
+          class="MuiTabs-scroller MuiTabs-fixed"
           style="overflow: hidden;"
         >
           <div
-            class=""
+            class="MuiTabs-flexContainer"
             role="tablist"
           >
             <button
               aria-selected="true"
-              class="test-tab-root tab tabbed-page-tab"
+              class="MuiButtonBase-root MuiTab-root test-tab-root tab tabbed-page-tab MuiTab-textColorPrimary Mui-selected"
               data-testid="tab-one"
               id="tab-one"
               role="tab"
               tabindex="0"
               type="button"
             >
-              <span>
+              <span
+                class="MuiTab-wrapper"
+              >
                 Tab One
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </button>
             <button
               aria-selected="false"
-              class="tab tabbed-page-tab"
+              class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
               data-testid="tab-two"
               id="tab-two"
               role="tab"
               tabindex="0"
               type="button"
             >
-              <span>
+              <span
+                class="MuiTab-wrapper"
+              >
                 Tab Two
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </button>
             <button
               aria-selected="false"
-              class="tab tabbed-page-tab"
+              class="MuiButtonBase-root MuiTab-root tab tabbed-page-tab MuiTab-textColorPrimary"
               data-testid="tab-three"
               id="tab-three"
               role="tab"
               tabindex="0"
               type="button"
             >
-              <span>
+              <span
+                class="MuiTab-wrapper"
+              >
                 Tab Three
               </span>
               <span
-                class=""
+                class="MuiTouchRipple-root"
               />
             </button>
           </div>
           <span
-            class=""
+            class="PrivateTabIndicator-root-150 PrivateTabIndicator-colorPrimary-151 MuiTabs-indicator"
             style="left: 0px; width: 0px;"
           />
         </div>
@@ -156,14 +171,16 @@ exports[`render common tabbed page 1`] = `
           class="contentContainer"
         >
           <div
-            class=""
+            class="MuiPaper-root MuiAlert-root MuiAlert-standardSuccess MuiPaper-elevation0"
             data-testid="alert-one"
             role="alert"
           >
-            <div>
+            <div
+              class="MuiAlert-icon"
+            >
               <svg
                 aria-hidden="true"
-                class=""
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -173,7 +190,9 @@ exports[`render common tabbed page 1`] = `
                 />
               </svg>
             </div>
-            <div>
+            <div
+              class="MuiAlert-message"
+            >
               Tab One!
             </div>
           </div>

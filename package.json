@@ -10,7 +10,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cover": "open coverage/lcov-report/index.html",
-    "flow": "yarn tsc --skipLibCheck",
+    "flow": "yarn tsc",
     "lint": "yarn flow && tsdx lint src",
     "lint-fix": "yarn lint --fix",
     "format": "prettier --write \"*.js\" cypress/**/*.js && yarn lint-fix",

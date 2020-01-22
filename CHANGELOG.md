@@ -1,4 +1,4 @@
-## 2.0.0
+## 2.0.0 - 2020-01-21
 
 1.  (BREAKING) Replace internal implementation of CommonSelect, CommonMultiSelect and CommonSuggest with Autocomplete. Upgrade dependency @material-ui/core >= 4.6.0.
 2.  (BREAKING) wrapPickerUtilProvider calls must pass in a @date-io/moment or @date-io/date-fns utils.
@@ -11,8 +11,64 @@
 9.  (BREAKING) Rename CommonPageV2 to SlimPage. Rename CommonTabbedPageV2 to SlimTabbedPage.
 10. (BREAKING) TextInputV2 default variant is reverted to material-ui default "standard". "filled" variants must be defined explicitly.
 11. (BREAKING) TextInput is deprecated. TextInputV2 renamed to TextInput. readyOnly prop for original TextInput now renders the Material-UI TextField in readOnly mode, as opposed to ReadOnlyTextField.
+12. Simple / Paged tables can force headers to inline as opposed to wrap text.
+13. Simple / Paged tables have standardized header height.
+14. Standardize table header height.
+15. Fix selection logic to uncheck all checkboxes when checkbox header is indeterminate.
+16. Tables now support `adjustToSelectableTable`, which will align non-selectable table's first row to where it would be if there were a checkbox column to its left.
+17. Add pollyfill to TabbedPageV2 for ResizeObserver.
+18. Deprecate TextInput. Rename TextInputV2 to TextInput.
 
-## 1.1.0 - 2019-##-
+## 1.1.24 - 2019-12-03
+
+1. Fix margins on `ExportButton`, `NotificationCard`, and the "back" button in `CommonDialog`s.
+2. Add support for date-fns library for Date/Time pickers.
+3. Add PDFViewer Component.
+
+## 1.1.21 - 2019-10-23
+
+1. `AvatarIcon` now accepts `children`.
+
+## 1.1.20 - 2019-10-22
+
+1. Make LargeSimpleTable sortable.
+2. Add `autosizeHeight` prop to `LargeSimpleTable`.
+3. Add optional `subheader` prop to SignInPage.
+
+## 1.1.19 - 2019-10-21
+
+1. Add `hasColumnVisibilityChooser` prop to `SimpleTable` and `PagedTable` which, if enabled, allows user to select
+   which columns should be shown/hidden.
+
+## 1.1.17 - 2019-10-21
+
+1. Support `isVisible` parameter on page configs in `CommonTabbedPageV2`.
+
+## 1.1.16 - 2019-10-17
+
+1. Allow rows to be inverted in `SelectionGrid`.
+2. Add ability to disable tabs on `CommonTabbedPageV2`.
+3. Fix bug where observer call exceeding limit in `CommonTabbedPageV2`.
+4. Fix `ExportButton` to take a className.
+5. Fix `ExternalLinkButton` styling not to highlight like a link
+6. Fix `CommonPageV2` where secondary actions were not rendering in disabled state.
+7. Add optional `href` prop to actions in `CommonDropdownMenu`.
+8. Make title larger in `CommonPageV2`.
+
+## 1.1.13 - 2019-09-10
+
+1. Update /dist folder to fix import errors.
+
+## 1.1.12 - 2019-09-10
+
+1. Fix bug to pass down onFocus and onBlur props in `TextInputV2` component.
+
+## 1.1.11 - 2019-09-06
+
+1. Change `totalCount` prop name to `resultCount`.
+2. Fix bug related to table pagination. For example when showing element 61 to 70 and user changes count per row to 25 per page, we now will show elements 51 to 75.
+
+## 1.1.10 - 2019-09-06
 
 1. Add back old date picker for backward compatibility.
 2. Support `variant` for `CommonSelect`/`CommonMultiSelect`.
@@ -43,36 +99,8 @@
 24. Add `isLoading` to `CommonSelect` and `CommonMultiSelect`, which adds an indefinite loading bar beneath the select when true.
 25. Remove default sidebar content and external domains. Should specify explicit content, such as from `@grail/common-private`.
 26. Add `TextInputV2` component.
-27. Add `totalCount` parameter to `tableOptions` prop for `PagedTable`. This allows the display of the total number of results in table if it is known.
-28. Fix bug related to table pagination. For example when showing element 61 to 70 and user changes count per row to 25 per page, we now will show elements 51 to 75.
-29. Rename package to `@grailbio/components`, publish to github and npm.
-30. Fix bug to pass down onFocus and onBlur props in `TextInputV2` component.
-31. Update /dist folder to fix import errors.
-32. Allow rows to be inverted in `SelectionGrid`.
-33. Add ability to disable tabs on `CommonTabbedPageV2`.
-34. Fix bug where observer call exceeding limit in `CommonTabbedPageV2`.
-35. Fix `ExportButton` to take a className.
-36. Fix `ExternalLinkButton` styling not to highlight like a link
-37. Fix `CommonPageV2` where secondary actions were not rendering in disabled state.
-38. Add optional `href` prop to actions in `CommonDropdownMenu`.
-39. Make title larger in `CommonPageV2`.
-40. Support `isVisible` parameter on page configs in `CommonTabbedPageV2`.
-41. Add `hasColumnVisibilityChooser` prop to `SimpleTable` and `PagedTable` which, if enabled, allows user to select
-    which columns should be shown/hidden.
-42. Make LargeSimpleTable sortable.
-43. Add `autosizeHeight` prop to `LargeSimpleTable`.
-44. Add optional `subheader` prop to SignInPage.
-45. `AvatarIcon` now accepts `children`.
-46. Fix margins on `ExportButton`, `NotificationCard`, and the "back" button in `CommonDialog`s.
-47. Add support for date-fns library for Date/Time pickers.
-48. Add PDFViewer Component.
-49. Simple / Paged tables can force headers to inline as opposed to wrap text.
-50. Simple / Paged tables have standardized header height.
-51. Add pollyfill to TabbedPageV2 for ResizeObserver.
-52. Standardize table header height.
-53. Fix selection logic to uncheck all checkboxes when checkbox header is indeterminate.
-54. Tables now support `adjustToSelectableTable`, which will align non-selectable table's first row to where it would be if there were a checkbox column to its left.
-55. Deprecate TextInput. Rename TextInputV2 to TextInput.
+27. Add `resultCount` parameter to `tableOptions` prop for `PagedTable`. This allows the display of the total number of results in table if it is known.
+28. Rename package to `@grailbio/components`, publish to github and npm.
 
 ## 1.0.0 - 2019-06-17
 

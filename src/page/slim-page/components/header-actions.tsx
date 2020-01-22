@@ -3,7 +3,7 @@ import React, { forwardRef } from "react";
 import classNames from "classnames";
 import styles from "../slim-page.module.scss";
 import { ClickableItem } from "../../../types/dropdown";
-import { SlimPageClasses, HeaderAction } from "../../../types/card";
+import { HeaderAction, SlimPageClasses } from "../../../types/card";
 import { LinkButton } from "../../../link";
 import { SecondaryActionsMenuButton } from "../../../dev";
 

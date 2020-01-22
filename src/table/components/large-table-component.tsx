@@ -291,7 +291,7 @@ export const LargeTableComponent: React.FC<Props> = props => {
     ? [
         {
           width: 50,
-          ...getCheckboxColumn(selectionProps, shouldAdjustTable ),
+          ...getCheckboxColumn(selectionProps, shouldAdjustTable),
         },
         ...columns,
       ]

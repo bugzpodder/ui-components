@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { ClickableItem } from "../../types/dropdown";
-import { SlimPageClasses, HeaderAction } from "../../types/card";
+import { HeaderAction, SlimPageClasses } from "../../types/card";
 declare type Props = {
     /** Page title */
     title?: ReactNode;

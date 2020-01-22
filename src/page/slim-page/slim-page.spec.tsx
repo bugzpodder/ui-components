@@ -1,6 +1,6 @@
 import React from "react";
-import { SlimPage } from "./slim-page";
 import { CommonSwitch } from "../../common-switch";
+import { SlimPage } from "./slim-page";
 import { TestWrapper } from "../../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 

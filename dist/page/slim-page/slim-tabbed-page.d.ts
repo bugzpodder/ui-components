@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { ClickableItem } from "../../types/dropdown";
-import { SlimTabbedPageClasses, HeaderAction, SlimPageConfig } from "../../types/card";
+import { HeaderAction, SlimPageConfig, SlimTabbedPageClasses } from "../../types/card";
 import { TabProps } from "@material-ui/core/Tab";
 declare type Props = {
     /**

@@ -52,12 +52,7 @@ test("render text field wrapper with readonly as true show default value", async
   const testValue = "";
   const { container, getByDisplayValue } = render(
     <TestWrapper>
-      <TextInput
-        id="operator"
-        onChange={() => {}}
-        value={testValue}
-        readOnly
-      />
+      <TextInput id="operator" onChange={() => {}} value={testValue} readOnly />
     </TestWrapper>,
   );
   // This will error out if test value doesn't show up.

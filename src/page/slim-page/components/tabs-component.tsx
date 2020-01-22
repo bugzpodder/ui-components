@@ -3,7 +3,7 @@ import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import classNames from "classnames";
 import styles from "../slim-page.module.scss";
-import { SlimTabbedPageClasses, SlimPageConfig } from "../../../types/card";
+import { SlimPageConfig, SlimTabbedPageClasses } from "../../../types/card";
 
 type Props = {
   onChangeActiveTab: (x0: string) => any;

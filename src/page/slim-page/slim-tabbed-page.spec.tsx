@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import mockConsole from "jest-mock-console";
 import { Alert } from "@material-ui/lab";
 import { CommonSwitch } from "../..";
-import { SlimTabbedPage } from "./slim-tabbed-page";
 import { PageConfig } from "../../types/card";
+import { SlimTabbedPage } from "./slim-tabbed-page";
 import { TestWrapper } from "../../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 

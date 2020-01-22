@@ -1,6 +1,6 @@
 import React from "react";
 import { ClickableItem } from "../../../types/dropdown";
-import { SlimPageClasses, HeaderAction } from "../../../types/card";
+import { HeaderAction, SlimPageClasses } from "../../../types/card";
 declare type Props = {
     primaryActions?: HeaderAction[];
     secondaryActions?: ClickableItem[];

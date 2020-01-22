@@ -157,10 +157,7 @@ export const OmniSearchBar: React.FC<Props> = props => {
       omniText = mergeOmniWithLocalStorage(omniText);
     }
     return omniText;
-  }, [
-    location,
-    mergeOmniWithLocalStorage,
-  ]);
+  }, [location, mergeOmniWithLocalStorage]);
 
   const updateOmniText = useCallback(
     (omniText: string) => {

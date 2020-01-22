@@ -10,7 +10,7 @@ import React, {
 import classNames from "classnames";
 import styles from "./slim-page.module.scss";
 import { ClickableItem } from "../../types/dropdown";
-import { SlimPageClasses, HeaderAction } from "../../types/card";
+import { HeaderAction, SlimPageClasses } from "../../types/card";
 import { HeaderActions } from "./components/header-actions";
 import { SpinnerOverlay } from "../../spinner-overlay";
 import { TitleComponent } from "./components/title-component";

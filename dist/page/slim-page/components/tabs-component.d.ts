@@ -1,5 +1,5 @@
 import React from "react";
-import { SlimTabbedPageClasses, SlimPageConfig } from "../../../types/card";
+import { SlimPageConfig, SlimTabbedPageClasses } from "../../../types/card";
 declare type Props = {
     onChangeActiveTab: (x0: string) => any;
     activeTab: string | false;

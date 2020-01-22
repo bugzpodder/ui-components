@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 import { ClickableItem } from "../../types/dropdown";
-import { SlimPage } from "./slim-page";
 import {
-  SlimTabbedPageClasses,
   HeaderAction,
   SlimPageConfig,
+  SlimTabbedPageClasses,
 } from "../../types/card";
+import { SlimPage } from "./slim-page";
 import { TabProps } from "@material-ui/core/Tab";
 import { TabsComponent } from "./components/tabs-component";
 

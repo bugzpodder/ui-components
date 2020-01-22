@@ -1,6 +1,6 @@
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import CloseIcon from "@material-ui/icons/Close";
-import React, { ComponentProps, ReactNode, useEffect, useState } from "react";
+import React, { ComponentProps, ReactNode, RefObject, useEffect, useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import { CommonSelectOption } from "../types/select";
 import styles from "./common-select.module.scss";
@@ -64,6 +64,8 @@ type Props = {
    * Each object must at least include a `label` and `value` key
    */
   loadOptions?: (x0: string) => Promise<any>;
+  /** Ref passed to the input element */
+  inputRef?: RefObject<HTMLElement>;
 } & Omit<ComponentProps<typeof Autocomplete>, "onChange" | "renderInput">;
 
 export const CommonSelectComponent: React.FC<Props> = props => {
@@ -91,6 +93,7 @@ export const CommonSelectComponent: React.FC<Props> = props => {
     margin,
     isLoading = false,
     classes = {},
+    inputRef,
     ...otherProps
   } = props;
 
@@ -150,6 +153,7 @@ export const CommonSelectComponent: React.FC<Props> = props => {
             "data-testid": "common-select-input",
             id: `${id && `${id}-`}select-input${isDisabled ? "-disabled" : ""}`,
           }}
+          inputRef={inputRef}
         />
       )}
       freeSolo={selectType === "creatable"}

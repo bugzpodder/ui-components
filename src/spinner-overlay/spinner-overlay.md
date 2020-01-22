@@ -6,7 +6,7 @@
 import Button from "@material-ui/core/Button";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";
-import { CommonCard } from "@grailbio/components";
+import { CommonCard } from "../";
 
 const SpinnerOverlayExample = () => (
   <div className={styles.spinnerContainer}>
@@ -34,11 +34,14 @@ const SpinnerOverlayExample = () => (
 import Button from "@material-ui/core/Button";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";
-import { CommonCard } from "@grailbio/components";
+import { CommonCard } from "../";
 
 const SpinnerOverlayExample = () => (
   <div className={styles.spinnerContainer}>
-    <CommonCard title="Spinning on the Whole Component" className="main-container">
+    <CommonCard
+      title="Spinning on the Whole Component"
+      className="main-container"
+    >
       <Button color="primary" variant="contained" className={styles.spacing}>
         Try
       </Button>

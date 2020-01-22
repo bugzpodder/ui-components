@@ -3,8 +3,9 @@
 ```js
 import { useState } from "react";
 import { ExampleWrapper } from "../../test-utils";
-import { ReadOnlyTextField, Alert } from "@grailbio/components";
+import { ReadOnlyTextField } from "../../";
 import { SlimTabbedPage } from "./slim-tabbed-page";
+import { Alert } from "@material-ui/lab";
 
 const ExampleCommonPage = () => {
   const [activeTab, setActiveTab] = useState("one");
@@ -48,7 +49,9 @@ const ExampleCommonPage = () => {
         },
       ]}
     >
-      <ReadOnlyTextField>Any content can go inside of CommonPage</ReadOnlyTextField>
+      <ReadOnlyTextField>
+        Any content can go inside of SlimTabbedPage
+      </ReadOnlyTextField>
     </SlimTabbedPage>
   );
 };

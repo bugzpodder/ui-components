@@ -4,7 +4,7 @@
 
 ```js
 import MomentUtils from "@date-io/moment";
-import { wrapPickerUtilProvider } from "@grailbio/components";
+import { wrapPickerUtilProvider } from "../";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
 import { useState } from "react";
 import { DateTimeInput } from "./";
@@ -29,7 +29,7 @@ Old Picker:
 
 ```js
 import MomentUtils from "@date-io/moment";
-import { wrapPickerUtilProvider } from "@grailbio/components";
+import { wrapPickerUtilProvider } from "../";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
 import { useState } from "react";
 import { DateTimeInput } from "./";

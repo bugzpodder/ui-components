@@ -2,7 +2,7 @@
 
 ```js
 import { Alert } from "@material-ui/lab";
-import { CommonTabbedPage } from "@grailbio/components";
+import { CommonTabbedPage } from "./";
 import { ExampleBlock, ExampleWrapper } from "../test-utils";
 import { useState } from "react";
 
@@ -66,7 +66,7 @@ uses CSS anchors and these do not work on styleguidist.
 
 ```js
 import { useState } from "react";
-import { CommonSwitch, CommonTabbedPage } from "@grailbio/components";
+import { CommonSwitch, CommonTabbedPage } from "../../;
 import { ExampleBlock, ExampleWrapper } from "../../test-utils";
 import { Alert } from "@material-ui/lab";
 

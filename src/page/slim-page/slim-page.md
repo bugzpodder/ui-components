@@ -2,7 +2,7 @@
 
 ```js
 import { ExampleWrapper } from "../../test-utils";
-import { ReadOnlyTextField } from "@grailbio/components";
+import { ReadOnlyTextField } from "../../";
 import { SlimPage } from "./slim-page";
 
 const ExampleSlimPage = () => {
@@ -25,7 +25,7 @@ const ExampleSlimPage = () => {
       ]}
     >
       <ReadOnlyTextField>
-        Any content can go inside of CommonPage
+        Any content can go inside of SlimPage
       </ReadOnlyTextField>
     </SlimPage>
   );
@@ -38,8 +38,9 @@ const ExampleSlimPage = () => {
 
 ```js
 import { ExampleWrapper } from "../../test-utils";
-import { ReadOnlyTextField, Alert } from "@grailbio/components";
+import { ReadOnlyTextField } from "../../";
 import { SlimPage } from "./slim-page";
+import { Alert } from "@material-ui/lab";
 
 const ExampleSlimPage = () => {
   return (
@@ -52,14 +53,14 @@ const ExampleSlimPage = () => {
           onClick: () => console.debug("Button One was clicked."),
         },
       ]}
-      specialActions={
+      centerHeader={
         <Alert severity="warning" variant="text">
           Watch out!!!
         </Alert>
       }
     >
       <ReadOnlyTextField>
-        Any content can go inside of CommonPage
+        Any content can go inside of SlimPage
       </ReadOnlyTextField>
     </SlimPage>
   );

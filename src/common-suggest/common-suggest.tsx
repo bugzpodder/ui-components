@@ -13,12 +13,17 @@ type Props = {
   /** Currently entered value as shown in the input field. Could include commas, indicating an array */
   value: string;
   /** Called to set the new value */
-  onChange: (x0: string) => any;
+  onChange: (value: string) => void;
+  /** Called to set the new input value.  If onInputChange is not provided, onChange is called. */
+  onInputChange?: (value: string) => void;
   /** Called when user hits enter */
   onEnter?: () => any;
   /** Additional actions at the bottom of the suggestion Popper */
   actions?: ReactNode;
-} & Omit<ComponentProps<typeof Autocomplete>, "renderInput" | "onChange">;
+} & Omit<
+  ComponentProps<typeof Autocomplete>,
+  "renderInput" | "onChange" | "onInputChange"
+>;
 
 const getListboxElement = (
   footer: ReactNode,
@@ -46,6 +51,7 @@ export const CommonSuggest: React.FC<Props> = props => {
     placeholder,
     value,
     id,
+    onInputChange,
     ...otherProps
   } = props;
 
@@ -65,8 +71,8 @@ export const CommonSuggest: React.FC<Props> = props => {
       options={suggestions}
       onInputChange={(_, inputValue, reason) => {
         // Autocomplete's onInputChange is called on initially with reason === "reset".
-        if (reason === "input") {
-          onChange(inputValue);
+        if (reason !== "reset") {
+          onInputChange ? onInputChange(inputValue) : onChange(inputValue);
         }
       }}
       onChange={(_, value) => {

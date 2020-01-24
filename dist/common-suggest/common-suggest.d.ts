@@ -10,11 +10,13 @@ declare type Props = {
     /** Currently entered value as shown in the input field. Could include commas, indicating an array */
     value: string;
     /** Called to set the new value */
-    onChange: (x0: string) => any;
+    onChange: (value: string) => void;
+    /** Called to set the new input value.  If onInputChange is not provided, onChange is called. */
+    onInputChange?: (value: string) => void;
     /** Called when user hits enter */
     onEnter?: () => any;
     /** Additional actions at the bottom of the suggestion Popper */
     actions?: ReactNode;
-} & Omit<ComponentProps<typeof Autocomplete>, "renderInput" | "onChange">;
+} & Omit<ComponentProps<typeof Autocomplete>, "renderInput" | "onChange" | "onInputChange">;
 export declare const CommonSuggest: React.FC<Props>;
 export {};

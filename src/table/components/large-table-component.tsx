@@ -10,6 +10,7 @@ import { SortOption } from "@grailbio/lib";
 import { VariableSizeGrid } from "react-window";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId } from "../utilities/row-utils";
+import { makeStyles } from "@material-ui/core/styles";
 
 // TableCell is a react element for a cell in VirtualizedGrid.
 // For details see https://github.com/bvaughn/react-window/issues/302.
@@ -170,6 +171,15 @@ const TableHeader = ({
   );
 };
 
+const useStyles = makeStyles({
+  frozenColumnsContent: {
+    top: (top: number) => top,
+  },
+  frozenColumnsHeader: {
+    top: 0,
+  },
+});
+
 type Props = {
   id?: string;
   columns: PagedTableColumn<any>[];
@@ -266,9 +276,6 @@ export const LargeTableComponent: React.FC<Props> = props => {
     }
   };
 
-  if (!isLoading && data.length === 0) {
-    return <Typography>No data</Typography>;
-  }
   const selectionProps = {
     data,
     idKey,
@@ -332,6 +339,12 @@ export const LargeTableComponent: React.FC<Props> = props => {
         .reduce((sum, width) => sum + width)
     : 0;
 
+  const cssStyles = useStyles(firstRowHeight);
+
+  if (!isLoading && data.length === 0) {
+    return <Typography>No data</Typography>;
+  }
+
   // The cells of the table are partitioned into four Grid components,
   // representing the four quadrants of the graph that are produced if
   // we draw one vertical line separating the frozen column(s) from the
@@ -382,10 +395,10 @@ export const LargeTableComponent: React.FC<Props> = props => {
     <div className={classNames(styles.table, classes.table)} id={id}>
       <div className={styles.gridRow}>
         <div
-          className={styles.frozenColumnsGridContainer}
-          style={{
-            top: 0,
-          }}
+          className={classNames(
+            styles.frozenColumnsGridContainer,
+            cssStyles.frozenColumnsHeader,
+          )}
         >
           <VariableSizeGrid
             // This Grid corresponds to grid A in the example above.
@@ -404,10 +417,10 @@ export const LargeTableComponent: React.FC<Props> = props => {
           </VariableSizeGrid>
         </div>
         <div
-          className={styles.frozenColumnsGridContainer}
-          style={{
-            top: firstRowHeight,
-          }}
+          className={classNames(
+            styles.frozenColumnsGridContainer,
+            cssStyles.frozenColumnsContent,
+          )}
         >
           <VariableSizeGrid
             // This Grid corresponds to grid B in the example above.

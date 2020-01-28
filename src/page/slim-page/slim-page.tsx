@@ -14,6 +14,7 @@ import { HeaderAction, SlimPageClasses } from "../../types/card";
 import { HeaderActions } from "./components/header-actions";
 import { SpinnerOverlay } from "../../spinner-overlay";
 import { TitleComponent } from "./components/title-component";
+import { makeStyles } from "@material-ui/core/styles";
 
 // useContentRectWidth is a custom react hook that gets the rectangle of the ref provided. The function must start
 // with `use` in order to be considered a hook, and to use `useState` and `useEffect` internally.
@@ -86,6 +87,14 @@ type Props = {
   secondaryActions?: ClickableItem[];
 };
 
+const useStyles = makeStyles({
+  placeholder: {
+    maxWidth: ({ maxWidth }: { maxWidth: number }) => {
+      return maxWidth;
+    },
+  },
+});
+
 /**
  * `SlimPage` provides a component for a page with a flush card header.
  * Note: if you are using this component
@@ -118,6 +127,7 @@ export const SlimPage: React.FC<Props> = props => {
   const sizeDifference = titleWidth - headerActionsWidth;
   const isTitleBiggerThanHeaderActions = sizeDifference > 0;
   const isHeaderActionsBiggerThanTitle = sizeDifference < 0;
+  const cssStyles = useStyles({ maxWidth: Math.abs(sizeDifference) });
 
   return (
     <div
@@ -144,8 +154,7 @@ export const SlimPage: React.FC<Props> = props => {
         />
         {centerHeader && isHeaderActionsBiggerThanTitle && (
           <div
-            className={styles.placeHolder}
-            style={{ maxWidth: -sizeDifference }}
+            className={classNames(styles.placeHolder, cssStyles.placeholder)}
           />
         )}
         {centerHeader && (
@@ -157,8 +166,7 @@ export const SlimPage: React.FC<Props> = props => {
         )}
         {centerHeader && isTitleBiggerThanHeaderActions && (
           <div
-            className={styles.placeHolder}
-            style={{ maxWidth: sizeDifference }}
+            className={classNames(styles.placeHolder, cssStyles.placeholder)}
           />
         )}
         <HeaderActions

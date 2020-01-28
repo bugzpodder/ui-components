@@ -14,9 +14,8 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root rowLabel MuiTypography-body1"
+            class="MuiTypography-root rowLabel makeStyles-label-104 makeStyles-label-106 MuiTypography-body1"
             data-testid="test-label-1-label"
-            style="text-align: right;"
           >
             Test Label 1
           </p>
@@ -26,9 +25,8 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
-            class=""
+            class="value"
             data-testid="test-label-1-value"
-            style="text-align: left;"
           >
             Test Value 1
           </div>
@@ -42,9 +40,8 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-label"
         >
           <div
-            class="rowLabel"
+            class="rowLabel makeStyles-label-104 makeStyles-label-138"
             data-testid="row-1-label"
-            style="text-align: right;"
           >
             1
           </div>
@@ -54,9 +51,8 @@ exports[`render two column grid 1`] = `
           data-testid="two-column-row-value"
         >
           <div
-            class=""
+            class="value"
             data-testid="row-1-value"
-            style="text-align: left;"
           >
             Test Value 1
           </div>
@@ -81,9 +77,8 @@ exports[`render two column grid 2`] = `
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root rowLabel MuiTypography-body1"
+            class="MuiTypography-root rowLabel makeStyles-label-243 makeStyles-label-245 MuiTypography-body1"
             data-testid="test-label-1-label"
-            style="text-align: right;"
           >
             Test Label 1
           </p>
@@ -93,9 +88,8 @@ exports[`render two column grid 2`] = `
           data-testid="two-column-row-value"
         >
           <div
-            class=""
+            class="value"
             data-testid="test-label-1-value"
-            style="text-align: right;"
           >
             Test Value 1
           </div>
@@ -109,9 +103,8 @@ exports[`render two column grid 2`] = `
           data-testid="two-column-row-label"
         >
           <div
-            class="rowLabel"
+            class="rowLabel makeStyles-label-243 makeStyles-label-277"
             data-testid="row-1-label"
-            style="text-align: right;"
           >
             1
           </div>
@@ -121,9 +114,8 @@ exports[`render two column grid 2`] = `
           data-testid="two-column-row-value"
         >
           <div
-            class=""
+            class="value"
             data-testid="row-1-value"
-            style="text-align: right;"
           >
             Test Value 1
           </div>
@@ -148,9 +140,8 @@ exports[`render two column grid 3`] = `
           data-testid="two-column-row-label"
         >
           <p
-            class="MuiTypography-root rowLabel MuiTypography-body1"
+            class="MuiTypography-root rowLabel makeStyles-label-382 makeStyles-label-384 MuiTypography-body1"
             data-testid="test-label-1-label"
-            style="text-align: left;"
           >
             Test Label 1
           </p>
@@ -160,9 +151,8 @@ exports[`render two column grid 3`] = `
           data-testid="two-column-row-value"
         >
           <div
-            class=""
+            class="value"
             data-testid="test-label-1-value"
-            style="text-align: left;"
           >
             Test Value 1
           </div>
@@ -176,9 +166,8 @@ exports[`render two column grid 3`] = `
           data-testid="two-column-row-label"
         >
           <div
-            class="rowLabel"
+            class="rowLabel makeStyles-label-382 makeStyles-label-416"
             data-testid="row-1-label"
-            style="text-align: left;"
           >
             1
           </div>
@@ -188,9 +177,8 @@ exports[`render two column grid 3`] = `
           data-testid="two-column-row-value"
         >
           <div
-            class=""
+            class="value"
             data-testid="row-1-value"
-            style="text-align: left;"
           >
             Test Value 1
           </div>

@@ -12,8 +12,7 @@ exports[`render full simple table 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-91"
         >
           <div
             class="headerGrid"
@@ -31,14 +30,14 @@ exports[`render full simple table 1`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-79 Mui-checked MuiIconButton-colorPrimary"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-100 Mui-checked MuiIconButton-colorPrimary"
                   >
                     <span
                       class="MuiIconButton-label"
                     >
                       <input
                         checked=""
-                        class="PrivateSwitchBase-input-81"
+                        class="PrivateSwitchBase-input-102"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -66,8 +65,7 @@ exports[`render full simple table 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-90 makeStyles-frozenColumnsContent-92"
         >
           <div
             class="frozenColumnsGrid"
@@ -83,14 +81,14 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-79 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-100 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-81"
+                      class="PrivateSwitchBase-input-102"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -121,14 +119,14 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-79 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-100 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-81"
+                      class="PrivateSwitchBase-input-102"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -159,13 +157,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-81"
+                      class="PrivateSwitchBase-input-102"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -196,13 +194,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-81"
+                      class="PrivateSwitchBase-input-102"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -233,13 +231,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-81"
+                      class="PrivateSwitchBase-input-102"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -270,13 +268,13 @@ exports[`render full simple table 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-78 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-99 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-81"
+                      class="PrivateSwitchBase-input-102"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -342,8 +340,7 @@ exports[`render full simple table 2`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-227"
         >
           <div
             class="headerGrid"
@@ -361,14 +358,14 @@ exports[`render full simple table 2`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-236 Mui-checked MuiIconButton-colorPrimary"
                   >
                     <span
                       class="MuiIconButton-label"
                     >
                       <input
                         checked=""
-                        class="PrivateSwitchBase-input-193"
+                        class="PrivateSwitchBase-input-238"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -406,8 +403,7 @@ exports[`render full simple table 2`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-226 makeStyles-frozenColumnsContent-228"
         >
           <div
             class="frozenColumnsGrid"
@@ -423,14 +419,14 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-236 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-193"
+                      class="PrivateSwitchBase-input-238"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -470,14 +466,14 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-191 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-236 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-193"
+                      class="PrivateSwitchBase-input-238"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -517,13 +513,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-193"
+                      class="PrivateSwitchBase-input-238"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -563,13 +559,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-193"
+                      class="PrivateSwitchBase-input-238"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -609,13 +605,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-193"
+                      class="PrivateSwitchBase-input-238"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -655,13 +651,13 @@ exports[`render full simple table 2`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-190 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-235 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-193"
+                      class="PrivateSwitchBase-input-238"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -736,8 +732,7 @@ exports[`render large simple table 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-2"
         >
           <div
             class="headerGrid"
@@ -749,8 +744,7 @@ exports[`render large simple table 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-1 makeStyles-frozenColumnsContent-3"
         >
           <div
             class="frozenColumnsGrid"
@@ -800,8 +794,7 @@ exports[`render large simple table with all items selected 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-47"
         >
           <div
             class="headerGrid"
@@ -819,14 +812,14 @@ exports[`render large simple table with all items selected 1`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-38 Mui-checked MuiIconButton-colorPrimary"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-55 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-56 Mui-checked MuiIconButton-colorPrimary"
                   >
                     <span
                       class="MuiIconButton-label"
                     >
                       <input
                         checked=""
-                        class="PrivateSwitchBase-input-40"
+                        class="PrivateSwitchBase-input-58"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -854,8 +847,7 @@ exports[`render large simple table with all items selected 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-46 makeStyles-frozenColumnsContent-48"
         >
           <div
             class="frozenColumnsGrid"
@@ -871,14 +863,14 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-38 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-55 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-56 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-40"
+                      class="PrivateSwitchBase-input-58"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -909,14 +901,14 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-38 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-55 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-56 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-40"
+                      class="PrivateSwitchBase-input-58"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -947,13 +939,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-55 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-40"
+                      class="PrivateSwitchBase-input-58"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -984,13 +976,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-55 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-40"
+                      class="PrivateSwitchBase-input-58"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -1021,13 +1013,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-55 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-40"
+                      class="PrivateSwitchBase-input-58"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -1058,13 +1050,13 @@ exports[`render large simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-37 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-55 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-40"
+                      class="PrivateSwitchBase-input-58"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -1144,8 +1136,7 @@ exports[`render large simple table with no results and is loading 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-44"
         >
           <div
             class="headerGrid"
@@ -1157,8 +1148,7 @@ exports[`render large simple table with no results and is loading 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-43 makeStyles-frozenColumnsContent-45"
         >
           <div
             class="frozenColumnsGrid"
@@ -1217,8 +1207,7 @@ exports[`render large simple table with set row height 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-5"
         >
           <div
             class="headerGrid"
@@ -1230,8 +1219,7 @@ exports[`render large simple table with set row height 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 75px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-4 makeStyles-frozenColumnsContent-6"
         >
           <div
             class="frozenColumnsGrid"
@@ -1281,8 +1269,7 @@ exports[`render large wide simple table 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-135"
         >
           <div
             class="headerGrid"
@@ -1305,8 +1292,7 @@ exports[`render large wide simple table 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-134 makeStyles-frozenColumnsContent-136"
         >
           <div
             class="frozenColumnsGrid"
@@ -1411,8 +1397,7 @@ exports[`render large wide simple table with all items selected 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-183"
         >
           <div
             class="headerGrid"
@@ -1430,14 +1415,14 @@ exports[`render large wide simple table with all items selected 1`] = `
                 >
                   <span
                     aria-disabled="false"
-                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
+                    class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiCheckbox-root indeterminate MuiCheckbox-colorPrimary MuiCheckbox-indeterminate PrivateSwitchBase-checked-192 Mui-checked MuiIconButton-colorPrimary"
                   >
                     <span
                       class="MuiIconButton-label"
                     >
                       <input
                         checked=""
-                        class="PrivateSwitchBase-input-152"
+                        class="PrivateSwitchBase-input-194"
                         data-indeterminate="true"
                         data-testid="table-checkbox-header"
                         type="checkbox"
@@ -1475,8 +1460,7 @@ exports[`render large wide simple table with all items selected 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-182 makeStyles-frozenColumnsContent-184"
         >
           <div
             class="frozenColumnsGrid"
@@ -1492,14 +1476,14 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-192 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-152"
+                      class="PrivateSwitchBase-input-194"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-first-datum"
                       id="First Datum"
@@ -1539,14 +1523,14 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-150 Mui-checked MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiCheckbox-root active MuiCheckbox-colorPrimary PrivateSwitchBase-checked-192 Mui-checked MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
                       checked=""
-                      class="PrivateSwitchBase-input-152"
+                      class="PrivateSwitchBase-input-194"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-fourth-datum"
                       id="Fourth Datum"
@@ -1586,13 +1570,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-152"
+                      class="PrivateSwitchBase-input-194"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventh-datum"
                       id="Seventh Datum"
@@ -1632,13 +1616,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-152"
+                      class="PrivateSwitchBase-input-194"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-tenth-datum"
                       id="Tenth Datum"
@@ -1678,13 +1662,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-152"
+                      class="PrivateSwitchBase-input-194"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-thirteenth-datum"
                       id="Thirteenth Datum"
@@ -1724,13 +1708,13 @@ exports[`render large wide simple table with all items selected 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-149 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-191 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-152"
+                      class="PrivateSwitchBase-input-194"
                       data-indeterminate="false"
                       data-testid="table-checkbox-cell-seventeenth-datum"
                       id="Seventeenth Datum"
@@ -1805,8 +1789,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-141"
         >
           <div
             class="headerGrid"
@@ -1829,8 +1812,7 @@ exports[`render large wide simple table with dynamic row height 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-140 makeStyles-frozenColumnsContent-142"
         >
           <div
             class="frozenColumnsGrid"
@@ -1940,8 +1922,7 @@ exports[`render large wide simple table with no results and is loading 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-180"
         >
           <div
             class="headerGrid"
@@ -1964,8 +1945,7 @@ exports[`render large wide simple table with no results and is loading 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-179 makeStyles-frozenColumnsContent-181"
         >
           <div
             class="frozenColumnsGrid"
@@ -2024,8 +2004,7 @@ exports[`render large wide simple table with set row height 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-138"
         >
           <div
             class="headerGrid"
@@ -2048,8 +2027,7 @@ exports[`render large wide simple table with set row height 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 75px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-137 makeStyles-frozenColumnsContent-139"
         >
           <div
             class="frozenColumnsGrid"
@@ -2136,8 +2114,7 @@ exports[`render loading simple table 1`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-41"
         >
           <div
             class="headerGrid"
@@ -2149,8 +2126,7 @@ exports[`render loading simple table 1`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-40 makeStyles-frozenColumnsContent-42"
         >
           <div
             class="frozenColumnsGrid"
@@ -2209,8 +2185,7 @@ exports[`render loading simple table 2`] = `
         class="gridRow"
       >
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 0px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsHeader-177"
         >
           <div
             class="headerGrid"
@@ -2233,8 +2208,7 @@ exports[`render loading simple table 2`] = `
           </div>
         </div>
         <div
-          class="frozenColumnsGridContainer"
-          style="top: 50px;"
+          class="frozenColumnsGridContainer makeStyles-frozenColumnsContent-176 makeStyles-frozenColumnsContent-178"
         >
           <div
             class="frozenColumnsGrid"

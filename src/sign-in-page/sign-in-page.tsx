@@ -1,7 +1,9 @@
 import Button from "@material-ui/core/Button";
 import React, { ReactNode } from "react";
 import Typography from "@material-ui/core/Typography";
+import classNames from "classnames";
 import styles from "./sign-in-page.module.scss";
+import { makeStyles } from "@material-ui/core/styles";
 
 type Props = {
   /**
@@ -28,24 +30,24 @@ type Props = {
   subheader?: string;
 };
 
+const useStyles = makeStyles({
+  backgroundImage: {
+    backgroundImage: ({ backgroundImage }: Props) =>
+      backgroundImage ? `url(${backgroundImage})` : undefined,
+  },
+});
+
 const DEFAULT_SUBHEADER = "Detect cancer early, when it can be cured.";
 export const SignInPage: React.FC<Props> = props => {
-  const {
-    logo,
-    onSignIn,
-    backgroundImage,
-    subheader = DEFAULT_SUBHEADER,
-    children,
-  } = props;
+  const cssStyles = useStyles(props);
+  const { logo, onSignIn, subheader = DEFAULT_SUBHEADER, children } = props;
   return (
     <div className={styles.signInPage}>
       <div
-        className={styles.backgroundImage}
-        style={{
-          backgroundImage: backgroundImage
-            ? `url(${backgroundImage})`
-            : undefined,
-        }}
+        className={classNames(
+          styles.backgroundImage,
+          cssStyles.backgroundImage,
+        )}
       />
       <div className={styles.contents}>
         {logo}

@@ -6,7 +6,7 @@ exports[`render selector 1`] = `
     class="signInPage"
   >
     <div
-      class="backgroundImage"
+      class="backgroundImage makeStyles-backgroundImage-1 makeStyles-backgroundImage-2"
     />
     <div
       class="contents"
@@ -46,7 +46,7 @@ exports[`render selector with child 1`] = `
     class="signInPage"
   >
     <div
-      class="backgroundImage"
+      class="backgroundImage makeStyles-backgroundImage-75 makeStyles-backgroundImage-76"
     />
     <div
       class="contents"

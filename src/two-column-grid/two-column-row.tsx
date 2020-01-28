@@ -5,6 +5,7 @@ import classNames from "classnames";
 import styles from "./two-column-row.module.scss";
 import { GridRow } from "../types/grid";
 import { TextAlignProperty } from "csstype";
+import { makeStyles } from "@material-ui/core/styles";
 
 type Props = {
   row: GridRow;
@@ -13,12 +14,20 @@ type Props = {
   labelWidth?: number;
 };
 
+const useStyles = makeStyles({
+  label: {
+    textAlign: ({ textAlign = [] }: Props) => textAlign[0] || "right",
+  },
+  value: {
+    textAlign: ({ textAlign = [] }: Props) => textAlign[1] || "left",
+  },
+});
+
 export const TwoColumnRow: React.FC<Props> = props => {
-  const { row, labelWidth = 2, textAlign = [], rowIndex } = props;
+  const { row, labelWidth = 2, rowIndex } = props;
 
   const inputWidth: number = 12 - labelWidth;
-  const labelTextAlign = textAlign[0] || "right";
-  const valueTextAlign = textAlign[1] || "left";
+  const cssStyles = useStyles(props);
 
   const { label, value, isHeader = false, classes = {} } = row;
   const testIdPrefix =
@@ -51,20 +60,28 @@ export const TwoColumnRow: React.FC<Props> = props => {
         {typeof label === "string" ? (
           <Typography
             data-testid={`${testIdPrefix}-label`}
-            style={{ textAlign: labelTextAlign }}
-            className={classNames(styles.rowLabel, classes.label, {
-              [styles.header]: isHeader,
-            })}
+            className={classNames(
+              styles.rowLabel,
+              classes.label,
+              cssStyles.label,
+              {
+                [styles.header]: isHeader,
+              },
+            )}
           >
             {label}
           </Typography>
         ) : (
           <div
             data-testid={`${testIdPrefix}-label`}
-            style={{ textAlign: labelTextAlign }}
-            className={classNames(styles.rowLabel, classes.label, {
-              [styles.header]: isHeader,
-            })}
+            className={classNames(
+              styles.rowLabel,
+              classes.label,
+              cssStyles.label,
+              {
+                [styles.header]: isHeader,
+              },
+            )}
           >
             {label}
           </div>
@@ -79,8 +96,9 @@ export const TwoColumnRow: React.FC<Props> = props => {
       >
         <div
           data-testid={`${testIdPrefix}-value`}
-          style={{ textAlign: valueTextAlign }}
-          className={classNames(classes.value, { [styles.header]: isHeader })}
+          className={classNames(classes.value, styles.value, {
+            [styles.header]: isHeader,
+          })}
         >
           {value}
         </div>

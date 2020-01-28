@@ -30,7 +30,7 @@ exports[`render common tabbed page 1`] = `
           data-testid="common-tabbed-page-tabs"
         >
           <div
-            class="PrivateTabScrollButton-root-70 MuiTabs-scrollButtons scrollButton"
+            class="PrivateTabScrollButton-root-72 MuiTabs-scrollButtons scrollButton"
           />
           <div
             class="MuiTabs-scrollable"
@@ -100,12 +100,12 @@ exports[`render common tabbed page 1`] = `
               </button>
             </div>
             <span
-              class="PrivateTabIndicator-root-85 PrivateTabIndicator-colorPrimary-86 MuiTabs-indicator"
+              class="PrivateTabIndicator-root-87 PrivateTabIndicator-colorPrimary-88 MuiTabs-indicator"
               style="left: 0px; width: 0px;"
             />
           </div>
           <div
-            class="PrivateTabScrollButton-root-70 MuiTabs-scrollButtons scrollButton"
+            class="PrivateTabScrollButton-root-72 MuiTabs-scrollButtons scrollButton"
           />
         </div>
       </div>

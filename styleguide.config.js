@@ -86,7 +86,10 @@ module.exports = {
       ],
     },
   ],
-  propsParser: tsdocgen.withCustomConfig("./tsconfig.json").parse,
+  propsParser: tsdocgen.withCustomConfig("./tsconfig.json", {
+    propFilter: prop =>
+      prop.parent ? !prop.parent.fileName.includes("node_modules") : true,
+  }).parse,
   usageMode: "expand",
   exampleMode: "expand",
   skipComponentsWithoutExample: true,

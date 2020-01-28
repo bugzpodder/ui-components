@@ -25,8 +25,8 @@ exports[`render upload button with default text 1`] = `
       </svg>
       Upload File
       <input
+        class="fileInput"
         data-testid="upload-button-input-field"
-        style="display: none;"
         type="file"
       />
     </span>
@@ -62,9 +62,9 @@ exports[`render upload button with default text and default props for uploading 
       </svg>
       Upload File(s)
       <input
+        class="fileInput"
         data-testid="upload-button-input-field"
         multiple=""
-        style="display: none;"
         type="file"
       />
     </span>
@@ -94,9 +94,9 @@ exports[`render upload button with default text and default props for uploading 
       </svg>
       Upload File(s)
       <input
+        class="fileInput"
         data-testid="upload-button-input-field"
         multiple=""
-        style="display: none;"
         type="file"
       />
     </span>

@@ -41,7 +41,7 @@ export const UploadButton: React.FC<Props> = props => {
         type="file"
         data-testid="upload-button-input-field"
         multiple={allowMultiple}
-        style={{ display: "none" }}
+        className={styles.fileInput}
         onChange={({ currentTarget: { files } }) => onChange(files)}
         {...inputProps}
       />

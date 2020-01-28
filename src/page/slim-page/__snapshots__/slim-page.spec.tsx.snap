@@ -61,13 +61,13 @@ exports[`renders common page 1`] = `
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-109 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                  class="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-111 MuiSwitch-switchBase MuiSwitch-colorPrimary"
                 >
                   <span
                     class="MuiIconButton-label"
                   >
                     <input
-                      class="PrivateSwitchBase-input-112 MuiSwitch-input"
+                      class="PrivateSwitchBase-input-114 MuiSwitch-input"
                       id=""
                       type="checkbox"
                       value=""

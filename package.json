@@ -9,6 +9,7 @@
     "start:client": "NODE_ENV=development yarn build:src --watch",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:record": "cypress run --record",
     "cover": "open coverage/lcov-report/index.html",
     "flow": "yarn tsc",
     "lint": "yarn flow && tsdx lint src",
@@ -22,7 +23,7 @@
     "styleguide:build": "styleguidist build",
     "test": "tsdx test --watch",
     "test-e2e": "start-server-and-test styleguide 6060 cy:open",
-    "test-e2e:ci": "start-server-and-test styleguide 6060 cy:run",
+    "test-e2e:ci": "start-server-and-test styleguide 6060 cy:record",
     "test:staged": "tsdx test --coverage && echo --findRelatedTests does not work properly with coverage",
     "test-all": "tsdx test --coverage"
   },

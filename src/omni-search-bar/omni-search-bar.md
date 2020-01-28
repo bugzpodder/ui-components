@@ -15,7 +15,7 @@ As an example, LIMS implementation wraps `OmniSearchBar` with redux to manage ap
 ```js
 import MomentUtils from "@date-io/moment";
 import { ExampleBlock, ExampleWrapper } from "../test-utils";
-import { wrapPickerUtilProvider } from "../";
+import { wrapPickerUtilProvider } from "../date/picker-util-provider-hoc";
 import { useState } from "react";
 import { OmniSearchBar } from "./";
 import {

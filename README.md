@@ -84,7 +84,7 @@ Update `$GRAIL/ui/lims/client/cypress/integration/styleguide` to add the new com
 To add a V2 version of an existing component, separate the V1 and V2 files into their own folder.
 e.g.
 
-```
+```bash
 src/
   some-component/
     index.js /* export v1 and v2 components. */

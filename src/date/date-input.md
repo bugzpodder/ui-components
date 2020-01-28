@@ -7,7 +7,7 @@ import MomentUtils from "@date-io/moment";
 import Typography from "@material-ui/core/Typography";
 import styles from "../test-utils/example-styles.module.scss";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
-import { wrapPickerUtilProvider } from "../";
+import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 import { useState } from "react";
 import { DateInput } from "./";
 
@@ -53,7 +53,7 @@ import MomentUtils from "@date-io/moment";
 import Typography from "@material-ui/core/Typography";
 import styles from "../test-utils/example-styles.module.scss";
 import { ExampleWrapper, ExampleBlock } from "../test-utils";
-import { wrapPickerUtilProvider } from "../";
+import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 import { useState } from "react";
 import { DateInput } from "./";
 

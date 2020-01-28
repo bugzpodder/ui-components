@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/grailbio/ui-components/static/css/main.3c9fe886.chunk.css",
-    "main.js": "/grailbio/ui-components/build/main.329bbaef.js",
+    "main.css": "/grailbio/ui-components/static/css/main.4df4cbb6.chunk.css",
+    "main.js": "/grailbio/ui-components/build/main.f8375794.js",
     "runtime-main.js": "/grailbio/ui-components/build/bundle.e80383ce.js",
-    "build/2.8f1bdc5e.js": "/grailbio/ui-components/build/2.8f1bdc5e.js",
+    "build/2.862d88aa.js": "/grailbio/ui-components/build/2.862d88aa.js",
     "dcefba465a8037d860fa.worker.js": "/grailbio/ui-components/dcefba465a8037d860fa.worker.js",
     "index.html": "/grailbio/ui-components/index.html",
-    "precache-manifest.c24b31283f5409fdb25baec67a7ce0a5.js": "/grailbio/ui-components/precache-manifest.c24b31283f5409fdb25baec67a7ce0a5.js",
+    "precache-manifest.3b9fbe92756b0eea99b1204cf71dfb30.js": "/grailbio/ui-components/precache-manifest.3b9fbe92756b0eea99b1204cf71dfb30.js",
     "service-worker.js": "/grailbio/ui-components/service-worker.js",
-    "static/css/main.3c9fe886.chunk.css.map": "/grailbio/ui-components/static/css/main.3c9fe886.chunk.css.map",
+    "static/css/main.4df4cbb6.chunk.css.map": "/grailbio/ui-components/static/css/main.4df4cbb6.chunk.css.map",
     "static/media/sample.pdf": "/grailbio/ui-components/static/media/sample.3352e9f6.pdf"
   },
   "entrypoints": [
     "build/bundle.e80383ce.js",
-    "build/2.8f1bdc5e.js",
-    "static/css/main.3c9fe886.chunk.css",
-    "build/main.329bbaef.js"
+    "build/2.862d88aa.js",
+    "static/css/main.4df4cbb6.chunk.css",
+    "build/main.f8375794.js"
   ]
 }

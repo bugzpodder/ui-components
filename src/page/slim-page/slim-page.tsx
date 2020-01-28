@@ -15,16 +15,16 @@ import { HeaderActions } from "./components/header-actions";
 import { SpinnerOverlay } from "../../spinner-overlay";
 import { TitleComponent } from "./components/title-component";
 
-// useContentRect is a custom react hook that gets the rectangle of the ref provided. The function must start
+// useContentRectWidth is a custom react hook that gets the rectangle of the ref provided. The function must start
 // with `use` in order to be considered a hook, and to use `useState` and `useEffect` internally.
 // @ts-ignore ResizeObserver does not exist on window.
 const WindowObserver = window.ResizeObserver || PollyfillObserver;
-const useContentRect = (
+const useContentRectWidth = (
   ref: MutableRefObject<HTMLDivElement> | MutableRefObject<null>,
-): ClientRect | Record<string, any> => {
+): number => {
   const currentRef = ref.current;
-  const [contentRect, setContentRect] = useState(
-    currentRef ? currentRef.getBoundingClientRect() : {},
+  const [contentRectWidth, setContentRectWidth] = useState(
+    currentRef ? currentRef.getBoundingClientRect().width : 0,
   );
   useEffect(() => {
     if (!currentRef) {
@@ -35,13 +35,13 @@ const useContentRect = (
       // frame to prevent exceeding the call limit of ResizeObserver.
       // This is a known issue with the ResizeObserver: https://github.com/WICG/ResizeObserver/issues/38.
       observer.disconnect();
-      setContentRect(entries[0].contentRect);
+      setContentRectWidth(entries[0].contentRect.width);
       requestAnimationFrame(() => observer.observe(currentRef));
     });
     observer.observe(currentRef);
     return (): void => observer.disconnect();
   }, [currentRef]);
-  return contentRect;
+  return contentRectWidth;
 };
 
 type Props = {
@@ -113,8 +113,8 @@ export const SlimPage: React.FC<Props> = props => {
   // By getting the rectangle of each edge (left/right) header item we can accurately find out which item is wider.
   // Then, a placeholder div of exactly that size is inserted on the inside of the shorter item in order to accurately
   // center the centerHeader div.
-  const { width: titleWidth } = useContentRect(titleRef);
-  const { width: headerActionsWidth } = useContentRect(headerActionsRef);
+  const titleWidth = useContentRectWidth(titleRef);
+  const headerActionsWidth = useContentRectWidth(headerActionsRef);
   const sizeDifference = titleWidth - headerActionsWidth;
   const isTitleBiggerThanHeaderActions = sizeDifference > 0;
   const isHeaderActionsBiggerThanTitle = sizeDifference < 0;

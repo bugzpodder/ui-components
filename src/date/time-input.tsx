@@ -8,7 +8,10 @@ import {
 import { ReadOnlyTextField } from "../readonly-text-field";
 import { TIME_FORMAT } from "@grailbio/lib";
 import { TimePicker } from "material-ui-pickers";
-import { useFormattedDateForDisplay } from "./picker-util-provider-hoc";
+import {
+  useFormattedDateForDisplay,
+  useParsedDate,
+} from "./picker-util-provider-hoc";
 
 type Props = {
   /** When `true`, displays a read only input field using `ReadOnlyTextField` */
@@ -40,6 +43,7 @@ export const TimeInput: React.FC<Props> = props => {
     className,
   } = props;
 
+  const parsedDate = useParsedDate(value);
   const formattedDate = useFormattedDateForDisplay(value, format);
 
   if (readOnly) {
@@ -71,7 +75,7 @@ export const TimeInput: React.FC<Props> = props => {
       autoOk
       {...props}
       className={classNames(className, styles.textFieldWidth)}
-      value={value || null}
+      value={parsedDate}
       format={format}
     />
   ) : (
@@ -91,7 +95,7 @@ export const TimeInput: React.FC<Props> = props => {
       {...props}
       className={classNames(className, styles.textFieldWidth)}
       onAccept={onChange}
-      value={value || null}
+      value={parsedDate}
       format={format}
     />
   );

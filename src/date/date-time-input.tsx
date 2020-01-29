@@ -10,6 +10,7 @@ import { ReadOnlyTextField } from "../readonly-text-field";
 import {
   useDateFormat,
   useFormattedDateForDisplay,
+  useParsedDate,
 } from "./picker-util-provider-hoc";
 
 type Props = {
@@ -39,6 +40,7 @@ export const DateTimeInput: React.FC<Props> = props => {
     format = defaultDateTimeFormat,
   } = props;
 
+  const parsedDate = useParsedDate(value);
   const formattedDate = useFormattedDateForDisplay(value, format);
 
   if (readOnly) {
@@ -72,7 +74,7 @@ export const DateTimeInput: React.FC<Props> = props => {
       // @ts-ignore string | (string | RegExp)[] is not assignable to type.
       mask={DATE_TIME_INPUT_MASK}
       {...props}
-      value={value || null}
+      value={parsedDate}
       format={format}
     />
   ) : (
@@ -91,7 +93,7 @@ export const DateTimeInput: React.FC<Props> = props => {
       autoOk
       {...props}
       onAccept={onChange}
-      value={value || null}
+      value={parsedDate}
       format={format}
     />
   );

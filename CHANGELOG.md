@@ -1,3 +1,7 @@
+## 2.1.0
+
+1. Handle string values properly in date components.
+
 ## 2.0.0 - 2020-01-21
 
 1.  (BREAKING) Replace internal implementation of CommonSelect, CommonMultiSelect and CommonSuggest with Autocomplete. Upgrade dependency @material-ui/core >= 4.6.0.

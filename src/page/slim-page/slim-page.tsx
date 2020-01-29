@@ -35,7 +35,7 @@ const useContentRectWidth = (
       // frame to prevent exceeding the call limit of ResizeObserver.
       // This is a known issue with the ResizeObserver: https://github.com/WICG/ResizeObserver/issues/38.
       observer.disconnect();
-      setContentRectWidth(entries[0].contentRect.width);
+      setContentRectWidth(Math.floor(entries[0].contentRect.width));
       requestAnimationFrame(() => observer.observe(currentRef));
     });
     observer.observe(currentRef);

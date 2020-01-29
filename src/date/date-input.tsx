@@ -11,6 +11,7 @@ import { ReadOnlyTextField } from "../readonly-text-field";
 import {
   useDateFormat,
   useFormattedDateForDisplay,
+  useParsedDate,
 } from "./picker-util-provider-hoc";
 
 type Props = {
@@ -42,6 +43,7 @@ export const DateInput: React.FC<Props> = props => {
     className,
   } = props;
 
+  const parsedDate = useParsedDate(value);
   const formattedDate = useFormattedDateForDisplay(value, format);
 
   if (readOnly) {
@@ -76,7 +78,7 @@ export const DateInput: React.FC<Props> = props => {
       mask={DATE_INPUT_MASK}
       {...props}
       className={classNames(className, styles.textFieldWidth)}
-      value={value || null}
+      value={parsedDate}
       format={format}
     />
   ) : (
@@ -96,7 +98,7 @@ export const DateInput: React.FC<Props> = props => {
       {...props}
       className={classNames(className, styles.textFieldWidth)}
       onAccept={onChange}
-      value={value || null}
+      value={parsedDate}
       format={format}
     />
   );

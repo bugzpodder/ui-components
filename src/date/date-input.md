@@ -13,8 +13,8 @@ import { DateInput } from "./";
 
 // You must wrap your app in the wrapPickerUtilProvider.
 const ExampleApp = wrapPickerUtilProvider(() => {
-  const [dateOne, setDateOne] = useState("");
-  const [dateTwo, setDateTwo] = useState("");
+  const [dateOne, setDateOne] = useState("2018-08-23");
+  const [dateTwo, setDateTwo] = useState("2018-10-03");
 
   return (
     <div className={styles.container}>
@@ -60,8 +60,8 @@ import { DateInput } from "./";
 // You must wrap your app in the wrapPickerUtilProvider.
 const ExampleApp = wrapPickerUtilProvider(
   () => {
-    const [dateOne, setDateOne] = useState("");
-    const [dateTwo, setDateTwo] = useState("");
+    const [dateOne, setDateOne] = useState("2019-09-28");
+    const [dateTwo, setDateTwo] = useState("2017-10-29");
 
     return (
       <div className={styles.container}>

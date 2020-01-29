@@ -1,11 +1,14 @@
 import React, { ComponentType, useContext } from "react";
+import isString from "lodash/isString";
 import {
   DATE_FORMAT,
   DATE_TIME_FORMAT,
   DATE_TIME_UNICODE_FORMAT,
   DATE_UNICODE_FORMAT,
+  parseDate,
 } from "@grailbio/lib";
 import { IUtils } from "@date-io/core/IUtils";
+import { MaterialUiPickersDate } from "material-ui-pickers/typings/date";
 import {
   MuiPickersContext,
   MuiPickersUtilsProvider,
@@ -63,14 +66,26 @@ export const useDateFormat = (): {
   };
 };
 
+export const useParsedDate = (value: ParsableDate): MaterialUiPickersDate => {
+  const { defaultDateFormat } = useDateFormat();
+  const dateUtils = useMuiPickersContext();
+  if (!dateUtils || !value || !dateUtils.isValid(value)) {
+    return null;
+  }
+
+  const parsedDate =
+    defaultDateFormat === DATE_UNICODE_FORMAT && isString(value)
+      ? parseDate(value)
+      : dateUtils.date(value);
+
+  return dateUtils.isValid(parsedDate) ? parsedDate : null;
+};
+
 export const useFormattedDateForDisplay = (
   value: ParsableDate,
   format: string,
 ): string => {
   const dateUtils = useMuiPickersContext();
-  const date = dateUtils ? dateUtils.date(value) : value;
-  if (value && dateUtils && dateUtils.isValid(date)) {
-    return dateUtils.format(date, format);
-  }
-  return "";
+  const parsedDate = useParsedDate(value);
+  return dateUtils && parsedDate ? dateUtils.format(parsedDate, format) : "";
 };

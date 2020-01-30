@@ -36,8 +36,9 @@ export const SearchField: React.FC<Props> = props => {
     event: React.ChangeEvent<HTMLInputElement>,
   ): void => {
     const {
-      target: { id, value: text },
+      currentTarget: { id, value: text },
     } = event;
+
     onChange(id, text);
   };
   const onEnter = (event: React.KeyboardEvent<HTMLInputElement>): void => {

@@ -109,6 +109,36 @@ const SelectExample = () => {
 </ExampleWrapper>;
 ```
 
+### Read-Only
+
+```js
+import { useState } from "react";
+import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
+import { CommonMultiSelect } from "./";
+
+const SelectExample = () => {
+  const [values, setValues] = useState([]);
+  return (
+    <>
+      <CommonMultiSelect
+        isFullWidth
+        data-testid="countries-chooser"
+        helperText="Choose a country"
+        values={values}
+        options={COUNTRIES}
+        onChange={setValues}
+        readOnly
+      />
+      <ExampleBlock strongHeader="state " content={values} />
+    </>
+  );
+};
+
+<ExampleWrapper>
+  <SelectExample />
+</ExampleWrapper>;
+```
+
 ### Custom
 
 ```js

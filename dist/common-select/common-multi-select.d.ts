@@ -22,6 +22,8 @@ declare type CommonMultiSelectProps = {
      * Whether the new input is valid.
      */
     isValidNewOption?: (input: string) => boolean;
+    /** displays component as read only */
+    readOnly?: boolean;
 } & Omit<ComponentProps<typeof CommonSelectComponent>, "onChange">;
 export declare const CommonMultiSelect: React.FC<CommonMultiSelectProps>;
 export {};

@@ -1,3 +1,4 @@
+import Chip from "@material-ui/core/Chip";
 import React, { ComponentProps } from "react";
 import isString from "lodash/isString";
 import { CommonSelectComponent } from "./common-select-component";
@@ -24,6 +25,8 @@ type CommonMultiSelectProps = {
    * Whether the new input is valid.
    */
   isValidNewOption?: (input: string) => boolean;
+  /** displays component as read only */
+  readOnly?: boolean;
 } & Omit<ComponentProps<typeof CommonSelectComponent>, "onChange">;
 
 export const CommonMultiSelect: React.FC<CommonMultiSelectProps> = props => {
@@ -32,8 +35,22 @@ export const CommonMultiSelect: React.FC<CommonMultiSelectProps> = props => {
     isValidNewOption,
     selectType,
     values,
+    readOnly,
     ...otherProps
   } = props;
+
+  if (readOnly) {
+    if (values.length === 0) {
+      return "-";
+    }
+    return (
+      <>
+        {values.map(option => (
+          <Chip label={option.label} key={option.value} />
+        ))}
+      </>
+    );
+  }
 
   const onValueChange = (values): void => {
     if (!values || values.length === 0 || selectType !== "creatable") {

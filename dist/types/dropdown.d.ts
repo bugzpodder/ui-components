@@ -4,5 +4,6 @@ export declare type ClickableItem = {
     onClick?: Function;
     href?: string;
     isExternal?: boolean;
+    isEnabled?: boolean;
     [x0: string]: any;
 };

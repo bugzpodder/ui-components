@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 export type CommonSelectOption = {
   label: ReactNode;
   value: string;
+  isEnabled?: boolean;
   [x0: string]: any;
 };
 

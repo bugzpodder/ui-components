@@ -127,6 +127,7 @@ export const CommonSelectComponent: React.FC<Props> = props => {
         </div>
       )}
       getOptionLabel={option => option.label}
+      getOptionDisabled={option => option.isEnabled === false}
       disabled={isDisabled}
       open={menuIsOpen}
       disableClearable={!isClearable}

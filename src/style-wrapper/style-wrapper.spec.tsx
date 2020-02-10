@@ -1,5 +1,5 @@
-import Button from "@material-ui/core/Button";
 import React from "react";
+import { Button } from "@material-ui/core";
 import { StyleWrapper } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, render } from "@testing-library/react";

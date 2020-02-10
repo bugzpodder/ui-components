@@ -1,6 +1,6 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import { ApiQueryOptions } from "@grailbio/lib";
+import { Typography } from "@material-ui/core";
 
 export const data = [
   {

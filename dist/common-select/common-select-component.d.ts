@@ -1,5 +1,5 @@
-import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { ComponentProps, ReactNode, RefObject } from "react";
+import { Autocomplete } from "@material-ui/lab";
 import { CommonSelectOption } from "../types/select";
 declare type Props = {
     /** The current value of common select, or an array of options for common multi-select */

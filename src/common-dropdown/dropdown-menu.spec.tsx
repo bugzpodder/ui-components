@@ -1,10 +1,12 @@
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import CloseIcon from "@material-ui/icons/Close";
-import DoneIcon from "@material-ui/icons/Done";
 import React, { useState } from "react";
-import Typography from "@material-ui/core/Typography";
+import {
+  ArrowDropDown as ArrowDropDownIcon,
+  Close as CloseIcon,
+  Done as DoneIcon,
+} from "@material-ui/icons";
 import { CommonDropdownMenu } from ".";
 import { TestWrapper } from "../test-utils";
+import { Typography } from "@material-ui/core";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);

@@ -1,7 +1,7 @@
 import Button, { ButtonProps } from "@material-ui/core/Button";
-import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import React from "react";
 import styles from "./upload-button.module.scss";
+import { CloudUpload as CloudUploadIcon } from "@material-ui/icons";
 
 type Props = {
   /** If true, allows multiple files to be selected. */
@@ -35,7 +35,7 @@ export const UploadButton: React.FC<Props> = props => {
   return (
     // @ts-ignore cannot assign component to props.
     <Button component="label" {...buttonProps}>
-      <CloudUploadIcon className={styles.cloudUploadIcon} />
+      <CloudUploadIcon className={styles.cloudUpload} />
       {text}
       <input
         type="file"

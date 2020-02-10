@@ -1,7 +1,7 @@
 ### Example
 
 ```js
-import Typography from "@material-ui/core/Typography";
+import { Typography } from "@material-ui/core";
 import { ExampleWrapper } from "../test-utils";
 import { TwoColumnGrid } from "./";
 
@@ -21,12 +21,16 @@ const rows = [
 ];
 
 <ExampleWrapper>
-  <TwoColumnGrid header={{ label: "Label Header", value: "Value Header" }} labelWidth={2} rows={rows} />
+  <TwoColumnGrid
+    header={{ label: "Label Header", value: "Value Header" }}
+    labelWidth={2}
+    rows={rows}
+  />
 </ExampleWrapper>;
 ```
 
 ```js
-import Typography from "@material-ui/core/Typography";
+import { Typography } from "@material-ui/core";
 import { ExampleWrapper } from "../test-utils";
 import { TwoColumnGrid } from "./";
 const rows = [
@@ -50,7 +54,7 @@ const rows = [
 ```
 
 ```js
-import Typography from "@material-ui/core/Typography";
+import { Typography } from "@material-ui/core";
 import { ExampleWrapper } from "../test-utils";
 import { TwoColumnGrid } from "./";
 const rows = [

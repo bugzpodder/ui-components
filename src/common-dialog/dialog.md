@@ -1,7 +1,7 @@
 #### CommonDialogAction
 
 ```js
-import Button from "@material-ui/core/Button";
+import { Button } from "@material-ui/core";
 import { ExampleWrapper } from "../test-utils";
 import { useState } from "react";
 import { CommonDialog } from "./";

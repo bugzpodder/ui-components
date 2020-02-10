@@ -1,13 +1,12 @@
-import Collapse from "@material-ui/core/Collapse";
-import ExpandLess from "@material-ui/icons/ExpandLess";
-import ExpandMore from "@material-ui/icons/ExpandMore";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText, {
   ListItemTextProps,
 } from "@material-ui/core/ListItemText";
 import React, { ReactElement, ReactNode, useEffect, useState } from "react";
+import { Collapse, List, ListItem, ListItemIcon } from "@material-ui/core";
+import {
+  ExpandLess as ExpandLessIcon,
+  ExpandMore as ExpandMoreIcon,
+} from "@material-ui/icons";
 import { getListItemDataTestId } from "../util";
 
 type Props = {
@@ -66,7 +65,7 @@ export const CollapsableListItem: React.FC<Props> = props => {
           primary={headerText}
           {...headerTextProps}
         />
-        {isCurrentlyOpen ? <ExpandLess /> : <ExpandMore />}
+        {isCurrentlyOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
       </ListItem>
       <Collapse in={isCurrentlyOpen} timeout={0} unmountOnExit>
         <List>{children}</List>

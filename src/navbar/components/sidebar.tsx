@@ -1,10 +1,3 @@
-import ArrowBack from "@material-ui/icons/ArrowBack";
-import Divider from "@material-ui/core/Divider";
-import Drawer from "@material-ui/core/Drawer";
-import IconButton from "@material-ui/core/IconButton";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import React, {
   ComponentType,
   ReactElement,
@@ -16,8 +9,17 @@ import React, {
 import classNames from "classnames";
 import pathToRegexp from "path-to-regexp";
 import styles from "./sidebar.module.scss";
+import { ArrowBack as ArrowBackIcon } from "@material-ui/icons";
 import { BaseNavbarClasses } from "../../types/base-navbar";
 import { CollapsableListItem } from "./collapsable-list-item";
+import {
+  Divider,
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+} from "@material-ui/core";
 import { ExternalLink } from "../../link";
 import { SidebarItem } from "@grailbio/lib";
 import { getListItemDataTestId } from "../util";
@@ -221,7 +223,7 @@ export const Sidebar: React.FC<Props> = props => {
             data-testid="navbar-sidebar-close"
             onClick={toggle}
           >
-            <ArrowBack />
+            <ArrowBackIcon />
           </IconButton>
           <Divider />
           {/** the below collapse-all span is a hidden element used in E2E testing */}

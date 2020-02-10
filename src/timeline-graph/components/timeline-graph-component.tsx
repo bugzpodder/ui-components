@@ -1,9 +1,6 @@
 import Grid from "@material-ui/core/Grid/Grid";
-import Paper from "@material-ui/core/Paper";
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
-import format from "date-fns/format";
 import styles from "../timeline-graph.module.scss";
 import { AvatarIcon } from "../../avatar-icon";
 import {
@@ -11,7 +8,9 @@ import {
   MAIN_CARD_ELEVATION,
   parseDate,
 } from "@grailbio/lib";
+import { Paper, Typography } from "@material-ui/core";
 import { TimelineGraphClasses, TimelineGraphRow } from "../../types/timeline";
+import { format } from "date-fns";
 
 type Props = {
   rows: TimelineGraphRow[];

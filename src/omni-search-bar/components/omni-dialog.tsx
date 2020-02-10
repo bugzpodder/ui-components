@@ -1,7 +1,7 @@
-import Grid from "@material-ui/core/Grid";
 import React from "react";
 import styles from "../omni.module.scss";
 import { CommonDialog } from "../../common-dialog";
+import { Grid } from "@material-ui/core";
 import { GridRow } from "../../types/grid";
 import {
   OMNI_TEXT_SEARCH_TYPE,

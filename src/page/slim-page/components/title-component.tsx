@@ -1,8 +1,8 @@
 import React, { ReactNode, forwardRef } from "react";
-import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "../slim-page.module.scss";
 import { SlimPageClasses } from "../../../types/card";
+import { Typography } from "@material-ui/core";
 
 type Props = {
   title?: ReactNode;

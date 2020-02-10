@@ -1,13 +1,10 @@
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Close from "@material-ui/icons/Close";
-import IconButton from "@material-ui/core/IconButton";
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import format from "date-fns/format";
 import styles from "../notification.module.scss";
+import { Card, CardContent, IconButton, Typography } from "@material-ui/core";
+import { Close as CloseIcon } from "@material-ui/icons";
 import { DATE_TIME_UNICODE_FORMAT } from "@grailbio/lib";
 import { NotificationTypeIcon } from "./notification-type-icon";
+import { format } from "date-fns";
 
 type Props = {
   message: string;
@@ -40,7 +37,7 @@ export const NotificationCard: React.FC<Props> = props => {
           }}
           onClick={() => removeNotification(notificationIndex)}
         >
-          <Close />
+          <CloseIcon />
         </IconButton>
 
         <Typography data-testid={`message-${time}`}>{message}</Typography>

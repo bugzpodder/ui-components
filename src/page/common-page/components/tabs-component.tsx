@@ -1,9 +1,9 @@
 import React from "react";
 import Tab, { TabProps } from "@material-ui/core/Tab";
-import Tabs from "@material-ui/core/Tabs";
 import classNames from "classnames";
 import styles from "../common-tabbed-page.module.scss";
 import { PageConfig } from "../../../types/card";
+import { Tabs } from "@material-ui/core";
 
 type Props = {
   onChangeActiveTab: (x0: string) => any;

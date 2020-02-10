@@ -1,9 +1,9 @@
 import MockDate from "mockdate";
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import { MemoryRouter } from "react-router-dom";
 import { Navbar } from "./navbar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../test-utils";
+import { Typography } from "@material-ui/core";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "./util";
 

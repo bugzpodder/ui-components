@@ -1,5 +1,5 @@
-import CssBaseline from "@material-ui/core/CssBaseline";
 import React from "react";
+import { CssBaseline } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import {
   grailBlue,

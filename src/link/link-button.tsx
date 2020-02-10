@@ -1,8 +1,8 @@
 import Button, { ButtonProps } from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
 import React, { forwardRef } from "react";
 import classNames from "classnames";
 import styles from "./link-button.module.scss";
+import { IconButton } from "@material-ui/core";
 import { Link, LinkProps } from "react-router-dom";
 
 type Props = {

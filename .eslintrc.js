@@ -18,18 +18,6 @@ module.exports = {
     "no-restricted-imports": [
       "error",
       {
-        paths: [
-          {
-            name: "lodash",
-            message:
-              'Please import lodash functions directly, eg: import isEmpty from "lodash/isEmpty".',
-          },
-          {
-            name: "@material-ui/core",
-            message:
-              'Please import material-ui components directly, eg: import Card from "@material-ui/core/Card".',
-          },
-        ],
         patterns: ["@grailbio/lib/src/*", "@grailbio/components/src/*"],
       },
     ],
@@ -40,6 +28,7 @@ module.exports = {
     ],
     "@typescript-eslint/ban-ts-ignore": 0,
     "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-empty-function": 0,
     "react/destructuring-assignment": 0,
     "react/no-array-index-key": 0,
     "react/require-default-props": 0,

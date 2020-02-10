@@ -2,7 +2,7 @@
 
 ```js
 import { ExampleWrapper } from "../test-utils";
-import Button from "@material-ui/core/Button";
+import { Button } from "@material-ui/core";
 import { CommonCard } from "./";
 <ExampleWrapper>
   <CommonCard

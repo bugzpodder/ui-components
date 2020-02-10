@@ -3,7 +3,7 @@
 **NOTE**: `SpinnerOverlay` container must specify a non static position, e.g. `position: relative;`.
 
 ```js
-import Button from "@material-ui/core/Button";
+import { Button } from "@material-ui/core";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";
 import { CommonCard } from "../";
@@ -31,7 +31,7 @@ const SpinnerOverlayExample = () => (
 ```
 
 ```js
-import Button from "@material-ui/core/Button";
+import { Button } from "@material-ui/core";
 import styles from "../test-utils/example-styles.module.scss";
 import { SpinnerOverlay } from "./";
 import { CommonCard } from "../";

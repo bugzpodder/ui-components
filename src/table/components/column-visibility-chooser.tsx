@@ -1,13 +1,11 @@
 import Button from "@material-ui/core/Button/Button";
-import Checkbox from "@material-ui/core/Checkbox";
-import IconButton from "@material-ui/core/IconButton";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import Popover from "@material-ui/core/Popover/Popover";
 import React, { useRef, useState } from "react";
-import Typography from "@material-ui/core/Typography";
-import isEqual from "lodash/isEqual";
 import styles from "./column-visibility-chooser.module.scss";
+import { Checkbox, IconButton, Typography } from "@material-ui/core";
 import { InternalPagedTableColumn } from "../../types/paged-table";
+import { MoreHoriz as MoreHorizIcon } from "@material-ui/icons";
+import { isEqual } from "lodash";
 
 type Props = {
   columns: InternalPagedTableColumn[];

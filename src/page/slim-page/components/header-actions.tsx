@@ -1,7 +1,7 @@
-import Button from "@material-ui/core/Button";
 import React, { forwardRef } from "react";
 import classNames from "classnames";
 import styles from "../slim-page.module.scss";
+import { Button } from "@material-ui/core";
 import { ClickableItem } from "../../../types/dropdown";
 import { HeaderAction, SlimPageClasses } from "../../../types/card";
 import { LinkButton } from "../../../link";

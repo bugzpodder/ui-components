@@ -1,8 +1,7 @@
-import Grid from "@material-ui/core/Grid";
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./two-column-row.module.scss";
+import { Grid, Typography } from "@material-ui/core";
 import { GridRow } from "../types/grid";
 import { TextAlignProperty } from "csstype";
 import { makeStyles } from "@material-ui/core/styles";

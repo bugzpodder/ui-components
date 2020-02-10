@@ -1,10 +1,8 @@
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import React, { ChangeEvent, useState } from "react";
-import Switch from "@material-ui/core/Switch";
 import classNames from "classnames";
 import styles from "./common-switch.module.scss";
 import { CommonSwitchClasses } from "../types/switch";
+import { FormControlLabel, FormHelperText, Switch } from "@material-ui/core";
 
 type Props = {
   /** Returns the status of the switch, and the value if one exists */

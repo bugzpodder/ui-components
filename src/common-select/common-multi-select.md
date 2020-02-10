@@ -144,7 +144,7 @@ const SelectExample = () => {
 ```js
 import { useState } from "react";
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
-import Chip from "@material-ui/core/Chip";
+import { Chip } from "@material-ui/core";
 import styles from "../test-utils/example-styles.module.scss";
 import { CommonMultiSelect } from "./";
 

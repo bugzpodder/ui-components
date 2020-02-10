@@ -2,8 +2,7 @@
 
 ```js
 import { ExampleWrapper, GRAIL } from "../test-utils";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import { Button, Typography } from "@material-ui/core";
 import styles from "../test-utils/example-styles.module.scss";
 import { useState } from "react";
 import { AvatarIcon } from "./";
@@ -44,7 +43,12 @@ const AvatarExample = () => {
       <Typography className={styles.inLine} variant="h6">
         Default
       </Typography>
-      <AvatarIcon className={styles.inLine} menuItems={menuItems} isMenuOpen={isMenuOpen} onClick={setIsMenuOpen} />
+      <AvatarIcon
+        className={styles.inLine}
+        menuItems={menuItems}
+        isMenuOpen={isMenuOpen}
+        onClick={setIsMenuOpen}
+      />
 
       <Typography className={styles.inLine} variant="h6">
         With Picture
@@ -67,7 +71,6 @@ const AvatarExample = () => {
       >
         G
       </AvatarIcon>
-
 
       <Typography className={styles.inLine} variant="h6">
         No Menu

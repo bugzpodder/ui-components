@@ -1,5 +1,5 @@
-import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { ComponentProps, ReactNode } from "react";
+import { Autocomplete } from "@material-ui/lab";
 declare type Props = {
     /** The input id */
     id?: string;

@@ -14,7 +14,7 @@ exports[`render upload button with default text 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root cloudUploadIcon"
+        class="MuiSvgIcon-root cloudUpload"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -51,7 +51,7 @@ exports[`render upload button with default text and default props for uploading 
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root cloudUploadIcon"
+        class="MuiSvgIcon-root cloudUpload"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"
@@ -83,7 +83,7 @@ exports[`render upload button with default text and default props for uploading 
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root cloudUploadIcon"
+        class="MuiSvgIcon-root cloudUpload"
         focusable="false"
         role="presentation"
         viewBox="0 0 24 24"

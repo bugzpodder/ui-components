@@ -110,7 +110,7 @@
     ]
   },
   "main": "dist/index.js",
-  "module": "dist/common-private.esm.js",
+  "module": "dist/components.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",

@@ -1,7 +1,4 @@
 import Button, { ButtonProps } from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 import React, {
   ComponentType,
   MouseEvent,
@@ -12,6 +9,7 @@ import React, {
 import styles from "./dropdown-menu.module.scss";
 import { ClickableItem } from "../types/dropdown";
 import { ExternalLink } from "../link";
+import { IconButton, Menu, MenuItem } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { PopoverOrigin } from "@material-ui/core/Popover";
 

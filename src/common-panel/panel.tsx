@@ -1,8 +1,8 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./panel.module.scss";
 import { CommonPanelClasses } from "../types/panel";
+import { Typography } from "@material-ui/core";
 
 type Props = {
   /** Title of the panel */

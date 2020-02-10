@@ -1,13 +1,15 @@
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import List from "@material-ui/core/List";
-import Notifications from "@material-ui/icons/Notifications";
-import Popover from "@material-ui/core/Popover";
 import React, { MouseEvent, useRef, useState } from "react";
-import Typography from "@material-ui/core/Typography";
 import styles from "./notification.module.scss";
+import {
+  Button,
+  IconButton,
+  List,
+  Popover,
+  Typography,
+} from "@material-ui/core";
 import { Notification } from "../types/notification";
 import { NotificationCard } from "./components/notification-card";
+import { Notifications as NotificationsIcon } from "@material-ui/icons";
 
 type Props = {
   /**
@@ -61,7 +63,7 @@ export const NotificationCenter: React.FC<Props> = props => {
         onClick={handleClick}
         {...iconProps}
       >
-        <Notifications />
+        <NotificationsIcon />
       </IconButton>
       <Popover
         open={isVisible}

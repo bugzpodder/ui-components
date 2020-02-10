@@ -1,7 +1,6 @@
-import Button from "@material-ui/core/Button";
-import Icon from "@material-ui/core/Icon";
 import React, { MouseEvent } from "react";
 import styles from "./util.module.scss";
+import { Button, Icon } from "@material-ui/core";
 
 export type CommonDialogAction = {
   name: string;

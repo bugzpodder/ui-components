@@ -1,6 +1,6 @@
-import Chip from "@material-ui/core/Chip";
 import React from "react";
 import styles from "./omni.module.scss";
+import { Chip } from "@material-ui/core";
 import {
   OMNI_KEY,
   OmniSearchCommand,

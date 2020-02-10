@@ -34,7 +34,7 @@ const SuggestExample = () => {
 import { ExampleBlock, ExampleWrapper, COUNTRY_NAMES } from "../test-utils";
 import { useState } from "react";
 import { CommonSuggest } from "./";
-import Typography from "@material-ui/core/Typography";
+import { Typography } from "@material-ui/core";
 
 const SuggestExample = () => {
   const [value, setValue] = useState("");

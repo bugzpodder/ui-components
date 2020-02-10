@@ -1,13 +1,13 @@
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import ClearIcon from "@material-ui/icons/Clear";
-import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
 import React, { ChangeEvent, useEffect, useState } from "react";
-import SearchIcon from "@material-ui/icons/Search";
-import TextField from "@material-ui/core/TextField";
 import classNames from "classnames";
 import keycode from "keycode";
 import styles from "../omni.module.scss";
+import {
+  ArrowDropDown as ArrowDropDownIcon,
+  Clear as ClearIcon,
+  Search as SearchIcon,
+} from "@material-ui/icons";
+import { IconButton, InputAdornment, TextField } from "@material-ui/core";
 import { OMNI_KEY } from "@grailbio/lib";
 
 export const OMNI_INPUT_FIELD_ID = `${OMNI_KEY}-input-field-id`;

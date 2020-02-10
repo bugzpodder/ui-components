@@ -1,12 +1,12 @@
 import AutoSizer from "react-virtualized-auto-sizer";
 import React, { ReactElement, useRef } from "react";
-import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./large-table.module.scss";
 import { InnerTableHeader } from "./inner-table-header";
 import { PagedTableClasses, PagedTableColumn } from "../../types/paged-table";
 import { SimpleTableOptions } from "../../types/table";
 import { SortOption } from "@grailbio/lib";
+import { Typography } from "@material-ui/core";
 import { VariableSizeGrid } from "react-window";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId } from "../utilities/row-utils";

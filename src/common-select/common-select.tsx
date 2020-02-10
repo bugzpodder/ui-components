@@ -1,10 +1,8 @@
 import React, { ComponentProps } from "react";
-import isEmpty from "lodash/isEmpty";
-import isNil from "lodash/isNil";
-import isString from "lodash/isString";
 import { CommonSelectComponent } from "./common-select-component";
 import { CommonSelectOption } from "../types/select";
 import { ReadOnlyTextField } from "../readonly-text-field";
+import { isEmpty, isNil, isString } from "lodash";
 
 type CommonSelectProps = {
   /**

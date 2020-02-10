@@ -1,6 +1,6 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import styles from "../table.module.scss";
+import { Typography } from "@material-ui/core";
 
 type Props = {
   data: Record<string, any>[];

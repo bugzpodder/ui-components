@@ -1,7 +1,4 @@
 import React from "react";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
 import classNames from "classnames";
 import styles from "../table.module.scss";
 import { ColumnVisibilityChooser } from "./column-visibility-chooser";
@@ -10,6 +7,7 @@ import {
   InternalPagedTableColumn,
   SortingProps,
 } from "../../types/paged-table";
+import { TableCell, TableHead, TableRow } from "@material-ui/core";
 
 type Props = {
   columns: InternalPagedTableColumn[];

@@ -1,10 +1,7 @@
-import Drawer from "@material-ui/core/Drawer";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import React from "react";
 import classNames from "classnames";
 import styles from "./side-menu.module.scss";
+import { Drawer, List, ListItem, ListItemText } from "@material-ui/core";
 import { MenuItem } from "../../../types/card";
 
 type Props = {

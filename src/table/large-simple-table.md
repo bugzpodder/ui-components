@@ -7,7 +7,7 @@ import {
   LARGE_EXAMPLE_TABLE_DATA,
   EXTRA_LARGE_EXAMPLE_TABLE_DATA,
 } from "../test-utils";
-import Typography from "@material-ui/core/Typography";
+import { Typography } from "@material-ui/core";
 import { useState } from "react";
 import { LargeSimpleTable } from "./";
 

@@ -1,7 +1,7 @@
-import Autocomplete from "@material-ui/lab/Autocomplete";
 import React, { ComponentProps, ReactNode, useMemo } from "react";
-import TextField from "@material-ui/core/TextField";
 import keycode from "keycode";
+import { Autocomplete } from "@material-ui/lab";
+import { TextField } from "@material-ui/core";
 
 type Props = {
   /** The input id */

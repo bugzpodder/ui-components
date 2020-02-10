@@ -1,5 +1,5 @@
-import Grid from "@material-ui/core/Grid";
 import React from "react";
+import { Grid } from "@material-ui/core";
 import { GridRow } from "../types/grid";
 import { TextAlignProperty } from "csstype";
 import { TwoColumnRow } from "./two-column-row";

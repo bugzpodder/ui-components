@@ -1,4 +1,3 @@
-import Paper from "@material-ui/core/Paper";
 import PollyfillObserver from "resize-observer-polyfill";
 import React, {
   MutableRefObject,
@@ -12,6 +11,7 @@ import styles from "./slim-page.module.scss";
 import { ClickableItem } from "../../types/dropdown";
 import { HeaderAction, SlimPageClasses } from "../../types/card";
 import { HeaderActions } from "./components/header-actions";
+import { Paper } from "@material-ui/core";
 import { SpinnerOverlay } from "../../spinner-overlay";
 import { TitleComponent } from "./components/title-component";
 import { makeStyles } from "@material-ui/core/styles";

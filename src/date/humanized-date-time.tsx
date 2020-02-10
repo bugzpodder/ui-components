@@ -1,8 +1,8 @@
 import React from "react";
 import classNames from "classnames";
-import formatDistance from "date-fns/formatDistance";
 import styles from "./humanized-date-time.module.scss";
 import { DateTimeValue } from "./date-time-value";
+import { formatDistance } from "date-fns";
 import { parseDate } from "@grailbio/lib";
 
 export type HumanizedDateTimeClasses = {

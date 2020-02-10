@@ -1,8 +1,8 @@
-import Chip from "@material-ui/core/Chip";
 import React, { ComponentProps } from "react";
-import isString from "lodash/isString";
+import { Chip } from "@material-ui/core";
 import { CommonSelectComponent } from "./common-select-component";
 import { CommonSelectOption } from "../types/select";
+import { isString } from "lodash";
 
 type CommonMultiSelectProps = {
   /**
@@ -41,7 +41,7 @@ export const CommonMultiSelect: React.FC<CommonMultiSelectProps> = props => {
 
   if (readOnly) {
     if (values.length === 0) {
-      return "-";
+      return <>-</>;
     }
     return (
       <>

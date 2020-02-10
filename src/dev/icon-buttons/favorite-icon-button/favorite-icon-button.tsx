@@ -1,8 +1,10 @@
-import IconButton from "@material-ui/core/IconButton";
 import React from "react";
-import SelectedStarIcon from "@material-ui/icons/Star";
-import UnselectedStarIcon from "@material-ui/icons/StarBorder";
 import styles from "./favorite-icon-button.module.scss";
+import { IconButton } from "@material-ui/core";
+import {
+  StarBorder as StarBorderIcon,
+  Star as StarIcon,
+} from "@material-ui/icons";
 
 type Props = {
   isSelected: boolean;
@@ -17,11 +19,7 @@ export const FavoriteIconButton: React.FC<Props> = props => {
         classes={{ root: styles.iconButton }}
         onClick={() => onClick(!isSelected)}
       >
-        {isSelected ? (
-          <SelectedStarIcon color="secondary" />
-        ) : (
-          <UnselectedStarIcon />
-        )}
+        {isSelected ? <StarIcon color="secondary" /> : <StarBorderIcon />}
       </IconButton>
     </div>
   );

@@ -1,12 +1,14 @@
-import ArrowBackIcon from "@material-ui/icons/ArrowBack";
-import Button from "@material-ui/core/Button";
-import Dialog from "@material-ui/core/Dialog";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogTitle from "@material-ui/core/DialogTitle";
 import React, { ReactNode } from "react";
 import classNames from "classnames";
 import styles from "./dialog.module.scss";
+import { ArrowBack as ArrowBackIcon } from "@material-ui/icons";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+} from "@material-ui/core";
 import { CommonDialogAction, actionToButton } from "./util";
 import { CommonDialogClasses } from "../types/dialog";
 

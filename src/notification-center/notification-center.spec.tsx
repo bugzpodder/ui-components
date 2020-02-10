@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import format from "date-fns/format";
 import { Notification } from "../types/notification";
 import { NotificationCenter } from ".";
 import { TestWrapper } from "../test-utils";
 import { cleanup, fireEvent, render } from "@testing-library/react";
+import { format } from "date-fns";
 
 afterEach(cleanup);
 const testUtcTime = "2019-04-20T23:20:00+00:00";

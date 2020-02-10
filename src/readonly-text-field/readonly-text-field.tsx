@@ -1,7 +1,7 @@
-import Icon from "@material-ui/core/Icon";
 import React, { ReactNode } from "react";
 import classNames from "classnames";
 import styles from "./readonly-text-field.module.scss";
+import { Icon } from "@material-ui/core";
 
 type Props = {
   /** Id of the element. */

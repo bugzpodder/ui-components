@@ -1,11 +1,8 @@
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import Avatar from "@material-ui/core/Avatar";
-import IconButton from "@material-ui/core/IconButton";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 import React, { useRef } from "react";
 import classNames from "classnames";
 import styles from "./avatar-icon.module.scss";
+import { AccountCircle as AccountCircleIcon } from "@material-ui/icons";
+import { Avatar, IconButton, Menu, MenuItem } from "@material-ui/core";
 
 type AvatarIconClasses = {
   root?: string;
@@ -64,7 +61,7 @@ const AvatarComponent: React.FC<AvatarComponentProps> = props => {
     );
   }
   return (
-    <AccountCircle
+    <AccountCircleIcon
       data-testid="avatar-icon-avatar"
       className={classes.avatar}
     />

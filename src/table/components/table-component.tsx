@@ -1,19 +1,15 @@
 import React, { useState } from "react";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
 import classNames from "classnames";
-import keyBy from "lodash/keyBy";
-import mapValues from "lodash/mapValues";
 import styles from "../table.module.scss";
 import { PagedTableClasses, PagedTableColumn } from "../../types/paged-table";
 import { PagedTableRow } from "./table-row";
 import { SimpleTableOptions } from "../../types/table";
 import { SortOption } from "@grailbio/lib";
+import { Table, TableBody, TableCell, TableRow } from "@material-ui/core";
 import { TableHeader } from "./table-header";
 import { getCheckboxColumn } from "../utilities/checkbox-column";
 import { getRowId, handleKeyboardHighlight } from "../utilities/row-utils";
+import { keyBy, mapValues } from "lodash";
 
 type Props = {
   columns: PagedTableColumn<any>[];

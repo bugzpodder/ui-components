@@ -142,7 +142,7 @@ const SelectExample = () => {
 
 ```js
 import { ExampleBlock, ExampleWrapper, COUNTRIES } from "../test-utils";
-import Chip from "@material-ui/core/Chip";
+import { Chip } from "@material-ui/core";
 import { useState } from "react";
 import styles from "../test-utils/example-styles.module.scss";
 import { CommonSelect } from "./";

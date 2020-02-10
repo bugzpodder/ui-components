@@ -1,9 +1,7 @@
-import Button from "@material-ui/core/Button";
-import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import React, { ReactNode, useState } from "react";
 import classNames from "classnames";
 import styles from "./common-page.module.scss";
+import { Button, Card, CardHeader } from "@material-ui/core";
 import { CommonPageClasses, HeaderAction, MenuItem } from "../../types/card";
 import { LinkButton } from "../../link";
 import { SideMenu } from "./components/side-menu";

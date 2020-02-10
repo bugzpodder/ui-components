@@ -1,7 +1,9 @@
-import Error from "@material-ui/icons/Error";
-import Info from "@material-ui/icons/Info";
 import React from "react";
-import Warning from "@material-ui/icons/Warning";
+import {
+  Error as ErrorIcon,
+  Info as InfoIcon,
+  Warning as WarningIcon,
+} from "@material-ui/icons";
 import { NotificationTypes } from "@grailbio/lib";
 
 type Props = {
@@ -10,22 +12,22 @@ type Props = {
 
 export const NotificationTypeIcon: React.FC<Props> = props => {
   const { type } = props;
-  let IconComponent = Info;
+  let IconComponent = InfoIcon;
   let color = "inherit";
   switch (type) {
     case NotificationTypes.ERROR: {
-      IconComponent = Error;
+      IconComponent = ErrorIcon;
       color = "error";
       break;
     }
     case NotificationTypes.WARNING: {
-      IconComponent = Warning;
+      IconComponent = WarningIcon;
       color = "secondary";
       break;
     }
     // TODO(nsawas): Revisit icons and their definitions. INFO should probably not reference primary.
     case NotificationTypes.INFO: {
-      IconComponent = Info;
+      IconComponent = InfoIcon;
       color = "primary";
       break;
     }

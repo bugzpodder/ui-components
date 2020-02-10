@@ -1,7 +1,6 @@
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import React from "react";
-import Tooltip from "@material-ui/core/Tooltip";
+import { IconButton, Tooltip } from "@material-ui/core";
+import { Menu as MenuIcon } from "@material-ui/icons";
 
 type Props = {
   isExpanded: boolean;

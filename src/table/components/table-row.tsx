@@ -1,6 +1,4 @@
 import React from "react";
-import TableCell from "@material-ui/core/TableCell";
-import TableRow from "@material-ui/core/TableRow";
 import classNames from "classnames";
 import styles from "../table.module.scss";
 import {
@@ -8,6 +6,7 @@ import {
   PagedTableColumn,
   SelectionProps,
 } from "../../types/paged-table";
+import { TableCell, TableRow } from "@material-ui/core";
 
 type Props = {
   columns: InternalPagedTableColumn[];

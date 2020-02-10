@@ -1,5 +1,4 @@
 import React, { ComponentType, useContext } from "react";
-import isString from "lodash/isString";
 import {
   DATE_FORMAT,
   DATE_TIME_FORMAT,
@@ -18,6 +17,7 @@ import {
   MuiPickersUtilsProvider as OldMuiPickersUtilsProvider,
 } from "material-ui-pickers";
 import { ParsableDate } from "@material-ui/pickers/constants/prop-types";
+import { isString } from "lodash";
 
 export function wrapPickerUtilProvider<P>(
   WrappedComponent: ComponentType<P>,

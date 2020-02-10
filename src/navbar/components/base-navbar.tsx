@@ -1,13 +1,10 @@
-import AppBar from "@material-ui/core/AppBar";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import React, { ComponentType, ReactNode } from "react";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./base-navbar.module.scss";
+import { AppBar, IconButton, Toolbar, Typography } from "@material-ui/core";
 import { BaseNavbarClasses } from "../../types/base-navbar";
 import { BreastCancerRibbon } from "../../logos";
+import { Menu as MenuIcon } from "@material-ui/icons";
 import { Sidebar } from "./sidebar";
 import { SidebarItem } from "@grailbio/lib";
 

@@ -2,8 +2,12 @@
 
 ```js
 import { useState } from "react";
-import { ExampleBlock, ExampleWrapper, EXAMPLE_TABLE_DATA } from "../test-utils";
-import Button from "@material-ui/core/Button";
+import {
+  ExampleBlock,
+  ExampleWrapper,
+  EXAMPLE_TABLE_DATA,
+} from "../test-utils";
+import { Button } from "@material-ui/core";
 import styles from "../test-utils/example-styles.module.scss";
 import { PagedTable } from "./";
 
@@ -65,7 +69,10 @@ const TestPagedTable = () => {
       Cell: ({ value }) => <div>{value}</div>,
     },
   ];
-  const pagedData = data.slice(tableOptions.offset, tableOptions.offset + tableOptions.count);
+  const pagedData = data.slice(
+    tableOptions.offset,
+    tableOptions.offset + tableOptions.count,
+  );
   const headerActions = (
     <>
       <Button>Second Action</Button>

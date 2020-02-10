@@ -1,14 +1,14 @@
-import Card from "@material-ui/core/Card";
 import React, { useEffect, useState } from "react";
 import Tab from "@material-ui/core/Tab/Tab";
 import Tabs from "@material-ui/core/Tabs/Tabs";
 import classNames from "classnames";
-import isEmpty from "lodash/isEmpty";
 import styles from "./timeline-graph.module.scss";
+import { Card } from "@material-ui/core";
 import { CommonCard } from "../common-card";
 import { CommonCardProps } from "../common-card/card";
 import { TimelineCardClasses, TimelineGraphRow } from "../types/timeline";
 import { TimelineGraphComponent } from "./components/timeline-graph-component";
+import { isEmpty } from "lodash";
 import { sentenceCase } from "@grailbio/lib";
 
 type TimelineTabProps = {

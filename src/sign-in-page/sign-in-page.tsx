@@ -1,8 +1,7 @@
-import Button from "@material-ui/core/Button";
 import React, { ReactNode } from "react";
-import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import styles from "./sign-in-page.module.scss";
+import { Button, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 type Props = {

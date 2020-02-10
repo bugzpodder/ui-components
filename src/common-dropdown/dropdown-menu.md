@@ -1,10 +1,12 @@
 ### Example
 
 ```js
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import CloseIcon from "@material-ui/icons/Close";
-import DoneIcon from "@material-ui/icons/Done";
-import Typography from "@material-ui/core/Typography";
+import {
+  ArrowDropDown as ArrowDropDownIcon,
+  Close as CloseIcon,
+  Done as DoneIcon,
+} from "@material-ui/icons";
+import { Typography } from "@material-ui/core";
 import { ExampleWrapper } from "../test-utils";
 import { useState } from "react";
 import { CommonDialog } from "./";
@@ -51,7 +53,11 @@ const DropdownDemo = () => {
 
   return (
     <>
-      <CommonDropdownMenu dropdownId="review-actions-menu" buttonContent={buttonContent} menuItems={menuItems} />
+      <CommonDropdownMenu
+        dropdownId="review-actions-menu"
+        buttonContent={buttonContent}
+        menuItems={menuItems}
+      />
       <Typography variant="body2">{`This proposal ${approvalStatus}`}</Typography>
     </>
   );

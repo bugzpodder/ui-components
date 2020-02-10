@@ -1,5 +1,3 @@
-import Autocomplete from "@material-ui/lab/Autocomplete";
-import CloseIcon from "@material-ui/icons/Close";
 import React, {
   ComponentProps,
   ReactNode,
@@ -7,9 +5,11 @@ import React, {
   useEffect,
   useState,
 } from "react";
-import TextField from "@material-ui/core/TextField";
 import styles from "./common-select.module.scss";
+import { Autocomplete } from "@material-ui/lab";
+import { Close as CloseIcon } from "@material-ui/icons";
 import { CommonSelectOption } from "../types/select";
+import { TextField } from "@material-ui/core";
 
 type Props = {
   /** The current value of common select, or an array of options for common multi-select */

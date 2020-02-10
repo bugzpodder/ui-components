@@ -1,8 +1,8 @@
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 import React from "react";
 import { ClickableItem } from "../../../types/dropdown";
 import { CommonDropdownMenu } from "../../../common-dropdown";
 import { DropdownMenuProps } from "../../../common-dropdown/dropdown-menu";
+import { MoreVert as MoreVertIcon } from "@material-ui/icons";
 
 type Props = {
   secondaryActions?: ClickableItem[] | null;

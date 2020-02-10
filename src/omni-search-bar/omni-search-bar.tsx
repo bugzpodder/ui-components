@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import isEqual from "lodash/isEqual";
 import styles from "./omni.module.scss";
+import { isEqual } from "lodash";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { History, Location } from "history";
 import {

@@ -6,5 +6,6 @@ export type ClickableItem = {
   href?: string;
   isExternal?: boolean;
   isEnabled?: boolean;
+  className?: string;
   [x0: string]: any;
 };

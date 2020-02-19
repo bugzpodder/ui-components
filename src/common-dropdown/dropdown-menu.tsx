@@ -6,6 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
+import classNames from "classnames";
 import styles from "./dropdown-menu.module.scss";
 import { ClickableItem } from "../types/dropdown";
 import { ExternalLink } from "../link";
@@ -105,6 +106,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                 href,
                 "data-testid": menuItemDataTestId,
                 isExternal = false,
+                className,
               },
               index,
             ) => {
@@ -120,6 +122,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                   key={`dropdown-item-${index}`}
                   data-testid={menuItemDataTestId || `dropdown-item-${index}`}
                   disabled={!isEnabled}
+                  className={className}
                 >
                   {content}
                 </MenuItem>
@@ -129,7 +132,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                   return (
                     <ExternalLink
                       href={href}
-                      className={styles.link}
+                      className={classNames(styles.link, className)}
                       key={`dropdown-item-${index}`}
                     >
                       {menuItem}
@@ -139,7 +142,7 @@ export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
                 return (
                   <Link
                     to={href}
-                    className={styles.link}
+                    className={classNames(styles.link, className)}
                     key={`dropdown-item-${index}`}
                   >
                     {menuItem}

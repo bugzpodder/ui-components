@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/grailbio/ui-components/static/css/main.a9b0b516.chunk.css",
-    "main.js": "/grailbio/ui-components/build/main.8b1a984e.js",
-    "runtime-main.js": "/grailbio/ui-components/build/bundle.e80383ce.js",
-    "build/2.78145d7e.js": "/grailbio/ui-components/build/2.78145d7e.js",
-    "dcefba465a8037d860fa.worker.js": "/grailbio/ui-components/dcefba465a8037d860fa.worker.js",
+    "main.css": "/grailbio/ui-components/static/css/main.9e489105.chunk.css",
+    "main.js": "/grailbio/ui-components/build/main.76f9c7c5.js",
+    "runtime-main.js": "/grailbio/ui-components/build/bundle.b03c5e24.js",
+    "build/2.435aae64.js": "/grailbio/ui-components/build/2.435aae64.js",
+    "24e4f4099338e2631a18.worker.js": "/grailbio/ui-components/24e4f4099338e2631a18.worker.js",
+    "24e4f4099338e2631a18.worker.js.LICENSE.txt": "/grailbio/ui-components/24e4f4099338e2631a18.worker.js.LICENSE.txt",
+    "build/2.435aae64.js.LICENSE.txt": "/grailbio/ui-components/build/2.435aae64.js.LICENSE.txt",
     "index.html": "/grailbio/ui-components/index.html",
-    "precache-manifest.54a1afc3e8cf7596e1f50ffad2ee98dc.js": "/grailbio/ui-components/precache-manifest.54a1afc3e8cf7596e1f50ffad2ee98dc.js",
+    "precache-manifest.c652150ce1028b889256f3332ed22dae.js": "/grailbio/ui-components/precache-manifest.c652150ce1028b889256f3332ed22dae.js",
     "service-worker.js": "/grailbio/ui-components/service-worker.js",
-    "static/css/main.a9b0b516.chunk.css.map": "/grailbio/ui-components/static/css/main.a9b0b516.chunk.css.map",
+    "static/css/main.9e489105.chunk.css.map": "/grailbio/ui-components/static/css/main.9e489105.chunk.css.map",
     "static/media/sample.pdf": "/grailbio/ui-components/static/media/sample.3352e9f6.pdf"
   },
   "entrypoints": [
-    "build/bundle.e80383ce.js",
-    "build/2.78145d7e.js",
-    "static/css/main.a9b0b516.chunk.css",
-    "build/main.8b1a984e.js"
+    "build/bundle.b03c5e24.js",
+    "build/2.435aae64.js",
+    "static/css/main.9e489105.chunk.css",
+    "build/main.76f9c7c5.js"
   ]
 }

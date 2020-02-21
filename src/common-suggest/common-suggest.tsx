@@ -1,6 +1,6 @@
-import React, { ComponentProps, ReactNode, useMemo } from "react";
+import React, { ReactNode, useMemo } from "react";
 import keycode from "keycode";
-import { Autocomplete } from "@material-ui/lab";
+import { Autocomplete, AutocompleteProps } from "@material-ui/lab";
 import { TextField } from "@material-ui/core";
 
 type Props = {
@@ -21,8 +21,8 @@ type Props = {
   /** Additional actions at the bottom of the suggestion Popper */
   actions?: ReactNode;
 } & Omit<
-  ComponentProps<typeof Autocomplete>,
-  "renderInput" | "onChange" | "onInputChange"
+  AutocompleteProps<string>,
+  "renderInput" | "onChange" | "onInputChange" | "options"
 >;
 
 const getListboxElement = (
@@ -79,6 +79,7 @@ export const CommonSuggest: React.FC<Props> = props => {
         value ? onChange(value) : onChange("");
       }}
       inputValue={value}
+      // @ts-ignore
       ListboxComponent={Listbox}
       renderInput={params => (
         <TextField

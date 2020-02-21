@@ -1,5 +1,5 @@
-import React, { ComponentProps, ReactNode, RefObject } from "react";
-import { Autocomplete } from "@material-ui/lab";
+import React, { ReactNode, RefObject } from "react";
+import { AutocompleteProps } from "@material-ui/lab";
 import { CommonSelectOption } from "../types/select";
 declare type Props = {
     /** The current value of common select, or an array of options for common multi-select */
@@ -62,6 +62,6 @@ declare type Props = {
     loadOptions?: (x0: string) => Promise<any>;
     /** Ref passed to the input element */
     inputRef?: RefObject<HTMLElement>;
-} & Omit<ComponentProps<typeof Autocomplete>, "onChange" | "renderInput">;
+} & Omit<AutocompleteProps<CommonSelectOption>, "onChange" | "renderInput" | "options">;
 export declare const CommonSelectComponent: React.FC<Props>;
 export {};

@@ -3,7 +3,7 @@
 exports[`navbar with breast cancer logo 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary MuiPaper-elevation4"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary appBar lims-navbar MuiPaper-elevation4"
     data-testid="navbar"
   >
     <h6
@@ -123,7 +123,7 @@ exports[`navbar with breast cancer logo 1`] = `
 exports[`render default Sidebar 1`] = `
 <div>
   <header
-    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary MuiPaper-elevation4"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary appBar lims-navbar MuiPaper-elevation4"
     data-testid="navbar"
   >
     <h6
@@ -216,7 +216,7 @@ exports[`render default Sidebar 2`] = `
   aria-hidden="true"
 >
   <header
-    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky appBar lims-navbar MuiAppBar-colorPrimary MuiPaper-elevation4"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionSticky MuiAppBar-colorPrimary appBar lims-navbar MuiPaper-elevation4"
     data-testid="navbar"
   >
     <div

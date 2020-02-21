@@ -1,12 +1,6 @@
-import React, {
-  ComponentProps,
-  ReactNode,
-  RefObject,
-  useEffect,
-  useState,
-} from "react";
+import React, { ReactNode, RefObject, useEffect, useState } from "react";
 import styles from "./common-select.module.scss";
-import { Autocomplete } from "@material-ui/lab";
+import { Autocomplete, AutocompleteProps } from "@material-ui/lab";
 import { Close as CloseIcon } from "@material-ui/icons";
 import { CommonSelectOption } from "../types/select";
 import { TextField } from "@material-ui/core";
@@ -72,7 +66,10 @@ type Props = {
   loadOptions?: (x0: string) => Promise<any>;
   /** Ref passed to the input element */
   inputRef?: RefObject<HTMLElement>;
-} & Omit<ComponentProps<typeof Autocomplete>, "onChange" | "renderInput">;
+} & Omit<
+  AutocompleteProps<CommonSelectOption>,
+  "onChange" | "renderInput" | "options"
+>;
 
 export const CommonSelectComponent: React.FC<Props> = props => {
   const {
@@ -116,18 +113,22 @@ export const CommonSelectComponent: React.FC<Props> = props => {
   }, [loadOptions, selectType, inputValue]);
 
   return (
+    // @ts-ignore
     <Autocomplete
       className={styles.autocomplete}
       classes={{ input: styles.input, inputRoot: styles.inputRoot, ...classes }}
       onChange={(_, value) => onChange(value)}
       options={selectType === "async" ? loadedOptions : options}
-      renderOption={option => (
+      renderOption={(option: CommonSelectOption) => (
         <div data-testid={option.value}>
           {formatOption ? formatOption(option) : option.label}
         </div>
       )}
-      getOptionLabel={option => option.label}
-      getOptionDisabled={option => option.isEnabled === false}
+      // @ts-ignore
+      getOptionLabel={(option: CommonSelectOption) => option.label}
+      getOptionDisabled={(option: CommonSelectOption) =>
+        option.isEnabled === false
+      }
       disabled={isDisabled}
       open={menuIsOpen}
       disableClearable={!isClearable}

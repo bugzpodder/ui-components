@@ -4,7 +4,7 @@ exports[`CommonMultiSelect margin 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="MuiAutocomplete-root autocomplete"
+    class="MuiAutocomplete-root autocomplete MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
     role="combobox"
   >
     <div
@@ -141,7 +141,7 @@ exports[`CommonMultiSelect variant 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="MuiAutocomplete-root autocomplete"
+    class="MuiAutocomplete-root autocomplete MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
     role="combobox"
   >
     <div
@@ -278,7 +278,7 @@ exports[`render CommonMultiSelect with preloaded values and clear one value 1`] 
 <div>
   <div
     aria-expanded="false"
-    class="MuiAutocomplete-root autocomplete"
+    class="MuiAutocomplete-root autocomplete MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
     role="combobox"
   >
     <div

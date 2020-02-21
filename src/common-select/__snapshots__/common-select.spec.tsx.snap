@@ -4,7 +4,7 @@ exports[`CommonSelect margin 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="MuiAutocomplete-root autocomplete"
+    class="MuiAutocomplete-root autocomplete MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
     role="combobox"
   >
     <div
@@ -102,7 +102,7 @@ exports[`CommonSelect variant 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="MuiAutocomplete-root autocomplete"
+    class="MuiAutocomplete-root autocomplete MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
     role="combobox"
   >
     <div
@@ -200,7 +200,7 @@ exports[`render creatable CommonSelect 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="MuiAutocomplete-root autocomplete"
+    class="MuiAutocomplete-root autocomplete MuiAutocomplete-hasClearIcon"
     role="combobox"
   >
     <div
@@ -276,7 +276,7 @@ exports[`test disabled CommonSelect 1`] = `
 <div>
   <div
     aria-expanded="false"
-    class="MuiAutocomplete-root autocomplete"
+    class="MuiAutocomplete-root autocomplete MuiAutocomplete-hasPopupIcon"
     role="combobox"
   >
     <div

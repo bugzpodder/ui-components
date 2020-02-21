@@ -24,14 +24,4 @@ module.exports = on => {
     },
   };
   on("file:preprocessor", webpack(options));
-  on("before:browser:launch", (browser = {}, args) => {
-    // Deal with overlapping rendering issues: https://github.com/cypress-io/cypress/issues/2037
-    if (browser.name === "chrome") {
-      args = args.filter(arg => {
-        return arg !== "--disable-blink-features=RootLayerScrolling";
-      });
-
-      return args;
-    }
-  });
 };

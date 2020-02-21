@@ -21,7 +21,16 @@ module.exports = {
         patterns: ["@grailbio/lib/src/*", "@grailbio/components/src/*"],
       },
     ],
-
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     "import/no-extraneous-dependencies": [
       "error",
       { devDependencies: ["src/**/*.spec.ts", "src/**/*.spec.tsx"] },

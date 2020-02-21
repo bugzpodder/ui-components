@@ -1,5 +1,5 @@
-import React, { ComponentProps, ReactNode } from "react";
-import { Autocomplete } from "@material-ui/lab";
+import React, { ReactNode } from "react";
+import { AutocompleteProps } from "@material-ui/lab";
 declare type Props = {
     /** The input id */
     id?: string;
@@ -17,6 +17,6 @@ declare type Props = {
     onEnter?: () => any;
     /** Additional actions at the bottom of the suggestion Popper */
     actions?: ReactNode;
-} & Omit<ComponentProps<typeof Autocomplete>, "renderInput" | "onChange" | "onInputChange">;
+} & Omit<AutocompleteProps<string>, "renderInput" | "onChange" | "onInputChange" | "options">;
 export declare const CommonSuggest: React.FC<Props>;
 export {};

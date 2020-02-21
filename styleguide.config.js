@@ -100,17 +100,4 @@ module.exports = {
     "**/*.spec.{js,jsx,ts,tsx}",
     "**/*.d.ts",
   ],
-  updateExample(props, exampleFilePath) {
-    if (typeof props.settings.file === "string") {
-      const {
-        settings: { file },
-      } = props;
-      delete props.settings.file;
-      const filePath = path.resolve(exampleFilePath, "..", file);
-      props.content = fs.readFileSync(filePath, { encoding: "utf-8" });
-    }
-
-    props.settings.showCode = props.content.length <= 300;
-    return props;
-  },
 };

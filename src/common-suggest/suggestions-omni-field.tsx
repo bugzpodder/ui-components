@@ -23,7 +23,9 @@ export const SuggestionsOmniField: React.FC<Props> = props => {
   return (
     <CommonSuggest
       suggestions={suggestions.map(suggestion => `"${suggestion}"`)}
-      renderOption={option => option.substr(1, option.length - 2)}
+      renderOption={(option: string) => (
+        <>{option.substr(1, option.length - 2)}</>
+      )}
       placeholder={placeholder}
       id={searchKey}
       value={searchValue || ""}

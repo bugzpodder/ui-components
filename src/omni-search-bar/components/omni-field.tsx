@@ -121,10 +121,7 @@ export const OmniField: React.FC<Props> = props => {
                   data-testid="clear-omni-field"
                   title="Clear"
                   color="inherit"
-                  onClick={async () => {
-                    await onClear();
-                    onSearch();
-                  }}
+                  onClick={onClear}
                   className={classNames(styles.iconButton, textClass)}
                   aria-label="Clear entered search values"
                   disableRipple

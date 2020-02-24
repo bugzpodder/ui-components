@@ -277,12 +277,19 @@ export const OmniSearchBar: React.FC<Props> = props => {
       }
     };
     onOmniSearchCommandChange();
-  }, [omniSearchCommands, onChange, onSearch, setOmniSearchCommands]);
+  }, [omniSearchCommands, onChange, setOmniSearchCommands]);
 
   const handleClear = async (): Promise<void> => {
+    // The following calls correctly triggers onSearch on the *next* render,
+    // because searchValues are correctly updated on the next render.
+    // handleClear should not call onSearch in the current render.
     updateOmniText("");
     setSearchOptions({
       searchOptions: getSearchOptions(searchDefs, new Map()),
+      isUserSearchAction: true,
+    });
+    setDeferredSearchOptions({
+      shouldUpdateBrowserHistory: true,
       isUserSearchAction: true,
     });
   };

@@ -62,6 +62,8 @@ declare type Props = {
     loadOptions?: (x0: string) => Promise<any>;
     /** Ref passed to the input element */
     inputRef?: RefObject<HTMLElement>;
+    /** Additional actions at the bottom of the suggestion Popper */
+    actions?: ReactNode;
 } & Omit<AutocompleteProps<CommonSelectOption>, "onChange" | "renderInput" | "options">;
 export declare const CommonSelectComponent: React.FC<Props>;
 export {};

@@ -2,6 +2,7 @@ import React, { ReactNode, useMemo } from "react";
 import keycode from "keycode";
 import { Autocomplete, AutocompleteProps } from "@material-ui/lab";
 import { TextField } from "@material-ui/core";
+import { getListboxElement } from "../utils";
 
 type Props = {
   /** The input id */
@@ -24,23 +25,6 @@ type Props = {
   AutocompleteProps<string>,
   "renderInput" | "onChange" | "onInputChange" | "options"
 >;
-
-const getListboxElement = (
-  footer: ReactNode,
-): React.ForwardRefExoticComponent<React.HTMLAttributes<HTMLElement> &
-  React.RefAttributes<HTMLUListElement>> => {
-  return React.forwardRef<HTMLUListElement, React.HTMLAttributes<HTMLElement>>(
-    (props, ref) => {
-      const { children, ...otherProps } = props;
-      return (
-        <ul ref={ref} data-testid="items" {...otherProps}>
-          {children}
-          {footer}
-        </ul>
-      );
-    },
-  );
-};
 
 export const CommonSuggest: React.FC<Props> = props => {
   const {

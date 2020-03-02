@@ -1,9 +1,16 @@
-import React, { ReactNode, RefObject, useEffect, useState } from "react";
+import React, {
+  ReactNode,
+  RefObject,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import styles from "./common-select.module.scss";
 import { Autocomplete, AutocompleteProps } from "@material-ui/lab";
 import { Close as CloseIcon } from "@material-ui/icons";
 import { CommonSelectOption } from "../types/select";
 import { TextField } from "@material-ui/core";
+import { getListboxElement } from "../utils";
 
 type Props = {
   /** The current value of common select, or an array of options for common multi-select */
@@ -66,6 +73,8 @@ type Props = {
   loadOptions?: (x0: string) => Promise<any>;
   /** Ref passed to the input element */
   inputRef?: RefObject<HTMLElement>;
+  /** Additional actions at the bottom of the suggestion Popper */
+  actions?: ReactNode;
 } & Omit<
   AutocompleteProps<CommonSelectOption>,
   "onChange" | "renderInput" | "options"
@@ -97,6 +106,7 @@ export const CommonSelectComponent: React.FC<Props> = props => {
     isLoading = false,
     classes = {},
     inputRef,
+    actions,
     ...otherProps
   } = props;
 
@@ -111,6 +121,9 @@ export const CommonSelectComponent: React.FC<Props> = props => {
       loadOptions(inputValue).then(results => setLoadedOptions(results || []));
     }
   }, [loadOptions, selectType, inputValue]);
+  const Listbox = useMemo(() => {
+    return getListboxElement(actions);
+  }, [actions]);
 
   return (
     // @ts-ignore
@@ -164,6 +177,7 @@ export const CommonSelectComponent: React.FC<Props> = props => {
           inputRef={inputRef}
         />
       )}
+      ListboxComponent={Listbox}
       freeSolo={selectType === "creatable"}
       multiple={isMulti}
       noOptionsText={

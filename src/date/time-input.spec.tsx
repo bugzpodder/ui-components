@@ -9,7 +9,7 @@ import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 afterEach(cleanup);
 
 const TimeInputContainer = wrapPickerUtilProvider(TimeInput, MomentUtils);
-const TestTimeInput: React.FC<any> = props => {
+const TestTimeInput = (props: any) => {
   const { value, readOnly, placeholder, mockOnChange } = props;
   return (
     <TestWrapper>

@@ -11,7 +11,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestCommonDropdownMenu: React.FC = () => {
+const TestCommonDropdownMenu = () => {
   const REVIEW_STATES = {
     APPROVED: "has been approved",
     DENIED: "has been denied",

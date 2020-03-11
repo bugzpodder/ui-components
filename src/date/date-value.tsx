@@ -14,7 +14,7 @@ export type Props = {
 };
 
 /** DateValue formats a date value. */
-export const DateValue: React.FC<Props> = props => {
+export const DateValue = (props: Props) => {
   const { defaultDateFormat } = useDateFormat();
   const { format = defaultDateFormat } = props;
 

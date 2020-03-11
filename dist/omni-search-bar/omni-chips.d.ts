@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { OmniSearchCommand, SearchOption } from "@grailbio/lib";
 declare type Props = {
     /** Search Options. */
@@ -6,5 +6,5 @@ declare type Props = {
     /** Function to set searchOptions */
     addOmniSearchCommand?: (x0: OmniSearchCommand) => any;
 };
-export declare const OmniChips: React.FC<Props>;
+export declare const OmniChips: (props: Props) => JSX.Element;
 export {};

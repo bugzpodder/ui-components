@@ -14,7 +14,7 @@ type Props = {
   removeNotification: (x0: number) => any;
 };
 
-export const NotificationCard: React.FC<Props> = props => {
+export const NotificationCard = (props: Props) => {
   const { notificationIndex, message, time, type, removeNotification } = props;
   return (
     <Card

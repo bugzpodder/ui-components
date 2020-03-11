@@ -77,8 +77,6 @@ type Props = {
   classes?: SlimPageClasses;
   /** `Node` displayed in the center of the header. For example, page tabs. */
   centerHeader?: ReactNode;
-  /** Takes a `node` to show on the page */
-  children?: ReactNode;
   /** Displays a non-interactive loading animation */
   isLoading?: boolean;
   /** Primary actions to display on the header */

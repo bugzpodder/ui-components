@@ -9,7 +9,7 @@ type Props = {
   id?: string;
 } & Partial<DropdownMenuProps>;
 
-export const SecondaryActionsMenuButton: React.FC<Props> = props => {
+export const SecondaryActionsMenuButton = (props: Props) => {
   const { id = "", secondaryActions, ...otherProps } = props;
   if (!secondaryActions) {
     return null;

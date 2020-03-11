@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 export declare type Props = {
     /** id passed to span element wrapping date value */
     id?: string;
@@ -10,4 +10,4 @@ export declare type Props = {
     format?: string;
 };
 /** DateTimeValue formats a datetime value. */
-export declare const DateTimeValue: React.FC<Props>;
+export declare const DateTimeValue: (props: Props) => JSX.Element;

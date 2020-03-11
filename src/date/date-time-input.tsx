@@ -29,7 +29,7 @@ type Props = {
   onChange?: (x0: MaterialUiPickersDate) => void;
 } & Omit<KeyboardDateTimePickerProps, "onChange">;
 
-export const DateTimeInput: React.FC<Props> = props => {
+export const DateTimeInput = (props: Props) => {
   const { defaultDateTimeFormat } = useDateFormat();
   const {
     readOnly,

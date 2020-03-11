@@ -200,7 +200,7 @@ type Props = {
   adjustWithSelectableTable?: boolean;
 };
 
-export const LargeTableComponent: React.FC<Props> = props => {
+export const LargeTableComponent = (props: Props) => {
   const {
     id,
     classes = {},

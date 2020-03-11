@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { CommonCardProps } from "../common-card/card";
 import { TimelineCardClasses, TimelineGraphRow } from "../types/timeline";
 declare type TimelineTabProps = {
@@ -44,5 +44,5 @@ declare type Props = {
     selectedItem?: number | null;
 };
 /** TabbedTimelineCard provides an interactive tabbed timeline component, wrapped inside of the CommonCard */
-export declare const TabbedTimelineCard: React.FC<Props>;
+export declare const TabbedTimelineCard: (props: Props) => JSX.Element;
 export {};

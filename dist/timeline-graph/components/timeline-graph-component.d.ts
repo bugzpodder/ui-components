@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { TimelineGraphClasses, TimelineGraphRow } from "../../types/timeline";
 declare type Props = {
     rows: TimelineGraphRow[];
@@ -10,5 +10,5 @@ declare type Props = {
     hasTabs?: boolean;
     selectedTab?: string;
 };
-export declare const TimelineGraphComponent: React.FC<Props>;
+export declare const TimelineGraphComponent: (props: Props) => JSX.Element;
 export {};

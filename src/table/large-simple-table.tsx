@@ -81,7 +81,7 @@ type Props = {
 };
 
 /** Provides a large simple table for displaying data, with the ability to opt into additional features. */
-export const LargeSimpleTable: React.FC<Props> = props => {
+export const LargeSimpleTable = (props: Props) => {
   const {
     columns,
     classes = {},

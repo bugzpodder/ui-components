@@ -9,7 +9,7 @@ type Props = {
   mockOnChange?: Function;
 } & Partial<React.ComponentProps<typeof CommonMultiSelect>>;
 
-const TestMultiSelect: React.FC<Props> = props => {
+const TestMultiSelect = (props: Props) => {
   const { mockOnChange, label, margin, variant } = props;
   const [values, setValues] = useState([
     { label: "Algeria", value: "ALGERIA" },

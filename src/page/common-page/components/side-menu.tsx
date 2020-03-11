@@ -10,7 +10,7 @@ type Props = {
   className?: string;
 };
 
-export const SideMenu: React.FC<Props> = props => {
+export const SideMenu = (props: Props) => {
   const { isExpanded, menuContents, className, ...otherProps } = props;
   return (
     <Drawer

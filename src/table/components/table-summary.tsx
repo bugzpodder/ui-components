@@ -6,7 +6,7 @@ type Props = {
   data: Record<string, any>[];
 };
 
-export const TableSummary: React.FC<Props> = props => {
+export const TableSummary = (props: Props) => {
   const { data } = props;
   return (
     <Typography className={styles.tableSummary}>

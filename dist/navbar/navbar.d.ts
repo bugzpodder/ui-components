@@ -1,4 +1,4 @@
-import React, { ComponentType, ReactNode } from "react";
+import { ComponentType, ReactNode } from "react";
 import { SidebarItem } from "@grailbio/lib";
 declare type Props = {
     /** Determines whether to put warning banner above the navigation bar. */
@@ -32,5 +32,5 @@ declare type Props = {
     /** Defines the pathname. */
     currentPath: string;
 };
-export declare const Navbar: React.FC<Props>;
+export declare const Navbar: (props: Props) => JSX.Element;
 export {};

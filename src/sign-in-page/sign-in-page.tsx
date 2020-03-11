@@ -23,8 +23,6 @@ type Props = {
     `backgroundImage: {signInLandingPage}`
   */
   backgroundImage?: string;
-  /** Optional inner content shown under `Sign In` button */
-  children?: ReactNode;
   /** Optional string to override default typography subheader */
   subheader?: string;
 };

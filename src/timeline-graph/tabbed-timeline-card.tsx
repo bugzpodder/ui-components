@@ -57,7 +57,7 @@ type Props = {
 };
 
 /** TabbedTimelineCard provides an interactive tabbed timeline component, wrapped inside of the CommonCard */
-export const TabbedTimelineCard: React.FC<Props> = props => {
+export const TabbedTimelineCard = (props: Props) => {
   const {
     classes = {},
     commonCardProps,

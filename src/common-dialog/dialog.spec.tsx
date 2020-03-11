@@ -5,7 +5,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestCommonDialog: React.FC<any> = props => {
+const TestCommonDialog = (props: any) => {
   const { mockHide, classes, title, actions } = props;
   return (
     <TestWrapper>

@@ -34,7 +34,7 @@ type Props = {
 } & TextFieldProps;
 
 /** TextInput is a wrapper around Material UI's TextField component. */
-export const TextInput: React.FC<Props> = props => {
+export const TextInput = (props: Props) => {
   const {
     id,
     className,

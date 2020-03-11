@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { Notification } from "../types/notification";
 declare type Props = {
     /**
@@ -22,5 +22,5 @@ declare type Props = {
      */
     removeNotification: (x0: number) => any;
 };
-export declare const NotificationCenter: React.FC<Props>;
+export declare const NotificationCenter: (props: Props) => JSX.Element;
 export {};

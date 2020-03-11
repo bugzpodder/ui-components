@@ -13,7 +13,7 @@ type Props = {
   pageConfigs: PageConfig[];
 };
 
-export const TabsComponent: React.FC<Props> = props => {
+export const TabsComponent = (props: Props) => {
   const {
     activeTab,
     onChangeActiveTab,

@@ -55,7 +55,7 @@ const headerActions = [
   },
 ];
 
-const TestCommonTabbedPage: React.FC<any> = props => {
+const TestCommonTabbedPage = (props: any) => {
   const { mockOnChange, ...otherProps } = props;
 
   const [activeTab, setActiveTab] = useState("one");

@@ -31,7 +31,7 @@ type Props = {
 } & KeyboardDatePickerProps;
 
 /** Provides component for common Date picker. */
-export const DateInput: React.FC<Props> = props => {
+export const DateInput = (props: Props) => {
   const { defaultDateFormat } = useDateFormat();
   const {
     readOnly,

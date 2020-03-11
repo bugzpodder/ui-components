@@ -7,7 +7,7 @@ type Props = {
   paginationProps: PaginationProps;
 };
 
-export const TablePager: React.FC<Props> = props => {
+export const TablePager = (props: Props) => {
   const {
     onPageChange,
     onSelect,

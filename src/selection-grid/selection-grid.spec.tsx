@@ -6,7 +6,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestSelectionGrid: React.FC<any> = props => {
+const TestSelectionGrid = (props: any) => {
   const {
     mockOnSelect,
     classes,

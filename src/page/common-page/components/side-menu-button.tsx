@@ -7,7 +7,7 @@ type Props = {
   toggleMenu: () => any;
 };
 
-export const SideMenuButton: React.FC<Props> = props => {
+export const SideMenuButton = (props: Props) => {
   const { isExpanded, toggleMenu } = props;
   const extraClassName = isExpanded ? "expanded" : "";
   return (

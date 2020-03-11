@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { CommonCardProps } from "../common-card/card";
 import { TimelineCardClasses, TimelineGraphRow } from "../types/timeline";
 declare type Props = {
@@ -42,5 +42,5 @@ declare type Props = {
     isLoading?: boolean;
 };
 /** TimelineCard provides an interactive timeline component, wrapped inside of the CommonCard */
-export declare const TimelineCard: React.FC<Props>;
+export declare const TimelineCard: (props: Props) => JSX.Element;
 export {};

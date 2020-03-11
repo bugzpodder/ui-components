@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { ClickableItem } from "../types/dropdown";
 import { PopoverOrigin } from "@material-ui/core/Popover";
 export declare type DropdownMenuProps = {
@@ -31,4 +31,4 @@ export declare type DropdownMenuProps = {
     /** Optional data test ID attribute for the button. If not defined, defaults to "dropdown-button". */
     "data-testid"?: string;
 };
-export declare const CommonDropdownMenu: React.FC<DropdownMenuProps>;
+export declare const CommonDropdownMenu: (props: DropdownMenuProps) => JSX.Element;

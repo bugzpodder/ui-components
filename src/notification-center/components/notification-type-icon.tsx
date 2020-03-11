@@ -10,7 +10,7 @@ type Props = {
   type: string;
 };
 
-export const NotificationTypeIcon: React.FC<Props> = props => {
+export const NotificationTypeIcon = (props: Props) => {
   const { type } = props;
   let IconComponent = InfoIcon;
   let color = "inherit";

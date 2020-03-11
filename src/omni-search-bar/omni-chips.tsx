@@ -15,7 +15,7 @@ type Props = {
   addOmniSearchCommand?: (x0: OmniSearchCommand) => any;
 };
 
-export const OmniChips: React.FC<Props> = props => {
+export const OmniChips = (props: Props) => {
   const { searchOptions, addOmniSearchCommand } = props;
   return (
     <div className={styles.omniChips} data-testid="omni-chips-container">

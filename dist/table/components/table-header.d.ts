@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { InternalPagedTableColumn, SortingProps } from "../../types/paged-table";
 declare type Props = {
     columns: InternalPagedTableColumn[];
@@ -14,5 +14,5 @@ declare type Props = {
     }) => any;
     adjustWithSelectableTable: boolean;
 };
-export declare const TableHeader: React.FC<Props>;
+export declare const TableHeader: (props: Props) => JSX.Element;
 export {};

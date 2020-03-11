@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { SimpleTableOptions } from "../types/table";
 import { SortOption } from "@grailbio/lib";
@@ -63,5 +63,5 @@ declare type Props = {
     wrapHeader?: boolean;
 };
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
-export declare const SimpleTable: React.FC<Props>;
+export declare const SimpleTable: (props: Props) => JSX.Element;
 export {};

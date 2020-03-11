@@ -18,7 +18,7 @@ type Props = {
   searchType: symbol;
 } & SearchFieldProps;
 
-export const SearchField: React.FC<Props> = props => {
+export const SearchField = (props: Props) => {
   const {
     searchKey,
     searchType,

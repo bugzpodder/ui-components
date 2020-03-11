@@ -34,7 +34,7 @@ type Props = {
   removeNotification: (x0: number) => any;
 };
 
-export const NotificationCenter: React.FC<Props> = props => {
+export const NotificationCenter = (props: Props) => {
   const anchorEl = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 

@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { GridRow } from "../types/grid";
 import { TextAlignProperty } from "csstype";
 declare type Props = {
@@ -28,5 +28,5 @@ declare type Props = {
     textAlign?: TextAlignProperty[];
 };
 /** Provides a styled component for displaying data in two grid columns. */
-export declare const TwoColumnGrid: React.FC<Props>;
+export declare const TwoColumnGrid: (props: Props) => JSX.Element;
 export {};

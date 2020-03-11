@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { PagedTableClasses, PagedTableColumn } from "../../types/paged-table";
 import { SimpleTableOptions } from "../../types/table";
 import { SortOption } from "@grailbio/lib";
@@ -22,5 +22,5 @@ declare type Props = {
     wrapHeader?: boolean;
     adjustWithSelectableTable?: boolean;
 };
-export declare const TableComponent: React.FC<Props>;
+export declare const TableComponent: (props: Props) => JSX.Element;
 export {};

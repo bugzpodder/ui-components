@@ -32,7 +32,7 @@ type Props = {
 } & KeyboardTimePickerProps;
 
 /** Provides component for common Time picker. */
-export const TimeInput: React.FC<Props> = props => {
+export const TimeInput = (props: Props) => {
   const {
     readOnly,
     showEmptyValue = false,

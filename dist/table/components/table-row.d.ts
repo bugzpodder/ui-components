@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { InternalPagedTableColumn, SelectionProps } from "../../types/paged-table";
 declare type Props = {
     columns: InternalPagedTableColumn[];
@@ -11,5 +11,5 @@ declare type Props = {
     hasColumnVisibilityChooser: boolean;
     adjustWithSelectableTable: boolean;
 };
-export declare const PagedTableRow: React.FC<Props>;
+export declare const PagedTableRow: (props: Props) => JSX.Element;
 export {};

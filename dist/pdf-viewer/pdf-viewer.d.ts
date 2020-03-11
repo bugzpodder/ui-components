@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { PDFViewerClasses } from "../types/pdf-viewer";
 declare type Props = {
     /** Defines the pdf blob to display or the path to the blob */
@@ -15,5 +15,5 @@ declare type Props = {
      */
     classes?: PDFViewerClasses;
 };
-export declare const PDFViewer: React.FC<Props>;
+export declare const PDFViewer: (props: Props) => JSX.Element;
 export {};

@@ -80,7 +80,7 @@ type Props = {
   "onChange" | "renderInput" | "options"
 >;
 
-export const CommonSelectComponent: React.FC<Props> = props => {
+export const CommonSelectComponent = (props: Props) => {
   const {
     onChange,
     formatOption,

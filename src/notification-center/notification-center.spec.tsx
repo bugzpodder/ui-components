@@ -8,7 +8,7 @@ import { format } from "date-fns";
 afterEach(cleanup);
 const testUtcTime = "2019-04-20T23:20:00+00:00";
 
-const TestNotificationCenter: React.FC<any> = props => {
+const TestNotificationCenter = (props: any) => {
   const { mockRemoveAllNotifications, mockRemoveNotification } = props;
   const [notifications] = useState<Notification[]>([
     {

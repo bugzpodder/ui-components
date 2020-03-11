@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { GridCellCoordinate, GridCellInfo, SelectionGridClasses } from "../types/selection-grid";
 declare type Props = {
     /** Data to be displayed in grid */
@@ -38,5 +38,5 @@ declare type Props = {
     /** Invert rows showing from largest row to smallest */
     invertRows?: boolean;
 };
-export declare const SelectionGrid: React.FC<Props>;
+export declare const SelectionGrid: (props: Props) => JSX.Element;
 export {};

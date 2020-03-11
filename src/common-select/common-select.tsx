@@ -25,7 +25,7 @@ type CommonSelectProps = {
   readOnly?: boolean;
 } & ComponentProps<typeof CommonSelectComponent>;
 
-export const CommonSelect: React.FC<CommonSelectProps> = props => {
+export const CommonSelect = (props: CommonSelectProps) => {
   const {
     onChange,
     readOnly,

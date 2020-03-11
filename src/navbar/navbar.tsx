@@ -35,7 +35,7 @@ type Props = {
   currentPath: string;
 };
 
-export const Navbar: React.FC<Props> = props => {
+export const Navbar = (props: Props) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = (): void => {

@@ -49,7 +49,7 @@ type Props = {
 };
 
 /** TimelineCard provides an interactive timeline component, wrapped inside of the CommonCard */
-export const TimelineCard: React.FC<Props> = props => {
+export const TimelineCard = (props: Props) => {
   const {
     classes = {},
     commonCardProps,

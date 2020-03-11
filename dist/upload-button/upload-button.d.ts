@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import { ButtonProps } from "@material-ui/core/Button";
-import React from "react";
 declare type Props = {
     /** If true, allows multiple files to be selected. */
     allowMultiple?: boolean;
@@ -20,5 +20,5 @@ declare type Props = {
     onChange: (x0: FileList) => any;
 };
 /** `UploadButton` handles file uploads through a `Button` component. */
-export declare const UploadButton: React.FC<Props>;
+export declare const UploadButton: (props: Props) => JSX.Element;
 export {};

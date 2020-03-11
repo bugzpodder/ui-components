@@ -71,7 +71,7 @@ const pagedTableColumnsToExportableColumnsIfNecessary = (
     });
 };
 
-export const ExportButton: React.FC<Props> = props => {
+export const ExportButton = (props: Props) => {
   const {
     columns,
     visibleRows,

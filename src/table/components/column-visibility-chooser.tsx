@@ -15,7 +15,7 @@ type Props = {
   setColumnVisibility: (x0: { [x: number]: boolean }) => any;
 };
 
-export const ColumnVisibilityChooser: React.FC<Props> = props => {
+export const ColumnVisibilityChooser = (props: Props) => {
   const { setColumnVisibility, columnVisibility, columns } = props;
   const [popoverIsVisible, setPopoverIsVisible] = useState(false);
   const anchorRef = useRef(null);

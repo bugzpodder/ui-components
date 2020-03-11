@@ -27,7 +27,7 @@ export type Props = {
 
 /** HumanizedDateTime formats a datetime value along with an expression describing the distance from the datetime
  * value and now. */
-export const HumanizedDateTime: React.FC<Props> = props => {
+export const HumanizedDateTime = (props: Props) => {
   const { classes = {}, id, ...otherProps } = props;
   const date = parseDate(props.value);
   return (

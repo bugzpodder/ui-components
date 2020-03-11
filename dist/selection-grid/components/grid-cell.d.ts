@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { GridCellInfo, SelectionGridClasses } from "../../types/selection-grid";
 declare type Props = {
     gridCellInfo: GridCellInfo;
@@ -9,5 +9,5 @@ declare type Props = {
     cellRenderer: (x0: GridCellInfo) => ReactNode;
     onSelect?: (x0: GridCellInfo) => any;
 };
-export declare const GridCell: React.FC<Props>;
+export declare const GridCell: (props: Props) => JSX.Element;
 export {};

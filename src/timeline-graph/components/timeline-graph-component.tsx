@@ -23,7 +23,7 @@ type Props = {
   selectedTab?: string;
 };
 
-export const TimelineGraphComponent: React.FC<Props> = props => {
+export const TimelineGraphComponent = (props: Props) => {
   const {
     onSelect,
     selectedItem,

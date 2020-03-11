@@ -23,7 +23,7 @@ type Props = {
   defaultField?: string;
 };
 
-export const OmniField: React.FC<Props> = props => {
+export const OmniField = (props: Props) => {
   const {
     omniText,
     onChange,

@@ -29,7 +29,7 @@ type CommonMultiSelectProps = {
   readOnly?: boolean;
 } & Omit<ComponentProps<typeof CommonSelectComponent>, "onChange">;
 
-export const CommonMultiSelect: React.FC<CommonMultiSelectProps> = props => {
+export const CommonMultiSelect = (props: CommonMultiSelectProps) => {
   const {
     onChange,
     isValidNewOption,

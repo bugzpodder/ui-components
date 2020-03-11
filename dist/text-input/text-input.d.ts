@@ -1,4 +1,4 @@
-import React, { ElementType } from "react";
+import { ElementType } from "react";
 import { TextFieldProps } from "@material-ui/core/TextField";
 declare type Props = {
     /** If true, displays the field as read-only (with label and helper text). */
@@ -19,5 +19,5 @@ declare type Props = {
     variant?: "filled" | "standard" | "outlined";
 } & TextFieldProps;
 /** TextInput is a wrapper around Material UI's TextField component. */
-export declare const TextInput: React.FC<Props>;
+export declare const TextInput: (props: Props) => JSX.Element;
 export {};

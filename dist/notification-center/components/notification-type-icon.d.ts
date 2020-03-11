@@ -1,6 +1,6 @@
-import React from "react";
+/// <reference types="react" />
 declare type Props = {
     type: string;
 };
-export declare const NotificationTypeIcon: React.FC<Props>;
+export declare const NotificationTypeIcon: (props: Props) => JSX.Element;
 export {};

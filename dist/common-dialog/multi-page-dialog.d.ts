@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { CommonDialogAction } from "./util";
 import { CommonDialogClasses } from "../types/dialog";
 declare type CommonMultiPageDialogAction = {
@@ -40,5 +40,5 @@ declare type Props = {
      */
     classes?: CommonDialogClasses;
 };
-export declare const CommonMultiPageDialog: React.FC<Props>;
+export declare const CommonMultiPageDialog: (props: Props) => JSX.Element;
 export {};

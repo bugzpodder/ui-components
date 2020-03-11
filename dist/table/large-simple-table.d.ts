@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { SimpleTableOptions } from "../types/table";
 import { SortOption } from "@grailbio/lib";
@@ -76,5 +76,5 @@ declare type Props = {
     autosizeHeight?: boolean;
 };
 /** Provides a large simple table for displaying data, with the ability to opt into additional features. */
-export declare const LargeSimpleTable: React.FC<Props>;
+export declare const LargeSimpleTable: (props: Props) => JSX.Element;
 export {};

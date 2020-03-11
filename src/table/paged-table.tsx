@@ -103,7 +103,7 @@ export type PagedTableProps = {
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
-export const PagedTable: React.FC<PagedTableProps> = props => {
+export const PagedTable = (props: PagedTableProps) => {
   const {
     onPageChange,
     headerActions = [],

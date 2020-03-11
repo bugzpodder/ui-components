@@ -67,7 +67,7 @@ type Props = {
 };
 
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
-export const SimpleTable: React.FC<Props> = props => {
+export const SimpleTable = (props: Props) => {
   const { columns, classes = {}, data, isLoading = false } = props;
   if (!columns || !data) {
     throw new Error("data prop or columns prop or both are not provided");

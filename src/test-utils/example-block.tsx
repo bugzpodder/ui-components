@@ -7,7 +7,7 @@ type Props = {
   helperText?: string;
 };
 
-export const ExampleBlock: React.FC<Props> = props => {
+export const ExampleBlock = (props: Props) => {
   const { strongHeader, helperText = "", content } = props;
   return (
     <div className={styles.container}>

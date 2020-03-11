@@ -43,8 +43,6 @@ declare type Props = {
      *  - `content` - (applied to the container around the content)
      */
     classes?: SlimTabbedPageClasses;
-    /** Takes a `node` to show on the page */
-    children?: ReactNode;
     /** Primary actions to display on the header */
     primaryActions?: HeaderAction[];
     /** Secondary actions to display in the secondary actions menu */

@@ -30,7 +30,7 @@ type Props = {
   adjustWithSelectableTable?: boolean;
 };
 
-export const TableComponent: React.FC<Props> = props => {
+export const TableComponent = (props: Props) => {
   const {
     classes = {},
     columns,

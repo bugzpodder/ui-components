@@ -42,8 +42,6 @@ declare type Props = {
     classes?: CommonTabbedPageClasses;
     /** Props applied to the `Tabs` container */
     tabProps?: Partial<TabProps>;
-    /** Components to be shared between all pages */
-    children?: ReactNode;
     /** Displays an uninteractive loading animation over the page content when true */
     isLoading?: boolean;
 };

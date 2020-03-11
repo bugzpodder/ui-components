@@ -13,7 +13,7 @@ type Props = {
   onSelect?: (x0: GridCellInfo) => any;
 };
 
-export const GridCell: React.FC<Props> = props => {
+export const GridCell = (props: Props) => {
   const {
     isSelected,
     isEmpty,

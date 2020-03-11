@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { KeyboardTimePickerProps } from "@material-ui/pickers";
 declare type Props = {
     /** When `true`, displays a read only input field using `ReadOnlyTextField` */
@@ -18,5 +18,5 @@ declare type Props = {
     useOldPicker?: boolean;
 } & KeyboardTimePickerProps;
 /** Provides component for common Time picker. */
-export declare const TimeInput: React.FC<Props>;
+export declare const TimeInput: (props: Props) => JSX.Element;
 export {};

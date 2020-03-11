@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { CommonSwitchClasses } from "../types/switch";
 declare type Props = {
     /** Returns the status of the switch, and the value if one exists */
@@ -29,5 +29,5 @@ declare type Props = {
     classes?: CommonSwitchClasses;
 };
 /** `CommonSwitch` renders a Material-UI switch component */
-export declare const CommonSwitch: React.FC<Props>;
+export declare const CommonSwitch: (props: Props) => JSX.Element;
 export {};

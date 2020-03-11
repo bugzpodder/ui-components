@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { SlimPageConfig, SlimTabbedPageClasses } from "../../../types/card";
 declare type Props = {
     onChangeActiveTab: (x0: string) => any;
@@ -8,5 +8,5 @@ declare type Props = {
     wrapTabLabels: boolean;
     classes: SlimTabbedPageClasses;
 };
-export declare const TabsComponent: React.FC<Props>;
+export declare const TabsComponent: (props: Props) => JSX.Element;
 export {};

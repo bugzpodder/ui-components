@@ -1,8 +1,8 @@
-import React from "react";
+/// <reference types="react" />
 declare type Props = {
     content: any;
     strongHeader: string;
     helperText?: string;
 };
-export declare const ExampleBlock: React.FC<Props>;
+export declare const ExampleBlock: (props: Props) => JSX.Element;
 export {};

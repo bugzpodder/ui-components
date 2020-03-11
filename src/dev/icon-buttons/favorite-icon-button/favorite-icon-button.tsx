@@ -11,7 +11,7 @@ type Props = {
   onClick: (x0: boolean) => any;
 };
 
-export const FavoriteIconButton: React.FC<Props> = props => {
+export const FavoriteIconButton = (props: Props) => {
   const { isSelected = false, onClick } = props;
   return (
     <div className={styles.iconContainer}>

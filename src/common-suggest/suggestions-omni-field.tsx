@@ -7,7 +7,7 @@ type Props = {
   loadSuggestions: () => void;
 } & SearchFieldProps;
 
-export const SuggestionsOmniField: React.FC<Props> = props => {
+export const SuggestionsOmniField = (props: Props) => {
   const {
     searchValue,
     searchKey,

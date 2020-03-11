@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { GridRow } from "../types/grid";
 import { TextAlignProperty } from "csstype";
 declare type Props = {
@@ -7,5 +7,5 @@ declare type Props = {
     textAlign?: TextAlignProperty[];
     labelWidth?: number;
 };
-export declare const TwoColumnRow: React.FC<Props>;
+export declare const TwoColumnRow: (props: Props) => JSX.Element;
 export {};

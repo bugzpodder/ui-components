@@ -1,6 +1,6 @@
-import React from "react";
+/// <reference types="react" />
 declare type Props = {
     data: Record<string, any>[];
 };
-export declare const TableSummary: React.FC<Props>;
+export declare const TableSummary: (props: Props) => JSX.Element;
 export {};

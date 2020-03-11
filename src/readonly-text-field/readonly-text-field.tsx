@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import classNames from "classnames";
 import styles from "./readonly-text-field.module.scss";
 import { Icon } from "@material-ui/core";
@@ -6,8 +6,6 @@ import { Icon } from "@material-ui/core";
 type Props = {
   /** Id of the element. */
   id?: string;
-  /** Value of the text field. */
-  children?: ReactNode;
   /** classname applied to the textfield */
   className?: string;
   /** When specified, displays the chosen material-ui icon as a Font Icon. */

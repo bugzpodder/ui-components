@@ -8,7 +8,7 @@ type FormatProps = {
   className?: string;
 };
 
-export const FormattedDateTime: React.FC<FormatProps> = props => {
+export const FormattedDateTime = (props: FormatProps) => {
   const { id, value, format, className = "", ...otherProps } = props;
   const formattedDate = useFormattedDateForDisplay(value, format);
   return (

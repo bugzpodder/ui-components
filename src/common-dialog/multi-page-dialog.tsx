@@ -53,7 +53,7 @@ type Props = {
   classes?: CommonDialogClasses;
 };
 
-export const CommonMultiPageDialog: React.FC<Props> = props => {
+export const CommonMultiPageDialog = (props: Props) => {
   const {
     isVisible,
     hideModal,

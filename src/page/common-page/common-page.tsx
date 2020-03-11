@@ -39,8 +39,6 @@ type Props = {
   classes?: CommonPageClasses;
   /** Takes a `node` that goes beneath the header. For example, page tabs. */
   subheader?: ReactNode;
-  /** Takes a `node` to show on the page */
-  children?: ReactNode;
   /** Displays a spinner when `isLoading` is true */
   isLoading?: boolean;
   /** Defines the list of items in the menu. The menu is hidden by default but can be revealed by clicking a hamburger

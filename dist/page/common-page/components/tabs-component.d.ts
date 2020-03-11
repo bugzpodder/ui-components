@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { TabProps } from "@material-ui/core/Tab";
 import { PageConfig } from "../../../types/card";
 declare type Props = {
@@ -8,5 +8,5 @@ declare type Props = {
     tabProps?: Partial<TabProps>;
     pageConfigs: PageConfig[];
 };
-export declare const TabsComponent: React.FC<Props>;
+export declare const TabsComponent: (props: Props) => JSX.Element;
 export {};

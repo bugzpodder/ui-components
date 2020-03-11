@@ -20,4 +20,4 @@ export declare type Props = {
 } & React.ComponentProps<typeof DateTimeValue>;
 /** HumanizedDateTime formats a datetime value along with an expression describing the distance from the datetime
  * value and now. */
-export declare const HumanizedDateTime: React.FC<Props>;
+export declare const HumanizedDateTime: (props: Props) => JSX.Element;

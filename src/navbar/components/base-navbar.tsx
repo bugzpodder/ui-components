@@ -57,7 +57,7 @@ type Props = {
   toggleSidebar: () => void;
 };
 
-export const BaseNavbar: React.FC<Props> = props => {
+export const BaseNavbar = (props: Props) => {
   const {
     isProduction = false,
     domain,

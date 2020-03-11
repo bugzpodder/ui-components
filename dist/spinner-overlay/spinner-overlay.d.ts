@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 declare type Props = {
     /** determines the active state of the overlay */
     isActive?: boolean;
@@ -14,5 +14,5 @@ declare type Props = {
  * IMPORTANT: `SpinnerOverlay` is styled as `position: absolute` and requires container with a non `static` position.
  * For example: `position: relative;`
  */
-export declare const SpinnerOverlay: React.FC<Props>;
+export declare const SpinnerOverlay: (props: Props) => JSX.Element;
 export {};

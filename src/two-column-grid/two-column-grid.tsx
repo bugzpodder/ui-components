@@ -32,7 +32,7 @@ type Props = {
 };
 
 /** Provides a styled component for displaying data in two grid columns. */
-export const TwoColumnGrid: React.FC<Props> = props => {
+export const TwoColumnGrid = (props: Props) => {
   const { rows, labelWidth, textAlign, header, ...other } = props;
   const gridRows = header ? [{ ...header, isHeader: true }, ...rows] : rows;
   return (

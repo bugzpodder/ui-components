@@ -6,7 +6,7 @@ import { cleanup, render } from "@testing-library/react";
 
 afterEach(cleanup);
 
-const TestCommonCard: React.FC<any> = props => {
+const TestCommonCard = (props: any) => {
   const { classes, hasMargin } = props;
   return (
     <TestWrapper>

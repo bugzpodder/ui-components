@@ -26,7 +26,7 @@ type Props = {
   "renderInput" | "onChange" | "onInputChange" | "options"
 >;
 
-export const CommonSuggest: React.FC<Props> = props => {
+export const CommonSuggest = (props: Props) => {
   const {
     suggestions,
     onChange,

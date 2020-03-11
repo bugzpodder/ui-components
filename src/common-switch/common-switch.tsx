@@ -34,7 +34,7 @@ type Props = {
 };
 
 /** `CommonSwitch` renders a Material-UI switch component */
-export const CommonSwitch: React.FC<Props> = props => {
+export const CommonSwitch = (props: Props) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const {

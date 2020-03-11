@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { CommonCardProps } from "../common-card/card";
 import { PagedTableClasses, PagedTableColumn } from "../types/paged-table";
 import { PagedTableOptions } from "../types/table";
@@ -94,4 +94,4 @@ export declare type PagedTableProps = {
     wrapHeader?: boolean;
 };
 /** Provides a simple table for displaying data, with the ability to opt into additional features. */
-export declare const PagedTable: React.FC<PagedTableProps>;
+export declare const PagedTable: (props: PagedTableProps) => JSX.Element;

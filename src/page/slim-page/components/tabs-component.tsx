@@ -13,7 +13,7 @@ type Props = {
   classes: SlimTabbedPageClasses;
 };
 
-export const TabsComponent: React.FC<Props> = props => {
+export const TabsComponent = (props: Props) => {
   const {
     activeTab,
     onChangeActiveTab,

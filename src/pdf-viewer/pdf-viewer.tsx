@@ -19,7 +19,7 @@ type Props = {
   classes?: PDFViewerClasses;
 };
 
-export const PDFViewer: React.FC<Props> = props => {
+export const PDFViewer = (props: Props) => {
   const { pdf, width, classes = {} } = props;
   const [numPages, setNumPages] = useState(0);
 

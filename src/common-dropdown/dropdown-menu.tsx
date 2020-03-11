@@ -45,7 +45,7 @@ export type DropdownMenuProps = {
   "data-testid"?: string;
 };
 
-export const CommonDropdownMenu: React.FC<DropdownMenuProps> = props => {
+export const CommonDropdownMenu = (props: DropdownMenuProps) => {
   const anchorRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const {

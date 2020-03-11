@@ -71,7 +71,7 @@ const reducer = (state: State, action: Record<string, any>): State => {
   }
 };
 
-export const Sidebar: React.FC<Props> = props => {
+export const Sidebar = (props: Props) => {
   const {
     sidebarContent = [],
     domain,

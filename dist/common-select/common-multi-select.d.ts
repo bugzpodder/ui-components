@@ -1,4 +1,4 @@
-import React, { ComponentProps } from "react";
+import { ComponentProps } from "react";
 import { CommonSelectComponent } from "./common-select-component";
 import { CommonSelectOption } from "../types/select";
 declare type CommonMultiSelectProps = {
@@ -25,5 +25,5 @@ declare type CommonMultiSelectProps = {
     /** displays component as read only */
     readOnly?: boolean;
 } & Omit<ComponentProps<typeof CommonSelectComponent>, "onChange">;
-export declare const CommonMultiSelect: React.FC<CommonMultiSelectProps>;
+export declare const CommonMultiSelect: (props: CommonMultiSelectProps) => JSX.Element;
 export {};

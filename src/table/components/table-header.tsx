@@ -22,7 +22,7 @@ type Props = {
   adjustWithSelectableTable: boolean;
 };
 
-export const TableHeader: React.FC<Props> = props => {
+export const TableHeader = (props: Props) => {
   const {
     columns,
     sortingProps = {},

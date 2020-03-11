@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   },
 });
 
-export const TwoColumnRow: React.FC<Props> = props => {
+export const TwoColumnRow = (props: Props) => {
   const { row, labelWidth = 2, rowIndex } = props;
 
   const inputWidth: number = 12 - labelWidth;

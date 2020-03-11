@@ -1,4 +1,4 @@
-import React, { ReactNode, RefObject } from "react";
+import { ReactNode, RefObject } from "react";
 import { AutocompleteProps } from "@material-ui/lab";
 import { CommonSelectOption } from "../types/select";
 declare type Props = {
@@ -65,5 +65,5 @@ declare type Props = {
     /** Additional actions at the bottom of the suggestion Popper */
     actions?: ReactNode;
 } & Omit<AutocompleteProps<CommonSelectOption>, "onChange" | "renderInput" | "options">;
-export declare const CommonSelectComponent: React.FC<Props>;
+export declare const CommonSelectComponent: (props: Props) => JSX.Element;
 export {};

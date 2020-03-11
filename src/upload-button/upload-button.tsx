@@ -24,7 +24,7 @@ type Props = {
 };
 
 /** `UploadButton` handles file uploads through a `Button` component. */
-export const UploadButton: React.FC<Props> = props => {
+export const UploadButton = (props: Props) => {
   const {
     allowMultiple = false,
     text = allowMultiple ? "Upload File(s)" : "Upload File",

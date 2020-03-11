@@ -20,7 +20,7 @@ type Props = {
   adjustWithSelectableTable: boolean;
 };
 
-export const PagedTableRow: React.FC<Props> = props => {
+export const PagedTableRow = (props: Props) => {
   const {
     columns,
     instance,

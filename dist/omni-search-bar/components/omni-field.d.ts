@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 export declare const OMNI_INPUT_FIELD_ID: string;
 declare type Props = {
     omniText: string;
@@ -10,5 +10,5 @@ declare type Props = {
     isOpen?: boolean;
     defaultField?: string;
 };
-export declare const OmniField: React.FC<Props>;
+export declare const OmniField: (props: Props) => JSX.Element;
 export {};

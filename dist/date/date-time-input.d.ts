@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { KeyboardDateTimePickerProps } from "@material-ui/pickers";
 import { MaterialUiPickersDate } from "material-ui-pickers/typings/date";
 declare type Props = {
@@ -16,5 +16,5 @@ declare type Props = {
     /** Callback when the value changed.  Optional for readonly component. */
     onChange?: (x0: MaterialUiPickersDate) => void;
 } & Omit<KeyboardDateTimePickerProps, "onChange">;
-export declare const DateTimeInput: React.FC<Props>;
+export declare const DateTimeInput: (props: Props) => JSX.Element;
 export {};

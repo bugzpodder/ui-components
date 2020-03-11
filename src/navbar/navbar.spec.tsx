@@ -18,7 +18,7 @@ const wrapText = (text: string): React.ReactElement => {
   return <Typography>{text}</Typography>;
 };
 
-const TestNavbar: React.FC<any> = props => {
+const TestNavbar = (props: any) => {
   const { isProduction, sidebarContent } = props;
   return (
     <TestWrapper>

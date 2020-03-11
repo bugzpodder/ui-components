@@ -18,7 +18,7 @@ type Props = {
  * IMPORTANT: `SpinnerOverlay` is styled as `position: absolute` and requires container with a non `static` position.
  * For example: `position: relative;`
  */
-export const SpinnerOverlay: React.FC<Props> = props => {
+export const SpinnerOverlay = (props: Props) => {
   const { isActive = true, className = "" } = props;
   const spinnerClasses = {};
   spinnerClasses[styles.spinnerOverlay] = true;

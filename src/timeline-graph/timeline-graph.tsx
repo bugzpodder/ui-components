@@ -42,7 +42,7 @@ type Props = {
 };
 
 /** TimelineGraph provides an interactive timeline component */
-export const TimelineGraph: React.FC<Props> = props => {
+export const TimelineGraph = (props: Props) => {
   const { classes = {}, ...timelineProps } = props;
   return (
     <div className={classNames(styles.timelineContainer, classes.root)}>

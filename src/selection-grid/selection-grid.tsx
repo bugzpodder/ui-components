@@ -53,7 +53,7 @@ type Props = {
   invertRows?: boolean;
 };
 
-export const SelectionGrid: React.FC<Props> = props => {
+export const SelectionGrid = (props: Props) => {
   const {
     gridData,
     numCols,

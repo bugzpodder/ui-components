@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import { ButtonProps } from "@material-ui/core/Button";
-import React from "react";
 import { ExportableColumn } from "@grailbio/lib";
 import { PagedTableColumn } from "../types/paged-table";
 declare type Props = {
@@ -11,5 +11,5 @@ declare type Props = {
     buttonProps?: Partial<ButtonProps>;
     className?: string;
 };
-export declare const ExportButton: React.FC<Props>;
+export declare const ExportButton: (props: Props) => JSX.Element;
 export {};

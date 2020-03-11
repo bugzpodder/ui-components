@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { KeyboardDatePickerProps } from "@material-ui/pickers";
 declare type Props = {
     /** When `true`, displays a read only input field using `ReadOnlyTextField` */
@@ -16,5 +16,5 @@ declare type Props = {
     useOldPicker?: boolean;
 } & KeyboardDatePickerProps;
 /** Provides component for common Date picker. */
-export declare const DateInput: React.FC<Props>;
+export declare const DateInput: (props: Props) => JSX.Element;
 export {};

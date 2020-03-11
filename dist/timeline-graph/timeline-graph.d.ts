@@ -1,4 +1,4 @@
-import React from "react";
+/// <reference types="react" />
 import { TimelineGraphClasses, TimelineGraphRow } from "../types/timeline";
 declare type Props = {
     /**
@@ -37,5 +37,5 @@ declare type Props = {
     selectedItem?: number | null;
 };
 /** TimelineGraph provides an interactive timeline component */
-export declare const TimelineGraph: React.FC<Props>;
+export declare const TimelineGraph: (props: Props) => JSX.Element;
 export {};

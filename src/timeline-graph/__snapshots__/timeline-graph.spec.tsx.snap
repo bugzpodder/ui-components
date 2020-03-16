@@ -20,12 +20,12 @@ exports[`render simple timeline graph 1`] = `
           >
             2018
           </p>
-          <p
+          <div
             class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-0"
           >
             20 Apr
-          </p>
+          </div>
         </div>
         <div
           class="timeline timelineStart"
@@ -60,12 +60,12 @@ exports[`render simple timeline graph 1`] = `
           >
             2018
           </p>
-          <p
+          <div
             class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-1"
           >
             20 Apr
-          </p>
+          </div>
         </div>
         <div
           class="timeline timelineEnd"
@@ -148,12 +148,12 @@ exports[`render simple timeline graph with time 1`] = `
           >
             2018
           </p>
-          <p
+          <div
             class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-0"
           >
             20 Apr
-          </p>
+          </div>
           <p
             class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-time-0"
@@ -194,12 +194,12 @@ exports[`render simple timeline graph with time 1`] = `
           >
             2018
           </p>
-          <p
+          <div
             class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-date-1"
           >
             20 Apr
-          </p>
+          </div>
           <p
             class="MuiTypography-root smallDate MuiTypography-body1 MuiTypography-alignCenter"
             data-testid="timeline-time-1"
@@ -305,12 +305,12 @@ exports[`test selecting an item on the timeline card 1`] = `
               >
                 2018
               </p>
-              <p
+              <div
                 class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
                 20 Apr
-              </p>
+              </div>
             </div>
             <div
               class="timeline timelineStart"
@@ -345,12 +345,12 @@ exports[`test selecting an item on the timeline card 1`] = `
               >
                 2018
               </p>
-              <p
+              <div
                 class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-1"
               >
                 20 Apr
-              </p>
+              </div>
             </div>
             <div
               class="timeline timelineEnd"
@@ -500,12 +500,12 @@ exports[`test tabbed timeline cartd 1`] = `
               >
                 2018
               </p>
-              <p
+              <div
                 class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
                 20 Apr
-              </p>
+              </div>
             </div>
             <div
               class="timeline timelineStart"
@@ -540,12 +540,12 @@ exports[`test tabbed timeline cartd 1`] = `
               >
                 2018
               </p>
-              <p
+              <div
                 class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-1"
               >
                 20 Apr
-              </p>
+              </div>
             </div>
             <div
               class="timeline timelineEnd"
@@ -647,7 +647,7 @@ exports[`test unselecting an item on the timeline card 1`] = `
               >
                 2018
               </p>
-              <p
+              <div
                 class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-0"
               >
@@ -657,7 +657,7 @@ exports[`test unselecting an item on the timeline card 1`] = `
                 >
                   Fri
                 </div>
-              </p>
+              </div>
             </div>
             <div
               class="timeline timelineStart"
@@ -692,7 +692,7 @@ exports[`test unselecting an item on the timeline card 1`] = `
               >
                 2018
               </p>
-              <p
+              <div
                 class="MuiTypography-root timelineDate MuiTypography-body1 MuiTypography-alignCenter"
                 data-testid="timeline-date-1"
               >
@@ -702,7 +702,7 @@ exports[`test unselecting an item on the timeline card 1`] = `
                 >
                   Fri
                 </div>
-              </p>
+              </div>
             </div>
             <div
               class="timeline timelineEnd"

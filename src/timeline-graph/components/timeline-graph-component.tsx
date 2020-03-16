@@ -33,7 +33,7 @@ export const TimelineGraphComponent = (props: Props) => {
     classes = {},
   } = props;
   const entries = rows.map((item, index) => {
-    const date = parseDate(item.date);
+    const date = parseDate(item.date) || 0;
     const year = format(date, "yyyy");
     const paperClass = onSelect
       ? styles.timelinePaperButton
@@ -91,6 +91,7 @@ export const TimelineGraphComponent = (props: Props) => {
             {year}
           </Typography>
           <Typography
+            component="div"
             classes={{
               root: styles.timelineDate,
             }}

@@ -11,7 +11,7 @@
     "cy:run": "cypress run",
     "cy:record": "cypress run --record",
     "cover": "open coverage/lcov-report/index.html",
-    "flow": "yarn tsc",
+    "check-types": "yarn tsc",
     "lint": "yarn flow && tsdx lint src",
     "lint-fix": "yarn lint --fix",
     "format": "prettier --write \"*.js\" cypress/**/*.js && yarn lint-fix",

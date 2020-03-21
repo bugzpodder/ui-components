@@ -1,6 +1,7 @@
 ## 2.1.0
 
 1. Handle string values properly in date components.
+2. Support nested routes in tabbed pages.
 
 ## 2.0.0 - 2020-01-21
 

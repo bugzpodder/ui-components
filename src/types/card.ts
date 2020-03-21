@@ -36,12 +36,14 @@ export type MenuItem = {
 export type PageConfig = {
   key: string;
   label: ReactNode;
-  Component: ComponentType<any>;
+  Component?: ComponentType<any>;
   componentProps?: Record<string, any>;
   id?: string;
   className?: string;
   menuContents?: MenuItem[];
   tabClasses?: Record<string, any>;
+  to?: string;
+  tabComponent?: ComponentType<any>;
 };
 
 export type HeaderAction = ClickableItem & {
@@ -53,13 +55,15 @@ export type HeaderAction = ClickableItem & {
 export type SlimPageConfig = {
   key: string;
   label: ReactNode;
-  Component: ComponentType<any>;
+  Component?: ComponentType<any>;
   componentProps?: Record<string, any>;
   id?: string;
   className?: string;
   tabClasses?: Record<string, any>;
   isVisible?: boolean;
   isDisabled?: boolean;
+  to?: string;
+  tabComponent?: ComponentType<any>;
 };
 
 export type SlimPageClasses = {

@@ -31,12 +31,14 @@ export declare type MenuItem = {
 export declare type PageConfig = {
     key: string;
     label: ReactNode;
-    Component: ComponentType<any>;
+    Component?: ComponentType<any>;
     componentProps?: Record<string, any>;
     id?: string;
     className?: string;
     menuContents?: MenuItem[];
     tabClasses?: Record<string, any>;
+    to?: string;
+    tabComponent?: ComponentType<any>;
 };
 export declare type HeaderAction = ClickableItem & {
     id?: string;
@@ -46,13 +48,15 @@ export declare type HeaderAction = ClickableItem & {
 export declare type SlimPageConfig = {
     key: string;
     label: ReactNode;
-    Component: ComponentType<any>;
+    Component?: ComponentType<any>;
     componentProps?: Record<string, any>;
     id?: string;
     className?: string;
     tabClasses?: Record<string, any>;
     isVisible?: boolean;
     isDisabled?: boolean;
+    to?: string;
+    tabComponent?: ComponentType<any>;
 };
 export declare type SlimPageClasses = {
     root?: string;

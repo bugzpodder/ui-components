@@ -40,7 +40,15 @@ export const TabsComponent = (props: Props) => {
       {pageConfigs
         .filter(({ isVisible = true }) => isVisible)
         .map(tab => {
-          const { key, label, id, tabClasses = {}, isDisabled } = tab;
+          const {
+            key,
+            label,
+            id,
+            tabClasses = {},
+            isDisabled,
+            to,
+            tabComponent,
+          } = tab;
           return (
             <Tab
               wrapped={!wrapTabLabels}
@@ -49,6 +57,8 @@ export const TabsComponent = (props: Props) => {
               label={label}
               id={id}
               data-testid={id}
+              to={to}
+              component={tabComponent}
               classes={{
                 ...tabClasses,
                 root: classNames(classes.tab, styles.tab, "tabbed-page-tab"),

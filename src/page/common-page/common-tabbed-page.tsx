@@ -90,7 +90,9 @@ export const CommonTabbedPage: React.FC<Props> = props => {
     selectedMenuContents = selectedTab.menuContents || [];
     PageContent = (
       <div className={classNames(styles.contentContainer, contentContainer)}>
-        <SelectedComponent {...(selectedTab.componentProps || {})} />
+        {SelectedComponent ? (
+          <SelectedComponent {...(selectedTab.componentProps || {})} />
+        ) : null}
       </div>
     );
   }

@@ -90,7 +90,9 @@ export const SlimTabbedPage: React.FC<Props> = props => {
   let PageContent: ReactNode = null;
   if (selectedTab && selectedTab.Component) {
     const SelectedComponent = selectedTab.Component;
-    PageContent = <SelectedComponent {...(selectedTab.componentProps || {})} />;
+    PageContent = SelectedComponent ? (
+      <SelectedComponent {...(selectedTab.componentProps || {})} />
+    ) : null;
   }
   const { tabs, tab, ...commonPageClasses } = classes;
   return (

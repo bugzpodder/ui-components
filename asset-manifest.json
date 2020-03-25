@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/grailbio/ui-components/static/css/main.9e489105.chunk.css",
-    "main.js": "/grailbio/ui-components/build/main.3103bb81.js",
+    "main.css": "/grailbio/ui-components/static/css/main.ee767ef8.chunk.css",
+    "main.js": "/grailbio/ui-components/build/main.841ca7fa.js",
     "runtime-main.js": "/grailbio/ui-components/build/bundle.9ce7b3f9.js",
     "build/2.af0688c9.js": "/grailbio/ui-components/build/2.af0688c9.js",
     "42173809eb07bf51325e.worker.js": "/grailbio/ui-components/42173809eb07bf51325e.worker.js",
     "42173809eb07bf51325e.worker.js.LICENSE.txt": "/grailbio/ui-components/42173809eb07bf51325e.worker.js.LICENSE.txt",
     "build/2.af0688c9.js.LICENSE.txt": "/grailbio/ui-components/build/2.af0688c9.js.LICENSE.txt",
     "index.html": "/grailbio/ui-components/index.html",
-    "precache-manifest.75a520304682565530ed1120f91ef7e9.js": "/grailbio/ui-components/precache-manifest.75a520304682565530ed1120f91ef7e9.js",
+    "precache-manifest.839fbcfaab068e4c747929712ab9df82.js": "/grailbio/ui-components/precache-manifest.839fbcfaab068e4c747929712ab9df82.js",
     "service-worker.js": "/grailbio/ui-components/service-worker.js",
-    "static/css/main.9e489105.chunk.css.map": "/grailbio/ui-components/static/css/main.9e489105.chunk.css.map",
+    "static/css/main.ee767ef8.chunk.css.map": "/grailbio/ui-components/static/css/main.ee767ef8.chunk.css.map",
     "static/media/sample.pdf": "/grailbio/ui-components/static/media/sample.3352e9f6.pdf"
   },
   "entrypoints": [
     "build/bundle.9ce7b3f9.js",
     "build/2.af0688c9.js",
-    "static/css/main.9e489105.chunk.css",
-    "build/main.3103bb81.js"
+    "static/css/main.ee767ef8.chunk.css",
+    "build/main.841ca7fa.js"
   ]
 }

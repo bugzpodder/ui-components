@@ -7,8 +7,8 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 afterEach(cleanup);
 
 test("render avatar with menu", () => {
-  const mockMenuOpen = jest.fn(result => result);
-  const mockItemClick = jest.fn(result => result);
+  const mockMenuOpen = jest.fn((result) => result);
+  const mockItemClick = jest.fn((result) => result);
   const menuItems = [
     {
       content: "Test Item",

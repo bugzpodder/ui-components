@@ -35,7 +35,7 @@ const TestMultiSelect = (props: Props) => {
 };
 
 test("render CommonMultiSelect with preloaded values and clear one value", () => {
-  const mockOnChange = jest.fn(result => result);
+  const mockOnChange = jest.fn((result) => result);
   const { container, getAllByRole } = render(
     <TestMultiSelect mockOnChange={mockOnChange} />,
   );

@@ -20,7 +20,7 @@ type Props = {
   setIsOpen: (x0: boolean) => any;
 };
 
-export const OmniDialog: React.FC<Props> = props => {
+export const OmniDialog: React.FC<Props> = (props) => {
   const {
     setIsOpen,
     searchDefs,

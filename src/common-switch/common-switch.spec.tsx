@@ -6,7 +6,7 @@ import { cleanup, fireEvent, render } from "@testing-library/react";
 afterEach(cleanup);
 
 test("render primary common switch", () => {
-  const mockChange = jest.fn(result => result);
+  const mockChange = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <div>
@@ -29,7 +29,7 @@ test("render primary common switch", () => {
 });
 
 test("render secondary common switch", () => {
-  const mockChange = jest.fn(result => result);
+  const mockChange = jest.fn((result) => result);
   const { getByTestId } = render(
     <TestWrapper>
       <div>
@@ -48,7 +48,7 @@ test("render secondary common switch", () => {
 });
 
 test("render error common switch", () => {
-  const mockChange = jest.fn(result => result);
+  const mockChange = jest.fn((result) => result);
   const { container } = render(
     <TestWrapper>
       <div>

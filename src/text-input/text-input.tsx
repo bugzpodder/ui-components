@@ -92,11 +92,11 @@ export const TextInput = (props: Props) => {
         },
         disableUnderline: readOnly,
         readOnly,
-        onFocus: event => {
+        onFocus: (event) => {
           onFocus && onFocus(event);
           setIsInputFocused(true);
         },
-        onBlur: event => {
+        onBlur: (event) => {
           onBlur && onBlur(event);
           setIsInputFocused(false);
         },

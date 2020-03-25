@@ -71,13 +71,13 @@ export const CommonMultiPageDialog = (props: Props) => {
       ({ isLeftButton = false, pages = [] }) =>
         isLeftButton && (pages.length === 0 || pages.includes(pageIndex)),
     )
-    .map(action => actionToButton(action));
+    .map((action) => actionToButton(action));
   const rightActionButtons = actions
     .filter(
       ({ isLeftButton = false, pages = [] }) =>
         !isLeftButton && (pages.length === 0 || pages.includes(pageIndex)),
     )
-    .map(action => actionToButton(action));
+    .map((action) => actionToButton(action));
   return (
     // @ts-ignore: data-testid does not exist on type.
     <Dialog

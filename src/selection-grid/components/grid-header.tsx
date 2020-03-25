@@ -8,7 +8,7 @@ type Props = {
   classes?: SelectionGridClasses;
 };
 
-export const GridHeader: React.FC<Props> = props => {
+export const GridHeader: React.FC<Props> = (props) => {
   const { children, classes = {} } = props;
   return (
     <div

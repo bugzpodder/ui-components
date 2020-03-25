@@ -17,7 +17,7 @@ type Props = {
 /**
  * Provides a styled component for displaying read-only input fields with a validation icon.
  */
-export const ValidatedReadOnlyTextField: React.FC<Props> = props => {
+export const ValidatedReadOnlyTextField: React.FC<Props> = (props) => {
   const {
     id,
     children,

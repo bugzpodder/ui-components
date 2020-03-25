@@ -32,7 +32,7 @@ export const TabsComponent = (props: Props) => {
         root: classNames(className, styles.tabs),
       }}
     >
-      {pageConfigs.map(tab => {
+      {pageConfigs.map((tab) => {
         const { key, label, id, tabClasses = {} } = tab;
         return (
           <Tab

@@ -85,7 +85,7 @@ export const SelectionGrid = (props: Props) => {
   };
 
   const selectedIndices = new Set();
-  selectedCoordinates.forEach(coordinate => {
+  selectedCoordinates.forEach((coordinate) => {
     const { rowIndex, colIndex } = coordinate;
     if (
       rowIndex >= 0 &&

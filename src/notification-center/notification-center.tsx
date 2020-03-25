@@ -40,7 +40,7 @@ export const NotificationCenter = (props: Props) => {
 
   const handleClick = (event: MouseEvent<HTMLButtonElement>): void => {
     anchorEl.current = event.currentTarget;
-    setIsVisible(isVisible => !isVisible);
+    setIsVisible((isVisible) => !isVisible);
   };
 
   const handleClose = (): void => {

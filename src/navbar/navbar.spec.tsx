@@ -4,11 +4,10 @@ import { MemoryRouter } from "react-router-dom";
 import { Navbar } from "./navbar";
 import { TEST_EXTERNAL_DOMAINS, TestWrapper } from "../test-utils";
 import { Typography } from "@material-ui/core";
-import { cleanup, fireEvent, render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import { getListItemDataTestId } from "./util";
 
 afterEach(() => {
-  cleanup();
   MockDate.reset();
 });
 
@@ -60,7 +59,7 @@ test("render default Sidebar", () => {
   );
 
   // Test navbar contents. Sidebar contents are tested in sidebar.spec.js.
-  Object.keys(items).forEach(key => {
+  Object.keys(items).forEach((key) => {
     const content = items[key];
     expect(getByTestId(key)).toBeInTheDocument();
     expect(getByTestId(key)).toHaveTextContent(content);
@@ -102,7 +101,7 @@ test("custom Sidebar", () => {
   );
   fireEvent.click(getByTestId("main-nav-button"));
   expect(getByTestId("navbar-sidebar")).toBeInTheDocument();
-  testSidebarContent.forEach(item => {
+  testSidebarContent.forEach((item) => {
     const parent = getListItemDataTestId(item.name);
     expect(getByTestId(parent)).toBeInTheDocument();
   });

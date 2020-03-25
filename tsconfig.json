@@ -8,7 +8,7 @@
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./",
+    "rootDir": "./src",
     "noEmit": true,
     "strict": false,
     "noImplicitAny": false,
@@ -26,5 +26,5 @@
   },
   "include": ["src"],
   "exclude": ["**/*.spec.tsx"],
-  "files": ["setupTests.ts"]
+  "files": ["src/setupTests.ts"]
 }

@@ -19,7 +19,7 @@ export const OmniChips = (props: Props) => {
   const { searchOptions, addOmniSearchCommand } = props;
   return (
     <div className={styles.omniChips} data-testid="omni-chips-container">
-      {searchOptions.map(searchOption => {
+      {searchOptions.map((searchOption) => {
         const { name, values = [] } = searchOption;
         const displayName = name === OMNI_KEY ? "" : `${name}: `;
         const onDelete = addOmniSearchCommand

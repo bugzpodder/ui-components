@@ -10,7 +10,7 @@ export const validateGridData = (
       `Number of rows in gridData (${gridData.length}) does not match numRows (${numRows})`,
     );
   }
-  gridData.forEach(gridRow => {
+  gridData.forEach((gridRow) => {
     if (gridRow.length !== numCols) {
       throw new Error(
         `Number of columns in gridData (${gridRow.length}) does not match numCols (${numCols})`,

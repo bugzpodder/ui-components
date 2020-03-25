@@ -39,7 +39,7 @@ export const TabsComponent = (props: Props) => {
     >
       {pageConfigs
         .filter(({ isVisible = true }) => isVisible)
-        .map(tab => {
+        .map((tab) => {
           const {
             key,
             label,

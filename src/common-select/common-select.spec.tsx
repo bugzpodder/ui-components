@@ -34,7 +34,7 @@ const TestCommonSelect = (props: any) => {
         id="test"
         helperText="some helper text"
         value={value}
-        formatOption={datum => (
+        formatOption={(datum) => (
           <div>
             <div>{datum.label}</div>
             <div>{datum.value}</div>
@@ -49,14 +49,14 @@ const TestCommonSelect = (props: any) => {
 };
 
 test("render and test CommonSelect", () => {
-  const mockOnChange = jest.fn(result => result);
+  const mockOnChange = jest.fn((result) => result);
   const { getByText, getByTestId } = render(
     <TestCommonSelect mockOnChange={mockOnChange} />,
   );
   fireEvent.click(getByTestId("common-select-input"));
   // Check document.
   // expect(container).toMatchSnapshot();
-  COUNTRIES.forEach(country => {
+  COUNTRIES.forEach((country) => {
     expect(getByTestId(country.value)).toBeInTheDocument();
   });
   expect(getByTestId("common-select-helper-text")).toBeInTheDocument();
@@ -80,7 +80,7 @@ test("render and test CommonSelect", () => {
 test("CommonSelect label", () => {
   const label = "Country";
   const { getByTestId } = render(<TestCommonSelect label={label} />);
-  // TODO (yzhao): adding a label causes indeterminate for attribute on label.
+  // TODO (nsawas): adding a label causes indeterminate for attribute on label.
   // expect(container).toMatchSnapshot();
   expect(getByTestId("common-select-input-label")).toHaveTextContent(label);
 });
@@ -135,8 +135,8 @@ test("render creatable CommonSelect", () => {
 const TestAsyncCommonSelect = (props: any) => {
   const { value, inputValue, initialMessage } = props;
   const filterCountries = (inputValue): Promise<any[]> => {
-    return new Promise(resolve => {
-      const newCountries = COUNTRIES.filter(country =>
+    return new Promise((resolve) => {
+      const newCountries = COUNTRIES.filter((country) =>
         inputValue
           ? country.label.toLowerCase().includes(inputValue.toLowerCase())
           : true,
@@ -175,7 +175,7 @@ test("async CommonSelect with initial and no options messages", () => {
   expect(getByTestId("common-select-no-options-message")).toHaveTextContent(
     "No results found",
   );
-  // TODO (yzhao): adding a label causes indeterminate aria-label attribute.
+  // TODO (nsawas): adding a label causes indeterminate aria-label attribute.
   // expect(container).toMatchSnapshot();
 });
 

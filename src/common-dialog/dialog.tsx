@@ -47,7 +47,7 @@ type Props = {
 };
 
 /** `CommonDialog` provides a component to be used as a UI modal. */
-export const CommonDialog: React.FC<Props> = props => {
+export const CommonDialog: React.FC<Props> = (props) => {
   const {
     actions,
     children,
@@ -60,10 +60,10 @@ export const CommonDialog: React.FC<Props> = props => {
   } = props;
   const leftActionButtons = actions
     .filter(({ isLeftButton = false }) => isLeftButton)
-    .map(action => actionToButton(action));
+    .map((action) => actionToButton(action));
   const rightActionButtons = actions
     .filter(({ isLeftButton = false }) => !isLeftButton)
-    .map(action => actionToButton(action));
+    .map((action) => actionToButton(action));
   return (
     // @ts-ignore: data-testid does not exist on type.
     <Dialog

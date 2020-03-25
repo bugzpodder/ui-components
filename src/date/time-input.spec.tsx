@@ -25,7 +25,7 @@ const TestTimeInput = (props: any) => {
 
 test("render time input", () => {
   const testTime = "2016-03-07 16:20:00";
-  const mockOnChange = jest.fn(result => result);
+  const mockOnChange = jest.fn((result) => result);
   const { rerender, getByTestId, getByPlaceholderText, container } = render(
     <TestTimeInput placeholder="test" mockOnChange={() => {}} />,
   );

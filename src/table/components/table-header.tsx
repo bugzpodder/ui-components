@@ -33,7 +33,7 @@ export const TableHeader = (props: Props) => {
     wrapHeader,
   } = props;
 
-  const visibleColumns = columns.filter(column => column.isVisible);
+  const visibleColumns = columns.filter((column) => column.isVisible);
   const { onSort } = sortingProps;
   return (
     <TableHead className={classNames("TableHeader", styles.tableHead)}>
@@ -86,7 +86,7 @@ export const TableHeader = (props: Props) => {
           >
             <ColumnVisibilityChooser
               columns={columns.filter(
-                column => column.accessor !== "COLUMN_SELECT",
+                (column) => column.accessor !== "COLUMN_SELECT",
               )}
               columnVisibility={columnVisibility}
               setColumnVisibility={setColumnVisibility}

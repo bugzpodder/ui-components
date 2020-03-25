@@ -59,7 +59,7 @@ const customTheme = createMuiTheme({
   },
 });
 
-export const StyleWrapper: React.FC = props => {
+export const StyleWrapper: React.FC = (props) => {
   const { children } = props;
 
   return (

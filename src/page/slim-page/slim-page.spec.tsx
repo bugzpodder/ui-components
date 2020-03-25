@@ -77,7 +77,7 @@ test("common page classes", () => {
     "common-page-subtitle": "test-subtitle",
     "common-page-content": "test-content",
   };
-  Object.keys(classes).forEach(key => {
+  Object.keys(classes).forEach((key) => {
     expect(getByTestId(key)).toBeInTheDocument();
     expect(getByTestId(key)).toHaveClass(classes[key]);
   });

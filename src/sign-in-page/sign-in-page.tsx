@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 });
 
 const DEFAULT_SUBHEADER = "Detect cancer early, when it can be cured.";
-export const SignInPage: React.FC<Props> = props => {
+export const SignInPage: React.FC<Props> = (props) => {
   const cssStyles = useStyles(props);
   const { logo, onSignIn, subheader = DEFAULT_SUBHEADER, children } = props;
   return (

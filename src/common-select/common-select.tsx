@@ -63,7 +63,7 @@ export const CommonSelect = (props: CommonSelectProps) => {
   return (
     <CommonSelectComponent
       selectType={selectType}
-      onChange={value => {
+      onChange={(value) => {
         if (!value || (Array.isArray(value) && value.length === 0)) {
           onChange({});
         } else if (selectType === "creatable" && isString(value)) {

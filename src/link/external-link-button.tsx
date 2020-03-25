@@ -8,7 +8,7 @@ import styles from "./link-button.module.scss";
  * https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/.
  * Similar to ExternalLink but it is represented in a button.
  */
-export const ExternalLinkButton: React.FC<ButtonProps> = props => {
+export const ExternalLinkButton: React.FC<ButtonProps> = (props) => {
   const { children, className, ...buttonProps } = props;
   const button = (
     // @ts-ignore property target does not exist.

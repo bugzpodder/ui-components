@@ -8,7 +8,7 @@ type Props = {
   sortFieldId: string;
 };
 
-export const InnerTableHeader: React.FC<Props> = props => {
+export const InnerTableHeader: React.FC<Props> = (props) => {
   const { children, sortingProps, sortFieldId } = props;
   const { onSort, tableOptions } = sortingProps;
   if (onSort && (!tableOptions || !tableOptions.sortOptions)) {
@@ -51,7 +51,7 @@ export const InnerTableHeader: React.FC<Props> = props => {
       data-testid={`sort-${sortFieldId}`}
       active={isSorted}
       direction={sortOrder}
-      onClick={event => handleClickSort(event, sortFieldId)}
+      onClick={(event) => handleClickSort(event, sortFieldId)}
     >
       {children}
     </TableSortLabel>

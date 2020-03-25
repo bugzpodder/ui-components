@@ -22,14 +22,14 @@ export const SuggestionsOmniField = (props: Props) => {
   }, [loadSuggestions]);
   return (
     <CommonSuggest
-      suggestions={suggestions.map(suggestion => `"${suggestion}"`)}
+      suggestions={suggestions.map((suggestion) => `"${suggestion}"`)}
       renderOption={(option: string) => (
         <>{option.substr(1, option.length - 2)}</>
       )}
       placeholder={placeholder}
       id={searchKey}
       value={searchValue || ""}
-      onChange={selected => onChange(searchKey, selected)}
+      onChange={(selected) => onChange(searchKey, selected)}
       onEnter={onSearch}
     />
   );

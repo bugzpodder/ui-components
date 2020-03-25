@@ -78,7 +78,7 @@ const TestCommonTabbedPage = (props: any) => {
 };
 
 test("render common tabbed page", () => {
-  const mockOnChange = jest.fn(result => result);
+  const mockOnChange = jest.fn((result) => result);
   const { container, queryByTestId, getByTestId } = render(
     <TestCommonTabbedPage mockOnChange={mockOnChange} />,
   );

@@ -166,7 +166,7 @@ export const Sidebar = (props: Props) => {
         className={classNames({ [styles.nested]: nested })}
         dense={nested}
         disableRipple
-        onClick={event => {
+        onClick={(event) => {
           event.stopPropagation();
         }}
       >
@@ -238,7 +238,7 @@ export const Sidebar = (props: Props) => {
         tabIndex={0}
         data-testid="navbar-sidebar-list"
         role="button"
-        onClick={event => {
+        onClick={(event) => {
           if (
             event.ctrlKey ||
             event.shiftKey ||

@@ -55,7 +55,7 @@ const pagedTableColumnsToExportableColumnsIfNecessary = (
   columns: PagedTableColumn<any>[],
 ): ExportableColumn<any>[] => {
   return columns
-    .filter(column => !column.excludeFromExport)
+    .filter((column) => !column.excludeFromExport)
     .map(({ accessor, Header, exportHeaderName, exportAccessor }, index) => {
       const exportHeaderNameToUse =
         exportHeaderName ||

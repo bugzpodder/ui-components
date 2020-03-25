@@ -72,7 +72,7 @@ test("test invalid timeline card", () => {
 });
 
 test("test selecting an item on the timeline card", () => {
-  const mockOnSelect = jest.fn(result => result);
+  const mockOnSelect = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <TimelineCard onSelect={mockOnSelect} rows={rows} />
@@ -84,7 +84,7 @@ test("test selecting an item on the timeline card", () => {
 });
 
 test("test unselecting an item on the timeline card", () => {
-  const mockOnSelect = jest.fn(result => result);
+  const mockOnSelect = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <TimelineCard

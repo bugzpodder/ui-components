@@ -66,7 +66,7 @@ export const TableComponent = (props: Props) => {
     highlightedRowId,
   };
   const availableColumns = columns
-    .filter(column => column.excludeFromTable !== true)
+    .filter((column) => column.excludeFromTable !== true)
     .map((column, index) => ({
       ...column,
       index,
@@ -77,13 +77,13 @@ export const TableComponent = (props: Props) => {
     // This simply constructs a map from the column index to a boolean
     // representing whether or not the column is visible.
     mapValues(
-      keyBy(availableColumns, column => column.index),
+      keyBy(availableColumns, (column) => column.index),
       // TODO(ecarrel): maybe retrieve visibility values from localstorage once
       //  they are stored there.
-      column => column.showByDefault !== false,
+      (column) => column.showByDefault !== false,
     ),
   );
-  let tableColumns = availableColumns.map(column => ({
+  let tableColumns = availableColumns.map((column) => ({
     ...column,
     isVisible: !hasColumnVisibilityChooser || columnVisibility[column.index],
   }));
@@ -95,12 +95,12 @@ export const TableComponent = (props: Props) => {
       ...tableColumns,
     ];
   }
-  const hasHeaders = tableColumns.find(column => column.Header);
+  const hasHeaders = tableColumns.find((column) => column.Header);
   return (
     <Table
       tabIndex={0}
       data-testid="table"
-      onKeyDown={event => handleKeyboardHighlight(event, highlightRowProps)}
+      onKeyDown={(event) => handleKeyboardHighlight(event, highlightRowProps)}
       className={classNames(classes.table, styles.table)}
       {...tableProps}
     >

@@ -42,7 +42,7 @@ type AvatarIconProps = {
   menuItems?: Record<string, any>[];
 } & AvatarComponentProps;
 
-const AvatarComponent: React.FC<AvatarComponentProps> = props => {
+const AvatarComponent: React.FC<AvatarComponentProps> = (props) => {
   const { pictureUrl, children, classes = {} } = props;
   if (pictureUrl) {
     return (
@@ -71,7 +71,7 @@ const AvatarComponent: React.FC<AvatarComponentProps> = props => {
 /** `CommonDialog` provides an avatar icon with a dropdown menu. Children passed
  *  to the AvatarIcon component can be used to implement custom icons or letters
  *  in the Avatar */
-export const AvatarIcon: React.FC<AvatarIconProps> = props => {
+export const AvatarIcon: React.FC<AvatarIconProps> = (props) => {
   const avatarRef = useRef(null);
 
   const {

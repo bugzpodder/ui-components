@@ -7,7 +7,7 @@ afterEach(cleanup);
 
 const TestReadOnlyTextField: React.FC<React.ComponentProps<
   typeof ReadOnlyTextField
->> = props => {
+>> = (props) => {
   const { children, ...otherProps } = props;
   return (
     <TestWrapper>

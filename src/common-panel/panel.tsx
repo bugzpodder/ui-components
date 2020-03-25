@@ -29,7 +29,7 @@ type Props = {
 };
 
 /** Provides a styled section with a title and body. */
-export const CommonPanel: React.FC<Props> = props => {
+export const CommonPanel: React.FC<Props> = (props) => {
   const {
     title,
     classes = {},

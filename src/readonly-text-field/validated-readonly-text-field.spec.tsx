@@ -7,7 +7,7 @@ afterEach(cleanup);
 
 const TestValidatedReadOnlyTextField: React.FC<React.ComponentProps<
   typeof ValidatedReadOnlyTextField
->> = props => {
+>> = (props) => {
   const { children, ...otherProps } = props;
   return (
     <TestWrapper>

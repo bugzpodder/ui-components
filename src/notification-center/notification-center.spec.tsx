@@ -44,8 +44,8 @@ const TestNotificationCenter = (props: any) => {
 };
 
 test("render notification center", () => {
-  const mockRemoveNotification = jest.fn(result => result);
-  const mockRemoveAllNotifications = jest.fn(result => result);
+  const mockRemoveNotification = jest.fn((result) => result);
+  const mockRemoveAllNotifications = jest.fn((result) => result);
   const { container, getByTestId, queryByTestId } = render(
     <TestNotificationCenter
       mockRemoveNotification={mockRemoveNotification}

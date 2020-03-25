@@ -62,7 +62,7 @@ type Props = {
  * in a new environment, we recommend building a new child component for your
  * environment; take a look at the `TabbedLimsPage` component as an example.
  */
-export const CommonTabbedPage: React.FC<Props> = props => {
+export const CommonTabbedPage: React.FC<Props> = (props) => {
   const {
     classes = {},
     headerActions = [],
@@ -79,7 +79,7 @@ export const CommonTabbedPage: React.FC<Props> = props => {
   if (!isLoading && !pageConfigs) {
     throw new Error("pageConfigs is required");
   }
-  const selectedTab = pageConfigs.find(tab => tab.key === activeTab);
+  const selectedTab = pageConfigs.find((tab) => tab.key === activeTab);
   if (!isLoading && !selectedTab) {
     console.error("no pageConfig keys match the provided activeTab");
   }

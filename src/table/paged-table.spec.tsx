@@ -15,7 +15,7 @@ import {
   cleanup,
   fireEvent,
   render,
-  wait,
+  waitFor,
   waitForElementToBeRemoved,
 } from "@testing-library/react";
 
@@ -85,7 +85,7 @@ test("render paged table with no results and isFullBleed, noMargin", () => {
 });
 
 test("render paged table with no initially selected items, then select items", () => {
-  const mockSelect = jest.fn(result => result);
+  const mockSelect = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
@@ -106,7 +106,7 @@ test("render paged table with no initially selected items, then select items", (
 });
 
 test("render paged table with all items selected, then unselect items", () => {
-  const mockSelect = jest.fn(result => result);
+  const mockSelect = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
@@ -130,7 +130,7 @@ test("render paged table with all items selected, then unselect items", () => {
 
 test("render paged table with default ids, and test row highlighting", () => {
   const mockSelect = jest.fn();
-  const mockHandleHighlight = jest.fn(result => result);
+  const mockHandleHighlight = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
@@ -157,8 +157,8 @@ test("render paged table and test pagination", () => {
     tableOptions.offset,
     tableOptions.offset + (tableOptions.count + 1),
   );
-  const mockPagination = jest.fn(result => result);
-  const mockSelect = jest.fn(result => result);
+  const mockPagination = jest.fn((result) => result);
+  const mockSelect = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
@@ -188,7 +188,7 @@ test("render paged table and test pagination", () => {
 });
 
 test("render paged table and test sorting", () => {
-  const mockSort = jest.fn(result => result);
+  const mockSort = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <PagedTable
@@ -231,7 +231,7 @@ test("render paged table with column visibility chooser", async () => {
   ).toBeDisabled();
   expect(getByTestId("column-item-checkbox-1")).toHaveAttribute("checked", "");
   fireEvent.click(getByTestId("column-item-checkbox-1"));
-  await wait(() => {
+  await waitFor(() => {
     expect(
       getByTestId("column-visibility-chooser-popover-apply-button"),
     ).not.toBeDisabled();

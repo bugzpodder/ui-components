@@ -64,8 +64,8 @@ const TestMultiPageModal = (props: any) => {
 };
 
 test("render multi page dialog", () => {
-  const mockSetPage = jest.fn(result => result);
-  const mockHide = jest.fn(result => result);
+  const mockSetPage = jest.fn((result) => result);
+  const mockHide = jest.fn((result) => result);
   const { getByText, getByTestId } = render(
     <TestMultiPageModal mockSetPage={mockSetPage} mockHide={mockHide} />,
   );

@@ -73,7 +73,7 @@ export const OmniField = (props: Props) => {
           isActive ? styles.fieldHighlight : styles.field,
         )}
         onChange={omniChange}
-        onKeyDown={event => {
+        onKeyDown={(event) => {
           switch (event.keyCode) {
             case keycode("Enter"):
               return onSearch();

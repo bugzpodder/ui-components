@@ -17,7 +17,7 @@ type Props = {
 };
 
 /** Provides a styled component for displaying read-only input fields. */
-export const ReadOnlyTextField: React.FC<Props> = props => {
+export const ReadOnlyTextField: React.FC<Props> = (props) => {
   const {
     children,
     className = "",

@@ -24,7 +24,7 @@ type Props = {
   toggleList?: () => any;
 };
 
-export const CollapsableListItem: React.FC<Props> = props => {
+export const CollapsableListItem: React.FC<Props> = (props) => {
   const {
     headerText,
     headerTextProps,
@@ -42,7 +42,7 @@ export const CollapsableListItem: React.FC<Props> = props => {
   }, [isOpen]);
 
   const toggleList = (): void => {
-    setIsCurrentlyOpen(isOpen => !isOpen);
+    setIsCurrentlyOpen((isOpen) => !isOpen);
   };
 
   const handleToggleList = props.toggleList || toggleList;
@@ -53,7 +53,7 @@ export const CollapsableListItem: React.FC<Props> = props => {
         button
         disableRipple
         data-testid={dataTestId}
-        onClick={event => {
+        onClick={(event) => {
           handleToggleList();
           event.stopPropagation();
         }}

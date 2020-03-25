@@ -54,7 +54,7 @@ export type CommonCardProps = {
  * `CommonCard` provides a component to create basic Material-UI Cards.
  * This was made in order to standardize how we implement cards across UIs.
  */
-export const CommonCard: React.FC<CommonCardProps> = props => {
+export const CommonCard: React.FC<CommonCardProps> = (props) => {
   const {
     classes = {},
     children,

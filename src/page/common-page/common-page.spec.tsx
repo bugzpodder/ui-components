@@ -90,7 +90,7 @@ test("common page classes", () => {
     "common-page-content": "test-content",
     "common-page-side-menu": "test-side-menu",
   };
-  Object.keys(classes).forEach(key => {
+  Object.keys(classes).forEach((key) => {
     expect(getByTestId(key)).toBeInTheDocument();
     expect(getByTestId(key)).toHaveClass(classes[key]);
   });

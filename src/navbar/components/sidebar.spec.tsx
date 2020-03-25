@@ -48,7 +48,7 @@ const TestSidebar = (props: any) => {
 };
 
 test("render temporary Sidebar", () => {
-  const mockToggle = jest.fn(result => result);
+  const mockToggle = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestSidebar drawerVariant="temporary" mockToggle={mockToggle} />,
   );
@@ -60,14 +60,14 @@ test("render temporary Sidebar", () => {
   expect(getByTestId("navbar-sidebar-footer")).toHaveTextContent("Footer");
 
   // Verify testSidebarItems are displayed in the sidebar.
-  testSidebarItems.forEach(item => {
+  testSidebarItems.forEach((item) => {
     const parent = getListItemDataTestId(item.name);
     expect(getByTestId(parent)).toBeInTheDocument();
 
     // If list is collapsable, test children.
     if (item.children && item.children.length) {
       fireEvent.click(getByTestId(parent));
-      item.children.forEach(child => {
+      item.children.forEach((child) => {
         const testId = getListItemDataTestId(child.name);
         expect(getByTestId(testId)).toBeInTheDocument();
         expect(getByTestId(`${testId}-text`)).toBeInTheDocument();
@@ -96,7 +96,7 @@ test("render temporary Sidebar", () => {
 });
 
 test("persistent Sidebar", () => {
-  const mockToggle = jest.fn(result => result);
+  const mockToggle = jest.fn((result) => result);
   const { queryByTestId } = render(
     <TestSidebar drawerVariant="persistent" mockToggle={mockToggle} />,
   );

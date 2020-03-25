@@ -53,11 +53,11 @@ type Props = {
  * in a new environment, we recommend building a new child component for your
  * environment; take a look at the `LimsPage` component as an example.
  */
-export const CommonPage: React.FC<Props> = props => {
+export const CommonPage: React.FC<Props> = (props) => {
   const [sideMenuIsExpanded, setSideMenuIsExpanded] = useState(false);
 
   const toggleSideMenu = (): void => {
-    setSideMenuIsExpanded(sideMenuIsExpanded => !sideMenuIsExpanded);
+    setSideMenuIsExpanded((sideMenuIsExpanded) => !sideMenuIsExpanded);
   };
 
   const {

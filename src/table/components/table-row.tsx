@@ -36,7 +36,7 @@ export const PagedTableRow = (props: Props) => {
     className = className(instance, rowIndex);
   }
   const rowIsHighlighted = highlightedRowId === rowId;
-  const visibleColumns = columns.filter(column => column.isVisible);
+  const visibleColumns = columns.filter((column) => column.isVisible);
   return (
     <TableRow
       classes={{

@@ -263,7 +263,7 @@ export const COUNTRY_NAMES = [
 export const COUNTRIES: {
   label: string;
   value: string;
-}[] = COUNTRY_NAMES.map(name => ({ label: name })).map(suggestion => ({
+}[] = COUNTRY_NAMES.map((name) => ({ label: name })).map((suggestion) => ({
   label: suggestion.label,
   value: suggestion.label.toUpperCase().replace(" ", "_"),
 }));

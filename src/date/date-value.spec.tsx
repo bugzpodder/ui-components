@@ -3,11 +3,10 @@ import MomentUtils from "@date-io/moment";
 import React from "react";
 import { DateTimeValue, DateValue, HumanizedDateTime } from ".";
 import { TestWrapper } from "../test-utils";
-import { cleanup, render } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { wrapPickerUtilProvider } from "./picker-util-provider-hoc";
 
 afterEach(() => {
-  cleanup();
   MockDate.reset();
 });
 

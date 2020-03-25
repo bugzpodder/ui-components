@@ -39,7 +39,7 @@ export const Navbar = (props: Props) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = (): void => {
-    setIsSidebarOpen(isSidebarOpen => !isSidebarOpen);
+    setIsSidebarOpen((isSidebarOpen) => !isSidebarOpen);
   };
 
   return (

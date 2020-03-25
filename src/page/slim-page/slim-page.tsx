@@ -31,7 +31,7 @@ const useContentRectWidth = (
     if (!currentRef) {
       return (): void => {};
     }
-    const observer = new WindowObserver(entries => {
+    const observer = new WindowObserver((entries) => {
       // We need to disconnect the observer and call observe upon requesting the animation
       // frame to prevent exceeding the call limit of ResizeObserver.
       // This is a known issue with the ResizeObserver: https://github.com/WICG/ResizeObserver/issues/38.
@@ -99,7 +99,7 @@ const useStyles = makeStyles({
  * in a new environment, we recommend building a new child component for your
  * environment; take a look at the `LimsPageV2` component as an example.
  */
-export const SlimPage: React.FC<Props> = props => {
+export const SlimPage: React.FC<Props> = (props) => {
   const {
     classes = {},
     subtitle = "",
@@ -112,7 +112,7 @@ export const SlimPage: React.FC<Props> = props => {
     ...cardProps
   } = props;
   const hasChildren = Array.isArray(children)
-    ? children.filter(child => child).length > 0
+    ? children.filter((child) => child).length > 0
     : !!children;
   const titleRef = useRef(null);
   const headerActionsRef = useRef(null);

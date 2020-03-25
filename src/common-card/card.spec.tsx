@@ -16,7 +16,7 @@ const TestCommonCard = (props: any) => {
           {
             id: "test",
             content: "Test",
-            onClick: jest.fn(result => result),
+            onClick: jest.fn((result) => result),
           },
         ]}
         title="Test Card"

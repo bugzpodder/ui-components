@@ -6,7 +6,7 @@ import {
   cleanup,
   fireEvent,
   render,
-  wait,
+  waitFor,
   waitForElementToBeRemoved,
 } from "@testing-library/react";
 import {
@@ -116,7 +116,7 @@ test("render simple table with column visibility chooser", async () => {
   ).toBeDisabled();
   expect(getByTestId("column-item-checkbox-1")).toHaveAttribute("checked", "");
   fireEvent.click(getByTestId("column-item-checkbox-1"));
-  await wait(() => {
+  await waitFor(() => {
     expect(
       getByTestId("column-visibility-chooser-popover-apply-button"),
     ).not.toBeDisabled();

@@ -6,8 +6,5 @@ export const getListItemDataTestId = (name: any): string => {
   if (typeof name !== "string" || name === "") {
     return listItem;
   }
-  return `${listItem}-${name
-    .toLowerCase()
-    .split(" ")
-    .join("-")}`;
+  return `${listItem}-${name.toLowerCase().split(" ").join("-")}`;
 };

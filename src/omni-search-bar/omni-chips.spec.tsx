@@ -34,7 +34,7 @@ describe("OmniChips", () => {
     expect(container).toMatchSnapshot();
   });
   it("deletes", () => {
-    const mockAddCommand = jest.fn(result => result);
+    const mockAddCommand = jest.fn((result) => result);
     const { container } = render(
       <TestWrapper>
         <OmniChips

@@ -23,8 +23,8 @@ const TestCommonDialog = (props: any) => {
 };
 
 test("render dialog", () => {
-  const mockHide = jest.fn(result => result);
-  const mockActionOne = jest.fn(result => result);
+  const mockHide = jest.fn((result) => result);
+  const mockActionOne = jest.fn((result) => result);
   const { container, getByText, getByTestId } = render(
     <TestCommonDialog
       title="test"

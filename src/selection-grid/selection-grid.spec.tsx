@@ -56,7 +56,7 @@ const TestSelectionGrid = (props: any) => {
 };
 
 test("render selection grid and select a cell", () => {
-  const mockOnSelect = jest.fn(result => result);
+  const mockOnSelect = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestSelectionGrid mockOnSelect={mockOnSelect} />,
   );
@@ -77,7 +77,7 @@ test("render selection grid and select a cell", () => {
 });
 
 test("render selection grid and select a cell on an inverted grid", () => {
-  const mockOnSelect = jest.fn(result => result);
+  const mockOnSelect = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestSelectionGrid mockOnSelect={mockOnSelect} invertRows />,
   );
@@ -108,8 +108,8 @@ test("selection grid classes", () => {
   const { rerender, getByTestId } = render(
     <TestSelectionGrid classes={classes} />,
   );
-  const mockRowClass = jest.fn(result => result);
-  const mockCellClass = jest.fn(result => result);
+  const mockRowClass = jest.fn((result) => result);
+  const mockCellClass = jest.fn((result) => result);
   expect(getByTestId("selection-grid")).toHaveClass("test-root");
   expect(getByTestId("selection-grid-row-1")).toHaveClass("test-row");
   expect(getByTestId("grid-cell-2")).toHaveClass("test-cell");

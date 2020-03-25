@@ -31,9 +31,7 @@ export const getCheckboxColumn = (
         />
       ),
       Cell: ({ rowId }: PagedTableCell<any>) => {
-        const testId = String(rowId)
-          .toLowerCase()
-          .replace(" ", "-");
+        const testId = String(rowId).toLowerCase().replace(" ", "-");
         return (
           <Checkbox
             id={String(rowId)}
@@ -64,7 +62,7 @@ export const getCheckboxColumn = (
   );
   // FIXME (nsawas): allAreSelected will only work as expected if API is retrieving data using count parameter.
   const allAreSelected =
-    data.length > 0 && ids.every(id => selectedRows.includes(id));
+    data.length > 0 && ids.every((id) => selectedRows.includes(id));
   const someAreSelected = selectedRows.length > 0 && !allAreSelected;
 
   const selectAll = (): void => {
@@ -78,7 +76,7 @@ export const getCheckboxColumn = (
   const selectItem = (rowId: number | string): void => {
     const newSelection = [];
     if (selectedRows.includes(rowId)) {
-      newSelection.push(...selectedRows.filter(item => item !== rowId));
+      newSelection.push(...selectedRows.filter((item) => item !== rowId));
     } else {
       newSelection.push(...selectedRows, rowId);
     }
@@ -106,9 +104,7 @@ export const getCheckboxColumn = (
       />
     ),
     Cell: ({ rowId }: PagedTableCell<any>) => {
-      const testId = String(rowId)
-        .toLowerCase()
-        .replace(" ", "-");
+      const testId = String(rowId).toLowerCase().replace(" ", "-");
       return (
         <Checkbox
           id={String(rowId)}

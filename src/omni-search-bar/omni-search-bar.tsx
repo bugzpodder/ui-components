@@ -105,7 +105,7 @@ type Props = {
  * 2. Trigger an `OmniSearchCommand` (typically via closing an `OmniChip`)
  * Both of these will trigger a call to `setSearchOptions` with `isUserSearchAction: true`
  */
-export const OmniSearchBar: React.FC<Props> = props => {
+export const OmniSearchBar: React.FC<Props> = (props) => {
   const {
     searchDefs,
     children,
@@ -201,7 +201,7 @@ export const OmniSearchBar: React.FC<Props> = props => {
   );
 
   const onSearch = useCallback(
-    options => {
+    (options) => {
       const {
         shouldUpdateBrowserHistory = false,
         isUserSearchAction = false,
@@ -300,7 +300,7 @@ export const OmniSearchBar: React.FC<Props> = props => {
         <div
           id={`${OMNI_KEY}-clickaway`}
           className={styles.clickAwayLayer}
-          onClick={() => setIsOpen(isOpen => !isOpen)}
+          onClick={() => setIsOpen((isOpen) => !isOpen)}
         />
       )}
       <div className={styles.omniBar}>

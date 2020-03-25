@@ -1,3 +1,4 @@
+/* eslint-disable */
 import "@testing-library/jest-dom/extend-expect";
 
 // document.createRange is used for Autocomplete tests.

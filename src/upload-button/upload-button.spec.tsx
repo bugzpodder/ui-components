@@ -7,7 +7,7 @@ afterEach(cleanup);
 
 test("render upload button with default text", async () => {
   const testId = "upload-button";
-  const mockOnChange = jest.fn(result => result);
+  const mockOnChange = jest.fn((result) => result);
   const { container, getByTestId } = render(
     <TestWrapper>
       <UploadButton

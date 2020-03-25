@@ -16,12 +16,13 @@ module.exports = {
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
     "\\.entry.js": "<rootDir>/__mocks__/pdfMock.js",
   },
+  testEnvironment: "jest-environment-jsdom-sixteen",
   testPathIgnorePatterns: ["/node_modules/", "/dist", "/cypress/"],
   transform: {
     ".tsx?$": "ts-jest",
   },
   setupFilesAfterEnv: [
-    "<rootDir>/setupTests.ts",
+    "<rootDir>/src/setupTests.ts",
     "jest-mock-console/dist/setupTestFramework.js",
   ],
   globals: {

@@ -118,7 +118,9 @@ export const CommonSelectComponent = (props: Props) => {
   const [loadedOptions, setLoadedOptions] = useState(options || []);
   useEffect(() => {
     if (selectType === "async") {
-      loadOptions(inputValue).then(results => setLoadedOptions(results || []));
+      loadOptions(inputValue).then((results) =>
+        setLoadedOptions(results || []),
+      );
     }
   }, [loadOptions, selectType, inputValue]);
   const Listbox = useMemo(() => {
@@ -147,7 +149,7 @@ export const CommonSelectComponent = (props: Props) => {
       disableClearable={!isClearable}
       onInputChange={(_, value) => setInputValue(value)}
       loading={isLoading}
-      renderInput={params => (
+      renderInput={(params) => (
         // @ts-ignore variant cannot be assigned.
         <TextField
           {...params}

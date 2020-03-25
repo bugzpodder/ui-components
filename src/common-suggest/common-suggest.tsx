@@ -65,7 +65,7 @@ export const CommonSuggest = (props: Props) => {
       inputValue={value}
       // @ts-ignore
       ListboxComponent={Listbox}
-      renderInput={params => (
+      renderInput={(params) => (
         <TextField
           {...params}
           fullWidth

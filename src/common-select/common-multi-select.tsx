@@ -45,7 +45,7 @@ export const CommonMultiSelect = (props: CommonMultiSelectProps) => {
     }
     return (
       <>
-        {values.map(option => (
+        {values.map((option) => (
           <Chip label={option.label} key={option.value} />
         ))}
       </>
@@ -58,14 +58,14 @@ export const CommonMultiSelect = (props: CommonMultiSelectProps) => {
       return;
     }
 
-    const oldValues = values.filter(value => !isString(value));
+    const oldValues = values.filter((value) => !isString(value));
     const newValues = values
       .filter(
-        value =>
+        (value) =>
           isString(value) &&
           ((!isValidNewOption && value) || isValidNewOption(value)),
       )
-      .map(value => ({ label: value, value }));
+      .map((value) => ({ label: value, value }));
 
     onChange([...oldValues, ...newValues]);
   };

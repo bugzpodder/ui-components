@@ -32,7 +32,9 @@ export const readFileListAsTextArray = (
 ): Promise<string[]> => {
   // Convert a FileList to an File[].
   const files = [...fileList];
-  return Promise.all(files.map(file => readFileAsText(file, maxBytesPerFile)));
+  return Promise.all(
+    files.map((file) => readFileAsText(file, maxBytesPerFile)),
+  );
 };
 
 // readFileListAsText returns the file contents of the file in fileList. An

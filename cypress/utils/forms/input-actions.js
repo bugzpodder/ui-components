@@ -5,15 +5,11 @@ export const enterText = (selector, value, options = {}) => {
     );
   }
   const { force } = options;
-  cy.get(selector)
-    .clear({ force })
-    .should("have.value", "");
+  cy.get(selector).clear({ force }).should("have.value", "");
   value = value.replace(/{enter}/g, "\n");
   value = value.replace(/{esc}/g, "");
   if (value.length) {
-    cy.get(selector)
-      .type(value, options)
-      .should("have.value", value);
+    cy.get(selector).type(value, options).should("have.value", value);
   }
   return cy.get(selector);
 };

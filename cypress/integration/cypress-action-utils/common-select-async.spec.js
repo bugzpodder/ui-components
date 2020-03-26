@@ -8,7 +8,7 @@ describe("CommonSelectAsync", () => {
     cy.visit("http://localhost:6060/#!/CommonSelect");
   });
   // Test at least 2 values, since the formAction may depend on prior state (for example, needing to clearCommonSelect)
-  ["Andorra", "Albania"].forEach(label => {
+  ["Andorra", "Albania"].forEach((label) => {
     it(`should selectFirstItemFromCommonTypeahead with ${label}`, () => {
       formActions.selectFirstItemFromCommonTypeahead(fieldSelector, label);
       formActions

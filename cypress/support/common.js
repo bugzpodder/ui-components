@@ -11,7 +11,7 @@
 
 // (margi) Cypress cannot capture/mock fetch requests, so use polyfill
 // https://github.com/cypress-io/cypress/issues/95
-Cypress.on("window:before:load", win => {
+Cypress.on("window:before:load", (win) => {
   win.fetch = null;
 });
 

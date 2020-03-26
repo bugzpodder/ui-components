@@ -7,7 +7,7 @@ describe("CommonSelect", () => {
   before(() => {
     cy.visit("http://localhost:6060/#!/CommonSelect");
   });
-  ["France", "United States #1"].forEach(label => {
+  ["France", "United States #1"].forEach((label) => {
     const value = label.toUpperCase().replace(" ", "_");
     it(`should selectItemFromCommonSelect with ${label}`, () => {
       formActions.selectItemFromCommonSelect(fieldSelector, value);

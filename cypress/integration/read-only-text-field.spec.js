@@ -2,7 +2,7 @@
 describe("ReadOnlyTextField", () => {
   it("successfully loads", () => {
     cy.visit("http://localhost:6060/#!/ReadOnlyTextField");
-    ["Readonly text field", "-", "Starred"].map(e =>
+    ["Readonly text field", "-", "Starred"].map((e) =>
       cy.get("[data-preview=ReadOnlyTextField]").should("contain", e),
     );
   });
@@ -11,7 +11,7 @@ describe("ReadOnlyTextField", () => {
 describe("ValidatedReadOnlyTextField", () => {
   it("successfully loads", () => {
     cy.visit("http://localhost:6060/#!/ValidatedReadOnlyTextField");
-    ["yes", "no", "N/A"].map(e =>
+    ["yes", "no", "N/A"].map((e) =>
       cy.get("[data-preview=ValidatedReadOnlyTextField]").should("contain", e),
     );
   });

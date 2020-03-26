@@ -1,27 +1,23 @@
-export const getCommonSelectContainer = selector => {
+export const getCommonSelectContainer = (selector) => {
   return cy.get(`${selector}`);
 };
 
-export const getCommonSelectValueContainer = selector => {
+export const getCommonSelectValueContainer = (selector) => {
   return cy.get(`${selector} [data-testid=common-select-input]`);
 };
 
-export const selectFirstItemInCommonSelect = selector => {
+export const selectFirstItemInCommonSelect = (selector) => {
   cy.get(`${selector}`).click();
-  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
-    .first()
-    .click({
-      force: true,
-    });
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`).first().click({
+    force: true,
+  });
 };
 
-export const selectLastItemInCommonSelect = selector => {
+export const selectLastItemInCommonSelect = (selector) => {
   cy.get(`${selector}`).click();
-  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
-    .last()
-    .click({
-      force: true,
-    });
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`).last().click({
+    force: true,
+  });
 };
 
 export const selectItemFromCommonSelect = (selector, value) => {
@@ -46,11 +42,9 @@ export const selectFirstItemFromCommonTypeahead = (selector, searchValue) => {
   cy.get(`${selector} [data-testid=common-select-input]`).type(searchValue, {
     force: true,
   });
-  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
-    .first()
-    .click({
-      force: true,
-    });
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`).first().click({
+    force: true,
+  });
 };
 
 // Note that "First" intentionally appears twice in this function name: it
@@ -60,20 +54,16 @@ export const selectFirstItemFromFirstCommonTypeahead = (
   selector,
   searchValue,
 ) => {
-  cy.get(`${selector}`)
-    .first()
-    .click();
+  cy.get(`${selector}`).first().click();
   cy.get(`${selector} [data-testid="common-select-input"]`).type(searchValue, {
     force: true,
   });
-  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
-    .first()
-    .click({
-      force: true,
-    });
+  cy.get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`).first().click({
+    force: true,
+  });
 };
 
-export const selectLastItemFromCommonSelect = selector => {
+export const selectLastItemFromCommonSelect = (selector) => {
   cy.get(`${selector}`).click();
   return cy
     .get(`.MuiAutocomplete-listbox .MuiAutocomplete-option`)
@@ -94,12 +84,12 @@ export const verifySelectedItemsInCommonMultiSelect = (
   selector,
   expectedValues,
 ) => {
-  return cy.get(`${selector} .MuiChip-deleteIcon`).should($selectedValues => {
+  return cy.get(`${selector} .MuiChip-deleteIcon`).should(($selectedValues) => {
     expect($selectedValues).to.have.length(expectedValues.length);
   });
 };
 
-export const clearCommonSelect = selector => {
+export const clearCommonSelect = (selector) => {
   cy.get(`${selector}`).click();
   return cy.get(`${selector} [data-testid='common-select-close-icon']`).click();
 };

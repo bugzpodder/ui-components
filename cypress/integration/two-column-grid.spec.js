@@ -24,6 +24,6 @@ describe("Two Column Grid", () => {
       "Value 8",
       "Label 9",
       "Value 9",
-    ].map(e => cy.get("[data-preview=TwoColumnGrid]").should("contain", e));
+    ].map((e) => cy.get("[data-preview=TwoColumnGrid]").should("contain", e));
   });
 });

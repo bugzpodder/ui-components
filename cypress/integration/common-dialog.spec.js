@@ -6,9 +6,7 @@ describe("Common Dialog", () => {
       .contains("Open simple dialog")
       .click();
     cy.get("[role=dialog]").should("contain", "Example Dialog");
-    cy.get("[role=dialog]")
-      .contains("Close")
-      .click();
+    cy.get("[role=dialog]").contains("Close").click();
     cy.get("[role=dialog]").should("not.exist");
   });
 });

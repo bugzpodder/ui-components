@@ -45,9 +45,7 @@ describe("Paged Table", () => {
     tableActions.checkTablePager("Showing 6 to 7");
     tableActions.checkFirstWord("Ogdoad");
     cy.get("button.previous-page").click();
-    cy.get("div.select-row-count")
-      .first()
-      .click();
+    cy.get("div.select-row-count").first().click();
     cy.get("li")
       .last()
       .click()

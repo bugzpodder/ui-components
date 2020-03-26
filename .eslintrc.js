@@ -25,11 +25,11 @@ module.exports = {
       "error",
       "ignorePackages",
       {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
+      },
     ],
     "import/no-extraneous-dependencies": [
       "error",
@@ -49,5 +49,10 @@ module.exports = {
     "jsx-a11y/label-has-for": 0,
     "consistent-return": 0,
     "react/jsx-one-expression-per-line": 0,
+  },
+  settings: {
+    "import/resolver": {
+      alias: [["~", "./cypress"]],
+    },
   },
 };

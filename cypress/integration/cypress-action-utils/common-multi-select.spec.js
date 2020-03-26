@@ -9,7 +9,7 @@ describe("CommonMultiSelect", () => {
     cy.visit("http://localhost:6060/#!/CommonMultiSelect");
   });
   // Test at least 2 values, since the formAction may depend on prior state (for example, needing to clearCommonSelect)
-  ["France", "United States #1"].forEach(label => {
+  ["France", "United States #1"].forEach((label) => {
     const value = label.toUpperCase().replace(" ", "_");
     it(`should selectItemFromCommonSelect with ${label}`, () => {
       formActions.selectItemFromCommonSelect(fieldSelector, value);
@@ -38,8 +38,8 @@ describe("CommonMultiSelect", () => {
   });
   const labels = ["Italy", "France"];
   it(`should verifySelectedItemsInCommonMultiSelect with ${labels}`, () => {
-    const values = labels.map(label => label.toUpperCase().replace(" ", "_"));
-    values.forEach(value => {
+    const values = labels.map((label) => label.toUpperCase().replace(" ", "_"));
+    values.forEach((value) => {
       formActions.selectItemFromCommonSelect(fieldSelector, value);
     });
     formActions.verifySelectedItemsInCommonMultiSelect(fieldSelector, values);

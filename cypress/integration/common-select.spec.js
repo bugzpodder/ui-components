@@ -5,7 +5,7 @@ describe("Common Select", () => {
     cy.get("[data-preview=CommonSelect]").within(() => {
       cy.get("[data-testid='country-chooser']").should("exist");
     });
-    ["Albania", "Algeria", "Andorra"].forEach(country => {
+    ["Albania", "Algeria", "Andorra"].forEach((country) => {
       cy.get("[data-preview=CommonSelect]")
         .first()
         .within(() => {

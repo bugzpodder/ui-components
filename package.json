@@ -12,7 +12,7 @@
     "cy:record": "cypress run --record",
     "cover": "open coverage/lcov-report/index.html",
     "check-types": "yarn tsc",
-    "lint": "yarn check-types && tsdx lint src",
+    "lint": "yarn check-types && tsdx lint src cypress",
     "lint-fix": "yarn lint --fix",
     "format": "prettier --write \"*.js\" cypress/**/*.js && yarn lint-fix",
     "preinstall": "node -e 'if(!/yarn\\.js$/.test(process.env.npm_execpath))throw new Error(\"Use yarn install\")'",

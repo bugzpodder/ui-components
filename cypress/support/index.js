@@ -14,12 +14,12 @@
 // ***********************************************************
 import "./common";
 
-// eslint-disable-next-line import/no-extraneous-dependencies
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const istanbul = require("istanbul-lib-coverage");
 
 const map = istanbul.createCoverageMap({});
 
-Cypress.on("window:before:unload", e => {
+Cypress.on("window:before:unload", (e) => {
   const coverage = e.currentTarget.__coverage__;
 
   if (!coverage) {
@@ -30,7 +30,7 @@ Cypress.on("window:before:unload", e => {
 
 if (Cypress.env("coverage")) {
   afterEach(() => {
-    cy.window().then(win => {
+    cy.window().then((win) => {
       const coverage = win.__coverage__;
 
       if (!coverage) {
